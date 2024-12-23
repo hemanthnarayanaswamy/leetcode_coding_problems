@@ -7,4 +7,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0009-palindrome-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0009-palindrome-number) |
+## Array
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0001-two-sum) |
+## Hash Table
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0001-two-sum) |
 <!---LeetCode Topics End-->
