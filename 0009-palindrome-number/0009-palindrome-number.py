@@ -15,3 +15,11 @@ class Solution(object):
             temp = temp / 10 
         
         return True if reverse == x else False
+
+## You can use Strings to do it easily 
+""" 
+value = str(x) # convert it into string and reverse the string
+        if value == value[::-1]:
+            return True
+        return False
+"""
