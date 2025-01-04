@@ -5,3 +5,7 @@ class Solution(object):
         :rtype: List[int]
         """
         return nums + nums
+
+## Its better solution
+        nums=nums*2
+        return nums
