@@ -27,3 +27,21 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> What if the inputs contain Unicode characters? How would you adapt your solution to such a case?</p>
+
+### SOLUTION
+- Optimal solution is performed using sets and its methods
+  ```python
+  class Solution(object):
+    def isAnagram(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
+        if len(s) != len(t):
+            return False
+        for letter in set(s):
+            if s.count(letter) != t.count(letter):
+                return False
+        return True
+```
