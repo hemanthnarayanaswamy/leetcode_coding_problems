@@ -21,3 +21,45 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Suppose there are lots of incoming <code>s</code>, say <code>s<sub>1</sub>, s<sub>2</sub>, ..., s<sub>k</sub></code> where <code>k &gt;= 10<sup>9</sup></code>, and you want to check one by one to see if <code>t</code> has its subsequence. In this scenario, how would you change your code?
+
+### SOLUTION 
+1. I tried the approach provided below but it was not correct and not able to satisfy the multiple same-character edge cases.
+```python
+def issub(s,t):
+    map_dict = {}
+    result = []
+
+    for i in range(len(t)):
+        map_dict[t[i]] = i
+    print(map_dict)
+    for char in s:
+        if char not in map_dict:
+            return False 
+        result.append(map_dict[char])
+    print(result, sorted(result))
+    return result == sorted(result)
+```
+2. The second approach here we are looping through the `t` string and checking the `s` string exists in sequence
+```python
+class Solution(object):
+    def isSubsequence(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
+        i = 0
+        if len(s) == 0:
+            return True 
+        
+        if len(s) > len(t):
+            return False 
+        
+        for char in t:
+            if char == s[i]:
+                i += 1
+            if i == len(s):
+                return True 
+        return False
+```
+3. Learn `Two Pointer` Technique to use it more effectively 
