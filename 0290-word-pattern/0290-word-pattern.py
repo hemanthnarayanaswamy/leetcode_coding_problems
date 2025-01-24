@@ -3,6 +3,8 @@ class Solution:
         words = s.split(" ")
         if len(words) != len(pattern):
             return False
+        if len(set(pattern)) != len(set(words)):
+            return False
 
         # Dictionaries to store mappings
         pattern_to_word = {}
