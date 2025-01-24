@@ -38,3 +38,35 @@
 
 <p>&nbsp;</p>
 <p><strong>Note:</strong> This question is the same as <a href="https://leetcode.com/problems/rearrange-characters-to-make-target-string/description/" target="_blank"> 2287: Rearrange Characters to Make Target String.</a></p>
+
+### Solution 
+1. First make the reference "ballon" hashmap word {'b':1, 'a':1, 'l':2, 'o':2, 'n': 1}
+2. Create a Hashmap for the text parameter excluding the other characters 
+3. now for each element in computed hashmap divide by the same element in reference 
+4. Now return the min for that "The minimum value is the maximum number of times “balloon” can be formed from the text."
+
+##### MY SOLUTION 
+```python
+def maxballons(text):
+    balloon_ref = {'b':1, 'a':1, 'l':2, 'o':2, 'n': 1}
+    text_ballon = {}
+    for letter in text:
+        if letter in balloon_ref:
+            text_ballon[letter] = text_ballon.get(letter, 0) + 1
+    for letter in balloon_ref:
+        if letter not in text_ballon:
+            return 0
+        text_ballon[letter] = text_ballon[letter] // balloon_ref[letter]
+    return min(text_ballon.values())
+```
+
+#### Change Solution
+```python
+def maxballons(text):
+    balloon_ref = {'b':1, 'a':1, 'l':2, 'o':2, 'n': 1}
+    text_ballon = {}
+    for letter in text:
+        if letter in balloon_ref:
+            text_ballon[letter] = text_ballon.get(letter, 0) + 1
+    return min(text_ballon.get(letter, 0) // balloon_ref[letter] for letter in balloon_ref)
+```
