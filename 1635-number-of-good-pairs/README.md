@@ -33,3 +33,9 @@
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+### SOLUTION 
+1. Only hint required is the number of possible combination for a count `n` is
+```
+possibilities_combination = n * (n-1) // 2
+```
