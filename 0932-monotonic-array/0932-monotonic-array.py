@@ -2,6 +2,8 @@ class Solution:
     def isMonotonic(self, arr: List[int]) -> bool:
         is_decreasing, is_increasing = True, True
         array_len = len(arr)
+        if array_len < 2:
+            return True
         for i in range(array_len):
             if i+1 < array_len:
                 current_ele, next_ele = arr[i], arr[i+1]
