@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0009-palindrome-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0009-palindrome-number) |
 | [0013-roman-to-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0013-roman-to-integer) |
+| [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
 ## Array
 |  |
 | ------- |
@@ -17,6 +18,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0217-contains-duplicate](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0217-contains-duplicate) |
 | [0932-monotonic-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0932-monotonic-array) |
 | [1231-replace-elements-with-greatest-element-on-right-side](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1231-replace-elements-with-greatest-element-on-right-side) |
+| [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
 | [2058-concatenation-of-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2058-concatenation-of-array) |
 ## Hash Table
 |  |
@@ -27,6 +29,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0242-valid-anagram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0242-valid-anagram) |
 | [0290-word-pattern](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0290-word-pattern) |
 | [1297-maximum-number-of-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1297-maximum-number-of-balloons) |
+| [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
 ## String
 |  |
 | ------- |
@@ -64,4 +67,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1297-maximum-number-of-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1297-maximum-number-of-balloons) |
+| [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
 <!---LeetCode Topics End-->
