@@ -33,3 +33,51 @@
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>-10<sup>5</sup> &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+## SOLUTION
+1. In my solution I am using flags to check whether it is increasing or decreasing if both return False.
+```python
+   def monoarray(arr):
+    is_decreasing, is_increasing = True, True
+    array_len = len(arr)
+    if array_len < 2:
+        return True
+    for i in range(array_len):
+        if i+1 < array_len:
+            current_ele, next_ele = arr[i], arr[i+1]
+            if current_ele > next_ele:
+                is_decreasing = False
+            elif current_ele < next_ele:
+                is_increasing = False
+            elif current_ele == next_ele:
+                is_decreasing, is_increasing = is_decreasing, is_increasing
+        if not is_decreasing and not is_increasing:
+            return False
+    return True
+```
+2. Optiomal solution is using two functions
+```python
+def is_increasing(self, nums) -> bool:
+        cur_num = nums[0]
+        for num in nums[1:]:
+            if num < cur_num:
+                return False
+            cur_num = num
+        return True
+
+    def is_decreasing(self, nums) -> bool:
+        cur_num = nums[0]
+        for num in nums[1:]:
+            if num > cur_num:
+                return False
+            cur_num = num
+        return True
+    def isMonotonic(self, nums: List[int]) -> bool:
+        # nums_increasing = sorted(nums)
+        # nums_decreasing = list(reversed(nums_increasing))
+        # return nums == nums_increasing or nums == nums_decreasing
+        if len(nums) < 2:
+            return True
+        else:
+            return self.is_decreasing(nums) or self.is_increasing(nums)
+```
