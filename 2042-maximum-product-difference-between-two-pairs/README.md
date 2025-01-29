@@ -30,6 +30,19 @@ The product difference is (9 * 8) - (2 * 4) = 64.
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
+## SOLUTION
+1. My solution is a simple solution with time complexity O(n* logn) as we are using sorting to sort the array first 
+2. Than we only want 4 numbers 2 max and 2 min numbers 
+3.  `return sorted_nums[-1]* sorted_nums[-2] - sorted_nums[0]*sorted_nums[1]`
+
+4. Sorting in place (nums.sort()) is more memory-efficient than creating a new sorted array with sorted(). Sorting in place modifies the original list, avoiding the creation of a new list. 
+```python 
+nums.sort()
+a, b = nums[-1], nums[-2]
+c, d = nums[0], nums[1]
+return (a * b) - (c * d)
+```
+
 <ul>
 	<li><code>4 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
