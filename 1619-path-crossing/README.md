@@ -25,3 +25,31 @@
 	<li><code>1 &lt;= path.length &lt;= 10<sup>4</sup></code></li>
 	<li><code>path[i]</code> is either <code>&#39;N&#39;</code>, <code>&#39;S&#39;</code>, <code>&#39;E&#39;</code>, or <code>&#39;W&#39;</code>.</li>
 </ul>
+
+## SOLUTION 
+1.  This is my first solution, The only problem here is this code is right is the path comes back to the origin but we want to check if the paths are crossing any point again
+2. The solution should track previously visited tracks like history tracking 
+```python
+def iscrossing(path):
+    directions = {'N':(0,1), "E":(1, 0), "S":(0,-1), "W":(-1, 0)}
+    x, y = 0 ,0
+    for direction in path:
+        x += directions[direction][0]
+        y += directions[direction][1]
+        if x == y == 0:
+            return True
+    return False
+```
+3. Final optimal solution 	
+```python 
+    directions = {'N':(0,1), "E":(1, 0), "S":(0,-1), "W":(-1, 0)} ## Coordinates to follow 
+    history = {(0,0),} ## History of coordinates visted 
+    x, y = 0 ,0 initial cooridnates 
+    for direction in path:
+        x += directions[direction][0]
+        y += directions[direction][1]
+        if (x,y) in history: # checking is the current cooridnate was visted or not 
+            return True
+        history.add((x,y))
+    return False
+```
