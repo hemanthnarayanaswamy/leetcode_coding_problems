@@ -22,3 +22,43 @@
 	<li><code>1 &lt;= nums[i] &lt;= n</code></li>
 	<li>Each element in <code>nums</code> appears <strong>once</strong> or <strong>twice</strong>.</li>
 </ul>
+
+### My solution 
+
+```python
+def findDuplicates(nums): ## -----------> 33ms
+    result = []
+    unique = {} ## Space complexity is O(n) but it must be O(1)
+		
+    for i, num in enumerate(nums): ## Use enumerate when it is necessary but not always 
+        if num in  unique:
+            result.append(num)
+        else:
+            unique[num] = i
+    return result
+```
+
+```python
+class Solution:
+    def findDuplicates(self, nums: List[int]) -> List[int]: ----------> 25ms
+        result = []
+        unique = {} ## Instead of using Hash MAp use the set
+        for i in range(len(nums)):
+            if nums[i] in  unique:
+                result.append(nums[i])
+            else:
+                unique[nums[i]] = i
+        return result
+```
+* using sets instead of hashmaps to reduce memoery
+```python
+def findDuplicates(self, nums: List[int]) -> List[int]:
+        result = []
+        unique = set()
+        for num in nums:
+            if num in unique:
+                result.append(num)
+            else:
+                unique.add(num)
+        return result
+```
