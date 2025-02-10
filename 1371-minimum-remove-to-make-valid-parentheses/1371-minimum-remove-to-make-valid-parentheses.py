@@ -1,21 +1,21 @@
 class Solution:
     def minRemoveToMakeValid(self, s: str) -> str:
-        stack = [] ## To store the Index of "(" & ")" 
-        s= list(s) ## String is immutable so we need list 
-
-        for i in range(len(s)): ## We are marking excess closing ")" as a empty string 
-            if s[i] == "(":
+        sList = list(s) # Convert String in List
+        stack = []
+        for i,char in enumerate(s): ## Tracking Excess ')'
+            if char == "(":
                 stack.append(i)
-            elif s[i] == ")":
+            elif char == ")":
                 if stack:
-                    stack.pop() 
+                    stack.pop()
                 else:
-                    s[i] = ""
+                    sList[i] = "" ## Replace ')' with a empty string 
+    ## ['l', 'e', 'e', '(', 't', '(', 'c', ')', 'o', ')', 'd', 'e', '']
+
+        for i in stack:   ## Now whatever if left in stack are the excess ')'
+            sList[i] = "" ## mark them as empty strings 
         
-        while stack: ## Now we remove any excess opening "("
-                s[stack.pop()] = ""
-        
-        return ''.join(s)
+        return "".join(sList) ## Join the List 
               
             
         
