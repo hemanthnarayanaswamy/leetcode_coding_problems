@@ -42,3 +42,59 @@ It can be shown that the largest possible perimeter is 12.
 	<li><code>3 &lt;= n &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+## APPROACH 
+* https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/blob/main/1018-largest-perimeter-triangle/README.md
+* We are using the same logic from the above problem that sorts and than checks the sum is less than or not tht we we can return the number of sides but still need to work out the rest of the solution. 
+
+1. I did try a approach and it worked well did some iterations here and there to reduce time and memeory usage  
+```python
+class Solution:
+    def largestPerimeter(self, nums: List[int]) -> int:
+        nums.sort(reverse=True) ## Sort and reverse the order of the sorted arry to non decresing 
+
+        sum_nums = sum(nums) ## Calculate the over all sum of elements 
+
+        for i in range(len(nums)):
+            current_edge = nums[i]
+            if current_edge < sum_nums - current_edge:
+                return sum_nums
+            else:
+                sum_nums -= current_edge
+        return -1
+```
+
+## Optimal Solution 
+
+* Solution without using Sorting 
+
+```python 
+def largestPerimeter(self, nums: List[int]) -> int:
+        if len(nums) < 3:
+            return -1
+        while len(nums) >= 3:
+            longest = max(nums)
+            nums.remove(longest)
+            if longest < sum(nums):
+                return sum(nums) + longest
+        return -1  
+```
+
+* Similar to my solution which can be improved 
+
+```python 
+class Solution:
+    def largestPerimeter(self, nums: List[int]) -> int:
+        nums.sort(reverse=True)
+
+        total = sum(nums)
+
+        for i in range(len(nums)):
+            total -= nums[i]
+
+            if total > nums[i]:
+                return total+nums[i]
+
+        return -1
+```
+
