@@ -7,10 +7,10 @@ class Solution:
         sum_nums = sum(nums) ## Calculate the over all sum of elements 
 
         for i in range(len_nums):
-            current_edge = nums[i] 
-            sum_nums -= current_edge ## We are updating the sum for every iteration by removing the current element 
-
-            if current_edge < sum_nums:
-                return sum_nums + current_edge
+            current_edge = nums[i]
+            if current_edge < sum_nums - current_edge:
+                return sum_nums
+            else:
+                sum_nums -= current_edge
         return -1
             
