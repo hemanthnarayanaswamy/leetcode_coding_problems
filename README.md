@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0009-palindrome-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0009-palindrome-number) |
 | [0013-roman-to-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0013-roman-to-integer) |
 | [0066-plus-one](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0066-plus-one) |
+| [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
 ## Array
 |  |
@@ -23,6 +24,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0442-find-all-duplicates-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0525-contiguous-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0525-contiguous-array) |
 | [0932-monotonic-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0932-monotonic-array) |
+| [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1231-replace-elements-with-greatest-element-on-right-side](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1231-replace-elements-with-greatest-element-on-right-side) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
 | [2042-maximum-product-difference-between-two-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2042-maximum-product-difference-between-two-pairs) |
@@ -79,6 +81,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0088-merge-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0088-merge-sorted-array) |
 | [0217-contains-duplicate](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0242-valid-anagram) |
+| [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [2042-maximum-product-difference-between-two-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2042-maximum-product-difference-between-two-pairs) |
 ## Counting
 |  |
@@ -94,4 +97,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
+## Greedy
+|  |
+| ------- |
+| [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 <!---LeetCode Topics End-->
