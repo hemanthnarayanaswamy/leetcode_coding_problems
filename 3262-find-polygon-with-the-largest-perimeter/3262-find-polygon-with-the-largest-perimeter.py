@@ -1,8 +1,16 @@
 class Solution:
     def largestPerimeter(self, nums: List[int]) -> int:
-        nums.sort(reverse=True)
-        for i in range(len(nums)):
-            if nums[i] < sum(nums[i+1:len(nums)]):
-                return sum(nums[i: len(nums)])
+        len_nums = len(nums)
+
+        nums.sort(reverse=True) ## Sort and reverse the order of the sorted arry to non decresing 
+
+        sum_nums = sum(nums) ## Calculate the over all sum of elements 
+
+        for i in range(len_nums):
+            current_edge = nums[i] 
+            sum_nums -= current_edge ## We are updating the sum for every iteration by removing the current element 
+
+            if current_edge < sum_nums:
+                return sum_nums + current_edge
         return -1
-        
+            
