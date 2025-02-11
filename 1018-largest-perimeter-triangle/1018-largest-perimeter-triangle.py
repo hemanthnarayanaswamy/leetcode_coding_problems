@@ -6,7 +6,7 @@ class Solution:
     
         nums.sort() ## sorting the array 
 
-        for i in range(nums_lenght-1, -1, -1): ## We are starting from the largest side
+        for i in range(nums_lenght-1, 1, -1): ## We are starting from the largest side
             sum_of_sides = nums[i-1] + nums[i-2]
             largest_side = nums[i]
             if i-2 >= 0 and largest_side < sum_of_sides:
