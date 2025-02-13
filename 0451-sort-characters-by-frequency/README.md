@@ -37,3 +37,43 @@ Note that &#39;A&#39; and &#39;a&#39; are treated as two different characters.
 	<li><code>1 &lt;= s.length &lt;= 5 * 10<sup>5</sup></code></li>
 	<li><code>s</code> consists of uppercase and lowercase English letters and digits.</li>
 </ul>
+
+# Approach 
+1. Count Frequency
+2. Store Frequency Pairs
+3. Sort the Pairs
+4. Build Result String
+
+```python 
+char_freq = Counter(s)    ## Counter the frequency of chracters
+
+sorted_chars = sorted(char_freq.items(), key=lambda item: item[1], reverse=True)
+## [('e', 2), ('t', 1), ('r', 1)] 
+## Sorting the Tuple 
+
+result = ''
+for char, count in sorted_chars: ## iterating the Tuple 
+        result += char * count
+
+    return result
+```
+
+## Optimal Approach 
+
+```python
+def frequencySort(self, s: str) -> str:
+        # Step 1: Count the frequency of each character
+        char_count = Counter(s)
+        
+        # Step 2: Sort characters based on their frequency in descending order
+        sorted_chars = sorted(char_count, key=char_count.get, reverse=True)
+				
+				## ['e', 't', 'r'] 
+
+        # Step 3: Build the result string by repeating characters according to their frequency
+        result = ''
+        for char in sorted_chars:
+            result += char * char_count[char]
+
+        return result
+```
