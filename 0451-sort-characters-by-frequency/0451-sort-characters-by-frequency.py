@@ -3,11 +3,11 @@ from collections import Counter
 class Solution:
     def frequencySort(self, s: str) -> str:
         char_freq = Counter(s)
-        sorted_chars = sorted(char_freq.items(), key=lambda item: item[1], reverse=True)
+        sorted_chars = sorted(char_freq, key=char_freq.get, reverse=True)
 
         result = ''
-        for char, count in sorted_chars:
-            result += char * count
+        for char in sorted_chars:
+            result += char * char_freq[char]
 
         return result
 
