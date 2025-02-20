@@ -5,9 +5,9 @@ class Solution:
         for num in nums:
             if num > first:
                 first, second, third = num , first, second
-            elif num > second and num < first: ## first > num > second
+            elif first > num > second: ## first > num > second
                 second, third = num, second 
-            elif num > third and num < second: ## second > num > third
+            elif second > num > third: ## second > num > third
                 third = num 
         
         if third != float('-inf'):
