@@ -44,3 +44,38 @@ The third distinct maximum is 1.
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Can you find an <code>O(n)</code> solution?
+
+## Solution Approach 
+- we can use the sorting and sets to reverse the order of the sorted result and return the i =2 or 3rd index which will be equal to the 3rd max elements if exists else max of elements 
+
+```python
+class Solution:
+    def thirdMax(self, nums: List[int]) -> int:
+        sorted_nums = sorted(set(nums), reverse=True)
+
+        if len(sorted_nums) < 3:
+            return max(nums)
+            
+        return sorted_nums[2]
+```
+*** Solution without using the sorting `O(n)` *** 
+- We need to keep track of the first the maximum numbers 
+
+```python
+class Solution:
+    def thirdMax(self, nums: List[int]) -> int:
+        first, second, third = float('-inf'), float('-inf'), float('-inf')
+
+        for num in nums:
+            if num > first:
+                first, second, third = num , first, second        # swapping numbers based on comparison
+            elif num > second and num < first: ## first > num > second
+                second, third = num, second 
+            elif num > third and num < second: ## second > num > third
+                third = num 
+        
+        if third != float('-inf'):
+            return third
+        else:
+            return first
+```
