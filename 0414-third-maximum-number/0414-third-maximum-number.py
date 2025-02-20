@@ -5,7 +5,7 @@ class Solution:
         for num in nums:
             if num > first:
                 first, second, third = num , first, second
-            elif first > num > second: ## first > num > second
+            elif first > num > second: ## Instead of duing num < first and num > second
                 second, third = num, second 
             elif second > num > third: ## second > num > third
                 third = num 
