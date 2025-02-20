@@ -33,3 +33,41 @@
 	<li><code>nums.length % 2 == 0 </code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+## Approach 
+
+The problem requires us to split the given array into two parts such that both contain distinct elements. The key observation is that if any number appears more than twice, it becomes impossible to distribute it between the two subarrays while keeping both distinct.
+
+* Meaning elements in nums1 should be unique `len(nums1) == len(set(nums1))`
+
+Approach
+1. Count the occurrences of each number in nums using Counter().
+2. If any number appears more than twice, return False, since it would be impossible to distribute it while maintaining distinct elements in both halves.
+3. Otherwise, return True, as we can always split the array into two valid halves.
+
+```python 
+class Solution:
+    def isPossibleToSplit(self, nums: List[int]) -> bool:
+        nums_map = {}
+
+        for i in range(len(nums)):
+            nums_map[nums[i]] = nums_map.get(nums[i], 0) + 1
+						
+        for key in nums_map:
+            if nums_map[key] > 2:
+                return False
+        return True
+```
+
+```python 
+class Solution:
+    def isPossibleToSplit(self, nums: List[int]) -> bool:
+        counter = Counter(nums) # Using Counter to get frequency
+
+        for value in counter.values():
+            if value > 2:
+                return False
+
+        return True
+```    
+
