@@ -29,3 +29,45 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 	<li><code>1 &lt;= prices.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= prices[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+
+# Solution Approach 
+1. Assign 2 variables to track the minimum recorded price and Maximum profilt 
+```
+min_stock_price = float("inf")
+max_profit = 0 
+```
+2. We loop through the prices array 
+` for price in prices: `
+3. If the current price is less than the min_stock price reassign it 
+```
+if price < min_stock_price:
+                min_stock_price = price
+```
+
+4. Now use a temp variable to track the current profit 
+``` profit = price - min_stock_price```
+
+5. Compare the profit with max_profit to reassign  and return 
+```
+if profit > max_profit:
+                max_profit = profit 
+```
+
+```python
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        min_stock_price = float("inf")
+        max_profit = 0 
+
+        for price in prices:
+            if price < min_stock_price:
+                min_stock_price = price
+            
+            profit = price - min_stock_price
+
+            if profit > max_profit:
+                max_profit = profit 
+                
+        return max_profit
+```
