@@ -47,3 +47,70 @@
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 	<li><code>1 &lt;= k &lt;= 99</code></li>
 </ul>
+
+## Solution Approach 
+* We need to return the count of the occurance of the conditions 
+* Brute Force Approach is you use two for loop and than checking the diff between each element to be k or not and then incrementing the count 
+* But the solution takes `O(n*2)` so we need to do it much better
+
+1. we are counting the frequency of each number and tracking them 
+```python
+nums_map = {}
+    for num in nums: # we are counting the frequency of each number and tracking them 
+        if num in nums_map:
+            nums_map[num] += 1
+        else:
+            nums_map[num] = 1
+```
+
+2. Now we again do a second loop for nums and check is `num+k` exists inside the hash map, 
+- If it exists that means we need to increment the count by the value of the frequfrequency of that numbers occurance 
+```python
+count = 0
+    
+    for num in nums:
+        temp = num+k
+        if temp in nums_map:
+            count += nums_map[temp]
+    return count
+```
+
+<b> Final Solution </b>
+```python
+class Solution:
+    def countKDifference(self, nums: List[int], k: int) -> int:
+        nums_map = {}
+        for num in nums: # we are counting the frequency of each number and tracking them 
+            if num in nums_map:
+                nums_map[num] += 1
+            else:
+                nums_map[num] = 1
+
+        count = 0
+        
+        for num in nums:
+            if num+k in nums_map:
+                count += nums_map[num+k]
+        return count
+ ```
+ 
+ ## Optimized Solution 
+ - In if conditions use the engative statement for better result and time 
+ 
+ ```python
+ class Solution:
+    def countKDifference(self, nums: List[int], k: int) -> int:
+        nums_map = {}
+        for num in nums: # we are counting the frequency of each number and tracking them 
+            if num not in nums_map:
+                nums_map[num] = 1
+            else:
+                nums_map[num] += 1
+
+        count = 0
+        
+        for num in nums:
+            if num+k in nums_map:
+                count += nums_map[num+k]
+        return count
+```
