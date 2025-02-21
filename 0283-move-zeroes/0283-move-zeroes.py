@@ -5,6 +5,6 @@ class Solution:
         """
         for i in range(len(nums)-1,-1,-1):
             if nums[i] == 0:
-                nums.pop(i)
                 nums.append(0)
+                nums.remove(nums[i])
             
