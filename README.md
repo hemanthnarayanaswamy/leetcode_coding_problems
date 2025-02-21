@@ -52,6 +52,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1297-maximum-number-of-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1297-maximum-number-of-balloons) |
 | [1619-path-crossing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1619-path-crossing) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
+| [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
 | [3324-split-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3324-split-the-array) |
 ## String
 |  |
@@ -67,6 +68,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1619-path-crossing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1619-path-crossing) |
+| [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
 ## Trie
 |  |
 | ------- |
@@ -105,6 +107,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0451-sort-characters-by-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0451-sort-characters-by-frequency) |
 | [1297-maximum-number-of-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1297-maximum-number-of-balloons) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
+| [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
 | [3324-split-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3324-split-the-array) |
 ## Prefix Sum
 |  |
