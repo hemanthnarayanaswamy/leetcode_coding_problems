@@ -10,8 +10,7 @@ class Solution:
         count = 0
         
         for num in nums:
-            temp = num+k
-            if temp in nums_map:
-                count += nums_map[temp]
+            if num+k in nums_map:
+                count += nums_map[num+k]
         return count
             
