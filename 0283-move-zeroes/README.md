@@ -20,3 +20,43 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you minimize the total number of operations done?
+
+## Solution Approach 
+
+* we can use the array `pop` and `append` methods to remove the zero and than append at the end of the array. 
+* But it'll be not fast enough 
+
+```python
+def moveZeros(nums):
+    for i in range(len(nums)-1, -1,-1): ## Reverse Iteration and remove the zero and append the zero at the end 
+        if nums[i] == 0: ## that way it iteration will be over where we appended the element 
+            nums.pop(i)
+            nums.append(0)
+    return nums
+```
+
+### solution Using 2- Pointer 
+
+* end and start pointer to point to start and end of index. 
+* when we start from the 
+
+```python
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        end = 0
+        for start in range(len(nums)):
+            if nums[start] != 0:
+                nums[start], nums[end] = nums[end], nums[start] # we are shifting the non zero to the left side and zeros to the right side
+                end += 1
+        return nums
+```
+
+```
+[0, 0, 0, 1, 0, 3, 12]
+[0, 0, 0, 1, 0, 3, 12]
+[0, 0, 0, 1, 0, 3, 12]
+[1, 0, 0, 0, 0, 3, 12]
+[1, 0, 0, 0, 0, 3, 12]
+[1, 3, 0, 0, 0, 0, 12]
+[1, 3, 12, 0, 0, 0, 0]
+```
