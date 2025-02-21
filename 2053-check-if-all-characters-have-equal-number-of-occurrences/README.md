@@ -27,3 +27,51 @@
 	<li><code>1 &lt;= s.length &lt;= 1000</code></li>
 	<li><code>s</code> consists of lowercase English letters.</li>
 </ul>
+
+## Solution Approach 
+* Simple Problem not too complicazted but stuck at apoint not knowing how to compare values among themselves in the dictionary. 
+
+```python 
+class Solution:
+    def areOccurrencesEqual(self, s: str) -> bool:
+        # if len(s) % 2 != 0: ## Not required as 
+        #     return False   ## Fail for s = "vvvvvvvvvvvvvvvvvvv"
+    
+        char_freq = Counter(s)  ## using counter to compute the frequency 
+        result = set() 
+
+        for char in char_freq:
+            result.add(char_freq[char]) ## adding all freq to set to see if they are equal 
+
+        return True if len(result) == 1 else False
+```
+
+## Improved my Solution 
+* used a variable to store result instead of set
+```python
+char_freq = Counter(s) ## To get the frequenccy of elements 
+        result = 0 ## To store individual occurances
+
+        for char in char_freq:
+            if result == 0:
+                result = char_freq[char] ## Assign the result with the first occurrence value
+            else:
+                if result != char_freq[char]: # Retur false if the count is off
+                    return False
+
+        return True
+```
+
+<B>Optimized Solution </B>
+
+```python
+def areOccurrencesEqual(self, s: str) -> bool:
+        d = {}
+        for i in s: 
+            if i in d:
+                d[i] += 1
+            else:
+                d[i] = 1
+        all_vals = d.values()
+        return len(set(all_vals)) == 1
+```
