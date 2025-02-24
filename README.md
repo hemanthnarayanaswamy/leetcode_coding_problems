@@ -163,5 +163,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Enumeration
 |  |
 | ------- |
+| [1212-sequential-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1212-sequential-digits) |
 | [2122-count-special-quadruplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2122-count-special-quadruplets) |
 <!---LeetCode Topics End-->
