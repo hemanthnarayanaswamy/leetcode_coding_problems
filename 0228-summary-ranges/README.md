@@ -44,3 +44,34 @@
 	<li>All the values of <code>nums</code> are <strong>unique</strong>.</li>
 	<li><code>nums</code> is sorted in ascending order.</li>
 </ul>
+
+## Solution Approach 
+
+```python
+class Solution:
+    def summaryRanges(self, nums: List[int]) -> List[str]:
+        result = []
+				
+        if nums:    ## Covering some edge cases
+            start = end = nums[0] ## Tracking the strek of the sorted number
+        else:
+            return result 
+            
+        for i in range(1, len(nums)): ## Loop with the first index
+            if nums[i] == end + 1:  ## Checking for the strek of the sorted numbers 
+                end = nums[i] # if the steak is true than update the end number keeping the start number the same 
+            else: # if the streak fail appened into the result 
+                if start == end:   # if both are same append only one 
+                    result.append(f"{end}")
+                else:
+                    result.append(f"{start}->{end}") # else append the streak 
+                start = end = nums[i] # relinitialize the numbers 
+            
+				# In the final iteration the nubers won't be appended into the result, so we are manually doing it 		
+        if start == end:
+            result.append(f"{end}")
+        else:
+            result.append(f"{start}->{end}")
+
+        return result
+```
