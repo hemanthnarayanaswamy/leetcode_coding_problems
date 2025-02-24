@@ -16,3 +16,30 @@
 <ul>
 	<li><code>10 &lt;= low &lt;= high &lt;= 10^9</code></li>
 </ul>
+
+## Solution Approach 
+
+* I complicated the problem a bit but the approach is simple math logic 
+* We construct numbers dynamically by multiplying by 10 and adding the next digits.
+```
+	1*10 + 2 = 12
+	12*10 + 3 = 123
+	123 * 10 + 4 = 1234
+```
+* Than we check if the generated number is within the high and low range. 
+
+```python 
+class Solution:
+    def sequentialDigits(self, low: int, high: int) -> List[int]:
+        result = [] # store results 
+
+        for i in range(1, 10): # To generate all possible numbers
+            num = i
+            
+            for j in range(i+1, 10):
+                num = num * 10 + j
+                if low <= num <= high:
+                    result.append(num)
+
+        return sorted(result) 
+```
