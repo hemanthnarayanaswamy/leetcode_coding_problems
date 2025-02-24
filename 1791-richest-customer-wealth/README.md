@@ -41,3 +41,38 @@ The 2nd customer is the richest with a wealth of 10.</pre>
 	<li><code>1 &lt;= m, n &lt;= 50</code></li>
 	<li><code>1 &lt;= accounts[i][j] &lt;= 100</code></li>
 </ul>
+
+## Solution Approach 
+
+* Easy solution to calculate the sum of 2D array without nested fro loops 
+* It is using too much memory try to optimize it
+
+```python
+class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        max_wealth = 0
+        for account in accounts:
+            temp_wealth = sum(account)
+            if temp_wealth > max_wealth:
+                max_wealth = temp_wealth
+        return max_wealth
+```
+
+* Optimizing my solution
+
+```python 
+class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        max_wealth = []
+        for account in accounts:
+            max_wealth.append(sum(account))
+        return max(max_wealth)
+```
+
+```python 
+## One Liner 
+class Solution:
+    def maximumWealth(self, accounts):
+        return max(sum(customer) for customer in accounts)
+```
+        
