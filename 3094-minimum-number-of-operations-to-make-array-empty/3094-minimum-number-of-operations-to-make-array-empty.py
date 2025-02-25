@@ -1,10 +1,11 @@
 class Solution:
     def minOperations(self, nums: List[int]) -> int:
         result = 0
-        nums_map = {}
+
+        nums_map = Counter(nums)
         
-        for num in nums:
-            nums_map[num] = nums_map.get(num, 0) + 1
+        # for num in nums:
+        #     nums_map[num] = nums_map.get(num, 0) + 1
         
         for num in nums_map.values():
             if num == 1:  # If only one occurrence, it's impossible
