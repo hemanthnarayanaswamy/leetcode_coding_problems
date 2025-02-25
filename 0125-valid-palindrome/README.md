@@ -35,3 +35,51 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 	<li><code>1 &lt;= s.length &lt;= 2 * 10<sup>5</sup></code></li>
 	<li><code>s</code> consists only of printable ASCII characters.</li>
 </ul>
+
+## Solution Approch 
+
+### How to Clean up a string
+
+#### Normal approach 
+- Clean up the string to only have the charaters and numbers 
+- reverse the string and compare 
+
+```python
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        s2 = ""
+        for char in s.lower():
+            if char.isalnum():
+                s2 += char
+        
+        return s2 == s2[::-1]
+```
+- More optimized Solution using the filter to filterout only required items 
+
+```python
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        s = ''.join(filter(str.isalnum, s)).lower()
+
+        return s == s[::-1]
+```
+
+#### Two Pointer Approach 
+- Clean up the string 
+- two pointer comparison untill left > right 
+
+```python
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        s = ''.join(filter(str.isalnum, s)).lower()
+
+        left, right = 0, len(s) - 1
+
+        while left < right:
+            if s[left] != s[right]:
+                return False  
+            left += 1
+            right -= 1  
+        return True
+```
+
