@@ -68,6 +68,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0013-roman-to-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0014-longest-common-prefix) |
 | [0058-length-of-last-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0058-length-of-last-word) |
+| [0125-valid-palindrome](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0242-valid-anagram) |
 | [0290-word-pattern](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0290-word-pattern) |
 | [0344-reverse-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0344-reverse-string) |
@@ -91,6 +92,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0027-remove-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0027-remove-element) |
 | [0088-merge-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0088-merge-sorted-array) |
+| [0125-valid-palindrome](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0125-valid-palindrome) |
 | [0283-move-zeroes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0283-move-zeroes) |
 | [0344-reverse-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0344-reverse-string) |
 | [0392-is-subsequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0392-is-subsequence) |
