@@ -6,12 +6,12 @@ class Solution:
         for num in nums:
             nums_map[num] = nums_map.get(num, 0) + 1
         
-        for num in nums_map:
-            if nums_map[num] == 1:  # If only one occurrence, it's impossible
+        for num in nums_map.values():
+            if num == 1:  # If only one occurrence, it's impossible
                 return -1
 
-            quotient = nums_map[num] // 3  # Number of full groups of 3
-            remainder = nums_map[num] % 3  # Remaining elements after grouping by 3
+            quotient = num // 3  # Number of full groups of 3
+            remainder = num % 3  # Remaining elements after grouping by 3
 
             if remainder == 0:
                 result += quotient  # Perfectly divisible by 3
