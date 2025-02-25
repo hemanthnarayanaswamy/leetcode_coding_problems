@@ -17,3 +17,23 @@
 	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>s[i]</code> is a <a href="https://en.wikipedia.org/wiki/ASCII#Printable_characters" target="_blank">printable ascii character</a>.</li>
 </ul>
+
+## Solution Approach 
+1. Using the `reverse()` built in dunction.
+```python
+s. reverse()
+```
+2. Using the two pointer method
+```python
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        """
+        Do not return anything, modify s in-place instead.
+        """
+        left, right = 0, len(s) - 1 ## Initialize the pointers and first and end pointer
+
+        while left < right: ## Checking when the pointer cross each other 
+            s[left], s[right] = s[right], s[left] ## Reverse the string 
+            left += 1 ## Incrementing the left pointer 
+            right -= 1 ## DEcrementing the right pointer
+```
