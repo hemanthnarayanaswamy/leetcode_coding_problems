@@ -43,3 +43,82 @@ merged: a p b q c   d
 	<li><code>1 &lt;= word1.length, word2.length &lt;= 100</code></li>
 	<li><code>word1</code> and <code>word2</code> consist of lowercase English letters.</li>
 </ul>
+
+## Solution Approach 
+ * Use two pointer with the while loop to alternately append the words in the result string 
+ * the solution can be improved and 
+ ```python
+ class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
+        result = ""
+        i, j = 0, 0
+
+        while i < len(word1) or j < len(word2):
+            if i < len(word1):
+                result += word1[i]
+                i += 1
+            if j < len(word2):
+                result += word2[j]
+                j += 1 
+        return result
+```
+* Improved Version of the Solution 
+
+### Issues in the Current Code
+1. String Concatenation (+=) is Slow
+* Strings in Python are immutable, so every += operation creates a new string, copying all previous characters.
+* This results in O(n²) time complexity, which is inefficient.
+2. len(result) != len_word1 + len_word2 is Unnecessary
+* You already have checks for i < len_word1 and j < len_word2, so this condition is redundant.
+
+```python
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
+        result = []
+        i, j = 0, 0
+        len_word1 = len(word1)
+        len_word2 = len(word2)
+
+        while i < len_word1 or j < len_word2:
+            if i < len_word1:
+                result.append(word1[i])
+                i += 1
+            if j < len_word2:
+                result.append(word2[j])
+                j += 1 
+        return "".join(result)
+ ```
+ - This can be still improved by removing j variable 
+ 
+ ```python
+ def mergeAlternately(self, word1: str, word2: str) -> str:
+        result = []
+        i = 0
+        len_word1 = len(word1)
+        len_word2 = len(word2)
+
+        while i < len_word1 or i < len_word2:
+            if i < len_word1:
+                result.append(word1[i])
+            if i < len_word2:
+                result.append(word2[i])
+            i += 1
+        return "".join(result)
+```
+
+### Optimized Solution 
+
+```python 
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
+        res = ""
+        len1 = len(word1)
+        len2 = len(word2)
+        for i in range(max(len1, len2)):
+            if i < len1:
+                res += word1[i]
+            if i < len2:
+                res += word2[i]
+        
+        return res
+```
