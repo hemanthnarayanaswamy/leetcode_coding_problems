@@ -32,6 +32,36 @@ The minimum possible difference is 2.</pre>
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
+## Problem Statement 
+
+To explain this better, which this description failed to do in my opinion. Let's assume we have the following array {20, 200,300, 1000 } and that k is 3
+we would need to compare subarrays of size k and get the minimum value out of the subtraction between the lowest and highest number of that subarray.
+- {20,200, 300} the difference between the highest (300) and lowest (20) number will be 280
+- {200, 300, 1000} the difference between the highest (1000) and lowest (200) will be 800
+- That's it there are not more subarrays of size K and so we compare 800 and 280 and the smallest difference is 280.
+
+
+## Solution Approach 
+* The approach is to find the minimum different in the subarray of size k. 
+* Sort the array and calculate the minimum ass a sliding window 
+
+```python
+class Solution:
+    def minimumDifference(self, nums: List[int], k: int) -> int:
+        if len(nums) <= 1:
+            return 0 
+        
+        nums = sorted(nums)
+        min_result = nums[k-1] - nums[0]  ## Calculate the initial difference between max and min in the first sub array
+
+        for i in range(k, len(nums)): ## We start the loop from the kth element 
+            min_result = min(min_result, nums[i] - nums[i-k+1])
+## Sliding window --->  nums[i] - nums[i-k+1] --> Keeping the window size same we are getting difference between max and min while moving
+        return min_result
+```
+
+
+
 <ul>
 	<li><code>1 &lt;= k &lt;= nums.length &lt;= 1000</code></li>
 	<li><code>0 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
