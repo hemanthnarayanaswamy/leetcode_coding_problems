@@ -62,3 +62,56 @@
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= k &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+## Solution Approach 
+* WE need to achieve subarrays such that the `max_subarray - min_subarray <= k`, this is what we are trying to achieve 
+* In the subarray we need to place the elements that has close values together from the nums 
+* How do you do it, `BY SORTING`
+
+```python
+class Solution:
+    def divideArray(self, nums: List[int], k: int) -> List[List[int]]:
+        nums.sort()
+        result = []
+        i = 0
+
+        while len(result) != len(nums) // 3:
+            if abs(nums[i+2] - nums[i]) <= k and abs(nums[i+1] - nums[i]) <= k and abs(nums[i+2] - nums[i+1]) <= k:
+                result.append(nums[i:i+3])
+                i += 3
+            else:
+                return []
+        return result
+```
+* Solution can be improved by removing `abs` because the array is sorted and nums[i+2] is always greater than nums[i]
+* Instead of using a while loop we can use for loop range with step size being 3 
+* No need to check all combinations 
+
+```python
+## Final MY Improved CODE 
+class Solution:
+    def divideArray(self, nums: List[int], k: int) -> List[List[int]]:
+        nums.sort()
+        result = []
+    
+        for i in range(0, len(nums), 3):
+            if nums[i+2] - nums[i] <= k:
+                result.append(nums[i:i+3]) # Append the subarray of three elements
+            else:
+                return []
+        return result
+```
+
+### Optimal Solution 
+```python
+class Solution:
+    def divideArray(self, nums: List[int], k: int) -> List[List[int]]:
+        nums.sort()
+        res = []
+
+        for i in range(0, len(nums), 3):
+            if nums[i + 2] - nums[i] > k:
+                return []
+            res.append(nums[i:i+3])
+        return res
+```
