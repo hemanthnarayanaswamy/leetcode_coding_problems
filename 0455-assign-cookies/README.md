@@ -34,3 +34,37 @@ You need to output 2.
 
 <p>&nbsp;</p>
 <p><strong>Note:</strong> This question is the same as <a href="https://leetcode.com/problems/maximum-matching-of-players-with-trainers/description/" target="_blank"> 2410: Maximum Matching of Players With Trainers.</a></p>
+
+## Solution Approach 
+* We sort the arrays and use two pointers 
+* If the cookie size is good for the childs greed wee move to the next child and next cookie
+* Else we only move to the next cookie 
+
+```python
+class Solution:
+    def findContentChildren(self, g: List[int], s: List[int]) -> int:
+        g.sort()         ## Sort 
+        s.sort()
+        child, cookie = 0, 0 
+        while child < len(g) and cookie < len(s):
+            if s[cookie] >= g[child]:
+                child += 1
+            cookie += 1
+        return child
+ ```
+ 
+ ## optimized Approach 
+* We use a for loop instead of while loop
+* And break the loop if max child are reached 
+```python
+class Solution:
+    def findContentChildren(self, g: List[int], s: List[int]) -> int:
+        g.sort()
+        s.sort()
+        child = 0
+        for cookie in range(len(s)):
+            if s[cookie] >= g[child]:
+                child += 1
+            if child == len(g): break 
+        return child
+```
