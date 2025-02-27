@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0268-missing-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0268-missing-number) |
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
+| [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 ## Array
 |  |
 | ------- |
@@ -35,6 +36,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1231-replace-elements-with-greatest-element-on-right-side](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1231-replace-elements-with-greatest-element-on-right-side) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
+| [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [1791-richest-customer-wealth](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1791-richest-customer-wealth) |
 | [2042-maximum-product-difference-between-two-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2042-maximum-product-difference-between-two-pairs) |
 | [2058-concatenation-of-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2058-concatenation-of-array) |
@@ -142,6 +144,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0525-contiguous-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0525-contiguous-array) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1537-maximum-score-after-splitting-a-string) |
+| [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 ## Stack
 |  |
