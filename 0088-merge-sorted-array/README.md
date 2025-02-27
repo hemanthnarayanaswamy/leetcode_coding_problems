@@ -46,3 +46,64 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 
 <p>&nbsp;</p>
 <p><strong>Follow up: </strong>Can you come up with an algorithm that runs in <code>O(m + n)</code> time?</p>
+
+## Solution Approach 
+* We have solved the problem using the `sorting` function 
+```python
+class Solution:
+    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+        """
+        Do not return anything, modify nums1 in-place instead.
+        """
+        nums1[m:] = nums2 
+        nums1.sort()
+```
+
+* Now we'll try to solve using the two poinbter approach 
+* we combine num2 into num1 and use two pointer to swap elements 
+* Wrong Solution: Incorrect hanbdling of pointers 
+```python
+class Solution:
+    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+        """
+        Do not return anything, modify nums1 in-place instead.
+        """
+        nums1[m::] = nums2
+        left, right = 0, m
+
+        if len(nums1) == m or len(nums1) == n:
+            return
+
+        while  left != right:
+            print(nums1[left], nums1[right])
+            if nums1[left] > nums1[right]:
+                nums1[left], nums1[right] = nums1[right], nums1[left]
+                print(nums1[left], nums1[right], nums1)
+
+                if left== right and right != len(nums1) - 1:
+                    right += 1
+            left += 1
+ ```
+ 
+ ### Correct Solution 
+ ```python
+ class Solution:
+    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+        """
+        Do not return anything, modify nums1 in-place instead.
+        """
+        p1, p2, insert_pointer = m-1, n-1, m+n-1 
+
+        while p2 >= 0:
+            if p1 >= 0 and nums1[p1] > nums2[p2]:
+                nums1[insert_pointer] = nums1[p1]
+                p1 -= 1
+            else:
+                nums1[insert_pointer] = nums2[p2]
+                p2 -= 1
+            insert_pointer -= 1
+```
+* Start merging from the right-most position `(m + n - 1)`
+* Compare `nums1[p1]` and `nums2[p2]`, placing the largest element at the last position.
+* Decrement pointers `(p1, p2, insert_pos)` accordingly.
+
