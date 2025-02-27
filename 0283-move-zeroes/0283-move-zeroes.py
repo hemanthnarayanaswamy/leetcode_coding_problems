@@ -3,8 +3,11 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        for i in range(len(nums)-1,-1,-1):
-            if nums[i] == 0:
-                nums.pop(i)
-                nums.append(0)
+        p1 = 0 
+
+        for start in range(len(nums)):
+            if nums[start] != 0:
+                nums[p1], nums[start] = nums[start], nums[p1]
+                p1 += 1
+       
             
