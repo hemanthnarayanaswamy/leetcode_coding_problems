@@ -52,3 +52,30 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 	<li><code>-100 &lt;= nums[i] &lt;= 100</code></li>
 	<li><code>nums</code> is sorted in <strong>non-decreasing</strong> order.</li>
 </ul>
+
+## Solution Approach 
+
+```python
+def removeduplicates(list):
+    l, r = 0, 1                    # Start pointers
+    while r < len(list):      # Check untill the right reachs the last element 
+        if list[l] == list[r]:   # Both are equal pop the right 
+            list.pop(r)          # No need to move the right pointer as an element is pop automaticall right moves to next element 
+        else:
+            l = r                  # If both are not same 
+            r += 1               # Move the left pointer to right position and right to next position
+    return len(list)
+```
+* `pop()` take `O(n)` complexity because it shifts all the elements 
+* So we assign the unique elements in-order 
+
+```python
+class Solution:
+    def removeDuplicates(self, list: List[int]) -> int:
+        l = 0 ## To track the unique elements 
+        for r in range(1, len(list)): ## We loop through the list
+            if list[l] != list[r]: ## If we find the unique element 
+                l += 1 # Move th unique element pointer by 1
+                list[l] = list[r] ## In that place replace with the unique element detected 
+        return l + 1 # (Gives use the uniques number of elements)
+```
