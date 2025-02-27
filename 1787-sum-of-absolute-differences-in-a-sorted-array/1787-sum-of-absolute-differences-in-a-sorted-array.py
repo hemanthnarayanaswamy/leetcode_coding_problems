@@ -5,9 +5,10 @@ class Solution:
         result = [0] * n
         
         for i in range(n):
-            right_sum -= nums[i]
-            result[i] = (nums[i]*i - left_sum) + (right_sum - nums[i] * (n-i-1))
-            left_sum += nums[i]
+            current_num = nums[i]
+            right_sum -= current_num
+            result[i] = (current_num*i - left_sum) + (right_sum - current_num * (n-i-1))
+            left_sum += current_num
             
         return result
         
