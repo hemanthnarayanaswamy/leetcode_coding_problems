@@ -83,3 +83,20 @@ class Solution:
             
         return result
 ```
+
+* One more technique is instead of using `result` we can modify the `nums` itself to store results.
+* 
+```python
+class Solution:
+    def getSumAbsoluteDifferences(self, nums: List[int]) -> List[int]:
+        total_sum = sum(nums)
+
+        prefix_sum = 0
+        n = len(nums)
+
+        for i in range(n) :
+            prefix_sum += nums[i]
+            nums[i] = (nums[i]*(i+1)) - (nums[i]*(n-i-1)) - prefix_sum + (total_sum - prefix_sum)
+        
+        return nums
+```
