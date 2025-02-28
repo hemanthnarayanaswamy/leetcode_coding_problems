@@ -6,6 +6,11 @@ class Solution:
         best_time = 0  # Store the best closing time
         penalty = customers.count('Y')  # Initial penalty if the shop closes at j = 0
 
+        if "Y" not in customers:
+            return 0
+        if "N" not in customers:
+            return n
+
         for j in range(n + 1):  # Check all possible closing times (0 to n)
             if penalty < min_penalty:
                 min_penalty = penalty
