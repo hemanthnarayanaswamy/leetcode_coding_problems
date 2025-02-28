@@ -53,3 +53,61 @@ Closing the shop at 2<sup>nd</sup> or 4<sup>th</sup> hour gives a minimum penalt
 	<li><code>1 &lt;= customers.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>customers</code> consists only of characters <code>&#39;Y&#39;</code> and <code>&#39;N&#39;</code>.</li>
 </ul>
+
+## Problem Statement 
+* 'Y' (Yes, Customers Arrived):- If the shop is closed during this hour, penalty increases by 1.
+* 'N' (No Customers Arrived):- If the shop is open during this hour, penalty increases by 1.
+* The shop can be closed at any hour j (0 ≤ j ≤ n), meaning:
+--> If j = 0, the shop is never open.
+--> If j = n, the shop remains open for all hours.
+* Return the earliest hour when the shop needs to be closed to incure the minimum cost. 
+
+## Explanation of Code
+1. Start with Initial Penalty (j = 0), The penalty starts as the number of 'Y' in customers, since all customers are affected if we close at j=0.
+Iterate Over Possible Closing Times (j = 0 to n)
+2. If the current penalty is the minimum found so far, update best_time.
+3. Adjust the penalty dynamically:
+ -->If customers[j] == 'Y' (closing when customers arrive) → Penalty decreases (-1).
+ --> If customers[j] == 'N' (staying open without customers) → Penalty increases (+1).
+Return the best_time where penalty is minimum.
+
+```python
+class Solution:
+    def bestClosingTime(self, customers: str) -> int:
+        n = len(customers)
+        
+        min_penalty = float('inf')  # Store the minimum penalty found
+        best_time = 0  # Store the best closing time
+        penalty = customers.count('Y')  # Initial penalty if the shop closes at j = 0
+
+        if "Y" not in customers:
+            return 0
+        if "N" not in customers:
+            return n
+
+        for j in range(n + 1):  # Check all possible closing times (0 to n) shop can close at n
+            if penalty < min_penalty:
+                min_penalty = penalty
+                best_time = j  # Store the earliest minimum penalty closing hour
+            
+            if j < n:
+                # If shop is open at 'N' (no customers), increase penalty
+                # If shop is closed at 'Y' (customers inside), decrease penalty
+                penalty += -1 if customers[j] == 'Y' else 1  
+            
+        return best_time
+```
+
+
+* Start with an initial penalty = count of 'Y' in customers
+* This assumes the shop is closed immediately (j = 0)., Every 'Y' counts as penalty because we closed before any customers arrived.
+* Iterate through all possible closing times (j = 0 to n)
+* Keep track of the minimum penalty and the best closing hour. Adjust penalty dynamically while iterating:
+--> If customers[j] == 'N', the shop was open with no customers, so penalty increases (+1).
+--> If customers[j] == 'Y', the shop was open and we treat the customer, so penalty decreases (-1).
+Store the closing time j that gives the lowest penalty.
+
+```
+1. WE assume the shop is closed and calculate the penality for closed
+2. Now we try to close late one by one, during that time if it is N than +1 because its open that time and -1 if Y because initially through it closed but we are treating the customer
+```
