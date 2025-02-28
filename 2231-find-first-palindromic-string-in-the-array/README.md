@@ -36,3 +36,33 @@ Note that &quot;racecar&quot; is also palindromic, but it is not the first.
 	<li><code>1 &lt;= words[i].length &lt;= 100</code></li>
 	<li><code>words[i]</code> consists only of lowercase English letters.</li>
 </ul>
+
+## Solution Approach 
+
+```python
+class Solution:
+    def firstPalindrome(self, words: List[str]) -> str:
+        def is_palindrome(s):  ## Wrote a function inside class like I learned to process the palindrom seperately 
+            l, r = 0, len(s)-1
+            while l < r:
+                if s[l] != s[r]:
+                    return ''
+                r -= 1
+                l += 1
+            return s 
+        
+        for word in words: 
+            if is_palindrome(word):
+                return word
+        return ''
+```
+
+* Using the Array Slicing Tecchnique 
+```python
+class Solution:
+    def firstPalindrome(self, words: List[str]) -> str:
+        for word in words:
+            if word == word[::-1]:
+                return word
+        return ''
+```
