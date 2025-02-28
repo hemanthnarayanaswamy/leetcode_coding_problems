@@ -11,7 +11,7 @@ class Solution:
         if "N" not in customers:
             return n
 
-        for j in range(n + 1):  # Check all possible closing times (0 to n)
+        for j in range(n+1):  # Check all possible closing times (0 to n)
             if penalty < min_penalty:
                 min_penalty = penalty
                 best_time = j  # Store the earliest minimum penalty closing hour
