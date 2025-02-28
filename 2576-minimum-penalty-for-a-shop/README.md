@@ -98,6 +98,7 @@ class Solution:
         return best_time
 ```
 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx https://neetcode.io/solutions/minimum-penalty-for-a-shop xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 * Start with an initial penalty = count of 'Y' in customers
 * This assumes the shop is closed immediately (j = 0)., Every 'Y' counts as penalty because we closed before any customers arrived.
