@@ -3,10 +3,7 @@ class Solution:
         result = {}
         for string in strs:
             sorted_str = ''.join(sorted(string))
-            if sorted_str in result:
-                result[sorted_str] += [string]
-            else:
-                result[sorted_str] = [string]
+            result[sorted_str] = result.get(sorted_str, []) + [string]
                 
         return list(result.values())
-        
+            
