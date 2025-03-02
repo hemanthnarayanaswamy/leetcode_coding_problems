@@ -20,3 +20,29 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Your algorithm&#39;s time complexity must be better than <code>O(n log n)</code>, where n is the array&#39;s size.</p>
+
+## Solution Approach 
+* Get the Frequency of the Elements with the counter module and sort the dict by value using the `sorted and lambda` functions.
+* Than try to append that many as K elements into the result 
+```python
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        nums_freq = Counter(nums)
+        ## Sorting the Dictionary by the values 
+        ## {k: v for k, v in sorted(x.items(), key=lambda item: item[1])}
+        nums_freq = {k: v for k, v in sorted(nums_freq.items(), reverse = True, key=lambda item: item[1])} 
+				#  Sorting the Dict in reverse based on the dict.values not keys  
+        result = []
+        for keys in nums_freq:
+            result.append(keys)
+            k -= 1
+            if k == 0:
+                return result 
+        return result
+```
+
+```python
+nums_freq = {k: v for k, v in sorted(nums_freq.items(), reverse = True, key=lambda item: item[1])}
+```
+* Sorting the Dict with values using the Lambda function 
+       
