@@ -41,3 +41,55 @@
 	<li><code>0 &lt;= strs[i].length &lt;= 100</code></li>
 	<li><code>strs[i]</code> consists of lowercase English letters.</li>
 </ul>
+
+## solution Approach 
+* Take the string and sort the string 
+* Check if the sorted string is in the dict 
+* If yes add the normal string the ditc result if not assign it a new value 
+```python
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        result = {}                          ## Store the result 
+        for string in strs:
+            temp = []  
+            for c in string:                 ## Unnecessary Loop 
+                temp.append(c)
+            temp.sort()
+            sorted_str = ''.join(temp)
+            if sorted_str in result:
+                result[sorted_str] += [string]
+            else:
+                result[sorted_str] = [string]
+                
+        return list(result.values())
+```
+
+### Improved Solution 
+```python
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        result = {}
+        for string in strs:
+            sorted_str = ''.join(sorted(string))
+            if sorted_str in result:    ## Remove the if conditon 
+                result[sorted_str] += [string]
+            else:
+                result[sorted_str] = [string]
+                
+        return list(result.values())
+```
+* Removed the If condition 
+```python
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        result = {}
+        for string in strs:
+            sorted_str = ''.join(sorted(string))
+            result[sorted_str] = result.get(sorted_str, []) + [string]
+                
+        return list(result.values())
+```
+
+## Optimal Solution 
+
+
