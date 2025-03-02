@@ -31,6 +31,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0228-summary-ranges](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0228-summary-ranges) |
 | [0268-missing-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0283-move-zeroes) |
+| [0347-top-k-frequent-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0347-top-k-frequent-elements) |
 | [0414-third-maximum-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0414-third-maximum-number) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0455-assign-cookies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0455-assign-cookies) |
@@ -64,6 +65,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0242-valid-anagram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0268-missing-number) |
 | [0290-word-pattern](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0290-word-pattern) |
+| [0347-top-k-frequent-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0347-top-k-frequent-elements) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0451-sort-characters-by-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0451-sort-characters-by-frequency) |
 | [0525-contiguous-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0525-contiguous-array) |
@@ -138,6 +140,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0217-contains-duplicate](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0268-missing-number) |
+| [0347-top-k-frequent-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0347-top-k-frequent-elements) |
 | [0414-third-maximum-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0414-third-maximum-number) |
 | [0451-sort-characters-by-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0451-sort-characters-by-frequency) |
 | [0455-assign-cookies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0455-assign-cookies) |
@@ -150,6 +153,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Counting
 |  |
 | ------- |
+| [0347-top-k-frequent-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0451-sort-characters-by-frequency) |
 | [1297-maximum-number-of-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1297-maximum-number-of-balloons) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
@@ -181,10 +185,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0347-top-k-frequent-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0451-sort-characters-by-frequency) |
 ## Bucket Sort
 |  |
 | ------- |
+| [0347-top-k-frequent-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0451-sort-characters-by-frequency) |
 ## Bit Manipulation
 |  |
@@ -209,4 +215,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [1212-sequential-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1212-sequential-digits) |
 | [2122-count-special-quadruplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2122-count-special-quadruplets) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0347-top-k-frequent-elements) |
+## Quickselect
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0347-top-k-frequent-elements) |
 <!---LeetCode Topics End-->
