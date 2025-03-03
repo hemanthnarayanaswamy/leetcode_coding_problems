@@ -37,3 +37,40 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Can you solve it in <code>O(n)</code> time and <code>O(1)</code> space?</p>
+
+
+## Solution Approach 
+* We use a Stack to store the elements i.e., vaild characters 
+* Than remove elemtns from the string is a `#` is encountered. 
+* We create a function for it and than check is the stacks for both string or equal 
+
+```python 
+class Solution:
+    def backspaceCompare(self, s: str, t: str) -> bool:
+        def remove_character(string):
+            stack = []
+            for char in string:
+                if char != '#':
+                    stack.append(char)
+                else:
+                    if stack:
+                        stack.pop()
+            return stack 
+        
+        return remove_character(s) == remove_character(t)
+```
+
+```python
+class Solution:
+    def backspaceCompare(self, s: str, t: str) -> bool:
+        def remove_character(string):
+            stack = []
+            for char in string:
+                if stack and char == '#':
+                    stack.pop()
+                elif char != '#':
+                    stack.append(char)
+            return stack 
+        
+        return remove_character(s) == remove_character(t)
+ ```
