@@ -23,3 +23,80 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong>&nbsp;Can you solve the problem in <code>O(1)</code>&nbsp;extra&nbsp;space complexity? (The output array <strong>does not</strong> count as extra space for space complexity analysis.)</p>
+
+
+## Solution Approach 
+* The Logic is to pre-calculate the prefixProduct and postfixProduct for all the elements 
+* Than Calculate the product for prefix and Postfix and append that into the result and that is the Answer we want. 
+
+```
+[-1,1,0,-3,3]
+preprod = 1, postproduct = 1
+1. i=0, a[0] = -1 
+    pre = 1 
+    post = 0
+		result = 0
+
+2. i=1, a[1]= 1
+    pre = -1
+		post = 0
+		result = 0
+
+3. i=2. a[2]=0
+    pre = -1
+		post = -9
+		result = 9
+So on 
+result = [0,0,9,0,0]
+```
+1. We'll start a Loop to Compute the Prefix Product and Postfix Product by initialize them to [1]
+2. `prefix_product.append(prefix_product[i-1]*nums[i-1]`
+3. `postfix_product.append(postfix_product[-1]*nums[i+1])`
+4. `result.append(prefix_product[i]*postfix_product[i])`
+
+```python 
+## Beats 20%
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        result = []
+        prefix_product = [1]
+        postfix_product = [1]
+
+
+        for i in range(1, len(nums)):
+            prefix_product.append(prefix_product[i-1]*nums[i-1])
+        
+        for i in range(len(nums)-2, -1, -1):
+            postfix_product.append(postfix_product[-1]*nums[i+1])
+            
+        postfix_product = postfix_product[::-1]
+
+        for i in range(len(nums)):
+            result.append(prefix_product[i]*postfix_product[i])
+        
+
+        return result
+```
+
+## Improved Solution
+* We are reducing the Space Complexity by reuse the result to store prefix and postfix products 
+```python
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        result = [1] * n  # Step 1: Initialize result with 1s
+
+        # Step 2: Compute prefix products (Left to Right)
+        prefix = 1
+        for i in range(n):
+            result[i] = prefix
+            prefix *= nums[i]  # Update prefix for next iteration
+
+        # Step 3: Compute postfix products (Right to Left)
+        postfix = 1
+        for i in range(n-1, -1, -1):
+            result[i] *= postfix  # Multiply postfix value to result
+            postfix *= nums[i]  # Update postfix for next iteration
+
+        return result
+ ```
