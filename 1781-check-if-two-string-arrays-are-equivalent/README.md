@@ -36,3 +36,35 @@ The strings are the same, so return true.</pre>
 	<li><code>1 &lt;= sum(word1[i].length), sum(word2[i].length) &lt;= 10<sup>3</sup></code></li>
 	<li><code>word1[i]</code> and <code>word2[i]</code> consist of lowercase letters.</li>
 </ul>
+
+
+## Solution Apporach 
+* Join List into string and check string equality 
+```python
+class Solution:
+    def arrayStringsAreEqual(self, word1: List[str], word2: List[str]) -> bool:
+        word1 = "".join(word1)
+        word2 = "".join(word2)
+
+        if len(word1) != len(word2):
+            return False 
+        
+        
+        for i in range(len(word1)):
+            if word1[i] != word2[i]:
+                return False
+          
+        return True
+```
+```python
+def arraystring(word1, word2):
+    word1 = "".join(word1)
+    word2 = "".join(word2)
+    return True if word1 == word2 else False
+```
+
+```python
+class Solution:
+    def arrayStringsAreEqual(self, word1: List[str], word2: List[str]) -> bool:
+        return True if "".join(word1) == "".join(word2) else False
+```
