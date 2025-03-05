@@ -23,3 +23,48 @@
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>nums[i]</code> is either <code>0</code> or <code>1</code>.</li>
 </ul>
+
+## Solution Appoach 
+```python
+class Solution:
+    def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
+        sum, max_sum = 1, 1 
+        for num in nums:
+            if sum*num: ## If zero is not detected than proceed 
+                sum += num 
+            else:
+                sum = 1
+            max_sum = max(sum, max_sum) ## Compute the MAx sum 
+        return max_sum - 1
+```
+
+## Improved Solution 
+```python
+class Solution:
+    def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
+        current_count, max_count = 0, 0
+        for num in nums:
+            if num == 1:
+                current_count += 1  # Increment count for consecutive 1s
+            else:
+                max_count = max(max_count, current_count)  # Update max before resetting
+                current_count = 0  # Reset counter on encountering 0
+
+        return max(max_count, current_count)  # Final check for ending with 1s
+
+```
+
+```python
+class Solution:
+    def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
+        current_count, max_count = 0, 0
+        for num in nums:
+            if num == 1:
+                current_count += 1  # Increment count for consecutive 1s
+            else:
+                if max_count < current_count:
+                    max_count = current_count  # Update max before resetting
+                current_count = 0  # Reset counter on encountering 0
+
+        return max(max_count, current_count)  # Final check for ending with 1s
+```
