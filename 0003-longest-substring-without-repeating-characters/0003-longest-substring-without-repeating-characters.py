@@ -9,6 +9,8 @@ class Solution:
                 char_set.remove(s[l])
                 l += 1
             char_set.add(s[r])  # Add new character
-            max_length = max(max_length, r - l + 1)  # Update max length
+            sublen =  r - l + 1
+            if max_length < sublen:
+                max_length = sublen  # Update max length
         
         return max_length
