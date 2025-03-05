@@ -34,3 +34,28 @@
 	<li><code>1 &lt;= num.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>num</code> only consists of digits and does not contain any leading zeros.</li>
 </ul>
+
+## Solution Approach 
+* REverse Iteration to find the next close odd number 
+* IF odd number is found the return the sliced string uptill that Index
+
+```python
+class Solution:
+    def largestOddNumber(self, s: str) -> str:
+        for i in range(len(s)-1, -1, -1):
+            if int(s[i]) % 2 != 0:
+                return s[:i+1]
+        return ""
+```
+* `num % 2 == 0 ` ------------> NUM is EVEN 
+* `num % 2 == 1 ` ------------> NUM is ODD
+
+## Improved Solution 
+```python
+class Solution:
+    def largestOddNumber(self, s: str) -> str:
+        for i in range(len(s)-1, -1, -1):
+            if int(s[i]) % 2 == 1:
+                return s[:i+1]
+        return ""
+```
