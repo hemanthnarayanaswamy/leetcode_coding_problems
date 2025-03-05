@@ -37,6 +37,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0414-third-maximum-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0414-third-maximum-number) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0455-assign-cookies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0455-assign-cookies) |
+| [0485-max-consecutive-ones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0485-max-consecutive-ones) |
 | [0525-contiguous-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0525-contiguous-array) |
 | [0932-monotonic-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0932-monotonic-array) |
 | [0941-sort-array-by-parity](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0941-sort-array-by-parity) |
