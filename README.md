@@ -18,6 +18,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0001-two-sum) |
+| [0015-3sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0015-3sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0027-remove-element) |
 | [0049-group-anagrams](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0049-group-anagrams) |
@@ -124,6 +125,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 |  |
 | ------- |
+| [0015-3sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0015-3sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0027-remove-element) |
 | [0088-merge-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0088-merge-sorted-array) |
@@ -148,6 +150,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 |  |
 | ------- |
+| [0015-3sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0049-group-anagrams) |
 | [0088-merge-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0088-merge-sorted-array) |
 | [0217-contains-duplicate](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0217-contains-duplicate) |
