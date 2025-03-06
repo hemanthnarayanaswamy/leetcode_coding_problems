@@ -1,9 +1,10 @@
 class Solution:
     def getLucky(self, s: str, k: int) -> int:
         result = []
-        compute_sum = 0
+        # result = ''
         for char in s:
             result.append(str(ord(char)-96))
+            # result += str(ord(char)-96)
         
         result = ''.join(result)
 
