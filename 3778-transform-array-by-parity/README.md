@@ -46,3 +46,16 @@
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 1000</code></li>
 </ul>
+
+## Solution Approach 
+* Can do with sorting but better way 
+
+```python 
+class Solution:
+    def transformArray(self, nums: List[int]) -> List[int]:
+        odds_count = 0
+        for num in nums:
+            if num % 2 == 1:
+                odds_count += 1
+        return [0]*(len(nums)-odds_count) + [1]*odds_count
+```
