@@ -64,3 +64,46 @@ Thus the resulting integer is 6.</p>
 	<li><code>1 &lt;= k &lt;= 10</code></li>
 	<li><code>s</code> consists of lowercase English letters.</li>
 </ul>
+
+## Solution Approach 
+* Use `ord()` to get the ASCII values of a character and to match the problem values we get the difference with 96
+* we use result as list because memory and time efficient than join it into a string 
+```python
+class Solution:
+    def getLucky(self, s: str, k: int) -> int:
+        result = []
+        temp_sum, final_sum = 0, 0
+        
+        for char in s:
+            result.append(str(ord(char)-96))
+        
+        result = ''.join(result)
+
+        while k > 0:
+            temp_sum = sum([int(i) for i in result])
+            final_sum = temp_sum
+            result = str(temp_sum)
+            temp_sum = 0
+            k -= 1
+        return final_sum
+```
+
+## Improved Solution 
+* Remove the `while` and unwanted use of variables 
+```python
+class Solution:
+    def getLucky(self, s: str, k: int) -> int:
+        result = []
+        # result = ''
+        for char in s:
+            result.append(str(ord(char)-96))
+            # result += str(ord(char)-96)
+        
+        result = ''.join(result)
+
+        for _ in range(k):
+            compute_sum = sum(int(i) for i in result)
+            result = str(compute_sum)
+
+        return compute_sum
+ ```
