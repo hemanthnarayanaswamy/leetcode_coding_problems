@@ -3,13 +3,14 @@ class Solution:
         result = 0
         l, r = 0, len(heights)-1 
         while l < r:
-            max_area = min(heights[l], heights[r])*(r-l)
+            if heights[l] < heights[r]:
+                max_area = heights[l]*(r-l)
+                l += 1
+            else:
+                max_area = heights[r]*(r-l)
+                r -= 1
             if result < max_area:
                 result = max_area
-            if heights[l] > heights[r]:
-                r -= 1
-            else:
-                l += 1
         
         return result
         
