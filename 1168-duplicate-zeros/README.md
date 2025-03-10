@@ -26,3 +26,26 @@
 	<li><code>1 &lt;= arr.length &lt;= 10<sup>4</sup></code></li>
 	<li><code>0 &lt;= arr[i] &lt;= 9</code></li>
 </ul>
+
+
+## Solution Approach 
+* Whenever a 0 is detected
+---> `pop()` the right most element 
+---> Increment the left pointer 
+---> Insert `0` at the incremented value
+
+```python
+class Solution:
+    def duplicateZeros(self, arr: List[int]) -> None:
+        """
+        Do not return anything, modify arr in-place instead.
+        """
+        l, r = 0, len(arr)-1
+        while l < r:
+            if arr[l] == 0:
+                arr.pop(r)   # pop the right most element 
+                l += 1       # Increment the left pointer to place 0
+                arr.insert(l, 0)
+            l += 1           # Skip that element 
+        
+```
