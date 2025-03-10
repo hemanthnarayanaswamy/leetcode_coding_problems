@@ -30,3 +30,62 @@
 	<li><code>2 &lt;= n &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= height[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+## Solution Approach 
+* The basic idea is to calculate the maximum area of a rectangle for the given heights.
+* we initiate the left and right pointers, then calculate and store the results as we follow. 
+* based on the height we either increment the left or the right pointer. 
+
+```python
+class Solution:
+    def maxArea(self, heights: List[int]) -> int:
+        result = []
+        l, r = 0, len(heights)-1 
+        while l < r:
+            result.append(min(heights[l], heights[r])*abs(r-l))
+            if heights[l] > heights[r]:
+                r -= 1
+            else:
+                l += 1
+        
+        return max(result)
+```
+* Some Areas to improve is how we are storing the result, instead of using a list we can store only the maximum result 
+
+```python 
+class Solution:
+    def maxArea(self, heights: List[int]) -> int:
+        result = 0
+        l, r = 0, len(heights)-1 
+        while l < r:
+            max_area = min(heights[l], heights[r])*abs(r-l)
+            if result < max_area:
+                result = max_area
+            if heights[l] > heights[r]:
+                r -= 1
+            else:
+                l += 1
+        
+        return result
+```
+
+## Optimal Solution 
+* It can be further improved into one condition and calculation 
+```python
+class Solution:
+    def maxArea(self, heights: List[int]) -> int:
+        result = 0
+        l, r = 0, len(heights)-1 
+        while l < r:
+            if heights[l] < heights[r]:
+                max_area = heights[l]*(r-l)
+                l += 1
+            else:
+                max_area = heights[r]*(r-l)
+                r -= 1
+            if result < max_area:
+                result = max_area
+        
+        return result
+```
+
