@@ -28,3 +28,29 @@ After sorting, it becomes [0,1,9,16,100].
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Squaring each element and sorting the new array is very trivial, could you find an <code>O(n)</code> solution using a different approach?
+
+## Solution Approach 
+* Easy way to do it is by `sorting()`
+```python
+class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        return sorted(num**2 for num in nums)
+```
+
+* Using the `Two-Pointer-Approach`, we can Implement it 
+```
+class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        left, right = 0, len(nums)-1
+        result = [0] * len(nums)
+
+        for i in range(len(nums)-1, -1, -1):
+            if abs(nums[left]) > abs(nums[right]):
+                result[i] = nums[left]**2
+                left += 1
+            else:
+                result[i] = nums[right] ** 2
+                right -= 1
+        return result
+```
+
