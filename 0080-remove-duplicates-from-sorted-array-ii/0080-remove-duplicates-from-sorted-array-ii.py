@@ -1,12 +1,14 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        if len(nums) < 2:
-            return len(nums)
+        n = len(nums)
+
+        if n < 2:
+            return n
             
         i = 0
         count = 1  # A number is always valid 
 
-        for j in range(1, len(nums)):
+        for j in range(1, n):
             if nums[i] != nums[j]:
                 nums[i + 1] = nums[j]
                 i += 1
