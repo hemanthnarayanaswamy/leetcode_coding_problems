@@ -51,3 +51,47 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 	<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
 	<li><code>nums</code> is sorted in <strong>non-decreasing</strong> order.</li>
 </ul>
+
+## Solution Approach 
+* This Problem is similar to how we have handle this problem 
+https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+* we use a pointer techique to solve it one is `slow pointer` that will track the position where we write the next valid element.
+* `fast pointer` will scan through the arry to find valid elements.
+```python
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        n = len(nums)
+        if n <= 2:   ## If nums has 2 or fewer elements, all are already valid
+            return n
+    
+        slow = 2     ## Since the first two index are always valid 
+
+        for fast in range(2, n):
+            if nums[fast] != nums[slow - 2]:
+                nums[slow] = nums[fast]    ## Overwrite the element at 'slow' index
+                slow += 1
+        return slow
+```
+
+## Improved approach
+* we start with two pointers and use a count variable to track the count of the occurance .
+* if the `nums[i] != nums[j]` then `nums[i + 1] = nums[j]`
+* If they are not equal check the count, If it is `<2` then  `nums[i + 1] = nums[j]`
+```python
+def removeDuplicates(nums):
+    if len(nums) < 2:
+        return len(nums)
+    i, j = 0, 1
+    count = 1  # A number is always valid 
+
+    for j in range(1, len(nums)):
+        if nums[i] != nums[j]:  ## If number are not equal move the slow pointer and asign the value 
+            nums[i + 1] = nums[j]
+            i += 1
+            count = 1
+        elif count < 2:           ## If they are equal than chekc the count value 
+            nums[i + 1] = nums[j]
+            i += 1
+            count += 1
+    return i + 1
+```
