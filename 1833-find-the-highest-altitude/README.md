@@ -27,3 +27,19 @@
 	<li><code>1 &lt;= n &lt;= 100</code></li>
 	<li><code>-100 &lt;= gain[i] &lt;= 100</code></li>
 </ul>
+
+## Simple Solution
+* Use Prefix sum technique to solve the problem 
+* and compute the max altitue as you iterate 
+```python
+class Solution:
+    def largestAltitude(self, gain: List[int]) -> int:
+        max_altitude = 0
+        distance_covered = 0
+
+        for point in gain: 
+            distance_covered += point 
+            max_altitude = max(distance_covered, max_altitude)
+        
+        return max_altitude
+```
