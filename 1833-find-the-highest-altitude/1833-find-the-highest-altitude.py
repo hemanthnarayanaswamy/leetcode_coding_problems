@@ -5,8 +5,7 @@ class Solution:
 
         for point in gain: 
             distance_covered += point 
-            if distance_covered > max_altitude:
-                max_altitude = distance_covered
+            max_altitude = max(distance_covered, max_altitude)
         
         return max_altitude
         
