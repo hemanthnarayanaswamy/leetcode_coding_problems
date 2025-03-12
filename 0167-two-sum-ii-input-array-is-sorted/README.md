@@ -41,3 +41,38 @@
 	<li><code>-1000 &lt;= target &lt;= 1000</code></li>
 	<li>The tests are generated such that there is <strong>exactly one solution</strong>.</li>
 </ul>
+
+## Solution Approach 
+* It is Similar to the `two sum` problem approach
+* We compute the difference and put that into the result 
+
+```python
+class Solution:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+        result = {}
+        for i in range(len(numbers)):
+            if numbers[i] in result:
+                return [result[numbers[i]], i+1]
+            else:
+                comp_diff = target - numbers[i]
+                result[comp_diff] = i+1
+        return []
+```
+
+## Solution using 2-Pointer
+```python
+class Solution:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+        l = 0
+        r = len(numbers) -1 
+        while l < r:
+            current_sum = numbers[l] + numbers[r]
+            if (current_sum > target):
+                r -= 1
+            elif (current_sum < target):
+                l += 1
+            
+            if current_sum == target:
+                return [l+1, r+1] 
+        return []
+```
