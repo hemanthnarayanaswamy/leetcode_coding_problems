@@ -1,11 +1,15 @@
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
-        result = {}
-        for i in range(len(numbers)):
-            if numbers[i] in result:
-                return [result[numbers[i]], i+1]
-            else:
-                comp_diff = target - numbers[i]
-                result[comp_diff] = i+1
-        return []
+        l = 0
+        r = len(numbers) -1 
+        while l < r:
+            current_sum = numbers[l] + numbers[r]
+            if (current_sum > target):
+                r -= 1
+            elif (current_sum < target):
+                l += 1
+            
+            if current_sum == target:
+                break 
+        return [l+1, r+1]
         
