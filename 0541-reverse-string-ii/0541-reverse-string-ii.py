@@ -1,6 +1,6 @@
 class Solution:
     def reverseStr(self, s: str, k: int) -> str:
-        s_list = list(s)         # Convert string to list to allow modifications
+        s = list(s)         # Convert string to list to allow modifications
         n = len(s)
 
         # Process the string in chunks of 2k
@@ -9,9 +9,9 @@ class Solution:
 
             # Reverse first k characters using two-pointer swapping
             while left < right:
-                s_list[left], s_list[right] = s_list[right], s_list[left]
+                s[left], s[right] = s[right], s[left]
                 left += 1
                 right -= 1
 
-        return ''.join(s_list)  # Convert list back to string
+        return ''.join(s)  # Convert list back to string
              
