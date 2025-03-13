@@ -48,3 +48,28 @@ There is only one average to be calculated after removing 1 and 100, so we retur
 	<li><code>nums.length</code> is even.</li>
 	<li><code>0 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+## Solution Approach 
+* Sort the array so that l can access all the minimum element and r pointer to access the max elements 
+* Use set() to store the results and return it lenght 
+
+```python
+class Solution:
+    def distinctAverages(self, nums: List[int]) -> int:
+        result = set()
+        nums.sort()
+        l, r = 0, len(nums)-1
+        while l < r:
+            result.add((nums[l]+nums[r])/2)
+            l += 1
+            r -= 1
+        return len(result)
+```
+
+## Solution without Two Pointer
+```python
+class Solution:
+    def distinctAverages(self, nums: List[int]) -> int:
+        nums.sort()
+        return len(set([nums[i] + nums[-1-i] for i in range(len(nums)//2)]))
+```
