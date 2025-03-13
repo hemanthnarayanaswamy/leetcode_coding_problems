@@ -1,9 +1,17 @@
 class Solution:
     def reverseStr(self, s: str, k: int) -> str:
-        s = [chr for chr in s]         ## Convert string in List as string is immutable
-        for i in range(0, len(s), 2*k): ## Iterating with a step count or batch of 2*K
-            end_index = min(i+k, len(s))  ## We need to find the end index usually it is i+k if not enough character its len(s)
-            s[i:end_index] = s[i:end_index][::-1] ## Reversing the elements 
+        s_list = list(s)         # Convert string to list to allow modifications
+        n = len(s)
 
-        return "".join(s) ## List into String
+        # Process the string in chunks of 2k
+        for i in range(0, n, 2 * k):
+            left, right = i, min(i + k - 1, n - 1)  # Two pointers for reversing
+
+            # Reverse first k characters using two-pointer swapping
+            while left < right:
+                s_list[left], s_list[right] = s_list[right], s_list[left]
+                left += 1
+                right -= 1
+
+        return ''.join(s_list)  # Convert list back to string
              
