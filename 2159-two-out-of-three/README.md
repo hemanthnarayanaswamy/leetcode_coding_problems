@@ -36,3 +36,25 @@
 	<li><code>1 &lt;= nums1.length, nums2.length, nums3.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums1[i], nums2[j], nums3[k] &lt;= 100</code></li>
 </ul>
+
+
+## Solution Approach 
+* We convert all the arrays into the `set()`
+* Then we do a for loop with the first array to check if that element is in the other two arrays.
+* Then we do an other for loop to check any intersection between the other two arrays.
+
+```python
+class Solution:
+    def twoOutOfThree(self, nums1: List[int], nums2: List[int], nums3: List[int]) -> List[int]:
+        s = set()
+        nums1 = set(nums1)
+        nums2 = set(nums2)
+        nums3 = set(nums3)
+        for i in nums1:
+            if i in nums2 or i in nums3:
+                s.add(i)
+        for j in nums2:
+            if j in nums3:
+                s.add(j)
+        return list(s)
+```
