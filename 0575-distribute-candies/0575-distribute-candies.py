@@ -1,8 +1,7 @@
 class Solution:
     def distributeCandies(self, candyType: List[int]) -> int:
         n = len(candyType) 
-        half = n // 2
         uniqueTypes = len(set(candyType))
 
-        return half if half < uniqueTypes else uniqueTypes
+        return n//2 if n//2 < uniqueTypes else uniqueTypes
         
