@@ -50,3 +50,41 @@ You can only eliminate 1 monster.
 	<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= dist[i], speed[i] &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+## Solution Approach 
+* First we calculate the time using distance and speed then sort that in-order when the mosters will arrive. 
+* Initially weapon is fully changed so always the first monster is eliminated `n=1`
+* We use a `weapon` variable where `weapon%2 == 0` means weapon is not charged other case its charged. 
+* We do a for loop `for i in range(1, len(time_taken)):` from the second monster as first is always eliminated. 
+* If `time[i]` is less than one and the weapon is not charged return
+* else the monster is eliminated and `n+=1` and every iteration increment weapon.
+```python
+#### WRONG SOLUTION ####
+class Solution:
+    def eliminateMaximum(self, dist: List[int], speed: List[int]) -> int:
+        time_taken = sorted([dist[i]/speed[i] for i in range(len(dist))])
+        n = 1
+        weapon = 0   #Assume even is not changed, odd is charged
+        for i in range(1, len(time_taken)):
+            if time_taken[i] - 1 < 1 and weapon%2 == 0:
+                return n 
+            else:
+                n += 1
+            weapon += 1
+
+        return n
+```
+* Not covering all the edge cases 
+* `weapon` not required as we can use the index `i` to track the time 
+```python
+class Solution:
+    def eliminateMaximum(self, dist: List[int], speed: List[int]) -> int:
+        time_taken = sorted([dist[i]/speed[i] for i in range(len(dist))])
+        # time_taken = sorted([d/s for d, s in zip(dist, speed)])
+        
+        for i in range(len(time_taken)):
+            if time_taken[i] <= i:  # We check if the monster reaches before we shoot 
+                return i
+        return len(time_taken)
+```
+
