@@ -58,3 +58,38 @@ In total, 1 + 3 + 0 + 0 = 4 moves were used.
 	<li><code>1 &lt;= n &lt;= 100</code></li>
 	<li><code>1 &lt;= seats[i], students[j] &lt;= 100</code></li>
 </ul>
+
+## Solution Approach 
+* Sort the Lists than computes the moves by find the difference at each index. 
+
+```python
+class Solution:
+    def minMovesToSeat(self, seats: List[int], students: List[int]) -> int:
+        moves = 0
+        seats.sort()
+        students.sort() 
+        for i in range(len(seats)):
+            moves += abs(seats[i] - students[i])
+        
+        return moves
+```
+
+### One Liner Solution 
+```python
+class Solution:
+    def minMovesToSeat(self, seats: List[int], students: List[int]) -> int:
+        moves = [abs(seat-student) for student, seat in zip(sorted(students), sorted(seats))]
+        return sum(moves)
+```
+
+## optimal Solution 
+```python
+class Solution:
+    def minMovesToSeat(self, seats: List[int], students: List[int]) -> int:
+        seats=sorted(seats)
+        students=sorted(students)
+        cnt=0
+        for i in range(len(seats)) :
+            cnt=cnt+abs(seats[i] - students[i])
+        return cnt
+```
