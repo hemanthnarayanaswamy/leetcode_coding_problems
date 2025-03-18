@@ -43,3 +43,40 @@ The only distinct string is &quot;b&quot;. Since there are fewer than 3 distinct
 	<li><code>1 &lt;= arr[i].length &lt;= 5</code></li>
 	<li><code>arr[i]</code> consists of lowercase English letters.</li>
 </ul>
+
+## Solution Approach
+* First map the charaters using the hashMap and `Counter`
+* Than Loop through the Hashmap while skipping any count that is not one
+* When it is one check the K value needed `k==1` 
+* Else reduce `k`
+
+```python
+from collections import Counter
+
+class Solution:
+    def kthDistinct(self, arr: List[str], k: int) -> str:
+        char_map = Counter(arr)
+
+        for char in char_map:
+            if char_map[char] == 1:
+                k -= 1
+            if k == 0:
+                return char
+        return ''
+```
+
+### Space Optimization
+```python
+from collections import Counter
+
+class Solution:
+    def kthDistinct(self, arr: List[str], k: int) -> str:
+        char_map = Counter(arr)
+
+        for char in char_map:
+            if char_map[char] == 1:
+                k -= 1
+                if k == 0:
+                    return char
+        return ''
+```
