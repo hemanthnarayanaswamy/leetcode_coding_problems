@@ -3,13 +3,11 @@ class Solution:
         change_map = {i:num for i, num in enumerate(change)}
         result = [] 
         i = 0
-        mutate = False 
         while i < len(num):
             if int(num[i]) < change_map[int(num[i])]:
                 result.append(str(change_map[int(num[i])]))
                 i += 1
-                mutate = True 
-                while mutate and i < len(num):
+                while i < len(num):
                     if int(num[i]) > change_map[int(num[i])]:
                         result.append(num[i:len(num)])
                         i = len(num)
