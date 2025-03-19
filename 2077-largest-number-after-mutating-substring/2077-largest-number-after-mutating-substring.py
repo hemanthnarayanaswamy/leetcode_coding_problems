@@ -1,20 +1,17 @@
 class Solution:
     def maximumNumber(self, num: str, change: List[int]) -> str:
-        #change_map = {i:num for i, num in enumerate(change)}
-        num = [s for s in num] 
-        i = 0 
-        while i < len(num):
-            if int(num[i]) < change[int(num[i])]:
-                while i < len(num):
-                    if int(num[i]) > change[int(num[i])]:
-                        return ''.join(num)
-                    else:
-                        num[i] = str(change[int(num[i])])
-                        i += 1
-            i += 1               
+        num_list = list(num)  
+        mutation_started = False  # Flag to track mutation start
 
-        return ''.join(num)
+        for i in range(len(num_list)):
+            digit = int(num_list[i])
 
+            if change[digit] > digit:  # Start mutation if change[digit] > digit
+                num_list[i] = str(change[digit])
+                mutation_started = True
+            elif change[digit] < digit and mutation_started:  
+                # Stop as soon as we see a decreasing transformation
+                break
+            # If change[digit] == digit, we can continue mutation
 
-
-        
+        return ''.join(num_list)  # Convert list back to string
