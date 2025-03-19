@@ -48,3 +48,78 @@ Thus, &quot;<u>021</u>&quot; becomes &quot;<u>934</u>&quot;.
 	<li><code>change.length == 10</code></li>
 	<li><code>0 &lt;= change[d] &lt;= 9</code></li>
 </ul>
+
+## Solution Approach 
+* First we converted the List into a Hashmap for better Lookup and access complexity. 
+* Then we use a flag and start index to start changeing from that index and store the result in other variable once i reaches the end we breaked and return the result. 
+
+```python
+class Solution:
+    def maximumNumber(self, num: str, change: List[int]) -> str:
+        change_map = {i:num for i, num in enumerate(change)}
+        result = [] 
+        i = 0
+        while i < len(num):
+            if int(num[i]) < change_map[int(num[i])]:
+                result.append(str(change_map[int(num[i])]))
+                i += 1
+                while i < len(num):
+                    if int(num[i]) > change_map[int(num[i])]:
+                        result.append(num[i:len(num)])
+                        i = len(num)
+                        break
+                    else:
+                        result.append(str(change_map[int(num[i])]))
+                        i += 1
+            else:
+                result.append(num[i])
+                i += 1                
+
+        return ''.join(result)
+```				
+* It is a big solution can be optimized more to reduce the time and space. 
+* Remove the result variable and reuse the num string as list 
+
+## Improved Solution 
+```python
+class Solution:
+    def maximumNumber(self, num: str, change: List[int]) -> str:
+        #change_map = {i:num for i, num in enumerate(change)}
+        num = [s for s in num] 
+        i = 0 
+        while i < len(num):
+            if int(num[i]) < change[int(num[i])]:
+                while i < len(num):
+                    if int(num[i]) > change[int(num[i])]:
+                        return ''.join(num)
+                    else:
+                        num[i] = str(change[int(num[i])])
+                        i += 1
+            i += 1               
+
+        return ''.join(num)
+```
+* Can be further Improved in terms of using the while loop. 
+* and int and str conversions 
+* Remove while loop and manage the breaking of thw while loops properly 
+
+```python
+class Solution:
+    def maximumNumber(self, num: str, change: List[int]) -> str:
+        num = list(num)  
+        mutation_started = False  # Flag to track mutation start
+
+        for i in range(len(num)):
+            digit = int(num[i])
+
+            if change[digit] > digit:  # Start mutation if change[digit] > digit
+                num[i] = str(change[digit])
+                mutation_started = True
+            elif change[digit] < digit and mutation_started:  
+                # Stop as soon as we see a decreasing transformation
+                break
+
+
+        return ''.join(num)  # Convert list back to string
+```
+
