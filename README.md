@@ -65,6 +65,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2048-build-array-from-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2048-build-array-from-permutation) |
 | [2049-eliminate-maximum-number-of-monsters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2049-eliminate-maximum-number-of-monsters) |
 | [2058-concatenation-of-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2058-concatenation-of-array) |
+| [2066-add-minimum-number-of-rungs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2066-add-minimum-number-of-rungs) |
 | [2077-largest-number-after-mutating-substring](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2077-largest-number-after-mutating-substring) |
 | [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [2116-count-number-of-pairs-with-absolute-difference-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2116-count-number-of-pairs-with-absolute-difference-k) |
@@ -253,6 +254,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [2032-largest-odd-number-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2032-largest-odd-number-in-string) |
 | [2049-eliminate-maximum-number-of-monsters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2049-eliminate-maximum-number-of-monsters) |
+| [2066-add-minimum-number-of-rungs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2066-add-minimum-number-of-rungs) |
 | [2077-largest-number-after-mutating-substring](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2077-largest-number-after-mutating-substring) |
 | [2148-minimum-number-of-moves-to-seat-everyone](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2148-minimum-number-of-moves-to-seat-everyone) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
