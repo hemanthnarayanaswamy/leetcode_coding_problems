@@ -45,3 +45,56 @@ The ladder will now have rungs at [<u>1</u>,3,4,6,7].
 	<li><code>1 &lt;= dist &lt;= 10<sup>9</sup></code></li>
 	<li><code>rungs</code> is <strong>strictly increasing</strong>.</li>
 </ul>
+
+## Solution Approach 
+* If the distance between the current and the next step is less than distance curremt becomes nextstep and nextstep becomes the next element in array.
+* If the condition fails we calculate the addons by using the formula `addons += ((next_step - current_step) - 1) // dist`
+```python
+class Solution:
+    def addRungs(self, rungs: List[int], dist: int) -> int:
+        i = 0
+        addons = 0
+        current_step = 0
+        while current_step != rungs[-1] and i < len(rungs):
+            next_step = rungs[i]
+            ## print(current_step, next_step, i)
+            if abs(next_step - current_step)  <= dist:
+                current_step = next_step
+                i += 1
+            else:
+                addons += ((next_step - current_step) - 1) // dist
+                current_step = next_step
+                i += 1
+        return addons
+```
+* Can be optimized more 
+
+## Improved Solution
+```python
+class Solution:
+    def addRungs(self, rungs: List[int], dist: int) -> int:
+        i = 0
+        addons = 0
+        current_step = 0
+        while current_step != rungs[-1]:
+            next_step = rungs[i]
+            if abs(next_step - current_step)  > dist:
+                addons += ((next_step - current_step) - 1) // dist
+            current_step = next_step
+            i += 1
+        return addons
+```
+
+## Optimal Solution
+```python
+class Solution:
+    def addRungs(self, rungs: List[int], dist: int) -> int:
+        addons = 0
+        previous = 0
+        for current in rungs:
+            diff = current - previous
+            if diff > dist:
+                addons += (diff -1) // dist
+            previous = current
+        return addons
+```
