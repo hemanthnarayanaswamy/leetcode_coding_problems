@@ -1,5 +1,8 @@
 class Solution:
     def addRungs(self, rungs: List[int], dist: int) -> int:
+        if not rungs:
+            return 0
+            
         i = 0       # Track Steps
         addons = 0  ## To track number of inserctions
         current_step = 0 ## Current Step
