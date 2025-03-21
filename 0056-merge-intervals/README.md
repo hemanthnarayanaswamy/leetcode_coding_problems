@@ -25,3 +25,54 @@
 	<li><code>intervals[i].length == 2</code></li>
 	<li><code>0 &lt;= start<sub>i</sub> &lt;= end<sub>i</sub> &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+## Solution Approach 
+![approach](https://assets.leetcode.com/users/criskgl/image_1574967731.png)
+
+```python
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        intervals.sort()
+        result = [intervals[0]]  ## Initiating result with first element of intervals for references 
+        for i in range(1, len(intervals)):
+            if result[-1][1] >= intervals[i][0]:
+                result[-1][1] = max(result[-1][1],intervals[i][1])
+            else:
+                result.append(intervals[i])
+        return result
+```
+
+## Improved Solution
+```python
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        intervals.sort()
+        result = [intervals[0]]  ## Initiating result with first element of intervals for references 
+        for i in range(1, len(intervals)):
+            current_element = result[-1][1]
+            if current_element >= intervals[i][0]:
+                result[-1][1] = max(current_element,intervals[i][1])
+            else:
+                result.append(intervals[i])
+                
+        return result
+```
+
+## Optimal Solution
+```python
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        # intervals.sort()
+        #sort the intervals by the first values
+        intervals.sort(key = lambda i: i[0])
+        result = [intervals[0]]  ## Initiating result with first element of intervals for references 
+        for i in range(1, len(intervals)):
+            current_element = result[-1]
+            next_element = intervals[i]
+            if current_element[1] >= next_element[0]:
+                current_element[1] = max(current_element[1],next_element[1])
+            else:
+                result.append(next_element)
+
+        return result
+```
