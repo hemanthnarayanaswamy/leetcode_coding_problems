@@ -30,3 +30,69 @@ The closest occurrence of &#39;e&#39; for index 8 is at index 6, so the distance
 	<li><code>s[i]</code> and <code>c</code> are lowercase English letters.</li>
 	<li>It is guaranteed that <code>c</code> occurs at least once in <code>s</code>.</li>
 </ul>
+
+## Solution Approach 
+* Loop once to track all the index of the character 
+* Next compute the min difference and append the difference
+
+```python
+class Solution:
+    def shortestToChar(self, s: str, c: str) -> List[int]:
+        result = []
+        track_index = set()
+        n = len(s)
+
+        for i in range(n):
+            if s[i] == c:
+                track_index.add(i)
+        
+        for i in range(n):
+            diff_val = min(abs(i - x) for x in track_index)
+            result.append(diff_val)
+
+        return result
+```
+## Improved Solution
+```python
+class Solution:
+    def shortestToChar(self, s: str, c: str) -> List[int]:
+        n = len(s)
+        result = [0]*n
+        track_index = set()
+        
+
+        for i in range(n):
+            if s[i] == c:
+                track_index.add(i)
+        
+        for i in range(n):
+            if s[i] == c:
+                continue
+            diff_val = min(abs(i - x) for x in track_index)
+            result[i] = diff_val
+
+        return result
+```
+
+## Optimal Solution 
+```python
+class Solution:
+    def shortestToChar(self, s: str, c: str) -> List[int]:
+        n = len(s)
+        res = [0] * n
+        prev = float("-inf")
+
+        for i in range(n):
+            if s[i] == c:
+                prev = i
+            res[i] = i - prev
+
+        prev = float("inf")
+
+        for i in range(n - 1, -1, -1):
+            if s[i] == c:
+                prev = i
+            res[i] = min(res[i], prev - i)
+        
+        return res
+```
