@@ -1,8 +1,7 @@
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
-        # intervals.sort()
-        #sort the intervals by the first values
-        intervals.sort(key = lambda i: i[0])
+        # intervals.sort() # DON'T USE
+        intervals.sort(key = lambda i: i[0])  #sort the intervals by the first values
         result = [intervals[0]]  ## Initiating result with first element of intervals for references 
         for i in range(1, len(intervals)):
             current_element = result[-1]
