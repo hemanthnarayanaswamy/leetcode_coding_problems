@@ -45,3 +45,23 @@
 	<li><code>1 &lt;= word.length &lt;= 100</code></li>
 	<li><code>patterns[i]</code> and <code>word</code> consist of lowercase English letters.</li>
 </ul>
+
+## Solution Approach 
+
+```python 
+class Solution:
+    def numOfStrings(self, patterns: List[str], word: str) -> int:
+        count = 0
+        for pattern in patterns:
+            if pattern in word:
+                count += 1
+        return count
+```
+* One-liner approach
+```python
+class Solution:
+    def numOfStrings(self, patterns: List[str], word: str) -> int:
+        return sum(i in word for i in patterns)
+```
+        
+
