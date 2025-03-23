@@ -1,11 +1,6 @@
-class Solution(object):
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        results = {}
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        results = {} 
 
         for index,num in enumerate(nums):
             diff = target - num
@@ -14,3 +9,4 @@ class Solution(object):
             
             results[num] = index
         return none
+        
