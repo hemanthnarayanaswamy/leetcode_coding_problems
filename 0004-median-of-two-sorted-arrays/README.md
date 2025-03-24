@@ -30,3 +30,24 @@
 	<li><code>1 &lt;= m + n &lt;= 2000</code></li>
 	<li><code>-10<sup>6</sup> &lt;= nums1[i], nums2[i] &lt;= 10<sup>6</sup></code></li>
 </ul>
+
+
+## solution Approach 
+* Need to use `divide and Conquer` with `two pointer` approach to actually solve the problem.
+* But used a cheap trick to solve it: -- O((m+n)log(m+n))
+
+* combined and sorted both the araays depending on the lenght of the arrays computed the median value. 
+
+```python 
+class Solution:
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        merged_sorted = sorted(nums1+nums2)
+        n1, n2 = len(nums1), len(nums2)
+
+        if (n1+n2) % 2 == 1 and len(merged_sorted)!= 0:
+            return float(merged_sorted[(n1+n2)//2])
+        else:
+            upper_med = merged_sorted[(n1+n2)//2]
+            lower_med = merged_sorted[(n1+n2)//2-1]
+            return (upper_med+lower_med)/2
+```
