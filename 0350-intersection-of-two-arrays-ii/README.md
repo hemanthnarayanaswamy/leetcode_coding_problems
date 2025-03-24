@@ -32,3 +32,28 @@
 	<li>What if <code>nums1</code>&#39;s size is small compared to <code>nums2</code>&#39;s size? Which algorithm is better?</li>
 	<li>What if elements of <code>nums2</code> are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?</li>
 </ul>
+
+## Solution Approach 
+* Sort Both arrays 
+* Use two pointer to check the intersections while traversing the array 
+
+```python
+class Solution:
+    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        result = []
+        nums1 = sorted(nums1)
+        nums2 = sorted(nums2)
+        i, j = 0 , 0
+
+        while i < len(nums1) and j < len(nums2):
+            if nums1[i] == nums2[j]:
+                result.append(nums1[i])
+                i += 1
+                j += 1
+            elif nums1[i] < nums2[j]:
+                i += 1
+            else:
+                j += 1
+
+        return result
+ ```
