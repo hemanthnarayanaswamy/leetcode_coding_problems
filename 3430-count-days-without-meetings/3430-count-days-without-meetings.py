@@ -1,8 +1,8 @@
 class Solution:
     def countDays(self, days: int, meetings: List[List[int]]) -> int:
         count = 0
-        meetings = sorted(meetings)
-        nextMeeting = 0
+        meetings.sort(key=lambda x: x[0])
+        nextMeeting = 0 
         for meeting in meetings:
             startMeet, endMeet = meeting[0], meeting[1]
             if nextMeeting < startMeet:
