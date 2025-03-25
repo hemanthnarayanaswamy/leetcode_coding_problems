@@ -3,9 +3,7 @@ class Solution:
         count = 0
         meetings.sort()
         nextMeeting = 0
-        print(meetings)
         for meeting in meetings:
-            print(nextMeeting,meeting[0],meeting[1])
             if nextMeeting < meeting[0]:
                 count += (meeting[0] - nextMeeting) - 1
                 nextMeeting = meeting[1]
@@ -14,7 +12,6 @@ class Solution:
                     continue
                 else:
                     nextMeeting = meeting[1]
-            print(nextMeeting, count)
 
         if nextMeeting < days:
             count += (days - nextMeeting)
