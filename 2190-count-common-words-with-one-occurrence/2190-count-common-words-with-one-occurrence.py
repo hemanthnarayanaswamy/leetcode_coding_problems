@@ -5,10 +5,14 @@ class Solution:
         count = 0
         words1_freq = Counter(words1)
         words2_freq = Counter(words2)
+        print(words1_freq,words2_freq )
 
         for word in words1_freq:
-            if word in words2_freq and words1_freq[word] == words2_freq[word] == 1:
+            if word not in words2_freq:
+                continue
+            elif words1_freq[word] > 1 or words2_freq[word] > 1:
+                continue
+            else:
                 count += 1
-        
         return count
         
