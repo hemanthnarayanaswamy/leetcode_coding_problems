@@ -38,3 +38,25 @@ Thus, there are 2 strings that appear exactly once in each of the two arrays.
 	<li><code>1 &lt;= words1[i].length, words2[j].length &lt;= 30</code></li>
 	<li><code>words1[i]</code> and <code>words2[j]</code> consists only of lowercase English letters.</li>
 </ul>
+
+# Solution Approach 
+* Add one array into a hashmap and loop through the other array to add the frequncy of the detected element. 
+
+```python
+from collections import Counter
+
+class Solution:
+    def countWords(self, words1: List[str], words2: List[str]) -> int:
+        count = 0
+        words1_freq = Counter(words1)
+        words2_freq = Counter(words2)
+
+        for word in words1_freq:
+            if word not in words2_freq:
+                continue
+            elif words1_freq[word] > 1 or words2_freq[word] > 1:
+                continue
+            else:
+                count += 1
+        return count
+ ```
