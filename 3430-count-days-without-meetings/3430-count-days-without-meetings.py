@@ -4,14 +4,13 @@ class Solution:
         meetings.sort()
         nextMeeting = 0
         for meeting in meetings:
-            if nextMeeting < meeting[0]:
-                count += (meeting[0] - nextMeeting) - 1
-                nextMeeting = meeting[1]
-            elif nextMeeting >= meeting[0]:
-                if nextMeeting >= meeting[1]:
+            startMeet, endMeet = meeting[0], meeting[1]
+            if nextMeeting < startMeet:
+                count += (startMeet - nextMeeting) - 1
+            elif nextMeeting >= startMeet and nextMeeting >= endMeet:
                     continue
-                else:
-                    nextMeeting = meeting[1]
+            
+            nextMeeting = endMeet
 
         if nextMeeting < days:
             count += (days - nextMeeting)
