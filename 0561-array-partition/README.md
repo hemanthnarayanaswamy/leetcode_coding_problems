@@ -28,3 +28,17 @@ So the maximum possible sum is 4.</pre>
 	<li><code>nums.length == 2 * n</code></li>
 	<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+## Solution Approach 
+* Sort the list 
+* When the list is sorted and when we group the list into 2-2 elements the min is always the first element of index `(0, 2, 4, 6...)`.
+
+```python
+class Solution:
+    def arrayPairSum(self, nums: List[int]) -> int:
+        nums = sorted(nums)
+        sum = 0
+        for i in range(0, len(nums), 2):
+            sum += nums[i] 
+        return sum
+```
