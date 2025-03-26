@@ -1,5 +1,3 @@
-from collections import defaultdict
-
 class Solution:
     def groupThePeople(self, groupSizes: List[int]) -> List[List[int]]:
         result = defaultdict(list)
