@@ -34,3 +34,49 @@ Other possible solutions are [[2,1,6],[5],[0,4,3]] and [[5],[0,6,2],[4,3,1]].
 	<li><code>1 &lt;= n&nbsp;&lt;= 500</code></li>
 	<li><code>1 &lt;=&nbsp;groupSizes[i] &lt;= n</code></li>
 </ul>
+
+# Solution Approach 
+* Create a `hasp_map` that associates the `Groupsize` with all the `index`
+* After that iterate the hash map to check if the size if equal to the len of the `grouped index` if true append to result. 
+* Else split the grouped index list into multiple equal parts of size `size`
+
+```python
+class Solution:
+    def groupThePeople(self, groupSizes: List[int]) -> List[List[int]]:
+        result = {}
+        groups = []
+        for i in range(len(groupSizes)):
+            if groupSizes[i] not in result:
+                result[groupSizes[i]] = [i]
+            else:
+                result[groupSizes[i]].append(i)
+
+        for size,people in result.items():
+            if size == len(people):
+                groups.append(people)
+            else:
+                temp =[people[i:i + size] for i in range(0, len(people), size)]
+                for group in temp:
+                    groups.append(group)
+        
+        return groups
+```
+* Use the `defaultdict(list)` to automatically create hashmap instead of `if-else`
+
+```python
+from collections import defaultdict
+
+class Solution:
+    def groupThePeople(self, groupSizes: List[int]) -> List[List[int]]:
+        result = defaultdict(list)
+        groups = []
+        
+        for i, size in enumerate(groupSizes):
+            result[size].append(i)
+
+        for size, people in result.items():
+            for i in range(0, len(people), size):
+                groups.append(people[i:i + size])
+        
+        return groups
+```
