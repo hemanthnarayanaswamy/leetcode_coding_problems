@@ -38,3 +38,21 @@ Then we select the last 3 characters and convert them so that the final string c
 	<li><code>3 &lt;= s.length &lt;= 1000</code></li>
 	<li><code>s[i]</code> is either <code>&#39;X&#39;</code> or <code>&#39;O&#39;</code>.</li>
 </ul>
+
+
+## solution Approach 
+* Do a While loop until i reachs the end of string
+* else increment count and move i after processing 3 characters
+```python 
+class Solution:
+    def minimumMoves(self, s: str) -> int:
+        i = 0 
+        count = 0 
+        while i < len(s):
+            if s[i] == 'O':
+                i += 1
+            else: 
+                count += 1
+                i += 3
+        return count
+```
