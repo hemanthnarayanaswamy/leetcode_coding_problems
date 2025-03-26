@@ -42,3 +42,22 @@ class Solution:
             sum += nums[i] 
         return sum
 ```
+## Optimal Solutions 
+
+```python
+class Solution:
+    def arrayPairSum(self, nums: List[int]) -> int:
+        sum = 0
+        nums.sort(reverse=True)
+        i = 0
+        while i < len(nums):
+            sum += nums[i + 1]
+            i += 2
+        return sum
+```
+
+```python
+class Solution:
+    def arrayPairSum(self, nums: List[int]) -> int:
+        return sum(sorted(nums)[::2])
+```
