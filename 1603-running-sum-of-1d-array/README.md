@@ -31,3 +31,23 @@
 	<li><code>1 &lt;= nums.length &lt;= 1000</code></li>
 	<li><code>-10^6&nbsp;&lt;= nums[i] &lt;=&nbsp;10^6</code></li>
 </ul>
+
+
+## Solution Approach 
+* Use Prefix Sum 
+```python
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        if not nums: return []
+
+        n = len(nums)
+        result = [0]*n
+
+
+        result[0] = nums[0]
+
+        for i in range(1, n):
+            result[i] = result[i-1] + nums[i]
+        
+        return result
+```
