@@ -20,3 +20,33 @@
 	<li><code>1 &lt;= ransomNote.length, magazine.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>ransomNote</code> and <code>magazine</code> consist of lowercase English letters.</li>
 </ul>
+
+
+## Solution Approach 
+```python
+class Solution:
+    def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+        ransomNote_freq = Counter(ransomNote)
+        magazine_freq = Counter(magazine)
+
+        for letter in ransomNote_freq:
+            if letter not in magazine_freq:
+                return False
+            if ransomNote_freq[letter] > magazine_freq[letter]:
+                return False 
+        
+        return True 
+```
+
+## Optimal Solution
+```python
+class Solution:
+    def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+        ransomNote_freq = Counter(ransomNote)
+
+        for letter in ransomNote_freq:
+            if ransomNote_freq[letter] > magazine.count(letter):
+                return False 
+        
+        return True 
+```
