@@ -33,3 +33,37 @@
 	<li><code>n</code> consists of only digits.</li>
 	<li><code>n</code> does not contain any leading zeros and represents a positive integer.</li>
 </ul>
+
+# <center>Solution Approach</center>
+* The problem needs to be solved first with logic then the actuall code itself.
+
+```
+So let's say number 3761
+
+1. First  iteration is: 1111
+Note that we already have 1 at the last position, so from now on we can add only 0 to it
+2. Second iteration 1110 (1111+1110 = 2221)
+3. Third iteration: 1110 (2221 + 1110 = 3331)
+4. Fourth iteration 
+* Note that the first position already contains 3, so from now on we can add only 0 to it
+* 0110 (3331 + 0110 = 3441)
+5. Fifth Iteration: 0110 (3441 + 0110 = 3551)
+6. Sixth Iteration: 0110 (3551 + 0110 = 3661)
+7. Seventh Iteration
+* Note that the second to the end position already contains 6, so from now on we can add only 0 to it
+* 0100 (3661 + 0100 =  3761)
+
+We disassembled the number 3761 to the binary components and did it in a way it would take the least number of operations. If you add all these numbers from step 1 to step 7 you will get the initial 3761 and it only took 7 steps
+
+How it works?
+As you spotted once we had precise value at any of the positions we just adding 0 to it. And this is the main idea. We always can increase the number by adding 1 to get what we want and use 0 for positions with values that already satisfy us. And this is why the maximum digit in the value is a correct answer.
+```
+* Think about if the input was only one digit. Then you need to add up as many ones as the value of this digit.
+* If the input has multiple digits, then you can solve for each digit independently, and merge the answers to form numbers that add up to that input.
+* Thus the answer is equal to the max digit.
+
+```python
+class Solution:
+    def minPartitions(self, n: str) -> int:
+        return int(max(n))
+```
