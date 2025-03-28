@@ -1,9 +1,12 @@
-from collections import Counter
+
 
 class Solution:
     def minSteps(self, s: str, t: str) -> int:
-        s_feq = Counter(s)  ## Compute the Frequency of the elements 
-        t_feq = Counter(t)
+        s_feq, t_feq = {}, {} 
+        for i in range(len(s)):
+            s_feq[s[i]] = s_feq.get(s[i], 0) + 1
+            t_feq[t[i]] = t_feq.get(t[i], 0) + 1
+
 
         count = 0           # To track the Changes Required
 
