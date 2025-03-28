@@ -46,3 +46,52 @@ In the 2<sup>nd</sup> query, the subarray is <code>[5,9,3,7]. This</code> can be
 	<li><code>0 &lt;= l[i] &lt; r[i] &lt; n</code></li>
 	<li><code>-10<sup>5</sup> &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+## Solution Approach 
+
+```python
+class Solution:
+    def checkArithmeticSubarrays(self, nums: List[int], l: List[int], r: List[int]) -> List[bool]:
+        m = len(l)
+        answer = [True]*m    ## Define answer which should be equal to len m
+        i = 0   ## Intiating a pointer to iterate through the sub arrays list in l, r
+
+        while i < m:                                                                   # untill i reach last 
+            sub_nums = sorted(nums[l[i]:r[i]+1])                        # Compute and Sort the Sub-array
+
+            temp_diff = sub_nums[1] - sub_nums[0]                  # Reference Arthemetic Difference
+            
+            for x in range(1, len(sub_nums)-1):                           # Check if sub array is arthemic array or not
+                if sub_nums[x+1] - sub_nums[x] != temp_diff:
+                    answer[i] = False                                               # If not False and break
+                    break
+            i += 1                                                                       # Increment pointer to move to next sub array
+
+        return answer
+```
+
+## Improved Solution
+
+```python
+class Solution:
+    def checkArithmeticSubarrays(self, nums: List[int], l: List[int], r: List[int]) -> List[bool]:
+        is_arithmetic = []
+        for i in range(len(l)):
+            is_arithmetic.append(self.is_arithmetic_sequence(nums[l[i]: r[i] + 1]))
+
+        return is_arithmetic
+
+
+
+    def is_arithmetic_sequence(self, arr: List[int]) -> bool:
+        if len(arr) < 2:
+            return False
+
+        arr.sort()
+        diff = arr[1] - arr[0]
+
+        for i in range(2, len(arr)):
+            if arr[i] - arr[i - 1] != diff:
+                return False
+        return True
+```
