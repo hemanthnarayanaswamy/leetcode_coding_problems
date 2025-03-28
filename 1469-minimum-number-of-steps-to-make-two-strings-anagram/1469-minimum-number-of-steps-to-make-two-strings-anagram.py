@@ -2,19 +2,18 @@ from collections import Counter
 
 class Solution:
     def minSteps(self, s: str, t: str) -> int:
-        s_feq = Counter(s)
+        s_feq = Counter(s)  ## Compute the Frequency of the elements 
         t_feq = Counter(t)
-        print(s_feq, t_feq)
-        count = 0
 
-        for char in t_feq:
-            if char not in s_feq:
-                count += t_feq[char]
+        count = 0           # To track the Changes Required
+
+        for char in t_feq:  # Check each char in t
+            if char not in s_feq:   # If that char is not in s
+                count += t_feq[char]  # All that char needs to be changed
             else:
-                if t_feq[char] - s_feq[char] > 0:
-                    count += abs(s_feq[char] - t_feq[char])
-
-
+                temp_diff = t_feq[char] - s_feq[char]
+                if temp_diff > 0:  # If that element is present and If its count is excess than s 
+                    count += temp_diff  # it also needs to be changed
         return count
 
         
