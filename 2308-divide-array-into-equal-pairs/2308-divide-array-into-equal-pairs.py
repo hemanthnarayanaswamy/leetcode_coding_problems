@@ -5,8 +5,10 @@ class Solution:
         nums_freq = Counter(nums)
 
         for num in nums_freq:
-            if nums_freq[num] % 2 != 0:
-                return False 
+            if nums_freq[num] % 2 == 0:
+                continue 
+            else:
+                return False
         
         return True
         
