@@ -37,3 +37,33 @@ There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy 
 	<li><code>1 &lt;= n &lt;= 500</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 500</code></li>
 </ul>
+
+
+## Solution Approach 
+```python
+from collections import Counter 
+
+class Solution:
+    def divideArray(self, nums: List[int]) -> bool:
+        nums_freq = Counter(nums)
+
+        for num in nums_freq:
+            if nums_freq[num] % 2 == 0:
+                continue 
+            else:
+                return False
+        
+        return True
+```
+
+```python
+from collections import Counter
+
+class Solution:
+    def divideArray(self, nums: List[int]) -> bool:
+        count = Counter(nums)
+        for num in count:
+            if count[num] %2 != 0:
+                return False
+        return True
+```
