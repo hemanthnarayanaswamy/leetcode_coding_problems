@@ -46,3 +46,30 @@ In this example, the digit 8 is used twice each time in 288, 828, and 882.
 	<li><code>3 &lt;= digits.length &lt;= 100</code></li>
 	<li><code>0 &lt;= digits[i] &lt;= 9</code></li>
 </ul>
+
+## Solution Approach 
+* We Iterate through from 102 to 999 with a step of 2 to generate even numbers. 
+* We use`Counter` to generate the frequency of the digits. 
+* Now loop through each generated number by converting it into a string. 
+* If that digit in digits_freq than check if the Counter of that is less than the freq in digits. 
+* Add that digit to the result else break the inner loop
+
+```python
+from collections import Counter 
+
+class Solution:
+    def findEvenNumbers(self, digits: List[int]) -> List[int]:
+        result= [] 
+        digits_freq = Counter(digits)
+        for num in range(100, 999, 2):
+            temp = str(num)
+            for j in temp:
+                if int(j) in digits_freq:
+                    if temp.count(j) > digits_freq[int(j)]:
+                        break
+                else:
+                    break 
+            else:
+                result.append(num)
+        return result 
+```
