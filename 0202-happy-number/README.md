@@ -36,3 +36,25 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+## Solution Approach 
+* If the number repeats itself in the process then its not a happy number, we define a set to keep track of all the number we encounter then return False if a number in that set is detected again. 
+* WE do the algorithm and if the result is `1` we return True 
+
+```python
+class Solution:
+    def isHappy(self, n: int) -> bool:
+        unique_result = set()
+        while n not in unique_result:
+            unique_result.add(n)
+            temp_sum = 0
+            for num in str(n):
+                temp_sum += int(num)**2
+            
+            if temp_sum == 1:
+                return True
+            else:
+                n = temp_sum
+    
+        return False
+```
