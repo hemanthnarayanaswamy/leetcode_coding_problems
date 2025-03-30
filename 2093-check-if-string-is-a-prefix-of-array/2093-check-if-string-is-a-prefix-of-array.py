@@ -4,10 +4,7 @@ class Solution:
 
         for word in words:
             result += word
-            if len(result) >=len(s):
-                if result == s:
-                    return True
-                else:
-                    return False
-        
+            if result == s:
+                return True
+
         return False
