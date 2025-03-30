@@ -31,3 +31,21 @@ It is impossible to make s using a prefix of arr.</pre>
 	<li><code>1 &lt;= s.length &lt;= 1000</code></li>
 	<li><code>words[i]</code> and <code>s</code> consist of only lowercase English letters.</li>
 </ul>
+
+
+## Solution Approach 
+* Use variable `result` to store a temp prefix string while iterating the list
+* At any point if result equal to s return True
+
+```python
+class Solution:
+    def isPrefixString(self, s: str, words: List[str]) -> bool:
+        result = ""
+
+        for word in words:
+            result += word
+            if result == s:
+                return True
+
+        return False
+```
