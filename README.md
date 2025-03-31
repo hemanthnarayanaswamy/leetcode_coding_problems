@@ -41,6 +41,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0128-longest-consecutive-sequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0128-longest-consecutive-sequence) |
 | [0136-single-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0136-single-number) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0169-majority-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0219-contains-duplicate-ii) |
 | [0228-summary-ranges](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0228-summary-ranges) |
@@ -108,6 +109,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0041-first-missing-positive](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0041-first-missing-positive) |
 | [0049-group-anagrams](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0128-longest-consecutive-sequence) |
+| [0169-majority-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0202-happy-number) |
 | [0217-contains-duplicate](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0219-contains-duplicate-ii) |
@@ -247,6 +249,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0056-merge-intervals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0088-merge-sorted-array) |
+| [0169-majority-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0268-missing-number) |
@@ -274,6 +277,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Counting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0383-ransom-note) |
 | [0451-sort-characters-by-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0451-sort-characters-by-frequency) |
@@ -373,6 +377,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0004-median-of-two-sorted-arrays) |
+| [0169-majority-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0347-top-k-frequent-elements) |
 | [0948-sort-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0948-sort-an-array) |
 ## Quickselect
