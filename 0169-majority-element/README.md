@@ -21,3 +21,39 @@
 
 <p>&nbsp;</p>
 <strong>Follow-up:</strong> Could you solve the problem in linear time and in <code>O(1)</code> space?
+
+#### My approach 
+1. define the dict 
+2. iterrate through the array and if the element in dict add one and check if that value if > than n/2 and so 
+3. This is the solution based off my approach 
+```python 
+from collections import Counter 
+
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        n = len(nums)
+    
+        nums = Counter(nums)
+
+        for key, value in nums.items():
+            if value > n // 2:
+                return key
+```
+4. Optimal solution 
+```python 
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        maxi=len(nums)//2
+        for i in set(nums):
+            if nums.count(i)>maxi:
+                return i
+```
+
+
+```python
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        sam=Counter(nums)
+        sor=sorted(sam.items(), key=lambda x:x[1], reverse=True)
+        return (sor[0][0])
+```
