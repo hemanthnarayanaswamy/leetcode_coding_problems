@@ -6,7 +6,6 @@ class Solution:
         count = 0
 
         for jewel in jewels:
-            if jewel in stones_freq:
-                count += stones_freq[jewel]
+            count += stones_freq.get(jewel, 0)
         
         return count
