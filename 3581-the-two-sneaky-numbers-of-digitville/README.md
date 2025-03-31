@@ -48,3 +48,34 @@
 	<li data-stringify-border="0" data-stringify-indent="1"><code data-stringify-type="code">0 &lt;= nums[i] &lt; n</code></li>
 	<li data-stringify-border="0" data-stringify-indent="1">The input is generated such that <code>nums</code> contains <strong>exactly</strong> two repeated elements.</li>
 </ul>
+
+## Solution Approach 
+* Generate the Frequency of the nums 
+* Return num if the Frequency is `==2`
+
+```python
+from collections import Counter 
+
+class Solution:
+    def getSneakyNumbers(self, nums: List[int]) -> List[int]:
+        nums_freq = Counter(nums)
+        return [key for key, value in nums_freq.items() if value == 2]
+```
+
+## Optimal solution
+
+```python
+from collections import Counter 
+
+class Solution:
+    def getSneakyNumbers(self, nums: List[int]) -> List[int]:
+        freq = {}
+        res = []
+        for num in nums:
+            freq[num] = freq.get(num, 0) + 1
+            if freq[num] == 2:
+                res.append(num)
+            
+            if len(res) == 2:
+                return res
+```
