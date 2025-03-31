@@ -3,10 +3,10 @@ class Solution:
         
         major_condition = len(nums) // 3
         result = []
-        nums = Counter(nums)
+        nums_freq = Counter(nums)
 
-        for key, value in nums.items():
+        for key, value in nums_freq.items():
             if value > major_condition:
                 result.append(key)
-                
+
         return result
