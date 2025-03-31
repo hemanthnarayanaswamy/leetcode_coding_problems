@@ -18,3 +18,38 @@
 	<li><code>jewels</code> and <code>stones</code> consist of only English letters.</li>
 	<li>All the characters of&nbsp;<code>jewels</code> are <strong>unique</strong>.</li>
 </ul>
+
+## Solution Approach 
+* Count the Stones Frequency
+* For each jewel add the freq of that jewel in stones
+
+```python
+from collections import Counter
+
+class Solution:
+    def numJewelsInStones(self, jewels: str, stones: str) -> int:
+        stones = Counter(stones)
+        count = 0
+
+        for jewel in jewels:
+            count += stones.get(jewel, 0)
+        
+        return count
+```
+
+## Optimal Solution
+
+```python
+class Solution:
+    def numJewelsInStones(self, jewels: str, stones: str) -> int:
+        from collections import defaultdict
+        d1 = defaultdict(int)
+				
+        for i in jewels:    # Start a deafult dict and initial all jewel elements val to zero
+            d1[i] = 0
+						
+        for i in stones:
+            if i in d1:   # If stone is a jewel add one
+                d1[i]+=1
+        return sum(d1.values())   # Return sum of default dict that stones the occuance of jewel in stones
+```
