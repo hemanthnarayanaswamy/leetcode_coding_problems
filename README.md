@@ -18,6 +18,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [2032-largest-odd-number-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2032-largest-odd-number-in-string) |
+| [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 ## Array
 |  |
@@ -282,6 +283,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [2148-minimum-number-of-moves-to-seat-everyone](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2148-minimum-number-of-moves-to-seat-everyone) |
 | [2215-finding-3-digit-even-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2215-finding-3-digit-even-numbers) |
+| [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
 | [2561-number-of-distinct-averages](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2561-number-of-distinct-averages) |
 | [2887-sort-vowels-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2887-sort-vowels-in-a-string) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3241-divide-array-into-arrays-with-max-difference) |
@@ -342,6 +344,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2077-largest-number-after-mutating-substring](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2077-largest-number-after-mutating-substring) |
 | [2148-minimum-number-of-moves-to-seat-everyone](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2148-minimum-number-of-moves-to-seat-everyone) |
 | [2154-minimum-moves-to-convert-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2154-minimum-moves-to-convert-string) |
+| [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3262-find-polygon-with-the-largest-perimeter) |
