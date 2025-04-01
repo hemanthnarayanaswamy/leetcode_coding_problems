@@ -29,6 +29,88 @@
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
+# Solution Approach 
+* Convert the string into List 
+* Iterate through the list and store all the vowels in a temp list and mark the vowel places in the s_list
+* Sort the Temp List of vowels and 
+* Once Again iterate through the List of String List 
+* If you detected a marked character then Pop from the temp list of vowels and add to str 
+* Returns the joined version of string list 
+
+```python
+class Solution:
+    def sortVowels(self, s: str) -> str:
+        s_vowel = {'a', 'e', 'i', 'o', 'u'}
+        s = list(s)
+        temp = []
+        for i in range(len(s)):
+            if s[i].lower() in s_vowel:
+                temp.append(s[i])
+                s[i] = '*'
+        temp.sort()
+
+        for i in range(len(s)-1, -1, -1):
+            if s[i] == '*':
+                s[i] = temp.pop()
+        
+        return ''.join(s)
+```
+
+## Improved Version
+```python
+class Solution:
+    def sortVowels(self, s: str) -> str:
+        s_vowel = {'a', 'e', 'i', 'o', 'u'}
+        s = list(s)
+        temp = []
+        for i in range(len(s)):
+            if s[i].lower() in s_vowel:
+                temp.append(s[i])
+                s[i] = '*'
+        temp.sort(reverse=True)
+
+        for i in range(len(s)):
+            if s[i] == '*':
+                s[i] = temp.pop()
+        
+        return ''.join(s)
+```
+```python
+class Solution:
+    def sortVowels(self, s: str) -> str:
+        s_vowel = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
+        s = list(s)
+        temp = []
+        for i in range(len(s)):
+            if s[i] in s_vowel:
+                temp.append(s[i])
+                s[i] = '_'
+        temp.sort(reverse=True)
+
+        for i in range(len(s)):
+            if s[i] == '_':
+                s[i] = temp.pop()
+        
+        return ''.join(s)
+```
+
+## Optimal Solution 
+```python
+class Solution:
+    def sortVowels(self, s: str) -> str:
+        vowels = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
+        count_char = Counter(s)
+        s_vowels = []
+        for char in count_char.keys():
+            if char in vowels:
+                s_vowels.append(char)                
+                s = s.replace(char, '_')                              
+        s_vowels.sort()
+        for char in s_vowels:
+            s = s.replace('_', char, count_char[char])
+        return s
+```
+
 <ul>
 	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>s</code> consists only of letters of the&nbsp;English alphabet&nbsp;in <strong>uppercase and lowercase</strong>.</li>
