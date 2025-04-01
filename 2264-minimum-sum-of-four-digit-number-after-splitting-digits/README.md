@@ -31,3 +31,29 @@ The minimum sum can be obtained by the pair [4, 9]: 4 + 9 = 13.
 <ul>
 	<li><code>1000 &lt;= num &lt;= 9999</code></li>
 </ul>
+
+# Solution 
+* Convert the num in str and then into a sorted list 
+* By the problem we know the num range between 1000 and 9999, Only 4 digits 
+
+```python
+class Solution:
+    def minimumSum(self, num: int) -> int:
+        nums = sorted(str(num))
+        return int(nums[0]+nums[3]) + int(nums[1]+nums[2])
+```
+
+## Without Sorting 
+```python
+class Solution:
+    def minimumSum(self, num: int) -> int:
+        l = []
+        l = [int(i) for i in str(num)]
+        for i in range(len(l)):
+            for j in range(i+1,len(l)):
+                if l[i] > l[j]:
+                    l[i],l[j]=l[j],l[i]
+        num1=l[0]*10 + l[2]
+        num2=l[1]*10 + l[3]
+        return num1+num2
+```
