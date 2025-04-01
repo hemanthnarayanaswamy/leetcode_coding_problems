@@ -55,3 +55,117 @@ It takes a total of 7 + 15 + 15 = 37 minutes to collect all the garbage.
 	<li><code>travel.length == garbage.length - 1</code></li>
 	<li><code>1 &lt;= travel[i] &lt;= 100</code></li>
 </ul>
+
+# Solution Approach
+* We calculate the prefix of the time travelled.
+```
+travel_prefix = [0]
+
+    for time in travel:
+        travel_prefix.append(travel_prefix[-1]+time)
+```
+* And Keep the Count of all the types of grabages.
+```
+overall_garbage = ''.join(garbage)
+    t_m = overall_garbage.count('M')
+    t_p = overall_garbage.count('P')
+    t_g = overall_garbage.count('G')
+```
+* Now we do 3 seperate iterations from the end of the array
+* If any type of garbage is detected at any position then we compute the time as ```count of Grabage + Prefix Time required to travel to that Position```
+
+```python
+class Solution:
+    def garbageCollection(self, garbage: List[str], travel: List[int]) -> int:
+        travel_prefix = [0]
+
+        for time in travel:
+            travel_prefix.append(travel_prefix[-1]+time)
+        
+        overall_garbage = ''.join(garbage)
+        t_m = overall_garbage.count('M')
+        t_p = overall_garbage.count('P')
+        t_g = overall_garbage.count('G')
+
+        for i in range(len(garbage)-1, -1, -1):
+            if 'M' in garbage[i]:
+                t_m += travel_prefix[i]
+                break
+
+        for i in range(len(garbage)-1, -1, -1):
+            if 'P' in garbage[i]:
+                t_p += travel_prefix[i]
+                break
+
+        for i in range(len(garbage)-1, -1, -1):
+            if 'G' in garbage[i]:
+                t_g += travel_prefix[i]
+                break
+
+        return t_m + t_p + t_g
+```
+
+## Improved Solution 
+```python
+class Solution:
+    def garbageCollection(self, garbage: List[str], travel: List[int]) -> int:
+        # Step 1: Build prefix sum for travel
+        n = len(garbage)
+        travel_prefix = [0] * n
+        for i in range(1, n):
+            travel_prefix[i] = travel_prefix[i-1] + travel[i-1]
+        
+        total_pickups = {'M': 0, 'P': 0, 'G': 0}
+        last_seen = {'M': 0, 'P': 0, 'G': 0}
+
+        # Step 2: Count pickups and record last house for each type
+        for i, types_garbage in enumerate(garbage):
+            for char in types_garbage:
+                total_pickups[char] += 1
+                last_seen[char] = i
+
+        # Step 3: Calculate total time
+        total_time = 0
+        
+        for char in ['M', 'P', 'G']:
+            if total_pickups[char] > 0:
+                total_time += total_pickups[char] + travel_prefix[last_seen[char]]
+
+        return total_time
+```
+
+## Optimal Solution 
+```python
+class Solution:
+    def garbageCollection(self, garbage: List[str], travel: List[int]) -> int:
+        # Step 1: Build prefix sum for travel
+        n = len(garbage)
+
+        travel_prefix = [0] * n
+        for i in range(1, n):
+            travel_prefix[i] = travel_prefix[i-1] + travel[i-1]
+        
+        travel_prefix = travel_prefix [::-1]
+        garbage = garbage[::-1]
+
+        total_time = 0
+        M, P, G = 1, 1, 1
+
+        for i in range(n):
+            if "M" in garbage[i] and M:
+                total_time += travel_prefix[i]
+                M = 0
+            if "G" in garbage[i] and G:
+                total_time += travel_prefix[i]
+                G = 0
+            if "P" in garbage[i] and P:
+                total_time += travel_prefix[i]
+                P = 0
+
+            if not(P) and not(G) and not(M):
+                break
+        
+        total_time += len("".join(garbage))
+
+        return total_time
+```
