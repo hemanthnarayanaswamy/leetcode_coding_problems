@@ -2,25 +2,31 @@ class Solution:
     def garbageCollection(self, garbage: List[str], travel: List[int]) -> int:
         # Step 1: Build prefix sum for travel
         n = len(garbage)
+
         travel_prefix = [0] * n
         for i in range(1, n):
             travel_prefix[i] = travel_prefix[i-1] + travel[i-1]
         
-        total_pickups = {'M': 0, 'P': 0, 'G': 0}
-        last_seen = {'M': 0, 'P': 0, 'G': 0}
+        travel_prefix = travel_prefix [::-1]
+        garbage = garbage[::-1]
 
-        # Step 2: Count pickups and record last house for each type
-        for i, types_garbage in enumerate(garbage):
-            for char in types_garbage:
-                total_pickups[char] += 1
-                last_seen[char] = i
-
-        # Step 3: Calculate total time
         total_time = 0
+        M, P, G = 1, 1, 1
+
+        for i in range(n):
+            if "M" in garbage[i] and M:
+                total_time += travel_prefix[i]
+                M = 0
+            if "G" in garbage[i] and G:
+                total_time += travel_prefix[i]
+                G = 0
+            if "P" in garbage[i] and P:
+                total_time += travel_prefix[i]
+                P = 0
+
+            if not(P) and not(G) and not(M):
+                break
         
-        for char in ['M', 'P', 'G']:
-            if total_pickups[char] > 0:
-                total_time += total_pickups[char] + travel_prefix[last_seen[char]]
+        total_time += len("".join(garbage))
 
         return total_time
-        
