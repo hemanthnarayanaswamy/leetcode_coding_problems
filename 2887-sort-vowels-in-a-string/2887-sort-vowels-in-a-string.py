@@ -7,9 +7,9 @@ class Solution:
             if s[i].lower() in s_vowel:
                 temp.append(s[i])
                 s[i] = '*'
-        temp.sort()
+        temp.sort(reverse=True)
 
-        for i in range(len(s)-1, -1, -1):
+        for i in range(len(s)):
             if s[i] == '*':
                 s[i] = temp.pop()
         
