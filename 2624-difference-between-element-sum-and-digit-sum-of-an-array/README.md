@@ -39,3 +39,29 @@ The absolute difference between the element sum and digit sum is |10 - 10| = 0.
 	<li><code>1 &lt;= nums.length &lt;= 2000</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 2000</code></li>
 </ul>
+
+# Solution
+
+* Conversion method from str to int and back and forth
+```python
+class Solution:
+    def differenceOfSum(self, nums: List[int]) -> int:
+        sum_digits = sum(int(i) for i in ''.join([str(num) for num in nums]))
+
+        return abs(sum_digits - sum(nums))
+```
+
+## Math Method 
+```python
+class Solution:
+    def differenceOfSum(self, nums: List[int]) -> int:
+        element_sum, digit_sum = 0, 0
+
+        for num in nums:
+            element_sum += num 
+            while num:
+                digit_sum += num % 10 
+                num = num // 10
+                
+        return abs(element_sum - digit_sum)
+```
