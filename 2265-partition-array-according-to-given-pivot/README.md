@@ -43,3 +43,75 @@ The relative ordering of the elements less than and greater than pivot is also m
 	<li><code>-10<sup>6</sup> &lt;= nums[i] &lt;= 10<sup>6</sup></code></li>
 	<li><code>pivot</code> equals to an element of <code>nums</code>.</li>
 </ul>
+
+# Solution Approach 
+* Initiate 3 different arrays to store nums greater, lesser and equal to the pivot number
+* reture the concatinated form of all the three arrays. 
+
+```python
+class Solution:
+    def pivotArray(self, nums: List[int], pivot: int) -> List[int]:
+        pivot_greater = []
+        pivot_lesser = [] 
+        pivot_equal = []
+
+        for num in nums:
+            if num > pivot:
+                pivot_greater.append(num)
+            elif num < pivot:
+                pivot_lesser.append(num)
+            else:
+                pivot_equal.append(num)
+        
+        return pivot_lesser+pivot_equal+pivot_greater
+```
+## Improved Version
+```python
+class Solution:
+    def pivotArray(self, nums: List[int], pivot: int) -> List[int]:
+        pivot_greater = []
+        pivot_lesser = [] 
+        pivot_equal = []
+
+        for num in nums:
+            if num > pivot:
+                pivot_greater.append(num)
+            elif num < pivot:
+                pivot_lesser.append(num)
+            else:
+                pivot_equal.append(num)
+        
+        pivot_lesser.extend(pivot_equal)           ## Use Extend 
+        pivot_lesser.extend(pivot_greater)
+        
+        return pivot_lesser
+```
+
+## Two Pointer Approach 
+* Initialize a fixed-sized array ans to contain our rearranged array.
+* Initialize pointer for first section lessI = 0 going left to right.
+* Initialize pointer for third section greaterI = nums.length - 1 going right to left.
+* Start a forward and backward iteration of nums. For forward, we initialize i = 0. For backward, we initialize j = nums.length - 1. For each iteration:
+
+```python
+class Solution:
+    def pivotArray(self, nums: List[int], pivot: int) -> List[int]:
+        n = len(nums)
+        result = [0] * n
+        left = 0
+        right = n - 1 
+
+        for i,j in zip(range(n), range(n-1,-1,-1)):
+            if nums[i] < pivot:
+                result[left] = nums[i]
+                left += 1
+            if nums[j] > pivot:
+                result[right] = nums[j]
+                right -= 1 
+        
+        while left <= right:
+            result[left] = pivot
+            left += 1
+        
+        return result
+```
