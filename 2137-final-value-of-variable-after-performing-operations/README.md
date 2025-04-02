@@ -54,3 +54,18 @@ X--: X is decremented by 1, X = 1 - 1 = 0.
 	<li><code>1 &lt;= operations.length &lt;= 100</code></li>
 	<li><code>operations[i]</code> will be either <code>&quot;++X&quot;</code>, <code>&quot;X++&quot;</code>, <code>&quot;--X&quot;</code>, or <code>&quot;X--&quot;</code>.</li>
 </ul>
+
+## Solution
+```python
+class Solution:
+    def finalValueAfterOperations(self, operations: List[str]) -> int:
+        result = 0
+
+        for operation in operations:
+            if '+' in operation:
+                result += 1
+            else:
+                result += -1 
+        
+        return result
+```
