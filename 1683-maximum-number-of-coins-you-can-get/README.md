@@ -46,3 +46,41 @@ On the other hand if we choose this arrangement (1, <strong>2</strong>, 8), (2, 
 	<li><code>piles.length % 3 == 0</code></li>
 	<li><code>1 &lt;= piles[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+## Solution Approach 
+* You are always picking the second max from the set of three always 
+* Your files will pick the 3rd by default 
+* You job is to choose the set of 3 piles with 2 are max and 1 min.
+* I that logic your are picking n times ` n= len(piles) //3 ` the  second max number , which is are index `i = 1, 3, 5, 7, 9 .........`
+```python 
+class Solution:
+    def maxCoins(self, piles: List[int]) -> int:
+        piles.sort(reverse=True)
+
+        my_coins = 0
+        n = len(piles) // 3
+
+        for i in range(1,3*n, 2):
+            my_coins += piles[i]
+            n -= 1
+            if n == 0:
+                break 
+        
+        return my_coins
+```
+
+## Improved Solution
+
+```python
+class Solution:
+    def maxCoins(self, piles: List[int]) -> int:
+        piles.sort()
+        coinCount = 0
+        n = len(piles)
+        
+        for _ in range(n//3):
+            n -=2
+            coinCount += piles[n]
+
+        return coinCount
+```
