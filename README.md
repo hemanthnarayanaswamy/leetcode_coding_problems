@@ -11,6 +11,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0066-plus-one](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0066-plus-one) |
 | [0067-add-binary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0067-add-binary) |
 | [0202-happy-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0202-happy-number) |
+| [0258-add-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0258-add-digits) |
 | [0268-missing-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0268-missing-number) |
 | [0412-fizz-buzz](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0412-fizz-buzz) |
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
@@ -213,6 +214,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0067-add-binary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0067-add-binary) |
+| [0258-add-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0258-add-digits) |
 | [0412-fizz-buzz](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0412-fizz-buzz) |
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
 | [2048-build-array-from-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2048-build-array-from-permutation) |
@@ -430,4 +432,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0561-array-partition](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0561-array-partition) |
 | [0948-sort-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0948-sort-an-array) |
 | [2148-minimum-number-of-moves-to-seat-everyone](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2148-minimum-number-of-moves-to-seat-everyone) |
+## Number Theory
+|  |
+| ------- |
+| [0258-add-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0258-add-digits) |
 <!---LeetCode Topics End-->
