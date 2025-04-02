@@ -12,6 +12,8 @@ class Solution:
             else:
                 pivot_equal.append(num)
         
-        return pivot_lesser+pivot_equal+pivot_greater
-
+        pivot_lesser.extend(pivot_equal)
+        pivot_lesser.extend(pivot_greater)
+        
+        return pivot_lesser
         
