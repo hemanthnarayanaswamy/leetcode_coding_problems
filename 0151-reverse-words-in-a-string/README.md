@@ -41,3 +41,28 @@
 
 <p>&nbsp;</p>
 <p><b data-stringify-type="bold">Follow-up:&nbsp;</b>If the string data type is mutable in your language, can&nbsp;you solve it&nbsp;<b data-stringify-type="bold">in-place</b>&nbsp;with&nbsp;<code data-stringify-type="code">O(1)</code>&nbsp;extra space?</p>
+
+
+## Solution Approach 
+* `sprip()` and `split()` and `reverse` string 
+* Then join the string 
+
+* To remove the other extra spaces user the `re` module 
+```python
+re.sub(' +', ' ', s)
+# Substitube is ' +' extra space with ' ' is string
+```
+```python
+import re
+
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        return ' '.join(re.sub(' +', ' ', s).strip().split(' ')[:: -1])
+```
+
+## Optimal Solution
+```python
+def stringwith3a3b(s):
+    reversed_split_word = ' '.join(s.split()[::-1])
+    return reversed_split_word
+```
