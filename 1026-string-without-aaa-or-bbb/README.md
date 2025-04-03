@@ -29,3 +29,80 @@
 	<li><code>0 &lt;= a, b &lt;= 100</code></li>
 	<li>It is guaranteed such an <code>s</code> exists for the given <code>a</code> and <code>b</code>.</li>
 </ul>
+
+
+## Solution Approach 
+* Run a while loop until the result lenght is same as `a+b` 
+* If either of a or b is zero, add the rest and break the loop 
+* If `a>b` add 'aab` 
+* If `b>a` add 'bba' 
+* else `ab`
+
+```python
+def stringwith3a3b(a, b):
+    result = ''
+    total_lenght =  a+b
+
+    while len(result) < total_lenght:
+        if a == 0 or b == 0:
+            if a == 0:
+                print('a is zero')
+                result += 'b'*b
+                break
+            else:
+                print('b is zero')
+                result += 'a'*a
+                break
+        elif a > b:
+            print('a is greater')
+            result += 'aab'
+            a -= 2
+            b -= 1
+        elif b > a:
+            print('b is greater')
+            result += 'bba'
+            b -= 2
+            a -= 1
+        else:
+            result += 'ab'
+            a -= 1
+            b -= 1
+        print(result, a, b)
+
+    return result
+```
+
+## Improved Solution
+* After doing the check 
+* Do a final check to see if anything is zero, if yes add the other rest of the elements and break the loop 
+
+```python
+class Solution:
+    def strWithout3a3b(self, a: int, b: int) -> str:
+        result = ''
+        total_lenght = a+b
+
+        while len(result) < total_lenght:
+            if a > b:
+                result += 'aab'
+                a -= 2
+                b -= 1
+            elif b > a:
+                result += 'bba'
+                b -= 2
+                a -= 1
+            else:
+                result += 'ab'
+                a -= 1
+                b -= 1
+
+            if a == 0 or b == 0:
+                if a == 0:
+                    result += 'b'*b
+                    break
+                else:
+                    result += 'a'*a
+                    break
+
+        return result
+```
