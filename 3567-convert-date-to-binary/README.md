@@ -37,3 +37,13 @@
 	<li><code>date[4] == date[7] == &#39;-&#39;</code>, and all other <code>date[i]</code>&#39;s are digits.</li>
 	<li>The input is generated such that <code>date</code> represents a valid Gregorian calendar date between Jan 1<sup>st</sup>, 1900 and Dec 31<sup>st</sup>, 2100 (both inclusive).</li>
 </ul>
+
+# Solution 
+* use `bin()` method to convert the int to binary but the output will be in the form `'0b110'--> which is string not int` so we slice the value to start from `[2:]`
+```python
+class Solution:
+    def convertDateToBinary(self, date: str) -> str:
+        date_range = [bin(int(field))[2:] for field in date.split('-')]
+    
+        return '-'.join(date_range)
+```
