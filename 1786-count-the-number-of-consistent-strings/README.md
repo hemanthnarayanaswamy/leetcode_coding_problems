@@ -37,3 +37,21 @@
 	<li>The characters in <code>allowed</code> are <strong>distinct</strong>.</li>
 	<li><code>words[i]</code> and <code>allowed</code> contain only lowercase English letters.</li>
 </ul>
+
+# Solution 
+* We can use the Brute Force Approach to complete the solution.
+* We initialize the count to len of words 
+* If a char in word not in the allowed set of strings we reduce the count.
+
+```python
+class Solution:
+    def countConsistentStrings(self, allowed: str, words: List[str]) -> int:
+        allowed_set = set(allowed)
+        count = len(words)
+        for word in words:
+            for char in word:
+                if char not in allowed_set:
+                    count -= 1
+                    break 
+        return count
+ ```
