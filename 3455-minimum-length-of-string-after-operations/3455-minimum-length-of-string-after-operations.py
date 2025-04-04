@@ -1,18 +1,9 @@
-from collections import Counter
-
 class Solution:
     def minimumLength(self, s: str) -> int:
-        s_freq = Counter(s)
         count = 0
-
-        for k,v in s_freq.items():
-            if v >= 3:
-                if v % 2 == 0:
-                    count += 2
-                else:
-                    count += 1
+        for char in set(s):
+            if s.count(char) % 2:
+                count += 1
             else:
-                count += v
-            
+                count += 2
         return count
-        
