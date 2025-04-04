@@ -45,3 +45,45 @@ We cannot perform any operations, so we return the length of the original string
 	<li><code>1 &lt;= s.length &lt;= 2 * 10<sup>5</sup></code></li>
 	<li><code>s</code> consists only of lowercase English letters.</li>
 </ul>
+
+# Solution Approach 
+* Only the frequency of each character matters in finding the final answer.
+* Suppose there is a character that occurs at least 3 times in the string, we can repeatedly delete two of these characters until there are at most 2 occurrences left of it.
+* So if the ffrequency of that character is `>3` and that number is even after delecting everything we should atleast have 2 left at the end 
+* But if its odd then only 1 will be left in the end 
+
+```python
+from collections import Counter
+
+class Solution:
+    def minimumLength(self, s: str) -> int:
+        s_freq = Counter(s)
+        count = 0
+
+        for k,v in s_freq.items():
+            if v >= 3:
+                if v % 2 == 0:
+                    count += 2
+                else:
+                    count += 1
+            else:
+                count += v
+            
+        return count
+ ```
+ 
+ ## Optimal Solution
+ 
+```python
+class Solution:
+    def minimumLength(self, s: str) -> int:
+        ans = 0
+        for i in set(s):
+            if s.count(i) % 2:
+                ans += 1
+            else:
+                ans += 2
+        return ans
+```
+*if  ` s.count(i) % 2` exists that is not zero then add += 1
+* else += 2
