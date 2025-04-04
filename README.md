@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0009-palindrome-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0009-palindrome-number) |
 | [0013-roman-to-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0013-roman-to-integer) |
+| [0043-multiply-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0043-multiply-strings) |
 | [0066-plus-one](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0066-plus-one) |
 | [0067-add-binary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0067-add-binary) |
 | [0202-happy-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0202-happy-number) |
@@ -168,6 +169,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0005-longest-palindromic-substring](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0005-longest-palindromic-substring) |
 | [0013-roman-to-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0014-longest-common-prefix) |
+| [0043-multiply-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0043-multiply-strings) |
 | [0049-group-anagrams](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0049-group-anagrams) |
 | [0058-length-of-last-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0058-length-of-last-word) |
 | [0067-add-binary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0067-add-binary) |
@@ -221,6 +223,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Simulation
 |  |
 | ------- |
+| [0043-multiply-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0043-multiply-strings) |
 | [0067-add-binary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0067-add-binary) |
 | [0258-add-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0258-add-digits) |
 | [0412-fizz-buzz](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0412-fizz-buzz) |
