@@ -65,3 +65,78 @@ A <strong>subarray</strong> is a contiguous sequence of elements within an array
 	<li><code>0 &lt;= nums[i] &lt;= 50</code></li>
 	<li><code>1 &lt;= k &lt;= nums.length</code></li>
 </ul>
+
+
+# Solution
+* Solve the problem for three different cases: k = 1, k = n, and 1 < k < n
+* If k = 1, return the largest element that occurs exactly once in nums
+* If k = n, return the largest element in nums
+* If 1 < k < n, all elements different from nums[0] and nums[n - 1] will occur in more than one subarray of size k. Hence, the answer is the largest of nums[0] and nums[n - 1] if they both occur exactly once in the array. If one of them occurs more than once, return the other. If both of them occur more than once, return -1.
+
+```python
+from collections import Counter 
+
+class Solution:
+    def largestInteger(self, nums: List[int], k: int) -> int:
+        nums_freq = Counter(nums)
+        n = len(nums)
+
+        if k == 1:        # We need to make sure the freq of element should be 1 and element should be max in the array
+            res = -1
+            for key, val in nums_freq.items():
+                if val == 1 and key > res:
+                    res = key
+            return res
+
+        elif k == n:
+            return max(nums)
+
+        elif 1 < k < n:
+            count_first = nums_freq[nums[0]]
+            count_last = nums_freq[nums[-1]]
+            if count_first > 1 and count_last > 1:
+                return -1
+            else:
+                if count_first > 1 and count_last == 1:
+                    return nums[-1]
+                elif count_first == 1 and count_last > 1:
+                    return nums[0]
+                else:
+                    return max(nums[0], nums[-1])
+```
+	
+## Improved Solution 
+	
+```python
+from collections import Counter 
+
+class Solution:
+    def largestInteger(self, nums: List[int], k: int) -> int:
+        nums_freq = Counter(nums)
+        n = len(nums)
+
+        # Case 1: If k == 1, return largest unique number (frequency == 1)
+        if k == 1:
+            max_unique = -1
+            for num, freq in nums_freq.items():
+                if freq == 1 and num > max_unique:
+                    max_unique = num
+            return max_unique
+
+        # Case 2: If k == length of nums, just return the max
+        if k == n:
+            return max(nums)
+
+        # Case 3: If 1 < k < n, custom logic
+        count_first = nums_freq[nums[0]]
+        count_last = nums_freq[nums[-1]]
+
+        if count_first > 1 and count_last > 1:
+            return -1
+        elif count_first > 1:
+            return nums[-1]
+        elif count_last > 1:
+            return nums[0]
+        else:
+            return max(nums[0], nums[-1])
+```
