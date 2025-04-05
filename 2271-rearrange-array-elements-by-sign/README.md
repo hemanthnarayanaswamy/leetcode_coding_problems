@@ -44,3 +44,61 @@ So nums is rearranged to [1,-1].
 
 <p>&nbsp;</p>
 It is not required to do the modifications in-place.
+
+# Solution Approach 
+* Seperate the positive and negative numbers 
+* and Do a zip for both positive and negative arrays 
+* Append the result in alternate order
+
+```python
+class Solution:
+    def rearrangeArray(self, nums: List[int]) -> List[int]:
+        postive_arr = [] 
+        negative_arr = []
+        result = []
+
+        for num in nums:
+            if num < 0:
+                negative_arr.append(num)
+            else:
+                postive_arr.append(num)
+        
+        for pos, neg in zip(postive_arr, negative_arr):
+            result.append(pos)
+            result.append(neg)
+
+        return result
+```
+* Code is working but it is using up alot of space and more compute time 
+
+## Improved Solution 
+```python
+class Solution:
+    def rearrangeArray(self, nums: List[int]) -> List[int]:
+        positive_idx = 0 
+        negative_idx = 1
+        result = [0]*len(nums)
+
+        for num in nums:
+            if num >= 0:
+                result[positive_idx] = num
+                positive_idx += 2
+            else:
+                result[negative_idx] = num
+                negative_idx += 2
+
+        return result
+```
+	---------------------------------------------------------------------------------------
+```python
+class Solution:
+    def rearrangeArray(self, a: List[int]) -> List[int]:
+        pos=[]
+        neg=[]
+        res=[]
+        for i in a:
+            (pos if i>0 else neg).append(i)
+        res=[0]*len(a)
+        res[::2],res[1::2]=pos,neg
+        return res
+```
