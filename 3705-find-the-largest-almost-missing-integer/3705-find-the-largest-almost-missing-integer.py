@@ -5,25 +5,27 @@ class Solution:
         nums_freq = Counter(nums)
         n = len(nums)
 
+        # Case 1: If k == 1, return largest unique number (frequency == 1)
         if k == 1:
-            res = -1
-            for key, val in nums_freq.items():
-                if val == 1 and key > res:
-                    res = key
-            return res
+            max_unique = -1
+            for num, freq in nums_freq.items():
+                if freq == 1 and num > max_unique:
+                    max_unique = num
+            return max_unique
 
-        elif k == n:
+        # Case 2: If k == length of nums, just return the max
+        if k == n:
             return max(nums)
 
-        elif 1 < k < n:
-            count_first = nums_freq[nums[0]]
-            count_last = nums_freq[nums[-1]]
-            if count_first > 1 and count_last > 1:
-                return -1
-            else:
-                if count_first > 1 and count_last == 1:
-                    return nums[-1]
-                elif count_first == 1 and count_last > 1:
-                    return nums[0]
-                else:
-                    return max(nums[0], nums[-1])
+        # Case 3: If 1 < k < n, custom logic
+        count_first = nums_freq[nums[0]]
+        count_last = nums_freq[nums[-1]]
+
+        if count_first > 1 and count_last > 1:
+            return -1
+        elif count_first > 1:
+            return nums[-1]
+        elif count_last > 1:
+            return nums[0]
+        else:
+            return max(nums[0], nums[-1])
