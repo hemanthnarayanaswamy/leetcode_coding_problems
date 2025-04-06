@@ -34,3 +34,20 @@
 	<li><code>2 &lt;= s.length &lt;= 100</code></li>
 	<li><code>s</code> consists only of lowercase English letters.</li>
 </ul>
+
+# Solution Approach 
+* Initialize a variable score to 0 to store the cumulative sum.
+* Iterate over all indices from 0 to length - 1 of the input string. For each index, calculate the absolute difference between the ASCII values of * * the character at the current index and the character at the next index. Add this difference to the score.
+Return the score after the loop completes.
+
+```python
+class Solution:
+    def scoreOfString(self, s: str) -> int:
+        score = 0
+        # Iterate over all indices from 0 to the second-to-last index
+        # Calculate and accumulate the absolute difference of ASCII values
+        # between adjacent characters
+        for i in range(len(s) - 1):
+            score += abs(ord(s[i]) - ord(s[i + 1]))
+        return score
+```
