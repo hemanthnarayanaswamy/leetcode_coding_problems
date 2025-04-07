@@ -37,3 +37,113 @@ For the subdomains, we will visit &quot;mail.com&quot; 900 + 1 = 901 times, &quo
 	<li><code>rep<sub>i</sub></code> is an integer in the range <code>[1, 10<sup>4</sup>]</code>.</li>
 	<li><code>d1<sub>i</sub></code>, <code>d2<sub>i</sub></code>, and <code>d3<sub>i</sub></code> consist of lowercase English letters.</li>
 </ul>
+
+# Solution 
+* Split the URL and Count
+* Then split the URL 
+```python
+class Solution:
+    def subdomainVisits(self, cpdomains: List[str]) -> List[str]:
+        url_visit = dict()
+        subdomain_visit = dict()
+        tld_visit =  dict()
+        result = []
+
+        for data in cpdomains:
+            data_split = data.split(" ")
+            data_domian_split = data_split[1].split('.')
+            url_visit[data_split[1]] = url_visit.get(data_split[1], 0) + int(data_split[0])
+            tld_visit[data_domian_split[-1]] = tld_visit.get(data_domian_split[-1], 0) + int(data_split[0])
+            if len(data_domian_split) > 2:
+                subdomain_visit['.'.join(data_domian_split[1:])] = subdomain_visit.get('.'.join(data_domian_split[1:]), 0) + int(data_split[0])
+        
+        for chars, count in url_visit.items():
+            result.append(str(count)+" "+chars)
+        for chars, count in subdomain_visit.items():
+            result.append(str(count)+" "+chars)
+        for chars, count in tld_visit.items():
+            result.append(str(count)+" "+chars)
+
+        return result
+```
+* The code has a logical issue when handling subdomains. Specifically, the `subdomain_visit` dictionary only accounts for subdomains starting from the second level (e.g., `example.com` from `sub.example.com`). However, it does not handle all possible subdomain levels correctly. For example, if there are three or more levels (e.g., `a.b.c.com`), it only considers `b.c.com` and ignores `c.com`.
+
+### Fix:
+* You need to iterate through all possible subdomain levels and update the `subdomain_visit` dictionary for each level. Here's the corrected code:
+
+```python
+def subDomianVisit(cpdomain):
+    url_visit = dict()
+    subdomain_visit = dict()
+    tld_visit = dict()
+    result = []
+
+    for data in cpdomain:
+        data_split = data.split(" ")
+        count = int(data_split[0])
+        domain_parts = data_split[1].split('.')
+
+        # Update full domain visit count
+        url_visit[data_split[1]] = url_visit.get(data_split[1], 0) + count
+
+        # Update TLD visit count
+        tld_visit[domain_parts[-1]] = tld_visit.get(domain_parts[-1], 0) + count
+
+        # Update subdomain visit counts for all levels
+        for i in range(len(domain_parts)):
+            subdomain = '.'.join(domain_parts[i:])
+            subdomain_visit[subdomain] = subdomain_visit.get(subdomain, 0) + count
+
+    # Combine results
+    for chars, count in url_visit.items():
+        result.append(str(count) + " " + chars)
+    for chars, count in subdomain_visit.items():
+        result.append(str(count) + " " + chars)
+    for chars, count in tld_visit.items():
+        result.append(str(count) + " " + chars)
+
+    return result
+```
+
+# Improved Solution 
+* Instead of spliting the data into multiple hash_maps, we using one hash map to store all the result by using the Splicing Method.
+```python
+class Solution:
+    def subdomainVisits(self, cpdomains: List[str]) -> List[str]:
+        subdomain_visit = dict()
+        result = []
+      
+        for data in cpdomains:
+            data_split = data.split(" ")
+            count = int(data_split[0])
+            domain_parts = data_split[1].split('.')
+
+            # Update subdomain visit counts for all levels
+            for i in range(len(domain_parts)):  ## Iterate through the All different Parts 
+                subdomain = '.'.join(domain_parts[i:])             # Join from Start/current to end of domains
+                subdomain_visit[subdomain] = subdomain_visit.get(subdomain, 0) + count      # If its exisits get that data and add the current count to update the hashMap
+
+        # Combine results
+        for chars, count in subdomain_visit.items(): # Combine the Result 
+            result.append(str(count) + " " + chars)
+
+        return result
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def subdomainVisits(self, cpdomains: List[str]) -> List[str]:
+        subdomain_visit = dict()
+      
+        for data in cpdomains:
+            count, domain_parts = data.split(" ")
+            count ,domain_parts = int(count), domain_parts.split('.')
+
+            # Update subdomain visit counts for all levels
+            for i in range(len(domain_parts)):  ## Iterate through the All different Parts 
+                subdomain = '.'.join(domain_parts[i:])             # Join from Start/current to end of domains
+                subdomain_visit[subdomain] = subdomain_visit.get(subdomain, 0) + count      # If its exisits get that data and add the current count to update the hashMap
+
+        return [f"{v} {k}" for k, v in subdomain_visit.items()]
+```
