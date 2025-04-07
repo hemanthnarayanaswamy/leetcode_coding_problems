@@ -32,3 +32,39 @@
 	<li><code>names[i]</code> consists of lower and upper case English letters.</li>
 	<li>All the values of <code>heights</code> are distinct.</li>
 </ul>
+
+# Solution
+* Map `height: names` as heights are distinct not names 
+```python
+class Solution:
+    def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
+        names_height = dict()
+        for name,height in zip(names, heights):
+            names_height[height] = name
+        
+        return [name for _,name  in sorted(names_height.items(), key=lambda item: item[0], reverse=True)]
+```
+
+```python
+class Solution:
+    def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
+        names_height = {height: name for name, height in zip(names, heights)}
+        return [name for _,name  in sorted(names_height.items(), key=lambda item: item[0], reverse=True)]
+```
+
+## Easy Solution
+```python
+class Solution:
+    def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
+        number_of_people = len(names)
+
+        # Create a dictionary to store height-name pairs
+        height_to_name_map = dict(zip(heights, names))
+
+        sorted_heights = sorted(heights, reverse=True)
+
+        # Create a list of sorted names based on descending heights
+        sorted_names = [height_to_name_map[height] for height in sorted_heights]
+
+        return sorted_names
+```
