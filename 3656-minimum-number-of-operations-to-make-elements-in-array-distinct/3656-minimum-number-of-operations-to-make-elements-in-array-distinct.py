@@ -4,7 +4,6 @@ class Solution:
         n = len(nums)
         operations = 0
         while i < n:
-            print(operations)
             if len(nums[i:]) == len(set(nums[i:])):
                 return operations
             else:
