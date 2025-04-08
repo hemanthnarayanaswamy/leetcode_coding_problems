@@ -60,3 +60,41 @@
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution Approach 
+* Two variables to track position and operation count '
+* While loop iteration until i reaches the end of array 
+* check uniqueness by comparing the lengths are set and return count when the length are equal that is all elements are unique
+
+```python
+class Solution:
+    def minimumOperations(self, nums: List[int]) -> int:
+        i = 0
+        n = len(nums)
+        operations = 0
+        while i < n:
+            if len(nums[i:]) == len(set(nums[i:])):
+                return operations
+            else:
+                i += 3
+                operations += 1
+
+        return operations
+```
+
+* To improve `len(nums[i:])` replace this with `n-i` which should also give the len
+```python
+class Solution:
+    def minimumOperations(self, nums: List[int]) -> int:
+        i = 0
+        n = len(nums)
+        operations = 0
+        while i < n:
+            if n - i == len(set(nums[i:])):
+                return operations
+            else:
+                i += 3
+                operations += 1
+
+        return operations
+```
