@@ -46,3 +46,26 @@ Output is ordered by length and the new first word starts with capital letter.
 	<li><code>text</code> begins with a capital letter and then contains lowercase letters and single space between words.</li>
 	<li><code>1 &lt;= text.length &lt;= 10^5</code></li>
 </ul>
+
+# Solution 
+* Split array 
+* Sort based on the len of words 
+* Join the array 
+* Convert it to lower
+* Use `.capitalize()` to Captial the first letter of the sentence
+
+```python
+class Solution:
+    def arrangeWords(self, text: str) -> str:
+        words = text.split(' ')
+        words.sort(key = lambda x: len(x))
+
+        res = " ".join(words)
+        res = res.lower()
+        return res.capitalize()
+```
+
+```python
+# One Liner 
+ return " ".join(sorted(text.split(),key=len)).lower().capitalize()
+ ```
