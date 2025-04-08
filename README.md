@@ -207,6 +207,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1469-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1469-minimum-number-of-steps-to-make-two-strings-anagram) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1537-maximum-score-after-splitting-a-string) |
+| [1561-rearrange-words-in-a-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1561-rearrange-words-in-a-sentence) |
 | [1619-path-crossing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1619-path-crossing) |
 | [1781-check-if-two-string-arrays-are-equivalent](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1781-check-if-two-string-arrays-are-equivalent) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
@@ -318,6 +319,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0948-sort-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0948-sort-an-array) |
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1019-squares-of-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1019-squares-of-a-sorted-array) |
+| [1561-rearrange-words-in-a-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1561-rearrange-words-in-a-sentence) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [1752-arithmetic-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1752-arithmetic-subarrays) |
 | [2042-maximum-product-difference-between-two-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2042-maximum-product-difference-between-two-pairs) |
