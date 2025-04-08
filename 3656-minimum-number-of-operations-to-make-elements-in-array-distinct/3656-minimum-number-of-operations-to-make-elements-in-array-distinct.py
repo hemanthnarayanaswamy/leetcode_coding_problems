@@ -4,7 +4,7 @@ class Solution:
         n = len(nums)
         operations = 0
         while i < n:
-            if len(nums[i:]) == len(set(nums[i:])):
+            if n - i == len(set(nums[i:])):
                 return operations
             else:
                 i += 3
