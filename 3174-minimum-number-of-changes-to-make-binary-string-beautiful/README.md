@@ -48,3 +48,18 @@ It can be proven that 1 is the minimum number of changes needed to make the stri
 	<li><code>s</code> has an even length.</li>
 	<li><code>s[i]</code> is either <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code>.</li>
 </ul>
+
+# Solution
+```python
+class Solution:
+    def minChanges(self, s: str) -> int:
+        changes = 0
+        for i in range(0, len(s), 2):
+            if s[i] != s[i+1]:
+                changes += 1
+        
+        return changes
+```
+
+* For any valid partition, since each part consists of an even number of the same characters, we can further partition each part into lengths of exactly 2.
+* we can decompose the whole string into disjoint blocks of size 2 and find the minimum number of changes required to make those blocks beautiful.
