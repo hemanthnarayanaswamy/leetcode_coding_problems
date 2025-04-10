@@ -43,3 +43,21 @@ Kid 1 will always have the greatest number of candies, even if a different kid i
 	<li><code>1 &lt;= candies[i] &lt;= 100</code></li>
 	<li><code>1 &lt;= extraCandies &lt;= 50</code></li>
 </ul>
+
+# Solution 
+* Simple Solution, Find the curent max and defined the result array with all false 
+* Iterate and find the answer
+
+```python
+class Solution:
+    def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
+        n = len(candies)
+        result = [False] * n
+        present_greater = max(candies)
+
+        for i in range(n):
+            if candies[i] + extraCandies >= present_greater:
+                result[i] = True
+        
+        return result
+```
