@@ -77,6 +77,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1168-duplicate-zeros](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1168-duplicate-zeros) |
 | [1231-replace-elements-with-greatest-element-on-right-side](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1231-replace-elements-with-greatest-element-on-right-side) |
 | [1407-group-the-people-given-the-group-size-they-belong-to](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1407-group-the-people-given-the-group-size-they-belong-to) |
+| [1528-kids-with-the-greatest-number-of-candies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 | [1580-shuffle-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1580-shuffle-the-array) |
 | [1603-running-sum-of-1d-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1603-running-sum-of-1d-array) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
