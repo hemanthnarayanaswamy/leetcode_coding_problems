@@ -38,3 +38,23 @@
 	<li><code>x</code> is a lowercase English letter.</li>
 	<li><code>words[i]</code> consists only of lowercase English letters.</li>
 </ul>
+
+# Solution
+
+```python
+class Solution:
+    def findWordsContaining(self, words: List[str], x: str) -> List[int]:
+        return list(i for i, el in enumerate(words) if x in el)
+```
+
+```python
+class Solution:
+    def findWordsContaining(self, words: List[str], x: str) -> List[int]:
+        result = []
+
+        for i in range(len(words)):
+            if x in words[i]:
+                result.append(i)
+        
+        return result
+```
