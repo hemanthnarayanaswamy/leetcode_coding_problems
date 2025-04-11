@@ -1,7 +1,6 @@
 class Solution:
     def minPairSum(self, nums: List[int]) -> int:
-        n = len(nums)
-        left, right = 0, n-1
+        left, right = 0, len(nums)-1
         nums.sort()
         result = 0
 
@@ -10,7 +9,6 @@ class Solution:
             left += 1
             right -= 1
             
-        
         return result
 
         
