@@ -42,3 +42,17 @@ You should not do any reverse operation, the resulting string is &quot;abcd&quot
 	<li><code>word</code> consists of lowercase English letters.</li>
 	<li><code>ch</code> is a lowercase English letter.</li>
 </ul>
+
+# Solution 
+* check is the word exists then only compute the index of the `ch` 
+* Then `return word[:i+1][::-1] + word[i+1:]` reverse the selected portion and add the rest of the string as it is. 
+
+```python 
+class Solution:
+    def reversePrefix(self, word: str, ch: str) -> str:
+        if ch in word:
+            i = word.index(ch)
+            return word[:i+1][::-1] + word[i+1:]
+        else:
+            return word
+```
