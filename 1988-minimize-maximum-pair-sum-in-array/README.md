@@ -41,3 +41,22 @@ The maximum pair sum is max(3+5, 4+4, 6+2) = max(8, 8, 8) = 8.
 	<li><code>n</code> is <strong>even</strong>.</li>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+# Solution Approach 
+* Sort the array and then use two pointer to compute the sum and then assign the result with the maximum value
+
+```python
+class Solution:
+    def minPairSum(self, nums: List[int]) -> int:
+        nums = sorted(nums)
+        n = len(nums)
+        left, right = 0, n-1
+        result = 0
+
+        while left < right:
+            result = max(result, nums[left]+nums[right])
+            left += 1
+            right -= 1
+            
+        return result
+```
