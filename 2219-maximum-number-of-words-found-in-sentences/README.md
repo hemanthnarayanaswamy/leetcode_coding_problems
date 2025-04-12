@@ -36,3 +36,15 @@ In this example, the second and third sentences (underlined) have the same numbe
 	<li><code>sentences[i]</code> does not have leading or trailing spaces.</li>
 	<li>All the words in <code>sentences[i]</code> are separated by a single space.</li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def mostWordsFound(self, sentences: List[str]) -> int:
+        max_words = 0
+        for sentence in sentences:
+            max_words = max(max_words, len(sentence.split(' ')))
+        
+        return max_words
+```
+* Split and compute the len of the split array to get the number of words in the array. 
