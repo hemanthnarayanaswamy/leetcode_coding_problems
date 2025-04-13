@@ -25,3 +25,19 @@
 	<li><code>1 &lt;= sentence.length &lt;= 1000</code></li>
 	<li><code>sentence</code> consists of lowercase English letters.</li>
 </ul>
+
+
+# solution 
+* Get the unique elements from the sentence and then check if that lenght is 26 if yes return True else False
+
+```python
+class Solution:
+    def checkIfPangram(self, sentence: str) -> bool:
+        return True if len(set(sentence)) == 26 else False
+```
+
+```python
+class Solution:
+    def checkIfPangram(self, sentence: str) -> bool:
+        return len(set(sentence)) == 26
+```
