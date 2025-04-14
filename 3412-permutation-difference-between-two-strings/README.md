@@ -44,3 +44,17 @@
 	<li><code>t</code> is a permutation of <code>s</code>.</li>
 	<li><code>s</code> consists only of lowercase English letters.</li>
 </ul>
+
+# Solution Approach
+* use the `index()` method to compute the index of elements in s.
+
+```python
+class Solution:
+    def findPermutationDifference(self, s: str, t: str) -> int:
+        result = 0
+
+        for i,char in enumerate(s):
+            result += abs(t.index(char) - i)
+
+        return result
+```
