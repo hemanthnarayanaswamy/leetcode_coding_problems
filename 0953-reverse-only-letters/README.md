@@ -26,3 +26,49 @@
 	<li><code>s</code> consists of characters with ASCII values in the range <code>[33, 122]</code>.</li>
 	<li><code>s</code> does not contain <code>&#39;\&quot;&#39;</code> or <code>&#39;\\&#39;</code>.</li>
 </ul>
+
+# Solution 
+* Calcualte the Ascii value of a character and check if that in range of the provided range of alphabets.
+
+```python
+class Solution:
+    def reverseOnlyLetters(self, s: str) -> str:
+        s =list(s)
+        l, r = 0, len(s)-1 
+
+        while l < r:
+            asc_l = ord(s[l])
+            asc_r = ord(s[r])
+            if asc_l in range(65,91) or asc_l in range(97,123):
+                if asc_r in range(65,91) or asc_r in range(97,123):
+                    s[l], s[r] = s[r], s[l]
+                    l += 1
+                    r -= 1
+                else:
+                    r -= 1
+            else:
+                l += 1
+        
+        return ''.join(s)
+```
+
+## Improved Solution 
+```python
+class Solution:
+    def reverseOnlyLetters(self, s: str) -> str:
+        s =list(s)
+        l, r = 0, len(s)-1 
+
+        while l < r:
+            if s[l].isalpha():
+                if s[r].isalpha():
+                    s[l], s[r] = s[r], s[l]
+                    l += 1
+                    r -= 1
+                else:
+                    r -= 1
+            else:
+                l += 1
+        
+        return ''.join(s)
+```
