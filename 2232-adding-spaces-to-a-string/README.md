@@ -46,3 +46,34 @@ We are also able to place spaces before the first character of the string.
 	<li><code>0 &lt;= spaces[i] &lt;= s.length - 1</code></li>
 	<li>All the values of <code>spaces</code> are <strong>strictly increasing</strong>.</li>
 </ul>
+
+# Solution Approach 
+* Loop throught the string index
+* If the index matches the space index append space before that character. 
+
+```python
+def addSpace(s, spaces):
+    result = ''
+    j = 0
+    for i in range(len(s)):
+        if j < len(spaces) and i == spaces[j]:
+            result += ' ' + s[i]
+            j += 1
+        else:
+            result += s[i]
+
+    return result
+```
+
+## Improved Solution 
+* Used String Slicing 
+
+```python
+class Solution:
+    def addSpaces(self, s: str, spaces: List[int]) -> str:
+        result = s[:spaces[0]]
+        for i in range(1, len(spaces)):
+            result += ' ' + s[spaces[i-1]:spaces[i]]
+        
+        return result + ' ' + s[spaces[i]::]
+```
