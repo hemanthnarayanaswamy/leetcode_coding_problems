@@ -4,10 +4,8 @@ class Solution:
         l, r = 0, len(s)-1 
 
         while l < r:
-            asc_l = ord(s[l])
-            asc_r = ord(s[r])
-            if asc_l in range(65,91) or asc_l in range(97,123):
-                if asc_r in range(65,91) or asc_r in range(97,123):
+            if s[l].isalpha():
+                if s[r].isalpha():
                     s[l], s[r] = s[r], s[l]
                     l += 1
                     r -= 1
