@@ -56,3 +56,50 @@
 	<li><code>version1</code> and <code>version2</code>&nbsp;<strong>are valid version numbers</strong>.</li>
 	<li>All the given revisions in&nbsp;<code>version1</code> and <code>version2</code>&nbsp;can be stored in&nbsp;a&nbsp;<strong>32-bit integer</strong>.</li>
 </ul>
+
+
+# Solution 
+* Split the versions and appends zeros to make the lenghts equal 
+* Compare each number to check the conditions
+
+```python
+class Solution:
+    def compareVersion(self, version1: str, version2: str) -> int:
+        v1 = version1.split(".")
+        v2 = version2.split(".")
+
+        n1,n2 = len(v1), len(v2)
+
+        if n1 > n2:
+            v2 = v2 + [0]*(n1-n2)
+        elif n1 < n2:
+            v1 = v1 + [0]*(n2-n1)
+
+        for i in range(max(n1, n2)):
+            if int(v1[i]) > int(v2[i]):
+                return 1
+            elif int(v1[i]) < int(v2[i]):
+                return -1
+        
+        return 0
+```
+
+## Improved Logic 
+* Without appending the trailing zeros.
+```python
+class Solution:
+  def compareVersion(self, version1: str, version2: str) -> int:
+    levels1 = version1.split('.')
+    levels2 = version2.split('.')
+    length = max(len(levels1), len(levels2))
+
+    for i in range(length):
+      v1 = int(levels1[i]) if i < len(levels1) else 0
+      v2 = int(levels2[i]) if i < len(levels2) else 0
+      if v1 < v2:
+        return -1
+      if v1 > v2:
+        return 1
+
+    return 0
+```
