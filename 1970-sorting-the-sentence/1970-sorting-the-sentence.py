@@ -4,5 +4,5 @@ class Solution:
         result = [' ']*len(s_list)
 
         for word in s_list:
-            result[int(word[-1])-1] = word[:len(word)-1]
+            result[int(word[-1])-1] = word[:-1]
         return " ".join(result)
