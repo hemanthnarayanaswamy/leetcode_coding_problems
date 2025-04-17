@@ -35,3 +35,18 @@
 	<li>The words in <code>s</code> are separated by a single space.</li>
 	<li><code>s</code> contains no leading or trailing spaces.</li>
 </ul>
+
+# Solution 
+* Split result and initialize the result with len equal to s.
+* assign the index of return to the word in the s by excluding the last char
+
+```python
+class Solution:
+    def sortSentence(self, s: str) -> str:
+        s = s.split(" ")
+        result = ['']*len(s)
+
+        for word in s:
+            result[int(word[-1])-1] = word[:-1]
+        return " ".join(result)
+```
