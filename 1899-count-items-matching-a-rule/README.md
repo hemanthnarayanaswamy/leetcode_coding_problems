@@ -35,3 +35,25 @@
 	<li><code>ruleKey</code> is equal to either <code>&quot;type&quot;</code>, <code>&quot;color&quot;</code>, or <code>&quot;name&quot;</code>.</li>
 	<li>All strings consist only of lowercase letters.</li>
 </ul>
+
+
+# solution 
+```python
+class Solution:
+    def countMatches(self, items: List[List[str]], ruleKey: str, ruleValue: str) -> int:
+        rule_map = {"type": 0, "color": 1, "name": 2}
+        itemCounter = 0
+        idx = rule_map[ruleKey]
+
+        for item in items:
+            if item[idx] == ruleValue:
+                itemCounter += 1
+        
+        return itemCounter
+```
+```python
+class Solution:
+    def countMatches(self, items: List[List[str]], ruleKey: str, ruleValue: str) -> int:
+        i = 0 if ruleKey[0] == 't' else (1 if ruleKey[0] == 'c' else 2)
+        return sum(v[i] == ruleValue for v in items)
+```
