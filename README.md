@@ -67,6 +67,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0561-array-partition](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0561-array-partition) |
 | [0575-distribute-candies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0575-distribute-candies) |
 | [0643-maximum-average-subarray-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0643-maximum-average-subarray-i) |
+| [0822-unique-morse-code-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0822-unique-morse-code-words) |
 | [0829-subdomain-visit-count](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0829-subdomain-visit-count) |
 | [0841-shortest-distance-to-a-character](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0841-shortest-distance-to-a-character) |
 | [0932-monotonic-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0932-monotonic-array) |
@@ -157,6 +158,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0525-contiguous-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0525-contiguous-array) |
 | [0575-distribute-candies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0575-distribute-candies) |
 | [0782-jewels-and-stones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0782-jewels-and-stones) |
+| [0822-unique-morse-code-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0822-unique-morse-code-words) |
 | [0829-subdomain-visit-count](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0829-subdomain-visit-count) |
 | [1297-maximum-number-of-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1297-maximum-number-of-balloons) |
 | [1407-group-the-people-given-the-group-size-they-belong-to](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1407-group-the-people-given-the-group-size-they-belong-to) |
@@ -214,6 +216,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0680-valid-palindrome-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0680-valid-palindrome-ii) |
 | [0742-to-lower-case](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0742-to-lower-case) |
 | [0782-jewels-and-stones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0782-jewels-and-stones) |
+| [0822-unique-morse-code-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0822-unique-morse-code-words) |
 | [0829-subdomain-visit-count](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0829-subdomain-visit-count) |
 | [0841-shortest-distance-to-a-character](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0841-shortest-distance-to-a-character) |
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
