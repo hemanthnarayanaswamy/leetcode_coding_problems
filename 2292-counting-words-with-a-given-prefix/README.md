@@ -29,3 +29,22 @@
 	<li><code>1 &lt;= words[i].length, pref.length &lt;= 100</code></li>
 	<li><code>words[i]</code> and <code>pref</code> consist of lowercase English letters.</li>
 </ul>
+
+# Solution 
+* We need to find the prefix only words that has the prefix assignment in it. 
+```python
+class Solution:
+    def prefixCount(self, words: List[str], pref: str) -> int:
+        result = 0
+        for word in words:
+            if word[:len(pref)] == pref:
+                result += 1
+        
+        return result
+```
+
+```python
+class Solution:
+    def prefixCount(self, words: List[str], pref: str) -> int:
+        return sum(x.startswith(pref) for x in words)
+```
