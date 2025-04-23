@@ -38,3 +38,35 @@ Therefore, we return 0.
 	<li><code>blocks[i]</code> is either <code>&#39;W&#39;</code> or <code>&#39;B&#39;</code>.</li>
 	<li><code>1 &lt;= k &lt;= n</code></li>
 </ul>
+
+# Solution
+* Use the sliding window technique to slide througt the k elements at a time a store the min of whits in the window and return the minimum number of whits in a all  of the windows.
+
+```python
+class Solution:
+    def minimumRecolors(self, blocks: str, k: int) -> int:
+        n = len(blocks)
+        result = n
+
+        for i in range(n-k+1):
+            result = min(result, blocks[i:i+k].count('W'))
+        
+        return result
+```
+
+## Optimal Solution
+```python
+class Solution:
+    def minimumRecolors(self, blocks: str, k: int) -> int:
+        l,r = 0,k
+        n = len(blocks)
+        op_count = 1000000
+        while r <= n:
+            cur_op_count = blocks[l:r].count('W')
+            if cur_op_count < op_count:
+                op_count = cur_op_count
+            l+=1
+            r+=1
+
+        return op_count
+```
