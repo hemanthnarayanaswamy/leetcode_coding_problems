@@ -49,3 +49,31 @@ Therefore, the k-beauty is 2.
 	<li><code>1 &lt;= num &lt;= 10<sup>9</sup></code></li>
 	<li><code>1 &lt;= k &lt;= num.length</code> (taking <code>num</code> as a string)</li>
 </ul>
+
+# Solution 
+* We can use Slidingg window in two ways `for i in range(k, len(nstr) + 1): temp = int(nstr[i-k:i])` or 
+`for i in range(len(num_str)-k+1): temp = int(num_str[i:i+k])`
+```python
+class Solution:
+    def divisorSubstrings(self, num: int, k: int) -> int:
+        num_str = str(num)
+        result = 0
+
+        for i in range(len(num_str)-k+1):
+            temp = int(num_str[i:i+k])
+            if temp != 0 and num % temp == 0:
+                result += 1
+        return result
+```
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```python
+class Solution:
+    def divisorSubstrings(self, num: int, k: int) -> int:
+        nstr = str(num)
+        count = 0
+        for i in range(k, len(nstr) + 1):
+            sub = int(nstr[i-k:i])
+            if sub != 0 and num % sub == 0:
+                count += 1
+        return count
+```
