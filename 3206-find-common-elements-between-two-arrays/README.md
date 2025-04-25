@@ -55,3 +55,56 @@
 	<li><code>1 &lt;= n, m &lt;= 100</code></li>
 	<li><code>1 &lt;= nums1[i], nums2[i] &lt;= 100</code></li>
 </ul>
+
+# Problem 
+Let me reword the description so much easier:
+
+1. We have two arrays
+2. Count how many indices in the first array have a number that exists in the second array. Call this result left
+3. Count how many indices in the second array have a number that exists in the first array. Call this result right
+4. return [left, right]
+
+## Solution 
+
+```python
+from collections import Counter
+
+class Solution:
+    def findIntersectionValues(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        nums1Map = Counter(nums1)
+        nums2Map = Counter(nums2) 
+
+        first, second = 0, 0
+
+        for num in nums1Map:
+            if num in nums2Map:
+                first += nums1Map[num]
+        
+        for num in nums2Map:
+            if num in nums1Map:
+                second += nums2Map[num]
+
+        return [first, second]
+```
+
+## Optimal Solution 
+* Use `sets()` instead of HashMap for easy look up.
+
+```python
+class Solution:
+    def findIntersectionValues(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        nums1U = set(nums1)
+        nums2U = set(nums2) 
+
+        first, second = 0, 0
+
+        for num in nums1:
+            if num in nums2U:
+                first += 1
+        
+        for num in nums2:
+            if num in nums1U:
+                second += 1
+
+        return [first, second]
+```
