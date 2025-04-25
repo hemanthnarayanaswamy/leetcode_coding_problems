@@ -37,3 +37,44 @@ For nums[4]=3 there exist three smaller numbers than it (1, 2 and 2).
 	<li><code>2 &lt;= nums.length &lt;= 500</code></li>
 	<li><code>0 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution
+* Keep a sorted array to track the index which gives how many numbers are greater then the currrent number.
+* Iterate through the original array and find its index in the sorted array to append into the result.
+
+```python
+class Solution:
+    def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
+        nums_sorted = sorted(nums)
+        result = [0]*len(nums)
+
+        for i in range(len(nums)): 
+            result[i] = nums_sorted.index(nums[i])
+
+        return result
+```
+
+## Optinal Solution
+* In the above code we have O(n*2) complexity as we are computing the index which is like a nested loop.
+* To remove that we use a hashMap to store the sorted result in it with its index.
+
+```python
+class Solution:
+    def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
+        nums_sorted = sorted(nums)
+        tempMap = {}
+        
+        n = len(nums)
+
+        for i,num in enumerate(nums_sorted): 
+            if num not in tempMap:
+                tempMap[num] = i 
+    
+
+        result = [0]*len(nums)
+
+        for i in range(n):
+            result[i] = tempMap[nums[i]]
+        
+        return result
+```
