@@ -38,3 +38,19 @@ There are 2 asterisks considered. Therefore, we return 2.</pre>
 	<li><code>s</code> consists of lowercase English letters, vertical bars <code>&#39;|&#39;</code>, and asterisks <code>&#39;*&#39;</code>.</li>
 	<li><code>s</code> contains an <strong>even</strong> number of vertical bars <code>&#39;|&#39;</code>.</li>
 </ul>
+
+# Solution 
+* Split the String with `|`
+* Iterate through the array on even index and count the '*'
+
+```python
+class Solution:
+    def countAsterisks(self, s: str) -> int:
+        s = s.split('|')
+        result = 0
+
+        for i in range(0, len(s), 2):
+            result += s[i].count('*')
+        
+        return result
+```
