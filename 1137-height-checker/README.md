@@ -45,3 +45,27 @@ All indices match.
 	<li><code>1 &lt;= heights.length &lt;= 100</code></li>
 	<li><code>1 &lt;= heights[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def heightChecker(self, heights: List[int]) -> int:
+        expected = sorted(heights)
+        mismatch = 0
+
+        for i in range(len(heights)):
+            if expected[i] != heights[i]:
+                mismatch += 1
+        
+        return mismatch
+```
+
+```python
+class Solution:
+    def heightChecker(self, heights: List[int]) -> int:
+        count = 0
+        for a_i, b_i in zip(heights, sorted(heights)):
+            if a_i - b_i !=0:
+                count+=1
+        return count
+```
