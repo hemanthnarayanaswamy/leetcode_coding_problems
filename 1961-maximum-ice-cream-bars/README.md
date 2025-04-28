@@ -42,3 +42,33 @@
 	<li><code>1 &lt;= costs[i] &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= coins &lt;= 10<sup>8</sup></code></li>
 </ul>
+
+# Solution 
+- Key Observations:
+* Sorting the costs in ascending order ensures that we start with the cheapest options.
+* Using counting sort is beneficial since the cost values are small (bounded by constraints).
+* Keep subtracting the cost of each ice cream from coins until there are no more coins left.
+
+-----------------------------------------------------------------------------------------------------------------
+* Use the Normal Sorting mentod to solve it.
+
+```python
+class Solution:
+    def maxIceCream(self, costs: List[int], coins: int) -> int:
+        bars = 0
+        costs.sort()
+        
+        for cost in costs: 
+            if cost <= coins:
+                bars += 1
+                coins -= cost
+        
+        return bars
+```
+
+## Optimal Solution
+1. Use Counting Sort for Optimization
+      * Instead of sorting directly (which takes O(n log n)), use counting sort since cost values are within a small range.
+      * Create a frequency array to store the count of each cost value.
+      * Construct a sorted list from the frequency array.
+```python
