@@ -4,7 +4,7 @@ class Solution:
         costs.sort()
         
         for cost in costs: 
-            if coins - cost >= 0:
+            if cost <= coins:
                 bars += 1
                 coins -= cost
         
