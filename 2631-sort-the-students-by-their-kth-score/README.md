@@ -37,3 +37,62 @@
 	<li><code>score</code> consists of <strong>distinct</strong> integers.</li>
 	<li><code>0 &lt;= k &lt; n</code></li>
 </ul>
+
+# Solution
+
+1. The approach to solve the problem is as follows:
+					-  Iterate through the matrix and create a keyArray from each matrix[I][k] element and a Map, where the key is matrix[I][k] and the value is the matrix[I] array.
+					-  Sort the keyArray.
+					-  Iterate through the sorted keyArray, fetch the corresponding array from the map, and build the answer matrix.
+
+```python
+class Solution:
+    def sortTheStudents(self, score: List[List[int]], k: int) -> List[List[int]]:
+        scoreMap = {}
+        result = []
+
+        for i in range(len(score)):
+            scoreMap[score[i][k]] = score[i]
+
+        sorted_scores = dict(sorted(scoreMap.items(), key=lambda item: item[0], reverse=True))
+        
+        for scr in sorted_scores.values():
+            result.append(scr)
+        
+        return result
+```
+
+# Optimal Solution
+* Instead of using the dict we can use a list itself and say the key-value as a tuples. 
+
+```python
+class Solution:
+    def sortTheStudents(self, score: List[List[int]], k: int) -> List[List[int]]:
+        scoreMap = {}
+
+        for i in range(len(score)):
+            scoreMap[score[i][k]] = score[i]
+
+        # To get keys sorted by their values (descending):
+        sorted_score = [v for k, v in sorted(scoreMap.items(), key=lambda item: item[0], reverse=True)]
+       
+        return sorted_score
+```
+
+-----------
+```python
+class Solution:
+    def sortTheStudents(self, score: List[List[int]], k: int) -> List[List[int]]:
+        res = []
+        kth_scores = []
+
+        for i, s in enumerate(score):
+            kth_scores.append([s[k], i])
+
+        kth_scores.sort(key=lambda x : -x[0])
+
+        for s in kth_scores:
+            res.append(score[s[1]])
+            
+        return res
+```
