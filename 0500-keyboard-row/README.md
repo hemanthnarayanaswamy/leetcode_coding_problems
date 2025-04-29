@@ -47,3 +47,83 @@
 	<li><code>1 &lt;= words[i].length &lt;= 100</code></li>
 	<li><code>words[i]</code> consists of English letters (both lowercase and uppercase).&nbsp;</li>
 </ul>
+
+# Solution
+* I try to do it, but when I try to remove the word the index will shift and there is a possibility of an element being skipped without undergoing the condition.
+
+```python
+###### Wrong Solution ######
+class Solution:
+    def findWords(self, words: List[str]) -> List[str]:
+        keyboard = ["qwertyuiop", "asdfghjkl", "zxcvbnm"]
+
+        for word in words:
+            if word[0].lower() in keyboard[0]:
+                for i in range(1, len(word)):
+                    if word[i] not in keyboard[0]:
+                        print(word[i])
+                        words.remove(word)
+                        break 
+            elif word[0].lower() in keyboard[1]:
+                for i in range(1, len(word)):
+                    if word[i] not in keyboard[1]:
+                        print(word[i])
+                        words.remove(word)
+                        break 
+            else:
+                for i in range(1, len(word)):
+                    if word[i] not in keyboard[2]:
+                        print(word[i])
+                        words.remove(word)
+                        break 
+        
+        return words
+```
+*** Correct Solution for the above approach
+```python
+class Solution:
+    def findWords(self, words: List[str]) -> List[str]:
+        row1 = "qwertyuiopQWERTYUIOP"
+        row2 = "asdfghjklASDFGHJKL"
+        row3 = "zxcvbnmZXCVBNM" 
+        c = []
+        
+        for i in words:
+            if i[0] in row1:
+                for j in range(1, len(i)):
+                    if i[j] not in row1:
+                        break
+                else: 
+                    c.append(i)
+            elif i[0] in row2:
+                for j in range(1, len(i)):
+                    if i[j] not in row2:
+                        break
+                else: 
+                    c.append(i)
+            elif i[0] in row3:
+                for j in range(1, len(i)):
+                    if i[j] not in row3:
+                        break
+                else: 
+                    c.append(i)
+        
+        return c
+```
+
+## Optimal Solution
+```python
+class Solution:
+    def findWords(self, words: List[str]) -> List[str]:
+        keyboard = ["qwertyuiop", "asdfghjkl", "zxcvbnm"]
+        res = []
+        for word in words:
+            lower_word = word.lower()
+            if all(char in keyboard[0] for char in lower_word):
+                res.append(word)
+            elif all(char in keyboard[1] for char in lower_word):
+                res.append(word)
+            elif all(char in keyboard[2] for char in lower_word):
+                res.append(word)
+        return res
+```
