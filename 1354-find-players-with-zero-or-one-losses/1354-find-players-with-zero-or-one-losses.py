@@ -4,12 +4,15 @@ class Solution:
         onelose = []
         nolose = []
 
-        for match in matches:
-            w, l = match[0], match[1]
+        # for match in matches:
+        #     w, l = match[0], match[1]
+        #     lossTracker[l] = lossTracker.get(l, 0) + 1
+        #     if w not in lossTracker:
+        #         lossTracker[w] = 0
+        for w, l in matches:
             lossTracker[l] = lossTracker.get(l, 0) + 1
             if w not in lossTracker:
                 lossTracker[w] = 0
-
         
         #lossTrackerSort = dict(sorted(lossTracker.items(), key=lambda item: item[0]))
         
@@ -23,7 +26,7 @@ class Solution:
         nolose.sort()
         onelose.sort()
 
-        return [nolose, onelose]
+        return [sorted(nolose), sorted(onelose)]
 
 
         
