@@ -50,3 +50,95 @@ Thus, answer[0] = [1,2,5,6] and answer[1] = [].
 	<li><code>winner<sub>i</sub> != loser<sub>i</sub></code></li>
 	<li>All <code>matches[i]</code> are <strong>unique</strong>.</li>
 </ul>
+
+# Solution
+* Track the number of losses for each player in the hashmap 
+* Then get the result for the noloss and onelos, sort and return the list
+
+```python
+class Solution:
+    def findWinners(self, matches: List[List[int]]) -> List[List[int]]:
+        lossTracker = {}
+        onelose = []
+        nolose = []
+
+        for match in matches:
+            w, l = match[0], match[1]
+            lossTracker[l] = lossTracker.get(l, 0) + 1
+            if w not in lossTracker:
+                lossTracker[w] = 0
+
+        
+        #lossTrackerSort = dict(sorted(lossTracker.items(), key=lambda item: item[0]))
+        
+        for player, lose in lossTracker.items():
+            if lose == 0:
+                nolose.append(player)
+            
+            elif lose == 1:
+                onelose.append(player)
+
+        nolose.sort()
+        onelose.sort()
+
+        return [nolose, onelose]
+```
+
+## Improved Solution
+```python
+class Solution:
+    def findWinners(self, matches: List[List[int]]) -> List[List[int]]:
+        lossTracker = {}
+        onelose = []
+        nolose = []
+
+        # for match in matches:
+        #     w, l = match[0], match[1]
+        #     lossTracker[l] = lossTracker.get(l, 0) + 1
+        #     if w not in lossTracker:
+        #         lossTracker[w] = 0
+        for w, l in matches:
+            lossTracker[l] = lossTracker.get(l, 0) + 1
+            if w not in lossTracker:
+                lossTracker[w] = 0
+        
+        #lossTrackerSort = dict(sorted(lossTracker.items(), key=lambda item: item[0]))
+        
+        for player, lose in lossTracker.items():
+            if lose == 0:
+                nolose.append(player)
+            
+            elif lose == 1:
+                onelose.append(player)
+
+        return [sorted(nolose), sorted(onelose)]
+```
+
+## Optimal Solution
+```python
+class Solution:
+    def findWinners(self, matches: List[List[int]]) -> List[List[int]]:
+        zero_losses, one_loss, more_losses = set(), set(), set()
+
+        for w, l in matches:
+            # ensure winners with no losses so far
+            if w not in one_loss and w not in more_losses:
+                zero_losses.add(w)
+
+            # process this loss
+            if l in zero_losses:
+                zero_losses.remove(l)
+                one_loss.add(l)
+            elif l in one_loss:
+                one_loss.remove(l)
+                more_losses.add(l)
+            elif l not in more_losses:
+                # first-ever loss
+                one_loss.add(l)
+            # else: l is already in more_losses, do nothing
+
+        return [
+            sorted(zero_losses),
+            sorted(one_loss)
+        ]
+```
