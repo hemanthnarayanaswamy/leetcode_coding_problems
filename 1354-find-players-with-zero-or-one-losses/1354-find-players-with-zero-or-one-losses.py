@@ -15,7 +15,7 @@ class Solution:
             if lose == 0:
                 nolose.append(player)
             
-            if lose == 1:
+            elif lose == 1:
                 onelose.append(player)
         
         return [nolose, onelose]
