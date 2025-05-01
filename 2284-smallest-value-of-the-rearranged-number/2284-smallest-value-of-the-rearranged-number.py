@@ -5,15 +5,15 @@ class Solution:
         
         if num < 0:
             num = -num 
-            numSort = sorted(str(num), reverse=True)
-            num = int(''.join(numSort))
+            num = sorted(str(num), reverse=True)
+            num = int(''.join(num))
             return -num
         else:
-            numSort = sorted(str(num))
-            count = numSort.count('0')
+            num = sorted(str(num))
+            count = num.count('0')
             if count > 0:
-                numSort = numSort[count: count+1] + ['0']*count + numSort[count+1:]
-            num = int(''.join(numSort))
+                num = num[count: count+1] + ['0']*count + num[count+1:]
+            num = int(''.join(num))
 
             return num
             
