@@ -29,3 +29,35 @@ The index of value 6 is 1, so we return 1.
 	<li><code>0 &lt;= nums[i] &lt;= 100</code></li>
 	<li>The largest element in <code>nums</code> is unique.</li>
 </ul>
+
+# Solution
+* As the maximum number is unqiue so initially find the max number and the index of the maximum number. 
+* Then iterate to check if the twice of that number is greater then the maximum number then immediately return `-1`
+* or after the loop return the stored index.
+
+```python
+class Solution:
+    def dominantIndex(self, nums: List[int]) -> int:
+        maxNum = max(nums)
+        idx = nums.index(maxNum)
+
+        for num in nums:
+            if num != maxNum and num*2 > maxNum:
+                return -1
+        
+        return idx
+```
+
+## Optimal Solution
+* we don't need to check each and every number we only need to check the max and next max
+
+```python
+class Solution:
+    def dominantIndex(self, nums: List[int]) -> int:
+        numSort = sorted(nums)
+
+        if numSort[-1] >= 2*numSort[-2]:
+            return nums.index(numSort[-1])
+        else:
+            return -1
+```
