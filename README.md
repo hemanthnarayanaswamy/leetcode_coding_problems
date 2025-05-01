@@ -24,6 +24,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [2032-largest-odd-number-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2032-largest-odd-number-in-string) |
 | [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
+| [2284-smallest-value-of-the-rearranged-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2284-smallest-value-of-the-rearranged-number) |
 | [2624-difference-between-element-sum-and-digit-sum-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2624-difference-between-element-sum-and-digit-sum-of-an-array) |
 | [2630-alternating-digit-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2630-alternating-digit-sum) |
 | [3567-convert-date-to-binary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3567-convert-date-to-binary) |
@@ -393,6 +394,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2148-minimum-number-of-moves-to-seat-everyone](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2148-minimum-number-of-moves-to-seat-everyone) |
 | [2215-finding-3-digit-even-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2215-finding-3-digit-even-numbers) |
 | [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
+| [2284-smallest-value-of-the-rearranged-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2284-smallest-value-of-the-rearranged-number) |
 | [2502-sort-the-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2502-sort-the-people) |
 | [2561-number-of-distinct-averages](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2561-number-of-distinct-averages) |
 | [2631-sort-the-students-by-their-kth-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2631-sort-the-students-by-their-kth-score) |
