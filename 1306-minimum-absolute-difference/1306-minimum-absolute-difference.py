@@ -5,14 +5,14 @@ class Solution:
         result = []
 
         for i in range(len(arr)-1):
-            minDiff = min(minDiff,abs(arr[i]-arr[i+1]))
-            if minDiff == 1:
-                break
-
-        for i in range(len(arr)-1):
             a, b = arr[i], arr[i+1]
-        
-            if  abs(b - a) == minDiff:
+            tempDiff = abs(b - a)
+            
+            if tempDiff < minDiff:
+                minDiff = tempDiff
+                result = [[a, b]]
+
+            elif tempDiff == minDiff:
                  result.append([a, b])
                 
         return result 
