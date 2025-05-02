@@ -37,3 +37,48 @@
 	<li><code>2 &lt;= arr.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>-10<sup>6</sup> &lt;= arr[i] &lt;= 10<sup>6</sup></code></li>
 </ul>
+
+
+# Solution
+* Initiate the minDiff to infinity and then in one single loop, after sorting compute the diff and keep appending then check 
+* if something less then the minDiff arise clear the result and append that pair and update that as minDiff for next iterations
+
+```python
+class Solution:
+    def minimumAbsDifference(self, arr: List[int]) -> List[List[int]]:
+        arr.sort()
+        min_dif=9999
+        res=[]
+        for i in range(len(arr)-1):
+            min_dif=min(min_dif,abs(arr[i]-arr[i+1]))
+            if min_dif==1:
+                break
+        for i in range(len(arr)-1):
+            if min_dif==(arr[i+1]-arr[i]):
+                res.append([arr[i],arr[i+1]])
+        return res
+```
+
+## Improved Solution 
+* instead of clear reinitialize the array with the new elements 
+```python
+class Solution:
+    def minimumAbsDifference(self, arr: List[int]) -> List[List[int]]:
+        arr.sort()
+        minDiff = float('inf')
+        result = []
+
+        for i in range(len(arr)-1):
+            a, b = arr[i], arr[i+1]
+            tempDiff = abs(b - a)
+            
+            if tempDiff < minDiff:
+                minDiff = tempDiff
+                result = [[a, b]]
+
+            elif tempDiff == minDiff:
+                 result.append([a, b])
+                
+        return result 
+```
+				
