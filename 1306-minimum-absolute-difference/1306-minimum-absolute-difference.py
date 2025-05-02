@@ -10,8 +10,8 @@ class Solution:
             
             if tempDiff < minDiff:
                 minDiff = tempDiff
-                result.clear()
-                result.append([a, b])
+                result = [[a, b]]
+
             elif tempDiff == minDiff:
                  result.append([a, b])
                 
