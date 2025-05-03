@@ -7,12 +7,10 @@ class Solution:
             if s[i] == '#':
                 num = 96 + int(s[i-2:i])
                 result += chr(num)
-                print(s[i-2:i], result)
                 i -= 3
             else:
                 num = 96 + int(s[i])
                 result += chr(num)
-                print(s[i], result)
                 i -= 1
         
         return result[::-1]
