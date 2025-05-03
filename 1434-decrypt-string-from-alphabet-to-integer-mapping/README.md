@@ -33,3 +33,46 @@
 	<li><code>s</code> consists of digits and the <code>&#39;#&#39;</code> letter.</li>
 	<li><code>s</code> will be a valid string such that mapping is always possible.</li>
 </ul>
+
+# Solution
+* Iterate from right to left while checking for `#` if the special character is detected then take next two characters. 
+
+```python
+class Solution:
+    def freqAlphabets(self, s: str) -> str:
+        i = len(s)-1
+        result = ''
+
+        while i >= 0:
+            if s[i] == '#':
+                num = 96 + int(s[i-2:i])
+                result += chr(num)
+                i -= 3
+            else:
+                num = 96 + int(s[i])
+                result += chr(num)
+                i -= 1
+        
+        return result[::-1]
+```
+
+* use a list to store the result instead of a string 
+
+```python
+class Solution:
+    def freqAlphabets(self, s: str) -> str:
+        i = len(s)-1
+        result = []
+
+        while i >= 0:
+            if s[i] == '#':
+                num = 96 + int(s[i-2:i])
+                result.append(chr(num))
+                i -= 3
+            else:
+                num = 96 + int(s[i])
+                result.append(chr(num))
+                i -= 1
+        
+        return ''.join(result[::-1])
+```
