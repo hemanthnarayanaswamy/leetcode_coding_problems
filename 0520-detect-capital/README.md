@@ -23,3 +23,29 @@
 	<li><code>1 &lt;= word.length &lt;= 100</code></li>
 	<li><code>word</code> consists of lowercase and uppercase English letters.</li>
 </ul>
+
+# Solution
+* Generate all possible options and check one by one and return True is it matches with any of the condition else return False.
+```python
+class Solution:
+    def detectCapitalUse(self, word: str) -> bool:
+        upperWord = word.upper()
+        lowerWord = word.lower()
+        captialWord = word.capitalize()
+
+        if word == upperWord:
+            return True
+        elif word == lowerWord:
+            return True 
+        elif word == captialWord:
+            return True 
+        else:
+            return False
+```
+
+## Optimal Solution 
+```python
+class Solution:
+    def detectCapitalUse(self, word: str) -> bool:
+        return word.isupper() or word.islower() or word.istitle()
+```
