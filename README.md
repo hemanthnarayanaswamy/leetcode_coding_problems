@@ -17,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0412-fizz-buzz](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0412-fizz-buzz) |
 | [0628-maximum-product-of-three-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0628-maximum-product-of-three-numbers) |
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
+| [1421-find-numbers-with-even-number-of-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1430-find-the-k-beauty-of-a-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1430-find-the-k-beauty-of-a-number) |
 | [1444-number-of-steps-to-reduce-a-number-to-zero](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1444-number-of-steps-to-reduce-a-number-to-zero) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
@@ -88,6 +89,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1306-minimum-absolute-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1306-minimum-absolute-difference) |
 | [1354-find-players-with-zero-or-one-losses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1354-find-players-with-zero-or-one-losses) |
 | [1407-group-the-people-given-the-group-size-they-belong-to](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1407-group-the-people-given-the-group-size-they-belong-to) |
+| [1421-find-numbers-with-even-number-of-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
 | [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1528-kids-with-the-greatest-number-of-candies) |
