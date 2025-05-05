@@ -3,22 +3,23 @@ class Solution:
         s1 = sorted(s1)
         s2 = sorted(s2)
 
-        BreakFlag1, BreakFlag2 = True, True
+        BreakFlag = True
 
         for i in range(len(s1)):
             if ord(s1[i]) >= ord(s2[i]):
                 continue
             else:
-                BreakFlag1 = False
-                break 
-        
-        for i in range(len(s1)):
-            if ord(s2[i]) >= ord(s1[i]):
-                continue
-            else:
-                BreakFlag2 = False
+                BreakFlag = False
                 break
-
-                
         
-        return BreakFlag1 or BreakFlag2
+        if BreakFlag == True:
+            return BreakFlag
+        else:
+            for i in range(len(s1)):
+                if ord(s2[i]) >= ord(s1[i]):
+                    continue
+                else:
+                    BreakFlag = True
+                    break
+
+        return not BreakFlag
