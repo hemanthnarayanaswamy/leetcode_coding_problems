@@ -35,3 +35,113 @@
 	<li><code>1 &lt;= n &lt;= 10^5</code></li>
 	<li>All strings consist of lowercase English letters.</li>
 </ul>
+
+# Approach 
+```
+Meaning of 'breakable' : After sorting alphanumerically, if s1[i .. n] >= s2[i .. n], s1 can break s2.
+
+For example, 'axy' can break 'abc' like this:
+
+a == a x > b y > c
+
+All chars in 'axy' is bigger or equal than 'abc', so it's breakable.
+
+And, 'abe' cannot break 'acd':
+
+a == a b < c e > d
+
+It's unbreakable because 'abe' cannot break 'acd' since 'b'.
+```
+
+* Only Return `True` if S1 breaks S2 or S2 break S1 else False
+
+# Solution 
+* Have two flags that checks if either operation breaks the other 
+* Return the or operation of those Flags.
+```python
+class Solution:
+    def checkIfCanBreak(self, s1: str, s2: str) -> bool:
+        s1 = sorted(s1)
+        s2 = sorted(s2)
+
+        BreakFlag1, BreakFlag2 = True, True   
+
+        for i in range(len(s1)):
+            if ord(s1[i]) >= ord(s2[i]):
+                continue
+            else:
+                BreakFlag1 = False
+                break 
+        
+        for i in range(len(s1)):
+            if ord(s2[i]) >= ord(s1[i]):
+                continue
+            else:
+                BreakFlag2 = False
+                break
+        
+        return BreakFlag1 or BreakFlag2
+```
+-------------------------------------------------------------
+* Optimized the user flag usage 
+
+```python
+class Solution:
+    def checkIfCanBreak(self, s1: str, s2: str) -> bool:
+        s1 = sorted(s1)
+        s2 = sorted(s2)
+
+        BreakFlag = True
+
+        for i in range(len(s1)):
+            if ord(s1[i]) >= ord(s2[i]):
+                continue
+            else:
+                BreakFlag = False
+                break
+        
+        if BreakFlag == True:
+            return BreakFlag
+        else:
+            for i in range(len(s1)):
+                if ord(s2[i]) >= ord(s1[i]):
+                    continue
+                else:
+                    BreakFlag = True
+                    break
+
+        return not BreakFlag
+```
+-----------------------------------------------------------------------------------
+## Optimized Solution 
+ ```python
+class Solution:
+    def checkIfCanBreak(self, s1: str, s2: str) -> bool:
+        s1 = sorted(s1)
+        s2 = sorted(s2)
+        canBreak1 = all(s1[i] >= s2[i] for i in range(len(s1)))
+        canBreak2 = all(s2[i] >= s1[i] for i in range(len(s1)))
+        return canBreak1 or canBreak2
+```
+-----------------------------------------------------------------------------------
+
+```python
+from collections import Counter
+
+class Solution:
+    def checkIfCanBreak(self, s1: str, s2: str) -> bool:
+
+        s1_counter = Counter(s1)
+        s2_counter = Counter(s2)
+
+        diff = 0
+        s = set()
+
+        for char in string.ascii_lowercase:
+            diff += s1_counter[char] - s2_counter[char]
+
+            if diff:
+                s.add(diff > 0)
+        
+        return len(s) < 2
+```
