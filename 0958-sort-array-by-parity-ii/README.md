@@ -32,3 +32,71 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow Up:</strong> Could you solve it in-place?</p>
+
+# Approach 
+* Thinking of using the two pointer approach to solve the problem
+* Normal approach solution is easy, sepeate the odd and even integers sort them and while zipping them in a iteration store the result and return it.
+**In-Place Computation**
+```python
+class Solution:
+    def sortArrayByParityII(self, nums: List[int]) -> List[int]:
+        even, odd = 0, 1
+
+        while even < len(nums)-1 and odd < len(nums):
+
+            evenIdx, oddIdx = nums[even]%2, nums[odd]%2
+            
+            if evenIdx == 0:
+                if oddIdx == 1:
+                    even += 2
+                    odd += 2
+                else:
+                    even += 2
+            else: 
+                if oddIdx == 1:
+                    odd += 2
+                else:
+                    nums[even], nums[odd] = nums[odd], nums[even]
+                    even += 2
+                    odd += 2
+
+        return nums
+```
+
+## Improved Approach
+```python
+class Solution:
+    def sortArrayByParityII(self, nums: List[int]) -> List[int]:
+        even, odd = 0, 1
+        n = len(nums)
+
+        while even < n and odd < n:
+            if nums[even] % 2 == 0:
+                even += 2
+            elif nums[odd] % 2 == 1:
+                odd += 2
+            else:
+                nums[even], nums[odd] = nums[odd], nums[even]
+                even += 2
+                odd += 2
+
+        return nums
+```
+--------------------------------------------------------
+**Usual computation**
+```python
+class Solution:
+    def sortArrayByParityII(self, nums: List[int]) -> List[int]:
+        res = [0] * len(nums)
+        evenInd = 0
+        oddInd = 1
+        for i in range(len(nums)):
+            if nums[i] % 2 == 0:
+                res[evenInd] = nums[i]
+                evenInd += 2
+            if nums[i] % 2 == 1:
+                res[oddInd] = nums[i]
+                oddInd += 2
+        return res
+```
+
