@@ -33,3 +33,30 @@
 	<li><code>arr.length</code><b> </b><strong>is a multiple</strong> of <code>20</code>.</li>
 	<li><code><font face="monospace">0 &lt;= arr[i] &lt;= 10<sup>5</sup></font></code></li>
 </ul>
+
+# Solution
+```python
+class Solution:
+    def trimMean(self, arr: List[int]) -> float:
+        n = len(arr)
+        arr.sort()
+
+        removeElement = int(0.05 * n)
+
+        arrSum = sum(arr[removeElement:n-removeElement])
+
+        return arrSum / (n - 2*removeElement)
+```
+* We can optimize the variable usage note the end index is `n-removeElement` but when you consider the negative indexing the value of end index will be just `-removeElement`
+
+```python
+class Solution:
+    def trimMean(self, arr: List[int]) -> float:
+        arr.sort()
+        n=len(arr)
+        n=n//20 # 5% computation 
+
+        arr = arr[n:-n]
+
+        return sum(arr) / len(arr)
+ ```
