@@ -32,3 +32,22 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 500</code></li>
 </ul>
+
+# Solution
+```python
+class Solution:
+    def generateTheString(self, n: int) -> str:
+        if n % 2 == 1:
+            return 'a'*n
+        else:
+            return 'a'*(n-1)+'b'
+```
+
+--------------
+
+```python
+class Solution:
+    def generateTheString(self, n: int) -> str:
+        if n % 2: return 'a'*n
+        return 'a' * (n - 1) + 'b'
+```
