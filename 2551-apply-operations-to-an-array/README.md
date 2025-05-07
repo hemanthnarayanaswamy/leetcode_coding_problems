@@ -46,3 +46,49 @@ After that, we shift the 0&#39;s to the end, which gives the array [1,4,2,0,0,0]
 	<li><code>2 &lt;= nums.length &lt;= 2000</code></li>
 	<li><code>0 &lt;= nums[i] &lt;= 1000</code></li>
 </ul>
+
+# Solution 
+* Simple problem but i complicated the solution trying to optimize at the start 
+```python
+class Solution:
+    def applyOperations(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        result = []
+        zeroCounter = 0
+
+        if n < 3:
+            return sorted(nums, reverse=True)
+
+        for i in range(n):
+            if nums[i] == 0:
+                zeroCounter += 1
+                continue
+
+            if i+1 < n and nums[i] == nums[i+1]:
+                result.append(2 * nums[i])
+                nums[i+1] = 0
+            else:
+                result.append(nums[i])
+        
+
+        return result + [0]*zeroCounter
+```
+
+## Optimized Solutin 
+```python
+class Solution:
+    def applyOperations(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+
+        for i in range(n-1):
+            if nums[i] == nums[i+1]:
+                nums[i] = 2 * nums[i]
+                nums[i+1] = 0
+
+        result = [num for num in nums if num != 0]
+
+        while n != len(result):
+            result.append(0)
+
+        return result
+```
