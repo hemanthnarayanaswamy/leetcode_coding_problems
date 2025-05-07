@@ -9,8 +9,7 @@ class Solution:
 
         result = [num for num in nums if num != 0]
 
-        zeros = nums.count(0)
-        
-        result += [0]*zeros 
+        while n != len(result):
+            result.append(0)
 
         return result
