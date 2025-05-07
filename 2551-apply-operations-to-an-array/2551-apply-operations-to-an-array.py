@@ -4,9 +4,6 @@ class Solution:
         result = []
         zeroCounter = 0
 
-        if n < 3:
-            return sorted(nums, reverse=True)
-
         for i in range(n):
             if nums[i] == 0:
                 zeroCounter += 1
