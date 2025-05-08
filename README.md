@@ -142,6 +142,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2624-difference-between-element-sum-and-digit-sum-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2624-difference-between-element-sum-and-digit-sum-of-an-array) |
 | [2631-sort-the-students-by-their-kth-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2631-sort-the-students-by-their-kth-score) |
 | [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
+| [2727-number-of-senior-citizens](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2727-number-of-senior-citizens) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3194-find-words-containing-character](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3194-find-words-containing-character) |
 | [3206-find-common-elements-between-two-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3206-find-common-elements-between-two-arrays) |
@@ -293,6 +294,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [2502-sort-the-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2502-sort-the-people) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2576-minimum-penalty-for-a-shop) |
+| [2727-number-of-senior-citizens](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2727-number-of-senior-citizens) |
 | [2887-sort-vowels-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2887-sort-vowels-in-a-string) |
 | [3174-minimum-number-of-changes-to-make-binary-string-beautiful](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3174-minimum-number-of-changes-to-make-binary-string-beautiful) |
 | [3194-find-words-containing-character](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3194-find-words-containing-character) |
