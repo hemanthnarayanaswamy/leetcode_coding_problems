@@ -10,7 +10,4 @@ class Solution:
                 nums[i + 2] = 1 if nums[i + 2] == 0 else 0
                 count += 1
         
-        if nums[i+1] == 0 or nums[i+2] == 0:
-            return -1
-        
-        return count
+        return count if sum(nums) == n else -1
