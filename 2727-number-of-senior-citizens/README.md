@@ -36,3 +36,17 @@
 	<li><code>details[i][10] is either &#39;M&#39; or &#39;F&#39; or &#39;O&#39;.</code></li>
 	<li>The phone numbers and seat numbers of the passengers are distinct.</li>
 </ul>
+
+
+# Solution 
+```python
+class Solution:
+    def countSeniors(self, details: List[str]) -> int:
+        seniorCount = 0
+
+        for detail in details:
+            if int(detail[11:13]) > 60: #if int(detail[11:13]) > 60:
+                seniorCount += 1
+        
+        return seniorCount
+```
