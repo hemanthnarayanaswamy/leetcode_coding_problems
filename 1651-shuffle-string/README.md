@@ -29,3 +29,19 @@
 	<li><code>0 &lt;= indices[i] &lt; n</code></li>
 	<li>All values of <code>indices</code> are <strong>unique</strong>.</li>
 </ul>
+
+# Solution
+* What question actually ask is to set the current character at index[i]th position in the shuffled list 
+* Look the example diagram carefully to analyze the solution that you'll write.
+
+```python
+class Solution:
+    def restoreString(self, s: str, indices: List[int]) -> str:
+        n = len(s)
+        shuffled = [0]*n
+
+        for i in range(n):
+            shuffled[indices[i]] = s[i]
+            
+        return ''.join(shuffled)
+```
