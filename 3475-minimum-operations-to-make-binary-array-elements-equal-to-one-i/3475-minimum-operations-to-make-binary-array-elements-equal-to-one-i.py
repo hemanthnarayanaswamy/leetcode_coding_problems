@@ -10,4 +10,4 @@ class Solution:
                 nums[i + 2] = 1 - nums[i + 2] 
                 count += 1
         
-        return count if sum(nums) == n else -1
+        return count if sum(nums) == n else -1 # sum should be equal to the length 
