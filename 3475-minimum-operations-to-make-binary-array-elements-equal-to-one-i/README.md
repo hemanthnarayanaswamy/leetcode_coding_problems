@@ -46,3 +46,40 @@ It is impossible to make all elements equal to 1.</p>
 	<li><code>3 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= nums[i] &lt;= 1</code></li>
 </ul>
+
+# Solution Appraoch 
+* Initialize n as the size of nums.
+
+* Initialize count to track the number of flip operations.
+
+* Iterate through nums up to n - 3:
+
+*  If nums[i] is 0, perform a triplet flip starting at i:
+		*  Flip nums[i] to 1.
+		*  Flip nums[i + 1] (toggle 0 to 1 or 1 to 0).
+		*  Flip nums[i + 2] (toggle 0 to 1 or 1 to 0).
+		*  Increment count as a flip operation was performed.
+		*  If nums[n - 2] or nums[n - 1] is still 0, return -1 since making all elements 1 is impossible.
+
+Otherwise, return count as the minimum number of operations needed.
+
+`The first observation is that if a 0 appears near the end of the array (specifically within the last two positions), we cannot flip it using a full triplet. This means that if any 0 is left in the last two places after processing, it is impossible to make the entire array 1, so we return -1`
+
+```python
+class Solution:
+    def minOperations(self, nums: List[int]) -> int:
+        count = 0
+        n = len(nums)
+
+        for i in range(n-2):
+            if nums[i] == 0:
+                nums[i] = 1
+                nums[i + 1] = 1 if nums[i + 1] == 0 else 0
+                nums[i + 2] = 1 if nums[i + 2] == 0 else 0
+                count += 1
+        
+        if nums[i+1] == 0 or nums[i+2] == 0:
+            return -1
+        
+        return count
+```
