@@ -87,8 +87,6 @@ class Solution:
 
                 if x % 100 == 0:
                     y = x // 100
-                    print(y)
-                    print(result)
                     result += d[y] + ' ' + d[100] + ' ' + d[1000000] + ' '
                 elif x in d:
                     result += d[x] + ' ' + d[1000000] + ' '
