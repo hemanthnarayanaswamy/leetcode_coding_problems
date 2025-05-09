@@ -25,3 +25,22 @@
 	<li><code>dominoes[i].length == 2</code></li>
 	<li><code>1 &lt;= dominoes[i][j] &lt;= 9</code></li>
 </ul>
+
+# Solution 
+* We need to count all equivalent dominoes, where dominoes are represented by a pairs.
+* Noticing that the elements in the pairs are all not greater than 9, we can concatenate each binary pair into a two-digit positive integer, i.e., (x,y)→10x+y. In this way, there is no need to use a hash table to count the number of elements, but we can directly use an array of length 100.
+
+```python
+class Solution:
+    def numEquivDominoPairs(self, dominoes: List[List[int]]) -> int:
+        num = [0] * 100
+        result = 0
+
+        for x, y in dominoes:
+            val = x * 10 + y if x <= y else y * 10 + x
+            
+            result += num[val]
+            num[val] += 1
+        
+        return result
+```
