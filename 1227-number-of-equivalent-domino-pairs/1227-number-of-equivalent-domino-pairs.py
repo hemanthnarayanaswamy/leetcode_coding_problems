@@ -4,8 +4,10 @@ class Solution:
         result = 0
 
         for x, y in dominoes:
-            val = x * 10 + y if x <= y else y * 10 + x
-            
+            if x > y: x, y = y, x
+
+            val = x * 10 + y
+
             result += num[val]
             num[val] += 1
         
