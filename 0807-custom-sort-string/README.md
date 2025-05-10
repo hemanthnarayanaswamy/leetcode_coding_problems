@@ -38,3 +38,44 @@
 	<li><code>order</code> and <code>s</code> consist of lowercase English letters.</li>
 	<li>All the characters of <code>order</code> are <strong>unique</strong>.</li>
 </ul>
+
+# Approch 
+* count the frequency of all the elements in the `s` and then iterate through the `order` strign to get the characters from the frequency count and append in the result 
+* Then iterate over the frequecy count to check which characters are left out and append them as well. 
+
+```python
+class Solution:
+    def customSortString(self, order: str, s: str) -> str:
+        result = ''
+        sfreq = Counter(s)
+
+        for char in order:
+            result += char * sfreq.get(char, 0)
+        
+        for char, n in sfreq.items():
+            if char not in result:
+                result += char * n
+        
+        return result
+```
+
+# Improvement 
+* use a list to store the result instread of a string 
+* In the second iteration we are checking if the character is present in the `order` instead of the `result`
+
+```python
+class Solution:
+    def customSortString(self, order: str, s: str) -> str:
+        result = []
+        sfreq = Counter(s)
+
+        for char in order:
+            if char in sfreq:
+                result.append(char * sfreq[char])
+        
+        for char, n in sfreq.items():
+            if char not in order:
+                result.append(char * n)
+        
+        return ''.join(result)
+```
