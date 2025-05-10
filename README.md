@@ -185,6 +185,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0525-contiguous-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0525-contiguous-array) |
 | [0575-distribute-candies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0575-distribute-candies) |
 | [0782-jewels-and-stones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0782-jewels-and-stones) |
+| [0807-custom-sort-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0807-custom-sort-string) |
 | [0822-unique-morse-code-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0822-unique-morse-code-words) |
 | [0829-subdomain-visit-count](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0829-subdomain-visit-count) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1227-number-of-equivalent-domino-pairs) |
@@ -250,6 +251,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0680-valid-palindrome-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0680-valid-palindrome-ii) |
 | [0742-to-lower-case](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0742-to-lower-case) |
 | [0782-jewels-and-stones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0782-jewels-and-stones) |
+| [0807-custom-sort-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0807-custom-sort-string) |
 | [0822-unique-morse-code-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0822-unique-morse-code-words) |
 | [0829-subdomain-visit-count](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0829-subdomain-visit-count) |
 | [0841-shortest-distance-to-a-character](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0841-shortest-distance-to-a-character) |
@@ -401,6 +403,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0561-array-partition](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0561-array-partition) |
 | [0628-maximum-product-of-three-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0628-maximum-product-of-three-numbers) |
 | [0748-largest-number-at-least-twice-of-others](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0748-largest-number-at-least-twice-of-others) |
+| [0807-custom-sort-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0807-custom-sort-string) |
 | [0941-sort-array-by-parity](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0941-sort-array-by-parity) |
 | [0948-sort-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0948-sort-an-array) |
 | [0958-sort-array-by-parity-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0958-sort-array-by-parity-ii) |
