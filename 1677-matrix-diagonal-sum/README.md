@@ -39,3 +39,54 @@ Notice that element mat[1][1] = 5 is counted only once.
 	<li><code>1 &lt;= n &lt;= 100</code></li>
 	<li><code>1 &lt;= mat[i][j] &lt;= 100</code></li>
 </ul>
+
+**if You observe matrix the primary diagonal are ( i == j ) and secondary diagonal are ( i + j = n-1)**
+
+# Approach
+* Travers a matrix
+* primary diagonal are ( i == j ) i and j value is same so i use sum += mat[i][i];
+* Not repete the value if( i != mat.length - i - 1)
+* we know j = ( i + j = n-1), so we can write this also j= n-1-i
+* In code we write line this sum += mat[i][mat.length-i-1];
+
+```python 
+class Solution:
+    def diagonalSum(self, mat: List[List[int]]) -> int:
+        n = len(mat)
+        result = 0
+
+        for i in range(n):
+            for j in range(n):
+                if i == j:
+                    result += mat[i][j]
+                
+                if i + j == n - 1:
+                    result += mat[i][j]
+        
+        if n % 2 == 1:
+            x = n // 2
+            result -= mat[x][x]
+        
+        return result
+```
+
+# Improves Version 
+```python
+class Solution:
+    def diagonalSum(self, mat: List[List[int]]) -> int:
+        n = len(mat)
+        if n == 1:
+            return mat[0][0]
+
+        total_sum = 0
+
+        for i in range(n):
+            # primary diagonal
+            total_sum += mat[i][i]
+
+            # secondary diagonal
+            if i != n - 1 - i:
+                total_sum += mat[i][n - 1 - i]
+
+        return total_sum
+```
