@@ -35,3 +35,18 @@ The 5 good pairs are <code>(0, 0)</code>, <code>(1, 0)</code>, <code>(1, 1)</cod
 	<li><code>1 &lt;= nums1[i], nums2[j] &lt;= 50</code></li>
 	<li><code>1 &lt;= k &lt;= 50</code></li>
 </ul>
+
+# Solution 
+* Use the brute Force approach
+```python
+class Solution:
+    def numberOfPairs(self, nums1: List[int], nums2: List[int], k: int) -> int:
+        goodCounter = 0 
+
+        for i in nums1:
+            for j in nums2:
+                if i % (j * k) == 0:
+                    goodCounter += 1
+        
+        return goodCounter
+```
