@@ -5,7 +5,7 @@ class Solution:
         n = len(arr)
         answer, counter = 0, 0
 
-        for key, val in arrFreq.items():
+        for val in arrFreq.values():
             if answer < n // 2:
                 answer += val 
                 counter += 1
