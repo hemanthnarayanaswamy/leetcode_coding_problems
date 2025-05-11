@@ -156,6 +156,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3324-split-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3324-split-the-array) |
 | [3421-count-pairs-that-form-a-complete-day-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3421-count-pairs-that-form-a-complete-day-i) |
 | [3430-count-days-without-meetings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3430-count-days-without-meetings) |
+| [3446-find-the-number-of-good-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3446-find-the-number-of-good-pairs-i) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
@@ -220,6 +221,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3324-split-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3324-split-the-array) |
 | [3412-permutation-difference-between-two-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3412-permutation-difference-between-two-strings) |
 | [3421-count-pairs-that-form-a-complete-day-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3421-count-pairs-that-form-a-complete-day-i) |
+| [3446-find-the-number-of-good-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3446-find-the-number-of-good-pairs-i) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3455-minimum-length-of-string-after-operations) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
