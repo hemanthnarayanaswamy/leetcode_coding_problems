@@ -1,16 +1,15 @@
 class Solution:
     def minSetSize(self, arr: List[int]) -> int:
         arrFreq = Counter(arr)
-        arrFreq = dict(sorted(arrFreq.items(), key=lambda item: item[1], reverse=True))
-        n = len(arr)
+        arrFreq = sorted(arrFreq.values(), reverse=True)
+        nhalf = len(arr) // 2
         answer, counter = 0, 0
 
-        for val in arrFreq.values():
-            if answer < n // 2:
-                answer += val 
-                counter += 1
-            elif answer > n // 2:
-                return counter
+        for val in arrFreq:
+            answer += val 
+            counter += 1
+            if answer >= nhalf:
+                break
         
         return counter 
         
