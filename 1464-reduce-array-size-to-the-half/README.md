@@ -29,3 +29,48 @@ Choosing set {2,7} is not possible as it will make the new array [3,3,3,3,5,5,5]
 	<li><code>arr.length</code> is even.</li>
 	<li><code>1 &lt;= arr[i] &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+
+# Appraoch 
+1. Count the frequency of each number in the array using a hash map.
+2. Store all frequencies in a separate vector.
+3. Sort the frequency vector in descending order.
+4. Iterate through the sorted frequencies, accumulating the total number of elements removed.
+5. Keep a counter to track how many unique numbers have been removed.
+6. As soon as the accumulated removed elements reach at least half of the original array size, return the counter.
+
+```python
+class Solution:
+    def minSetSize(self, arr: List[int]) -> int:
+        arrFreq = Counter(arr)
+        arrFreq = dict(sorted(arrFreq.items(), key=lambda item: item[1], reverse=True))
+        n = len(arr)
+        answer, counter = 0, 0
+
+        for val in arrFreq.values():
+            if answer < n // 2:
+                answer += val 
+                counter += 1
+            elif answer > n // 2:
+                return counter
+        
+        return counter 
+```
+
+# Improves Solution 
+```python
+class Solution:
+    def minSetSize(self, arr: List[int]) -> int:
+        arrFreq = Counter(arr)
+        valueFreq = sorted(arrFreq.values(), reverse=True)
+        nhalf = len(arr) // 2
+        answer, counter = 0, 0
+
+        for val in valueFreq:
+            answer += val 
+            counter += 1
+            if answer >= nhalf:
+                break
+        
+        return counter 
+```
