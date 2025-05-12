@@ -100,6 +100,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 | [1580-shuffle-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1580-shuffle-the-array) |
 | [1603-running-sum-of-1d-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1603-running-sum-of-1d-array) |
+| [1604-least-number-of-unique-integers-after-k-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1604-least-number-of-unique-integers-after-k-removals) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
 | [1651-shuffle-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1651-shuffle-string) |
 | [1677-matrix-diagonal-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1677-matrix-diagonal-sum) |
@@ -198,6 +199,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1464-reduce-array-size-to-the-half](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1464-reduce-array-size-to-the-half) |
 | [1469-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1469-minimum-number-of-steps-to-make-two-strings-anagram) |
 | [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
+| [1604-least-number-of-unique-integers-after-k-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1604-least-number-of-unique-integers-after-k-removals) |
 | [1619-path-crossing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1619-path-crossing) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
 | [1752-arithmetic-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1752-arithmetic-subarrays) |
@@ -422,6 +424,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
 | [1530-check-if-a-string-can-break-another-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1530-check-if-a-string-can-break-another-string) |
 | [1561-rearrange-words-in-a-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1561-rearrange-words-in-a-sentence) |
+| [1604-least-number-of-unique-integers-after-k-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1604-least-number-of-unique-integers-after-k-removals) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [1752-arithmetic-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1752-arithmetic-subarrays) |
 | [1961-maximum-ice-cream-bars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1961-maximum-ice-cream-bars) |
@@ -456,6 +459,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1297-maximum-number-of-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1297-maximum-number-of-balloons) |
 | [1354-find-players-with-zero-or-one-losses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1354-find-players-with-zero-or-one-losses) |
 | [1469-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1469-minimum-number-of-steps-to-make-two-strings-anagram) |
+| [1604-least-number-of-unique-integers-after-k-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1604-least-number-of-unique-integers-after-k-removals) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1987-substrings-of-size-three-with-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1987-substrings-of-size-three-with-distinct-characters) |
@@ -503,6 +507,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1407-group-the-people-given-the-group-size-they-belong-to](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1407-group-the-people-given-the-group-size-they-belong-to) |
 | [1464-reduce-array-size-to-the-half](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1464-reduce-array-size-to-the-half) |
 | [1530-check-if-a-string-can-break-another-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1530-check-if-a-string-can-break-another-string) |
+| [1604-least-number-of-unique-integers-after-k-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1604-least-number-of-unique-integers-after-k-removals) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [1807-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1807-partitioning-into-minimum-number-of-deci-binary-numbers) |
 | [1961-maximum-ice-cream-bars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1961-maximum-ice-cream-bars) |
