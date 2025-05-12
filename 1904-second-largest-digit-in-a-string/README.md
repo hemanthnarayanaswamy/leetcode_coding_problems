@@ -26,3 +26,53 @@
 	<li><code>1 &lt;= s.length &lt;= 500</code></li>
 	<li><code>s</code> consists of only lowercase English letters and digits.</li>
 </ul>
+
+
+# Solution
+* create a alphabet string that has all the characters.
+* Now create a set of unique intergers from the s
+* sort that set into a list, then if the len of the list is more then 1 return the second element else -1.
+
+```python
+class Solution:
+    def secondHighest(self, s: str) -> int:
+        alphabates = 'abcdefghijklmnopqrstuvwxyz'
+
+        nums = set(int(char) for char in s if char not in alphabates)
+        nums = sorted(nums, reverse=True)
+
+        if len(nums) > 1:
+            return nums[1]
+        else:
+            return -1
+```
+
+# Improved Solution
+```python
+class Solution:
+    def secondHighest(self, s: str) -> int:
+        digits = {int(c) for c in s if c.isdigit()}
+
+        if len(digits) < 2:
+            return -1
+						
+        return sorted(digits, reverse=True)[1]
+```
+
+## Without Sorting 
+```python
+class Solution:
+    def secondHighest(self, s: str) -> int:
+        first = second = -1
+
+        for c in s:
+            if c.isdigit():
+                d = int(c)
+                if d > first:
+                    second = first
+                    first = d
+                elif first > d > second:
+                    second = d
+
+        return second
+```
