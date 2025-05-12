@@ -1,8 +1,14 @@
 class Solution:
     def secondHighest(self, s: str) -> int:
-        digits = {int(c) for c in s if c.isdigit()}
+        first = second = -1
 
-        if len(digits) < 2:
-            return -1
+        for c in s:
+            if c.isdigit():
+                d = int(c)
+                if d > first:
+                    second = first
+                    first = d
+                elif first > d > second:
+                    second = d
 
-        return sorted(digits, reverse=True)[1]
+        return second
