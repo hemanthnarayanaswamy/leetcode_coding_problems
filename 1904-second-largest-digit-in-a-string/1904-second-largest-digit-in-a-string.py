@@ -1,11 +1,8 @@
 class Solution:
     def secondHighest(self, s: str) -> int:
-        alphabates = 'abcdefghijklmnopqrstuvwxyz'
+        digits = {int(c) for c in s if c.isdigit()}
 
-        nums = set(int(char) for char in s if char not in alphabates)
-        nums = sorted(nums, reverse=True)
-
-        if len(nums) > 1:
-            return nums[1]
-        else:
+        if len(digits) < 2:
             return -1
+
+        return sorted(digits, reverse=True)[1]
