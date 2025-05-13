@@ -47,3 +47,29 @@ We can make at most one copy of &quot;aaaaa&quot;, so we return 1.
 
 <p>&nbsp;</p>
 <p><strong>Note:</strong> This question is the same as <a href="https://leetcode.com/problems/maximum-number-of-balloons/description/" target="_blank"> 1189: Maximum Number of Balloons.</a></p>
+
+# Approach
+* freq_s to count occurrences of each character in s.
+* freq_t to count occurrences of each character in target.
+
+` For each character in target, calculate how many times it can be formed from s based on its frequency in both freq_s and freq_t.
+The limiting factor will be the character with the smallest ratio of freq_s[i] to freq_t[i].`
+**Return the minimum value among all ratios as the maximum number of times target can be formed.**
+
+1. Consider each letter one at a time. If there are x occurrences of a letter in s and y occurrences of the same letter in target, how many copies of this letter can we make?
+2. We can make floor(x / y) copies of the letter.
+
+```python
+class Solution:
+    def rearrangeCharacters(self, s: str, target: str) -> int:
+        target = Counter(target)
+        s = {k:v for (k, v) in Counter(s).items() if k in target}
+
+        for char in target:
+            if char not in s:
+                return 0
+            else:
+                s[char] = (s[char] // target[char])
+        
+        return min(s.values())
+```
