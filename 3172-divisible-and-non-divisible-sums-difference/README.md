@@ -49,3 +49,35 @@ We return 0 - 15 = -15 as the answer.
 <ul>
 	<li><code>1 &lt;= n, m &lt;= 1000</code></li>
 </ul>
+
+# Solution
+```python
+class Solution:
+    def differenceOfSums(self, n: int, m: int) -> int:
+        num1, num2 = 0, 0
+        
+        for num in range(1, n+1):
+            if num % m == 0:
+                num2 += num
+            else:
+                num1 += num
+        
+        return num1 - num2
+ ```
+ 
+ ```python
+ class Solution:
+    def differenceOfSums(self, n: int, m: int) -> int:
+        num1, num2 = 0, 0
+
+        i = 1
+
+        while i < n+1:
+            if i % m == 0:
+                num2 += i
+            else:
+                num1 += i
+            i += 1
+        
+        return num1 - num2
+ ```
