@@ -4,7 +4,7 @@ class Solution:
         moves = 0
 
         for num in nums:
-            moves += abs(num - minValue)
+            moves += num - minValue
         
         return moves
         
