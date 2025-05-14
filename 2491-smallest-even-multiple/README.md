@@ -22,3 +22,17 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 150</code></li>
 </ul>
+
+
+# Solution
+* If the number is ever then that is the smallest integer
+* if its odd then the product of them is the smallest integer 
+
+```python
+class Solution:
+    def smallestEvenMultiple(self, n: int) -> int:
+        if n % 2 == 0:
+            return n
+        else:
+            return 2*n
+```
