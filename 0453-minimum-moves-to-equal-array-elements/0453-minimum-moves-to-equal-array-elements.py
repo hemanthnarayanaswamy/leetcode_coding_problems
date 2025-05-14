@@ -1,10 +1,5 @@
 class Solution:
     def minMoves(self, nums: List[int]) -> int:
-        minValue = min(nums)
-        moves = 0
-
-        for num in nums:
-            moves += num - minValue
-        
-        return moves
-        
+        # incrementing (n - 1) elements == decrementing 1 element
+        # num steps to increase all to same element == num steps to decrease to min element
+        return sum(nums) - len(nums) * min(nums)
