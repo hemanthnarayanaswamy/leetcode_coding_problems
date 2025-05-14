@@ -36,3 +36,39 @@
 	<li><code>1 &lt;= nums.length &lt;= 50</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 50</code></li>
 </ul>
+
+# Approach 
+```
+1 2 3 4 5 6 7 8 9 
+
+* subtract 1 
+* Increment 1
+* no operation 
+* decrement 1
+* increment 1
+* no operation 
+* decrement 1
+* increment 1
+* no operation 
+```
+**If you observe the pattern all the number that are not divisible by 3 require one opeation either increment or decrement to be divisible by 3**
+
+* So the total number of operations will be number of elements that are not divisible by 3 
+
+```python
+class Solution:
+    def minimumOperations(self, nums: List[int]) -> int:
+        operations = 0
+
+        for num in nums:
+            if num % 3 != 0:
+                operations += 1
+        
+        return operations
+```
+
+```python
+class Solution:
+    def minimumOperations(self, nums: List[int]) -> int:
+        return len([num for num in nums if num % 3 != 0])
+```
