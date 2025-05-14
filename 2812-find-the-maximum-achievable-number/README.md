@@ -45,3 +45,35 @@
 <ul>
 	<li><code>1 &lt;= num, t&nbsp;&lt;= 50</code></li>
 </ul>
+
+# Solution 
+* The logic is a bit messed up, what you need to done is find the maximum possible initial x value ( what x actually started with )
+* But we know that after the k operations the need achievable number `x` which is equal to num after t operations 
+
+```
+n = 4, t = 1
+If I increase n then n = 5
+If I decrease n then n = 3
+
+x - t
+x + t 
+
+If I want both x and n to be equal, need to increase n and decrease x so that x can start with maximum value 
+
+if after increment operations n=5 then x=5 because achievable number when n is increased x is decreased so x started at x = 6
+
+n=3, t=2
+If I inc rease n in two operations n=5 x is also x=5 but x is decreasced by t so x=7
+```
+
+**Formula**
+```
+x - t = n + t
+x = n + 2t
+```
+
+```python
+class Solution:
+    def theMaximumAchievableX(self, num: int, t: int) -> int:
+        return num + 2*t
+```
