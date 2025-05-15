@@ -51,3 +51,22 @@ The <strong>frequency</strong> of a letter <code>x</code> is the number of times
 	<li><code>1 &lt;= s.length &lt;= 100</code></li>
 	<li><code>s</code> consists of lowercase English letters only.</li>
 </ul>
+
+# Solution
+```python
+class Solution:
+    def maxFreqSum(self, s: str) -> int:
+        maxV, maxC = 0, 0
+        s = Counter(s)
+        vowels = 'aeiou'
+
+        for char, val in s.items():
+            if char in vowels:
+                if val > maxV:
+                    maxV = val
+            else:
+                if val > maxC:
+                    maxC = val
+        
+        return maxV + maxC
+```
