@@ -1,3 +1,3 @@
 class Solution:
     def numberOfEmployeesWhoMetTarget(self, hours: List[int], target: int) -> int:
-        return len([hr for hr in hours if hr >= target])
+        return len([empHrs for empHrs in hours if empHrs >= target])
