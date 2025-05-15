@@ -1,18 +1,13 @@
 class Solution:
     def minBitFlips(self, start: int, goal: int) -> int:
-        startB = bin(start)[2:]
-        goalB = bin(goal)[2:]
-        flipCount = 0
+        if start == goal:
+            return 0
 
-        n = abs(len(startB) - len(goalB))
+        xor_result = start ^ goal # it return a new number after xor operation
 
-        if len(startB) > len(goalB):
-            goalB = '0'*n+goalB
-        else:
-            startB = '0'*n+startB
+        # the xorResult is int type (Eg: 21, 77, 54 something like this)
+
+        # convert that number to binary that will make it a string and count char 1 and return it or 
+
+        return bin(xor_result).count('1')
         
-        for i in range(len(goalB)):
-            if goalB[i] != startB[i]:
-                flipCount += 1
-        
-        return flipCount
