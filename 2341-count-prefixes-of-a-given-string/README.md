@@ -32,3 +32,24 @@ Note that the same string can occur multiple times in words, and it should be co
 	<li><code>1 &lt;= words[i].length, s.length &lt;= 10</code></li>
 	<li><code>words[i]</code> and <code>s</code> consist of lowercase English letters <strong>only</strong>.</li>
 </ul>
+
+# Solution
+* Use counter to put the freqency of all the words to the hashMap. 
+* Next do a while loop using a single pointer which tracks and prefix 
+* and using string slicing find if that prefixed string is in the hashMap if it is found then append the value from the Frequency work hashMap
+* return the tracked sum result 
+
+```python
+class Solution:
+    def countPrefixes(self, words: List[str], s: str) -> int:
+        wordsFreq = Counter(words)
+        prefixCount = 0
+        i = 0
+        while i < len(s):
+            pre = s[:i+1]
+            if pre in wordsFreq:
+                prefixCount += wordsFreq[pre]
+            i += 1
+        
+        return prefixCount
+```
