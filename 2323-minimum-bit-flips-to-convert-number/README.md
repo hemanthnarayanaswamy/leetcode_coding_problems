@@ -39,3 +39,57 @@ It can be shown we cannot convert 3 to 4 in less than 3 steps. Hence, we return 
 
 <p>&nbsp;</p>
 <p><strong>Note:</strong> This question is the same as <a href="https://leetcode.com/problems/hamming-distance/description/" target="_blank">461: Hamming Distance.</a></p>
+
+# Appraoch 
+* After converting the number to binary you need to keep in mind to check the length of both the binary length and before iterating make sure to adjust the lenght of both to be equal for easier iteration.
+
+```python
+class Solution:
+    def minBitFlips(self, start: int, goal: int) -> int:
+        startB = bin(start)[2:]
+        goalB = bin(goal)[2:]
+        flipCount = 0
+
+        n = abs(len(startB) - len(goalB))
+
+        if len(startB) > len(goalB):
+            goalB = '0'*n+goalB
+        else:
+            startB = '0'*n+startB
+        
+        for i in range(len(goalB)):
+            if goalB[i] != startB[i]:
+                flipCount += 1
+        
+        return flipCount
+```
+
+# Optimal Solution
+**The general rule of the XOR operation is that XOR between two bits returns 1 if the bits differ and 0 if they are the same. This is perfect for this problem.**
+
+```
+By applying XOR to the start and goal, we get a new number where each 1 represents a bit that differs between the start and goal. The problem now reduces to counting how many 1s are in the binary representation of this new number. This simplifies the entire process because we shift from comparing each bit individually to a single operation that captures all
+```
+
+```python
+class Solution:
+    def minBitFlips(self, start: int, goal: int) -> int:
+        if start == goal:
+            return 0
+
+        xor_result = start ^ goal # it return a new number after xor operation
+
+        # the xorResult is int type (Eg: 21, 77, 54 something like this)
+
+        # convert that number to binary that will make it a string and count char 1 and return it or 
+
+        return bin(xor_result).count('1')
+```
+
+------
+
+```python
+class Solution:
+    def minBitFlips(self, start: int, goal: int) -> int:
+        return (start ^ goal).bit_count()
+```
