@@ -31,3 +31,14 @@ The above arrows point to positions where the corresponding bits are different.
 
 <p>&nbsp;</p>
 <p><strong>Note:</strong> This question is the same as <a href="https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/" target="_blank"> 2220: Minimum Bit Flips to Convert Number.</a></p>
+
+
+# Solution 
+* Refer to this link
+https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/edit/main/2323-minimum-bit-flips-to-convert-number/README.md
+
+```python
+class Solution:
+    def hammingDistance(self, x: int, y: int) -> int:
+        return (x ^ y).bit_count()
+```
