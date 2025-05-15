@@ -30,3 +30,37 @@ Only two moves are needed (remember each move increments or decrements one eleme
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+
+# Soution
+The minimum number of moves is equal to the sum of absolute differences between each element and the median of the array.
+Sorting the array helps in finding the median efficiently.
+The median is the middle element for arrays with odd length and the average of the two middle elements for arrays with even length.
+
+```python
+class Solution:
+    def minMoves2(self, nums: List[int]) -> int:
+        n = len(nums)
+        nums = sorted(nums)
+
+        if n%2 == 1:
+            median = nums[(n - 1) // 2]
+        else:
+            i = n // 2
+            median = (nums[i] + nums[i-1]) // 2
+
+        return sum([abs(num - median) for num in nums])
+```
+
+# Improved 
+* reduce the complexity of calculating the median 
+
+```python
+class Solution:
+    def minMoves2(self, nums: List[int]) -> int:
+        nums = sorted(nums)
+
+        median = nums[len(nums) // 2]
+
+        return sum([abs(num - median) for num in nums])
+```
