@@ -2,16 +2,14 @@ class Solution:
     def maxFreqSum(self, s: str) -> int:
         maxV, maxC = 0, 0
         sFreq = Counter(s)
-        vowels = 'aeiou'
+        vowels = {'a','e','i','o','u'}
 
-        for char in s:
+        for char, val in sFreq.items():
             if char in vowels:
-                tempV =  sFreq[char]
-                if tempV > maxV:
-                    maxV = tempV
+                if val > maxV:
+                    maxV = val
             else:
-                tempC =  sFreq[char]
-                if tempC > maxC:
-                    maxC = tempC 
+                if val > maxC:
+                    maxC = val
         
         return maxV + maxC
