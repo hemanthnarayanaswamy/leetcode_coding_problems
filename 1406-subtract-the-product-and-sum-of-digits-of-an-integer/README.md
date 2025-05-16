@@ -28,3 +28,34 @@ Result = 32 - 11 = 21
 <ul>
 	<li><code>1 &lt;= n &lt;= 10^5</code></li>
 </ul>
+
+
+# Solution
+```python
+class Solution:
+    def subtractProductAndSum(self, n: int) -> int:
+        s, p = 0, 1
+        n = [int(num) for num in str(n)]
+        
+        for num in n:
+            s += num
+            p *= num
+        
+        return p - s 
+```
+
+# Optimal Solution
+```python
+class Solution:
+    def subtractProductAndSum(self, n: int) -> int:
+        sum_digits = 0
+        product_digits = 1
+
+        while n > 0:
+            digit = n % 10
+            sum_digits += digit
+            product_digits *= digit
+            n //= 10
+
+        return product_digits - sum_digits
+```
