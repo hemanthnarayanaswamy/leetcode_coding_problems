@@ -30,3 +30,16 @@ Where &quot;^&quot; corresponds to bitwise XOR operator.
 	<li><code>0 &lt;= start &lt;= 1000</code></li>
 	<li><code>n == nums.length</code></li>
 </ul>
+
+# Solution
+* initially  use `0` to initialte the result, as XOR of input bit with `0` will always result in the input bit as the output. 
+
+```python
+class Solution:
+    def xorOperation(self, n: int, start: int) -> int:
+        result = 0
+        for i in range(n):
+            result ^= start + 2 * i
+        
+        return result 
+```
