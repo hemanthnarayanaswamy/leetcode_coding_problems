@@ -59,3 +59,13 @@
 	<li><code>1 &lt;= nums[i] &lt;= 1000</code></li>
 	<li><code>1 &lt;= k &lt;= 100</code></li>
 </ul>
+
+# Solution 
+*  one line logic
+
+```python
+class Solution:
+    def minOperations(self, nums: List[int], k: int) -> int:
+        return sum(nums)%k
+```
+        
