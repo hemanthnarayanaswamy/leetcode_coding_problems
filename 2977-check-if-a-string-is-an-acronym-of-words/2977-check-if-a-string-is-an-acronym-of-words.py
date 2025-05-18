@@ -4,7 +4,8 @@ class Solution:
             return False
         
         for i in range(len(s)):
-            if not words[i].startswith(s[i]):
+            # if not words[i].startswith(s[i]):
+            if words[i][0] != s[i]:
                 return False 
         
         return True
