@@ -1,8 +1,7 @@
 class Solution:
     def findNonMinOrMax(self, nums: List[int]) -> int:
-        if len(nums) < 3:
-            return -1
-        
+        # if len(nums) < 3:
+        #     return -1
         mi, ma = min(nums), max(nums)
 
         for num in nums:
