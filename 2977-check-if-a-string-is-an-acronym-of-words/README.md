@@ -41,3 +41,33 @@ Hence, s = &quot;ngguoy&quot; is the acronym.
 	<li><code>1 &lt;= s.length &lt;= 100</code></li>
 	<li><code>words[i]</code> and <code>s</code> consist of lowercase English letters.</li>
 </ul>
+
+# Solution
+* make sure both words and s lengths are equal return false if there are not equal.
+* now that they lenghts are equal use iteration to check the acronym condition for the words llist
+* return false if the condition fails else at the end return True
+
+```python
+class Solution:
+    def isAcronym(self, words: List[str], s: str) -> bool:
+        if len(s) != len(words):
+            return False
+        
+        for i in range(len(s)):
+            # if not words[i].startswith(s[i]):
+            if words[i][0] != s[i]:
+                return False 
+        
+        return True
+```
+# Optimal Solution
+* use a single loop to get a new string for the words list and check if the new string is equal to s and return the condition
+
+```python
+class Solution:
+    def isAcronym(self, words: List[str], s: str) -> bool:
+        acronym = ""
+        for w in words:
+            acronym += w[0]
+        return acronym == s
+```
