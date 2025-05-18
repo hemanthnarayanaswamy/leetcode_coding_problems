@@ -30,3 +30,15 @@ At the end the concatenation [2] + [4,4,4] is [2,4,4,4].
 	<li><code>nums.length % 2 == 0</code></li>
 	<li><code><font face="monospace">1 &lt;= nums[i] &lt;= 100</font></code></li>
 </ul>
+
+# Solution
+```python
+class Solution:
+    def decompressRLElist(self, nums: List[int]) -> List[int]:
+        result = []
+        
+        for i in range(0, len(nums), 2):
+            result += [nums[i+1]]*nums[i]
+        
+        return result
+```
