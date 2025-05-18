@@ -35,3 +35,33 @@
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 	<li>All values in <code>nums</code> are distinct</li>
 </ul>
+
+# Sorting Solution
+```python
+class Solution:
+    def findNonMinOrMax(self, nums: List[int]) -> int:
+        n = len(nums)
+
+        if 1 <= n <= 2:
+            return -1 
+
+        nums = sorted(nums)
+
+        return nums[1]
+```
+
+# Improved Solution
+```python
+class Solution:
+    def findNonMinOrMax(self, nums: List[int]) -> int:
+        if len(nums) < 3:
+            return -1
+        
+        mi, ma = min(nums), max(nums)
+
+        for num in nums:
+            if num != mi and num != ma:
+                return num
+        
+        return -1
+```
