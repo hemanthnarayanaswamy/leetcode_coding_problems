@@ -48,3 +48,32 @@
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def minElement(self, nums: List[int]) -> int:
+        digitSum = []
+
+        for num in nums:
+            digitSum.append(sum([int(n) for n in str(num)]))
+        
+        return min(digitSum)
+```
+
+* Change the way to get the digit sum use a proper way rather then using a string 
+
+# Optimal Solution
+```python
+class Solution:
+    def minElement(self, nums: List[int]) -> int:
+        for i in range(len(nums)):
+            num = nums[i]
+            sum = 0
+            while num > 0:
+                sum += num % 10
+                num //= 10
+            nums[i] = sum
+            
+        return min(nums)
+```
