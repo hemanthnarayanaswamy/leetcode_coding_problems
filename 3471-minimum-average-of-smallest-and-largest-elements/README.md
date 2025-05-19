@@ -143,3 +143,23 @@ The smallest element of averages, 5.5, is returned.</div>
 	<li><code>n</code> is even.</li>
 	<li><code>1 &lt;= nums[i] &lt;= 50</code></li>
 </ul>
+
+# Solution 
+* Sort the array so that we can access th emin and max from the first and last elements of the list. 
+* then use a two pointer approach to access the first and last elements. and compute the average 
+
+```python
+class Solution:
+    def minimumAverage(self, nums: List[int]) -> float:
+        nums = sorted(nums)
+        averages = []
+        l, r = 0, len(nums)-1
+
+        while l < r:
+            avg = (nums[l]+nums[r])/2
+            averages.append(avg)
+            l += 1
+            r -= 1
+        
+        return min(averages)
+```
