@@ -5,8 +5,8 @@ class Solution:
             negative = True
             x *= -1
         
-        x = [char for char in str(x)]
-        x = int(''.join(x[::-1]))
+       
+        x = int(str(x)[::-1])
 
         if x > 2**31:
             return 0
