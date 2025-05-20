@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Math
 |  |
 | ------- |
+| [0007-reverse-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0007-reverse-integer) |
 | [0009-palindrome-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0009-palindrome-number) |
 | [0013-roman-to-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0013-roman-to-integer) |
 | [0043-multiply-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0043-multiply-strings) |
