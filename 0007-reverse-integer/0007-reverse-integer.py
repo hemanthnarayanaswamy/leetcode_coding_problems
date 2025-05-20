@@ -1,14 +1,15 @@
 class Solution:
     def reverse(self, x: int) -> int:
-        negative = False
-        if x < 0:
-            negative = True
-            x *= -1
+        temp = x
+        x = abs(x)
         
-       
-        x = int(str(x)[::-1])
+        rev=0
+        while(x>0):
+            digit=x%10
+            rev=rev*10+digit
+            x=x//10
 
-        if x > 2**31:
+        if rev>(2**31): # need to check for only postive condition because we have converted number into positive
             return 0
-
-        return (x*-1) if negative else x
+        
+        return rev if (temp > 0) else -rev
