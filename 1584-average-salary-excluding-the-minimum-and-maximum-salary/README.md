@@ -29,3 +29,34 @@ Average salary excluding minimum and maximum salary is (2000) / 1 = 2000
 	<li><code>1000 &lt;= salary[i] &lt;= 10<sup>6</sup></code></li>
 	<li>All the integers of <code>salary</code> are <strong>unique</strong>.</li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def average(self, salary: List[int]) -> float:
+        n = len(salary)
+        salary.sort()
+
+        salarySum = sum(salary[1:n-1])
+
+        return salarySum / (n-2)
+```
+* we are using the sort so the complexity is `O(logn)`
+
+# Improved 
+* Remove the sort to improve the complexity 
+```python
+class Solution:
+    def average(self, salary: List[int]) -> float:
+        n = len(salary)
+        minNum, maxNum = salary[0], salary[0]
+
+        for income in salary:
+            if income < minNum:
+                minNum = income
+            
+            if income > maxNum:
+                maxNum = income 
+        
+        return (sum(salary) - maxNum - minNum) / (n-2)
+```
