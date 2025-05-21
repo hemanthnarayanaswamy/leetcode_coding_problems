@@ -1,8 +1,13 @@
 class Solution:
     def average(self, salary: List[int]) -> float:
         n = len(salary)
-        salary.sort()
+        minNum, maxNum = salary[0], salary[0]
 
-        salarySum = sum(salary[1:n-1])
-
-        return salarySum / (n-2)
+        for income in salary:
+            if income < minNum:
+                minNum = income
+            
+            if income > maxNum:
+                maxNum = income 
+        
+        return (sum(salary) - maxNum - minNum) / (n-2)
