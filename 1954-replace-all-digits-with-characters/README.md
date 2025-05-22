@@ -42,3 +42,34 @@
 	<li><code>s</code> consists only of lowercase English letters and digits.</li>
 	<li><code>shift(s[i-1], s[i]) &lt;= &#39;z&#39;</code> for all <strong>odd</strong> indices <code>i</code>.</li>
 </ul>
+
+# Solution 
+* We know that we need to take the char and adjacent number to compute the shifted new character and all the numbers are in the odd index 
+* Convert string into list as string is immutable 
+* compute the new character and assign it in s insterad of the number 
+* return the joined new string 
+
+```python
+class Solution:
+    def replaceDigits(self, s: str) -> str:
+        s = list(s)
+
+        for i in range(1, len(s), 2):
+            c, n = s[i-1], int(s[i])
+            s[i] = chr(ord(c)+n)
+
+        return "".join(s)
+```
+
+## Classic Solution 
+```python
+class Solution:
+    def replaceDigits(self, s: str) -> str:
+        res = []
+        for i in range(len(s)):
+            if i % 2 == 0:
+                res.append(s[i])
+            else:
+                res.append(chr(ord(s[i - 1]) + int(s[i])))
+        return ''.join(res)
+```
