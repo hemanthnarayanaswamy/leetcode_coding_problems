@@ -45,3 +45,32 @@ The remaining words have a length of at least 3, so the first letter of each rem
 	<li><code>title</code> consists of words separated by a single space without any leading or trailing spaces.</li>
 	<li>Each word consists of uppercase and lowercase English letters and is <strong>non-empty</strong>.</li>
 </ul>
+
+# Solution 
+* Access of element in the list is O(n), so make to reuse it instead of assessing it again and again 
+* Re-use the variable 
+```python
+class Solution:
+    def capitalizeTitle(self, title: str) -> str:
+        title = title.split()
+
+        for i in range(len(title)):
+            word = title[i]
+            if len(word) > 2:
+                title[i] = word.capitalize()
+            else:
+                title[i] = word.lower()
+        
+        return " ".join(title)
+```
+
+```python
+class Solution:
+    def capitalizeTitle(self, title: str) -> str:
+        words = title.split()
+        result = []
+        for i in words:
+            if len(i) < 3: result.append(i.lower())
+            else: result.append(i.capitalize())
+        return ' '.join(result)
+```
