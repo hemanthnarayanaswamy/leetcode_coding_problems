@@ -28,3 +28,42 @@ For example, in &quot;abbaca&quot; we could remove &quot;bb&quot; since the lett
 	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>s</code> consists of lowercase English letters.</li>
 </ul>
+
+# Solution 
+* My own solution, it was not a bad idea.
+* compare the result last element with the strings next iteration to remove the same elements else append the unique character.
+
+```python
+class Solution:
+    def removeDuplicates(self, s: str) -> str:
+        result = [s[0]]
+
+        for i in range(1, len(s)):
+            if len(result) == 0:
+                result.append(s[i])
+
+            elif result[-1] == s[i]:
+                result.pop()
+                
+            else:
+                result.append(s[i])
+        
+        return ''.join(result)
+```
+
+* logic can be improved
+
+# Improved 
+```python
+class Solution:
+    def removeDuplicates(self, s: str) -> str:
+        result = []
+
+        for c in s:
+            if result and result[-1] == c:
+                result.pop()
+            else:
+                result.append(c)
+        
+        return ''.join(result)
+```
