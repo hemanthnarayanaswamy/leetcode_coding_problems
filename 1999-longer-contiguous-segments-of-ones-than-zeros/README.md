@@ -47,3 +47,53 @@ The segment of 1s is not longer, so return false.
 	<li><code>1 &lt;= s.length &lt;= 100</code></li>
 	<li><code>s[i]</code> is either <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code>.</li>
 </ul>
+
+# Solution 
+* First we need two variable to store the final result for the Zeros and Ones.
+* Next two temp variables to track the continous length of ones and zeros 
+* If a 1 is detected that means the continous zero ends the store the max result in the final result 
+
+```python
+class Solution:
+    def checkZeroOnes(self, s: str) -> bool:
+        countOne, countZero = 0, 0
+        tempOne, tempZero = 0, 0
+
+        for char in s:
+            if char == '1':
+                if tempOne == 0:
+                    countZero = max(countZero, tempZero)
+                    tempZero = 0
+                tempOne += 1
+            else:
+                if tempZero == 0:
+                    countOne = max(countOne, tempOne)
+                    tempOne = 0
+                tempZero += 1
+
+        countOne = max(countOne, tempOne)
+        countZero = max(countZero, tempZero)
+        
+        return countOne > countZero
+```
+
+# Improved Solution 
+```python
+class Solution:
+    def checkZeroOnes(self, s: str) -> bool:
+        countOne, countZero = 0, 0
+        tempOne, tempZero = 0, 0
+
+        for char in s:
+            if char == '1':
+                tempOne += 1
+                tempZero = 0
+            else:
+                tempZero += 1
+                tempOne = 0
+
+            countOne = max(countOne, tempOne)
+            countZero = max(countZero, tempZero)
+
+        return countOne > countZero
+```
