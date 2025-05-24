@@ -46,3 +46,38 @@
 	<li><code>1 &lt;= word.length &lt;= 50</code></li>
 	<li><code>word</code> consists of only lowercase and uppercase English letters.</li>
 </ul>
+
+# Solution 
+* Generate all the 26 alphabets and check for each character if the word has upper and lower character in it. 
+
+* Code snippet to generate all characters
+```python
+for i in range(ord('a'), ord('z') + 1):
+        print(chr(i))
+```
+
+```python
+class Solution:
+    def numberOfSpecialChars(self, word: str) -> int:
+        result = 0
+
+        for i in range(ord('a'), ord('z') + 1):
+            x = chr(i)
+            if x.lower() in word and x.upper() in word:
+                result += 1
+        
+        return result
+```
+
+# Optimal 
+```python
+class Solution:
+    def numberOfSpecialChars(self, word: str) -> int:
+        res = 0
+        word = set(word)
+        for i in word:
+            if i.islower() and i.upper() in word:
+                res+=1
+        return res
+```
+				
