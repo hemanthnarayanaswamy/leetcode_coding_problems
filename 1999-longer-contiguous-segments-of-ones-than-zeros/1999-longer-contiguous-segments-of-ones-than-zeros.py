@@ -5,20 +5,15 @@ class Solution:
 
         for char in s:
             if char == '1':
-                if tempOne == 0:
-                    countZero = max(countZero, tempZero)
-                    tempZero = 0
                 tempOne += 1
+                tempZero = 0
             else:
-                if tempZero == 0:
-                    countOne = max(countOne, tempOne)
-                    tempOne = 0
                 tempZero += 1
+                tempOne = 0
 
-        countOne = max(countOne, tempOne)
-        countZero = max(countZero, tempZero)
-        print(countOne, countZero)
-        
+            countOne = max(countOne, tempOne)
+            countZero = max(countZero, tempZero)
+
         return countOne > countZero
 
 
