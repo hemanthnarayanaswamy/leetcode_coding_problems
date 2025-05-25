@@ -46,3 +46,18 @@ They are strictly increasing from left to right: 1 &lt; 3 &lt; 4 &lt; 6 &lt; 12.
 	<li>Each number in <code>s</code> is a <strong>positive</strong> number <strong>less</strong> than <code>100</code>, with no leading zeros.</li>
 	<li><code>s</code> contains no leading or trailing spaces.</li>
 </ul>
+
+# Solution 
+* Split the string and append only the numbers using the `isnumeric()` to check if the string is a number or not. 
+
+```python
+class Solution:
+    def areNumbersAscending(self, s: str) -> bool:
+        nums = [int(char) for char in s.split() if char.isnumeric()]
+        
+        for i in range(1, len(nums)):
+            if nums[i] <= nums[i-1]:
+                return False 
+        
+        return True
+```
