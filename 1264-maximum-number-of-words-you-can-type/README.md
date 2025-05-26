@@ -37,3 +37,21 @@
 	<li>Each word only consists of lowercase English letters.</li>
 	<li><code>brokenLetters</code> consists of <strong>distinct</strong> lowercase English letters.</li>
 </ul>
+
+# Solution 
+* Split the text into a text and iterate while checking the brokenchar in that word 
+
+```python
+class Solution:
+    def canBeTypedWords(self, text: str, brokenLetters: str) -> int:
+        text = text.split()
+        cannotType = 0
+
+        for word in text:
+            for char in brokenLetters:
+                if char in word:
+                    cannotType += 1
+                    break
+        
+        return len(text) - cannotType
+```
