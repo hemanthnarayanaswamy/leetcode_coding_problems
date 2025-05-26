@@ -54,3 +54,26 @@ We return true because 0 + 0 == 0.
 	<li><code>1 &lt;= firstWord.length, </code><code>secondWord.length, </code><code>targetWord.length &lt;= 8</code></li>
 	<li><code>firstWord</code>, <code>secondWord</code>, and <code>targetWord</code> consist of lowercase English letters from <code>&#39;a&#39;</code> to <code>&#39;j&#39;</code> <strong>inclusive</strong>.</li>
 </ul>
+
+# Solution
+* Assign 3 variables to store the relative result from the three parameters.
+
+```python
+class Solution:
+    def isSumEqual(self, firstWord: str, secondWord: str, targetWord: str) -> bool:
+        alphabet = {'a': 0, 'b': 1, 'c': 2, 'd': 3, 'e': 4, 'f': 5, 'g': 6, 'h': 7, 'i': 8, 'j': 9}
+        x, y, z = '', '', ''
+
+        for w in firstWord:
+            x += str(alphabet[w])
+        
+        
+        for w in secondWord:
+            y += str(alphabet[w])
+        
+        for w in targetWord:
+            z += str(alphabet[w])
+        
+
+        return int(z) == int(x)+int(y)
+```
