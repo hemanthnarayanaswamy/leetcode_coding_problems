@@ -33,3 +33,27 @@
 	<li><code>2 &lt;= word.length &lt;= 100</code></li>
 	<li><code>word</code> consists of lowercase English letters only.</li>
 </ul>
+
+# Solution 
+* Iterating to the freqWord list with range, then decrease one in teh current element then check len of set is equals to one. 
+* If current element is zero then check if unique length is two, then return True else add back the decrement from the current element and proceed to the next iteration
+
+```python
+class Solution:
+    def equalFrequency(self, word: str) -> bool:
+        if len(word) == len(set(word)):
+            return True
+
+        wordFreq = [val for val in Counter(word).values()]
+        
+        for i in range(len(wordFreq)):
+            wordFreq[i] -= 1
+            if len(set(wordFreq)) == 1:
+                return True
+            if wordFreq[i] == 0:
+                if len(set(wordFreq)) == 2:
+                    return True
+            wordFreq[i] += 1
+            
+        return False
+```
