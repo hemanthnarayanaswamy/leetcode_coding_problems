@@ -3,6 +3,7 @@ class Solution:
         digit_index = 0
         digit_found = False
         number_list = set()
+        
         for i in range(len(word)):
             if word[i].isdigit() and not digit_found: 
                 digit_index = i 
