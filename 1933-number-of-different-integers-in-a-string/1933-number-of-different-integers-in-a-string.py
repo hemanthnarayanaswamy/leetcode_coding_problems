@@ -1,19 +1,19 @@
 class Solution:
     def numDifferentIntegers(self, word: str) -> int:
-        digit_index = 0
-        digit_found = False
-        number_list = set()
-        
-        for i in range(len(word)):
-            if word[i].isdigit() and not digit_found: 
-                digit_index = i 
-                digit_found = True
+        start_idx = 0
+        in_digit_sequence = False
+        numbers = set()
 
-            if not word[i].isdigit() and digit_found: 
-                number_list.add(int(word[digit_index:i]))
-                digit_found = False
+        for i, char in enumerate(word):
+            if char.isdigit():
+                if not in_digit_sequence:
+                    start_idx = i
+                    in_digit_sequence = True
+                if i == len(word) - 1:
+                    numbers.add(int(word[start_idx:i + 1]))
+            else:
+                if in_digit_sequence:
+                    numbers.add(int(word[start_idx:i]))
+                    in_digit_sequence = False
 
-            if i == len(word) -1 and digit_found: 
-                number_list.add(int(word[digit_index:i+1])) 
-
-        return len(number_list) 
+        return len(numbers)
