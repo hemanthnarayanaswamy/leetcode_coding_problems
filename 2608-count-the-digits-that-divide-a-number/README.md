@@ -34,3 +34,36 @@
 	<li><code>1 &lt;= num &lt;= 10<sup>9</sup></code></li>
 	<li><code>num</code> does not contain <code>0</code> as one of its digits.</li>
 </ul>
+
+** Read Question properly before answering 
+
+# Solution 
+* split and save the numbers in the list while converting them to int. 
+* a formal for loop to check the divide condition one by one. 
+
+```python
+class Solution:
+    def countDigits(self, num: int) -> int:
+        numList = [int(n) for n in str(num)]
+        count = 0
+
+        for n in numList:
+            if num % n == 0:
+                count += 1
+        
+        return count
+```
+# Optimal Solution 
+```python
+class Solution:
+    def countDigits(self, num: int) -> int:
+        temp=num
+        count=0
+        while(num>0):
+            rem=num%10
+            if(temp%rem==0):
+                count+=1
+            num//=10
+        return count
+        
+```
