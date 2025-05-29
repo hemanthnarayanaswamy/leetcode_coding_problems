@@ -29,6 +29,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
+| [1806-count-of-matches-in-tournament](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1806-count-of-matches-in-tournament) |
 | [2032-largest-odd-number-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2032-largest-odd-number-in-string) |
 | [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
 | [2284-smallest-value-of-the-rearranged-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2284-smallest-value-of-the-rearranged-number) |
@@ -393,6 +394,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0258-add-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0258-add-digits) |
 | [0412-fizz-buzz](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0412-fizz-buzz) |
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
+| [1806-count-of-matches-in-tournament](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1806-count-of-matches-in-tournament) |
 | [2048-build-array-from-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2048-build-array-from-permutation) |
 | [2058-concatenation-of-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2058-concatenation-of-array) |
 | [2076-sum-of-digits-of-string-after-convert](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2076-sum-of-digits-of-string-after-convert) |
