@@ -39,3 +39,55 @@ Total number of matches = 7 + 3 + 2 + 1 = 13.
 <ul>
 	<li><code>1 &lt;= n &lt;= 200</code></li>
 </ul>
+
+# Solution 
+* Just following the porvided conditions 
+
+```python
+class Solution:
+    def numberOfMatches(self, n: int) -> int:
+        matches = 0
+
+        while n > 1:
+            advanceTeam = 0
+            if n % 2 == 0:
+                advanceTeam = n // 2
+                n = advanceTeam
+            else:
+                advanceTeam = (n-1) // 2
+                n = advanceTeam + 1
+            
+            matches += advanceTeam
+        
+        return matches
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def numberOfMatches(self, n: int) -> int:
+        res, teams = 0, n
+        while teams > 1:
+            res += teams // 2
+            teams = teams // 2 + teams % 2
+
+        return res
+```
+
+```bash
+Instead of simulating the entire tournament, here we will directly consider the beginning and end of the tournament.
+
+In this tournament, when a team loses, they are eliminated and will no longer play any matches.
+
+There are n teams, and 1 winner. Thus, n - 1 teams will be eliminated.
+
+Each match is played between two teams. One team wins, one team loses. Thus, each match eliminates exactly one team.
+
+As n - 1 teams will be eliminated, there will be n - 1 matches played, with each match eliminating a team.
+```
+
+```python
+class Solution:
+    def numberOfMatches(self, num: int) -> int:
+        return num - 1
+```
