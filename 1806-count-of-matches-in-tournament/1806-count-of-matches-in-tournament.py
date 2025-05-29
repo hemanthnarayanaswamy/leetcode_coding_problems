@@ -1,3 +1,3 @@
 class Solution:
-    def numberOfMatches(self, n: int) -> int:
-        return n-1
+    def numberOfMatches(self, num: int) -> int:
+        return num - 1
