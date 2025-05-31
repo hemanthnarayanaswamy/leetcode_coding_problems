@@ -1,8 +1,16 @@
 class Solution:
     def numberOfMatches(self, n: int) -> int:
-        res, teams = 0, n
-        while teams > 1:
-            res += teams // 2
-            teams = teams // 2 + teams % 2
+        matches = 0
 
-        return res
+        while n > 1:
+            advanceTeam = 0
+            if n % 2 == 0:
+                advanceTeam = n // 2
+                n = advanceTeam
+            else:
+                advanceTeam = (n-1) // 2
+                n = advanceTeam + 1
+            
+            matches += advanceTeam
+        
+        return matches
