@@ -46,3 +46,38 @@
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def isArraySpecial(self, nums: List[int]) -> bool:
+        for i in range(1, len(nums)):
+            if nums[i] % 2 == 0:
+                if nums[i-1] % 2 == 0:
+                    return False
+            else:
+                if nums[i-1] % 2 == 1:
+                    return False
+        
+        return True
+```
+
+* Can be improved by changine and improving the if condition more optimally 
+
+# Improved solution
+
+```python
+class Solution:
+    def isArraySpecial(self, nums):
+        # Iterate through indexes 0 to n - 1
+        for index in range(len(nums) - 1):
+
+            # Compare the parities of the current and next number
+            if nums[index] % 2 == nums[index + 1] % 2:
+
+                # If the two adjacent numbers have the same parity, return False
+                return False
+
+        # Return True if no pair of adjacent numbers with the same parity are found
+        return True
+```
