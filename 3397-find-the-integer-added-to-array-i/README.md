@@ -69,3 +69,38 @@
 	<li><code>0 &lt;= nums1[i], nums2[i] &lt;= 1000</code></li>
 	<li>The test cases are generated in a way that there is an integer <code>x</code> such that <code>nums1</code> can become equal to <code>nums2</code> by adding <code>x</code> to each element of <code>nums1</code>.</li>
 </ul>
+
+# solution 
+* The array is shuffled and but still the elements of num1 are equal to num2 array if the x is added or removed from the elements of the num1. 
+* If the elements are equal then the sum of them should be also equal 
+
+```bash
+(n1+x) + (n2+x)  + (n3+x) = 3x(n1 + n2 + n3)
+
+here the 3 is lenght of the array nusm1 
+
+apart from that 3x the sum of the num1 and num2 will be equal 
+
+x = (sum(num2) - sum(num1)) // len(num1)
+```
+```python
+class Solution:
+    def addedInteger(self, nums1: List[int], nums2: List[int]) -> int:
+        s1, s2 = sum(nums1), sum(nums2)
+        n = len(nums1)
+        
+        return (s2 - s1) // n
+```
+
+```python
+class Solution:
+    def addedInteger(self, nums1: List[int], nums2: List[int]) -> int:
+        return max(nums2) - max(nums1)
+```
+
+```python
+class Solution:
+    def addedInteger(self, n1: List[int], n2: List[int]) -> int:
+        return min(n2) - min(n1)
+```
+
