@@ -30,6 +30,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [1806-count-of-matches-in-tournament](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1806-count-of-matches-in-tournament) |
+| [1920-determine-color-of-a-chessboard-square](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1920-determine-color-of-a-chessboard-square) |
 | [2032-largest-odd-number-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2032-largest-odd-number-in-string) |
 | [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
 | [2284-smallest-value-of-the-rearranged-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2284-smallest-value-of-the-rearranged-number) |
@@ -339,6 +340,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1899-count-items-matching-a-rule](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1899-count-items-matching-a-rule) |
 | [1904-second-largest-digit-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1904-second-largest-digit-in-a-string) |
 | [1910-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1910-check-if-binary-string-has-at-most-one-segment-of-ones) |
+| [1920-determine-color-of-a-chessboard-square](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1920-determine-color-of-a-chessboard-square) |
 | [1933-number-of-different-integers-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1933-number-of-different-integers-in-a-string) |
 | [1944-truncate-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1944-truncate-sentence) |
 | [1954-replace-all-digits-with-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1954-replace-all-digits-with-characters) |
