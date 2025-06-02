@@ -38,3 +38,26 @@
 	<li><code>&#39;a&#39; &lt;= coordinates[0] &lt;= &#39;h&#39;</code></li>
 	<li><code>&#39;1&#39; &lt;= coordinates[1] &lt;= &#39;8&#39;</code></li>
 </ul>
+
+# Solution 
+* If you observer the cheese patterns then the odd-odd and even-even row columns maps to black colour thats the hint 
+* we are also converting the characters into numbers by `96 - ord(a) --> 96 -97 = 1` logic
+* and check if the numbers are odd or even.
+
+```python
+class Solution:
+    def squareIsWhite(self, coordinates: str) -> bool:
+        if (ord(coordinates[0]) - 96) % 2 == int(coordinates[1]) % 2:
+            return False 
+        else:
+            return True
+```
+
+# Improved Solution
+* Use the conditional checking to return automatically. 
+
+```python 
+class Solution:
+    def squareIsWhite(self, coordinates: str) -> bool:
+        return not (ord(coordinates[0]) - 96) % 2 == int(coordinates[1]) % 2
+```
