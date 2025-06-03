@@ -105,3 +105,40 @@
 	<li><code>1 &lt;= s.length &lt;= 1000</code></li>
 	<li><code>s</code> contains only lowercase English letters.</li>
 </ul>
+
+# Solution 
+* Need to come with a formula
+
+```ini 
+ord('a') = 97
+- 96 = 1
+-27 = -26
+abs(ord('a') - 96 - 27) 
+
+abs(ord(char) - 123)
+
+or (26-(ord(v) - 97))
+
+This will generate the reverse order index values for the characters position in the reversed alphabet ('a' = 26, 'b' = 25, ..., 'z' = 1)
+```
+```python
+class Solution:
+    def reverseDegree(self, s: str) -> int:
+        result = 0
+
+        for i, char in enumerate(s):
+            result += ((i+1) * abs(ord(char) - 123))
+        
+        return result
+```
+
+```python
+class Solution:
+    def reverseDegree(self, s: str) -> int:
+        result = 0
+
+        for i, char in enumerate(s):
+            result += (26-(ord(char) - 97)) * (i+1)
+        
+        return result
+```
