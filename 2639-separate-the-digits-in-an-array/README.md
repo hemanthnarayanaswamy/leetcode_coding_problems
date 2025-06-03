@@ -36,3 +36,35 @@ answer = [7,1,3,9].
 	<li><code>1 &lt;= nums.length &lt;= 1000</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+# Solution 
+* Trying out the string conversion method and a short form 
+* But its not good we are running the loop two times 
+```python
+class Solution:
+    def separateDigits(self, nums: List[int]) -> List[int]:
+        numStr = ''.join([str(num) for num in nums])
+
+        return [int(i) for i in numStr]
+```
+
+---
+* We use a nested for loop to loop through the number which is not possible , nest `O(n**2)` complexity very hard. 
+
+# Improved Solution
+```python
+class Solution:
+    def separateDigits(self, nums: List[int]) -> List[int]:
+        answer = []
+        for item in nums:
+            digit_list = list(map(int, str(item)))
+            answer.extend(digit_list)
+        return answer
+```
+
+```python
+class Solution:
+    def separateDigits(self, nums: List[int]) -> List[int]:
+        return [int(d) for n in nums for d in str(n)]
+```
+
