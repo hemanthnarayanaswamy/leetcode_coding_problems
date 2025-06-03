@@ -16,3 +16,24 @@
 <ul>
 	<li>The given <code>address</code> is a valid IPv4 address.</li>
 </ul>
+
+# Solution 
+* Use the python built in function called `replace()` to replace `.` with `[.]` 
+
+```python
+class Solution:
+    def defangIPaddr(self, address: str) -> str:
+        return address.replace(".", "[.]")
+```
+
+```python
+class Solution:
+    def defangIPaddr(self, address: str) -> str:
+        s = ""
+        for char in address:
+            if char != '.':
+                s += char                
+            else:
+                s += '[.]'
+        return s
+```
