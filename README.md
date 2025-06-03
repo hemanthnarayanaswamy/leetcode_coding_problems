@@ -333,6 +333,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1651-shuffle-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1651-shuffle-string) |
 | [1781-check-if-two-string-arrays-are-equivalent](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1781-check-if-two-string-arrays-are-equivalent) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
+| [1797-goal-parser-interpretation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1797-goal-parser-interpretation) |
 | [1807-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1807-partitioning-into-minimum-number-of-deci-binary-numbers) |
 | [1823-determine-if-string-halves-are-alike](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1823-determine-if-string-halves-are-alike) |
 | [1850-minimum-length-of-string-after-deleting-similar-ends](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1850-minimum-length-of-string-after-deleting-similar-ends) |
