@@ -1,5 +1,9 @@
 class Solution:
     def separateDigits(self, nums: List[int]) -> List[int]:
-        numStr = ''.join([str(num) for num in nums])
+        result = []
 
-        return [int(i) for i in numStr]
+        for num in nums: 
+            for i in str(num):
+                result.append(int(i))
+        
+        return result
