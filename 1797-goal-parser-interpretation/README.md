@@ -36,3 +36,26 @@ The final concatenated result is &quot;Goal&quot;.
 	<li><code>1 &lt;= command.length &lt;= 100</code></li>
 	<li><code>command</code> consists of <code>&quot;G&quot;</code>, <code>&quot;()&quot;</code>, and/or <code>&quot;(al)&quot;</code> in some order.</li>
 </ul>
+
+# Solution 
+* Loop and follow the conditions 
+
+```python
+class Solution:
+    def interpret(self, command: str) -> str:
+        output = ''
+        i = 0 
+        while i < len(command):
+            if command[i] == '(':
+                if command[i+1] == 'a':
+                    output += 'al'
+                    i += 4
+                else:
+                    output += 'o'
+                    i += 2
+            else:
+                output += 'G'
+                i += 1
+        return output
+```
+							
