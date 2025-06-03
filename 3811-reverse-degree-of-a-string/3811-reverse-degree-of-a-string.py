@@ -3,6 +3,6 @@ class Solution:
         result = 0
 
         for i, char in enumerate(s):
-            result += ((i+1) * abs(ord(char) - 123))
+            result += (26-(ord(char) - 97)) * (i+1)
         
         return result
