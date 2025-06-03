@@ -387,6 +387,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3412-permutation-difference-between-two-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3412-permutation-difference-between-two-strings) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3455-minimum-length-of-string-after-operations) |
 | [3567-convert-date-to-binary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3567-convert-date-to-binary) |
+| [3811-reverse-degree-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3811-reverse-degree-of-a-string) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Trie
 |  |
@@ -409,6 +410,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2265-partition-array-according-to-given-pivot](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2551-apply-operations-to-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2551-apply-operations-to-an-array) |
+| [3811-reverse-degree-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3811-reverse-degree-of-a-string) |
 ## Two Pointers
 |  |
 | ------- |
