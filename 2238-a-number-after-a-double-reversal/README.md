@@ -37,3 +37,26 @@
 <ul>
 	<li><code>0 &lt;= num &lt;= 10<sup>6</sup></code></li>
 </ul>
+
+# Solution 
+* The main logic is if the number contains any zeros it'll lose some digits when its reversed and if the number don't have a zero the result is always the same number after the given operation 
+
+* So check if the number has zeros except the number `0` if then return False else True 
+
+```python
+class Solution:
+    def isSameAfterReversals(self, num: int) -> bool:
+        if num == 0:
+            return True 
+            
+        return False if num % 10 == 0 else True
+```
+
+```python
+class Solution:
+    def isSameAfterReversals(self, num: int) -> bool:
+        if num != 0 and num % 10 == 0:
+            return False 
+
+        return True
+```
