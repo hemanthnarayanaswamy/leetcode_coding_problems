@@ -39,3 +39,40 @@ The maximum number is 9969.
 	<li><code>1 &lt;= num &lt;= 10<sup>4</sup></code></li>
 	<li><code>num</code>&nbsp;consists of only <code>6</code> and <code>9</code> digits.</li>
 </ul>
+
+# Solution 
+* The logic is to swap the first occurance of the '6' to '9' and return tthe result that will be the maximum result.
+
+```python
+class Solution:
+    def maximum69Number (self, num: int) -> int:
+        numStr = str(num)
+        result = ''
+        flag = True
+
+        for n in numStr:
+            temp = n
+            if temp == '6' and flag:
+                temp = '9'
+                flag = False
+
+            result += temp
+        
+        return int(''.join(result))
+```
+* Solution can be impoved 
+
+# Improved Solution 
+
+```python
+class Solution:
+    def maximum69Number (self, num: int) -> int:
+        numList = list(str(num))
+
+        for i in range(len(numList)):
+            if numList[i] == '6':
+                numList[i] = '9'
+                break
+
+        return int(''.join(numList))
+```
