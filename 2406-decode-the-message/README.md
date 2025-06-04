@@ -42,3 +42,70 @@ It is obtained by taking the first appearance of each letter in &quot;<u><strong
 	<li><code>1 &lt;= message.length &lt;= 2000</code></li>
 	<li><code>message</code> consists of lowercase English letters and <code>&#39; &#39;</code>.</li>
 </ul>
+
+# Solution 
+* First need to construct the Mapping table to map the character carefully following the first accurance map of a character 
+
+```python
+subTable = {}
+        i = 97 # character from a to z
+
+        for char in key:
+            if char == " " or char in subTable: # Ignore space or duplicate character 
+                continue
+            
+            subTable[char] = chr(i) # map to alphabet in order while incresing the count
+            i += 1
+```
+* Construct the decoded message 
+
+```python
+decodemessage = []
+
+        for letter in message:
+            if letter == " ":
+                decodemessage.append(" ")
+            else:
+                decodemessage.append(subTable[letter])
+        
+        return ''.join(decodemessage)
+```
+
+```python
+class Solution:
+    def decodeMessage(self, key: str, message: str) -> str:
+        abc = "abcdefghijklmnopqrstuvwxyz"
+        subTable = {" ": " "}
+        i = 0
+
+        for char in key:
+            if char in subTable:
+                continue
+            
+            subTable[char] = abc[i]
+            i += 1
+        
+        decodemessage = []
+
+        for letter in message:
+            decodemessage.append(subTable[letter])
+        
+        return ''.join(decodemessage)
+```
+
+# Improved Solution
+```python 
+class Solution:
+    def decodeMessage(self, key: str, message: str) -> str:
+        subTable = {" ": " "}
+        i = 97
+
+        for char in key:
+            if char in subTable:
+                continue
+            
+            subTable[char] = chr(i)
+            i += 1
+        
+        return "".join(map(cipher.get, message))
+```
