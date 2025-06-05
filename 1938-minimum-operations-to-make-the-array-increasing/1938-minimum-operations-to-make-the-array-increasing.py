@@ -6,9 +6,8 @@ class Solution:
             current, previous = nums[i], nums[i-1]
 
             if current <= previous:
-                increment = nums[i - 1] - nums[i] + 1
-                nums[i] += increment
-                operations += increment 
+                nums[i] = previous + 1
+                operations += previous - current + 1
         
         return operations
             
