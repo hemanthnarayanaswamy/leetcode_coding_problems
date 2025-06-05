@@ -41,3 +41,57 @@
 	<li><code>1 &lt;= nums.length &lt;= 5000</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+# Solution 
+* The solution works but the logic can be even more refactored Instread of performing the logic only perform logic for `num[i] < num[i-1]`
+```
+class Solution:
+    def minOperations(self, nums: List[int]) -> int:
+        operations = 0
+        n = len(nums)
+
+        if n <= 1:
+            return 0
+
+        for i in range(1,n):
+            current, previous = nums[i], nums[i-1]
+            diff = previous - current 
+
+            if diff >= 0:
+                nums[i] += diff+1
+                operations += diff+1
+        
+        return operations
+```
+
+# Refactored Code 
+```python
+class Solution:
+    def minOperations(self, nums: List[int]) -> int:
+        operations = 0
+
+        for i in range(1,len(nums)):
+            current, previous = nums[i], nums[i-1]
+
+            if current <= previous:
+                increment = nums[i - 1] - nums[i] + 1
+                nums[i] += increment
+                operations += increment 
+        
+        return operations
+```
+# Improved Further Code 
+```python
+class Solution:
+    def minOperations(self, nums: List[int]) -> int:
+        operations = 0
+
+        for i in range(1,len(nums)):
+            current, previous = nums[i], nums[i-1]
+
+            if current <= previous:
+                nums[i] = previous + 1
+                operations += previous - current + 1
+        
+        return operations
+```
