@@ -28,3 +28,17 @@
 	<li><code>0 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
 	<li><code>nums</code> contains <code>n + 1</code> <strong>unique</strong> elements and one of them is repeated exactly <code>n</code> times.</li>
 </ul>
+
+# Solution
+
+```python
+class Solution:
+    def repeatedNTimes(self, nums: List[int]) -> int:
+        unique = set()
+
+        for num in nums:
+            if num in unique:
+                return num 
+            
+            unique.add(num)
+```
