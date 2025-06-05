@@ -29,3 +29,22 @@
 	<li><code>1 &lt;= arr.length &lt;= 1000</code></li>
 	<li><code>-1000 &lt;= arr[i] &lt;= 1000</code></li>
 </ul>
+
+
+# Solution 
+* Counter and a set to store one lookup for a duplicates values 
+
+```python
+class Solution:
+    def uniqueOccurrences(self, arr: List[int]) -> bool:
+        arrFreq = Counter(arr)
+        uniqueCount = set()
+
+        for val in arrFreq.values():
+            if val in uniqueCount:
+                return False 
+            
+            uniqueCount.add(val)
+        
+        return True
+```
