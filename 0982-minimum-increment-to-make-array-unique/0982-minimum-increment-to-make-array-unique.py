@@ -4,10 +4,8 @@ class Solution:
         nums.sort()
 
         for i in range(1,len(nums)):
-            pre,cur = nums[i-1], nums[i]
-
-            if cur <= pre:
-                nums[i] = pre + 1
-                operations += pre + 1 - cur
-        
+            if nums[i] <= nums[i-1]:
+                operations += nums[i-1] + 1 - nums[i]
+                nums[i] = nums[i-1] + 1
+               
         return operations
