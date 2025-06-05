@@ -46,3 +46,28 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> If this function is called many times, how would you optimize it?
+
+# Solution 
+* Need to just count the number of one's in the binary of a number 
+* Convert the number into binary and count the number of 1's in them.
+
+```python
+class Solution:
+    def hammingWeight(self, n: int) -> int:
+        return bin(n).count('1')
+```
+
+# Stright Forward 
+```python
+class Solution:
+    def hammingWeight(self, n: int) -> int:
+        binary = bin(n)
+
+        sol = 0
+        for i in binary:
+            if i == '1':
+                sol += 1
+        
+        print(binary)
+        return sol
+```
