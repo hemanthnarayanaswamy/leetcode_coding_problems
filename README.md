@@ -181,6 +181,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
 | [2727-number-of-senior-citizens](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2727-number-of-senior-citizens) |
 | [2836-neither-minimum-nor-maximum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2836-neither-minimum-nor-maximum) |
+| [2844-sum-of-squares-of-special-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2844-sum-of-squares-of-special-elements) |
 | [2876-number-of-employees-who-met-the-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2876-number-of-employees-who-met-the-target) |
 | [2977-check-if-a-string-is-an-acronym-of-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2977-check-if-a-string-is-an-acronym-of-words) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
@@ -677,6 +678,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1212-sequential-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1212-sequential-digits) |
 | [2122-count-special-quadruplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2122-count-special-quadruplets) |
 | [2215-finding-3-digit-even-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2215-finding-3-digit-even-numbers) |
+| [2844-sum-of-squares-of-special-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2844-sum-of-squares-of-special-elements) |
 ## Divide and Conquer
 |  |
 | ------- |
