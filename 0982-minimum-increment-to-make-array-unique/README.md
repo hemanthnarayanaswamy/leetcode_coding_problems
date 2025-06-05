@@ -29,3 +29,26 @@ It can be shown that it is impossible for the array to have all unique values wi
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+# Solution 
+
+1. Sort the array and think in direction to make array increasing
+2. so whenever `nums[i] <= prev` make `nums[i] to prev + 1` and the moves required in this step will be `moves += (prev + 1 - nums[i])`
+every time keep updating `prev = nums[i]`
+3. Trying to make the array strictly increasing i.e maintain the sorted behavior of the array without duplicates 
+
+```python
+class Solution:
+    def minIncrementForUnique(self, nums: List[int]) -> int:
+        operations = 0
+        nums = sorted(nums)  # Sorted the Array 
+
+        for i in range(1,len(nums)):
+            pre,cur = nums[i-1], nums[i]
+
+            if cur <= pre:  # Trying to make the array strictly increasing i.e maintain the sorted behavior of the array without duplicates 
+                nums[i] = pre + 1
+                operations += pre + 1 - cur
+        
+        return operations
+```
