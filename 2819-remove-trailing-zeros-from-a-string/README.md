@@ -25,3 +25,38 @@
 	<li><code>num</code> consists&nbsp;of only digits.</li>
 	<li><code>num</code> doesn&#39;t&nbsp;have any leading zeros.</li>
 </ul>
+
+
+# Solution 
+* Its tricky solution if you want to convert it to int and play with it here is the solution
+
+```python
+class Solution:
+    def removeTrailingZeros(self, num: str) -> str:
+        numAns = str(int(num[::-1]))
+
+        return numAns[::-1]
+```
+# Improved Solution
+```python
+class Solution:
+    def removeTrailingZeros(self, num: str) -> str:
+        if num[-1] == '0':
+            return str(int(num[::-1]))[::-1]
+        else:
+            return num
+```
+
+# Optimal Solution
+```python
+class Solution:
+    def removeTrailingZeros(self, num: str) -> str:
+        idx = len(num)
+        for i in range(len(num) - 1, -1 , -1):
+            if num[i] == '0':
+                continue
+            else:
+                idx = i + 1
+                break
+        return num[:idx]
+```
