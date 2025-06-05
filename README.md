@@ -109,6 +109,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0958-sort-array-by-parity-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0958-sort-array-by-parity-ii) |
 | [0979-di-string-match](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0979-di-string-match) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0982-minimum-increment-to-make-array-unique) |
+| [1001-n-repeated-element-in-size-2n-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1001-n-repeated-element-in-size-2n-array) |
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1019-squares-of-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1019-squares-of-a-sorted-array) |
 | [1137-height-checker](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1137-height-checker) |
@@ -238,6 +239,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0807-custom-sort-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0807-custom-sort-string) |
 | [0822-unique-morse-code-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0822-unique-morse-code-words) |
 | [0829-subdomain-visit-count](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0829-subdomain-visit-count) |
+| [1001-n-repeated-element-in-size-2n-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1001-n-repeated-element-in-size-2n-array) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1264-maximum-number-of-words-you-can-type](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1264-maximum-number-of-words-you-can-type) |
 | [1297-maximum-number-of-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1297-maximum-number-of-balloons) |
