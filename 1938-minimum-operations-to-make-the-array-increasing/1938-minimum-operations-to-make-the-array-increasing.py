@@ -1,18 +1,14 @@
 class Solution:
     def minOperations(self, nums: List[int]) -> int:
         operations = 0
-        n = len(nums)
 
-        if n <= 1:
-            return 0
-
-        for i in range(1,n):
+        for i in range(1,len(nums)):
             current, previous = nums[i], nums[i-1]
-            diff = previous - current 
 
-            if diff >= 0:
-                nums[i] += diff+1
-                operations += diff+1
+            if current <= previous:
+                increment = nums[i - 1] - nums[i] + 1
+                nums[i] += increment
+                operations += increment 
         
         return operations
             
