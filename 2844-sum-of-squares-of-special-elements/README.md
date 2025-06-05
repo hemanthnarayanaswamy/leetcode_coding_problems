@@ -30,3 +30,19 @@ Hence, the sum of the squares of all special elements of nums is nums[1] * nums[
 	<li><code>1 &lt;= nums.length == n &lt;= 50</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 50</code></li>
 </ul>
+
+# Solution 
+* Its a 1 indexed array keep it in mind 
+
+```python
+class Solution:
+    def sumOfSquares(self, nums: List[int]) -> int:
+        result = 0
+        n = len(nums)
+
+        for i in range(1,n+1):
+            if n % i == 0:
+                result += nums[i-1]**2
+        
+        return result
+```
