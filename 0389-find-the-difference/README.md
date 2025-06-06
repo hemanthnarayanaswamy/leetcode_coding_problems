@@ -28,3 +28,18 @@
 	<li><code>t.length == s.length + 1</code></li>
 	<li><code>s</code> and <code>t</code> consist of lowercase English letters.</li>
 </ul>
+
+
+# Solution 
+* Compute the Freq of the both strings and compare the values and return the char that has mis matched values.
+
+```python
+class Solution:
+    def findTheDifference(self, s: str, t: str) -> str:
+        sFreq = Counter(s)
+        tFreq = Counter(t)
+
+        for char in tFreq:
+            if sFreq.get(char, 0) != tFreq.get(char):
+                return char
+```
