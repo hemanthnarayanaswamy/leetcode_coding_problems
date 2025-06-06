@@ -30,3 +30,24 @@ So the number of elements in the array with maximum frequency is 5.
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+
+# Solution 
+* We need to find the sum of all maximum frequency of the element in the array. 
+* We need to have two variable to track the maximum number and the count of element that have the frequency and return the product 
+
+```python
+class Solution:
+    def maxFrequencyElements(self, nums: List[int]) -> int:
+        numsFreq = Counter(nums)
+        count, maxNum = 0, 0
+
+        for v in numsFreq.values():
+            if v > maxNum:
+                maxNum = v
+                count = 1
+            elif v == maxNum:
+                count += 1
+        
+        return count*maxNum
+```
