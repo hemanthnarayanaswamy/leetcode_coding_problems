@@ -70,3 +70,33 @@
 	<li><code>1 &lt;= s.length &lt;= 100</code></li>
 	<li><code>s</code> contains only lowercase English letters</li>
 </ul>
+
+# Solution 
+* Overall the logic is to return the length of all the unqiue elements inside the string 
+
+```python
+class Solution:
+    def minimizedStringLength(self, s: str) -> int:
+        return len(set(s))
+```
+
+```python
+class Solution:
+    def minimizedStringLength(self, s: str) -> int:
+        Uniq = set()
+        count = 0
+
+        for char in s:
+            if char not in Uniq:
+                count += 1
+                Uniq.add(char)
+
+        return count
+```
+
+# Optimal Solution
+```python 
+class Solution:
+    def minimizedStringLength(self, s: str) -> int:
+        return len(set(list(s)))
+```
