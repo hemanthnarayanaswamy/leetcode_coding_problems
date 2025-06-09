@@ -39,3 +39,21 @@ Each string in the array has value 1. Hence, we return 1.
 	<li><code>1 &lt;= strs[i].length &lt;= 9</code></li>
 	<li><code>strs[i]</code> consists of only lowercase English letters and digits.</li>
 </ul>
+
+# Solution 
+* First in the each string in the strings array, we need to check if the string is a complete number `s.isdigit()` if its a number then max value will be the `int(s)` 
+* Else it'll be the length of the string 
+
+```python
+class Solution:
+    def maximumValue(self, strs: List[str]) -> int:
+        maxValue = 0
+
+        for s in strs:
+            if s.isdigit():
+                maxValue = max(maxValue, int(s))
+            else:
+                maxValue = max(maxValue, len(s))
+
+        return maxValue
+```
