@@ -42,3 +42,51 @@ Hence, the array result formed by concatenation is [5,3,4,8].
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 	<li>All elements in <code>nums</code> are distinct.</li>
 </ul>
+
+# Solution 
+* Start by a edge case checking the length of given array if 1 or less, then return the array 
+* Then initialize two arrays and store the first 2 elements into those arrays and 
+* Perform the opetion mentioned in the question 
+* return the concatenated array of both arrays
+
+```python
+class Solution:
+    def resultArray(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        
+        if n == 1:
+            return nums
+
+        arr1, arr2 = [nums[0]], [nums[1]]
+
+        for i in range(2,n):
+            if arr1[-1] > arr2[-1]:
+                arr1.append(nums[i])
+            else:
+                arr2.append(nums[i])
+        
+        return arr1+arr2
+```
+
+# Imporved Version 
+```python
+class Solution:
+    def resultArray(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+
+        if n == 1:
+            return nums
+
+        arr1, arr2 = [nums[0]], [nums[1]]
+
+        i = 2
+
+        while i < n:
+            if arr1[-1] > arr2[-1]:
+                arr1.append(nums[i])
+            else:
+                arr2.append(nums[i])
+            i += 1
+        
+        return arr1 + arr2
+```
