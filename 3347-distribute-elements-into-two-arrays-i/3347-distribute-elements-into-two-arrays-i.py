@@ -1,6 +1,7 @@
 class Solution:
     def resultArray(self, nums: List[int]) -> List[int]:
         n = len(nums)
+        
         if n == 1:
             return nums
 
