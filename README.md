@@ -179,6 +179,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2502-sort-the-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2502-sort-the-people) |
 | [2551-apply-operations-to-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2551-apply-operations-to-an-array) |
 | [2561-number-of-distinct-averages](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2561-number-of-distinct-averages) |
+| [2589-maximum-value-of-a-string-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2589-maximum-value-of-a-string-in-an-array) |
 | [2624-difference-between-element-sum-and-digit-sum-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2624-difference-between-element-sum-and-digit-sum-of-an-array) |
 | [2631-sort-the-students-by-their-kth-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2631-sort-the-students-by-their-kth-score) |
 | [2639-separate-the-digits-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2639-separate-the-digits-in-an-array) |
@@ -394,6 +395,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2502-sort-the-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2502-sort-the-people) |
 | [2532-remove-letter-to-equalize-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2532-remove-letter-to-equalize-frequency) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2576-minimum-penalty-for-a-shop) |
+| [2589-maximum-value-of-a-string-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2589-maximum-value-of-a-string-in-an-array) |
 | [2727-number-of-senior-citizens](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2727-number-of-senior-citizens) |
 | [2819-remove-trailing-zeros-from-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2819-remove-trailing-zeros-from-a-string) |
 | [2825-minimize-string-length](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2825-minimize-string-length) |
