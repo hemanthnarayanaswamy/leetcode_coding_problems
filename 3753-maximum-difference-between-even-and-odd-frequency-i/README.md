@@ -48,3 +48,36 @@
 	<li><code>s</code> consists only of lowercase English letters.</li>
 	<li><code>s</code> contains at least one character with an odd frequency and one with an even frequency.</li>
 </ul>
+
+# Solution 
+* Need to find the result difference of the Maximum Odd Frequency and Minimum Even Frequency
+* For the EvenMin we are trying to find the minimum value, if we initialize it to zero that we'll be the minimum result so inititialize it as the len of the string or some higher number.
+```python
+class Solution:
+    def maxDifference(self, s: str) -> int:
+        OddMax, EvenMin = 0, 100
+
+        for v in Counter(s).values():
+            if v % 2 == 0:
+                EvenMin = min(EvenMin, v)
+            else:
+                OddMax = max(OddMax, v)
+        
+        return OddMax - EvenMin
+```
+
+# Improved Solution 
+```python
+class Solution:
+    def maxDifference(self, s: str) -> int:
+        OddMax  = 0
+        EvenMin = float('inf')
+
+        for v in Counter(s).values():
+            if v % 2:
+                OddMax = max(OddMax, v)
+            else:
+                EvenMin = min(EvenMin, v)
+        
+        return OddMax - EvenMin
+```
