@@ -35,3 +35,40 @@ We return the smallest one, which is 2.</pre>
 	<li><code>1 &lt;= nums.length &lt;= 2000</code></li>
 	<li><code>0 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+# Solution 
+* Check if its a even number then the maxFreq and the current Freq are equal then store the minimum values of the even numbers.
+* if current freq is greater then the maxFreq then replace maxFreq with current freq and result with the current number, Return the Result 
+
+```python
+class Solution:
+    def mostFrequentEven(self, nums: List[int]) -> int:
+        result, mostFreq = -1, -1
+        
+        for num, freq in Counter(nums).items():
+            if num % 2 == 0:
+                if freq == mostFreq:
+                    result = min(result, num)
+                elif freq > mostFreq:
+                    mostFreq = freq
+                    result = num
+        
+        return result
+```
+
+# Improved Solution 
+```python
+class Solution:
+    def mostFrequentEven(self, nums: List[int]) -> int:
+        result, mostFreq = -1, -1
+
+        evenNum = [num for num in nums if num % 2 == 0]
+        
+        for num, freq in Counter(evenNum).items():
+                if freq == mostFreq:
+                    result = min(result, num)
+                elif freq > mostFreq:
+                    mostFreq = freq
+                    result = num
+        return result
+```
