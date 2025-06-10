@@ -55,3 +55,37 @@ nums       index     target
 	<li><code>0 &lt;= nums[i] &lt;= 100</code></li>
 	<li><code>0 &lt;= index[i] &lt;= i</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def createTargetArray(self, nums: List[int], index: List[int]) -> List[int]:
+        result = [-1]*len(nums)
+
+        for num, i in zip(nums, index):
+            result.insert(i, num)
+        
+        return [n for n in result if n > -1]
+```
+* you can initialize an empty array to store the results
+
+```python
+class Solution:
+    def createTargetArray(self, nums: List[int], index: List[int]) -> List[int]:
+        result = []
+
+        for num, i in zip(nums, index):
+            result.insert(i, num)
+        
+        return result
+```
+
+```python
+class Solution:
+    def createTargetArray(self, nums: List[int], index: List[int]) -> List[int]:
+        a=[]
+        for i in range(len(nums)):
+            a.insert(index[i],nums[i])
+        return a
+```
+
