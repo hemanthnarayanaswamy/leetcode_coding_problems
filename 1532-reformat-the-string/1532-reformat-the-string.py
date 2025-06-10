@@ -11,10 +11,11 @@ class Solution:
 
         a, n = len(alphabets), len(nums)
 
-        if a - n == 1:
-            return "".join([alp+num for alp,num in zip(alphabets, nums)]) + alphabets[-1]
-        elif n - a == 1:
-            return "".join([num+alp for alp,num in zip(alphabets, nums)]) + nums[-1]
+        if abs(a-n) == 1:
+            if a > n:
+                return "".join([alp+num for alp,num in zip(alphabets, nums)]) + alphabets[-1]
+            elif a < n:
+                return "".join([num+alp for alp,num in zip(alphabets, nums)]) + nums[-1]
         elif a - n == 0:
             return "".join([num+alp for alp,num in zip(alphabets, nums)])
         else:
