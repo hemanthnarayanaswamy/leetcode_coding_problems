@@ -55,3 +55,43 @@ Therefore, we return [[1,7],[2,4],[7,1]].
 	<li>Each <code>value<sub>i</sub></code> in <code>items1</code> is <strong>unique</strong>.</li>
 	<li>Each <code>value<sub>i</sub></code> in <code>items2</code> is <strong>unique</strong>.</li>
 </ul>
+
+# Solution 
+* Bit complicated, but first combine the two items into one, because the eventually result will be one. 
+* Now start to built the hash map for the items list, by adding exisitng weights into the hashMap. 
+
+* Then sort the hashMap with its key sort logic 
+
+```python
+class Solution:
+    def mergeSimilarItems(self, items1: List[List[int]], items2: List[List[int]]) -> List[List[int]]:
+        items_combined = items1 + items2 
+        items_hash = {}
+
+        for item in items_combined:
+            items_hash[item[0]] = items_hash.get(item[0], 0) + item[1]
+        
+        items_hash_sort = sorted(items_hash.items(), key=lambda item: item[0])
+
+        return items_hash_sort
+```
+
+# Optimal Solution 
+```python 
+class Solution:
+    def mergeSimilarItems(self, items1: List[List[int]], items2: List[List[int]]) -> List[List[int]]:
+        # items1.sort(key=lambda x:x[0])
+        # items2.sort(key=lambda )
+
+        map = defaultdict(int)
+        for v, w in items1:
+            map[v] = w
+        
+        for v, w in items2:
+            map[v] += w
+
+        res = [[v, w] for v, w in map.items()]
+        res.sort(key=lambda x:x[0])
+        return res
+```
+    
