@@ -28,3 +28,24 @@
 	<li><code>1 &lt;= arrivaltime &lt;&nbsp;24</code></li>
 	<li><code>1 &lt;= delayedTime &lt;= 24</code></li>
 </ul>
+
+# Solution 
+* Management of time is required time should be between `0-23` 
+
+```python 
+class Solution:
+    def findDelayedArrivalTime(self, arrivalTime: int, delayedTime: int) -> int:
+        sum = arrivalTime + delayedTime 
+
+        return sum - 24 if sum >= 24 else sum
+```
+
+```python
+class Solution:
+    def findDelayedArrivalTime(self, arrivalTime: int, delayedTime: int) -> int:
+        sum=arrivalTime+delayedTime
+        if sum>=24:
+            return sum-24
+        else:
+            return sum
+```
