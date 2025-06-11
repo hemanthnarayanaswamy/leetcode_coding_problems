@@ -29,3 +29,24 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 1000</code></li>
 </ul>
+
+
+# Solution 
+* To make the sum zero every number x should have its counter part -x. 
+* And to determine x if `n//2` have all the numbers from `1 - n/2` with its counter parts for n is evern. 
+* When n is odd the logic is same but have a zero appended into the array 
+
+```python
+class Solution:
+    def sumZero(self, n: int) -> List[int]:
+        result = []
+
+        for i in range(1, (n // 2)+1):
+            result.append(i)
+            result.append(-i)
+        
+        if n % 2:
+            result.append(0)
+        
+        return result
+```
