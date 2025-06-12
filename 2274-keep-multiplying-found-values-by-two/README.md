@@ -39,3 +39,31 @@
 	<li><code>1 &lt;= nums.length &lt;= 1000</code></li>
 	<li><code>1 &lt;= nums[i], original &lt;= 1000</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def findFinalValue(self, nums: List[int], original: int) -> int:
+        flagFound = True 
+        numsU = set(nums)
+
+        while flagFound:
+            if original in numsU:
+                original *= 2
+            else:
+                return original
+```
+
+# Improved 
+```python
+class Solution:
+    def findFinalValue(self, nums: List[int], original: int) -> int:
+        numsU = set(nums)
+
+        while original in numsU:
+                original *= 2
+           
+        return original
+```
+* To make lookup efficient make a set out of the arrayList.
+* As run while loop until the lookup fails 
