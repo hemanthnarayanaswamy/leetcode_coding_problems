@@ -217,6 +217,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3606-minimum-element-after-replacement-with-digit-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3606-minimum-element-after-replacement-with-digit-sum) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3705-find-the-largest-almost-missing-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3705-find-the-largest-almost-missing-integer) |
+| [3747-maximum-difference-between-adjacent-elements-in-a-circular-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3747-maximum-difference-between-adjacent-elements-in-a-circular-array) |
 | [3778-transform-array-by-parity](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3778-transform-array-by-parity) |
 | [3846-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3846-minimum-operations-to-make-array-sum-divisible-by-k) |
 ## Hash Table
