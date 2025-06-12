@@ -34,3 +34,28 @@
 	<li><code>2 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>-100 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* The Circular Array concept `Note: In a circular array, the first and last elements are adjacent.`
+
+```python
+class Solution:
+    def maxAdjacentDistance(self, nums: List[int]) -> int:
+        result = 0
+        for i in range(1, len(nums)):
+            result = max(result, abs(nums[i-1] - nums[i]))
+        
+        return max(result, abs(nums[i] - nums[0]))
+```
+# Improved Solution 
+* Now we can manually append the first element to the end of the array before doing the iteration.
+* That way we can handle the edge case in a single iteration 
+
+```python
+class Solution:
+    def maxAdjacentDistance(self, nums: List[int]) -> int: 
+        N = len(nums) # REmains unchanges after appending, that way we can avoid the out of index range
+        nums.append(nums[0])
+        
+        return max(abs(nums[i] - nums[i+1]) for i in range(N))
+```
