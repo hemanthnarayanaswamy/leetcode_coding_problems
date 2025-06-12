@@ -3,8 +3,7 @@ class Solution:
         flagFound = True 
         numsU = set(nums)
 
-        while flagFound:
-            if original in numsU:
+        while original in numsU:
                 original *= 2
-            else:
-                return original
+           
+        return original
