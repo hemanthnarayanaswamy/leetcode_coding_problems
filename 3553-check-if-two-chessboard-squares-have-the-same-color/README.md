@@ -41,3 +41,28 @@
 	<li><code>&#39;a&#39; &lt;= coordinate1[0], coordinate2[0] &lt;= &#39;h&#39;</code></li>
 	<li><code>&#39;1&#39; &lt;= coordinate1[1], coordinate2[1] &lt;= &#39;8&#39;</code></li>
 </ul>
+
+# Solution 
+* The logic is to {a:1, b:2, c:3, d:4, e:5, f:6, g:7, h:8} if the alphabet value and the number value are both `even-even or odd-odd` then the colour is the same 
+* The color of the chessboard is black the sum of row coordinates and column coordinates is even. Otherwise, it's white.
+
+```python
+class Solution:
+    def checkTwoChessboards(self, coordinate1: str, coordinate2: str) -> bool:
+        return ((int(ord(coordinate1[0]) - 96) + int(coordinate1[1])) % 2) == ((int(ord(coordinate2[0]) - 96) + int(coordinate2[1])) % 2)
+```
+
+```python
+class Solution:
+    def checkTwoChessboards(self, coordinate1: str, coordinate2: str) -> bool:
+        alphabet = {'a':1, 'b':2, 'c':3, 'd':4, 'e':5, 'f':6, 'g':7, 'h':8}
+        return (alphabet[coordinate1[0]] + int(coordinate1[1])) % 2 == (alphabet[coordinate2[0]] + int(coordinate2[1])) % 2
+```
+
+```python
+class Solution:
+    def checkTwoChessboards(self, c1: str, c2: str) -> bool:
+        one = ord(c1[0]) + int(c1[1])
+        two = ord(c2[0]) + int(c2[1])
+        return one % 2 == two % 2
+```
