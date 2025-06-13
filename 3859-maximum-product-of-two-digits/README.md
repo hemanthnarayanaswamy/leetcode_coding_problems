@@ -59,3 +59,32 @@
 <ul>
 	<li><code>10 &lt;= n &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Solution 
+* We use sorting to sort the numbers and multiply the last two digits which are high to get the maximum product. 
+* `O(log(n))` Complexity 
+```python
+class Solution:
+    def maxProduct(self, n: int) -> int:
+        arr = sorted([int(i) for i in str(n)])
+        
+        return arr[-1]*arr[-2]
+```
+
+# Improved Solution
+```python
+class Solution:
+    def maxProduct(self, n: int) -> int:
+        firstMax, secondMax = 0, 0
+        
+        arr = [int(i) for i in str(n)]
+
+        for num in arr:
+            if num > firstMax:
+                secondMax = firstMax
+                firstMax = num
+            elif num > secondMax:
+                secondMax = num 
+        
+        return firstMax * secondMax
+```
