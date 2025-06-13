@@ -21,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0628-maximum-product-of-three-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0628-maximum-product-of-three-numbers) |
+| [0950-x-of-a-kind-in-a-deck-of-cards](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0950-x-of-a-kind-in-a-deck-of-cards) |
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1406-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1406-subtract-the-product-and-sum-of-digits-of-an-integer) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1421-find-numbers-with-even-number-of-digits) |
@@ -110,6 +111,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0932-monotonic-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0932-monotonic-array) |
 | [0941-sort-array-by-parity](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0941-sort-array-by-parity) |
 | [0948-sort-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0948-sort-an-array) |
+| [0950-x-of-a-kind-in-a-deck-of-cards](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0950-x-of-a-kind-in-a-deck-of-cards) |
 | [0958-sort-array-by-parity-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0958-sort-array-by-parity-ii) |
 | [0979-di-string-match](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0979-di-string-match) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0982-minimum-increment-to-make-array-unique) |
@@ -253,6 +255,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0807-custom-sort-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0807-custom-sort-string) |
 | [0822-unique-morse-code-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0822-unique-morse-code-words) |
 | [0829-subdomain-visit-count](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0829-subdomain-visit-count) |
+| [0950-x-of-a-kind-in-a-deck-of-cards](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0950-x-of-a-kind-in-a-deck-of-cards) |
 | [1001-n-repeated-element-in-size-2n-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1001-n-repeated-element-in-size-2n-array) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1264-maximum-number-of-words-you-can-type](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1264-maximum-number-of-words-you-can-type) |
@@ -586,6 +589,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0383-ransom-note](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0383-ransom-note) |
 | [0451-sort-characters-by-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0451-sort-characters-by-frequency) |
 | [0829-subdomain-visit-count](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0829-subdomain-visit-count) |
+| [0950-x-of-a-kind-in-a-deck-of-cards](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0950-x-of-a-kind-in-a-deck-of-cards) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0982-minimum-increment-to-make-array-unique) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1297-maximum-number-of-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1297-maximum-number-of-balloons) |
@@ -766,6 +770,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0258-add-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0258-add-digits) |
+| [0950-x-of-a-kind-in-a-deck-of-cards](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0950-x-of-a-kind-in-a-deck-of-cards) |
 | [2491-smallest-even-multiple](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2491-smallest-even-multiple) |
 ## Game Theory
 |  |
