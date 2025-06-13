@@ -23,3 +23,40 @@
 	<li><code>1 &lt;= arr.length &lt;= 1000</code></li>
 	<li><code>1 &lt;= arr[i] &lt;= 1000</code></li>
 </ul>
+
+ # Solution 
+ * We'll use two loops to reduce the complexity one to get the modulo values for even its zero and odd its one 
+ * Next loop to do a sliding window to see if the sum is three for 3 consecutive odd numbers 
+
+```python
+class Solution:
+    def threeConsecutiveOdds(self, arr: List[int]) -> bool:
+        if len(arr) < 3:
+            return False
+
+        arr = [num%2 for num in arr]
+
+        for i in range(len(arr)-2):
+            if sum(arr[i:i+3]) == 3:
+                return True 
+        
+        return False
+```
+	
+	
+# 	Optimal Solution
+```python
+class Solution:
+    def threeConsecutiveOdds(self, arr: List[int]) -> bool:
+        count=0
+        
+        for num in arr:
+            if num % 2:
+                count+=1
+                if count == 3:
+                    return True
+            else:
+                count = 0
+
+        return False
+```
