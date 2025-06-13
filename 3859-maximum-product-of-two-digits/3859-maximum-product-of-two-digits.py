@@ -1,5 +1,14 @@
 class Solution:
     def maxProduct(self, n: int) -> int:
-        arr = sorted([int(i) for i in str(n)])
+        firstMax, secondMax = 0, 0
         
-        return arr[-1]*arr[-2]
+        arr = [int(i) for i in str(n)]
+
+        for num in arr:
+            if num > firstMax:
+                secondMax = firstMax
+                firstMax = num
+            elif num > secondMax:
+                secondMax = num 
+        
+        return firstMax * secondMax
