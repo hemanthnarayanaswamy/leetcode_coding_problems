@@ -124,6 +124,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1231-replace-elements-with-greatest-element-on-right-side](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1231-replace-elements-with-greatest-element-on-right-side) |
 | [1241-decompress-run-length-encoded-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1241-decompress-run-length-encoded-list) |
+| [1293-three-consecutive-odds](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1293-three-consecutive-odds) |
 | [1306-minimum-absolute-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1306-minimum-absolute-difference) |
 | [1319-unique-number-of-occurrences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1319-unique-number-of-occurrences) |
 | [1354-find-players-with-zero-or-one-losses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1354-find-players-with-zero-or-one-losses) |
