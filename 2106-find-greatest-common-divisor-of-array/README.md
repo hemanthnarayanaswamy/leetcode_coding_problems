@@ -43,3 +43,28 @@ The greatest common divisor of 3 and 3 is 3.
 	<li><code>2 &lt;= nums.length &lt;= 1000</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 1000</code></li>
 </ul>
+
+# Solution 
+* Find the minmum and maxmimum number in the list and find the gcd between them. 
+
+```python
+import math
+
+class Solution:
+    def findGCD(self, nums: List[int]) -> int:
+        mn = min(nums)
+        mx = max(nums)
+        return math.gcd(mn, mx)
+```
+
+# Long Solution 
+```python
+class Solution:
+    def findGCD(self, nums: List[int]) -> int:
+        min_ele=min(nums)
+        max_ele=max(nums)
+        for i in range(1,min_ele+1):
+            if(min_ele%i==0 and max_ele%i==0):
+                gcd=i
+        return gcd
+```
