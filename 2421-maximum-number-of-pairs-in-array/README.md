@@ -46,3 +46,35 @@ No more pairs can be formed. A total of 1 pair has been formed, and there are 0 
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>0 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* Compute the HashMap for the given array, 
+* Than compute the number of pairs `numPairs += val // 2`, and compute the number of left overs `leftOver += val % 2`
+
+```python
+class Solution:
+    def numberOfPairs(self, nums: List[int]) -> List[int]:
+        numPairs, leftOver = 0, 0 
+        numsFreq = Counter(nums)
+
+        for val in numsFreq.values():
+            numPairs += val // 2
+            leftOver += val % 2
+        
+        return [numPairs, leftOver]
+```
+
+# Other Solution 
+* without using the HashMap 
+
+```python
+class Solution:
+    def numberOfPairs(self, nums: List[int]) -> List[int]:
+        a=list(set(nums))
+        ans=[0,0]
+        for i in a:
+            k=nums.count(i)
+            ans[0]+=k//2
+            ans[1]=ans[1]+(k%2)
+        return ans
+```
