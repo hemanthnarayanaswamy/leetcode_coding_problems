@@ -34,3 +34,32 @@
 	<li><code>s1</code> and <code>s2</code> do not have leading or trailing spaces.</li>
 	<li>All the words in <code>s1</code> and <code>s2</code> are separated by a single space.</li>
 </ul>
+
+# Solution 
+* Combine the two strings and then check for the counter of words that has only one, don't over complicate things
+
+```python
+class Solution:
+    def uncommonFromSentences(self, s1: str, s2: str) -> List[str]:
+        combinedWords = s1.split() + s2.split()
+        wordCounts = Counter(combinedWords)
+
+        return [word for word, freq in wordCounts.items() if freq == 1]
+```
+
+```python
+class Solution:
+    def uncommonFromSentences(self, s1: str, s2: str) -> List[str]:
+        s1 = s1.split(" ")
+        s2 = s2.split(" ")
+        all_words = s1 + s2
+
+        word_count_dict = Counter(all_words)
+
+        res = []
+        for word_key in word_count_dict:
+            if word_count_dict[word_key] == 1:
+                res.append(word_key)
+
+        return res
+```
