@@ -7,10 +7,8 @@ class Solution:
             numGroup[temp] = numGroup.get(temp, 0) + 1
         
         groupSize = [v for v in numGroup.values()]
-
-        maxGroupSize = max(groupSize)
         
-        return groupSize.count(maxGroupSize) 
+        return groupSize.count(max(groupSize)) 
 
 
 
