@@ -4,8 +4,6 @@ class Solution:
 
         result = [ch for ch, val in Counter(combinedString).items() if val == 1]
 
-        print(result)
-
         return result
 
         
