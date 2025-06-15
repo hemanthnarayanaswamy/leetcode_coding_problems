@@ -1,10 +1,8 @@
+from collections import Counter
 class Solution:
     def uncommonFromSentences(self, s1: str, s2: str) -> List[str]:
-        combinedString = s1.split() + s2.split()
+        combinedWords = s1.split() + s2.split()
+        wordCounts = Counter(combinedWords)
 
-        result = [ch for ch, val in Counter(combinedString).items() if val == 1]
-
+        result = [word for word, freq in wordCounts.items() if freq == 1]
         return result
-
-        
-
