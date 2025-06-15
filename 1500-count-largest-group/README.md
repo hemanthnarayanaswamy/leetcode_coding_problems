@@ -29,3 +29,100 @@ There are 4 groups with largest size.
 <ul>
 	<li><code>1 &lt;= n &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+
+# Solution 
+```ini 
+But the problem only needs a one-time digit sum, not the final single-digit result.
+
+Example:
+	•	For n = 13, 1 + 3 = 4 — this is what we need.
+	•	But your function will do:
+	•	1 + 3 = 4 → return 4 ✅ (fine here)
+	
+	•	For n = 99:
+	•	9 + 9 = 18, loop again: 1 + 8 = 9 → returns 9 ❌
+	•	But we want to group 99 under 18, not 9.
+```
+
+```python
+class Solution:
+    def countLargestGroup(self, n: int) -> int:
+        numGroup = {}
+        maxGroupSize = 0
+        count = 0
+
+        for i in range(1, n+1):
+            temp = sum([int(j) for j in str(i)])
+            numGroup[temp] = numGroup.get(temp, 0) + 1
+
+        for v in numGroup.values():
+            if v > maxGroupSize:
+                maxGroupSize = v
+                count = 0
+
+            if v == maxGroupSize:
+                count += 1
+        
+        return count
+```
+# Improved Solution 
+```python
+class Solution:
+    def countLargestGroup(self, n: int) -> int:
+        numGroup = {}
+
+        def digit_sum(x: int) -> int:
+            total = 0
+            while x:
+                total += x % 10
+                x //= 10
+            return total
+
+        for i in range(1, n+1):
+            temp = digit_sum(i)
+            numGroup[temp] = numGroup.get(temp, 0) + 1
+        
+        maxSize = max(numGroup.values())
+        return sum(1 for v in numGroup.values() if v == maxSize)
+```
+
+# Wrong Solution 
+```python
+class Solution:
+    def countLargestGroup(self, n: int) -> int:
+        numGroup = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0}
+        count = 0
+
+        def numHelper(n):
+            result = 0
+            while n:
+                result += n % 10 
+                n = n // 10 
+                if n == 0 and result >= 10:
+                    n = result 
+                    result = 0
+                elif n == 0 and result <= 9:
+                    return result 
+
+
+        for i in range(1, n+1):
+            if i < 9:
+                numGroup[i] = numGroup.get(i, 0) + 1
+            else:
+                temp = numHelper(i)
+                numGroup[temp] = numGroup.get(temp, 0) + 1
+        
+        maxGroupSize = 0
+        print(numGroup)
+
+        for v in numGroup.values():
+            if v > maxGroupSize:
+                maxGroupSize = v
+                count = 0
+
+            if v == maxGroupSize:
+                count += 1
+        
+        return count
+```
