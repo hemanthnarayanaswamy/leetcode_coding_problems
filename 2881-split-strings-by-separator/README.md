@@ -53,3 +53,26 @@ Hence, the resulting array is [&quot;easy&quot;,&quot;problem&quot;].
 	<li>characters in <code>words[i]</code> are either lowercase English letters or characters from the string <code>&quot;.,|$#@&quot;</code> (excluding the quotes)</li>
 	<li><code>separator</code> is a character from the string <code>&quot;.,|$#@&quot;</code> (excluding the quotes)</li>
 </ul>
+
+# Solution 
+
+```python
+class Solution:
+    def splitWordsBySeparator(self, words: List[str], separator: str) -> List[str]:
+        joinedWords = separator.join(words) # JOIN the list into a string with Separator between the elements 
+        result = joinedWords.split(separator) # Now convert the string back to list splitting at seperator, It contains empty strings
+        
+        return [char for char in result if char] # remove empty strings
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def splitWordsBySeparator(self, words: List[str], separator: str) -> List[str]:
+        arr=[]
+        for i in words:
+            for j in i.split(separator):
+                if j:
+                    arr.append(j)
+        return arr
+```
