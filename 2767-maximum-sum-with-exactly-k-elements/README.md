@@ -52,3 +52,67 @@ It can be proven, that 11 is the maximum answer that we can achieve.
 .spoilerbutton[value="Show Message"] + .spoiler > div {margin-top:-500%;}
 .spoilerbutton[value="Hide Message"] + .spoiler {padding:5px;}
 </style>
+
+# Approach 
+```ini
+The sum of all integers from 1 to n inclusive is n(n + 1)/2.
+
+The sum of all integers from m to n inclusive = (the sum from 1 to n inclusive) - (the sum from 1 to m - 1 inclusive)
+
+= n(n + 1)/2 - m(m - 1)/2
+
+Example: The sum of all the integers from 6 to 13 inclusive =
+
+13 x 14/2 - 6 x 5/2 = 91 - 15 = 76
+
+6 + 7 + 8 + 9 + 10 + 11 + 12 + 13 = 76
+
+If you meant exclusive, the sum of all integers from m to n exclusive = (the sum from 1 to n - 1 inclusive) - (the sum from 1 to m inclusive) = n(n - 1)/2 - m(m + 1)/2
+
+Example: The sum of all the integers from 9 to 15 exclusive =
+
+15 x 14/2 - 9 x 10/2 = 105 - 45 = 60
+
+10 + 11 + 12 + 13 + 14 = 60
+```
+
+# Solution 
+* First find the maximum number that is the array and add `k` to the max number and compute the sum between `max num and newly added number inclusive`
+
+```ini 
+max = 5
+added_new = 5 + k = 5 + 2 = 7
+
+sum = 5 + 6 + 7 
+
+formula to compute = n(n+1) // 2 - m(m-1) // 2= 7(7+1)// 2 - 5(5-1)//2 = 28 - 10 = 18 
+```
+```python
+class Solution:
+    def maximizeSum(self, nums: List[int], k: int) -> int:
+        chosen_num = max(nums)
+        k_operation = chosen_num + k - 1
+
+        maxSum = (k_operation*(k_operation + 1)) - (chosen_num*(chosen_num -1))
+        return maxSum // 2
+```
+
+# OPtimal Solution 
+```ini 
+* Shortcut formula 
+
+m = max(nums)
+n = m + k - 1
+
+result = (n -m +1)*(m+n)// 2
+=(m+k-1-m+1)*(m+m+k-1)//2 
+= k(2m+k-1)//2
+```
+
+```python
+class Solution:
+    def maximizeSum(self, nums: List[int], k: int) -> int:
+       z = 2*max(nums)-1+k
+       return z * k //2
+```
+
