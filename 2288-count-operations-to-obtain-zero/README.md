@@ -39,3 +39,56 @@ So the total number of operations required is 1.
 <ul>
 	<li><code>0 &lt;= num1, num2 &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+# Solution 
+* Before going into the loop make sure both the numbers are non-zero with `and` condition 
+
+```python
+class Solution:
+    def countOperations(self, num1: int, num2: int) -> int:
+        result = 0
+
+        while num1 and num2:
+            if num1 > num2:
+                num1 -= num2
+            else:
+                num2 -= num1
+            
+            result += 1
+        
+        return result 
+```
+
+# Optimal Solution 
+* You can avoid the potentially O(max(num1, num2)) “subtract one at a time” loop by batching subtractions using integer division and modulus. This brings you down to roughly O(log min(num1, num2)) time—essentially the same complexity as the classic Euclidean GCD algorithm.
+* Each loop now reduces one operand by at least a factor of two (on average), giving you a logarithmic number of steps—much smaller than subtracting 1 repeatedly.
+
+```python
+class Solution:
+    def countOperations(self, num1: int, num2: int) -> int:
+        operations =0
+        while(num1 != 0 and num2!=0 ):
+            if(num1 >= num2):
+                operations += num1 // num2
+                num1 %= num2
+            else:
+                operations += num2 // num1 
+                num2 %= num1 
+        return operations
+```
+
+```python
+class Solution:
+    def countOperations(self, num1: int, num2: int) -> int:
+        count = 0
+        # keep subtracting the smaller from the larger in bulk
+        while num1 and num2:
+            if num1 >= num2:
+                # subtract num2 as many times as possible in one go
+                q, num1 = divmod(num1, num2)  # does the same in one C-level operation (q = num1 // num2 and num1 %= num2).
+                count += q
+            else:
+                q, num2 = divmod(num2, num1)
+                count += q
+        return count
+```
