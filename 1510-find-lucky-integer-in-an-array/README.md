@@ -34,3 +34,41 @@
 	<li><code>1 &lt;= arr.length &lt;= 500</code></li>
 	<li><code>1 &lt;= arr[i] &lt;= 500</code></li>
 </ul>
+
+# Solution
+```python
+class Solution:
+    def findLucky(self, arr: List[int]) -> int:
+        arrFreq = Counter(arr)
+        result = -1
+
+        for val, freq in arrFreq.items():
+            if val == freq:
+                if val > result:
+                    result = val
+        
+        return result
+```
+
+# Optimal Soltion 
+```python
+from collections import Counter
+class Solution:
+    def findLucky(self, arr: List[int]) -> int:
+        c = Counter(arr)
+        for key,val in Counter(arr).most_common(len(arr)):
+            if key == val:
+                return key
+        return -1
+```
+
+* Here’s a slightly more concise and (in practice) a bit faster way to do it in two passes over the data, both in pure C (via built-ins) and with minimal Python-level work:
+```python
+from collections import Counter
+
+class Solution:
+    def findLucky(self, arr: List[int]) -> int:
+        freq = Counter(arr)
+        # generator of all “lucky” numbers, then take max or −1
+        return max((num for num, cnt in freq.items() if num == cnt), default=-1)
+```
