@@ -110,6 +110,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0748-largest-number-at-least-twice-of-others](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0748-largest-number-at-least-twice-of-others) |
 | [0749-shortest-completing-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0749-shortest-completing-word) |
 | [0822-unique-morse-code-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0822-unique-morse-code-words) |
+| [0824-number-of-lines-to-write-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0824-number-of-lines-to-write-string) |
 | [0829-subdomain-visit-count](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0829-subdomain-visit-count) |
 | [0841-shortest-distance-to-a-character](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0841-shortest-distance-to-a-character) |
 | [0932-monotonic-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0932-monotonic-array) |
@@ -363,6 +364,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0782-jewels-and-stones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0782-jewels-and-stones) |
 | [0807-custom-sort-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0807-custom-sort-string) |
 | [0822-unique-morse-code-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0822-unique-morse-code-words) |
+| [0824-number-of-lines-to-write-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0824-number-of-lines-to-write-string) |
 | [0829-subdomain-visit-count](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0829-subdomain-visit-count) |
 | [0841-shortest-distance-to-a-character](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0841-shortest-distance-to-a-character) |
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
