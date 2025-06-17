@@ -1,4 +1,9 @@
 class Solution:
     def busyStudent(self, startTime: List[int], endTime: List[int], queryTime: int) -> int:
-        # sum up 1 for each (s,e) where s <= queryTime <= e
-        return sum(s <= queryTime <= e for s, e in zip(startTime, endTime))
+        result = 0
+
+        for t1,t2 in zip(startTime, endTime):
+            if queryTime in range(t1, t2+1):
+                result += 1
+        
+        return result
