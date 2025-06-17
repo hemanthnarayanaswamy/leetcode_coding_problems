@@ -38,3 +38,31 @@
 	<li><code>1 &lt;= m, n &lt;= 100</code>&nbsp;</li>
 	<li><code>mat[i][j]</code> is either <code>0</code> or <code>1</code>.</li>
 </ul>
+
+# Solution 
+* A simple problem, we check for the number of one's in each matrix element and update the counter and the index as we go along 
+
+```python
+class Solution:
+    def rowAndMaximumOnes(self, mat: List[List[int]]) -> List[int]:
+        idx, counter = -1, -1
+
+        for i in range(len(mat)):
+            x = mat[i].count(1)
+            if x > counter:
+                counter = x
+                idx = i
+            
+        return [idx, counter]
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def rowAndMaximumOnes(self, mat: List[List[int]]) -> List[int]:
+        i, cnt = max(
+            ((i, row.count(1)) for i, row in enumerate(mat)),
+            key=lambda x: x[1],
+        )
+        return [i, cnt]
+```
