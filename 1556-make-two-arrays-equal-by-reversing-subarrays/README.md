@@ -40,3 +40,36 @@ There are multiple ways to convert arr to target, this is not the only way to do
 	<li><code>1 &lt;= target[i] &lt;= 1000</code></li>
 	<li><code>1 &lt;= arr[i] &lt;= 1000</code></li>
 </ul>
+
+# Solution 
+* To make the arrays equal, they must have the same number of elements and same elements
+* We check the length and then we check the frequency of the elements 
+
+```python 
+class Solution:
+    def canBeEqual(self, target: List[int], arr: List[int]) -> bool:
+        if len(target) == len(arr):
+            return Counter(target) == Counter(arr)
+        else:
+            return False
+```
+
+# Optimal Solution
+* If you want to shave off a tiny bit of overhead (and potentially bail out early when you see a mismatch), you can roll your own count-dictionary:
+
+```python
+class Solution:
+    def canBeEqual(self, target: List[int], arr: List[int]) -> bool:
+        count = {}
+        # Count each value in target
+        for x in target:
+            count[x] = count.get(x, 0) + 1
+
+        # Subtract counts for arr, bail out if anything goes negative or missing
+        for y in arr:
+            if count.get(y, 0) == 0:
+                return False
+            count[y] -= 1
+
+        return True
+```
