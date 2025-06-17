@@ -1,6 +1,6 @@
 class Solution:
     def canBeEqual(self, target: List[int], arr: List[int]) -> bool:
-        if len(target) != len(arr):
-            return False
-            
-        return Counter(target) == Counter(arr)
+        targetFreq = Counter(target)
+        arrFreq = Counter(arr)
+
+        return targetFreq == arrFreq
