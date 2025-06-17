@@ -141,6 +141,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1505-create-target-array-in-the-given-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1505-create-target-array-in-the-given-order) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
+| [1560-number-of-students-doing-homework-at-a-given-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1560-number-of-students-doing-homework-at-a-given-time) |
 | [1580-shuffle-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1580-shuffle-the-array) |
 | [1584-average-salary-excluding-the-minimum-and-maximum-salary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1584-average-salary-excluding-the-minimum-and-maximum-salary) |
 | [1603-running-sum-of-1d-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1603-running-sum-of-1d-array) |
