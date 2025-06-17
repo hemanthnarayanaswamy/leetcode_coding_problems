@@ -42,3 +42,58 @@ After steps 4, 5 and 6 of the second iteration, result = &quot;abccbaabccba&quot
 	<li><code>1 &lt;= s.length &lt;= 500</code></li>
 	<li><code>s</code> consists of only lowercase English letters.</li>
 </ul>
+
+# Solution 
+* Its a brute force appraoch 
+
+```python
+class Solution:
+    def sortString(self, s: str) -> str:
+        sFreq = Counter(s)
+
+        result = []
+
+        while len(result) != len(s):
+            for i in range(ord('a'), ord('z')+1):
+                c1 = chr(i)
+                if sFreq.get(c1,0) > 0:
+                    result.append(c1)
+                    sFreq[c1] -= 1
+            
+            if len(result) == len(s):
+                break
+            
+            for j in range(ord('z'), ord('a')-1, -1):
+                c2 = chr(j)
+                if sFreq.get(c2,0) > 0:
+                    result.append(c2)
+                    sFreq[c2] -= 1       
+        
+        return ''.join(result)
+```
+
+# Improved Solution 
+```python
+class Solution:
+    def sortString(self, s: str) -> str:
+        alphabets = 'abcdefghijklmnopqrstuvwxyz'
+        sFreq = Counter(s)
+
+        result = []
+
+        while len(result) != len(s):
+            for c1 in alphabets:
+                if sFreq.get(c1,0) > 0:
+                    result.append(c1)
+                    sFreq[c1] -= 1
+            
+            if len(result) == len(s):
+                break
+            
+            for c2 in alphabets[::-1]:
+                if sFreq.get(c2,0) > 0:
+                    result.append(c2)
+                    sFreq[c2] -= 1       
+        
+        return ''.join(result)
+```
