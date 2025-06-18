@@ -35,3 +35,41 @@
 	<li><code>words[i]</code> contains only lowercase English letters.</li>
 	<li>All the strings of <code>words</code> are <strong>unique</strong>.</li>
 </ul>
+
+# Brute Force Solution 
+* Straight forward approach only need to handle duplicates in the result by using the `set()` instread of `list()`
+```python
+class Solution:
+    def stringMatching(self, words: List[str]) -> List[str]:
+        result = set()
+        
+        for i in range(len(words)):
+            for j in range(len(words)):
+                if i != j and words[i] in words[j]:
+                    result.add(words[i])
+        
+        return list(result)
+```
+
+# Improved Solution
+* First sort the words in according to the lenght of the words 
+* Now run two inner loops, main loop for the word and other loop from next letter to end of array. 
+* In the second loop break the loop when the substring is detected to avoid duplicates 
+```python
+class Solution:
+    def stringMatching(self, words: List[str]) -> List[str]:
+        res = []
+
+        # sort ascending by length
+        words_sorted = sorted(words, key=len)
+
+        for i, w in enumerate(words_sorted):
+            # only check against words longer than w
+            for longer in words_sorted[i+1:]:
+                if w in longer:
+                    res.append(w)  # We can use list because we are breaking the loop whenever the word is detected in one of the other strings, that way there'll be only one occurance of word
+                    break        # no need to check other longer words
+
+        return res
+```
+
