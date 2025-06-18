@@ -1,15 +1,17 @@
 class Solution:
-    def numberOfLines(self, widths, s):
-        max_width = 100
-        lines = 1
-        current_width = 0
+    def numberOfLines(self, widths: List[int], s: str) -> List[int]:
+        lines = 1                  # we’ll need at least one line
+        cur   = 0                  # width used on the current line
+        wmap  = widths             # local alias—faster than repeated attribute lookups
+        base  = ord('a')           # cache this too
 
-        for ch in s:
-            w = widths[ord(ch) - ord('a')]
-            if current_width + w > max_width:
+        for ch in s:               # direct iteration instead of indexing
+            w = wmap[ord(ch) - base]
+            # if adding this char would overflow, start a new line
+            if cur + w > 100:
                 lines += 1
-                current_width = w
+                cur    = w
             else:
-                current_width += w
+                cur   += w
 
-        return [lines, current_width]
+        return [lines, cur]
