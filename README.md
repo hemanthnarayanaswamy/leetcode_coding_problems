@@ -207,6 +207,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
 | [2727-number-of-senior-citizens](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2727-number-of-senior-citizens) |
 | [2737-row-with-maximum-ones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2737-row-with-maximum-ones) |
+| [2756-buy-two-chocolates](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2756-buy-two-chocolates) |
 | [2767-maximum-sum-with-exactly-k-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2767-maximum-sum-with-exactly-k-elements) |
 | [2836-neither-minimum-nor-maximum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2836-neither-minimum-nor-maximum) |
 | [2844-sum-of-squares-of-special-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2844-sum-of-squares-of-special-elements) |
@@ -597,6 +598,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2502-sort-the-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2502-sort-the-people) |
 | [2561-number-of-distinct-averages](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2561-number-of-distinct-averages) |
 | [2631-sort-the-students-by-their-kth-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2631-sort-the-students-by-their-kth-score) |
+| [2756-buy-two-chocolates](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2756-buy-two-chocolates) |
 | [2836-neither-minimum-nor-maximum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2836-neither-minimum-nor-maximum) |
 | [2887-sort-vowels-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2887-sort-vowels-in-a-string) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3241-divide-array-into-arrays-with-max-difference) |
@@ -695,6 +697,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2148-minimum-number-of-moves-to-seat-everyone](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2148-minimum-number-of-moves-to-seat-everyone) |
 | [2154-minimum-moves-to-convert-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2154-minimum-moves-to-convert-string) |
 | [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
+| [2756-buy-two-chocolates](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2756-buy-two-chocolates) |
 | [2767-maximum-sum-with-exactly-k-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2767-maximum-sum-with-exactly-k-elements) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3241-divide-array-into-arrays-with-max-difference) |
