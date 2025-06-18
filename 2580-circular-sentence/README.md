@@ -57,3 +57,37 @@ The sentence is <strong>not</strong> circular.</pre>
 	<li>The words in <code>sentence</code> are separated by a single space.</li>
 	<li>There are no leading or trailing spaces.</li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def isCircularSentence(self, sentence: str) -> bool:
+        sentence = sentence.split()
+        n = len(sentence)
+
+        if n == 1: # Edge case to check if the one len string is circular 
+            return sentence[0][0] == sentence[0][-1]
+        
+        for i in range(n-1): # Here we are not check circularity between the last char and first char
+                if sentence[i][-1] != sentence[i+1][0]: 
+                    return False
+        
+        return sentence[n-1][-1] == sentence[0][0] # Final check between last and first char circularity 
+```
+* Here is the solution where we can use the string version directly without splitting into the list. 
+
+```python
+class Solution:
+    def isCircularSentence(self, sentence: str) -> bool:
+        # first and last character must match
+        if sentence[0] != sentence[-1]:
+            return False
+
+        # for every space in the sentence, the char before it must equal the char after it
+        for i, ch in enumerate(sentence):
+            if ch == ' ': # We only proceed when we detect the space seperation between two words 
+                if sentence[i-1] != sentence[i+1]: # Then check chars before and after space
+                    return False
+
+        return True
+```
