@@ -1,13 +1,15 @@
 class Solution:
-    def numberOfLines(self, widths: List[int], s: str) -> List[int]:
-        totalLines, maxWidth = 1, 0
+    def numberOfLines(self, widths, s):
+        max_width = 100
+        lines = 1
+        current_width = 0
 
-        for i in range(len(s)):
-            charWidth = widths[ord(s[i]) - 97]
-            if maxWidth + charWidth > 100:
-                totalLines += 1
-                maxWidth = charWidth
+        for ch in s:
+            w = widths[ord(ch) - ord('a')]
+            if current_width + w > max_width:
+                lines += 1
+                current_width = w
             else:
-                maxWidth += charWidth
-        
-        return [totalLines, maxWidth]
+                current_width += w
+
+        return [lines, current_width]
