@@ -1,6 +1,6 @@
 class Solution:
     def buyChoco(self, prices: List[int], money: int) -> int:
-        firstCho, secondCho = 100, 100
+        firstCho, secondCho = float(inf), float(inf)
 
         for p in prices:
             if p < firstCho:
