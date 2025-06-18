@@ -1,11 +1,14 @@
 class Solution:
     def buyChoco(self, prices: List[int], money: int) -> int:
-        first = second = float('inf')
-        for p in prices:
-            if p < first:
-                second, first = first, p
-            elif p < second:
-                second = p
+        f = s = float("inf")
 
-        cost = first + second
-        return money - cost if cost <= money else money
+        for pos in range(len(prices)):
+            if prices[pos] <= f:
+                s = f
+                f = prices[pos]
+            elif prices[pos] < s:
+                s = prices[pos]
+
+        if money >= f + s:
+            return money - f - s
+        return money
