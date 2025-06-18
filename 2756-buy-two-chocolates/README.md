@@ -29,3 +29,50 @@
 	<li><code>1 &lt;= prices[i] &lt;= 100</code></li>
 	<li><code>1 &lt;= money &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* The best way is to sort the array and compute the sum of first two low price chocolates and check if the combined price exceed the money we have and return the results based on that 
+
+```python
+# Solution without using the Sorting 
+class Solution:
+    def buyChoco(self, prices: List[int], money: int) -> int:
+        first = second = float('inf')
+        for p in prices:
+            if p < first:
+                second, first = first, p
+            elif p < second:
+                second = p
+
+        cost = first + second
+        return money - cost if cost <= money else money
+```
+
+# Improved Solution 
+```python
+# Solution with sorting 
+class Solution:
+    def buyChoco(self, prices: List[int], money: int) -> int:
+        prices.sort()
+        
+        choPrice = prices[0] + prices[1]
+        
+        return money if choPrice > money else money - choPrice
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def buyChoco(self, prices: List[int], money: int) -> int:
+        first = second = float('inf')
+        for i in range(len(prices)):
+            if prices[i] < first:
+                second, first = first, prices[i] 
+            elif prices[i]  < second:
+                second = prices[i] 
+
+        if money >= first + second:
+            return money - first - second
+        else:
+            return money
+```
