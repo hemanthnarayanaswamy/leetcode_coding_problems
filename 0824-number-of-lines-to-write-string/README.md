@@ -40,3 +40,43 @@ There are a total of 2 lines, and the last line is 4 pixels wide.</pre>
 	<li><code>1 &lt;= s.length &lt;= 1000</code></li>
 	<li><code>s</code> contains only lowercase English letters.</li>
 </ul>
+
+# Solution 
+* Two variables totalLine to track the number of lines and it starts from line one by default not zero. 
+* Now get the width of the character for each iteration and check the size exceeds 100
+* If it exceeds 100 move to the next line and add the maxWidth with the current width character. 
+```python
+class Solution:
+    def numberOfLines(self, widths: List[int], s: str) -> List[int]:
+        totalLines, maxWidth = 1, 0
+
+        for i in range(len(s)):
+            charWidth = widths[ord(s[i]) - 97]
+            if maxWidth + charWidth > 100:
+                totalLines += 1
+                maxWidth = charWidth
+            else:
+                maxWidth += charWidth
+        
+        return [totalLines, maxWidth]
+```
+
+# Improved Solution 
+```python
+class Solution:
+    def numberOfLines(self, widths: List[int], s: str) -> List[int]:
+
+        lines, total = 1, 0
+        L = []
+        for c in s:
+            total += widths[ord(c) - ord('a')]
+            
+            if total > 100:
+                lines += 1
+                total = widths[ord(c) - ord('a')]
+
+        L.append(lines)
+        L.append(total)
+
+        return L
+```
