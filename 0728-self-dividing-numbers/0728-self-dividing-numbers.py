@@ -3,14 +3,14 @@ class Solution:
         result = []
 
         def helperDividing(num):
-            temp = str(num)
+            temp = num
 
-            if '0' in temp: # avoid numbers with 0 in it avoid modulo by zero error
-                return 
-
-            for n in temp:
-                if num % int(n) != 0:
-                    return 
+            while temp > 0:
+                digit = temp % 10
+                if digit == 0 or num % digit != 0:
+                    return
+                temp //= 10
+            
             return num
 
         for num in range(left, right+1):
