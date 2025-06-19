@@ -1,16 +1,5 @@
 class Solution:
     def findMaxK(self, nums: List[int]) -> int:
-        larNum = -1 
-
-        seen = set()
-
-        for num in nums:
-            if -num in seen:
-                if abs(num) > larNum:
-                    larNum = abs(num)
-            
-            seen.add(num)
-        
-        return larNum
-
-            
+        s = set(nums)
+        # generate abs(x) for every x whose negation is also in s
+        return max((abs(x) for x in s if -x in s), default=-1)
