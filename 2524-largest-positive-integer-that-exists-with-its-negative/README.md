@@ -35,3 +35,46 @@
 	<li><code>-1000 &lt;= nums[i] &lt;= 1000</code></li>
 	<li><code>nums[i] != 0</code></li>
 </ul>
+
+# Solution 
+* Lets use `set()` to store the unique numbers and have a lookup thing, for a number check if its counter number is present is greater than the present large number and after all iteration return the large number. 
+
+```python
+class Solution:
+    def findMaxK(self, nums: List[int]) -> int:
+        larNum = -1 
+
+        numsUniq = set(nums)
+
+        for num in numsUniq:
+            if -num in numsUniq and abs(num) > larNum:
+                larNum = abs(num)
+        
+        return larNum
+```
+
+# Optimal Solution 
+* Instead of building the full set and then looping over it again, you can check for the negation as you go:
+```python
+class Solution:
+    def findMaxK(self, nums: List[int]) -> int:
+        larNum = -1 
+        seen = set()
+
+        for num in nums:
+            if -num in seen:
+                if abs(num) > larNum:
+                    larNum = abs(num)
+            
+            seen.add(num)
+        
+        return larNum
+```
+
+```python
+class Solution:
+    def findMaxK(self, nums: List[int]) -> int:
+        s = set(nums)
+        # generate abs(x) for every x whose negation is also in s
+        return max((abs(x) for x in s if -x in s), default=-1)
+```
