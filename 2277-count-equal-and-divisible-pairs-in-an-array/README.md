@@ -28,3 +28,48 @@ There are 4 pairs that meet all the requirements:
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i], k &lt;= 100</code></li>
 </ul>
+
+# Brute Force 
+* Two for loops check each number and don't forget the condition `(i, j) where 0 <= i < j < n` `j >i`.
+
+```python
+class Solution:
+    def countPairs(self, nums: List[int], k: int) -> int:
+        count = 0
+        for i in range(len(nums)):
+            for j in range(i, len(nums)):
+                if i != j and nums[i] == nums[j]:
+                    if i*j % k == 0:
+                        count += 1
+        
+        return count 
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def countPairs(self, nums: List[int], k: int) -> int:
+        group=defaultdict(list)
+        c=0
+        for i,num in enumerate(nums):
+            if num in group:
+                for j in group[num]:
+                    if (j*i)%k==0:
+                        c+=1
+            group[num].append(i)
+        return c
+```
+
+* Same approach as above with simpler syntax 
+
+```python
+class Solution:
+    def countPairs(self, nums: List[int], k: int) -> int:
+        freq=[[] for i in range(101)]
+        cnt=0
+        for j, x in enumerate(nums):
+            for i in freq[x]:
+                cnt+=(i*j%k==0)
+            freq[x].append(j)
+        return cnt
+```
