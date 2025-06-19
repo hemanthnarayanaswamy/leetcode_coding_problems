@@ -22,3 +22,78 @@
 <ul>
 	<li><code>1 &lt;= left &lt;= right &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+# Solution 
+* Use a helper function to get the division results 
+
+```python
+class Solution:
+    def selfDividingNumbers(self, left: int, right: int) -> List[int]:
+        result = []
+
+        def helperDividing(num):
+            temp = str(num)
+
+            if '0' in temp: # avoid numbers with 0 in it avoid modulo by zero error
+                return 
+
+            for n in temp:
+                if num % int(n) != 0:
+                    return 
+            return num
+
+        for num in range(left, right+1):
+            res = helperDividing(num)
+            if res:
+                result.append(res)
+        
+        return result
+```
+
+* Always and final note avoid converting the numbers into string for digit division use the modulo 10 formula to get each digits.
+
+# Improved Solution
+```python
+class Solution:
+    def selfDividingNumbers(self, left: int, right: int) -> List[int]:
+        result = []
+
+        def helperDividing(num):
+            temp = num
+
+            while temp > 0:
+                digit = temp % 10
+                if digit == 0 or num % digit != 0:
+                    return
+                temp //= 10
+            
+            return num
+
+        for num in range(left, right+1):
+            res = helperDividing(num)
+            if res:
+                result.append(res)
+        
+        return result
+```
+
+# OPTIMAL SOLUTION
+```python
+class Solution:
+    def selfDividingNumbers(self, left: int, right: int) -> List[int]:
+        res = []
+
+        for num in range(left, right + 1):
+            tmp = num
+            while tmp:
+                d = tmp % 10
+                # if digit is 0 or doesn't divide num, bail out
+                if d == 0 or num % d:
+                    break
+                tmp //= 10
+            else:
+                # only executed if while loop didn't break
+                res.append(num)
+
+        return res
+```
