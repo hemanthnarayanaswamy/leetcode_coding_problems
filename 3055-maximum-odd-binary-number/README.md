@@ -31,3 +31,30 @@
 	<li><code>s</code> consists only of <code>&#39;0&#39;</code> and <code>&#39;1&#39;</code>.</li>
 	<li><code>s</code> contains at least one <code>&#39;1&#39;</code>.</li>
 </ul>
+
+# Solution 
+```ini 
+Binary number values 
+<even Numbers>......8 4 2 1
+```
+* The numbers to be odd the right most digit should be 1.
+* To make the number maximum the 1 should be towards the left side together 
+
+1. Get the numbers of 1s present in the string and construct your own version of the number. 
+
+```python
+class Solution:
+    def maximumOddBinaryNumber(self, s: str) -> str:
+        onesCount = s.count('1') 
+        zerosCount = len(s) - onesCount
+
+        return '1'*(onesCount-1) + '0'*zerosCount + '1'
+```
+
+```python
+class Solution:
+    def maximumOddBinaryNumber(self, s: str) -> str:
+        ones = s.count('1')
+        # place all but one '1' at the front, then all  '0's, then the final '1'
+        return '1'*(ones-1) + '0'*(len(s)-ones) + '1'
+```
