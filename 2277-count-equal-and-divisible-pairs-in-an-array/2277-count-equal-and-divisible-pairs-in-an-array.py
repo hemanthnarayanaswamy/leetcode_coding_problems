@@ -1,10 +1,13 @@
 class Solution:
     def countPairs(self, nums: List[int], k: int) -> int:
-        count = 0
-        for i in range(len(nums)):
-            for j in range(i, len(nums)):
-                if i != j and nums[i] == nums[j]:
-                    if i*j % k == 0:
-                        count += 1
+        group=defaultdict(list)
+        c=0
+        for i,num in enumerate(nums):
+            if num in group:
+                for j in group[num]:
+                    if (j*i)%k==0:
+                        c+=1
+            group[num].append(i)
+        return c
+
         
-        return count 
