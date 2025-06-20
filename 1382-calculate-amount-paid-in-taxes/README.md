@@ -55,3 +55,53 @@ You have no income to tax, so you have to pay a total of $0 in taxes.
 	<li>All the values of <code>upper<sub>i</sub></code> are <strong>unique</strong>.</li>
 	<li>The upper bound of the last tax bracket is greater than or equal to <code>income</code>.</li>
 </ul>
+
+# Approach 
+1. You are calculating tax on brackets.
+
+2. At any point taxable income = min(income, income in the bracket) - tax income accumulated so far.
+
+3. Calculate tax on taxable income (taxable income * percentage / 100) and add it to tax variable.
+
+4. Add current taxable income to tax income accumulated.
+
+5. Repeat process through all the brackets.
+
+6. At all point make sure the income is more then the previous upper to continue calculating the taxes. 
+
+# Solution 
+```python
+class Solution:
+    def calculateTax(self, brackets: List[List[int]], income: int) -> float:
+        tax  = 0.0
+        prev = 0
+
+        for upper, pct in brackets:
+            if income <= prev:
+                break
+
+            # how much of your income falls in this bracket
+            taxable = min(income, upper) - prev
+            tax    += taxable * (pct / 100)
+            prev    = upper
+
+        return tax
+```
+
+# Optimal Solution
+```python
+class Solution:
+    def calculateTax(self, brackets: List[List[int]], income: int) -> float:
+        if not income: 
+            return 0
+        total = 0
+        upper_prev = 0
+        for upper, rate in brackets: 
+            charge = min(upper - upper_prev, income)
+            total += charge * rate / 100 
+            income -= charge
+            if not income: 
+                break
+            upper_prev = upper
+        return total
+```
