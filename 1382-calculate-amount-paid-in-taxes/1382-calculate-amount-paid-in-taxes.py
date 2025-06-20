@@ -1,17 +1,15 @@
 class Solution:
     def calculateTax(self, brackets: List[List[int]], income: int) -> float:
-        taxAmount = 0.0
-        taxAccumulated = 0
+        tax  = 0.0
         prev = 0
 
-        for i in range(len(brackets)):
-            if income <= prev: # Early exit: as soon as your income ≤ the previous bracket’s upper bound, you stop looping.
-                break 
+        for upper, percentage in brackets:
+            if income <= prev:
+                break
 
-            upper, percentage = brackets[i][0], brackets[i][1] / 100
-            taxableIncome = min(income, upper) - prev
-            
-            taxAmount += taxableIncome * percentage 
-            prev = upper
-        
-        return taxAmount 
+            # how much of your income falls in this bracket
+            taxable = min(income, upper) - prev
+            tax    += taxable * (percentage / 100)
+            prev    = upper
+
+        return tax
