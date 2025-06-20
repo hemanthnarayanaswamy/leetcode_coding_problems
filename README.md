@@ -135,6 +135,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1306-minimum-absolute-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1306-minimum-absolute-difference) |
 | [1319-unique-number-of-occurrences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1319-unique-number-of-occurrences) |
 | [1354-find-players-with-zero-or-one-losses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1354-find-players-with-zero-or-one-losses) |
+| [1382-calculate-amount-paid-in-taxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1382-calculate-amount-paid-in-taxes) |
 | [1407-group-the-people-given-the-group-size-they-belong-to](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1407-group-the-people-given-the-group-size-they-belong-to) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
@@ -479,6 +480,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0412-fizz-buzz](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0412-fizz-buzz) |
 | [0415-add-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0415-add-strings) |
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
+| [1382-calculate-amount-paid-in-taxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1382-calculate-amount-paid-in-taxes) |
 | [1505-create-target-array-in-the-given-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1505-create-target-array-in-the-given-order) |
 | [1806-count-of-matches-in-tournament](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1806-count-of-matches-in-tournament) |
 | [2048-build-array-from-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2048-build-array-from-permutation) |
