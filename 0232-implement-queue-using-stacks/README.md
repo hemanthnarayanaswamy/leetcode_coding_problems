@@ -46,3 +46,28 @@ myQueue.empty(); // return false
 
 <p>&nbsp;</p>
 <p><strong>Follow-up:</strong> Can you implement the queue such that each operation is <strong><a href="https://en.wikipedia.org/wiki/Amortized_analysis" target="_blank">amortized</a></strong> <code>O(1)</code> time complexity? In other words, performing <code>n</code> operations will take overall <code>O(n)</code> time even if one of those operations may take longer.</p>
+
+# Solution
+
+```python
+class MyQueue(object):
+    def __init__(self):
+        self.st = []
+
+    def push(self, x):
+        if len(self.st) == 0:
+            self.st.append(x)
+            return
+        tmp = self.st.pop(-1)
+        self.push(x)
+        self.st.append(tmp)
+
+    def pop(self):
+        return self.st.pop(-1)
+
+    def peek(self):
+        return self.st[-1]
+
+    def empty(self):
+        return len(self.st) == 0
+```
