@@ -41,3 +41,28 @@ AB -&gt; 28
 <ul>
 	<li><code>1 &lt;= columnNumber &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+# Solution 
+1. Initialize an empty string ans which would store the column title.
+2. Do the following as long as columnNumber is greater than 0:
+- Subtract 1 from the columnNumber
+- Find the character corresponding to columnNumber % 26 and append it to the ans in the end.
+- Assign columnNumber to columnNumber / 26.
+3. Reverse the string columnNumber and return it.
+
+
+https://leetcode.com/problems/excel-sheet-column-title/editorial/?envType=problem-list-v2&envId=n9iuhemc#approach-convert
+
+```python
+class Solution:
+    def convertToTitle(self, columnNumber: int) -> str:
+        ans = ""
+        while columnNumber > 0:
+            columnNumber -= 1
+            # Get the last character and append it at the end of string.
+            ans += chr(columnNumber % 26 + ord("A"))
+            columnNumber //= 26
+
+        # Reverse it, as we appended characters in reverse order.
+        return ans[::-1]
+```
