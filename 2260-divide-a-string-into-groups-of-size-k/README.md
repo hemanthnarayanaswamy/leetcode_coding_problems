@@ -43,3 +43,41 @@ Thus, the 4 groups formed are &quot;abc&quot;, &quot;def&quot;, &quot;ghi&quot;,
 	<li><code>1 &lt;= k &lt;= 100</code></li>
 	<li><code>fill</code> is a lowercase English letter.</li>
 </ul>
+
+# Solution 
+* First lets start by filling the missing characters into the string directly before splitting the string, that way its easier to split when the count is perfect 
+* If the lenght of the string modulo with k is zero then the string can be perfectly splitied into K parts without the fill character
+* But if the modulo is not zero then we have to remove the modulo count and add k fill count into the lenght to make it a equal split. `(n - fillCount + k) * fill`
+* Then a iteration to with k step count and appending the sliced version of string. 
+
+```python
+class Solution:
+    def divideString(self, s: str, k: int, fill: str) -> List[str]:
+        fillCount = len(s) % k
+        n = len(s)
+        result = []
+        
+        if fillCount:
+            s += (n - fillCount + k) * fill
+        
+        for i in range(0, n, k):
+            result.append(s[i:i+k])
+        
+        return result
+```
+
+# Optimal Solution 
+```python 
+class Solution:
+    def divideString(self, s: str, k: int, fill: str) -> List[str]:
+        res = []  # grouped string
+        n = len(s)
+        curr = 0  # starting index of each group
+        # split string
+        while curr < n:
+            res.append(s[curr : curr + k])
+            curr += k
+        # try to fill in the last group
+        res[-1] += fill * (k - len(res[-1]))
+        return res
+```
