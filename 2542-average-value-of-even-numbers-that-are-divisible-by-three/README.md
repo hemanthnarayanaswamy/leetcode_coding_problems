@@ -26,3 +26,39 @@
 	<li><code>1 &lt;= nums.length &lt;= 1000</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 1000</code></li>
 </ul>
+
+# Solution 
+* Simple problem figure out yourself 
+
+```python
+class Solution:
+    def averageValue(self, nums: List[int]) -> int:
+        avgsum  = []
+
+        for num in nums:
+            if num % 2 == 0 and num % 3 == 0: 
+                avgsum.append(num)
+
+        return sum(avgsum) // len(avgsum) if avgsum else 0
+```
+# Improved 
+* Instead of both conditions use `6` modulo as 6 is gcd for 2 and 3.
+
+```python
+class Solution:
+    def averageValue(self, nums: List[int]) -> int:
+        avgsum  = []
+
+        for num in nums:
+            if num % 6 == 0: 
+                avgsum.append(num)
+
+        return sum(avgsum) // len(avgsum) if avgsum else 0
+```
+# ONE Liner 
+```python
+class Solution:
+    def averageValue(self, nums: List[int]) -> int:
+        
+        return sum(a) // len(a) if (a := [num for num in nums if num % 6 == 0]) else 0
+```
