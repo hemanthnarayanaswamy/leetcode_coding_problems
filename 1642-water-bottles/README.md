@@ -30,3 +30,20 @@ Number of water bottles you can drink: 15 + 3 + 1 = 19.
 	<li><code>1 &lt;= numBottles &lt;= 100</code></li>
 	<li><code>2 &lt;= numExchange &lt;= 100</code></li>
 </ul>
+
+# Solution 
+1. Initially you consume all the bottles so you drank all bottles and have all that as empty bottles.
+2. Run a while loop until the emptyBottles are more then the numExchange
+3. number of bottles we drink is `(emptyBottles // numExchange)` and the empty Bottles remainded are the remaining bottles that was not exchanged `(emptyBottles % numExchange)` plus the newly exchanged bottles that we drank ``(emptyBottles // numExchange)` 
+```python
+class Solution:
+    def numWaterBottles(self, numBottles: int, numExchange: int) -> int:
+        bottlesDrink = emptyBottles = numBottles
+
+        while emptyBottles >= numExchange:
+            x, y = divmod(emptyBottles, numExchange)
+            bottlesDrink += x
+            emptyBottles = y + x
+        
+        return bottlesDrink
+```
