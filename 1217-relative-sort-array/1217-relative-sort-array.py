@@ -1,19 +1,19 @@
+from collections import Counter
+
 class Solution:
     def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
-        arr1Freq = Counter(arr1)
+        freq = Counter(arr1)
         result = []
-        extraNum = []
-
-        for num in arr2:
-            temp = [num] * arr1Freq[num]
-            result += temp 
         
-        for num in arr1Freq:
-            if num not in result:
-                temp = [num] * arr1Freq[num]
-                extraNum += temp
+        # 1) Place everything in the order of arr2
+        for x in arr2:
+            c = freq.pop(x, 0)
+            result.extend([x] * c)
         
-        extraNum.sort()
+        # 2) Sort whatever remains in freq and append
+        leftovers = dict(sorted(freq.items(), key=lambda x:x[0]))
         
-        return result + extraNum
+        for n, f in leftovers.items():
+            result.extend([n] * f)
         
+        return result
