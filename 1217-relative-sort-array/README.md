@@ -26,3 +26,58 @@
 	<li>All the elements of <code>arr2</code> are <strong>distinct</strong>.</li>
 	<li>Each&nbsp;<code>arr2[i]</code> is in <code>arr1</code>.</li>
 </ul>
+
+# Not Recommended 
+* It is a brute force solution 
+
+1. Counter for elements in arr1 and store the result and extraNum seperately 
+2. First loop with arr2 and get the freq and store that in the results array 
+3. Now the elements that are not in result store them in seperate array sort them and return the addition of both arrays 
+
+```python
+class Solution:
+    def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
+        arr1Freq = Counter(arr1)
+        result = []
+        extraNum = []
+
+        for num in arr2:
+            temp = [num] * arr1Freq[num]
+            result += temp 
+        
+        for num in arr1Freq:
+            if num not in result:
+                temp = [num] * arr1Freq[num]
+                extraNum += temp
+        
+        extraNum.sort()
+        
+        return result + extraNum
+```
+
+# Improved Solution 
+```python 
+class Solution:
+    def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
+        freq = Counter(arr1)
+        result = []
+        
+        for x in arr2:
+            c = freq.pop(x, 0)
+            result.extend([x] * c)
+        
+        leftovers = dict(sorted(freq.items(), key=lambda x:x[0]))
+        
+        for n, f in leftovers.items():
+            result.extend([n] * f)
+        
+        return result
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
+        order = {x:i for i,x in enumerate(arr2)}
+        return sorted(arr1, key=lambda x: (order.get(x, len(arr2)), x))
+```
