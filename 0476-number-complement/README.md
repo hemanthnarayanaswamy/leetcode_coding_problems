@@ -32,3 +32,18 @@
 
 <p>&nbsp;</p>
 <p><strong>Note:</strong> This question is the same as 1009: <a href="https://leetcode.com/problems/complement-of-base-10-integer/" target="_blank">https://leetcode.com/problems/complement-of-base-10-integer/</a></p>
+
+# Solution 
+* Int to binary and binary int conversion pattern
+
+```python
+class Solution:
+    def findComplement(self, num: int) -> int:
+        binNum = bin(num)[2:]
+        complementNum = []
+
+        for i in binNum:
+            complementNum.append('0') if i == '1' else complementNum.append('1')
+        
+        return int(''.join(complementNum), 2)
+```
