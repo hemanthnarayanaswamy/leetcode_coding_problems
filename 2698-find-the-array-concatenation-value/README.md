@@ -69,3 +69,58 @@ Since the concatenation value is 673 so the answer is 673.
 .spoilerbutton[value="Show Message"] + .spoiler > div {margin-top:-500%;}
 .spoilerbutton[value="Hide Message"] + .spoiler {padding:5px;}
 </style>
+
+# Solution 
+* iterate until the array becomes empty. In each iteration, concatenate the first element to the last element and add their concatenation value to the answer.
+* Don’t forget to handle cases when one element is left in the end, not two elements.
+
+```python
+class Solution:
+    def findTheArrayConcVal(self, nums: List[int]) -> int:
+        result = 0
+        n = len(nums)
+
+        if n == 1:
+            return nums[0]
+        
+        l, r = 0, n-1
+
+        while l < r:
+            temp = int(str(nums[l])+str(nums[r]))
+            result += temp
+
+            l += 1
+            r -= 1
+        
+        return result + nums[l] if n % 2 else result
+```
+
+# Optimal Solution 
+* Instead of using the string for concatination we use a different method 
+* Hava a variable to determine the multiple to make the concentation happen 
+```python
+class Solution:
+    def findTheArrayConcVal(self, nums: List[int]) -> int:
+        res = 0
+        l, r = 0, len(nums) - 1
+
+        while l < r:
+            x, y = nums[l], nums[r]
+
+            # compute m = 10^(#digits in y)
+            m = 1
+            while m <= y:
+                m *= 10
+
+            # “concatenate” x and y via x*m + y
+            res += x * m + y
+
+            l += 1
+            r -= 1
+
+        # if there's a middle element (odd length), add it
+        if l == r:
+            res += nums[l]
+
+        return res
+```
