@@ -38,3 +38,37 @@
 	<li><code>0 &lt;= arr.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>-10<sup>9</sup>&nbsp;&lt;= arr[i] &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Solution 
+* First clean the array of duplicates and sort the array 
+* Create a rankMap for the array and then iterate the original array and append the respective ranks into the result 
+
+```python
+class Solution:
+    def arrayRankTransform(self, arr: List[int]) -> List[int]:
+        temp = sorted(set(arr))
+
+        rankMap = {}
+        result = []
+
+        for i, num in enumerate(temp):
+            if num not in rankMap:
+                rankMap[num] = i+1
+        
+        for num in arr:
+            result.append(rankMap[num])
+        
+        return result
+```
+
+# Optimal Solution 
+* Make the result linear without the storage 
+```python
+class Solution:
+    def arrayRankTransform(self, arr: List[int]) -> List[int]:
+        temp = sorted(set(arr))
+
+        rankMap = {num: i+1 for i, num in enumerate(temp)}
+        
+        return [rankMap[num] for num in arr]
+```
