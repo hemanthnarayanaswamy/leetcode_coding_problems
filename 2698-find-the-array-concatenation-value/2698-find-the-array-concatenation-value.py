@@ -1,18 +1,24 @@
 class Solution:
     def findTheArrayConcVal(self, nums: List[int]) -> int:
-        result = 0
-        n = len(nums)
-
-        if n == 1:
-            return nums[0]
-        
-        l, r = 0, n-1
+        res = 0
+        l, r = 0, len(nums) - 1
 
         while l < r:
-            temp = int(str(nums[l])+str(nums[r]))
-            result += temp
+            x, y = nums[l], nums[r]
+
+            # compute m = 10^(#digits in y)
+            m = 1
+            while m <= y:
+                m *= 10
+
+            # “concatenate” x and y via x*m + y
+            res += x * m + y
 
             l += 1
             r -= 1
-        
-        return result + nums[l] if n % 2 else result
+
+        # if there's a middle element (odd length), add it
+        if l == r:
+            res += nums[l]
+
+        return res
