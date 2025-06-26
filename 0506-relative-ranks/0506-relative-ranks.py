@@ -1,21 +1,23 @@
 class Solution:
     def findRelativeRanks(self, score: List[int]) -> List[str]:
         n = len(score)
-        scoreRank = {s: str(i+1) for i, s in enumerate(sorted(score, reverse=True))}
+        # Pair each score with its original index
+        indexed_scores = list(enumerate(score))
+        # Sort descending by score
+        indexed_scores.sort(key=lambda x: x[1], reverse=True)
 
-        rank = []
-
-        for s in score:
-            if scoreRank[s] == '1':
-                rank.append("Gold Medal")
-            elif scoreRank[s] == '2':
-                rank.append("Silver Medal")
-            elif scoreRank[s] == '3':
-                rank.append("Bronze Medal")
+        # Prepare the result array
+        ans = [''] * n
+        
+        # Assign medals/ranks in one pass
+        for rank, (idx, _) in enumerate(indexed_scores, start=1):
+            if rank == 1:
+                ans[idx] = "Gold Medal"
+            elif rank == 2:
+                ans[idx] = "Silver Medal"
+            elif rank == 3:
+                ans[idx] = "Bronze Medal"
             else:
-                rank.append(scoreRank[s])
+                ans[idx] = str(rank)
         
-        return rank
-
-
-        
+        return ans
