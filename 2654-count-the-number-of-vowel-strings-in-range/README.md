@@ -39,3 +39,31 @@ The number of vowel strings in the mentioned range is 3.
 	<li><code>words[i]</code> consists of only lowercase English letters.</li>
 	<li><code>0 &lt;= left &lt;= right &lt; words.length</code></li>
 </ul>
+
+# Solution 
+* The problem is straight forward figure out yourself 
+
+```python
+class Solution:
+    def vowelStrings(self, words: List[str], left: int, right: int) -> int:
+        count = 0
+        vowelChars = {'a', 'e', 'i', 'o', 'u'}
+
+        for i in range(left, right+1):
+            if words[i][0] in vowelChars and words[i][-1] in vowelChars:
+                count += 1
+        
+        return count
+```
+
+* Other solution wihtout using the set to store the vowels 
+
+```python
+class Solution:
+    def vowelStrings(self, w: List[str], left: int, right: int) -> int:
+        ans = 0
+        for i in range(left,right+1):
+            if w[i][0] in 'aeiou' and w[i][-1] in 'aeiou':
+                ans += 1
+        return ans
+```
