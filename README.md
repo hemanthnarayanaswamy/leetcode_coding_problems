@@ -219,6 +219,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2624-difference-between-element-sum-and-digit-sum-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2624-difference-between-element-sum-and-digit-sum-of-an-array) |
 | [2631-sort-the-students-by-their-kth-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2631-sort-the-students-by-their-kth-score) |
 | [2639-separate-the-digits-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2639-separate-the-digits-in-an-array) |
+| [2654-count-the-number-of-vowel-strings-in-range](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2654-count-the-number-of-vowel-strings-in-range) |
 | [2698-find-the-array-concatenation-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2698-find-the-array-concatenation-value) |
 | [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
 | [2727-number-of-senior-citizens](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2727-number-of-senior-citizens) |
@@ -463,6 +464,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2576-minimum-penalty-for-a-shop](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2576-minimum-penalty-for-a-shop) |
 | [2580-circular-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2580-circular-sentence) |
 | [2589-maximum-value-of-a-string-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2589-maximum-value-of-a-string-in-an-array) |
+| [2654-count-the-number-of-vowel-strings-in-range](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2654-count-the-number-of-vowel-strings-in-range) |
 | [2727-number-of-senior-citizens](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2727-number-of-senior-citizens) |
 | [2819-remove-trailing-zeros-from-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2819-remove-trailing-zeros-from-a-string) |
 | [2825-minimize-string-length](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2825-minimize-string-length) |
@@ -677,6 +679,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2421-maximum-number-of-pairs-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2421-maximum-number-of-pairs-in-array) |
 | [2486-most-frequent-even-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2486-most-frequent-even-element) |
 | [2532-remove-letter-to-equalize-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2532-remove-letter-to-equalize-frequency) |
+| [2654-count-the-number-of-vowel-strings-in-range](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2654-count-the-number-of-vowel-strings-in-range) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3324-split-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3324-split-the-array) |
