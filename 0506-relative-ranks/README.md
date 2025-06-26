@@ -37,3 +37,74 @@
 	<li><code>0 &lt;= score[i] &lt;= 10<sup>6</sup></code></li>
 	<li>All the values in <code>score</code> are <strong>unique</strong>.</li>
 </ul>
+
+# Solution 
+* Sort and map the index into the actual number 
+* Then do the actual implementation of the score and check conditions for gold, silver and bronze.
+
+```python
+class Solution:
+    def findRelativeRanks(self, score: List[int]) -> List[str]:
+        scoreRank = {s: str(i+1) for i, s in enumerate(sorted(score, reverse=True))}
+
+        rank = []
+
+        for s in score:
+            if scoreRank[s] == '1':
+                rank.append("Gold Medal")
+            elif scoreRank[s] == '2':
+                rank.append("Silver Medal")
+            elif scoreRank[s] == '3':
+                rank.append("Bronze Medal")
+            else:
+                rank.append(scoreRank[s])
+        
+        return rank
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def findRelativeRanks(self, score: List[int]) -> List[str]:
+        score_to_idx = {}
+        for i in range(len(score)):
+            score_to_idx[score[i]] = i
+
+        score.sort(reverse=True)
+        ans = [0]*len(score)
+        ans[score_to_idx[score[0]]] = "Gold Medal"
+        if len(score) > 1: ans[score_to_idx[score[1]]] = "Silver Medal"
+        if len(score) > 2: ans[score_to_idx[score[2]]] = "Bronze Medal"
+
+        for i in range(3, len(score)):
+            ans[score_to_idx[score[i]]] = str(i+1)
+
+        return ans
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def findRelativeRanks(self, score: List[int]) -> List[str]:
+        n = len(score)
+        # Pair each score with its original index
+        indexed_scores = list(enumerate(score))
+        # Sort descending by score
+        indexed_scores.sort(key=lambda x: x[1], reverse=True)
+
+        # Prepare the result array
+        ans = [''] * n
+        
+        # Assign medals/ranks in one pass
+        for rank, (idx, _) in enumerate(indexed_scores, start=1):
+            if rank == 1:
+                ans[idx] = "Gold Medal"
+            elif rank == 2:
+                ans[idx] = "Silver Medal"
+            elif rank == 3:
+                ans[idx] = "Bronze Medal"
+            else:
+                ans[idx] = str(rank)
+        
+        return ans
+```
