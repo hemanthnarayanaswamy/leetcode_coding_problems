@@ -34,3 +34,32 @@ In the third operation, choose x = 2. Now, nums = [0,0,0,0,0].
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>0 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* Elements with the same value will always take the same number of operations to become 0. Contrarily, elements with different values will always take a different number of operations to become 0. So, its better to remove the duplicates from the original array. 
+* The answer is the number of unique non-zero numbers in nums, 
+
+```ini 
+Think in this way suppose there are 3 different unique elements at a time you could target each element with it's own value to make it ZERO then for 3 elements you need 3 operations,
+Suppose there are 5 elements you need 5 operations,
+If there are n unique elements you need n opertations.
+```
+
+```python
+class Solution:
+    def minimumOperations(self, nums: List[int]) -> int:
+        uniNum = set()
+
+        for num in nums: 
+            if num and num not in uniNum:
+                uniNum.add(num)
+        
+        return len(uniNum)
+```
+
+```python
+class Solution:
+    def minimumOperations(self, nums: List[int]) -> int:
+        return len(set(n for n in nums if n!=0))
+```
+
