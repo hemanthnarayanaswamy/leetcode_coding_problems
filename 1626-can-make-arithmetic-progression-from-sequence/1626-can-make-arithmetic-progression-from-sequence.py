@@ -1,23 +1,11 @@
 class Solution:
     def canMakeArithmeticProgression(self, arr: List[int]) -> bool:
-        
-        Ordered = sorted(arr)
-        Target = Ordered[1] - Ordered[0]
+        arrSorted = sorted(arr)
 
-        Cursor_A = 1
-        Cursor_B = 2
-        Span = len(Ordered)
+        diffval = arrSorted[1] - arrSorted[0]
 
-        while (Cursor_B < Span):
-            
-            Value_A = Ordered[Cursor_A]
-            Value_B = Ordered[Cursor_B]
-            Difference = Value_B - Value_A
-
-            if (Difference == Target):
-                Cursor_A += 1
-                Cursor_B += 1
-            else:
+        for i in range(2, len(arrSorted)):
+            if arrSorted[i] - arrSorted[i-1] != diffval:
                 return False
         
         return True
