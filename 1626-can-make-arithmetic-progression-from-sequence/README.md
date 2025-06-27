@@ -26,3 +26,61 @@
 	<li><code>2 &lt;= arr.length &lt;= 1000</code></li>
 	<li><code>-10<sup>6</sup> &lt;= arr[i] &lt;= 10<sup>6</sup></code></li>
 </ul>
+
+# Solution 
+* Sort and array and save the diff value in the set and check the len of that set to see the result for Arithmetic Progression 
+
+```python
+class Solution:
+    def canMakeArithmeticProgression(self, arr: List[int]) -> bool:
+        arr.sort()
+
+        diff = set()
+
+        for i in range(1, len(arr)):
+            diff.add(arr[i] - arr[i-1])
+        
+        return True if len(diff) == 1 else False
+```
+
+# Improved Solution 
+```python
+class Solution:
+    def canMakeArithmeticProgression(self, arr: List[int]) -> bool:
+        arrSorted = sorted(arr)
+
+        diffval = arrSorted[1] - arrSorted[0]
+
+        for i in range(2, len(arrSorted)):
+            if arrSorted[i] - arrSorted[i-1] != diffval:
+                return False
+        
+        return True
+````
+
+# Optimal Solution 
+```python
+class Solution:
+    def canMakeArithmeticProgression(self, arr: List[int]) -> bool:
+        
+        Ordered = sorted(arr)
+        Target = Ordered[1] - Ordered[0]
+
+        Cursor_A = 1
+        Cursor_B = 2
+        Span = len(Ordered)
+
+        while (Cursor_B < Span):
+            
+            Value_A = Ordered[Cursor_A]
+            Value_B = Ordered[Cursor_B]
+            Difference = Value_B - Value_A
+
+            if (Difference == Target):
+                Cursor_A += 1
+                Cursor_B += 1
+            else:
+                return False
+        
+        return True
+```
