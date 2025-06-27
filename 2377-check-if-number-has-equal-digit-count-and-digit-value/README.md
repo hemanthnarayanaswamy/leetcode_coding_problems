@@ -36,3 +36,30 @@ The indices 0 and 1 both violate the condition, so return false.
 	<li><code>1 &lt;= n &lt;= 10</code></li>
 	<li><code>num</code> consists of digits.</li>
 </ul>
+
+# Solution 
+* Simply count the freq of each digit using a map 
+* Now iterate along the string from index values 0 to len(nums) -1 
+* Now check that the frequency of ith character is same as in the hashMap 
+
+```python
+class Solution:
+    def digitCount(self, num: str) -> bool:
+        numFreq = Counter(num)
+
+        for i, n in enumerate(num):
+            if numFreq.get(str(i), 0) != int(n):
+                return False
+        
+        return True
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def digitCount(self, num: str) -> bool:
+        for i in range(len(num)):
+            if int(num[i]) != num.count(str(i)):
+                return False
+        return True
+```
