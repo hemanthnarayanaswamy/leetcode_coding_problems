@@ -328,6 +328,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2308-divide-array-into-equal-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2308-divide-array-into-equal-pairs) |
 | [2331-intersection-of-multiple-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2331-intersection-of-multiple-arrays) |
 | [2372-rearrange-characters-to-make-target-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2372-rearrange-characters-to-make-target-string) |
+| [2377-check-if-number-has-equal-digit-count-and-digit-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2377-check-if-number-has-equal-digit-count-and-digit-value) |
 | [2406-decode-the-message](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2406-decode-the-message) |
 | [2421-maximum-number-of-pairs-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2421-maximum-number-of-pairs-in-array) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
@@ -458,6 +459,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2292-counting-words-with-a-given-prefix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2341-count-prefixes-of-a-given-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2341-count-prefixes-of-a-given-string) |
 | [2372-rearrange-characters-to-make-target-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2372-rearrange-characters-to-make-target-string) |
+| [2377-check-if-number-has-equal-digit-count-and-digit-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2377-check-if-number-has-equal-digit-count-and-digit-value) |
 | [2401-count-asterisks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2401-count-asterisks) |
 | [2406-decode-the-message](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2406-decode-the-message) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
@@ -682,6 +684,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2308-divide-array-into-equal-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2308-divide-array-into-equal-pairs) |
 | [2331-intersection-of-multiple-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2331-intersection-of-multiple-arrays) |
 | [2372-rearrange-characters-to-make-target-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2372-rearrange-characters-to-make-target-string) |
+| [2377-check-if-number-has-equal-digit-count-and-digit-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2377-check-if-number-has-equal-digit-count-and-digit-value) |
 | [2421-maximum-number-of-pairs-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2421-maximum-number-of-pairs-in-array) |
 | [2486-most-frequent-even-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2486-most-frequent-even-element) |
 | [2532-remove-letter-to-equalize-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2532-remove-letter-to-equalize-frequency) |
