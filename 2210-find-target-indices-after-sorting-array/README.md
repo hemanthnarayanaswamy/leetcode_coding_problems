@@ -39,3 +39,53 @@ The index where nums[i] == 5 is 4.
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i], target &lt;= 100</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def targetIndices(self, nums: List[int], target: int) -> List[int]:
+        my_list = []
+        nums.sort()
+
+        for index, value in enumerate(nums):
+            if value == target:
+                my_list.append(index)
+
+        return my_list
+```
+
+# With Binary Seach Solution
+```python
+class Solution:
+    def targetIndices(self, nums: List[int], target: int) -> List[int]:
+        # 1) Sort in-place
+        nums.sort()
+        n = len(nums)
+        
+        # 2) Find leftmost index where nums[idx] == target (lower_bound)
+        lo, hi = 0, n
+        while lo < hi:
+            mid = (lo + hi) // 2
+            if nums[mid] < target:
+                lo = mid + 1
+            else:
+                hi = mid
+        left = lo
+        
+        # If out of bounds or not actually target, no occurrences
+        if left == n or nums[left] != target:
+            return []
+        
+        # 3) Find first index > target (upper_bound)
+        lo, hi = 0, n
+        while lo < hi:
+            mid = (lo + hi) // 2
+            if nums[mid] <= target:
+                lo = mid + 1
+            else:
+                hi = mid
+        right = lo
+        
+        # 4) All indices in [left, right) are equal to target
+        return list(range(left, right))
+```
