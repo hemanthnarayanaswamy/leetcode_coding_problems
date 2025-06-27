@@ -40,3 +40,44 @@ Because distance[0] = 1, s is not a well-spaced string.
 	<li><code>distance.length == 26</code></li>
 	<li><code>0 &lt;= distance[i] &lt;= 50</code></li>
 </ul>
+
+# Solution 
+* Make a hashmap to map the char with its distance, to calculate the distance take advantage to fact that each char occures exactly twice. 
+* and compare the distance of map and the distance array
+
+```python
+class Solution:
+    def checkDistances(self, s: str, distance: List[int]) -> bool:
+        charDist = {}
+
+        for i, chr in enumerate(s):
+            charDist[chr] = i - charDist.get(chr, 0)
+        
+        for c in charDist:
+            if charDist[c] - 1 != distance[ord(c)-97]:
+                return False
+        
+        return True
+```
+
+# Optimal Solution 
+```python
+from collections import defaultdict
+
+class Solution:
+    def checkDistances(self, s: str, distances: List[int]) -> bool:
+        # Dictionary to keep track of the first occurrence index of each character
+        first_occurrence = defaultdict(int)
+      
+        # Iterate through the string while enumerating, which provides both
+        # the index and the character
+        for index, char in enumerate(s, 1): # Starting index at 1 for calculation convenience
+            # If the character has been seen before and the distance constraint is not met
+            if first_occurrence[char] and index - first_occurrence[char] - 1 != distances[ord(char) - ord('a')]:
+                return False  # The distance constraint is violated
+            # Record the first occurrence index of the character
+            first_occurrence[char] = index
+          
+        # If all characters meet their distance constraints, return True
+        return True
+```
