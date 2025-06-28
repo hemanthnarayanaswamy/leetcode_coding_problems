@@ -44,3 +44,20 @@
 	<li><code>1 &lt;= height[i] &lt;= 100</code></li>
 	<li><code>1 &lt;= threshold &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* We iterate through each mountain starting from index 1 (since the 0th mountain has no previous mountain).
+* For each mountain i, we check if the height of the previous mountain i-1 is strictly greater than the threshold.
+* If this condition is met, we consider it stable and add its index to the result array.
+
+```python 
+class Solution:
+    def stableMountains(self, height: List[int], threshold: int) -> List[int]:
+        res = []
+
+        for i in range(1, len(height)):
+            if height[i-1] > threshold:
+                res.append(i)
+        
+        return res
+```
