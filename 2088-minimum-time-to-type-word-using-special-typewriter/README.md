@@ -63,3 +63,47 @@ The characters are printed as follows:
 	<li><code>1 &lt;= word.length &lt;= 100</code></li>
 	<li><code>word</code> consists of lowercase English letters.</li>
 </ul>
+
+# Solution 
+* So we need to calculate the forwardTime and the BackwardTime that takes to reach the character. 
+
+1. `forwardTime = abs(currentChar - nextChar)`
+2. `backwardTime = 26 - forwardTime`
+
+* Now the totalTime it takes to reach the new character from the current character is minimum of forward and backward time. 
+* and Need to add 1 as the time it takes to type the char 
+* Now reset the current position to the typed char for next Iteration 
+
+```python
+class Solution:
+    def minTimeToType(self, word: str) -> int:
+        totalTime = 0
+        currentPosition = 'a'
+
+        alphabet = { "a": 1, "b": 2, "c": 3, "d": 4, "e": 5, "f": 6, "g": 7, "h": 8, "i": 9, "j": 10, "k": 11, "l": 12, "m": 13, "n": 14, "o": 15, "p": 16, "q": 17, "r": 18, "s": 19, "t": 20, "u": 21, "v": 22, "w": 23, "x": 24, "y": 25, "z": 26}
+
+        for c in word:
+            forwardTime = abs(alphabet[currentPosition] - alphabet[c])
+            backwardTime = abs(26 - forwardTime)
+
+            totalTime += min(forwardTime, backwardTime) + 1
+            currentPosition = c
+        
+        return totalTime
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def minTimeToType(self, word: str) -> int:
+        time = 0
+        last = 'a'
+
+        for curr in word:
+            diff = abs(ord(curr) - ord(last))
+            time += min(diff, 26 - di aff)
+            time += 1
+            last = curr
+
+        return time
+```
