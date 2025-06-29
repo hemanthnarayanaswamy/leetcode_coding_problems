@@ -76,3 +76,34 @@
 <ul>
 	<li><code>1 &lt;= x, y, z &lt;= 100</code></li>
 </ul>
+
+# Solution
+* We need to calculate the absolute distance for both points and returs the result based on the values. 
+
+```python
+class Solution:
+    def findClosest(self, x: int, y: int, z: int) -> int:
+        p1 = abs(z - x)
+        p2 = abs(z - y)
+
+        if p1 < p2: 
+            return 1
+        elif p1 > p2:
+            return 2
+        else:
+            return 0
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def findClosest(self, x: int, y: int, z: int) -> int:
+        a= abs(x-z)
+        b= abs(y-z)
+        if a == b:
+            return 0
+        elif b>a:
+            return 1
+        elif a>b:
+            return 2
+```
