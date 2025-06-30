@@ -3,7 +3,7 @@ class Solution:
         leftSum = 0
         rightSum = 0
 
-        totalSum = sum(range(1, n+1))
+        totalSum = n * (n+1)//2
 
         for i in range(1, n+1):
             rightSum = totalSum - leftSum 
