@@ -1,15 +1,6 @@
+import math
 class Solution:
     def pivotInteger(self, n: int) -> int:
-        leftSum = 0
-        rightSum = 0
-
-        totalSum = n * (n+1)//2
-
-        for i in range(1, n+1):
-            rightSum = totalSum - leftSum 
-            leftSum += i
-
-            if rightSum == leftSum:
-                return i 
-        
-        return -1
+        S = n * (n + 1) // 2
+        i = math.isqrt(S)           # integer square root of S
+        return i if i * i == S else -1
