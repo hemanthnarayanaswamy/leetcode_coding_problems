@@ -37,3 +37,58 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 1000</code></li>
 </ul>
+
+# Solution 
+* We need to use the Prefix Sum technique to find the left and right sum at every interger in the `range(1, n)`
+* Right Sum will be `totalSum - leftSum` and left sum will be `Previous left sum + current Interger`
+* Check if both sum are equal then return the interger 
+
+```python
+class Solution:
+    def pivotInteger(self, n: int) -> int:
+        leftSum = 0
+        rightSum = 0
+
+        totalSum = sum(range(1, n+1))
+
+        for i in range(1, n+1):
+            rightSum = totalSum - leftSum 
+            leftSum += i
+
+            if rightSum == leftSum:
+                return i 
+        
+        return -1
+```
+
+## Improved Solution 
+```python
+class Solution:
+    def pivotInteger(self, n: int) -> int:
+        leftSum = 0
+        rightSum = 0
+
+        totalSum = n * (n+1)//2
+
+        for i in range(1, n+1):
+            rightSum = totalSum - leftSum 
+            leftSum += i
+
+            if rightSum == leftSum:
+                return i 
+        
+        return -1
+```
+
+# Optimal Solution
+```python
+import math
+class Solution:
+    def pivotInteger(self, n: int) -> int:
+        S = n * (n + 1) // 2
+        i = math.isqrt(S)           # integer square root of S
+        return i if i * i == S else -1
+```
+![image](https://github.com/user-attachments/assets/c8206b20-cf81-41c1-8394-b5c5d665c68b)
+
+
