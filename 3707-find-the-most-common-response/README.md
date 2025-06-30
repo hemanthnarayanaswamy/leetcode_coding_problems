@@ -44,3 +44,88 @@
 	<li><code>1 &lt;= responses[i][j].length &lt;= 10</code></li>
 	<li><code>responses[i][j]</code> consists of only lowercase English letters</li>
 </ul>
+
+# Solution 
+* First we store the unique responses in a Map and get the maximum occured value.
+* next store all the responses that have the maximum value. 
+* Now sort the reponses to have them in `lexicographically Order` and return the first index value. 
+
+```python
+class Solution:
+    def findCommonResponse(self, responses: List[List[str]]) -> str:
+        responsesFreq = {}
+        commonRes = []
+
+        for i in range(len(responses)):
+            uniqRes = set(responses[i])
+            for r in uniqRes:
+                responsesFreq[r] = responsesFreq.get(r, 0) + 1
+
+        maxFreq = max(responsesFreq.values())
+
+        for r,v in responsesFreq.items():
+            if v == maxFreq:
+                commonRes.append(r)
+
+        return sorted(commonRes)[0]
+```
+
+# Improved Solution 
+* Use the `Counter.update()` method to keep updating the Map for new occurances. 
+* Use `min()` instead of sort to find the lexigraphically smallest string. 
+
+```ini 
+Find the Lexicographically Smallest String
+* Apply the min() function to obtain the lexicographically smallest string.
+
+names = ["Alice", "Bob", "Diana", "Eli"]
+smallest_name = min(names)
+print(smallest_name)
+
+* Here, min() examines the strings in the list names. "Alice" is returned as it comes first lexicographically among the names.
+```
+
+```python
+class Solution:
+    def findCommonResponse(self, responses: List[List[str]]) -> str:
+        responsesFreq = Counter()
+        commonRes = []
+
+        for response in responses:
+            responsesFreq.update(set(response))
+
+        maxFreq = max(responsesFreq.values())
+            
+        return min((r for r,v in responsesFreq.items() if v == maxFreq))
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def findCommonResponse(self, responses: List[List[str]]) -> str:
+        freq_map = {}
+        highest_freq = -1
+        highest_freq_word = ""
+
+        for l in responses:
+            used_words = set()
+
+            for word in l:
+                if word in used_words:
+                    continue
+                if word in freq_map:
+                    freq_map[word] += 1
+                else:
+                    freq_map[word] = 1
+                used_words.add(word)
+
+        for key, val in freq_map.items():
+            if val > highest_freq:
+                highest_freq = val
+                highest_freq_word = key
+
+            elif val == highest_freq:
+                highest_freq_word = min(key, highest_freq_word)
+                
+        return highest_freq_word
+```
