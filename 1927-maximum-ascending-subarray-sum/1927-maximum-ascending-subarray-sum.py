@@ -1,24 +1,14 @@
 class Solution:
     def maxAscendingSum(self, nums: List[int]) -> int:
-        maxSums = []
-        tempSum = 0
+        max_sum = curr_sum = nums[0]
 
-        i = 0
-
-        while i < len(nums) - 1:
-            if nums[i] < nums[i+1]:
-                tempSum += nums[i]
+        for i in range(1, len(nums)):
+            if nums[i] > nums[i-1]:
+                curr_sum += nums[i]
             else:
-                tempSum += nums[i]
-                maxSums.append(tempSum)
-                tempSum = 0
+                curr_sum = nums[i]
             
-            i += 1
+            if curr_sum > max_sum:
+                max_sum = curr_sum
         
-        if tempSum:
-            tempSum += nums[i]
-            maxSums.append(tempSum)
-        else:
-            maxSums.append(nums[i])
-        
-        return max(maxSums)
+        return max_sum
