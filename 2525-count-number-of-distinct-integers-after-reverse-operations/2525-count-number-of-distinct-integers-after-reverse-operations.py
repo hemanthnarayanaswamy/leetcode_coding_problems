@@ -3,7 +3,8 @@ class Solution:
         distinctInt = set(nums)
 
         for num in nums:
-            rev = int(str(num)[::-1])
-            distinctInt.add(rev)
+            if num > 9:
+                rev = int(str(num)[::-1])
+                distinctInt.add(rev)
         
         return len(distinctInt)
