@@ -1,6 +1,6 @@
 class Solution:
     def countDistinctIntegers(self, nums: List[int]) -> int:
-        
+
         def reversedIntegers(num):
             x = 0
             while num:
@@ -9,12 +9,11 @@ class Solution:
                 num //= 10  # Remove last digit from num
             return x
 
-        distinctInt = set(nums)
+        distinctInt = set()
 
         for num in nums:
             rev = reversedIntegers(num)
-
-            if rev not in distinctInt:
-                distinctInt.add(rev)
+            distinctInt.add(num)
+            distinctInt.add(rev)
         
         return len(distinctInt)
