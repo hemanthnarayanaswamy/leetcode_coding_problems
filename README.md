@@ -472,6 +472,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2260-divide-a-string-into-groups-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2260-divide-a-string-into-groups-of-size-k) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2341-count-prefixes-of-a-given-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2341-count-prefixes-of-a-given-string) |
+| [2361-calculate-digit-sum-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2361-calculate-digit-sum-of-a-string) |
 | [2372-rearrange-characters-to-make-target-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2372-rearrange-characters-to-make-target-string) |
 | [2377-check-if-number-has-equal-digit-count-and-digit-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2377-check-if-number-has-equal-digit-count-and-digit-value) |
 | [2401-count-asterisks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2401-count-asterisks) |
@@ -531,6 +532,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2271-rearrange-array-elements-by-sign](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2288-count-operations-to-obtain-zero](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2288-count-operations-to-obtain-zero) |
+| [2361-calculate-digit-sum-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2361-calculate-digit-sum-of-a-string) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2551-apply-operations-to-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2551-apply-operations-to-an-array) |
 | [2639-separate-the-digits-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2639-separate-the-digits-in-an-array) |
