@@ -30,3 +30,64 @@ The number of distinct integers in this array is 1 (The number 2).
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>6</sup></code></li>
 </ul>
+
+# Solution 
+* Use set to store all the distinct intergers 
+
+```python
+class Solution:
+    def countDistinctIntegers(self, nums: List[int]) -> int:
+
+        def reversedIntegers(num):
+            x = 0
+            while num:
+                digit = num % 10 # Extract the last digit 
+                x = 10 * x + digit
+                num //= 10  # Remove last digit from num
+            return x
+
+        distinctInt = set()
+
+        for num in nums:
+            rev = reversedIntegers(num)
+            distinctInt.add(num)
+            distinctInt.add(rev)
+        
+        return len(distinctInt)
+```
+
+* Remove the helper function and directly use the string reverse method to add the integers. 
+
+```python
+class Solution:
+    def countDistinctIntegers(self, nums: List[int]) -> int:
+        distinctInt = set(nums)
+
+        for num in nums:
+            rev = int(str(num)[::-1])
+            distinctInt.add(rev)
+        
+        return len(distinctInt)
+```
+
+# Optimal Solution 
+```ini 
+* you skip the str(num)[::-1] and int(...) entirely for any num < 10.  That can easily halve (or better) your string‐conversion work if your input has a lot of single‐digit values.
+* Each call to .add() on a Python set has to recompute the element’s hash, check for membership, etc.  By instead:
+	1.	Collecting everything in a list (distinctInt = nums[:] + .append() calls)
+	2.	Then calling set(distinctInt) just once
+
+you push all of that hashing and membership‐checking work into a single bulk operation, which is heavily optimized in C and benefits from knowing the final size in advance.  You avoid the repeated overhead of individual .add() calls inside your loop.
+```
+
+```python
+class Solution:
+    def countDistinctIntegers(self, nums: List[int]) -> int:
+        distinctInt = nums[::]
+
+        for num in nums:
+            if num > 9:
+                distinctInt.append(int(str(num)[::-1]))
+        
+        return len(set(distinctInt))
+```
