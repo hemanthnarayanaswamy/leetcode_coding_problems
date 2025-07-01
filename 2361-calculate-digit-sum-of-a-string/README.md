@@ -45,3 +45,33 @@ s becomes &quot;0&quot; + &quot;0&quot; + &quot;0&quot; = &quot;000&quot;, whose
 	<li><code>2 &lt;= k &lt;= 100</code></li>
 	<li><code>s</code> consists of digits only.</li>
 </ul>
+
+# Solution 
+* Simulate the condition using the while loop, while check if the lenght.s is greater then k for each and every iteration.
+* and Store all the subarray sum in a temp array before joining it and reassigning it for the next array. 
+
+```python
+class Solution:
+    def digitSum(self, s: str, k: int) -> str:
+        while len(s) > k: # Main conditon 
+            temp = [] 
+            for i in range(0, len(s), k): # Subarray with k window 
+                tempSum = sum(int(x) for x in s[i:i+k]) # Compute the sum of the subarray of size K 
+                temp.append(str(tempSum)) # Store the sum in a temp array 
+            
+            s = ''.join(temp) # construct a new s 
+        return s
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def digitSum(self, s: str, k: int) -> str:
+        # keep reducing until s is length k or less
+        while len(s) > k:
+            # split into chunks of size k, sum their digits, convert back to str, and re-join
+            s = ''.join(str(sum(map(int, s[i:i+k])))
+                for i in range(0, len(s), k)
+            )
+        return s
+```
