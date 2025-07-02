@@ -29,3 +29,41 @@
 	<li><code>points[i].length == 2</code></li>
 	<li><code>0 &lt;= x<sub>i</sub>, y<sub>i</sub>&nbsp;&lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Approach 
+* We have N points on a 2D plane. The problem is to find the widest vertical area between any two points without having any other point in between. Vertical area implies that the area can have an infinite length over the y-axis. This means that the y-coordinate doesn't affect the result and we shall focus on the distance along the x-axis.
+* Therefore, we only need to find the width between every two adjacent points based on x-coordinates and the maximum width among these would be the answer. Note that there can be multiple points with the same x-coordinate but that won't affect the answer as the points on the edges can be included in the area.
+* Since the points do not have a specific order, we will need to sort the points in ascending order of x-coordinates first. Then we need to find the difference in x-coordinates between every two neighboring points, and their maximum value is the result we want, as shown in the picture below.
+
+# Solution
+```python
+class Solution:
+    def maxWidthOfVerticalArea(self, points: List[List[int]]) -> int:
+        xpoints = sorted(x for x,y in points)
+        maxWidth = 0
+
+        for i in range(len(xpoints)-1):
+            tempDiff = xpoints[i+1] - xpoints[i]
+            if tempDiff > maxWidth:
+                maxWidth = tempDiff
+        
+        return maxWidth
+```
+
+# Optimal Solution
+```python
+class Solution:
+    def maxWidthOfVerticalArea(self, points: List[List[int]]) -> int:
+
+        xs = [p[0] for p in points]
+
+        xs.sort()
+
+        max_width = 0
+        for i in range(1, len(xs)):
+            width = xs[i] - xs[i - 1]
+            if width > max_width:
+                max_width = width
+
+        return max_width
+```
