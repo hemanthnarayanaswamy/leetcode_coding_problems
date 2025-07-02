@@ -89,3 +89,38 @@
 	<li><code>1 &lt;= k &lt;= 10</code></li>
 	<li><code>1 &lt;= multiplier &lt;= 5</code></li>
 </ul>
+
+# Solution 
+* You need to exactly simulate the process for k number of times using the while loop. 
+* Find the minimum Number before the iteration and in the for loop find the number and do the multiplication and reduce the k value for number of operation perfomed
+
+```python
+class Solution:
+    def getFinalState(self, nums: List[int], k: int, multiplier: int) -> List[int]:
+        while k:
+            minNum = min(nums)
+            for i in range(len(nums)):
+                if nums[i] == minNum:
+                    nums[i] *= multiplier
+                    break
+            k -= 1
+        
+        return nums
+```
+
+# Improved Solution 
+* Need to use the Heap Queue instead of computing the minimum for each and every iteration 
+```python
+class Solution:
+    def getFinalState(self, nums: List[int], k: int, multiplier: int) -> List[int]:
+        n = len(nums)
+        for _ in range(k):
+            # find the index of the minimum element
+            min_idx = 0
+            for i in range(1, n):
+                if nums[i] < nums[min_idx]:
+                    min_idx = i
+            # multiply that minimum
+            nums[min_idx] *= multiplier
+        return nums
+```
