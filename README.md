@@ -169,6 +169,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1651-shuffle-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1651-shuffle-string) |
 | [1677-matrix-diagonal-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1677-matrix-diagonal-sum) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
+| [1742-widest-vertical-area-between-two-points-containing-no-points](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1742-widest-vertical-area-between-two-points-containing-no-points) |
 | [1752-arithmetic-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1752-arithmetic-subarrays) |
 | [1781-check-if-two-string-arrays-are-equivalent](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1781-check-if-two-string-arrays-are-equivalent) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
@@ -648,6 +649,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1604-least-number-of-unique-integers-after-k-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1604-least-number-of-unique-integers-after-k-removals) |
 | [1626-can-make-arithmetic-progression-from-sequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1626-can-make-arithmetic-progression-from-sequence) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
+| [1742-widest-vertical-area-between-two-points-containing-no-points](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1742-widest-vertical-area-between-two-points-containing-no-points) |
 | [1752-arithmetic-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1752-arithmetic-subarrays) |
 | [1961-maximum-ice-cream-bars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1961-maximum-ice-cream-bars) |
 | [1970-sorting-the-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1970-sorting-the-sentence) |
