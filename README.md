@@ -65,6 +65,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3371-harshad-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3371-harshad-number) |
 | [3476-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3476-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3553-check-if-two-chessboard-squares-have-the-same-color](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3553-check-if-two-chessboard-squares-have-the-same-color) |
+| [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 | [3567-convert-date-to-binary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3567-convert-date-to-binary) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3606-minimum-element-after-replacement-with-digit-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3606-minimum-element-after-replacement-with-digit-sum) |
@@ -258,6 +259,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3476-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3476-find-minimum-operations-to-make-all-elements-divisible-by-three) |
+| [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3582-find-indices-of-stable-mountains](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3582-find-indices-of-stable-mountains) |
 | [3606-minimum-element-after-replacement-with-digit-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3606-minimum-element-after-replacement-with-digit-sum) |
@@ -538,6 +540,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2639-separate-the-digits-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2639-separate-the-digits-in-an-array) |
 | [2698-find-the-array-concatenation-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2698-find-the-array-concatenation-value) |
 | [3347-distribute-elements-into-two-arrays-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3347-distribute-elements-into-two-arrays-i) |
+| [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 | [3811-reverse-degree-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3811-reverse-degree-of-a-string) |
 ## Two Pointers
 |  |
@@ -787,6 +790,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0948-sort-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0948-sort-an-array) |
 | [1464-reduce-array-size-to-the-half](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1464-reduce-array-size-to-the-half) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
+| [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 ## Bucket Sort
 |  |
 | ------- |
