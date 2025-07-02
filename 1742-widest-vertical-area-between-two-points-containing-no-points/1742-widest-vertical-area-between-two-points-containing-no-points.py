@@ -5,6 +5,8 @@ class Solution:
         maxWidth = 0
 
         for i in range(len(xpoints)-1):
-            maxWidth = max(maxWidth, xpoints[i+1] - xpoints[i])
+            tempDiff = xpoints[i+1] - xpoints[i]
+            if tempDiff > maxWidth:
+                maxWidth = tempDiff
         
         return maxWidth
