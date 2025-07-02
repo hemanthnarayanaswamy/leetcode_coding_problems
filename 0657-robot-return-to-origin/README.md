@@ -30,3 +30,30 @@
 	<li><code>1 &lt;= moves.length &lt;= 2 * 10<sup>4</sup></code></li>
 	<li><code>moves</code> only contains the characters <code>&#39;U&#39;</code>, <code>&#39;D&#39;</code>, <code>&#39;L&#39;</code> and <code>&#39;R&#39;</code>.</li>
 </ul>
+
+# Approach
+* The Robot will return the original Position only when the number of U moves are equal to D moves and Number of R moves is equal to L moves so the compliments cancel out each other and place the robot at the start position.
+
+```python
+class Solution:
+    def judgeCircle(self, moves: str) -> bool:
+        return moves.count("U") == moves.count("D") and moves.count("L") == moves.count("R")
+```
+
+```python
+class Solution:
+    def judgeCircle(self, moves: str) -> bool:
+        Horizontal, Vertical = 0, 0
+        
+        for m in moves:
+            if m == 'U':
+                Vertical += 1
+            elif m == 'D':
+                Vertical -= 1
+            elif m == 'R':
+                Horizontal += 1
+            else:
+                Horizontal -= 1
+        
+        return False if Horizontal or Vertical else True
+```
