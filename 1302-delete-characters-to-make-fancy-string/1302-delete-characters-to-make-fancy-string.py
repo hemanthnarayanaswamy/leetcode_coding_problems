@@ -1,10 +1,12 @@
 class Solution:
     def makeFancyString(self, s: str) -> str:
-        res = []
+        if len(s)< 3: return s
 
-        for c in s:
-            if len(res) >= 2 and res[-2] == res[-1] == c:
+        res = [s[0], s[1]]
+
+        for i in range(2, len(s)):
+            if res[-2] == res[-1] == s[i]:
                 continue
-            res.append(c)
+            res.append(s[i])
         
         return ''.join(res)
