@@ -201,6 +201,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2148-minimum-number-of-moves-to-seat-everyone](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2148-minimum-number-of-moves-to-seat-everyone) |
 | [2159-two-out-of-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2159-two-out-of-three) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2163-kth-distinct-string-in-an-array) |
+| [2181-smallest-index-with-equal-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2181-smallest-index-with-equal-value) |
 | [2190-count-common-words-with-one-occurrence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2190-count-common-words-with-one-occurrence) |
 | [2210-find-target-indices-after-sorting-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2210-find-target-indices-after-sorting-array) |
 | [2215-finding-3-digit-even-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2215-finding-3-digit-even-numbers) |
