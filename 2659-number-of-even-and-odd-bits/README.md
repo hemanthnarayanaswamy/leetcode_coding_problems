@@ -43,3 +43,42 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 1000</code></li>
 </ul>
+
+**Note: Indices of binary representations start from the right. 
+* So to make the binary representation meet the index of the programming language reverse the string. 
+
+```python
+class Solution:
+    def evenOddBit(self, n: int) -> List[int]:
+        binN = bin(n)[2::][::-1]
+        res = [0, 0]
+
+        for i in range(len(binN)):
+            if binN[i] == '1':
+                if i % 2:
+                   res[1] += 1
+                else:
+                    res[0] += 1
+        
+        return res
+```
+
+# Optimal Bit Manipulation Solution 
+```python
+class Solution:
+    def evenOddBit(self, n: int) -> List[int]:
+        even = 0
+        odd = 0
+        index = 0
+        
+        while n > 0:
+            if n & 1:  # check if the current rightmost bit is 1
+                if index % 2 == 0:
+                    even += 1
+                else:
+                    odd += 1
+            n >>= 1  # right shift to move to the next bit
+            index += 1
+        
+        return [even, odd]
+```
