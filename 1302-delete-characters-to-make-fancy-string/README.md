@@ -41,3 +41,56 @@ No three consecutive characters are equal, so return &quot;aabaa&quot;.
 	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>s</code> consists only of lowercase English letters.</li>
 </ul>
+
+# Solution 
+* Append the first character into the result array and check if `i, i-1, i+1` are equal if they are equal continue skipping the current char else append the char. 
+```python
+class Solution:
+    def makeFancyString(self, s: str) -> str:
+        fancyStr = [s[0]]
+
+        for i in range(1, len(s)):
+            if i + 1 == len(s):
+                fancyStr.append(s[i])
+                continue 
+
+            if s[i] == s[i-1] == s[i+1]:
+                continue 
+            fancyStr.append(s[i])
+        
+        return ''.join(fancyStr)
+```
+* Avoid the index Juggling and special Cases at the start and end. 
+
+# Improved Solution 
+```python
+class Solution:
+    def makeFancyString(self, s: str) -> str:
+        if len(s)< 3: return s
+
+        res = [s[0], s[1]]
+
+        for i in range(2, len(s)):
+            if res[-2] == res[-1] == s[i]:
+                continue
+            res.append(s[i])
+        
+        return ''.join(res)
+```
+
+# Optimal Solution
+```python
+class Solution:
+    def makeFancyString(self, s: str) -> str:
+        if len(s)< 3: return s
+        a = s[0]
+        b = s[1]
+        res = [a, b]
+        for c in s[2:]:
+            if c == b == a:
+                continue
+            else:
+                res.append(c)
+            a, b = b, c
+        return res
+```
