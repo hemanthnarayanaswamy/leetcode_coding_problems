@@ -43,3 +43,26 @@ i=3: 3 mod 10 = 3 != nums[3].
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>0 &lt;= nums[i] &lt;= 9</code></li>
 </ul>
+
+# Solution 
+* Stright forward solution figure it out. 
+
+```python
+class Solution:
+    def smallestEqual(self, nums: List[int]) -> int:
+        for i, num in enumerate(nums):
+            if i % 10 == num:
+                return i
+        
+        return -1
+```
+
+# Improved Solution 
+```python
+class Solution:
+    def smallestEqual(self, nums: List[int]) -> int:
+        for i in range(len(nums)):
+            if i % 10 == nums[i]:
+                return i
+        return -1
+```
