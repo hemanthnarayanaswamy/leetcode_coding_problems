@@ -473,6 +473,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2231-find-first-palindromic-string-in-the-array) |
 | [2232-adding-spaces-to-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2232-adding-spaces-to-a-string) |
 | [2235-capitalize-the-title](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2235-capitalize-the-title) |
+| [2243-check-if-all-as-appears-before-all-bs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2243-check-if-all-as-appears-before-all-bs) |
 | [2260-divide-a-string-into-groups-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2260-divide-a-string-into-groups-of-size-k) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2341-count-prefixes-of-a-given-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2341-count-prefixes-of-a-given-string) |
