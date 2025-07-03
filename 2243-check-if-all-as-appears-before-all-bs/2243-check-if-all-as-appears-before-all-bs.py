@@ -1,11 +1,11 @@
 class Solution:
     def checkString(self, s: str) -> bool:
-        countA = s.count('a')
+        seenB = False 
 
         for c in s:
-            if c == 'b' and countA != 0:
+            if c == 'b':
+                seenB = True
+            elif seenB: # check c == a after already seen b
                 return False
-            elif c == 'a':
-                countA -= 1
         
         return True
