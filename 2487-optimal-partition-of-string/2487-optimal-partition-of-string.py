@@ -1,6 +1,6 @@
 class Solution:
     def partitionString(self, s: str) -> int:
-        count = 1
+        count = 0
         temp = set()
 
         for c in s:
@@ -11,4 +11,4 @@ class Solution:
             else:
                 temp.add(c)
         
-        return count
+        return count + 1
