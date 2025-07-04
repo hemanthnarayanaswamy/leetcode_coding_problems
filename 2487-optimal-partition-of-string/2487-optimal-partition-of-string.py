@@ -10,5 +10,6 @@ class Solution:
                 temp.add(c)
             else:
                 temp.add(c)
+        count += 1
         
-        return count + 1
+        return count
