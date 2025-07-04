@@ -1,9 +1,10 @@
 class Solution:
     def sumOfEncryptedInt(self, nums: List[int]) -> int:
-
-        s = 0
+        total = 0
         for n in nums:
-            str_n = str(n)
-
-            s += int(len(str_n) * max(str_n))
-        return s
+            s = str(n)
+            # largest character in the string, still a string
+            m = max(s)        
+            # repeat it len(s) times, then parse
+            total += int(m * len(s))
+        return total
