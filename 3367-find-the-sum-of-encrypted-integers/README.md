@@ -30,3 +30,19 @@
 	<li><code>1 &lt;= nums.length &lt;= 50</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 1000</code></li>
 </ul>
+
+# Solution 
+* Figure it out, Don't stree use the string conversion method 
+<b> String version is concise and perfectly fine if nums isn’t astronomically large.
+```python
+class Solution:
+    def sumOfEncryptedInt(self, nums: List[int]) -> int:
+        total = 0
+        for n in nums:
+            s = str(n)
+            # largest character in the string, still a string
+            m = max(s)        
+            # repeat it len(s) times, then parse
+            total += int(m * len(s))
+        return total
+```
