@@ -31,3 +31,49 @@ It can be shown that 4 is the minimum number of substrings needed.
 	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>s</code> consists of only English lowercase letters.</li>
 </ul>
+
+# Solution 
+* To construct minimum number of substrings in such a partition, we can greedily make each substring as long as possible until we encounter a character that already existed in current substring.
+
+1. Maintain a temp string to hold unique characters and if a repeating character comes up increment the count and reset the temp. 
+2. return the total count 
+
+```python
+class Solution:
+    def partitionString(self, s: str) -> int:
+        res = []
+        temp = ''
+
+        for c in s:
+            if c in temp:
+                res.append(temp)
+                temp = c
+            else:
+                temp += c
+        
+        res.append(temp)
+        
+        return len(res)
+```
+
+# Improved 
+* No Need to hold the substrings we only need the count 
+* Temp lookup is O(n) use set for O(1) lookup 
+
+```python
+class Solution:
+    def partitionString(self, s: str) -> int:
+        count = 0
+        temp = set()
+
+        for c in s:
+            if c in temp:
+                count += 1
+                temp.clear()
+                temp.add(c)
+            else:
+                temp.add(c)
+        count += 1
+        
+        return count
+```
