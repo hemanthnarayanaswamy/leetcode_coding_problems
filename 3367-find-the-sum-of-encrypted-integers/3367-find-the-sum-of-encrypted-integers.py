@@ -1,16 +1,9 @@
 class Solution:
     def sumOfEncryptedInt(self, nums: List[int]) -> int:
-        res = 0
 
-        for num in nums:
-            if num < 10:
-                res += num 
-            else:
-                temp = list(str(num))
-                maxDig = max(temp)
-                encrypted_num = int(maxDig * len(temp))
+        s = 0
+        for n in nums:
+            str_n = str(n)
 
-                res += encrypted_num
-        
-        return res
-                
+            s += int(len(str_n) * max(str_n))
+        return s
