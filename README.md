@@ -62,6 +62,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2812-find-the-maximum-achievable-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2812-find-the-maximum-achievable-number) |
 | [3055-maximum-odd-binary-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3055-maximum-odd-binary-number) |
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3172-divisible-and-non-divisible-sums-difference) |
+| [3367-find-the-sum-of-encrypted-integers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3367-find-the-sum-of-encrypted-integers) |
 | [3371-harshad-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3371-harshad-number) |
 | [3476-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3476-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3553-check-if-two-chessboard-squares-have-the-same-color](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3553-check-if-two-chessboard-squares-have-the-same-color) |
@@ -254,6 +255,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3324-split-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3324-split-the-array) |
 | [3331-minimum-operations-to-exceed-threshold-value-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3331-minimum-operations-to-exceed-threshold-value-i) |
 | [3347-distribute-elements-into-two-arrays-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3347-distribute-elements-into-two-arrays-i) |
+| [3367-find-the-sum-of-encrypted-integers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3367-find-the-sum-of-encrypted-integers) |
 | [3397-find-the-integer-added-to-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3397-find-the-integer-added-to-array-i) |
 | [3421-count-pairs-that-form-a-complete-day-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3421-count-pairs-that-form-a-complete-day-i) |
 | [3429-special-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3429-special-array-i) |
