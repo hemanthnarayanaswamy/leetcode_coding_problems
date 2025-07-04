@@ -1,15 +1,11 @@
 class Solution:
     def partitionString(self, s: str) -> int:
-        count = 0
-        temp = set()
-
-        for c in s:
-            if c in temp:
-                count += 1
-                temp.clear()
-                temp.add(c)
+        word=""
+        p=[]
+        for i in s:
+            if i not in word:
+                word+=i
             else:
-                temp.add(c)
-        count += 1
-        
-        return count
+                p.append(word)
+                word=i
+        return len(p)+1
