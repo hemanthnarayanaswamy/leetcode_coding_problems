@@ -35,3 +35,47 @@
 	<li><code>1 &lt;= nums[i] &lt;= 1000</code></li>
 	<li><code>1 &lt;= k &lt;= floor(nums.length / 2)</code></li>
 </ul>
+
+
+# Brute Force Solution 
+```python
+class Solution:
+    def sumOfGoodNumbers(self, nums: List[int], k: int) -> int:
+        res = 0
+
+        for i in range(len(nums)):
+            p = i - k
+            n = i + k
+
+            if p > -1 and n < len(nums):
+                if nums[i] > nums[p] and nums[i] > nums[n]:
+                    res += nums[i]
+            elif p < 0 and n < len(nums):
+                if nums[i] > nums[n]:
+                    res += nums[i]
+            elif p > -1 and n >= len(nums):
+                if nums[i] > nums[p]:
+                    res += nums[i]
+            else:
+                res += nums[i]
+
+        return res   
+```
+
+# Improved Solution 
+```python
+class Solution:
+    def sumOfGoodNumbers(self, nums: List[int], k: int) -> int:
+        n = len(nums)
+        total = 0
+        NEG_INF = float('-inf')
+        
+        for i, v in enumerate(nums):
+            left  = nums[i-k] if i - k >= 0   else NEG_INF
+            right = nums[i+k] if i + k < n    else NEG_INF
+            
+            if v > left and v > right:
+                total += v
+        
+        return total
+```
