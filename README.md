@@ -47,6 +47,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
 | [2284-smallest-value-of-the-rearranged-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2284-smallest-value-of-the-rearranged-number) |
 | [2288-count-operations-to-obtain-zero](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2288-count-operations-to-obtain-zero) |
+| [2298-count-integers-with-even-digit-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2298-count-integers-with-even-digit-sum) |
 | [2383-add-two-integers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2383-add-two-integers) |
 | [2481-strictly-palindromic-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2481-strictly-palindromic-number) |
 | [2491-smallest-even-multiple](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2491-smallest-even-multiple) |
@@ -548,6 +549,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2271-rearrange-array-elements-by-sign](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2288-count-operations-to-obtain-zero](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2288-count-operations-to-obtain-zero) |
+| [2298-count-integers-with-even-digit-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2298-count-integers-with-even-digit-sum) |
 | [2361-calculate-digit-sum-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2361-calculate-digit-sum-of-a-string) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2551-apply-operations-to-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2551-apply-operations-to-an-array) |
