@@ -3,7 +3,16 @@ class Solution:
         count = 0
 
         for i in range(2, num+1):
-            if sum(int(x) for x in str(i)) % 2 == 0:
+            tempSum = 0
+            x = i
+            if x < 9:
+                tempSum += i 
+            else:
+                while x > 0:
+                    tempSum += x % 10
+                    x //= 10
+            
+            if tempSum % 2 == 0:
                 count += 1
         
         return count
