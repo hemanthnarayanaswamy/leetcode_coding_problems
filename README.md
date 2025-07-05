@@ -443,6 +443,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1561-rearrange-words-in-a-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1561-rearrange-words-in-a-sentence) |
 | [1619-path-crossing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1619-path-crossing) |
 | [1651-shuffle-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1651-shuffle-string) |
+| [1666-make-the-string-great](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1666-make-the-string-great) |
 | [1781-check-if-two-string-arrays-are-equivalent](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1781-check-if-two-string-arrays-are-equivalent) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1797-goal-parser-interpretation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1797-goal-parser-interpretation) |
@@ -759,6 +760,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
+| [1666-make-the-string-great](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1666-make-the-string-great) |
 | [2128-reverse-prefix-of-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2128-reverse-prefix-of-word) |
 ## Greedy
 |  |
