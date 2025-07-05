@@ -46,3 +46,39 @@
 	<li><code>1 &lt;= s.length &lt;= 100</code></li>
 	<li><code>s</code> contains only lower and upper case English letters.</li>
 </ul>
+
+# Solution
+* Thing to remember difference between capital and small of alphabet in ascii is 32 .
+* Use stack to store the elements and pop the conditioned elements. 
+
+```python
+class Solution:
+    def makeGood(self, s: str) -> str:
+        stack = []
+        
+        for c in s:
+            if stack and abs(ord(stack[-1]) - ord(c)) == 32:
+                stack.pop()
+            else:
+                stack.append(c)
+        
+        return ''.join(stack)
+```
+
+## Improved solution 
+```python
+class Solution:
+    def makeGood(self, s: str) -> str:
+        stack = []
+        i = 0
+
+        while i < len(s):
+            if stack and stack[-1] != s[i] and stack[-1].lower() == s[i].lower():
+                stack.pop()
+            else:
+                stack.append(s[i])
+            
+            i += 1
+        
+        return ''.join(stack)
+```
