@@ -1,18 +1,20 @@
 class Solution:
     def greatestLetter(self, s: str) -> str:
+        alphabets = 'abcdefghijklmnopqrstuvwxyz'
         res = ''
-
         s_map = Counter(s)
 
-        for c in s:
+        for i in alphabets:
             temp = ''
-            if c.upper() in s_map and c.lower() in s_map:
-                temp = c.upper()
+            if i in s_map and i.upper() in s_map:
+                temp = i.upper()
             
-            if temp and res:
-                if ord(temp) > ord(res):
-                    res = temp
-            elif temp and not res:
-                    res = temp
+            resVal = ord(res) if res else 0
+            tempVal = ord(temp) if temp else 0
+
+            if tempVal > resVal:
+                res = temp
         
         return res
+
+
