@@ -1,21 +1,10 @@
 class Solution:
     def greatestLetter(self, s: str) -> str:
-        alphabets = 'abcdefghijklmnopqrstuvwxyz'
-        res = ''
-        s_map = Counter(s)
+        alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        seen = set(s)
 
-        for i in alphabets:
-            temp = ''
-            if i in s_map and i.upper() in s_map:
-                temp = i.upper()
-            
-            if temp:
-                resVal = ord(res) if res else 0
-                tempVal = ord(temp) 
-                
-                if tempVal > resVal:
-                    res = temp
-        
-        return res
+        for c in alphabets[::-1]: # check from 'Z' down to 'A'
+            if c in seen and c.lower() in seen:
+                return c
 
-
+        return ''
