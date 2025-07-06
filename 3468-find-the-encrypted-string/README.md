@@ -44,3 +44,45 @@
 	<li><code>1 &lt;= k &lt;= 10<sup>4</sup></code></li>
 	<li><code>s</code> consists only of lowercase English letters.</li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def getEncryptedString(self, s: str, k: int) -> str:
+        res = ''
+        n = len(s)
+
+        for i in range(n):
+            encrypted = i+k
+
+            while encrypted >= n:
+                encrypted -= n
+
+            res += s[encrypted]
+        
+        return res
+```
+
+# Optimal Solution 
+* The goal is to shift each character in the string by k positions forward. If k is greater than the string's length, we only need to shift by k % n positions, where n is the length of the string. This is because shifting by the length of the string brings us back to the start.
+
+### Approach
+1. Calculate the effective shift as k % n to handle cases where k is larger than the length of the string n.
+2. Create an array to hold the characters of the encrypted string.
+3. Loop through each character in the string.
+      * For each character at position i, find its new position as (i + k) % n.
+      * Place the character in the new position in the result array.
+4. Combine the characters in the result array to form the final encrypted string.
+
+```python
+class Solution:
+    def getEncryptedString(self, s: str, k: int) -> str:
+        n = len(s)
+        if n == 0:
+            return s
+        r = k % n
+        out = [''] * n
+        for i, ch in enumerate(s):
+            out[i] = s[(i + r) % n]
+        return ''.join(out)
+```
