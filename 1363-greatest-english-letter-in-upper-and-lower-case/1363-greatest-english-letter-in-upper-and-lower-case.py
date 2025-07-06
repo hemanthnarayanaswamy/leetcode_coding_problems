@@ -9,11 +9,12 @@ class Solution:
             if i in s_map and i.upper() in s_map:
                 temp = i.upper()
             
-            resVal = ord(res) if res else 0
-            tempVal = ord(temp) if temp else 0
-
-            if tempVal > resVal:
-                res = temp
+            if temp:
+                resVal = ord(res) if res else 0
+                tempVal = ord(temp) 
+                
+                if tempVal > resVal:
+                    res = temp
         
         return res
 
