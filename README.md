@@ -517,6 +517,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3408-count-the-number-of-special-characters-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3408-count-the-number-of-special-characters-i) |
 | [3412-permutation-difference-between-two-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3412-permutation-difference-between-two-strings) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3455-minimum-length-of-string-after-operations) |
+| [3468-find-the-encrypted-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3468-find-the-encrypted-string) |
 | [3553-check-if-two-chessboard-squares-have-the-same-color](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3553-check-if-two-chessboard-squares-have-the-same-color) |
 | [3567-convert-date-to-binary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3567-convert-date-to-binary) |
 | [3707-find-the-most-common-response](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3707-find-the-most-common-response) |
