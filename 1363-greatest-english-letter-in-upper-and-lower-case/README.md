@@ -38,3 +38,61 @@ There is no letter that appears in both lower and upper case.
 	<li><code>1 &lt;= s.length &lt;= 1000</code></li>
 	<li><code>s</code> consists of lowercase and uppercase English letters.</li>
 </ul>
+
+# Solution 
+* A bit bad solution as it contains lot of unnecessary steps. 
+
+```python
+class Solution:
+    def greatestLetter(self, s: str) -> str:
+        res = ''
+
+        s_map = Counter(s)
+
+        for c in s:
+            temp = ''
+            if c.upper() in s_map and c.lower() in s_map:
+                temp = c.upper()
+            
+            if temp and res:
+                if ord(temp) > ord(res):
+                    res = temp
+            elif temp and not res:
+                    res = temp
+        
+        return res
+```
+
+# Optimal Solution 
+* Fixed 26 step loop checking membership in the seen set. 
+* No need for the `ord()` 
+* check from 'Z' down to 'A' that way whatever element meets the condition first if the greatest element.
+
+```python
+class Solution:
+    def greatestLetter(self, s: str) -> str:
+        alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        seen = set(s)
+
+        for c in alphabets[::-1]: # check from 'Z' down to 'A'
+            if c in seen and c.lower() in seen:
+                return c
+
+        return ''
+```
+
+```python
+class Solution:
+    def greatestLetter(self, s: str) -> str:
+        chars = set()
+        for c in s:
+            chars.add(c)
+
+        for c in range(ord('Z'), ord('A')-1, -1):
+            char = chr(c)
+            if char in chars and char.lower() in chars:
+                return chr(c)
+
+        return ""
+```
+
