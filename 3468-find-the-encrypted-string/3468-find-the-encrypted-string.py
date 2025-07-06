@@ -1,14 +1,10 @@
 class Solution:
     def getEncryptedString(self, s: str, k: int) -> str:
-        res = ''
         n = len(s)
-
-        for i in range(n):
-            encrypted = i+k
-
-            while encrypted >= n:
-                encrypted -= n
-
-            res += s[encrypted]
-        
-        return res
+        if n == 0:
+            return s
+        r = k % n
+        out = [''] * n
+        for i, ch in enumerate(s):
+            out[i] = s[(i + r) % n]
+        return ''.join(out)
