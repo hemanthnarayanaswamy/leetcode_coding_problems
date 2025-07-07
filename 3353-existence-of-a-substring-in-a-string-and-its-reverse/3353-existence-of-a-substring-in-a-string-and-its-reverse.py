@@ -1,10 +1,7 @@
 class Solution:
     def isSubstringPresent(self, s: str) -> bool:
-        sRev = s[::-1]
-        sl = 2
-
-        for i in range(len(s)-1):
-            if s[i:i+sl] in sRev:
+        for i in range(1, len(s)):
+            if s[i]+s[i-1] in s:
                 return True 
         
         return False
