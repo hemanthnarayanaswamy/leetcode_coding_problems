@@ -38,3 +38,22 @@
 	<li><code>sentence</code> consists of lowercase English letters and spaces.</li>
 	<li><code>searchWord</code> consists of lowercase English letters.</li>
 </ul>
+
+# Solution 
+* Split the string into the list 
+* In one iteration check if `searchWord == word[:len(searchWord)]` 
+
+```python
+class Solution:
+    def isPrefixOfWord(self, sentence: str, searchWord: str) -> int:
+        sentenceLst = sentence.split()
+        s = len(searchWord)
+        res = -1
+
+        for i, word in enumerate(sentenceLst):
+            if searchWord == word[:s]:
+                res = i + 1
+                return res
+        
+        return res
+```
