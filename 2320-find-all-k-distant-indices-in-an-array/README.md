@@ -37,3 +37,64 @@ Hence, we return [0,1,2,3,4].
 	<li><code>key</code> is an integer from the array <code>nums</code>.</li>
 	<li><code>1 &lt;= k &lt;= nums.length</code></li>
 </ul>
+
+# Brute Force Solution 
+* We can enumerate all index pairs (i,j) and determine whether nums[j]=key and ∣i−j∣≤k. At the same time, we use the array res to maintain all indices of the k nearest neighbors. If both conditions are satisfied, we add i to the array res.
+
+* To ensure that res does not contain duplicate indices and is in ascending order, we can first enumerate i in ascending order, then enumerate j, and terminate the inner loop each time i is added to res, proceeding to the next i. 
+* Finally, the array res will contain the indices of all the k nearest neighbors that meet the requirements, and we can return it as the answer.
+```python
+class Solution:
+    def findKDistantIndices(self, nums: List[int], key: int, k: int) -> List[int]:
+        res = []
+        n = len(nums)
+        # traverse number pairs
+        for i in range(n):
+            for j in range(n):
+                if nums[j] == key and abs(i - j) <= k:
+                    res.append(i)
+                    break  # early termination to prevent duplicate addition
+        return res
+```
+
+# Optimal Solution 
+* Let's assume the length of the array nums is n. Then, for any index j that satisfies nums[j]=key, all indices within the closed interval `[max(0,j−k),min(n−1,j+k)]` are K-neighbor indices (the maximum and minimum functions are used here to ensure the indices are valid).
+
+`[start, end] = [ max(0, j–k) ,  min(n–1, j+k) ]`
+
+```ini 
+If k = 1 and your key was at position 3, then positions 2, 3, and 4 are in that “window.” Here 2 is minimum and 4 is maximum
+
+If k = 2, you’d include 1, 2, 3, 4, 5 (as long as you don’t fall off the ends of the list).
+```
+
+1. Left boundary: normally you’d go to position j − k.
+
+* But if j − k is negative (say you’re near the very start), there is no “–3”th person.
+* So you “clamp” that start to 0 instead.
+* That’s exactly what max(0, j − k) does:
+* If j − k is at least 0, use it;
+* otherwise use 0.
+
+2. Right boundary: normally you’d go to position j + k.
+
+* But if j + k goes past n–1 (the last person), there is no person at index n or n+1.
+* So you “clamp” that end to n–1.
+* That’s what min(n − 1, j + k) does:
+* If j + k is at most n–1, use it;
+* otherwise use n–1.
+
+
+```python
+class Solution:
+    def findKDistantIndices(self, nums: List[int], key: int, k: int) -> List[int]:
+        res = []
+        n = len(nums)
+        for j in range(n):
+            if nums[j] == key:
+                l = max(0, j - k)
+                r = min(n - 1, j + k) + 1
+                for i in range(l, r):
+                    res.append(i)
+        return res
+```
