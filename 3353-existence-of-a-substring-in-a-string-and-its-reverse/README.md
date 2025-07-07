@@ -40,3 +40,35 @@
 	<li><code>1 &lt;= s.length &lt;= 100</code></li>
 	<li><code>s</code> consists only of lowercase English letters.</li>
 </ul>
+
+# Solution 
+* its something like brute force not good practice solution 
+
+```python
+class Solution:
+    def isSubstringPresent(self, s: str) -> bool:
+        rev=s[::-1]
+        for i in range(1,len(s)):
+            chs=s[i-1:i+1]
+            if chs in rev:
+                return True
+        return False
+```
+
+# Optimal Solution 
+* We need to find a substring of len 2 in s that is also in sReverse, 
+* Then that means a reverse substring of len 2 in s Reverse should be in s. 
+
+```ini 
+Instead of finding substring `s[i-1:i+1]` we try to find s[i]+s[i-1] which is reverse of the substring is s in s. 
+```
+
+```python
+class Solution:
+    def isSubstringPresent(self, s: str) -> bool:
+        for i in range(1, len(s)):
+            if s[i]+s[i-1] in s:
+                return True 
+        
+        return False
+```
