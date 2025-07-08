@@ -38,3 +38,25 @@ The total number of units will be = (1 * 3) + (2 * 2) + (1 * 1) = 8.
 	<li><code>1 &lt;= numberOfBoxes<sub>i</sub>, numberOfUnitsPerBox<sub>i</sub> &lt;= 1000</code></li>
 	<li><code>1 &lt;= truckSize &lt;= 10<sup>6</sup></code></li>
 </ul>
+
+# Solution 
+* Need to find the maximum units that a truck can fit and also not  it's possible to have multiple quantities of the same box-capacity. Refer to second example.
+* Sort the units in descending order and fill out the boxes and compute the total units 
+
+```python
+class Solution:
+    def maximumUnits(self, boxTypes: List[List[int]], truckSize: int) -> int:
+        # Sort based on the units 
+        boxTypes = sorted(boxTypes, key=lambda x: int(x[1]), reverse=True) 
+        units_total = 0
+        
+        for b,u in boxTypes:
+            if truckSize>=b:
+                truckSize-=b
+                units_total+=b*u
+            else:
+                units_total+=truckSize*u
+                break
+        
+        return units_total
+```
