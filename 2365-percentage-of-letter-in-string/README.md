@@ -26,3 +26,24 @@ The percentage of characters in s that equal the letter &#39;k&#39; is 0%, so we
 	<li><code>s</code> consists of lowercase English letters.</li>
 	<li><code>letter</code> is a lowercase English letter.</li>
 </ul>
+
+# Solution
+* Calculate the Percentage 
+
+```python
+class Solution:
+    def percentageLetter(self, s: str, letter: str) -> int:
+        letterCount = s.count(letter)
+        n = len(s)
+        percentage = (letterCount / n) * 100
+
+        return int(percentage)
+```
+
+```python
+class Solution:
+    def percentageLetter(self, s: str, letter: str) -> int:
+        l = len(s)
+        s = Counter(s)
+        return int(s[letter] / l * 100)
+```
