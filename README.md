@@ -147,6 +147,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1256-rank-transform-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1256-rank-transform-of-an-array) |
 | [1293-three-consecutive-odds](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1293-three-consecutive-odds) |
 | [1306-minimum-absolute-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1306-minimum-absolute-difference) |
+| [1310-watering-plants](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1310-watering-plants) |
 | [1319-unique-number-of-occurrences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1319-unique-number-of-occurrences) |
 | [1354-find-players-with-zero-or-one-losses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1354-find-players-with-zero-or-one-losses) |
 | [1382-calculate-amount-paid-in-taxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1382-calculate-amount-paid-in-taxes) |
@@ -544,6 +545,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0415-add-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0415-add-strings) |
 | [0657-robot-return-to-origin](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0657-robot-return-to-origin) |
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
+| [1310-watering-plants](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1310-watering-plants) |
 | [1382-calculate-amount-paid-in-taxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1382-calculate-amount-paid-in-taxes) |
 | [1505-create-target-array-in-the-given-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1505-create-target-array-in-the-given-order) |
 | [1642-water-bottles](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1642-water-bottles) |
