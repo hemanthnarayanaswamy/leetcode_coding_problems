@@ -43,3 +43,43 @@ The sum of the numbers after index 2 is: 0
 
 <p>&nbsp;</p>
 <p><strong>Note:</strong> This question is the same as&nbsp;724:&nbsp;<a href="https://leetcode.com/problems/find-pivot-index/" target="_blank">https://leetcode.com/problems/find-pivot-index/</a></p>
+
+# Solution 
+* Initiate the `leftSum = 0` and `totalSum = sum(nums)`.
+* Now for each iteration compute the right_sum first `right_sum = total_sum - left_sum` and `left_sum += nums[i]`
+
+`nums[0] + nums[1] + ... + nums[middleIndex-1] == nums[middleIndex+1] + nums[middleIndex+2] + ... + nums[nums.length-1]`
+
+* But in the above case even if we add the current middleIndex to both right and left still the sum will be the same. 
+
+```python
+class Solution:
+    def findMiddleIndex(self, nums: List[int]) -> int:
+        total_sum = sum(nums)
+        left_sum = 0
+        
+        for i in range(len(nums)):
+            right_sum = total_sum - left_sum
+            left_sum += nums[i]
+            # Check if left sum equals the right sum
+            if left_sum == right_sum:
+                return i
+
+        return -1
+```
+
+# Optimal Solution
+```python
+class Solution:
+    def findMiddleIndex(self, nums: List[int]) -> int:
+        total = sum(nums)      
+        left_sum = 0           
+        
+        for i, x in enumerate(nums):
+            # total − left_sum − x == sum of elements to the right of i
+            if left_sum == total - left_sum - x:
+                return i
+            left_sum += x       # include nums[i] for the next iteration
+        
+        return -1               # no such index found
+```
