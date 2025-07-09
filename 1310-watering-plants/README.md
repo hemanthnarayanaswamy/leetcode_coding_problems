@@ -59,3 +59,45 @@ Steps needed = 1 + 1 + 2 + 2 + 3 + 3 + 4 + 4 + 5 + 5 + 6 + 6 + 7 = 49.
 	<li><code>1 &lt;= plants[i] &lt;= 10<sup>6</sup></code></li>
 	<li><code>max(plants[i]) &lt;= capacity &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Solution 
+* Need to check the capacityLeft and track the TotalSteps. 
+* In each iteration, first move to that location and check if the capacity is enough, if it is then reduce the capacity. 
+* But if the capacity is not enough then we need to walk back i steps and then again come back i steps so `2*i` steps added to total steps. 
+* and Capacity will reset to orginial minus the current plant capacity. 
+
+
+```python
+class Solution:
+    def wateringPlants(self, plants: List[int], capacity: int) -> int:
+        capacityLeft = capacity 
+        totalSteps = 0
+
+        for i in range(len(plants)):
+            totalSteps += 1
+            if capacityLeft < plants[i]:
+                totalSteps += 2*(i)
+                capacityLeft = capacity - plants[i]
+            else:
+                capacityLeft -= plants[i]
+        
+        return totalSteps
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def wateringPlants(self, plants: List[int], capacity: int) -> int:
+        steps,i=0,0
+        curr_capacity=capacity
+        while i<len(plants):
+            if plants[i]<=curr_capacity:
+                curr_capacity-=plants[i]
+                steps+=1
+                i+=1
+            else:
+                steps+=(i*2)
+                curr_capacity=capacity
+        
+        return steps
+```
