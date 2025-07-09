@@ -37,3 +37,30 @@
 	<li><code>1 &lt;= w &lt;= 1000</code></li>
 	<li><code>1 &lt;= maxWeight &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Solution 
+The problem requires us to determine the maximum number of containers that can be placed on an n x n cargo deck while ensuring the total weight does not exceed maxWeight.
+* The deck can hold at most n * n containers.
+* Each container has a weight of w, so the total weight of all k containers is k * w.
+* The ship's weight limit maxWeight restricts how many containers can be placed.
+* Thus, we take the minimum of n * n (the deck's maximum capacity) and maxWeight / w (the weight-constrained maximum).
+
+## Approach 
+1. Compute the total number of containers that the `n x n` deck can hold: `max_possible = n × n`
+2. Compute the maximum number of containers that the ship can support under the weight constraint: `max_by_weight = ⌊maxWeight / w⌋`
+3. Return the minimum of these two values: `result = min(max_possible, max_by_weight)`
+
+```python
+class Solution:
+    def maxContainers(self, n: int, w: int, maxWeight: int) -> int:
+        cargoCells = n * n 
+        possibleContainers = maxWeight // w 
+
+        return min(cargoCells, possibleContainers)
+```
+
+```python
+class Solution:
+    def maxContainers(self, n: int, w: int, maxWeight: int) -> int:
+        return (n * n if n * n <= maxWeight // w else maxWeight // w)
+```
