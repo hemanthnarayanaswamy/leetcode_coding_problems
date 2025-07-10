@@ -34,3 +34,50 @@ It can be proven that it is not possible to convert current to correct in fewer 
 	<li><code>current</code> and <code>correct</code> are in the format <code>&quot;HH:MM&quot;</code></li>
 	<li><code>current &lt;= correct</code></li>
 </ul>
+
+# Solution 
+* convert the current and correct time into minutes and calculate the difference between them and compute operations to make that difference zero. 
+
+```python
+class Solution:
+    def convertTime(self, current: str, correct: str) -> int:
+        current_minutes = int(current[:2])*60 + int(current[3:])
+        corrent_minutes = int(correct[:2])*60 + int(correct[3:])
+
+        totalDiff = corrent_minutes - current_minutes
+        totalOperations = 0
+
+        while totalDiff != 0:
+            if totalDiff >= 60:
+                totalDiff -= 60
+            elif 15 <= totalDiff < 60:
+                totalDiff -= 15
+            elif 5 <= totalDiff < 15:
+                totalDiff -= 5
+            else:
+                totalDiff -= 1
+            
+            totalOperations += 1
+
+        return totalOperations
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def convertTime(self, current: str, correct: str) -> int:
+        # 1) Turn “HH:MM” into total minutes
+        h1, m1 = map(int, current.split(':'))
+        h2, m2 = map(int, correct.split(':'))
+        diff = (h2 * 60 + m2) - (h1 * 60 + m1)
+
+        # 2) Greedily use the largest operations first
+        ops = 0
+        for step in (60, 15, 5, 1):
+            ops += diff // step
+            diff %= step
+            if diff == 0:
+                break
+
+        return ops
+```
