@@ -21,3 +21,49 @@
 	<li><code>1 &lt;= s.length, goal.length &lt;= 100</code></li>
 	<li><code>s</code> and <code>goal</code> consist of lowercase English letters.</li>
 </ul>
+
+# Solution 
+* We need to perform the rotation of up to len(s) times and for each rotation we need to check if the rotated value matches the goal. 
+
+```python
+class Solution:
+    def rotateString(self, s: str, goal: str) -> bool:
+        slist = list(s)
+        n = len(s)
+
+        while n:
+            slist.append(slist.pop(0)) # Remove the leftmost element and append it to the end to the Right 
+
+            if ''.join(slist) == goal:
+                return True 
+            
+            n -= 1
+        
+        return False 
+```
+
+* Improved version without using the list and only using the string slicing.
+
+```python
+class Solution:
+    def rotateString(self, s: str, goal: str) -> bool:
+        for i in range(len(s)):
+            if(s[i:] + s[:i] == goal):
+                return True
+        return False
+```
+
+# Optimal solution 
+1.	If two strings are equal via some rotation, then goal must appear as a contiguous substring of s+s.
+2.	Also they must be the same length.
+
+```python
+class Solution:
+    def rotateString(self, s: str, goal: str) -> bool:
+        # Quick length check
+        if len(s) != len(goal):
+            return False
+        
+        # Double s and see if goal sits inside
+        return goal in (s + s)
+```
