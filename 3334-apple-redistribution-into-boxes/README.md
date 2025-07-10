@@ -33,3 +33,43 @@ It is possible to distribute the apples as the total capacity is greater than or
 	<li><code>1 &lt;= apple[i], capacity[i] &lt;= 50</code></li>
 	<li>The input is generated such that it&#39;s possible to redistribute packs of apples into boxes.</li>
 </ul>
+
+# Solution 
+* We need to store the apples in the boxes with different capacity and return the minimum number of total boxes required to store all the apples. 
+* Note that, apples from the same pack can be distributed into different boxes. Based on this statement no matter the apple lot it can go to any box then Indeat of iteration we can get the total apples and then use that number to track the apples. 
+
+1. While the total apples are greater then 0, totalApples is minus the highest of sorted Capacity and increment the box.
+2. return the box 
+
+```python
+class Solution:
+    def minimumBoxes(self, apple: List[int], capacity: List[int]) -> int:
+        capacitySorted = sorted(capacity, reverse = True)
+
+        totalApples = sum(apple)
+
+        box = 0
+
+        while totalApples > 0:
+            totalApples -= capacitySorted[box]
+            box += 1
+        
+        return box
+```
+
+```python
+class Solution:
+    def minimumBoxes(self, apple: List[int], capacity: List[int]) -> int:
+        
+        cnt_apple=sum(apple)
+        capacity.sort(reverse=True)
+        cnt=0
+
+        for c in capacity:
+            if cnt_apple <=0:
+                break        
+            cnt_apple-=c
+            cnt+=1
+
+        return cnt
+```
