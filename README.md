@@ -260,6 +260,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3324-split-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3324-split-the-array) |
 | [3331-minimum-operations-to-exceed-threshold-value-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3331-minimum-operations-to-exceed-threshold-value-i) |
+| [3334-apple-redistribution-into-boxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3334-apple-redistribution-into-boxes) |
 | [3347-distribute-elements-into-two-arrays-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3347-distribute-elements-into-two-arrays-i) |
 | [3367-find-the-sum-of-encrypted-integers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3367-find-the-sum-of-encrypted-integers) |
 | [3397-find-the-integer-added-to-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3397-find-the-integer-added-to-array-i) |
@@ -705,6 +706,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2887-sort-vowels-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2887-sort-vowels-in-a-string) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3262-find-polygon-with-the-largest-perimeter) |
+| [3334-apple-redistribution-into-boxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3334-apple-redistribution-into-boxes) |
 | [3430-count-days-without-meetings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3430-count-days-without-meetings) |
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
 | [3778-transform-array-by-parity](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3778-transform-array-by-parity) |
@@ -819,6 +821,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3262-find-polygon-with-the-largest-perimeter) |
+| [3334-apple-redistribution-into-boxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3334-apple-redistribution-into-boxes) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
