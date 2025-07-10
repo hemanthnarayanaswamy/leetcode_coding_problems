@@ -1,23 +1,16 @@
 class Solution:
     def convertTime(self, current: str, correct: str) -> int:
-        current_minutes = int(current[:2])*60 + int(current[3:])
-        corrent_minutes = int(correct[:2])*60 + int(correct[3:])
+        # 1) Turn “HH:MM” into total minutes
+        h1, m1 = map(int, current.split(':'))
+        h2, m2 = map(int, correct.split(':'))
+        diff = (h2 * 60 + m2) - (h1 * 60 + m1)
 
-        totalDiff = corrent_minutes - current_minutes
-        totalOperations = 0
+        # 2) Greedily use the largest operations first
+        ops = 0
+        for step in (60, 15, 5, 1):
+            ops += diff // step
+            diff %= step
+            if diff == 0:
+                break
 
-        while totalDiff != 0:
-            if totalDiff >= 60:
-                totalDiff -= 60
-            elif 15 <= totalDiff < 60:
-                totalDiff -= 15
-            elif 5 <= totalDiff < 15:
-                totalDiff -= 5
-            else:
-                totalDiff -= 1
-            
-            totalOperations += 1
-
-        return totalOperations
-
-
+        return ops
