@@ -44,3 +44,74 @@ House 0 has color 0, and house 1 has color 1. The distance between them is abs(0
 	<li><code>0 &lt;= colors[i] &lt;= 100</code></li>
 	<li>Test data are generated such that <strong>at least</strong> two houses have different colors.</li>
 </ul>
+
+# Wrong Solution 
+* Lets create a Map for the different colours and it highest index in the map. 
+* The maximum distance between them will be the difference between the min and max index in the hash map. 
+
+```python
+class Solution:
+    def maxDistance(self, colors: List[int]) -> int:
+        housePos = {}
+
+        for i, c in enumerate(colors):
+            housePos[c] = max(housePos.get(c, 0), i)
+
+        house1 = min(housePos.values())
+        house2 = max(housePos.values())
+
+        return house2 - house1
+```
+* The issue with this approach is it fails some edge cases `[9,9,9,18,9,9,9,9,9,18]` answer should be 9 but our case it is 1
+* We are sorting only the max value of i for the house so it'll fail for the above case. 
+
+# Solution 
+* Lets use `Two POINTER` and two different iterations.
+1. In the first iteration we keep the left pointer same and keep moving the right until we find house with different colours and store the result from it and break the loop.
+2. In the second iteration we do the same  as above but now we keep the right pointer same and move the left pointer, till we encounter different houses, store result and break the Loop.
+3. Return the maximum of the results stored. 
+
+`The maximum distance will come from either the pair of the leftmost house and some house on the right with a different color`
+`or` `The pair of the rightmost house and possibly some house on the left with a different color.`
+
+```python
+class Solution:
+    def maxDistance(self, colors: List[int]) -> int:
+        h1, h2 = 0, len(colors)-1
+
+        res = []
+
+        while h1 < h2:
+            if colors[h1] != colors[h2]:
+                res.append(h2 - h1)
+                break
+            else:
+                h2 -= 1
+
+        h2 = len(colors)-1
+
+        while h1 < h2:
+            if colors[h1] != colors[h2]:
+                res.append(h2 - h1)
+                break
+            else:
+                h1 += 1
+        
+        return max(res)
+````
+
+# Optimal Solutions 
+```python
+class Solution:
+    def maxDistance(self, colors: List[int]) -> int:
+        ans = 0
+        for i in range(len(colors)-1,-1,-1):
+            if colors[i]!=colors[0]:
+                diff = i
+                ans = max(ans,diff)
+        for i in range(len(colors)):
+            if colors[i]!=colors[len(colors)-1]:
+                diff = len(colors)-1-i
+                ans = max(ans,diff)
+        return ans
+```
