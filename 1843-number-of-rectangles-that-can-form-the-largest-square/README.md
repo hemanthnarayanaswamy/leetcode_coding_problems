@@ -32,3 +32,45 @@ The largest possible square is of length 5, and you can get it out of 3 rectangl
 	<li><code>1 &lt;= l<sub>i</sub>, w<sub>i</sub> &lt;= 10<sup>9</sup></code></li>
 	<li><code>l<sub>i</sub> != w<sub>i</sub></code></li>
 </ul>
+
+# Solution 
+* First we need to find the maxLen of the square that can be formed out of all the rectangles. 
+* While also keeping track of how many rectangles are forming the square of side x using hashMap 
+
+```python
+class Solution:
+    def countGoodRectangles(self, rectangles: List[List[int]]) -> int:
+        squareSides = {}
+        maxLen = 0
+
+        for l, w in rectangles:
+            s = min(l, w)
+            squareSides[s] = squareSides.get(s, 0) + 1
+
+            if s > maxLen:
+                maxLen = s
+
+        return squareSides[maxLen]
+```
+
+# Optimal Solution 
+* Have counter instead of a HashMap. 
+
+```python
+class Solution:
+    def countGoodRectangles(self, rectangles: List[List[int]]) -> int:
+        max_len = 0
+        count = 0
+
+        for l, w in rectangles:
+            side_len = l if l > w else w
+
+            if side_len > max_len:
+                max_len = side_len
+                count = 1
+            elif side_len == max_len:
+                count += 1
+
+        return count
+```
+				
