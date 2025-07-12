@@ -1,6 +1,6 @@
 class Solution:
     def countGoodRectangles(self, rectangles: List[List[int]]) -> int:
-        max_len = float('-inf')
+        max_len = 0
         count = 0
 
         for l, w in rectangles:
