@@ -1,11 +1,11 @@
 class Solution:
     def finalString(self, s: str) -> str:
-        res = ''
+        res = []
 
         for c in s:
             if c == 'i':
-                res = res[::-1]
+                res.reverse()
             else:
-                res += c
+                res.append(c)
         
-        return res
+        return ''.join(res)
