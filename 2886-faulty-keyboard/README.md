@@ -44,3 +44,33 @@ Therefore, we return &quot;ponter&quot;.</pre>
 	<li><code>s</code> consists of lowercase English letters.</li>
 	<li><code>s[0] != &#39;i&#39;</code></li>
 </ul>
+
+# Solution 
+* Simulate the exact condition 
+
+```python
+class Solution:
+    def finalString(self, s: str) -> str:
+        res = ''
+
+        for c in s:
+            if c == 'i':
+                res = res[::-1]
+            else:
+                res += c
+        
+        return res
+```
+---
+```python
+class Solution:
+    def finalString(self, s: str) -> str:
+        res = []
+        for c in s:
+            if c == 'i':
+                res.reverse()
+            else:
+                res.append(c)
+        
+        return ''.join(res)
+```
