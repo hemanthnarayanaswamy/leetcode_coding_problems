@@ -49,3 +49,35 @@ It can be proven that 1 is the maximum number of pairs that can be formed.
 	<li><code>words</code>&nbsp;consists of distinct strings.</li>
 	<li><code>words[i]</code>&nbsp;contains only lowercase English letters.</li>
 </ul>
+
+# Solution 
+* Simple Solution check if the reverse string is in the set if then increment count else add that string into the `set()`
+* Notice that array words consist of distinct strings.
+
+```python
+class Solution:
+    def maximumNumberOfStringPairs(self, words: List[str]) -> int:
+        uniq = set()
+        count = 0
+
+        for word in words:
+            if word[::-1] in uniq:
+               count += 1
+            else:
+                uniq.add(word)
+
+        return count 
+```
+
+```python
+class Solution:
+    def maximumNumberOfStringPairs(self, words: List[str]) -> int:
+        cnt = 0
+        seen = set()
+        for word in words:
+            revWord = word[::-1]
+            if revWord in seen:
+                cnt += 1
+            seen.add(word)
+        return cnt
+```
