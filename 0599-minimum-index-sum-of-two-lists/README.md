@@ -46,3 +46,33 @@ The strings with the least index sum are &quot;sad&quot; and &quot;happy&quot;.
 	<li>All the strings of <code>list2</code> are <strong>unique</strong>.</li>
 	<li>There is at least a common string between <code>list1</code> and <code>list2</code>.</li>
 </ul>
+
+# Solution 
+* Firstly, we traverse over the whole list1 and create an entry for each element of list1 in a HashMap map, of the form (list[i],i). Here, i refers to the index of the ith element, and list[i] is the ith element itself. Thus, we create a mapping from the elements of list1 to their indices.
+
+* Now, we traverse over list2. For every element ,list2[j], of list2 encountered, we check if the same element already exists as a key in the map. If so, it means that the element exists in both list1 and list2. Thus, we find out the sum of indices corresponding to this element in the two lists, given by sum=map.get(list2[j])+j. If this sum is less than the minimum sum obtained till now, we update the resultant list to be returned, res, with the element list2[j] as the only entry in it.
+
+* If the sum is equal to the minimum sum obtained till now, we put an extra entry corresponding to the element list2[j] in the res list.
+
+```python
+class Solution:
+    def findRestaurant(self, list1: List[str], list2: List[str]) -> List[str]:
+        map_lst1 = {}
+        comm_str = []
+        min_idxSum = float('inf')
+
+        for i,s in enumerate(list1):
+            map_lst1[s] = i
+        
+        for i,s in enumerate(list2):
+            if s in map_lst1:
+                tmp_sum = i + map_lst1[s]
+                
+                if tmp_sum < min_idxSum:
+                    comm_str = [s]
+                    min_idxSum = tmp_sum
+                elif tmp_sum == min_idxSum:
+                    comm_str.append(s)
+        
+        return comm_str
+```
