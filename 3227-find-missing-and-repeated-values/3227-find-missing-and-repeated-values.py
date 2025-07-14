@@ -1,23 +1,18 @@
 class Solution:
     def findMissingAndRepeatedValues(self, grid: List[List[int]]) -> List[int]:
-        numsFreq = {}
         n = len(grid)
-        total = n * n
+        freq = {}
 
-        for nums in grid:
-            for num in nums:
-                numsFreq[num] = numsFreq.get(num, 0) + 1
-        
-        for num, fq in numsFreq.items():
-            if fq == 2:
-                repeated_num = num 
-        
-        for num in range(1, total+1):
-            if num not in numsFreq:
-                missing_num = num 
-        
-        return [repeated_num, missing_num]
-                
-        
-        
-        
+        # Store frequency of each number in the grid
+        for row in grid:
+            for num in row:
+                freq[num] = freq.get(num, 0) + 1
+
+        # Check numbers from 1 to n^2 to find missing and repeated values
+        for num in range(1, n * n + 1):
+            if num not in freq:
+                missing = num  # Number not present in grid
+            elif freq[num] == 2:
+                repeat = num  # Number appears twice
+
+        return [repeat, missing]
