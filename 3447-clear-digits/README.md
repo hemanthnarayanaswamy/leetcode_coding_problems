@@ -45,3 +45,39 @@
 	<li><code>s</code> consists only of lowercase English letters and digits.</li>
 	<li>The input is generated such that it is possible to delete all digits.</li>
 </ul>
+
+# Solution 
+* First we initiate the Stack then in one iteration, 
+* We check the c is number if it is a number and the stack is not empty then remove the element from the stack but continue if the stack is empty. 
+* if its not number append the character to the stack. 
+
+```python
+class Solution:
+    def clearDigits(self, s: str) -> str:
+        stack = []
+        i = 0
+
+        while i < len(s):
+            if s[i].isnumeric():
+                if stack:
+                    stack.pop()
+            else:
+                stack.append(s[i])
+            
+            i += 1
+        
+        return ''.join(stack)
+```
+
+# Optimal Solution
+```python
+class Solution:
+    def clearDigits(self, string: str) -> str:
+        stack = []
+        for s in string:
+            if s.isdigit():
+                stack.pop()
+            else:
+                stack.append(s)
+        return "".join(stack)
+```
