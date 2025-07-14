@@ -29,3 +29,69 @@
 	<li>For all <code>x</code> that <code>1 &lt;= x &lt;= n * n</code> there is exactly one <code>x</code> that is equal to exactly two of the grid members.</li>
 	<li>For all <code>x</code> that <code>1 &lt;= x &lt;= n * n</code> except two of them there is exactly one pair of <code>i, j</code> that <code>0 &lt;= i, j &lt;= n - 1</code> and <code>grid[i][j] == x</code>.</li>
 </ul>
+
+# Solution 
+* Use HashMap to store the numbers and its Frequency. 
+* If the frequency if 2 then its the repeated number. 
+* Check numbers from range (1, n*n) to see the any number is missing then that is the missing number 
+
+```python
+class Solution:
+    def findMissingAndRepeatedValues(self, grid: List[List[int]]) -> List[int]:
+        numsFreq = {}
+        n = len(grid)
+        total = n * n
+
+        for nums in grid:
+            for num in nums:
+                numsFreq[num] = numsFreq.get(num, 0) + 1
+        
+        for num, fq in numsFreq.items():
+            if fq == 2:
+                repeated_num = num 
+        
+        for num in range(1, total+1):
+            if num not in numsFreq:
+                missing_num = num 
+        
+        return [repeated_num, missing_num]
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def findMissingAndRepeatedValues(self, grid: List[List[int]]) -> List[int]:
+        n = len(grid)
+        freq = {}
+
+        # Store frequency of each number in the grid
+        for row in grid:
+            for num in row:
+                freq[num] = freq.get(num, 0) + 1
+
+        # Check numbers from 1 to n^2 to find missing and repeated values
+        for num in range(1, n * n + 1):
+            if num not in freq:
+                missing = num  # Number not present in grid
+            elif freq[num] == 2:
+                repeat = num  # Number appears twice
+
+        return [repeat, missing]
+```
+* Using the Array instead of the HashMaps
+```python
+class Solution:
+    def findMissingAndRepeatedValues(self, grid: List[List[int]]) -> List[int]:
+        n=len(grid)
+        freq=[0]*(n*n+1)
+        for row in grid:
+            for val in row:
+                freq[val]+=1
+        repeated=missing=-1
+        for val in range(1,n*n+1):
+            if freq[val]==0:
+                missing=val
+            elif freq[val]==2:
+                repeated=val
+        return [repeated,missing]
+```
