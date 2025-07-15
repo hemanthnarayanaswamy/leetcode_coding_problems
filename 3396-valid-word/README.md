@@ -81,7 +81,7 @@ class Solution:
         
         for c in word:
             if c.isalnum():
-                if not c.isnumeric():
+                if c.isalpha():
                     if c in "AEIOUaeiou":
                         vowel = True
                     else:
