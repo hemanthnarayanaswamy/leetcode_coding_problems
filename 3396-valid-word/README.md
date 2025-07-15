@@ -62,3 +62,46 @@
 	<li><code>1 &lt;= word.length &lt;= 20</code></li>
 	<li><code>word</code> consists of English uppercase and lowercase letters, digits, <code>&#39;@&#39;</code>, <code>&#39;#&#39;</code>, and <code>&#39;$&#39;</code>.</li>
 </ul>
+
+# Solution 
+* A bit confusing problem, We only need to check three important conditions out of everything 
+
+1. Is the length of word if greater then 3. 
+2. Is word contains any special characters. 
+3. Is word contains both vowel and consonants.
+4. Numbers and Upper case you can ignore them. 
+
+```python
+class Solution:
+    def isValid(self, word: str) -> bool:
+        if len(word) < 3:
+            return False 
+        
+        vowel, cons = False, False
+        
+        for c in word:
+            if c.isalnum():
+                if not c.isnumeric():
+                    if c in "AEIOUaeiou":
+                        vowel = True
+                    else:
+                        cons = True
+            else:
+                return False
+        
+        return vowel and cons
+```
+
+# Optimal Solution 
+```python
+if len(word) < 3:
+            return False
+        if not re.fullmatch(r'[A-Za-z0-9]+', word):
+            return False
+        if not re.search(r'[aeiouAEIOU]', word):
+            return False
+        if not re.search(r'(?i)[b-df-hj-np-tv-z]', word):  
+            return False
+
+        return True
+```
