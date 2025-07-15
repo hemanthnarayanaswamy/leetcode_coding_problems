@@ -1,22 +1,11 @@
 class Solution:
     def minMaxGame(self, nums: List[int]) -> int:
-        n = len(nums)
-        if n == 1:
-            return nums[0]
-        
-        m = n // 2 
-        newNum = nums
-
-        while m:
-            temp = [0]*m 
-
-            for i in range(m):
-                if i % 2:
-                    temp[i] = max(newNum[2*i], newNum[2*i + 1])
-                else:
-                    temp[i] = min(newNum[2*i], newNum[2*i + 1])
-            
-            newNum = temp
-            m //= 2
-        
-        return newNum[0]
+        while len(nums) > 1:
+            # pair up (nums[0],nums[1]), (nums[2],nums[3]), …
+            pairs = zip(nums[::2], nums[1::2])
+            # for each pair, take min if i is even, max if i is odd
+            nums = [
+                (a if a < b else b) if i % 2 == 0 else (a if a > b else b)
+                for i, (a, b) in enumerate(pairs)
+            ]
+        return nums[0]
