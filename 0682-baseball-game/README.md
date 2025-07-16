@@ -82,3 +82,47 @@ Since the record is empty, the total sum is 0.
 	<li>For operation <code>&quot;+&quot;</code>, there will always be at least two previous scores on the record.</li>
 	<li>For operations <code>&quot;C&quot;</code> and <code>&quot;D&quot;</code>, there will always be at least one previous score on the record.</li>
 </ul>
+
+# Solution 
+* Just follow the rules and add the simulation logic and Look properly into the examples on how the problem if solved along with constraints to look into what constraints are given. 
+* Use stack for the operations. 
+
+```python
+class Solution:
+    def calPoints(self, operations: List[str]) -> int:
+        score = []
+        
+        for i in range(len(operations)):
+            ops = operations[i]
+            if ops == 'D':
+                score.append(score[-1]*2)
+            elif ops == 'C':
+                score.pop()
+            elif ops == '+':
+                score.append(score[-2]+score[-1])
+            else:
+                score.append(int(ops))
+        
+        return sum(score)
+ ```
+ 
+ # Optimal Solution 
+ ```python
+ class Solution:
+    def calPoints(self, operations: List[str]) -> int:
+        stack = []
+
+        for ch in operations:
+            if ch == "C":
+                stack.pop()
+            elif ch == "D":
+                score = stack[-1] * 2
+                stack.append(score)
+            elif ch == "+":
+                score_sum = stack[-1] + stack[-2]
+                stack.append(score_sum)
+            else:
+                stack.append(int(ch))
+        
+        return sum(stack)
+```
