@@ -124,6 +124,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0599-minimum-index-sum-of-two-lists](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0599-minimum-index-sum-of-two-lists) |
 | [0628-maximum-product-of-three-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0628-maximum-product-of-three-numbers) |
 | [0643-maximum-average-subarray-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0643-maximum-average-subarray-i) |
+| [0682-baseball-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0682-baseball-game) |
 | [0748-largest-number-at-least-twice-of-others](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0748-largest-number-at-least-twice-of-others) |
 | [0749-shortest-completing-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0749-shortest-completing-word) |
 | [0822-unique-morse-code-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0822-unique-morse-code-words) |
@@ -566,6 +567,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0412-fizz-buzz](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0412-fizz-buzz) |
 | [0415-add-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0415-add-strings) |
 | [0657-robot-return-to-origin](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0657-robot-return-to-origin) |
+| [0682-baseball-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0682-baseball-game) |
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
 | [1310-watering-plants](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1310-watering-plants) |
 | [1382-calculate-amount-paid-in-taxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1382-calculate-amount-paid-in-taxes) |
@@ -802,6 +804,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0232-implement-queue-using-stacks) |
+| [0682-baseball-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0682-baseball-game) |
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
