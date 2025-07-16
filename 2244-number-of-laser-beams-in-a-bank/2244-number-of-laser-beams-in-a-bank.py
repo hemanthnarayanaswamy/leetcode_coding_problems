@@ -1,6 +1,5 @@
 class Solution:
     def numberOfBeams(self, bank: List[str]) -> int:
-        numberDev = []
         lasers = 0
         x = bank[0].count('1')
 
