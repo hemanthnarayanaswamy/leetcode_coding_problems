@@ -34,3 +34,19 @@ From s[4] = &#39;c&#39; to s[5] = &#39;C&#39;, there is no change of key as caps
 	<li><code>1 &lt;= s.length &lt;= 100</code></li>
 	<li><code>s</code> consists of only upper case and lower case English letters.</li>
 </ul>
+
+# Solution 
+* You just need to check if the characters changes from one indes to other.
+* `Modifiers like shift or caps lock won't be counted in changing the key that is if a user typed the letter 'a' and then the letter 'A' then it will not be considered as a changing of key.`
+* Change all the characters to lowercase and then return the number of indices where the character does not match with the last index character.
+
+```python
+class Solution:
+    def countKeyChanges(self, s: str) -> int:
+        cnt=0
+        str=s.lower()
+        for i in range(len(str)-1):
+            if str[i]!=str[i+1]:
+                cnt+=1
+        return cnt
+```
