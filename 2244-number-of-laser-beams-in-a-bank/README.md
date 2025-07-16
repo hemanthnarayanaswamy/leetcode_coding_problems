@@ -47,3 +47,58 @@ This is because the 2<sup>nd</sup> row contains security devices, which breaks t
 	<li><code>1 &lt;= m, n &lt;= 500</code></li>
 	<li><code>bank[i][j]</code> is either <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code>.</li>
 </ul>
+
+# Approach 
+* Each device on the same row has the same number of beams pointing towards the devices on the next row with devices.
+* Convert the input to such an array, skip any row with no security device, then find the sum of the product between adjacent elements.
+```ini 
+Convert to array : {3,0,2,1}.
+Ignore the 0's in the array so the array is [3,2,1] : 
+Answer is `3*2 + 2*1` as simple.
+```
+
+# Solution 
+```python
+class Solution:
+    def numberOfBeams(self, bank: List[str]) -> int:
+        numberDev = []
+        lasers = 0
+
+        for r in bank: # Create a Interger Array of number of devices per row ignoring zeros
+            d = r.count('1')
+            if d:
+                numberDev.append(d)
+        
+        for i in range(len(numberDev)-1):
+            lasers += numberDev[i] * numberDev[i+1]
+        
+        return lasers
+```
+
+# Improved Solution 
+```python
+class Solution:
+    def numberOfBeams(self, bank: List[str]) -> int:
+        lasers = 0
+        x = bank[0].count('1')
+
+        for i in range(1, len(bank)): 
+            y = bank[i].count('1')
+            if y:
+                lasers += x * bank[i].count('1')
+                x = y
+        
+        return lasers
+```
+---
+```python
+class Solution:
+    def numberOfBeams(self, bank: List[str]) -> int:
+        ans = prev = 0
+        for s in bank:
+            c = s.count('1')
+            if c:
+                ans += prev * c
+                prev = c
+        return ans
+```
