@@ -11,8 +11,6 @@ class Solution:
                 x = y
         
         return lasers
-
-
         
 
         
