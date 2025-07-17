@@ -63,3 +63,46 @@
 	<li><code>3 &lt;= s.length &lt;= 100</code></li>
 	<li><code>s</code> consists of only digits.</li>
 </ul>
+
+# Solution 
+* First convert the string into a list of interger numbers before doing the iteration with the WHILE Loop. 
+
+```python
+class Solution:
+    def hasSameDigits(self, s: str) -> bool:
+        s = [int(x) for x in s]
+        
+        while len(s) > 2:
+            newS = []
+            for i in range(len(s)-1):
+                tmp = (s[i] + s[i+1]) % 10
+                newS.append(tmp)
+            s = newS
+        
+        return s[0] == s[1]
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def hasSameDigits(self, s: str) -> bool:
+        # map characters → integers
+        digits = list(map(int, s))
+        # repeatedly replace with pairwise sums mod 10
+        while len(digits) > 2:
+            # zip(digits, digits[1:]) walks through pairs (a, b)
+            digits = [(a + b) % 10 for a, b in zip(digits, digits[1:])]
+
+        return digits[0] == digits[1]
+```
+
+```python
+class Solution:
+    def hasSameDigits(self, s: str) -> bool:
+        t = list(map(int, s))
+        while len(t) > 2:
+            for i in range(len(t) - 1):
+                t[i] = (t[i] + t[i + 1]) % 10
+            t.pop()
+        return t[0] == t[1]
+```
