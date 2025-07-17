@@ -1,25 +1,13 @@
 class Solution:
     def sortEvenOdd(self, nums: List[int]) -> List[int]:
-        oddSort = []
-        evenSort = []
-        result = []
+        # Extract even-indexed and odd-indexed elements
+        evens = sorted(nums[::2])                      # ascending
+        odds  = sorted(nums[1::2], reverse=True)       # descending
 
-        for i in range(len(nums)):
-            if i % 2:
-                oddSort.append(nums[i])
-            else:
-                evenSort.append(nums[i])
-        
-        oddSort.sort(reverse=True)
-        evenSort.sort()
+        # Allocate result array of the same length
+        res = [None] * len(nums)
+        # Place sorted values back into even and odd positions
+        res[::2] = evens
+        res[1::2] = odds
 
-        for i in range(len(oddSort)):
-            result.append(evenSort[i])
-            result.append(oddSort[i])
-        
-        if len(result) == len(nums):
-            return result 
-        else:
-            result.append(evenSort[-1])
-
-        return result
+        return res
