@@ -1,10 +1,10 @@
 class Solution:
     def hasSameDigits(self, s: str) -> bool:
-        # map characters → integers
-        digits = list(map(int, s))
-        # repeatedly replace with pairwise sums mod 10
-        while len(digits) > 2:
-            # zip(digits, digits[1:]) walks through pairs (a, b)
-            digits = [(a + b) % 10 for a, b in zip(digits, digits[1:])]
+        t = list(map(int, s))
+        while len(t) > 2:
+            for i in range(len(t) - 1):
+                t[i] = (t[i] + t[i + 1]) % 10
+            t.pop()
+        return t[0] == t[1]
 
-        return digits[0] == digits[1]
+        
