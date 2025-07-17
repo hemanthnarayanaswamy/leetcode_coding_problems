@@ -47,3 +47,50 @@ The resultant array formed is [2,1], which is the same as the initial array.
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* Seperate the odd, even numbers index into different arrays and sort them based on condition ascending and descending. 
+```python
+class Solution:
+    def sortEvenOdd(self, nums: List[int]) -> List[int]:
+        oddSort = []
+        evenSort = []
+        result = []
+
+        for i in range(len(nums)):
+            if i % 2:
+                oddSort.append(nums[i])
+            else:
+                evenSort.append(nums[i])
+        
+        oddSort.sort(reverse=True)
+        evenSort.sort()
+
+        for i in range(len(oddSort)):
+            result.append(evenSort[i])
+            result.append(oddSort[i])
+        
+        if len(result) == len(nums):
+            return result 
+        else:
+            result.append(evenSort[-1])
+
+        return result
+```
+
+# Optimal Solution
+```python
+class Solution:
+    def sortEvenOdd(self, nums: List[int]) -> List[int]:
+        # Extract even-indexed and odd-indexed elements
+        evens = sorted(nums[::2])                      # ascending
+        odds  = sorted(nums[1::2], reverse=True)       # descending
+
+        # Allocate result array of the same length
+        res = [None] * len(nums)
+        # Place sorted values back into even and odd positions
+        res[::2] = evens
+        res[1::2] = odds
+
+        return res
+```
