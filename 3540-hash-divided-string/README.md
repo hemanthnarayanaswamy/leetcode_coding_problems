@@ -50,3 +50,35 @@
 	<li><code>s.length</code> is divisible by <code>k</code>.</li>
 	<li><code>s</code> consists only of lowercase English letters.</li>
 </ul>
+
+# Solution 
+* Simple solution don't complicated it 
+
+```python 
+class Solution:
+    def stringHash(self, s: str, k: int) -> str:
+        res = []
+        lowerAscii = 97
+
+        for i in range(0, len(s), k):
+            tmp = 0
+            for j in range(i, i+k):
+                tmp += (ord(s[j]) - lowerAscii)
+            
+            tmp = (tmp % 26) + lowerAscii
+            
+            res.append(chr(tmp))
+        
+        return ''.join(res)
+```
+
+# Optimal Solution
+```python
+class Solution:
+    def stringHash(self, s: str, k: int) -> str:
+        ords = [ord(i)-97 for i in s]
+        res = ""
+        for i in range(0, len(ords), k):
+            res+= chr((sum(ords[i:i+k])%26)+97)
+        return (res)
+```
