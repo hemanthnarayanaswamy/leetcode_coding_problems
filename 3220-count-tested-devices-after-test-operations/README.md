@@ -50,3 +50,42 @@ So, the answer is 2.
 	<li><code>1 &lt;= n == batteryPercentages.length &lt;= 100 </code></li>
 	<li><code>0 &lt;= batteryPercentages[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* One variable to store the testedDevices count and other variable to store how much to decrement the battery of the next `j` battery Percentage. 
+* For each itration check if the there is any decreasedBattery need to perform on the iteration if yes then decrement it and check if its greater then zero 
+* Then incement the tested devices and incement the decresedBattery number also.
+
+
+```python
+class Solution:
+    def countTestedDevices(self, batteryPercentages: List[int]) -> int:
+        testedDevice = 0
+        decreasedBattery = 0
+
+        for b in batteryPercentages:
+            if decreasedBattery:
+                b = b - decreasedBattery 
+            
+            if b > 0:
+                testedDevice += 1
+                decreasedBattery += 1
+        
+        return testedDevice
+```
+
+# Optimal Solution
+* We observed that decreasedBattery always equals testedDevice, so we just track one counter, tested_count, and compare directly.
+
+```python
+class Solution:
+    def countTestedDevices(self, battery_percentages: List[int]) -> int:
+        tested_count = 0
+        for battery in battery_percentages:
+            # after testing tested_count devices, each remaining device has
+            # “lost” tested_count% battery, so we can test this one iff
+            # battery – tested_count > 0 ⇔ battery > tested_count
+            if battery > tested_count:
+                tested_count += 1
+        return tested_count
+```
