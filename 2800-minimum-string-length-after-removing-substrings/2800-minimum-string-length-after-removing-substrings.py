@@ -1,7 +1,7 @@
 class Solution:
     def minLength(self, s: str) -> int:
         stack = []
-        removeCond = ('AB', 'CD')
+        removeCond = ('AB', 'CD') #Set for lookup condition
 
         for char in s:
             if stack and stack[-1] + char in removeCond:
