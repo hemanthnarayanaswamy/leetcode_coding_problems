@@ -4,11 +4,8 @@ class Solution:
         removeCond = ('AB', 'CD')
 
         for char in s:
-            if stack:
-                if stack[-1] + char in removeCond:
+            if stack and stack[-1] + char in removeCond:
                     stack.pop()
-                else:
-                    stack.append(char)
             else:
                 stack.append(char)
         
