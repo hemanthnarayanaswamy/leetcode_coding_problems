@@ -38,3 +38,42 @@ So the answer is [1,3].
 	<li><code>3 &lt;= mountain.length &lt;= 100</code></li>
 	<li><code>1 &lt;= mountain[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* Simple Problem not need to complicated it 
+
+```python
+class Solution:
+    def findPeaks(self, mountain: List[int]) -> List[int]:
+        peaks = []
+
+        for i in range(1, len(mountain)-1):
+            p, c, n = mountain[i-1], mountain[i], mountain[i+1]
+
+            if c > p and c > n:
+                peaks.append(i)
+        
+        return peaks
+```
+
+# Solution 
+* We can use while loop to perform the operation and incement the i by 2 as the next one will not be a peak. 
+
+```python
+class Solution:
+    def findPeaks(self, mountain: List[int]) -> List[int]:
+        peaks = []
+
+        i = 1
+
+        while i < len(mountain) - 1:
+            p, c, n = mountain[i-1], mountain[i], mountain[i+1]
+
+            if c > p and c > n:
+                peaks.append(i)
+                i += 2
+            else:
+                i += 1
+        
+        return peaks
+```
