@@ -44,3 +44,32 @@ There are no more stars, so we return &quot;lecoe&quot;.</pre>
 	<li><code>s</code> consists of lowercase English letters and stars <code>*</code>.</li>
 	<li>The operation above can be performed on <code>s</code>.</li>
 </ul>
+
+# Solution 
+* Simple Stack problem and no complications 
+
+```python
+class Solution:
+    def removeStars(self, s: str) -> str:
+        stack = []
+
+        for c in s:
+            if c == '*':
+                stack.pop()
+            else:
+                stack.append(c)
+        
+        return ''.join(stack)
+```
+
+```python
+class Solution:
+    def removeStars(self, s: str) -> str:
+        stack = []
+        for char in s:
+            if char is '*':
+                stack.pop()
+            else:
+                stack.append(char)
+        return ''.join(stack)
+```
