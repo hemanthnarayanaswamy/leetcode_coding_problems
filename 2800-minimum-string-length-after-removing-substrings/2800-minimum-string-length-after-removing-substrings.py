@@ -1,11 +1,11 @@
 class Solution:
     def minLength(self, s: str) -> int:
         stack = []
+        removeCond = ('AB', 'CD')
 
         for char in s:
             if stack:
-                tmp = stack[-1] + char
-                if tmp == 'AB' or tmp == 'CD':
+                if stack[-1] + char in removeCond:
                     stack.pop()
                 else:
                     stack.append(char)
