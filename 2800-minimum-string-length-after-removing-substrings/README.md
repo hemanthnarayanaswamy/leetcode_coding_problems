@@ -34,3 +34,54 @@ It can be shown that it is the minimum length that we can obtain.</pre>
 	<li><code>1 &lt;= s.length &lt;= 100</code></li>
 	<li><code>s</code>&nbsp;consists only of uppercase English letters.</li>
 </ul>
+
+# Solution 
+* Simple stack problem 
+
+```python
+class Solution:
+    def minLength(self, s: str) -> int:
+        stack = []
+
+        for char in s:
+            if stack:
+                tmp = stack[-1] + char
+                if tmp == 'AB' or tmp == 'CD':
+                    stack.pop()
+                else:
+                    stack.append(char)
+            else:
+                stack.append(char)
+        
+        return len(stack)
+```
+
+# Improved Solution
+```python
+class Solution:
+    def minLength(self, s: str) -> int:
+        stack = []
+        removeCond = {'AB', 'CD'} #Set for lookup condition
+
+        for char in s:
+            if stack and stack[-1] + char in removeCond:
+                    stack.pop()
+            else:
+                stack.append(char)
+        
+        return len(stack)
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def minLength(self, s: str) -> int:
+        
+        while 1:
+            if 'AB' not in s and 'CD' not in s:
+                break
+            s=s.replace('AB','')
+            s=s.replace('CD','')
+            
+        return len(s)
+```
