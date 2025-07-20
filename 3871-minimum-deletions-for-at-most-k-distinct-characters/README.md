@@ -62,3 +62,23 @@
 </ul>
 
 <p> </p>
+
+# Solution 
+* We need to do a minimum delection of the characters i.e we need to delete characters that have lower frequency to reduce the number of delection 
+* First compute the frequency of values of the characters only values are needed as that count will give the total unique characters. 
+* Then we sort the values arr in reverser order that way first K char index will have the maximum frequency and the latter character will have lower freq that needs to be delected.
+* Now to find the number to character to be deleted, We need to find the sum of values anything after the index `i = k` because til k will be required distinct characters and any characters after that needs to be deleted. 
+
+```python
+class Solution:
+    def minDeletion(self, s: str, k: int) -> int:
+        sFreq = sorted(Counter(s).values(), reverse=True)
+        
+        return sum(sFreq[k::])
+```
+
+```python
+class Solution:
+    def minDeletion(self, s: str, k: int) -> int:
+        return sum(sorted(Counter(s).values())[:-k])
+```
