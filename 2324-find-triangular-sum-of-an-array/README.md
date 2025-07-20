@@ -35,3 +35,31 @@ Since there is only one element in nums, the triangular sum is the value of that
 	<li><code>1 &lt;= nums.length &lt;= 1000</code></li>
 	<li><code>0 &lt;= nums[i] &lt;= 9</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def triangularSum(self, nums: List[int]) -> int:
+        while len(nums) > 1:
+            nums = [(a + b) % 10 for a, b in zip(nums, nums[1:])]
+        return nums[0]
+```
+
+# Optimal Solution 
+* Each number in the array contributes to the final sum a certain number of times. We can visualize how to figure out factors for each number using Pascal's triangle:
+
+```ini 
+For test case [1, 2, 3, 4, 5], we will get 1 * 1 + 2 * 4 + 3 * 6 + 4 * 4 + 5 * 1 = 1 + 8 + 18 + 16 + 5 = 48, or 8 after modulo 10.
+
+The bottom row of Pascal's triangle are binomial coefficients, which can be computed as nCr(n - 1, i)
+```
+
+```python
+class Solution:
+    def triangularSum(self, nums: List[int]) -> int:
+        res, nCr, n = 0, 1, len(nums) - 1
+        for r, num in enumerate(nums):
+            res = (res + num  * nCr) % 10
+            nCr = nCr * (n - r) // (r + 1)
+        return res
+```
