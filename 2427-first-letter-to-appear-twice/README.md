@@ -38,3 +38,17 @@ The only letter that appears twice is &#39;d&#39; so we return &#39;d&#39;.
 	<li><code>s</code> consists of lowercase English letters.</li>
 	<li><code>s</code> has at least one repeated letter.</li>
 </ul>
+
+# Solution 
+* Very simple problem 
+```python
+class Solution:
+    def repeatedCharacter(self, s: str) -> str:
+        seen = set()
+
+        for c in s:
+            if c in seen: 
+                return c
+            else:
+                seen.add(c)
+```
