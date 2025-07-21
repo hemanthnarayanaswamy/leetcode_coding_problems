@@ -29,3 +29,29 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+# Solution 
+* First convert the number into binary and check if `11 or 00` exists in that converted string. 
+
+```python
+class Solution:
+    def hasAlternatingBits(self, n: int) -> bool:
+        binaryVal = bin(n)
+
+        return False if '00' in binaryVal or '11' in binaryVal else True
+```
+# Optimal Solution 
+* Use bit manipulation 
+
+```ini
+If the bits alternate, then
+
+n    = b_k b_{k-1} … b_1 b_0
+n>>1 = 0  b_k   b_{k-1} … b_1
+
+XOR’ing those gives all 1’s:
+x = n ^ (n >> 1) = 111…111₂
+And any number of the form 111…111₂ satisfies x & (x+1) == 0.
+```
+
+
