@@ -457,6 +457,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0979-di-string-match](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0979-di-string-match) |
 | [1026-string-without-aaa-or-bbb](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1026-string-without-aaa-or-bbb) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
+| [1156-occurrences-after-bigram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1156-occurrences-after-bigram) |
 | [1205-defanging-an-ip-address](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1205-defanging-an-ip-address) |
 | [1264-maximum-number-of-words-you-can-type](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1264-maximum-number-of-words-you-can-type) |
 | [1283-reformat-date](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1283-reformat-date) |
