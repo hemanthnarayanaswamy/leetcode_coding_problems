@@ -21,3 +21,22 @@
 	<li><code>first</code> and <code>second</code> consist of lowercase English letters.</li>
 	<li><code>text</code> will not have any leading or trailing spaces.</li>
 </ul>
+
+# Optimal Solution 
+* Clean and simple solution, split the string and use 2 variables to track the first and second things, and keep moving them. 
+
+```python
+class Solution:
+    def findOcurrences(self, text: str, first: str, second: str) -> List[str]:
+        textLst = text.split()
+        a, b = textLst[0], textLst[1]
+        res = []
+
+        for word in textLst[2::]:
+            if a == first and b == second:
+                res.append(word)
+            
+            a, b = b, word
+        
+        return res
+```
