@@ -912,6 +912,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0389-find-the-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0389-find-the-difference) |
 | [0461-hamming-distance](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0461-hamming-distance) |
 | [0476-number-complement](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0476-number-complement) |
+| [0693-binary-number-with-alternating-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0693-binary-number-with-alternating-bits) |
 | [1054-complement-of-base-10-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1054-complement-of-base-10-integer) |
 | [1444-number-of-steps-to-reduce-a-number-to-zero](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1444-number-of-steps-to-reduce-a-number-to-zero) |
 | [1610-xor-operation-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1610-xor-operation-in-an-array) |
