@@ -1,8 +1,9 @@
 class Solution:
     def returnToBoundaryCount(self, nums: List[int]) -> int:
-        ans = []
+        ans = 0
         prefix = 0
         for num in nums:
             prefix+=num
-            ans.append(prefix)
-        return ans.count(0)
+            if prefix == 0:
+                ans+=1
+        return ans
