@@ -28,3 +28,56 @@
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+<img width="726" height="789" alt="image" src="https://github.com/user-attachments/assets/13221d9c-08ab-4b50-ad61-b7c01c618709" />
+
+# Solution 
+```ini 
+Say, nums = [4,2,4,5,6]
+
+Start with left = 0, right = 0, window is [4]
+
+seen = {4}, currentSum = 4
+
+right = 1, window becomes [4,2]
+
+No duplicate → update sum → currentSum = 6, seen = {2,4}
+
+right = 2, element is 4 (duplicate!)
+
+Slide left to remove the first 4 → window becomes [2,4]
+
+Continue expanding → [2,4,5], then [2,4,5,6]
+
+This is the best subarray with sum = 17
+
+The sliding window automatically adjusts, ensuring:
+
+Only unique values stay in the window
+
+Sum is updated dynamically
+```
+---
+
+```python
+class Solution:
+    def maximumUniqueSubarray(self, nums: List[int]) -> int:
+        maxSum = 0
+        left = 0
+        currentSum = 0
+        seen = set()
+
+        for right in range(len(nums)):
+            num = nums[right]
+            while num in seen:
+                numx = nums[left]
+                seen.remove(numx)
+                currentSum -= numx
+                left += 1
+            
+            currentSum += num
+            seen.add(num)
+            maxSum = max(maxSum, currentSum)
+        
+        return maxSum
+```
