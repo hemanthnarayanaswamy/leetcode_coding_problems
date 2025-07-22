@@ -48,3 +48,41 @@ The ant never returned to the boundary, so the answer is 0.
 	<li><code>-10 &lt;= nums[i] &lt;= 10</code></li>
 	<li><code>nums[i] != 0</code></li>
 </ul>
+
+# Solution 
+* We compute the prefix sum.
+
+* When there is a zero in the prefix sum, that means the ant is back on the boundary.
+
+* Thus, we count and return the number of zeros in the prefix sum.
+```python
+class Solution:
+    def returnToBoundaryCount(self, nums: List[int]) -> int:
+        ans = 0
+
+        prefix = 0
+        for num in nums:
+            prefix+=num
+            if prefix == 0:
+                ans+=1
+        return ans
+```
+
+# Optimal Solution 
+* The `accumulate()` method in Python is part of the itertools module and is used for performing cumulative operations on iterables. It returns an iterator that yields the accumulated results of a binary operation applied to the elements of the input iterable.
+```python
+import itertools
+import operator
+
+numbers = [1, 2, 3, 4, 5]
+
+# Cumulative sum (default behavior)
+cumulative_sum = list(itertools.accumulate(numbers))
+print(f"Cumulative Sum: {cumulative_sum}")  # Output: [1, 3, 6, 10, 15]
+```
+
+```python
+class Solution:
+    def returnToBoundaryCount(self, nums: List[int]) -> int:
+        return sum(n == 0 for n in accumulate(nums))
+```
