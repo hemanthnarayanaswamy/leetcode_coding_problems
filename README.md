@@ -185,6 +185,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [1791-richest-customer-wealth](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1791-richest-customer-wealth) |
+| [1813-maximum-erasure-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1813-maximum-erasure-value) |
 | [1829-maximum-units-on-a-truck](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1829-maximum-units-on-a-truck) |
 | [1833-find-the-highest-altitude](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1833-find-the-highest-altitude) |
 | [1843-number-of-rectangles-that-can-form-the-largest-square](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1843-number-of-rectangles-that-can-form-the-largest-square) |
@@ -354,6 +355,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
 | [1752-arithmetic-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1752-arithmetic-subarrays) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
+| [1813-maximum-erasure-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1813-maximum-erasure-value) |
 | [1848-sum-of-unique-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1848-sum-of-unique-elements) |
 | [1904-second-largest-digit-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1904-second-largest-digit-in-a-string) |
 | [1933-number-of-different-integers-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1933-number-of-different-integers-in-a-string) |
@@ -941,6 +943,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0643-maximum-average-subarray-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0643-maximum-average-subarray-i) |
 | [1430-find-the-k-beauty-of-a-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1430-find-the-k-beauty-of-a-number) |
 | [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
+| [1813-maximum-erasure-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1813-maximum-erasure-value) |
 | [1987-substrings-of-size-three-with-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1987-substrings-of-size-three-with-distinct-characters) |
 | [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
