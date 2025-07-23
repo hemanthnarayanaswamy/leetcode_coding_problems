@@ -12,4 +12,5 @@ class Solution:
                 else:
                     res[i] += candies
                     return res
+        return res
                     
