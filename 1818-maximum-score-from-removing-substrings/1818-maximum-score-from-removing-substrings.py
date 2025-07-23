@@ -1,44 +1,26 @@
+from typing import List
+
 class Solution:
     def maximumGain(self, s: str, x: int, y: int) -> int:
-        def removeab(tmpLst):
-            tmpScore = 0
+        # generic “remove all occurrences of XY in one pass, scoring score_per_pair”
+        def remove_pairs(seq: List[str], X: str, Y: str, score_per_pair: int):
             stack = []
-            for char in tmpLst:
-                if stack and char == 'b':
-                    if stack[-1] + char == 'ab':
-                        tmpScore += x
-                        stack.pop()
-                    else:
-                        stack.append(char)
+            total = 0
+            for c in seq:
+                if c == Y and stack and stack[-1] == X:
+                    stack.pop()
+                    total += score_per_pair
                 else:
-                    stack.append(char)
+                    stack.append(c)
+            # return both your score and the leftovers (to feed into the next remover)
+            return total, stack
 
-            return tmpScore, stack
-
-        def removeba(tmpLst): 
-            tmpScore = 0
-            stack = []
-            for char in tmpLst:
-                if stack and char == 'a':
-                    if stack[-1] + char == 'ba':
-                        tmpScore += y
-                        stack.pop()
-                    else:
-                        stack.append(char)
-                else:
-                    stack.append(char)
-            
-            return tmpScore, stack
-        
-        tmpLst = s
-
-        if x > y:
-            s1, tmpLst = removeab(tmpLst)
-            s2, tmpLst = removeba(tmpLst)
+        # decide which pair to rip out first
+        if x >= y:
+            gain1, rem = remove_pairs(list(s), 'a', 'b', x)
+            gain2, _   = remove_pairs(rem, 'b', 'a', y)
         else:
-            s1, tmpLst = removeba(tmpLst)
-            s2, tmpLst = removeab(tmpLst)
-        
-        return s1+s2
-    
-        
+            gain1, rem = remove_pairs(list(s), 'b', 'a', y)
+            gain2, _   = remove_pairs(rem, 'a', 'b', x)
+
+        return gain1 + gain2
