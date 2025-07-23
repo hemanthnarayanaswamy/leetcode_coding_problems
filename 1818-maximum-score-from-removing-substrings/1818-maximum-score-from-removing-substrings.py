@@ -1,5 +1,3 @@
-from typing import List
-
 class Solution:
     def maximumGain(self, s: str, x: int, y: int) -> int:
         # generic “remove all occurrences of XY in one pass, scoring score_per_pair”
