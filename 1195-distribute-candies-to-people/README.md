@@ -40,3 +40,41 @@ On the fourth turn, ans[0] += 4, and the final array is [5,2,3].
 	<li>1 &lt;= candies &lt;= 10^9</li>
 	<li>1 &lt;= num_people &lt;= 1000</li>
 </ul>
+
+# Solution 
+* Slightly a bit tricky problem.
+
+```python
+class Solution:
+    def distributeCandies(self, candies: int, num_people: int) -> List[int]:
+        res = [0] * num_people
+        counter = 1
+
+        while candies:
+            for i in range(num_people):
+                if counter <= candies:
+                    res[i] += counter
+                    candies -= counter
+                    counter += 1
+                else:
+                    res[i] += candies
+                    return res
+        return res
+```
+
+# Improved 
+ ```python
+ class Solution:
+    def distributeCandies(self, candies: int, num_people: int) -> List[int]:
+        res = [0] * num_people
+        counter = 1
+
+        while candies > 0:
+            for i in range(num_people):
+                if candies > 0:
+                    res[i] += min(counter, candies)
+                    candies -= counter
+                    counter += 1 
+
+        return res
+```
