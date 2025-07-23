@@ -486,6 +486,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1797-goal-parser-interpretation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1797-goal-parser-interpretation) |
 | [1807-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1807-partitioning-into-minimum-number-of-deci-binary-numbers) |
+| [1818-maximum-score-from-removing-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1818-maximum-score-from-removing-substrings) |
 | [1823-determine-if-string-halves-are-alike](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1823-determine-if-string-halves-are-alike) |
 | [1850-minimum-length-of-string-after-deleting-similar-ends](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1850-minimum-length-of-string-after-deleting-similar-ends) |
 | [1894-merge-strings-alternately](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1894-merge-strings-alternately) |
@@ -845,6 +846,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1666-make-the-string-great](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1666-make-the-string-great) |
+| [1818-maximum-score-from-removing-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2128-reverse-prefix-of-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2128-reverse-prefix-of-word) |
 | [2470-removing-stars-from-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2470-removing-stars-from-a-string) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2800-minimum-string-length-after-removing-substrings) |
@@ -867,6 +869,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1604-least-number-of-unique-integers-after-k-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1604-least-number-of-unique-integers-after-k-removals) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [1807-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1807-partitioning-into-minimum-number-of-deci-binary-numbers) |
+| [1818-maximum-score-from-removing-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1818-maximum-score-from-removing-substrings) |
 | [1829-maximum-units-on-a-truck](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1829-maximum-units-on-a-truck) |
 | [1938-minimum-operations-to-make-the-array-increasing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1938-minimum-operations-to-make-the-array-increasing) |
 | [1961-maximum-ice-cream-bars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1961-maximum-ice-cream-bars) |
