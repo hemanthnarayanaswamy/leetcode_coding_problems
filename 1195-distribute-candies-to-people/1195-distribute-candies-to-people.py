@@ -12,6 +12,4 @@ class Solution:
                 else:
                     res[i] += candies
                     return res
-
-            print(res, counter, candies)
                     
