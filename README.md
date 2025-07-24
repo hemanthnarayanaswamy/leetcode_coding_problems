@@ -456,6 +456,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0824-number-of-lines-to-write-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0824-number-of-lines-to-write-string) |
 | [0829-subdomain-visit-count](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0829-subdomain-visit-count) |
 | [0841-shortest-distance-to-a-character](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0841-shortest-distance-to-a-character) |
+| [0851-goat-latin](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0851-goat-latin) |
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0953-reverse-only-letters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0953-reverse-only-letters) |
