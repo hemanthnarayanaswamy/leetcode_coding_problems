@@ -1,11 +1,10 @@
 class Solution:
     def canMakeArithmeticProgression(self, arr: List[int]) -> bool:
-        arrSorted = sorted(arr)
+        arr.sort()
+        seen = arr[1] - arr[0]
 
-        diffval = arrSorted[1] - arrSorted[0]
-
-        for i in range(2, len(arrSorted)):
-            if arrSorted[i] - arrSorted[i-1] != diffval:
+        for i in range(2, len(arr)):
+            if arr[i] - arr[i-1] != seen:
                 return False
         
         return True
