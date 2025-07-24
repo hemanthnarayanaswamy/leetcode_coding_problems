@@ -42,3 +42,48 @@
 <ul>
 	<li><code>10 &lt;= num &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Solution 
+* Sort the digits of num in non decreasing order.
+* Assign digits to num1 and num2 alternatively.
+
+```ini
+Explanation
+Sort all digits,
+and we can split digits alternatively into two numbers.
+
+For example we have 123456,
+so we can split digits alternatively into 135 and 246.
+
+For example we have 1234567,
+so we can split digits alternatively into 1357 and 246.
+```
+
+```python
+class Solution:
+    def splitNum(self, num: int) -> int:
+        num1 = []
+        num2 = []
+
+        num = sorted(str(num))
+
+        for i in range(len(num)):
+            if i % 2:
+                num2.append(num[i])
+            else:
+                num1.append(num[i])
+        
+        num1 = int(''.join(num1))
+        num2 = int(''.join(num2))
+
+        return num1 + num2
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def splitNum(self, num: int) -> int:
+        s = ''.join(sorted(str(num)))
+
+        return int(s[::2]) + int(s[1::2])
+```
