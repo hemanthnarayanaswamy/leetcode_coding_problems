@@ -32,3 +32,38 @@
 	<li><code>3 &lt;= nums.length &lt;= 100</code></li>
 	<li><code><font face="monospace">-100 &lt;= nums[i] &lt;= 100</font></code></li>
 </ul>
+
+# Solution 
+* Approach is simple but with alot of edge cases to solve. 
+* Use the sliding window to check all triplets. 
+
+1. sum of first and last should be exactly exactly equal to half of second element. 
+2. Exactly means no roundoff nothing including the decimal values it should be equal for to avoid that check `2(x+z) == y` instead to avoid using float. 
+
+```python
+class Solution:
+    def countSubarrays(self, nums: List[int]) -> int:
+        count = 0
+        for i in range(len(nums)-2):
+            x,y,z = nums[i], nums[i+1], nums[i+2]
+
+            if 2 * (x + z) == y:
+                count += 1
+        
+        return count
+```
+This checks if the middle element is the average of the first and third (i.e., y == (x + z) / 2). Using integer arithmetic avoids floating-point issues.
+
+```python
+class Solution:
+    def countSubarrays(self, nums: List[int]) -> int:
+        count=0
+        for i in range(len(nums)-2):
+            a=nums[i]
+            b=nums[i+1]
+            c=nums[i+2]
+            if b%2==0 and a+c==b//2:
+                count+=1
+        return count
+```
+
