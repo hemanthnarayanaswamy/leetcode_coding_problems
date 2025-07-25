@@ -4,7 +4,7 @@ class Solution:
         for i in range(len(nums)-2):
             x,y,z = nums[i], nums[i+1], nums[i+2]
 
-            if float(x + z) == float(y/2):
+            if 2 * (x + z) == y:
                 count += 1
         
         return count
