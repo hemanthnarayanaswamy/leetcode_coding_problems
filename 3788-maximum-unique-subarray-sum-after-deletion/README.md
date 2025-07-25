@@ -53,3 +53,32 @@
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>-100 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* We need to handle the negative numbers properly, to get the maximum sum of elements in array we need to remove the negative elements and duplicate elements. and return the sum 
+* Now what if all the elements are negative numbers in the array, Then we need to check the maximum element in the array to see if it is greater then zero if it is not then `If the maximum element in the array is less than zero, the answer is the maximum element.`
+
+```python
+class Solution:
+    def maxSum(self, nums: List[int]) -> int:
+        uniqNum = set()
+        maxNum = max(nums)
+        if max(nums) > 0:
+            for num in nums:
+                if num > 0 and num not in uniqNum:
+                    uniqNum.add(num)
+        else:
+            return maxNum
+
+        return sum(uniqNum)
+```
+
+# Optimal Solution 
+```python
+def maxSum(nums):
+    maxNum = max(nums)
+    if maxNum > 0:
+        return sum({num for num in nums if num > 0})
+    else:
+        return maxNum
+```
