@@ -1,10 +1,12 @@
 class Solution:
     def countSubarrays(self, nums: List[int]) -> int:
-        count = 0
+        count=0
         for i in range(len(nums)-2):
-            x,y,z = nums[i], nums[i+1], nums[i+2]
-
-            if 2 * (x + z) == y:
-                count += 1
-        
+            a=nums[i]
+            b=nums[i+1]
+            c=nums[i+2]
+            if b%2==0 and a+c==b//2:
+                count+=1
         return count
+        
+        
