@@ -4,8 +4,6 @@ class Solution:
             return "Flush"
 
         maxKind = max(Counter(ranks).values())
-        print(maxKind)
-        print(Counter(ranks).values())
 
         if maxKind > 2:
             return "Three of a Kind"
