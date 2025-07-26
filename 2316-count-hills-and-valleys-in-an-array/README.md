@@ -42,3 +42,73 @@ There are 0 hills and valleys so we return 0.
 	<li><code>3 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Approach 
+```ini 
+The key hint of this problem is to remove the consecutive repeating elm not all. And then you will able to solve it very easily..
+[5, 7, 7, 1, 7] -> [5, 7,1, 7]
+```
+
+# Solution 
+```python
+class Solution:
+    def countHillValley(self, nums: List[int]) -> int:
+        numsU = []
+        ans = 0
+
+        for i in range(len(nums)):
+            if i == 0 or i == len(nums)-1:
+                numsU.append(nums[i])
+            elif nums[i] !=  nums[i-1]:
+                numsU.append(nums[i])
+
+        for i in range(1, len(numsU)-1):
+            p, c, n = numsU[i-1], numsU[i], numsU[i+1]
+
+            if c > p and c > n:
+                ans += 1
+            elif c < p and c < n:
+                ans += 1
+        
+        return ans
+```
+---
+# Optimal Solution 
+```python
+class Solution:
+    def countHillValley(self, nums: List[int]) -> int:
+        have = []
+        for num in nums:
+            if have and have[-1] == num: continue
+            have.append(num)
+
+        res = 0
+        for i in range(1, len(have)- 1):
+            if (
+                have[i-1] < have[i] > have[i+1] or
+                have[i-1] > have[i] < have[i+1]
+            ):
+                res += 1
+        return res
+```
+
+## Improved Solution 
+```python
+class Solution:
+    def countHillValley(self, nums: List[int]) -> int:
+        numsU = []
+        ans = 0
+
+        for i in range(len(nums)):
+            if numsU and numsU[-1] == nums[i]:
+                continue
+            numsU.append(nums[i])
+
+        for i in range(1, len(numsU)-1):
+            p, c, n = numsU[i-1], numsU[i], numsU[i+1]
+
+            if p < c > n or p > c < n:
+                ans += 1
+        
+        return ans
+```
