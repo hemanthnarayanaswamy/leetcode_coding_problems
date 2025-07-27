@@ -1,10 +1,17 @@
+from typing import List
+
 class Solution:
     def findSpecialInteger(self, arr: List[int]) -> int:
-        maxLen = len(arr) // 4
+        n = len(arr)
+        threshold = n // 4
 
-        arrFreq = Counter(arr)
-
-        for num, count in arrFreq.items():
-            if count > maxLen:
-                return num 
+        count = 1
+        for i in range(1, n):
+            if arr[i] == arr[i-1]:
+                count += 1
+                if count > threshold:
+                    return arr[i]
+            else:
+                count = 1
         
+        return arr[0]
