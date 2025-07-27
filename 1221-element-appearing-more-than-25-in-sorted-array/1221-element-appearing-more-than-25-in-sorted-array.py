@@ -1,6 +1,6 @@
 class Solution:
     def findSpecialInteger(self, arr: List[int]) -> int:
-        maxLen = 0.25 * len(arr)
+        maxLen = len(arr) // 4
 
         arrFreq = Counter(arr)
 
