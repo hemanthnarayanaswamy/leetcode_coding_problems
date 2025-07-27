@@ -22,3 +22,46 @@
 	<li><code>1 &lt;= arr.length &lt;= 10<sup>4</sup></code></li>
 	<li><code>0 &lt;= arr[i] &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+# Solution 
+* Use HashMap and see if the values count is more then the 0.25 of the lenght of the array.
+
+```python
+class Solution:
+    def findSpecialInteger(self, arr: List[int]) -> int:
+        maxLen = 0.25 * len(arr)
+
+        arrFreq = Counter(arr)
+
+        for num, count in arrFreq.items():
+            if count > maxLen:
+                return num 
+```
+
+# Optimal Solution
+```python
+class Solution:
+    def findSpecialInteger(self, arr: List[int]) -> int:
+        n = len(arr)
+        threshold = n // 4
+
+        count = 1
+        for i in range(1, n):
+            if arr[i] == arr[i-1]:
+                count += 1
+                if count > threshold:
+                    return arr[i]
+            else:
+                count = 1
+        
+        return arr[0]
+```
+
+```python 
+class Solution:
+    def findSpecialInteger(self, arr: List[int]) -> int:
+        size = len(arr) // 4
+        for i in range(len(arr) - size):
+            if arr[i] == arr[i + size]:
+                return arr[i]
+```
