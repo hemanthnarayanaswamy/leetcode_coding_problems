@@ -5,10 +5,9 @@ class Solution:
         res = []
 
         for i in range(1, lastElement+1):
-            if i in targetSet:
-                res.append('Push')
-            else:
-                res.append('Push')
+            res.append('Push')
+
+            if i not in targetSet:
                 res.append('Pop')
         
         return res
