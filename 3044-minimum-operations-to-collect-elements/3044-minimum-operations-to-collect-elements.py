@@ -7,4 +7,3 @@ class Solution:
             idx.append(numsMap[i])
         
         return len(nums) - min(idx)
-            
