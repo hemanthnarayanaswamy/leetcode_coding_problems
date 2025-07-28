@@ -64,3 +64,62 @@ The answers that read integer 3 from the stream are not accepted.
 	<li><code>1 &lt;= target[i] &lt;= n</code></li>
 	<li><code>target</code> is strictly increasing.</li>
 </ul>
+
+# Solution 
+* Convert to arr to set for lookup, here the logic is we need to do the iteration from `1, maxTarget` because the last element should be the max element as only the elements inside the target will be used, and the for loop will automatically stop. 
+
+* The numbers that we push to the stack are ordered from 1 to n. Each number is available only once, so if we pop a number from the stack, that number is permanently gone. This means we want to pop every number that does not appear in target and should never pop any number that does appear in target
+* We stop once the stack is equal to target and we are allowed to return any valid answer.
+* So we only use iteration from `1, max_element_target`
+
+```python
+class Solution:
+    def buildArray(self, target: List[int], n: int) -> List[str]:
+        targetSet = set(target)
+        lastElement = max(target)
+        res = []
+
+        for i in range(1, lastElement+1):
+            res.append('Push')
+
+            if i not in targetSet:
+                res.append('Pop')
+        
+        return res
+```
+
+# Optimal Solution
+* Use `target[-1]` instead of `max(target)`: Since the target array is guaranteed to be sorted in the problem constraints, target[-1] is O(1) while max(target) is `O(n)`.
+
+```python
+class Solution:
+    def buildArray(self, target: List[int], n: int) -> List[str]:
+        target_set = set(target)
+        result = []
+        
+        for i in range(1, target[-1] + 1):
+            result.append("Push")
+            
+            if i not in target_set:
+                result.append("Pop")
+        
+        return result
+```
+---
+
+```python
+class Solution:
+    def buildArray(self, target: List[int], n: int) -> List[str]:
+        result = []
+        target_index = 0
+        
+        for i in range(1, target[-1] + 1):
+            result.append("Push")
+            
+            if target_index < len(target) and i == target[target_index]:
+                target_index += 1
+            else:
+                result.append("Pop")
+        
+        return result
+```
