@@ -5,10 +5,9 @@ class Solution:
 
         while ti < len(t):
             if s[si] == t[ti]:
-                si += 1
                 ti += 1
-            else:
-                si += 1
+                
+            si += 1
             
             if si == len(s):
                 return len(t[ti:])
