@@ -1,11 +1,10 @@
 class Solution:
     def minSteps(self, s: str, t: str) -> int:
-        operations = 0
-        sFreq = Counter(s)
-        tFreq = Counter(t)
+        res = 0
+        counter_s = Counter(s)
+        counter_t = Counter(t)
+        chars = "qwertyuiopasdfghjklzxcvbnm"
 
-        for i in range(97, 123):
-            c = chr(i)
-            operations += abs(sFreq.get(c, 0) - tFreq.get(c, 0))
-        
-        return operations
+        for char in chars:
+            res += abs(counter_s[char] - counter_t[char])
+        return res
