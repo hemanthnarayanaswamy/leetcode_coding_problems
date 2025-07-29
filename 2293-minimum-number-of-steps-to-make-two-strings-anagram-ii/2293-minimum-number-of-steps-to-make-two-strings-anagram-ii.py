@@ -4,16 +4,13 @@ class Solution:
         sFreq = Counter(s)
         tFreq = Counter(t)
 
-        for c in sFreq:
-            if sFreq[c] < tFreq.get(c, 0):
-                operations += tFreq.get(c, 0) - sFreq[c]
-            elif c not in tFreq:
+        for i in range(97, 123):
+            c = chr(i)
+            if c in sFreq and c not in tFreq:
                 operations += sFreq[c]
-        
-        for c in tFreq:
-            if tFreq[c] < sFreq.get(c, 0):
-                operations += sFreq.get(c, 0) - tFreq[c]
-            elif c not in sFreq:
+            elif c in tFreq and c not in sFreq:
                 operations += tFreq[c]
-
+            else:
+                operations += abs(sFreq.get(c, 0) - tFreq.get(c, 0))
+        
         return operations
