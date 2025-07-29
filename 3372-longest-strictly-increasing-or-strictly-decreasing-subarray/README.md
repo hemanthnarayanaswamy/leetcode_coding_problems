@@ -56,3 +56,53 @@
 	<li><code>1 &lt;= nums.length &lt;= 50</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 50</code></li>
 </ul>
+
+# Solution
+* When elements are in decreasing order (nums[i-1] > nums[i]), the code increments res_inc but resets res_dec. 
+* Similarly, when elements are in increasing order (nums[i-1] < nums[i]), the code increments res_dec but resets res_inc. 
+* For each iteration it gathers the maximum result values.
+```python
+def longestMonotonicSubarray(self, nums: List[int]) -> int:
+    if not nums:
+        return 0
+        
+    res, res_inc, res_dec = 1, 1, 1
+
+    for i in range(1, len(nums)):
+        if nums[i-1] > nums[i]:  # Decreasing sequence
+            res_dec += 1
+            res_inc = 1
+        elif nums[i-1] < nums[i]:  # Increasing sequence
+            res_inc += 1
+            res_dec = 1
+        else:  # Equal elements
+            # For a strictly monotonic definition, reset both
+            # For non-strict monotonic, you would increment both
+            res_dec = 1
+            res_inc = 1
+        
+        res = max(res, res_dec, res_inc)
+    
+    return res
+```
+
+# Optimal Solution
+```python
+class Solution:
+    def longestMonotonicSubarray(self, nums: List[int]) -> int:
+        result, currinc, currdec, prev = 0, 0, 0, nums[0]
+        for num in nums:
+            if num > prev:
+                currinc += 1
+            else:
+                currinc = 1
+            
+            if num < prev:
+                currdec += 1
+            else:
+                currdec = 1
+            
+            result = max(result, currinc, currdec)
+            prev = num
+        return result
+```
