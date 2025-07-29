@@ -2,7 +2,7 @@ class Solution:
     def appendCharacters(self, s: str, t: str) -> int:
         si, ti = 0, 0
 
-        if s == t:
+        if s == t or not t:
             return 0
         
         while si < len(s) and ti < len(t):
