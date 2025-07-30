@@ -52,3 +52,114 @@ It can be shown that index 4 is the minimum index of a valid split.</pre>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 	<li><code>nums</code> has exactly one dominant element.</li>
 </ul>
+
+# Solution 
+* Find the dominant element and its frequency. 
+* Then in a single iterations if the current element is x increment the count and check if the count if dominant i.e greater then half the len of current subarray and the frequency - count is greater or equal in the other half of half the sub array lenght. 
+* Then return the i. 
+
+
+```python
+class Solution:
+    def minimumIndex(self, nums: List[int]) -> int:
+        numsFreq = Counter(nums)
+        n = len(nums)
+        f = -1
+        x = 0
+        count = 0
+
+        for k, v in numsFreq.items():
+            if v > f:
+                f = v
+                x = k
+        
+        for i in range(n-1):
+            if nums[i] == x:
+                count += 1
+                if count > (i+1)//2 and f - count >= (n - i + 1)//2:
+                    return i
+            
+        return -1
+```
+
+## Summary
+Step 1: Identify the dominant element (appearing > n/2 times).
+Step 2: Iterate through the array to check possible valid split points.
+Step 3: Return the first index that satisfies both left and right partition conditions.
+* Time Complexity: ( O(n) )
+* Space Complexity: ( O(n) )
+
+```python
+def minimumIndex(nums):
+    from collections import Counter
+
+    freq = Counter(nums)
+    n = len(nums)
+    dom, count = 0, 0
+
+    for num, c in freq.items():
+        if c > n // 2:
+            dom, count = num, c
+            break
+
+    left_count = 0
+    for i in range(n - 1):
+        if nums[i] == dom:
+            left_count += 1
+        left_size = i + 1
+        right_size = n - left_size
+        right_count = count - left_count
+
+        if left_count > left_size // 2 and right_count > right_size // 2:
+            return i
+
+    return -1
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def minimumIndex(self, nums: List[int]) -> int:
+
+        count, n, val = 0, len(nums), nums[0]
+        
+        for num in nums :
+            if val == num : count += 1
+            else : count -= 1
+            if count <= 0: count, val = 1, num
+        
+        if count <= 1 : return -1
+        
+        count = 0
+        for num in nums:
+            if val == num : count += 1
+        if not ( count > ( n + 1 ) // 2 ): return -1
+
+        count = 0
+        for i in range(n):
+            if val == nums[i] : count += 1
+            if count > ((i + 1) // 2 ) and i != n-1: return i
+        
+        return -1
+```
+
+```python
+class Solution:
+    def minimumIndex(self, nums: List[int]) -> int:
+        n = len(nums)
+        counter = Counter(nums)
+        dominant, dominantCount = -1, 0
+        for num, count in counter.items():
+            if count > dominantCount:
+                dominantCount = count
+                dominant = num
+
+        leftDominantCount = 0
+        for i in range(0, n - 1):
+            if nums[i] == dominant:
+                leftDominantCount += 1
+            if leftDominantCount > (i + 1) // 2:
+                return i if (dominantCount - leftDominantCount) > (n - i - 1) // 2 else -1
+
+        return -1
+```
