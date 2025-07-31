@@ -3,15 +3,22 @@ class Solution:
         numsFreq = Counter(nums)
         count = 0
 
-        for s in set(nums):
-            if target.startswith(s):
-                if target[len(s):] in numsFreq:
-                    n = numsFreq.get(target[len(s):])
-                    x = numsFreq.get(s)
-                    if s != target[len(s):]:
-                        count += n * x
+        for prefix in set(nums):
+            np = len(prefix)
+            if np >= len(target):
+                continue
+
+            if target.startswith(prefix):
+                suffix = target[np:]
+
+                if suffix in numsFreq:
+                    y = numsFreq[suffix]
+                    x = numsFreq[prefix]
+
+                    if prefix != suffix:
+                        count += y * x
                     else: 
-                        count += n * (n-1)
+                        count += x * (x - 1)
                     
         return count
                     
