@@ -3,11 +3,11 @@ class Solution:
         players.sort()
         trainers.sort()
 
-        p = t = 0
+        p, n = 0, len(players)
 
-        while p < len(players) and t < len(trainers):
-            if players[p] <= trainers[t]:
+        for trainer in trainers:
+            if trainer >= players[p]:
                 p += 1
-            t += 1      
-
-        return p          
+                if p == n: break
+                
+        return p
