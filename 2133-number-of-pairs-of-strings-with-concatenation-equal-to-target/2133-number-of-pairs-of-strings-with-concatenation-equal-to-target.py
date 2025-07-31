@@ -1,10 +1,19 @@
 class Solution:
     def numOfPairs(self, nums: List[str], target: str) -> int:
+        numsFreq = Counter(nums)
         count = 0
-        
-        for i in range(len(nums)):
-            for j in range(len(nums)):
-                if i != j and nums[i] + nums[j] == target:
-                    count += 1
-        
-        return count 
+
+        for s in set(nums):
+            if target.startswith(s):
+                if target[len(s):] in numsFreq:
+                    n = numsFreq.get(target[len(s):])
+                    x = numsFreq.get(s)
+                    if s != target[len(s):]:
+                        count += n * x
+                    else: 
+                        count += n * (n-1)
+                    
+        return count
+                    
+
+
