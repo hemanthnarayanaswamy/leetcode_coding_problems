@@ -8,7 +8,8 @@ class Solution:
             if ch == pre:
                 count += 1
             else:
-                res = max(res, count)
+                if count > res:
+                    res = count
                 count = 1
                 pre = ch
         
