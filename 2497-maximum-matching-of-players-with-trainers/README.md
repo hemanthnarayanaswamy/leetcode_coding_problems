@@ -37,3 +37,41 @@ Each player can only be matched with one trainer, so the maximum answer is 1.
 
 <p>&nbsp;</p>
 <p><strong>Note:</strong> This question is the same as <a href="https://leetcode.com/problems/assign-cookies/description/" target="_blank"> 445: Assign Cookies.</a></p>
+
+# Solution 
+* Sort the players and the trianers, and do a loop to match if the player with the trainer.
+* If a match is found move the player and trainer pointers if not only move the trainer pointer. 
+* Return the player pointer as the result. 
+
+```python
+class Solution:
+    def matchPlayersAndTrainers(self, players: List[int], trainers: List[int]) -> int:
+        players.sort()
+        trainers.sort()
+
+        p = t = 0
+
+        while p < len(players) and t < len(trainers):
+            if players[p] <= trainers[t]:
+                p += 1
+            t += 1      
+
+        return p          
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def matchPlayersAndTrainers(self, players: List[int], trainers: List[int]) -> int:
+        players.sort()
+        trainers.sort()
+
+        p, n = 0, len(players)
+
+        for trainer in trainers:
+            if trainer >= players[p]:
+                p += 1
+                if p == n: break
+                
+        return p
+```
