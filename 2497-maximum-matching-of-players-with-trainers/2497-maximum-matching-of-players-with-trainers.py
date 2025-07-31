@@ -3,8 +3,7 @@ class Solution:
         players.sort()
         trainers.sort()
 
-
-        p, t = 0, 0
+        p = t = 0
 
         while p < len(players) and t < len(trainers):
             if players[p] <= trainers[t]:
