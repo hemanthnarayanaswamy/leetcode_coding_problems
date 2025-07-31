@@ -26,3 +26,37 @@
 	<li><code>1 &lt;= s.length &lt;= 500</code></li>
 	<li><code>s</code> consists of only lowercase English letters.</li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def maxPower(self, s: str) -> int:
+        max_power = current_power = 1
+        
+        for i in range(1, len(s)):
+            if s[i] == s[i-1]:
+                current_power += 1
+            else:
+                max_power = max(max_power, current_power)
+                current_power = 1
+        
+        return max(max_power, current_power)
+```
+
+# Improved Solution 
+```python
+class Solution:
+    def maxPower(self, s: str) -> int:
+        res = 0
+        cur = 0
+        curr_c = None
+        for c in s:
+            if c != curr_c:
+                curr_c = c
+                cur = 1
+            else:
+                cur += 1
+            if cur > res:
+                res = cur
+        return res
+```
