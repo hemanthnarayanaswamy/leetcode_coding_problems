@@ -249,6 +249,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [2476-check-distances-between-same-letters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2476-check-distances-between-same-letters) |
 | [2486-most-frequent-even-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2486-most-frequent-even-element) |
+| [2497-maximum-matching-of-players-with-trainers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2502-sort-the-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2502-sort-the-people) |
 | [2524-largest-positive-integer-that-exists-with-its-negative](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2524-largest-positive-integer-that-exists-with-its-negative) |
 | [2525-count-number-of-distinct-integers-after-reverse-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2525-count-number-of-distinct-integers-after-reverse-operations) |
@@ -697,6 +698,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2271-rearrange-array-elements-by-sign](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2320-find-all-k-distant-indices-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2320-find-all-k-distant-indices-in-an-array) |
 | [2481-strictly-palindromic-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2481-strictly-palindromic-number) |
+| [2497-maximum-matching-of-players-with-trainers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2524-largest-positive-integer-that-exists-with-its-negative](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2524-largest-positive-integer-that-exists-with-its-negative) |
 | [2551-apply-operations-to-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2551-apply-operations-to-an-array) |
 | [2561-number-of-distinct-averages](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2561-number-of-distinct-averages) |
@@ -778,6 +780,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2331-intersection-of-multiple-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2331-intersection-of-multiple-arrays) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2447-merge-similar-items](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2447-merge-similar-items) |
+| [2497-maximum-matching-of-players-with-trainers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2502-sort-the-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2502-sort-the-people) |
 | [2524-largest-positive-integer-that-exists-with-its-negative](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2524-largest-positive-integer-that-exists-with-its-negative) |
 | [2561-number-of-distinct-averages](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2561-number-of-distinct-averages) |
@@ -915,6 +918,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2345-minimum-number-of-operations-to-convert-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2345-minimum-number-of-operations-to-convert-time) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2487-optimal-partition-of-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2487-optimal-partition-of-string) |
+| [2497-maximum-matching-of-players-with-trainers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2572-append-characters-to-string-to-make-subsequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2572-append-characters-to-string-to-make-subsequence) |
 | [2650-split-with-minimum-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2650-split-with-minimum-sum) |
 | [2756-buy-two-chocolates](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2756-buy-two-chocolates) |
