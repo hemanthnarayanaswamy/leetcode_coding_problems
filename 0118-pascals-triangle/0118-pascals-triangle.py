@@ -1,16 +1,15 @@
-class Solution(object):
-    def generate(self, numRows):
-        """
-        :type numRows: int
-        :rtype: List[List[int]]
-        """
-        result = [[1],]
+class Solution:
+    def generate(self, numRows: int) -> List[List[int]]:
+        res = [[1],]
 
-        for row in range(numRows-1): ## because we have already filled one row 
-            temp = [0] + result[-1] + [0]
-            row = []
-            for i in range(len(result[-1]) + 1):
-                row.append(temp[i]+ temp[i+1])
-            result.append(row)
-        return result
+        for i in range(2, numRows+1):
+            ref = [0] + res[-1] + [0]
+            tmp = []
+
+            for j in range(len(ref)-1):
+                tmp.append(ref[j]+ref[j+1])
+            
+            res.append(tmp)
+
+        return res
         
