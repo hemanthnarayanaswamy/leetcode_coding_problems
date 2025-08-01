@@ -61,3 +61,58 @@ result.append(row) ## once the iteration of that row is complete add that row to
             result.append(row)
         return result
    ```
+
+   # Pascal's Triangle - Quick Notes
+
+"""
+PROBLEM: Generate the first numRows of Pascal's triangle
+
+PASCAL'S TRIANGLE PATTERN:
+Row 0:     1
+Row 1:    1 1
+Row 2:   1 2 1
+Row 3:  1 3 3 1
+Row 4: 1 4 6 4 1
+
+KEY INSIGHTS:
+1. Each row starts and ends with 1
+2. Each interior element = sum of two elements above it
+3. Row i has (i+1) elements
+4. Current[j] = Previous[j-1] + Previous[j]
+
+ALGORITHM:
+1. Start with first row: [[1]]
+2. For each new row:
+   - Pad previous row with zeros: [0] + prev_row + [0]
+   - Sum adjacent pairs to get new row
+   - Add new row to result
+
+EDGE CASES:
+- numRows = 0: return []
+- numRows = 1: return [[1]]
+
+TIME: O(numRows²) - we generate numRows rows, each taking O(row_length) time
+SPACE: O(numRows²) - storing the entire triangle
+"""
+
+```python
+class Solution:
+    def generate(self, numRows: int) -> List[List[int]]:
+        if numRows == 0:
+            return []
+        if numRows == 1:
+            return [[1]]
+        
+        res = [[1], [1, 1]]
+
+        for _ in range(2, numRows):
+            pre_row = [0] + res[-1] + [0]
+            tmp = []
+
+            for j in range(len(pre_row)-1):
+                tmp.append(pre_row[j]+pre_row[j+1])
+            
+            res.append(tmp)
+
+        return res
+```
