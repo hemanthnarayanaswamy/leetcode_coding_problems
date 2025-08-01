@@ -40,3 +40,103 @@ The odd array out is [1, 1], so we return the corresponding string, &quot;abc&qu
 	<li><code>2 &lt;= n &lt;= 20</code></li>
 	<li><code>words[i]</code> consists of lowercase English letters.</li>
 </ul>
+
+# Solution 
+* In Python, tuples can be used as keys in dictionaries, while lists cannot, due to a fundamental difference in their mutability and hashability.
+```python
+# Valid: Tuple as a dictionary key
+my_dict = {(1, 2): 'value1', ('a', 'b'): 'value2'}
+print(my_dict[(1, 2)])
+
+# Invalid: List as a dictionary key (will raise a TypeError)
+# my_dict_invalid = {[1, 2]: 'value'}
+```
+```python
+class Solution:
+    def oddString(self, words: List[str]) -> str:
+        def get_difference_array(word):
+            return tuple(ord(word[i]) - ord(word[i-1]) for i in range(1, len(word)))
+        
+        diff_map = {}
+        
+        for word in words:
+            diff = get_difference_array(word)
+            if diff in diff_map:
+                diff_map[diff].append(word)
+            else:
+                diff_map[diff] = [word]
+        
+        for words_list in diff_map.values():
+            if len(words_list) == 1:
+                return words_list[0]
+```
+
+# Improved Solution 
+```python
+class Solution:
+    def oddString(self, words: List[str]) -> str:
+        def get_difference_array(word):
+            return tuple(ord(word[i]) - ord(word[i-1]) for i in range(1, len(word)))
+        
+        diff_map = {}
+        
+        for word in words:
+            diff = get_difference_array(word)
+            if diff in diff_map:
+                diff_map[diff].append(word)
+            else:
+                diff_map[diff] = [word]
+        
+        for words_list in diff_map.values():
+            if len(words_list) == 1:
+                return words_list[0]
+```
+
+# Optimal Solution 
+```python
+from collections import defaultdict
+
+class Solution:
+    def oddString(self, words: List[str]) -> str:
+        diff_count = defaultdict(list)
+        
+        for word in words:
+            diff = tuple(ord(word[i]) - ord(word[i-1]) for i in range(1, len(word)))
+            diff_count[diff].append(word)
+        
+        return next(words[0] for words in diff_count.values() if len(words) == 1)
+```
+
+"""
+PROBLEM: Find the string with unique difference array among given words
+
+DIFFERENCE ARRAY:
+For word "abc": [ord('b')-ord('a'), ord('c')-ord('b')] = [1, 1]
+For word "bcd": [ord('c')-ord('b'), ord('d')-ord('c')] = [1, 1]
+For word "xyz": [ord('y')-ord('x'), ord('z')-ord('y')] = [1, 1]
+
+KEY INSIGHTS:
+1. Calculate difference array for each word: diff[i] = word[i+1] - word[i]
+2. Most words will have same difference pattern
+3. Exactly one word will have different pattern
+4. Use ord() to get ASCII values instead of hardcoded mapping
+
+ALGORITHM APPROACHES:
+
+APPROACH 1 - Hash Map (Your approach):
+1. Store difference arrays as keys, words as values
+2. Find the key with only one word
+TIME: O(n*m) where n=words, m=word_length
+
+APPROACH 2 - Early Exit (Optimal):
+1. Check first 3 words to determine common pattern
+2. If diffs[0] == diffs[1]: pattern = diffs[0], check if word[2] is odd
+3. If diffs[0] == diffs[2]: pattern = diffs[0], return word[1]
+4. Else: return word[0]
+5. Check remaining words against pattern
+TIME: O(m) best case, O(n*m) worst case
+
+EDGE CASES:
+- All words same length (guaranteed by problem)
+- Exactly one word has different pattern (guaranteed)
+"""
