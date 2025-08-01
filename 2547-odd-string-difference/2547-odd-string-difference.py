@@ -1,17 +1,11 @@
 class Solution:
     def oddString(self, words: List[str]) -> str:
-        def get_difference_array(word):
-            return tuple(ord(word[i]) - ord(word[i-1]) for i in range(1, len(word)))
+        from collections import defaultdict
         
-        diff_map = {}
+        diff_count = defaultdict(list)
         
         for word in words:
-            diff = get_difference_array(word)
-            if diff in diff_map:
-                diff_map[diff].append(word)
-            else:
-                diff_map[diff] = [word]
+            diff = tuple(ord(word[i]) - ord(word[i-1]) for i in range(1, len(word)))
+            diff_count[diff].append(word)
         
-        for words_list in diff_map.values():
-            if len(words_list) == 1:
-                return words_list[0]
+        return next(words[0] for words in diff_count.values() if len(words) == 1)
