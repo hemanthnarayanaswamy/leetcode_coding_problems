@@ -1,18 +1,8 @@
 class Solution:
     def minSubsequence(self, nums: List[int]) -> List[int]:
-        totalsum = sum(nums)
         nums.sort(reverse=True)
-        res = []
-        tmp = 0
 
-        for n in nums:
-            tmp += n 
-            if tmp <= totalsum - n:
-                res.append(n)
-                totalsum -= n
-            else:
-                res.append(n)
-                return res
-        
-        return res
+        for i in range(len(nums)):
+            if sum(nums[:i+1]) > sum(nums[i+1:]):
+                return nums[:i+1]
             
