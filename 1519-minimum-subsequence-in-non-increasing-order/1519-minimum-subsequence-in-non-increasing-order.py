@@ -1,15 +1,18 @@
 class Solution:
     def minSubsequence(self, nums: List[int]) -> List[int]:
         nums.sort(reverse=True)
-        totalSum = sum(nums)
-        currentSum = 0
+        total = sum(nums)
 
-        for i in range(len(nums)):
-            if currentSum > totalSum:
-                return nums[:i]
-            else:
-                totalSum -= nums[i]
-                currentSum += nums[i]
-        
-        return nums
+        subseq = []
+        subseq_sum = 0
+
+        for x in nums:
+            subseq_sum += x      
+            total -= x         
+            subseq.append(x)
+
+            if subseq_sum > total:
+                break
+
+        return subseq
 
