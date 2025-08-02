@@ -28,3 +28,23 @@
 	<li>All the integers in <code>nums</code> are <strong>unique</strong>.</li>
 	<li><code>nums</code> is sorted in ascending order.</li>
 </ul>
+
+# Solution 
+* Binary Search 
+
+```python
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        n = len(nums) - 1
+        start = 0
+        last = n
+        while(start<=last):
+            mid = (start + last)//2
+            if target < nums[mid]:
+                last = mid-1
+            elif target > nums[mid]:
+                start = mid+1
+            else:
+                return mid
+        return -1     
+```
