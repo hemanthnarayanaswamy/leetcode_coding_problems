@@ -28,3 +28,86 @@
 	<li><code>1 &lt;= nums.length &lt;= 500</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def minSubsequence(self, nums: List[int]) -> List[int]:
+        totalsum = sum(nums)
+        nums.sort(reverse=True)
+        res = []
+        tmp = 0
+
+        for n in nums:
+            tmp += n 
+            if tmp <= totalsum - n:
+                res.append(n)
+                totalsum -= n
+            else:
+                res.append(n)
+                return res
+        
+        return res
+```
+
+```python
+class Solution:
+    def minSubsequence(self, nums: List[int]) -> List[int]:
+        nums.sort(reverse=True)
+
+        for i in range(len(nums)):
+            if sum(nums[:i+1]) > sum(nums[i+1:]):
+                return nums[:i+1]
+```
+
+# Improved Solution 
+```python
+class Solution:
+    def minSubsequence(self, nums: List[int]) -> List[int]:
+        nums.sort(reverse=True)
+        totalSum = sum(nums)
+        currentSum = 0
+
+        for i in range(len(nums)):
+            if currentSum > totalSum:
+                return nums[:i]
+            else:
+                totalSum -= nums[i]
+                currentSum += nums[i]
+        
+        return nums
+```
+
+```python
+class Solution:
+    def minSubsequence(self, nums: List[int]) -> List[int]:
+        nums.sort(reverse=True)
+        total = sum(nums)
+
+        subseq = []
+        subseq_sum = 0
+
+        for x in nums:
+            subseq_sum += x      
+            total -= x         
+            subseq.append(x)
+
+            if subseq_sum > total:
+                break
+
+        return subseq
+```
+
+# Optimal Solution
+```python
+class Solution:
+    def minSubsequence(self, nums: List[int]) -> List[int]:
+        nums.sort()
+        totalSum, curr, res, p = sum(nums), 0, [], -1
+        while curr <= totalSum:
+            res += [nums[p]]
+            curr += nums[p]
+            totalSum -= nums[p]
+            p -= 1
+        return res
+```
