@@ -173,6 +173,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1519-minimum-subsequence-in-non-increasing-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1519-minimum-subsequence-in-non-increasing-order) |
 | [1524-string-matching-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1524-string-matching-in-an-array) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1528-kids-with-the-greatest-number-of-candies) |
+| [1548-check-if-all-1s-are-at-least-length-k-places-away](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1548-check-if-all-1s-are-at-least-length-k-places-away) |
 | [1552-build-an-array-with-stack-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1552-build-an-array-with-stack-operations) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1560-number-of-students-doing-homework-at-a-given-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1560-number-of-students-doing-homework-at-a-given-time) |
