@@ -19,7 +19,6 @@ class Solution:
                     myCounter[10] = myCounter.get(10) + 1
             else:
                 myCounter[5] = myCounter.get(5) + 1
-            print(myCounter, cash)
 
         return True
 
