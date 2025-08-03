@@ -38,3 +38,53 @@ target = 2 has the maximum number of occurrences following an occurrence of key,
 	<li><code>1 &lt;= nums[i] &lt;= 1000</code></li>
 	<li>The test cases will be generated such that the answer is unique.</li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def mostFrequent(self, nums: List[int], key: int) -> int:
+        count = {}
+        n = len(nums)
+
+        for i in range(n - 1):
+            x = nums[i]
+            if x == key:
+                y = nums[i+1]
+                count[y] = count.get(y, 0) + 1
+        
+        num, freq = 0, 0
+
+        for k, v in count.items():
+            if v > freq:
+                num = k
+                freq = v
+
+        return num
+```
+
+# Improved Solution
+```python
+class Solution:
+    def mostFrequent(self, nums: List[int], key: int) -> int:
+        freq = {}
+        for a, b in zip(nums, nums[1:]):
+            if a == key:
+                freq[b] = freq.get(b, 0) + 1
+        
+        return max(freq, key=freq.get)
+```
+
+```python
+class Solution:
+    def mostFrequent(self, nums: List[int], key: int) -> int:
+        counts = {}
+
+        for i in range(len(nums) - 1):
+            if nums[i] == key:
+                if counts.get(nums[i + 1]):
+                    counts[nums[i + 1]] += 1
+                else:
+                    counts[nums[i + 1]] = 1
+                    
+        return max(counts, key=counts.get)
+```
