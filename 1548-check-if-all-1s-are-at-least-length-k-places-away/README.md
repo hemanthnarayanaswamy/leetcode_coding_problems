@@ -25,3 +25,50 @@
 	<li><code>0 &lt;= k &lt;= nums.length</code></li>
 	<li><code>nums[i]</code> is <code>0</code> or <code>1</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def kLengthApart(self, nums: List[int], k: int) -> bool:
+        tmp = []
+
+        for i, v in enumerate(nums):
+            if v == 1:
+                tmp.append(i)
+        
+        for j in range(1, len(tmp)):
+            if tmp[j] - tmp[j-1] - 1 < k:
+                return False
+        
+        return True
+```
+
+```python
+class Solution:
+    def kLengthApart(self, nums: List[int], k: int) -> bool:
+        pre = -k - 1    
+
+        for i, v in enumerate(nums):
+            if v == 1:
+                if i - pre - 1 < k:
+                    return False 
+                pre = i
+        
+        return True
+```
+
+# Optimal Solution
+```python
+class Solution:
+    def kLengthApart(self, nums: List[int], k: int) -> bool:
+        count = k
+        for n in nums:
+            if n == 1:
+                if count < k:
+                    return False
+                count = 0
+            else:
+                count += 1
+        
+        return True
+```
