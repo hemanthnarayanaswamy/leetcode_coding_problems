@@ -42,3 +42,68 @@ Now s has no occurrences of &quot;xy&quot;.
 	<li><code>1 &lt;= part.length &lt;= 1000</code></li>
 	<li><code>s</code>​​​​​​ and <code>part</code> consists of lowercase English letters.</li>
 </ul>
+
+# Solution 
+* Need to Still learn alot and need to solve a lot of problems 
+```python
+class Solution:
+    def removeOccurrences(self, s: str, part: str) -> str:
+        while part in s:
+            s = s.replace(part, '', 1)
+        return s
+```
+
+```python
+class Solution:
+    def removeOccurrences(self, s: str, part: str) -> str:
+        while True:
+            idx = s.find(part) # Itreturns the start idx of the part work
+            if idx == -1: # If not part is found break the loop and return 
+                break
+            s = s[:idx] + s[idx+len(part):] # The new string is sting till start idx and remove the whole part string range and rest of the string
+        return s
+```
+
+## Wrong Solution and Approach
+```python
+def removeOccurrences(s, part):
+    stack = []
+    i = 0
+    while i <= len(s)-1:
+        print(stack)
+        if stack:
+            print(stack[-1]+s[i:i+len(part)-1], part)
+            if stack[-1]+s[i:i+len(part)-1] == part:
+                    stack.pop()
+                    i += len(part) - 1
+            else:
+                stack.append(s[i])
+                i += 1
+        else:
+            stack.append(s[i])
+            i += 1
+        print(i)
+
+    return ''.join(stack)
+```            
+* Take last character from stack + next len(part)-1 characters from string, it don't identify the part formed inside the stack. 
+* The pattern matching logic is fundamentally flawed - you're not checking if the last len(part) characters in the stack form the part
+
+## Improved Solution 
+```python
+class Solution:
+    def removeOccurrences(self, s: str, part: str) -> str:
+        stack = []
+        p = len(part)
+
+        for char in s:
+            stack.append(char)
+
+            if len(stack) >= p and ''.join(stack[-p:]) == part:
+                for _ in range(p):
+                    stack.pop()
+        
+        return ''.join(stack)
+```
+
+						
