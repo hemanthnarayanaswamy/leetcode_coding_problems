@@ -188,6 +188,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1651-shuffle-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1651-shuffle-string) |
 | [1677-matrix-diagonal-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1677-matrix-diagonal-sum) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
+| [1720-crawler-log-folder](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1720-crawler-log-folder) |
 | [1742-widest-vertical-area-between-two-points-containing-no-points](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1742-widest-vertical-area-between-two-points-containing-no-points) |
 | [1752-arithmetic-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1752-arithmetic-subarrays) |
 | [1781-check-if-two-string-arrays-are-equivalent](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1781-check-if-two-string-arrays-are-equivalent) |
@@ -517,6 +518,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1619-path-crossing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1619-path-crossing) |
 | [1651-shuffle-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1651-shuffle-string) |
 | [1666-make-the-string-great](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1666-make-the-string-great) |
+| [1720-crawler-log-folder](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1720-crawler-log-folder) |
 | [1781-check-if-two-string-arrays-are-equivalent](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1781-check-if-two-string-arrays-are-equivalent) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1797-goal-parser-interpretation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1797-goal-parser-interpretation) |
@@ -903,6 +905,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1552-build-an-array-with-stack-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1552-build-an-array-with-stack-operations) |
 | [1666-make-the-string-great](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1666-make-the-string-great) |
+| [1720-crawler-log-folder](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1720-crawler-log-folder) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2128-reverse-prefix-of-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2128-reverse-prefix-of-word) |
