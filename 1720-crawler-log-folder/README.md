@@ -51,3 +51,70 @@
 	<li><code>logs[i]</code> follows the format described in the statement.</li>
 	<li>Folder names consist of lowercase English letters and digits.</li>
 </ul>
+
+# Solution 
+"""
+PROBLEM: Calculate minimum operations to return to main folder
+- '../' = go to parent folder (up one level)
+- './' = stay in current folder (no change)
+- 'folder_name/' = go into folder (down one level)
+
+KEY INSIGHTS:
+1. We only need to track DEPTH, not actual folder names
+2. Can't go above main folder (depth < 0)
+3. This is essentially a parentheses matching problem
+4. Stack-like behavior but only need counter
+
+OPERATIONS:
+'../' → depth-- (but never below 0)
+'./' → no change
+'folder/' → depth++
+
+ALGORITHM:
+1. Initialize depth = 0 (main folder)
+2. For each operation:
+   - If '../': decrease depth (min 0)
+   - If './': ignore
+   - Else: increase depth (enter folder)
+3. Return final depth
+
+EDGE CASES:
+- Multiple '../' when already at main folder
+- Only './' operations
+- Empty logs array
+"""
+
+```python
+class Solution:
+    def minOperations(self, logs: List[str]) -> int:
+        count = 0
+
+        for dir in logs:
+            if dir == '../':
+                if count == 0:
+                    continue
+                else:
+                    count -= 1
+            elif dir == './':
+                continue
+            else:
+                count += 1
+        
+        return count
+```
+
+# Improved Solution
+
+```python
+class Solution:
+    def minOperations(self, logs: List[str]) -> int:
+        depth = 0
+
+        for dir in logs:
+            if dir == '../':
+                depth = max(0, depth-1)
+            elif dir != './':
+                depth += 1
+
+        return depth
+```
