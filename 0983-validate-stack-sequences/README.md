@@ -33,6 +33,7 @@ pop() -&gt; 5, pop() -&gt; 3, pop() -&gt; 2, pop() -&gt; 1
 </ul>
 
 # Solution 
+![visual](validate-stack-sequences.gif)
 ```python
 class Solution:
     def validateStackSequences(self, pushed: List[int], popped: List[int]) -> bool:
