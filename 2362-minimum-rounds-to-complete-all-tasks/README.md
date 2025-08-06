@@ -34,3 +34,75 @@ It can be shown that all the tasks cannot be completed in fewer than 4 rounds, s
 
 <p>&nbsp;</p>
 <p><strong>Note:</strong> This question is the same as <a href="https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty/description/" target="_blank">2870: Minimum Number of Operations to Make Array Empty.</a></p>
+
+# Solution 
+* https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty/
+* Refer to this problem
+```python
+class Solution:
+    def minimumRounds(self, tasks: List[int]) -> int:
+        tasksFreq = Counter(tasks)
+        count = 0
+
+        for v in tasksFreq.values():
+            if v == 1:
+                return -1 
+            
+            q = v // 3
+            r = v % 3
+
+            if r == 0:
+                count += q
+            else:
+                count += q + 1
+        
+        return count
+```
+
+"""
+KEY INSIGHTS:
+1. If any task count = 1 → impossible (-1)
+2. For count ≥ 2 → always possible
+3. Minimize rounds = use groups of 3 when possible
+
+MATHEMATICAL APPROACHES:
+
+METHOD 1 - Ceiling Formula:
+rounds = (count - 1) // 3 + 1
+
+val=2: (2-1)//3 + 1 = 0 + 1 = 1 round  ✅ (one group of 2)
+val=3: (3-1)//3 + 1 = 0 + 1 = 1 round  ✅ (one group of 3)  
+val=4: (4-1)//3 + 1 = 1 + 1 = 2 rounds ✅ (two groups of 2)
+val=5: (5-1)//3 + 1 = 1 + 1 = 2 rounds ✅ (one group of 3, one group of 2)
+val=6: (6-1)//3 + 1 = 1 + 1 = 2 rounds ✅ (two groups of 3)
+
+METHOD 2 - Division + Remainder:
+q, r = count // 3, count % 3
+rounds = q + (1 if r > 0 else 0)
+
+Both give same result!
+
+PATTERN FOR ANY COUNT:
+count % 3 == 0 → count/3 rounds (all groups of 3)
+count % 3 == 1 → count/3 rounds (convert 3+1 → 2+2)  
+count % 3 == 2 → count/3 + 1 rounds (groups of 3 + one group of 2)
+
+TIME: O(n) for counting + O(k) for processing = O(n)
+SPACE: O(k) where k = unique task types
+"""
+
+# Optimal Solution
+```python
+class Solution:
+    def minimumRounds(self, tasks: List[int]) -> int:
+        tasksFreq = Counter(tasks)
+        count = 0
+
+        for _, v in tasksFreq.items():
+            if v < 2:
+                return -1 
+            
+            count += (v - 1)//3 + 1
+
+        return count
+```
