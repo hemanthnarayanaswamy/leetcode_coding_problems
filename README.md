@@ -250,6 +250,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2324-find-triangular-sum-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2324-find-triangular-sum-of-an-array) |
 | [2331-intersection-of-multiple-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2331-intersection-of-multiple-arrays) |
 | [2341-count-prefixes-of-a-given-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2341-count-prefixes-of-a-given-string) |
+| [2362-minimum-rounds-to-complete-all-tasks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [2386-min-max-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2386-min-max-game) |
 | [2421-maximum-number-of-pairs-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2421-maximum-number-of-pairs-in-array) |
 | [2433-best-poker-hand](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2433-best-poker-hand) |
@@ -401,6 +402,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2308-divide-array-into-equal-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2308-divide-array-into-equal-pairs) |
 | [2312-most-frequent-number-following-key-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2312-most-frequent-number-following-key-in-an-array) |
 | [2331-intersection-of-multiple-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2331-intersection-of-multiple-arrays) |
+| [2362-minimum-rounds-to-complete-all-tasks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [2372-rearrange-characters-to-make-target-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2372-rearrange-characters-to-make-target-string) |
 | [2377-check-if-number-has-equal-digit-count-and-digit-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2377-check-if-number-has-equal-digit-count-and-digit-value) |
 | [2406-decode-the-message](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2406-decode-the-message) |
@@ -857,6 +859,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2308-divide-array-into-equal-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2308-divide-array-into-equal-pairs) |
 | [2312-most-frequent-number-following-key-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2312-most-frequent-number-following-key-in-an-array) |
 | [2331-intersection-of-multiple-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2331-intersection-of-multiple-arrays) |
+| [2362-minimum-rounds-to-complete-all-tasks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [2372-rearrange-characters-to-make-target-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2372-rearrange-characters-to-make-target-string) |
 | [2377-check-if-number-has-equal-digit-count-and-digit-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2377-check-if-number-has-equal-digit-count-and-digit-value) |
 | [2421-maximum-number-of-pairs-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2421-maximum-number-of-pairs-in-array) |
@@ -947,6 +950,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2199-two-furthest-houses-with-different-colors](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2199-two-furthest-houses-with-different-colors) |
 | [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
 | [2345-minimum-number-of-operations-to-convert-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2345-minimum-number-of-operations-to-convert-time) |
+| [2362-minimum-rounds-to-complete-all-tasks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2487-optimal-partition-of-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2487-optimal-partition-of-string) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2497-maximum-matching-of-players-with-trainers) |
