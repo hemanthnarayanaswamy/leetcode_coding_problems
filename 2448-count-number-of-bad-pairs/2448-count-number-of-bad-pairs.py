@@ -1,17 +1,12 @@
 class Solution:
     def countBadPairs(self, nums: List[int]) -> int:
         n = len(nums)
-        totalPairs_count = n*(n-1) // 2
-        goodPairsFreq = {}
-        goodPair_count = 0
-
-        for i, num in enumerate(nums):
-            x = num - i
-            goodPairsFreq[x] = goodPairsFreq.get(x, 0) + 1
+        total_pairs = n * (n - 1) // 2
         
-        for _, v in goodPairsFreq.items():
-            if v > 1:
-                goodPair_count += v * (v-1) // 2
-
-        return totalPairs_count - goodPair_count
+        diff_freq = Counter(num - i for i, num in enumerate(nums))
         
+        good_pairs = sum(freq * (freq - 1) // 2 
+                        for freq in diff_freq.values() 
+                        if freq > 1)
+        
+        return total_pairs - good_pairs
