@@ -31,3 +31,52 @@ There are a total of 5 bad pairs, so we return 5.
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def countBadPairs(self, nums: List[int]) -> int:
+        n = len(nums)
+        totalPairs_count = n*(n-1) // 2
+        goodPairsFreq = {}
+        goodPair_count = 0
+
+        for i, num in enumerate(nums):
+            x = num - i
+            goodPairsFreq[x] = goodPairsFreq.get(x, 0) + 1
+        
+        for _, v in goodPairsFreq.items():
+            if v > 1:
+                goodPair_count += v * (v-1) // 2
+
+        return totalPairs_count - goodPair_count
+```
+
+* Question Approach -> j - i != nums[j] - nums[i] ==> j - nums[j] != i - nums[i]
+```ini
+Bad pairs = Total Pairs - Good Pairs
+where Total Pairs = n*(n-1)/2
+Good Pairs = Calculated using HashMap
+```
+* Using Dictionaries find frequency of (i-nums[i]) , for all the value in map > 1 , find number of good pairs
+(if map value > 1) sum +=(value)*(value-1)/2
+
+`Return Bad pairs = n*(n-1)/2-sum`
+
+# Optimal Solution 
+```python
+class Solution:
+    def countBadPairs(self, nums: List[int]) -> int:
+        n = len(nums)
+        total_pairs = n * (n - 1) // 2
+        
+        # Count frequency of (nums[i] - i) values
+        diff_freq = Counter(num - i for i, num in enumerate(nums))
+        
+        # Count good pairs
+        good_pairs = sum(freq * (freq - 1) // 2 
+                        for freq in diff_freq.values() 
+                        if freq > 1)
+        
+        return total_pairs - good_pairs
+```
