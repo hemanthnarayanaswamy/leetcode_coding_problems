@@ -52,6 +52,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2298-count-integers-with-even-digit-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2298-count-integers-with-even-digit-sum) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2324-find-triangular-sum-of-an-array) |
 | [2383-add-two-integers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2383-add-two-integers) |
+| [2448-count-number-of-bad-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2448-count-number-of-bad-pairs) |
 | [2481-strictly-palindromic-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2481-strictly-palindromic-number) |
 | [2491-smallest-even-multiple](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2491-smallest-even-multiple) |
 | [2525-count-number-of-distinct-integers-after-reverse-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2525-count-number-of-distinct-integers-after-reverse-operations) |
@@ -257,6 +258,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2433-best-poker-hand](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2433-best-poker-hand) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2447-merge-similar-items](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2447-merge-similar-items) |
+| [2448-count-number-of-bad-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2448-count-number-of-bad-pairs) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [2476-check-distances-between-same-letters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2476-check-distances-between-same-letters) |
 | [2486-most-frequent-even-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2486-most-frequent-even-element) |
@@ -412,6 +414,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2433-best-poker-hand](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2433-best-poker-hand) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2447-merge-similar-items](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2447-merge-similar-items) |
+| [2448-count-number-of-bad-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2448-count-number-of-bad-pairs) |
 | [2476-check-distances-between-same-letters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2476-check-distances-between-same-letters) |
 | [2486-most-frequent-even-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2486-most-frequent-even-element) |
 | [2487-optimal-partition-of-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2487-optimal-partition-of-string) |
@@ -867,6 +870,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2421-maximum-number-of-pairs-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2421-maximum-number-of-pairs-in-array) |
 | [2427-first-letter-to-appear-twice](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2427-first-letter-to-appear-twice) |
 | [2433-best-poker-hand](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2433-best-poker-hand) |
+| [2448-count-number-of-bad-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2448-count-number-of-bad-pairs) |
 | [2486-most-frequent-even-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2486-most-frequent-even-element) |
 | [2525-count-number-of-distinct-integers-after-reverse-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2525-count-number-of-distinct-integers-after-reverse-operations) |
 | [2532-remove-letter-to-equalize-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2532-remove-letter-to-equalize-frequency) |
