@@ -473,6 +473,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0383-ransom-note](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0383-ransom-note) |
 | [0389-find-the-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0389-find-the-difference) |
 | [0392-is-subsequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0392-is-subsequence) |
+| [0402-remove-k-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0402-remove-k-digits) |
 | [0412-fizz-buzz](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0412-fizz-buzz) |
 | [0415-add-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0415-add-strings) |
 | [0434-number-of-segments-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0434-number-of-segments-in-a-string) |
@@ -908,6 +909,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0232-implement-queue-using-stacks) |
+| [0402-remove-k-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0402-remove-k-digits) |
 | [0682-baseball-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0682-baseball-game) |
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
 | [0983-validate-stack-sequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0983-validate-stack-sequences) |
@@ -926,6 +928,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0011-container-with-most-water) |
+| [0402-remove-k-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0402-remove-k-digits) |
 | [0455-assign-cookies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0455-assign-cookies) |
 | [0561-array-partition](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0561-array-partition) |
 | [0680-valid-palindrome-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0680-valid-palindrome-ii) |
@@ -1140,4 +1143,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [2324-find-triangular-sum-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2324-find-triangular-sum-of-an-array) |
 | [3768-check-if-digits-are-equal-in-string-after-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3768-check-if-digits-are-equal-in-string-after-operations-i) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0402-remove-k-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0402-remove-k-digits) |
 <!---LeetCode Topics End-->
