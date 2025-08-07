@@ -10,7 +10,8 @@ class Solution:
             goodPairsFreq[x] = goodPairsFreq.get(x, 0) + 1
         
         for _, v in goodPairsFreq.items():
-            goodPair_count += v * (v-1) // 2
+            if v > 1:
+                goodPair_count += v * (v-1) // 2
 
         return totalPairs_count - goodPair_count
         
