@@ -38,3 +38,34 @@ You can rotate the array by x = 0 positions (i.e. no rotation) to make nums.
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* use `i+1 % n` to continue with circular indexing and not get the out of range Error. 
+* Use a Flag to check at which point the array was rotated at that point `num[i] > num[i+1]` if after setting the flag if this condition arise again return False.
+
+```python
+class Solution:
+    def check(self, nums: List[int]) -> bool:
+        n = len(nums)
+        rotated = False 
+
+        for i in range(n):
+            if nums[i] > nums[(i+1)%n]:
+                if rotated:
+                    return False
+                else: 
+                    rotated = True
+        
+        return True
+```
+# Optimal Solution 
+```python
+class Solution:
+    def check(self, nums: List[int]) -> bool:
+        c=0
+        for i in range(len(nums)):
+            if nums[i]>nums[(i+1)%len(nums)]:
+                c+=1
+
+        return c<=1
+```
