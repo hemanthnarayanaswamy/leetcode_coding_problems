@@ -26,3 +26,46 @@
 	<li><code>1 &lt;= s.length &lt;= 2000</code></li>
 	<li><code>s</code> consists of lowercase <strong>and/or</strong> uppercase English&nbsp;letters only.</li>
 </ul>
+
+# Solution 
+* No need to build the palindrome, We ONLY NEED TO DETERMINE IF IT IS POSSIBLE TO CONSTRUCT THE PALINDROME. 
+* To be a PALINDROME THE FREQUENCY OF THE ELEMENTS SHOULD BE EVEN. 
+* If it is odd then change that to near even number by reducing the count. 
+* But in the palindrome we can have à single middle element whose frequency can be odd, So use a Flag to allow only one odd frequency element and then set that flag to false. 
+
+
+```python
+class Solution:
+    def longestPalindrome(self, s: str) -> int:
+        sFreq = Counter(s)
+        count = 0
+        middle = True
+
+        for _, v in sFreq.items():
+            if v % 2:
+                if middle: 
+                    count += v
+                    middle = False
+                else:
+                    count += v - 1
+            else: 
+                count += v
+        
+        return count
+```
+
+# Improved Solution 
+```python
+class Solution:
+    def longestPalindrome(self, s: str) -> int:
+        sFreq = Counter(s)
+        count = 0
+        has_odd = False
+
+        for freq in sFreq.values():
+            count += freq // 2 * 2  # Add pairs (even count)
+            if freq % 2 == 1:
+                has_odd = True
+        
+        return count + (1 if has_odd else 0)
+```
