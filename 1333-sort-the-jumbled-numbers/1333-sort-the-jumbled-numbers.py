@@ -1,15 +1,10 @@
 class Solution:
     def sortJumbled(self, mapping: List[int], nums: List[int]) -> List[int]:
-        def mapNums(num):
-            res = []
-            for i in str(num):
-                tmp = str(mapping[int(i)])
-                res.append(tmp)
+        def get_mapped_value(num):
+            mapped_str = ""
+            for digit in str(num):
+                mapped_str += str(mapping[int(digit)])
+            return int(mapped_str)
+        
+        return sorted(nums, key=get_mapped_value)
             
-            newNum = (''.join(res)).lstrip('0')
-
-            return int(newNum) if newNum else 0
-        
-        return sorted(nums, key=mapNums)
-
-        
