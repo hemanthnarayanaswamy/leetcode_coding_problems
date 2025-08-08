@@ -46,3 +46,104 @@ Thus, the sorted array is [338,38,991].
 	<li><code>1 &lt;= nums.length &lt;= 3 * 10<sup>4</sup></code></li>
 	<li><code>0 &lt;= nums[i] &lt; 10<sup>9</sup></code></li>
 </ul>
+
+# Approach 
+* Given a mapping array where mapping[i] = j means digit i should be mapped to digit j, sort the array nums based on their mapped values while maintaining stable sorting.
+```python
+class Solution:
+    def sortJumbled(self, mapping: List[int], nums: List[int]) -> List[int]:
+        def get_mapped_value(num):
+            mapped_str = ""
+            for digit in str(num):
+                mapped_str += str(mapping[int(digit)])
+            return int(mapped_str)
+        
+        return sorted(nums, key=get_mapped_value)
+```
+### How sorted() with key Works
+1. Apply Key Function to Each Element
+```python
+nums = [991, 338, 38]
+
+# Python internally creates:
+get_mapped_value(991) → 667
+get_mapped_value(338) → 7
+get_mapped_value(38)  → 7
+```
+2. Create Virtual Pairs for Sorting
+```python
+# Python conceptually creates:
+[(991, 667), (338, 7), (38, 7)]
+#  ^number    ^mapped_value
+``
+3. Sort by Mapped Values
+```python
+# Sort by second element (mapped_value):
+# 7 == 7 (stable: maintain original order)
+# 7 < 667
+# Result: [(338, 7), (38, 7), (991, 667)]
+```
+4. Return Original Numbers
+```python
+# Extract first element from each pair:
+[338, 38, 991]
+```
+
+## Key Concepts Explained
+1. Stable Sorting
+* Definition: When two elements have equal keys, they maintain their original relative order
+* Example: In [338, 38] both map to 7, but 338 appears first in original array, so it stays first
+2. Custom Key Function
+* Purpose: Tells Python "how to compare elements"
+* Process: Function is called once for each element to get comparison value
+* Important: Original elements are returned, not the key values
+3. Memory Efficiency
+* Python doesn't actually create the pairs - this is conceptual
+* The key function is called on-demand during sorting
+* Original array structure is preserved
+
+### Edge Cases to Consider
+1. All Zeros After Mapping
+`# If number maps to "000", int("000") = 0`
+2. Leading Zeros
+`# "007" → int("007") = 7 (automatic handling)`
+3. Duplicate Elements
+`# [90, 90, 90] should remain [90, 90, 90] after sorting`
+4. Single Element
+`# [42] → [42] (trivial case)`
+
+## Key Takeaways
+1. Use Built-in Tools: sorted() with custom key is perfect for this problem
+2. Stable Sorting: Python's sorted() maintains original order for equal elements
+3. Avoid Over-Engineering: Simple solutions are often better than complex ones
+4. Preserve Data: Don't use data structures that lose information (like dictionaries for duplicates)
+
+## Learning Points for Future Problems
+ ***When to Use sorted() with key:*** 
+* Need to sort by custom criteria
+* Want to maintain original elements
+* Require stable sorting behavior
+
+
+```python
+def custom_sort(array, criteria_function):
+    return sorted(array, key=criteria_function)
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def sortJumbled(self, mapping: List[int], nums: List[int]) -> List[int]:
+        def dMap(n):
+            tot = 0
+            i = 1
+            if n == 0:
+                return mapping[0]
+            while n:
+                tot += mapping[n % 10] * i
+                n //= 10
+                i *= 10
+            return tot
+        
+        return sorted(nums, key=dMap)
+```
