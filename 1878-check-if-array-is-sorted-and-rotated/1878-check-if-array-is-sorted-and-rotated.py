@@ -4,7 +4,6 @@ class Solution:
         rotated = False 
 
         for i in range(n):
-            print(i, (i+1)%n, nums[i], nums[(i+1)%n])
             if nums[i] > nums[(i+1)%n]:
                 if rotated:
                     return False
