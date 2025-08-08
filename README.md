@@ -202,6 +202,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1833-find-the-highest-altitude](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1833-find-the-highest-altitude) |
 | [1843-number-of-rectangles-that-can-form-the-largest-square](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1843-number-of-rectangles-that-can-form-the-largest-square) |
 | [1848-sum-of-unique-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1848-sum-of-unique-elements) |
+| [1878-check-if-array-is-sorted-and-rotated](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1899-count-items-matching-a-rule](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1899-count-items-matching-a-rule) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1927-maximum-ascending-subarray-sum) |
