@@ -1,26 +1,27 @@
 class Solution:
     def compress(self, chars: List[str]) -> int:
-        compressed = []
-        curr_char = ""
-        curr_char_count = 0
-        for c in chars:
-            if curr_char_count == 0:
-                curr_char = c
-                curr_char_count = 1
-            elif c == curr_char:
-                curr_char_count += 1
-            else: 
-                compressed.append(curr_char)
-                if curr_char_count != 1:
-                    compressed.extend(list(str(curr_char_count)))
-                curr_char = c
-                curr_char_count = 1
+        if len(chars) == 1:
+            return 1
         
-        compressed.append(curr_char)
-        if curr_char_count != 1:
-            compressed.extend(list(str(curr_char_count)))
-        print(compressed)
-        chars[:len(chars)] = compressed
-        print(chars)
-        print(len(chars))
+        count = 1
+        newChars = []
+
+        for i in range(1, len(chars)):
+            if chars[i] == chars[i-1]:
+                count += 1
+            else:
+                if count > 1:
+                    newChars.append(chars[i-1])
+                    newChars.extend(list(str(count)))
+                    count = 1
+                else:
+                    newChars.append(chars[i-1])
+            print(newChars)
+
+        newChars.append(chars[i])
+        if count > 1:
+            newChars.extend(list(str(count)))
+
+        chars[:len(chars)] = newChars
+
         return len(chars)
