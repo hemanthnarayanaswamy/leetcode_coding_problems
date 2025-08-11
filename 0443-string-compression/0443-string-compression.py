@@ -2,7 +2,7 @@ class Solution:
     def compress(self, chars: List[str]) -> int:
         if len(chars) == 1:
             return 1
-        
+
         count = 1
         newChars = []
 
@@ -16,9 +16,9 @@ class Solution:
                     count = 1
                 else:
                     newChars.append(chars[i-1])
-            print(newChars)
-
+            
         newChars.append(chars[i])
+        
         if count > 1:
             newChars.extend(list(str(count)))
 
