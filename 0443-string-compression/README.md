@@ -44,3 +44,94 @@
 	<li><code>1 &lt;= chars.length &lt;= 2000</code></li>
 	<li><code>chars[i]</code> is a lowercase English letter, uppercase English letter, digit, or symbol.</li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def compress(self, chars: List[str]) -> int:
+        n = len(chars)
+        if n == 1:
+            return 1
+
+        count = 1
+        newChars = []
+
+        for i in range(1, n):
+            if chars[i] == chars[i-1]:
+                count += 1
+            else:
+                if count > 1:
+                    newChars.append(chars[i-1])
+                    newChars.extend(list(str(count)))
+                    count = 1
+                else:
+                    newChars.append(chars[i-1])
+            
+        newChars.append(chars[i])
+
+        if count > 1:
+            newChars.extend(list(str(count)))
+
+        chars[:n] = newChars
+
+        return len(chars)
+```
+* If previous char is not equal to current char, then append that char and the count if greater then 1. 
+* After the loop manage the last char if and its count 
+* And to pass the test instead of re initialize `char = newChars` use this logic instead `char[:len(chars)] = newChars` this way its not reinitialized. 
+
+# Optimal Solution 
+```python
+def compress(chars):
+    write = 0  # Where to write in the array
+    read = 0   # Where we're reading from
+    
+    while read < len(chars):
+        # Step 1: Get current character
+        current_char = chars[read]
+        count = 0
+        
+        # Step 2: Count how many times it repeats
+        while read < len(chars) and chars[read] == current_char:
+            count += 1
+            read += 1
+        
+        # Step 3: Write the character
+        chars[write] = current_char
+        write += 1
+        
+        # Step 4: If more than 1, write the count
+        if count > 1:
+            for digit in str(count):
+                chars[write] = digit
+                write += 1
+    
+    return write
+```
+```ini
+Step 1: read=0, write=0
+- current_char = 'a'
+- Count 'a': read moves 0→1→2, count=2
+- Write: chars[0] = 'a', write=1
+- count > 1, so write '2': chars[1] = '2', write=2
+
+Step 2: read=2, write=2  
+- current_char = 'b'
+- Count 'b': read moves 2→3→4, count=2
+- Write: chars[2] = 'b', write=3
+- count > 1, so write '2': chars[3] = '2', write=4
+
+Step 3: read=4, write=4
+- current_char = 'c' 
+- Count 'c': read moves 4→5→6→7, count=3
+- Write: chars[4] = 'c', write=5
+- count > 1, so write '3': chars[5] = '3', write=6
+
+Final: chars = ["a","2","b","2","c","3","c"], return 6
+```
+
+1. Problem Only Cares About the Length: The function returns 6, which tells us only the first 6 elements matter.
+
+2. LeetCode Tests Only Check First n Elements: When you return 6, LeetCode only validates chars[0:6].
+
+3. Real-world Usage: The calling code would only use chars[0:returned_length].
