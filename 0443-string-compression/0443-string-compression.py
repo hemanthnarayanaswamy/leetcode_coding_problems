@@ -1,8 +1,5 @@
 class Solution:
     def compress(self, chars: List[str]) -> int:
-        if len(chars) == 1:
-            return 1
-    
         write = 0  # Where to write in the array
         read = 0   # Where we're reading from
         
