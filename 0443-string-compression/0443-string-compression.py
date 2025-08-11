@@ -1,12 +1,13 @@
 class Solution:
     def compress(self, chars: List[str]) -> int:
-        if len(chars) == 1:
+        n = len(chars)
+        if n == 1:
             return 1
 
         count = 1
         newChars = []
 
-        for i in range(1, len(chars)):
+        for i in range(1, n):
             if chars[i] == chars[i-1]:
                 count += 1
             else:
@@ -18,10 +19,10 @@ class Solution:
                     newChars.append(chars[i-1])
             
         newChars.append(chars[i])
-        
+
         if count > 1:
             newChars.extend(list(str(count)))
 
-        chars[:len(chars)] = newChars
+        chars[:n] = newChars
 
         return len(chars)
