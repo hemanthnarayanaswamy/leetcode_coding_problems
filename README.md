@@ -199,6 +199,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [1791-richest-customer-wealth](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1791-richest-customer-wealth) |
+| [1803-average-waiting-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1803-average-waiting-time) |
 | [1813-maximum-erasure-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1813-maximum-erasure-value) |
 | [1829-maximum-units-on-a-truck](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1829-maximum-units-on-a-truck) |
 | [1833-find-the-highest-altitude](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1833-find-the-highest-altitude) |
@@ -657,6 +658,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1505-create-target-array-in-the-given-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1505-create-target-array-in-the-given-order) |
 | [1552-build-an-array-with-stack-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1552-build-an-array-with-stack-operations) |
 | [1642-water-bottles](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1642-water-bottles) |
+| [1803-average-waiting-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1803-average-waiting-time) |
 | [1806-count-of-matches-in-tournament](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1806-count-of-matches-in-tournament) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2048-build-array-from-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2048-build-array-from-permutation) |
