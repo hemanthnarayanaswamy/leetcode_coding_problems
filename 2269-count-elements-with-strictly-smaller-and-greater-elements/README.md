@@ -27,3 +27,49 @@ Since there are two elements with the value 3, in total there are 2 elements hav
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>-10<sup>5</sup> &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def countElements(self, nums: List[int]) -> int:
+        count = 0
+        max_val, min_val = max(nums), min(nums)
+
+        for num in nums:
+            if min_val < num < max_val:  
+                count += 1
+        
+        return count
+```
+
+#### The problem wants to count elements that have:
+
+* At least one element in the entire array that is strictly smaller
+* At least one element in the entire array that is strictly greater
+
+- It's not about the position or neighbors - it's about whether smaller and larger values exist anywhere in the array.
+
+```ini
+Example to Illustrate the Difference
+Let's say nums = [11, 7, 2, 15]:
+Your approach checks neighbors:
+
+Index 1 (value 7): neighbors are 11 and 2 → 11 > 7 > 2 ✓ (counts it)
+Index 2 (value 2): neighbors are 7 and 15 → 7 > 2 < 15 ✗ (doesn't count)
+
+Correct approach checks entire array:
+
+11: has smaller (7,2) and larger (15) ✓
+7: has smaller (2) and larger (11,15) ✓
+2: has larger (7,11,15) but no smaller ✗
+15: has smaller (11,7,2) but no larger ✗
+```
+
+```python
+class Solution:
+    def countElements(self, nums: List[int]) -> int:
+        min_val = min(nums)
+        max_val = max(nums)
+        
+        return sum(1 for num in nums if min_val < num < max_val)
+```
