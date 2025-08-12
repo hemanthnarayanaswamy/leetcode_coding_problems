@@ -243,6 +243,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2232-adding-spaces-to-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2232-adding-spaces-to-a-string) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2265-partition-array-according-to-given-pivot) |
+| [2269-count-elements-with-strictly-smaller-and-greater-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2269-count-elements-with-strictly-smaller-and-greater-elements) |
 | [2270-find-all-lonely-numbers-in-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2270-find-all-lonely-numbers-in-the-array) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2274-keep-multiplying-found-values-by-two) |
@@ -819,6 +820,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2210-find-target-indices-after-sorting-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2210-find-target-indices-after-sorting-array) |
 | [2215-finding-3-digit-even-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2215-finding-3-digit-even-numbers) |
 | [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
+| [2269-count-elements-with-strictly-smaller-and-greater-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2269-count-elements-with-strictly-smaller-and-greater-elements) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2283-sort-even-and-odd-indices-independently](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2283-sort-even-and-odd-indices-independently) |
 | [2284-smallest-value-of-the-rearranged-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2284-smallest-value-of-the-rearranged-number) |
@@ -872,6 +874,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2163-kth-distinct-string-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2177-check-whether-two-strings-are-almost-equivalent](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2177-check-whether-two-strings-are-almost-equivalent) |
 | [2190-count-common-words-with-one-occurrence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2190-count-common-words-with-one-occurrence) |
+| [2269-count-elements-with-strictly-smaller-and-greater-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2269-count-elements-with-strictly-smaller-and-greater-elements) |
 | [2270-find-all-lonely-numbers-in-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2270-find-all-lonely-numbers-in-the-array) |
 | [2293-minimum-number-of-steps-to-make-two-strings-anagram-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2293-minimum-number-of-steps-to-make-two-strings-anagram-ii) |
 | [2308-divide-array-into-equal-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2308-divide-array-into-equal-pairs) |
