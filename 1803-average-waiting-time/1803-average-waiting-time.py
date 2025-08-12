@@ -1,18 +1,17 @@
 class Solution:
     def averageWaitingTime(self, customers: List[List[int]]) -> float:
-        if not customers:
-            return 0.0
-        
-        total_waiting_time = 0
-        chef_available_time = 0
+        next_idle_time = 0
+        net_wait_time = 0
 
-        for arrival_time, cooking_time in customers:
-            cooking_start_time = max(arrival_time, chef_available_time)
+        for customer in customers:
+            # The next idle time for the chef is given by the time of delivery
+            # of current customer's order.
+            next_idle_time = max(customer[0], next_idle_time) + customer[1]
 
-            food_ready_time = cooking_start_time + cooking_time 
+            # The wait time for the current customer is the difference between
+            # his delivery time and arrival time.
+            net_wait_time += next_idle_time - customer[0]
 
-            total_waiting_time += (food_ready_time - arrival_time)
-
-            chef_available_time = food_ready_time
-        
-        return total_waiting_time / len(customers)
+        # Divide by total customers to get average.
+        average_wait_time = net_wait_time / len(customers)
+        return average_wait_time
