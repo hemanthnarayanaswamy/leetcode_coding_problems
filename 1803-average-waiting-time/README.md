@@ -43,3 +43,69 @@ So the average waiting time = (2 + 6 + 4 + 1) / 4 = 3.25.
 	<li><code>1 &lt;= arrival<sub>i</sub>, time<sub>i</sub> &lt;= 10<sup>4</sup></code></li>
 	<li><code>arrival<sub>i&nbsp;</sub>&lt;= arrival<sub>i+1</sub></code></li>
 </ul>
+
+# Approach 
+1. Initialize integers `nextIdleTime` and `netWaitTime` with 0.
+2. Set `nextIdleTime` as the maximum of customer's arrival time and the current value of `nextIdleTime` plus the order preparation time.
+3. Increment `netWaitTime` by the difference of `nextIdleTime` and the `customer's arrival time`.
+4. Divide the `netWaitTime` by customers.size to get the averageWaitTime.
+
+```python
+class Solution:
+    def averageWaitingTime(self, customers: List[List[int]]) -> float:
+        if not customers:
+            return 0.0
+        
+        total_waiting_time = 0
+        chef_available_time = 0
+
+        for arrival_time, cooking_time in customers:
+            # Chef starts cooking after the customer arrives or when chef is avaiable 
+						cooking_start_time = max(arrival_time, chef_available_time)
+            
+						# Food will be ready at when we starts to cook and the cooking time of customer meal
+            food_ready_time = cooking_start_time + cooking_time 
+           
+					 # now total wait time becomes when the food was ready and the time customer arrived
+            total_waiting_time += (food_ready_time - arrival_time)
+           
+					 # chef available time will be when food was ready becasue that is when chef will be free
+            chef_available_time = food_ready_time
+        
+        return total_waiting_time / len(customers)
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def averageWaitingTime(self, customers: List[List[int]]) -> float:
+        current_time = 0
+        total_wait = 0
+        
+        for arrival, duration in customers:
+            if current_time < arrival:
+                current_time = arrival  
+                
+            current_time += duration
+            total_wait += current_time - arrival  
+
+        return total_wait / len(customers)
+```
+# Key Insights
+
+* Waiting time = (time when food is ready) - (arrival time)
+* The chef might be idle when a customer arrives, or might still be cooking for a previous customer
+* If the chef is idle, they start cooking immediately when the customer arrives
+* If the chef is busy, the customer waits until the chef finishes the current order
+
+### Step-by-Step Approach
+Let's trace through an example:
+
+* Customer 1: arrives at time 1, needs 2 minutes to cook
+* Customer 2: arrives at time 2, needs 1 minute to cook
+* Customer 3: arrives at time 4, needs 3 minutes to cook
+
+
+* Customer 1 arrives at t=1, chef starts cooking, finishes at t=3. Wait time = 3-1 = 2
+* Customer 2 arrives at t=2, but chef is busy until t=3, so cooking starts at t=3, finishes at t=4. Wait time = 4-2 = 2
+* Customer 3 arrives at t=4, chef just finished, starts immediately, finishes at t=7. Wait time = 7-4 = 3
