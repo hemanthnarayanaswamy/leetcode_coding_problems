@@ -298,6 +298,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2977-check-if-a-string-is-an-acronym-of-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2977-check-if-a-string-is-an-acronym-of-words) |
 | [3044-minimum-operations-to-collect-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3044-minimum-operations-to-collect-elements) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
+| [3151-minimum-processing-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3151-minimum-processing-time) |
 | [3194-find-words-containing-character](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3194-find-words-containing-character) |
 | [3206-find-common-elements-between-two-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3206-find-common-elements-between-two-arrays) |
 | [3220-count-tested-devices-after-test-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3220-count-tested-devices-after-test-operations) |
@@ -838,6 +839,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2836-neither-minimum-nor-maximum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2836-neither-minimum-nor-maximum) |
 | [2887-sort-vowels-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2887-sort-vowels-in-a-string) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2888-minimum-index-of-a-valid-split) |
+| [3151-minimum-processing-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3151-minimum-processing-time) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3334-apple-redistribution-into-boxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3334-apple-redistribution-into-boxes) |
@@ -988,6 +990,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2767-maximum-sum-with-exactly-k-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2767-maximum-sum-with-exactly-k-elements) |
 | [3055-maximum-odd-binary-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3055-maximum-odd-binary-number) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
+| [3151-minimum-processing-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3151-minimum-processing-time) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3334-apple-redistribution-into-boxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3334-apple-redistribution-into-boxes) |
