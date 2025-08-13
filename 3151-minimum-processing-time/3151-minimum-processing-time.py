@@ -5,6 +5,8 @@ class Solution:
         answer = 0
 
         for i in range(len(processorTimes)):
-            answer = max(answer, processorTimes[i] + taskTimes[i*4])
+            val = processorTimes[i] + taskTimes[i*4]
+            if val > answer:
+                answer = val
         
         return answer
