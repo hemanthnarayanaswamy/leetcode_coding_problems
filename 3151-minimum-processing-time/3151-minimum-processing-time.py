@@ -5,15 +5,10 @@ class Solution:
         processorIndex = 0
         answer = 0
 
-        for processingTime in processorTimes:
+        for i in range(len(processorTimes)):
             currentMax = 0
             taskCount = 0
 
-            while processorIndex < len(taskTimes) and taskCount < 4:
-                currentMax = max(currentMax, processingTime + taskTimes[processorIndex])
-                processorIndex += 1
-                taskCount += 1
-
-            answer = max(answer, currentMax)
-
+            answer = max(answer, processorTimes[i] + taskTimes[i*4])
+        
         return answer
