@@ -45,3 +45,53 @@
 	<li><code>1 &lt;= tasks[i] &lt;= 10<sup>9</sup></code></li>
 	<li><code>tasks.length == 4 * n</code></li>
 </ul>
+
+# Approach 
+* The problem involves distributing a set of tasks with known processing times to a set of processors with known processing capabilities. The goal is to minimize the total processing time by assigning tasks to processors in an optimal way. This is a scheduling problem where you want to allocate tasks to processors to minimize the overall completion time.
+
+```ini 
+Sort the processorTimes array in ascending order. This step ensures that tasks are assigned to processors with the shortest processing times first.
+
+Sort the taskTimes array in descending order. This step sorts the tasks in such a way that the longest tasks are considered first when assigning them to processors.
+
+Initialize processorIndex to 0 and answer to 0. processorIndex keeps track of the current processor being assigned tasks, and answer keeps track of the minimum total processing time.
+```
+```python
+class Solution:
+    def minProcessingTime(self, processorTimes, taskTimes):
+        processorTimes.sort()
+        taskTimes.sort(reverse=True)
+        processorIndex = 0
+        answer = 0
+
+        for processingTime in processorTimes:
+            currentMax = 0
+            taskCount = 0
+
+            while processorIndex < len(taskTimes) and taskCount < 4:
+                currentMax = max(currentMax, processingTime + taskTimes[processorIndex])
+                processorIndex += 1
+                taskCount += 1
+
+            answer = max(answer, currentMax)
+
+        return answer
+```
+---
+# Improved Solution 
+* For a processing time we only need to find the max for the first element in the tasks for group 4 because that will procude the max result out of other three, so no need to do the calculation for others.  
+
+```python
+class Solution:
+    def minProcessingTime(self, processorTimes, taskTimes):
+        processorTimes.sort()
+        taskTimes.sort(reverse=True)
+        answer = 0
+
+        for i in range(len(processorTimes)):
+            val = processorTimes[i] + taskTimes[i*4]
+            if val > answer:
+                answer = val
+        
+        return answer
+```
