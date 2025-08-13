@@ -36,3 +36,36 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you solve it without loops/recursion?
+
+# Approach
+We know that `3^19 = 1162261467` is the largest power of 3 that fits within the signed 32-bit integer range ([-2^31, 2^31 - 1] or [-2147483648, 2147483647]).
+
+* All valid powers of 3 (like 1, 3, 9, 27, ..., 1162261467) are factors of 3^19.
+
+* So, if n is a power of 3, it must divide 3^19 exactly — meaning 1162261467 % n == 0.
+
+* We also check that n > 0, since powers of 3 are positive numbers only.
+
+# Solution
+```python
+class Solution:
+    def isPowerOfThree(self, n: int) -> bool:
+        if n <= 0:
+            return False
+        else:
+            return 1162261467 % n == 0
+```
+
+---
+# Using Recursion 
+```python
+class Solution:
+    def isPowerOfThree(self, n: int) -> bool:
+        if n<=0: return False
+        
+        while n>1:
+            if n%3==0: n=n//3
+            else:
+                return False
+        return True
+```
