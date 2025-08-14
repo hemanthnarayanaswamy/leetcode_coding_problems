@@ -47,3 +47,69 @@
 	<li><code>3 &lt;= num.length &lt;= 1000</code></li>
 	<li><code>num</code> only consists of digits.</li>
 </ul>
+
+# Optimal Solution 
+* Once the match is found we can increment i to end of the match index, 
+* Store the result parallely while check for maximum number result. 
+
+```python
+class Solution:
+    def largestGoodInteger(self, num: str) -> str:
+        i = 0
+        maxNum = -1
+        res = ''
+
+        while i < len(num)-2:
+            if num[i] == num[i + 1] == num[i + 2]:
+                x = int(num[i])
+                if x > maxNum:
+                    maxNum = x
+                    res = num[i:i+3]
+                i += 2
+            i += 1
+                
+        return res
+```
+
+```python
+class Solution:
+    def largestGoodInteger(self, num: str) -> str:
+        c = 0
+        cur = None
+        max_good = -1
+        for char in num:
+            if char == cur:
+                c += 1
+                if c == 3 and int(cur) > max_good:
+                    max_good = int(cur)
+            else:
+                cur = char
+                c = 1
+        if max_good < 0:
+            return ""
+        return str(max_good) * 3
+```
+
+1. Simple Solution but the problem is it returns the first found good integer which might not be the highest good interget
+```python 
+def largestGoodInteger(self, num: str) -> str:
+        for i in range(len(num)):
+            if i + 2 < len(num) and num[i] == num[i + 1] == num[i + 2]:
+                return num[i]*3
+
+        return ""
+```
+
+```python
+class Solution:
+    def largestGoodInteger(self, num: str) -> str:
+        max_triple = ""
+        
+        for i in range(len(num) - 2):
+            if num[i] == num[i + 1] == num[i + 2]:
+                current_triple = num[i:i + 3]
+                if current_triple > max_triple:
+                    max_triple = current_triple
+        
+        return max_triple
+```
