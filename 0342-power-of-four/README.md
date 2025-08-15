@@ -22,3 +22,45 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you solve it without loops/recursion?
+
+# Solution 
+* Remove all negative numbers. 
+* Apply the loop for only numbers greater then 1.
+
+```python
+class Solution:
+    def isPowerOfFour(self, n: int) -> bool:
+        if n == 1:
+            return True
+        elif n > 1:
+            while n > 1:
+                if n % 4 != 0:
+                    return False
+                n //= 4
+        else:
+            return False
+        
+        return True
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def isPowerOfFour(self, n: int) -> bool:
+        if n<0:
+            return False
+        i=0
+        while True:
+            temp = 4**i
+            if temp==n:
+                return True
+            elif temp>n:
+                return False
+            i+=1
+```
+
+```python
+class Solution:
+    def isPowerOfFour(self, n: int) -> bool:
+        return n==1 or n!=0==n%4 and self.isPowerOfFour(n//4)
+```
