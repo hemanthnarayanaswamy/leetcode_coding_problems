@@ -47,3 +47,72 @@ The longest of these was the keypress for &#39;a&#39; with duration 16.</pre>
 	<li><code>releaseTimes[i] &lt; releaseTimes[i+1]</code></li>
 	<li><code>keysPressed</code> contains only lowercase English letters.</li>
 </ul>
+
+# Solution 
+* Simple Solution 
+```python
+class Solution:
+    def slowestKey(self, releaseTimes: List[int], keysPressed: str) -> str:
+        keyMap = {keysPressed[0]:releaseTimes[0]}
+
+        for i in range(1, len(keysPressed)):
+            tmp = releaseTimes[i] - releaseTimes[i-1]
+            c = keysPressed[i]
+            
+            if c in keyMap:
+                if keyMap[c] < tmp:
+                    keyMap[c] = tmp
+            else:
+                keyMap[c] = tmp
+        
+        res, val = 0, 0
+
+        for c, v in keyMap.items():
+            if v > val:
+                val = v
+                res = c
+            elif v == val:
+                if c > res:
+                    val = v
+                    res = c
+        
+        return res
+```
+
+# Improved Solution 
+```python
+class Solution:
+    def slowestKey(self, releaseTimes: List[int], keysPressed: str) -> str:
+        res, val = keysPressed[0], releaseTimes[0]
+
+        for i in range(1, len(keysPressed)):
+            tmp = releaseTimes[i] - releaseTimes[i-1]
+            c = keysPressed[i]
+
+            if tmp > val:
+                val = tmp
+                res = c
+            elif tmp == val:
+                if c > res:
+                    res = c
+        return res
+```
+
+# Optimal Solution
+```python
+class Solution:
+    def slowestKey(self, releaseTimes: List[int], keysPressed: str) -> str:
+        slowest = 0
+        key = 0
+        prev_key = 0
+        for i in range(len(releaseTimes)):
+            diff = releaseTimes[i] - prev_key
+            if diff > slowest:
+                slowest = diff
+                key = i
+            elif diff == slowest:
+                if keysPressed[i] > keysPressed[key]:
+                    key = i
+            prev_key = releaseTimes[i]
+        return keysPressed[key]
+```
