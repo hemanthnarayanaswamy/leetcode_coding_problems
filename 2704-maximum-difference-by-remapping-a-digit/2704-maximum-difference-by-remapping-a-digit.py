@@ -1,17 +1,19 @@
 class Solution:
     def minMaxDifference(self, num: int) -> int:
         numStr = str(num)
-        replace_digit1 = ''
-        replace_digit2 = ''
+        replace_digit1 = None
+        replace_digit2 = None
 
         for d in numStr:
-            if d != '9':
+            if replace_digit1 is None and d != '9':
                 replace_digit1 = d
-                break
-        
-        for d in numStr:
-            if d != '0':
+            
+            
+            if replace_digit2 is None and d != '0':
                 replace_digit2 = d
+            
+            
+            if replace_digit1 is not None and replace_digit2 is not None:
                 break
 
         if replace_digit2:
