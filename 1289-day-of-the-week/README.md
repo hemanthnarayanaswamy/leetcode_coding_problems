@@ -32,3 +32,17 @@
 <ul>
 	<li>The given dates are valid dates between the years <code>1971</code> and <code>2100</code>.</li>
 </ul>
+
+# Solution
+* To get the day of the week for a given date in Python, you can use the datetime module. 
+1. Using `strftime('%A')`: This method allows you to format a datetime object into a string representation, including the full weekday name.
+
+```python
+from datetime import datetime
+
+class Solution:
+    def dayOfTheWeek(self, day: int, month: int, year: int) -> str:
+        date_obj = datetime(year, month, day)
+
+        return date_obj.strftime("%A")
+```
