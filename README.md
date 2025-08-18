@@ -67,6 +67,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2624-difference-between-element-sum-and-digit-sum-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2624-difference-between-element-sum-and-digit-sum-of-an-array) |
 | [2630-alternating-digit-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2630-alternating-digit-sum) |
 | [2650-split-with-minimum-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2650-split-with-minimum-sum) |
+| [2704-maximum-difference-by-remapping-a-digit](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2704-maximum-difference-by-remapping-a-digit) |
 | [2748-calculate-delayed-arrival-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2748-calculate-delayed-arrival-time) |
 | [2752-sum-multiples](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2752-sum-multiples) |
 | [2812-find-the-maximum-achievable-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2812-find-the-maximum-achievable-number) |
@@ -996,6 +997,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2572-append-characters-to-string-to-make-subsequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2572-append-characters-to-string-to-make-subsequence) |
 | [2650-split-with-minimum-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2650-split-with-minimum-sum) |
+| [2704-maximum-difference-by-remapping-a-digit](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2704-maximum-difference-by-remapping-a-digit) |
 | [2756-buy-two-chocolates](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2756-buy-two-chocolates) |
 | [2767-maximum-sum-with-exactly-k-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2767-maximum-sum-with-exactly-k-elements) |
 | [3055-maximum-odd-binary-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3055-maximum-odd-binary-number) |
