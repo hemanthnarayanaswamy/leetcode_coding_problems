@@ -38,3 +38,89 @@ Thus, we return 99.</pre>
 <ul>
 	<li><code>1 &lt;= num &lt;= 10<sup>8</sup></code></li>
 </ul>
+
+# Solution 
+
+#### Key Insights:
+1. Maximum Number: Replace first non-'9' digit with '9'
+2. Minimum Number: Replace first non-'0' digit with '0' (avoid leading zeros)
+3. Single Pass: Find both replacement digits in one loop
+
+```ini
+Algorithm Steps
+
+1. Convert to String: Easy digit manipulation
+2. Single Pass Search: Find both replacement candidates
+3. Early Termination: Break when both digits found
+4. Handle Edge Cases: All 9s or all 0s
+```
+```python
+class Solution:
+    def minMaxDifference(self, num: int) -> int:
+        numStr = str(num)
+        replace_digit1 = None
+        replace_digit2 = None
+
+        for d in numStr:
+            if replace_digit1 is None and d != '9':
+                replace_digit1 = d
+            
+            
+            if replace_digit2 is None and d != '0':
+                replace_digit2 = d
+            
+            
+            if replace_digit1 is not None and replace_digit2 is not None:
+                break
+
+        if replace_digit2:
+            min_num = int(numStr.replace(replace_digit2, '0'))
+        else:
+            min_num = num
+        
+        if replace_digit1:
+            max_num = int(numStr.replace(replace_digit1, '9'))
+        else:
+            max_num = num
+
+        return max_num - min_num
+```
+# Improved Solution 
+```python
+class Solution:
+    def minMaxDifference(self, num: int) -> int:
+        numStr = str(num)
+        replace_digit1 = replace_digit2 = None
+        
+        for d in numStr:
+            if replace_digit1 is None and d != '9':
+                replace_digit1 = d
+            if replace_digit2 is None and d != '0':
+                replace_digit2 = d
+            if replace_digit1 and replace_digit2:  
+                break
+        
+        max_num = int(numStr.replace(replace_digit1, '9')) if replace_digit1 else num
+        min_num = int(numStr.replace(replace_digit2, '0')) if replace_digit2 else num
+        
+        return max_num - min_num
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def minMaxDifference(self, num: int) -> int:
+        s = str(num)
+
+        minimal = int(s.replace(s[0], '0'))
+
+        x = '9'
+        for c in s:
+            if c != '9':
+                x = c
+                break
+        
+        maximal = int(s.replace(x, '9'))
+
+        return maximal - minimal
+```
