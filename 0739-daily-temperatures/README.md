@@ -18,3 +18,56 @@
 	<li><code>1 &lt;=&nbsp;temperatures.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>30 &lt;=&nbsp;temperatures[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* I leanted the concept of monotonic Stack and attempted this problem 
+* Refer to your notes to cover this topic `Data Structures\5.STRACK_QUEUE\2.monotonic_stack.ipynb`
+
+|  Problem           |  Stack Type                  |  Operator in while loop |  Assignment Position  |
+|--------------------|------------------------------|-------------------------|-----------------------|
+|  next greater      |  decreasing (equal allowed)  |  stackTop < current     |  inside while loop    |
+|  previous greater  |  decreasing (strict)         |  stackTop <= current    |  outside while loop   |
+|  next smaller      |  increasing (equal allowed)  |  stackTop > current     |  inside while loop    |
+|  previous smaller  |  increasing (strict)         |  stackTop >= current    |  outside while loop   |
+
+```python
+def dailyTemperatures(temperatures):
+    n = len(temperatures)
+    stack = []
+    res = [0] * n 
+
+    for i in range(n):
+        while stack and temperatures[stack[-1]] < temperatures[i]:
+            stackTop = stack.pop()
+            res[stackTop] = i - stackTop
+
+        stack.append(i)
+    
+    return res
+
+temperatures = [73,74,75,71,69,72,76,73]
+dailyTemperatures(temperatures)
+```
+---
+# Optimal Solution
+```python
+class Solution:
+    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+        n = len(temperatures)
+        hottest = 0
+        answer = [0] * n
+        
+        for curr_day in range(n - 1, -1, -1):
+            current_temp = temperatures[curr_day]
+            if current_temp >= hottest:
+                hottest = current_temp
+                continue
+            
+            days = 1
+            while temperatures[curr_day + days] <= current_temp:
+                # Use information from answer to search for the next warmer day
+                days += answer[curr_day + days]
+            answer[curr_day] = days
+
+        return answer
+```
