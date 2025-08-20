@@ -39,3 +39,24 @@ For items 3 and 4 you will not receive any discount at all.
 	<li><code>1 &lt;= prices.length &lt;= 500</code></li>
 	<li><code>1 &lt;= prices[i] &lt;= 1000</code></li>
 </ul>
+
+# Solution 
+* Using the Monotonic Stack logic, Refer to my notes to learn about this concept `Data Structures\5.STRACK_QUEUE\2.monotonic_stack.ipynb`
+* The problem is asking to find the next smaller number 
+* So built a stack with non decreasing values 
+
+```python
+class Solution:
+    def finalPrices(self, prices: List[int]) -> List[int]:
+        stack = []
+        res = prices 
+
+        for i in range(len(prices)):
+            while stack and prices[stack[-1]] >= prices[i]:
+                stackTop = stack.pop()
+                res[stackTop] = prices[stackTop] - prices[i]
+            
+            stack.append(i)
+
+        return res
+```
