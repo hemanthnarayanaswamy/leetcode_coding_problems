@@ -8,10 +8,10 @@ class Solution:
                 i += 1
             else:
                 k -= 1
-                
-            if k == 0:
-                return counter 
+
             counter += 1
+        
+        return counter - 1
 
             
             
