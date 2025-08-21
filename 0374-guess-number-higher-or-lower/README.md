@@ -43,3 +43,25 @@
 	<li><code>1 &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
 	<li><code>1 &lt;= pick &lt;= n</code></li>
 </ul>
+
+# Solution 
+* Simple Binary search algorithm 
+* ONly need to check how to call the algorithm here thats it
+```python
+class Solution:
+    def guessNumber(self, n: int) -> int:
+        left, right = 1, n 
+
+        while left <= right:
+            mid = (left+right) // 2
+            result = guess(mid)  # Need to call the api for get the result
+
+            if result:
+                if result == 1:
+                    left = mid + 1
+                else:
+                    right = mid - 1
+            else:
+                return mid
+```
+
