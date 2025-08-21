@@ -16,6 +16,6 @@ class Solution:
             if result == 1:
                 left = mid + 1
             elif result == -1:
-                right = mid 
+                right = mid - 1
             else:
                 return mid
