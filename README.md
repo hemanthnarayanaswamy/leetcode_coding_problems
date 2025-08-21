@@ -195,6 +195,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1604-least-number-of-unique-integers-after-k-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1604-least-number-of-unique-integers-after-k-removals) |
 | [1626-can-make-arithmetic-progression-from-sequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1626-can-make-arithmetic-progression-from-sequence) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
+| [1646-kth-missing-positive-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1646-kth-missing-positive-number) |
 | [1651-shuffle-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1651-shuffle-string) |
 | [1677-matrix-diagonal-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1677-matrix-diagonal-sum) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
@@ -1063,6 +1064,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0350-intersection-of-two-arrays-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0792-binary-search](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0792-binary-search) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1468-check-if-n-and-its-double-exist) |
+| [1646-kth-missing-positive-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1646-kth-missing-positive-number) |
 | [2210-find-target-indices-after-sorting-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2210-find-target-indices-after-sorting-array) |
 ## Sliding Window
 |  |
