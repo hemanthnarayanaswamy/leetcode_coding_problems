@@ -7,10 +7,10 @@
 
 class Solution:
     def guessNumber(self, n: int) -> int:
-        left, right = 0, n 
+        left, right = 1, n 
 
         while left <= right:
-            mid = (left+right)//2
+            mid = (left+right) // 2
             result = guess(mid)  # Need to call the api for get the result
 
             if result == 1:
