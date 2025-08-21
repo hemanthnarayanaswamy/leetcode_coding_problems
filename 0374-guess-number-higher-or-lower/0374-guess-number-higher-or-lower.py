@@ -13,9 +13,10 @@ class Solution:
             mid = (left+right) // 2
             result = guess(mid)  # Need to call the api for get the result
 
-            if result == 1:
-                left = mid + 1
-            elif result == -1:
-                right = mid - 1
+            if result:
+                if result == 1:
+                    left = mid + 1
+                else:
+                    right = mid - 1
             else:
                 return mid
