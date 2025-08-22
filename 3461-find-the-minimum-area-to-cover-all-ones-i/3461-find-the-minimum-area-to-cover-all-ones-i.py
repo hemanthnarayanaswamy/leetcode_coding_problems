@@ -11,6 +11,4 @@ class Solution:
                     max_height = max(max_height, i)
                     max_width = max(max_width, j)
         
-        area = (max_height - min_height + 1) * (max_width - min_width + 1)
-
-        return area
+        return (max_height - min_height + 1) * (max_width - min_width + 1)
