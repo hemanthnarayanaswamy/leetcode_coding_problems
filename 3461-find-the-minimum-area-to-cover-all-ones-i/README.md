@@ -39,3 +39,77 @@
 	<li><code>grid[i][j]</code> is either 0 or 1.</li>
 	<li>The input is generated such that there is at least one 1 in <code>grid</code>.</li>
 </ul>
+
+# Solution 
+* Its a brute force solution 
+`area = (max_row - min_row + 1) * (max_col - min_col + 1)`
+```python
+class Solution:
+    def minimumArea(self, grid: List[List[int]]) -> int:
+        min_height, min_width = float('inf'), float('inf')
+        max_height, max_width = 0, 0
+
+        for i in range(len(grid)):
+            for j in range(len(grid[i])):
+                if grid[i][j] == 1:
+                    min_height = min(min_height, i)
+                    min_width = min(min_width, j)
+                    max_height = max(max_height, i)
+                    max_width = max(max_width, j)
+        
+        area = (max_height - min_height + 1) * (max_width - min_width + 1)
+
+        return area
+```
+
+---
+* If the min Height and Widht are computed then we don't need to compute them anymore 
+```python
+class Solution:
+    def minimumArea(self, grid: List[List[int]]) -> int:
+        min_height, min_width = float('inf'), float('inf')
+        max_height, max_width = 0, 0
+        n = len(grid)
+        m = len(grid[0])
+
+        for i in range(n):
+            for j in range(m):
+                if grid[i][j] == 1:
+                    if i == 0:
+                        min_height = 0
+                    elif min_height != 0:
+                        min_height = min(min_height, i)
+
+                    if j == 0:
+                        min_width = 0
+                    elif min_width != 0:
+                        min_width = min(min_width, j)
+
+                    if i > max_height:
+                        max_height = i
+
+                    if j > max_width:
+                        max_width = j
+
+        return (max_height - min_height + 1) * (max_width - min_width + 1)
+```
+
+---
+
+# Optimal Solution
+```python
+class Solution:
+    def minimumArea(self, grid: List[List[int]]) -> int:
+        widths = []
+        heights = []
+        n = len(grid)
+        m = len(grid[0])
+
+        for i in range(n):
+            for j in range(m):
+                if grid[i][j] == 1:
+                    widths.append(j)
+                    heights.append(i)
+
+        return (max(heights) - min(heights) + 1) * (max(widths) - min(widths) + 1)
+```
