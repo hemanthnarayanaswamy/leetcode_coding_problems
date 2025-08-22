@@ -7,7 +7,7 @@ class Solution:
             if abs(num) < diff:
                 res = num 
                 diff = abs(num)
-            if abs(num) == diff:
-                res = max(res, num)
+            if abs(num) == diff and num > res:
+                res = num
         
         return res
