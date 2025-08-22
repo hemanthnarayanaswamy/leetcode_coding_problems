@@ -29,3 +29,39 @@ Thus, the closest number to 0 in the array is 1.
 	<li><code>1 &lt;= n &lt;= 1000</code></li>
 	<li><code>-10<sup>5</sup> &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+# Solution 
+```ini
+Track the smallest distance found so far
+Track the number that gives this smallest distance
+Compare each number's distance to current minimum
+```
+```python
+class Solution:
+    def findClosestNumber(self, nums: List[int]) -> int:
+        diff = float('inf')
+        res = 0
+
+        for num in nums:
+            if abs(num) < diff:
+                res = num 
+                diff = abs(num)
+            if abs(num) == diff and num > res:
+                res = num
+        
+        return res
+```
+---
+```python
+class Solution:
+    def findClosestNumber(self, nums: List[int]) -> int:
+        diff = float('inf')
+        res = nums[0]
+
+        for num in nums:
+            if abs(num) < diff or (abs(num) == diff and num > res):
+                res = num
+                diff = abs(num)
+    
+        return res
+```
