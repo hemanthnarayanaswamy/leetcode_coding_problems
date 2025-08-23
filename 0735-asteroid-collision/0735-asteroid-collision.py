@@ -4,16 +4,18 @@ class Solution:
         i = 0
 
         while i < len(asteroids):
-            if stack and (stack[-1] > 0 and asteroids[i] < 0):
-                if stack[-1] < abs(asteroids[i]):
+            leftA = asteroids[i]
+            if stack and (stack[-1] > 0 and leftA < 0):
+                rightA = stack[-1]
+                if rightA < -leftA:
                     stack.pop()
-                elif stack[-1] > abs(asteroids[i]):
+                elif rightA > -leftA:
                     i += 1
                 else:
                     stack.pop()
                     i += 1
             else:
-                stack.append(asteroids[i])
+                stack.append(leftA)
                 i += 1
 
         return stack
