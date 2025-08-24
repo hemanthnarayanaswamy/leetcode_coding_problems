@@ -20,12 +20,10 @@ class Solution:
             else:
                 rightOnes[i] = count1
                 count1 = 0
-        print(rightOnes, leftOnes)
+        
         longestLen = 0
-
         for i in range(len(nums)):
             if nums[i] == 0:
-                print(leftOnes[i], rightOnes[i])
                 tmp = leftOnes[i] + rightOnes[i]
                 if tmp > longestLen:
                     longestLen = tmp
