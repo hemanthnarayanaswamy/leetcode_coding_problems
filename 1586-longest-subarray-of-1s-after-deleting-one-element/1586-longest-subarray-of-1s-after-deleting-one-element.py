@@ -1,12 +1,13 @@
 class Solution:
     def longestSubarray(self, nums: List[int]) -> int:
-        res = [0] * len(nums)
-        numsFreq = Counter(nums)
+        n = len(nums)
+        res = [0] * n
+        numsSum = sum(nums)
 
-        if numsFreq.get(0, 0) == 0:
-            return len(nums) - 1
-        elif numsFreq.get(1, 0) == 0:
-            return 0 
+        if numsSum == n:
+            return n-1
+        elif numsSum == 0:
+            return 0
 
         count1 = 0
         for i in range(len(nums)):
