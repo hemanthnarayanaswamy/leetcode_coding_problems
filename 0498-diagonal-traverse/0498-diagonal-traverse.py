@@ -1,16 +1,19 @@
 class Solution:
     def findDiagonalOrder(self, mat: List[List[int]]) -> List[int]:
-        diagonalMat = defaultdict(list)
-    
-        for i in range(len(mat)):
-            for j in range(len(mat[0])):
-                diagonalMat[i+j].append(mat[i][j])
-        
+        m, n = len(mat), len(mat[0])
         result = []
-        for diagonal_sum in sorted(diagonalMat.keys()):  # Ensure order
-            if diagonal_sum % 2:
-                result.extend(diagonalMat[diagonal_sum])
+
+        for d in range(m+n-1):
+            diagonal = []
+            for i in range(m):
+                j = d - i
+                if 0 <= j < n:
+                    diagonal.append(mat[i][j])
+
+            if d % 2:
+                result.extend(diagonal)
             else:
-                result.extend(diagonalMat[diagonal_sum][::-1])
-        
-        return result
+                result.extend(diagonal[::-1])
+
+        return result 
+
