@@ -27,3 +27,59 @@
 	<li><code>1 &lt;= nums1[i], nums2[j] &lt;= 10<sup>9</sup></code></li>
 	<li>Both <code>nums1</code> and <code>nums2</code> are sorted in <strong>non-decreasing</strong> order.</li>
 </ul>
+
+# Solution 
+* We need to return the minimum common element between the two arrays. 
+**We need to return the first element that we encounter in both arrays.** 
+* Since the arrays are sorted in non Decreasing Order whatever the first element we encounger will be the minimum element. 
+```python
+class Solution:
+    def getCommon(self, nums1: List[int], nums2: List[int]) -> int:
+        n1, n2 = len(nums1), len(nums2)
+        i = j = 0
+
+        if nums1[-1] < nums2[0]:
+            return -1
+
+        while i < n1  and j < n2:
+            if nums1[i] == nums2[j]:
+                return nums1[i]
+            elif nums1[i] > nums2[j]:
+                j += 1
+            else:
+                i += 1
+        
+        return -1
+```
+---
+```python
+class Solution:
+    def getCommon(self, nums1: List[int], nums2: List[int]) -> int:
+        n1, n2 = len(nums1), len(nums2)
+        i, j = 0, 0
+
+        while i < n1  and j < n2:
+            if nums1[i] == nums2[j]:
+                return nums1[i]
+            elif nums1[i] > nums2[j]:
+                j += 1
+            else:
+                i += 1
+        
+        return -1
+```
+* Both arrays are sorted in non-decreasing order
+* Use two pointers to traverse both arrays simultaneously
+* Always advance the pointer pointing to the smaller element
+
+```ini
+# If nums1[i] == nums2[j]: Found common element (return immediately)
+# If nums1[i] > nums2[j]: nums2[j] is too small, advance j
+# If nums1[i] < nums2[j]: nums1[i] is too small, advance i
+```
+
+```python
+def getCommon(self, nums1: List[int], nums2: List[int]) -> int:
+    common = set(nums1) & set(nums2)
+    return min(common) if common else -1
+```
