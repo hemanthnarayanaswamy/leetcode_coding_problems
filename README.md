@@ -127,6 +127,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0455-assign-cookies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0455-assign-cookies) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0485-max-consecutive-ones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0485-max-consecutive-ones) |
+| [0498-diagonal-traverse](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0498-diagonal-traverse) |
 | [0500-keyboard-row](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0500-keyboard-row) |
 | [0506-relative-ranks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0506-relative-ranks) |
 | [0525-contiguous-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0525-contiguous-array) |
@@ -670,6 +671,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0258-add-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0258-add-digits) |
 | [0412-fizz-buzz](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0412-fizz-buzz) |
 | [0415-add-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0415-add-strings) |
+| [0498-diagonal-traverse](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0498-diagonal-traverse) |
 | [0657-robot-return-to-origin](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0657-robot-return-to-origin) |
 | [0682-baseball-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0682-baseball-game) |
 | [0735-asteroid-collision](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0735-asteroid-collision) |
@@ -1095,6 +1097,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 |  |
 | ------- |
+| [0498-diagonal-traverse](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0498-diagonal-traverse) |
 | [1677-matrix-diagonal-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1677-matrix-diagonal-sum) |
 | [1791-richest-customer-wealth](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1791-richest-customer-wealth) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2244-number-of-laser-beams-in-a-bank) |
