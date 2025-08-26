@@ -32,3 +32,25 @@ So, the rectangle at index 1 has a greater diagonal length therefore we return a
 	<li><code><font face="monospace">dimensions[i].length == 2</font></code></li>
 	<li><code><font face="monospace">1 &lt;= dimensions[i][0], dimensions[i][1] &lt;= 100</font></code></li>
 </ul>
+
+# Solution
+* Area of Diagonal when `length` & `Width` are given 
+```ini
+length*lenth + width*width = diagonal*diagonal
+```
+```python
+class Solution:
+    def areaOfMaxDiagonal(self, dimensions: List[List[int]]) -> int:
+        area = 0
+        diagonal = 0
+
+        for l, w in dimensions:
+            tmp_diagonal = l*l + w*w # Find the current diagonal 
+            if tmp_diagonal > diagonal: # If the diagonal is greter then our current diagonal then we compute the new area
+                area = l * w
+                diagonal = tmp_diagonal
+            elif diagonal == tmp_diagonal: # If the computed diagonal and previous diagonals are equal 
+                area = max(area, l * w)            # We get the maximum area
+
+        return area
+```
