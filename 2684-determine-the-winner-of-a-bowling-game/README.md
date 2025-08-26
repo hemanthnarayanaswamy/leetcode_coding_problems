@@ -84,3 +84,63 @@
 	<li><code>1 &lt;= n &lt;= 1000</code></li>
 	<li><code>0 &lt;= player1[i], player2[i] &lt;= 10</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def isWinner(self, player1: List[int], player2: List[int]) -> int:
+        i = 0
+        s1 = s2 = 0
+        p1_multiplier = 0
+        p2_multiplier = 0
+
+        while i < len(player1):
+            p1 = player1[i]
+            p2 = player2[i]
+
+            if p1_multiplier:
+                s1 += player1[i]*2
+                p1_multiplier -= 1
+            else:
+                s1 += player1[i]
+            
+            if p2_multiplier:
+                s2 += player2[i]*2
+                p2_multiplier -= 1
+            else:
+                s2 += player2[i]
+
+            if p1 == 10:
+                p1_multiplier = 2
+            if p2 == 10:
+                p2_multiplier = 2
+            
+            i += 1
+        
+        if s1 > s2: return 1
+        if s1 < s2: return 2
+        return 0
+```
+# Optimal Solution
+```python
+class Solution:
+    def isWinner(self, player1: List[int], player2: List[int]) -> int:
+        def score(arr):
+            tot = 0
+            prev = 0
+            prev2 = 0
+            for v in arr:
+                if prev == 10 or prev2 == 10:
+                    tot += 2 * v
+                else:
+                    tot += v
+                prev2 = prev
+                prev = v
+            return tot
+
+        s1 = score(player1)
+        s2 = score(player2)
+        if s1 > s2: return 1
+        if s1 < s2: return 2
+        return 0
+```
