@@ -28,9 +28,6 @@ class Solution:
             
             i += 1
         
-        if s1 > s2:
-            return 1
-        elif s1 < s2:
-            return 2
-        else:
-            return 0
+        if s1 > s2: return 1
+        if s1 < s2: return 2
+        return 0
