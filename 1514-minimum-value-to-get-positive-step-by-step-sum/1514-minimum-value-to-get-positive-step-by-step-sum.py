@@ -1,11 +1,10 @@
 class Solution:
     def minStartValue(self, nums: List[int]) -> int:
-        prefixSum = [nums[0]]
-    
-        for i in range(1, len(nums)):
-            prefixSum.append(prefixSum[-1] + nums[i])
+        min_sum = 0
+        current_sum = 0
         
-        minPrefix = min(prefixSum)
+        for num in nums:
+            current_sum += num
+            min_sum = min(min_sum, current_sum)
         
-        return max(1, 1 - minPrefix)
-            
+        return 1 - min_sum if min_sum < 0 else 1
