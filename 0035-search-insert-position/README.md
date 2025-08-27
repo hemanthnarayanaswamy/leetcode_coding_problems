@@ -33,3 +33,85 @@
 	<li><code>nums</code> contains <strong>distinct</strong> values sorted in <strong>ascending</strong> order.</li>
 	<li><code>-10<sup>4</sup> &lt;= target &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+### MY Solution 
+```python
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        for index, value in enumerate(nums):
+            if value >= target: ### Return the index 
+                return index
+        return len(nums) #####
+```
+---
+```python
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        l, r = 0, len(nums)-1
+        preMid = 0
+
+        if nums[l] == target: return l
+        if nums[r] == target: return r
+
+        while l <= r:
+            mid = (l+r)//2
+            if mid == preMid:
+                break
+            if nums[mid] == target:
+                return mid
+            elif nums[mid] < target:
+                l = mid
+            else:
+                r = mid
+            
+            preMid = mid
+        
+        if target > nums[r]:
+            return r + 1
+        elif target < nums[l]:
+            return l
+        else:
+            return l + 1
+```
+---
+# Optimal Solution
+```python
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        left, right = 0, len(nums) - 1
+        
+        while left <= right:
+            mid = left + (right - left) // 2
+            
+            if nums[mid] == target:
+                return mid
+            elif nums[mid] < target:
+                left = mid + 1
+            else:
+                right = mid - 1
+        
+        return left  
+```
+
+```python
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        left, right = 0, len(nums) - 1
+        
+        if target<nums[left]:
+            return left
+        if target>nums[right]:
+           return right+1
+
+        while left <= right:
+            mid = (right + left) // 2
+            
+            if nums[mid] == target:
+                return mid
+            elif nums[mid] < target:
+                left = mid + 1
+            else:
+                right = mid - 1
+        
+        return left  
+```
