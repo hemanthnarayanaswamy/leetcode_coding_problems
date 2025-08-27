@@ -1,22 +1,20 @@
 class Solution:
     def singleNonDuplicate(self, nums: List[int]) -> int:
-        l, r = 0, len(nums)-1
-
-        while l <= r:
-            mid = (l+r)//2 
-            if mid + 1 < len(nums):
-                if mid % 2 == 0 and nums[mid] == nums[mid+1]:
-                    l = mid + 1
-                elif mid % 2 and nums[mid] == nums[mid+1]:
-                    r = mid - 1
-                elif mid % 2 and nums[mid] == nums[mid-1]:
-                    l = mid + 1
-                elif mid % 2 == 0 and nums[mid] == nums[mid - 1]:
-                    r = mid - 1
-                else:
-                    return nums[mid]
+        left, right = 0, len(nums) - 1
+        
+        while left < right:
+            mid = left + (right - left) // 2
+            
+            # Ensure mid is even for consistent checking
+            if mid % 2 == 1:
+                mid -= 1
+            
+            # Check if the pair is intact
+            if nums[mid] == nums[mid + 1]:
+                # Pair is intact, single element is on the right
+                left = mid + 2
             else:
-                return nums[mid]
-
-
-        return nums[mid]
+                # Pair is broken, single element is on the left (or at mid)
+                right = mid
+        
+        return nums[left]
