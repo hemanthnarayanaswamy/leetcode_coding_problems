@@ -42,3 +42,74 @@
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>-100 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* the stepsum they're calculating is actually prefix sum
+* now at any point of time, prefix sum should be above 1, so we find min prefix sum and add a value x to it so it becomes >= 1, that x is our answer
+hope this helps.
+
+```ini
+- So compute the prefix sum for that array and find the minimum prefix sum in that
+- Then compute the diff between that and 1 
+- That way when we start with that number the prefix will always be positive.
+```
+```python
+class Solution:
+    def minStartValue(self, nums: List[int]) -> int:
+        prefixSum = [nums[0]]
+
+        for i in range(1, len(nums)):
+            prefixSum.append(prefixSum[-1] + nums[i])
+        
+        minPrefix = min(prefixSum)
+
+        if minPrefix < 0:
+            return 1 + abs(minPrefix)
+        else:
+            return 1
+```
+
+```python
+class Solution:
+    def minStartValue(self, nums: List[int]) -> int:
+        prefixSum = [nums[0]]
+    
+        for i in range(1, len(nums)):
+            prefixSum.append(prefixSum[-1] + nums[i])
+        
+        minPrefix = min(prefixSum)
+        
+        return max(1, 1 - minPrefix)
+```            
+---
+```python
+class Solution:
+    def minStartValue(self, nums: List[int]) -> int:
+        min_sum = 0
+        current_sum = 0
+        
+        for num in nums:
+            current_sum += num
+            min_sum = min(min_sum, current_sum)
+        
+        return 1 - min_sum if min_sum < 0 else 1
+```
+
+```ini
+🧠 Key Insights
+1. Step-by-Step Sum Tracking
+- Need to track cumulative sum at each position
+- The sum after adding each element must be ≥ 1
+- Not just the final sum - every intermediate step matters
+
+2. Critical Observation
+- The "worst case" occurs at the lowest cumulative sum
+- If we can handle the worst case, all other cases are automatically satisfied
+- Find where the cumulative sum reaches its minimum value
+
+3. Mathematical Relationship
+** startValue + minimumCumulativeSum ≥ 1 **
+
+- If minimum cumulative sum is negative, we need extra start value ( minPrefix + x = 1) compute x
+- If minimum cumulative sum is positive, start value = 1 is sufficient
+```
