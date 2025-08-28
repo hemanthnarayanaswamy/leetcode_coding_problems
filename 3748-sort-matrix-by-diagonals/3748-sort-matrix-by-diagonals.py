@@ -9,12 +9,12 @@ class Solution:
         
         for k in gridMap:
             if k < 0: 
-                gridMap[k].sort(reverse=True)
-            else:
                 gridMap[k].sort()
+            else:
+                gridMap[k].sort(reverse=True)
 
         for i in range(n):
             for j in range(n):
-                grid[i][j] = gridMap[i-j].pop()
+                grid[i][j] = gridMap[i-j].pop(0)
                 
         return grid
