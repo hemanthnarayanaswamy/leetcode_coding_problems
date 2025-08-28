@@ -4,11 +4,8 @@ class Solution:
             should_be_peak = False
             if i % 2: should_be_peak = True
             
-            a, b = nums[i], nums[i-1]
-            
-            if should_be_peak and a < b or not should_be_peak and a > b:
-                    nums[i] = b
-                    nums[i-1] = a
+            if should_be_peak and nums[i] < nums[i-1] or not should_be_peak and nums[i] > nums[i-1]:
+                    nums[i], nums[i-1] = nums[i-1], nums[i]
         
         return nums
         
