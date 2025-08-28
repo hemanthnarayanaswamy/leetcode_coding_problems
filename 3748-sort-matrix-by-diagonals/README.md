@@ -66,3 +66,108 @@
 	<li><code>1 &lt;= n &lt;= 10</code></li>
 	<li><code>-10<sup>5</sup> &lt;= grid[i][j] &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+# Solution 
+* Looking at your code, you're currently grouping elements by their main diagonal (top-left to bottom-right) using `i+j` as the key.
+`gridMap[i+j].append(grid[i][j])`
+* If the problem is asking for the anti-diagonal (top-right to bottom-left), you need to change the key formula to `i-j`
+`gridMap[i-j].append(grid[i][j])`
+
+* Group the diagonal elements and to sort based on upper and lower triangel use greater and lesser then 0 logic
+* Sort individual based on the increasing and decreasing conditions. 
+```python
+class Solution:
+    def sortMatrix(self, grid: List[List[int]]) -> List[List[int]]:
+        gridMap = defaultdict(list)
+        n = len(grid)
+
+        for i in range(n):
+            for j in range(n):
+                gridMap[i-j].append(grid[i][j])
+        
+        for k in gridMap:
+            if k < 0: 
+                gridMap[k].sort(reverse=True)
+            else:
+                gridMap[k].sort()
+
+        for i in range(n):
+            for j in range(n):
+                grid[i][j] = gridMap[i-j].pop()
+                
+        return grid
+```
+---
+# Diagonal Matrix Sorting - Logic Notes
+
+## Problem Understanding
+- Sort elements within each anti-diagonal of a matrix
+- Anti-diagonals run from top-right to bottom-left
+- Each anti-diagonal has elements where `i-j` is constant
+
+## Key Logic Points
+
+### 1. Grouping Elements by Anti-Diagonal
+```python
+gridMap[i-j].append(grid[i][j])
+```
+- Use `i-j` as the key to group elements on same anti-diagonal
+- Elements with same `i-j` value belong to same anti-diagonal
+
+### 2. Anti-Diagonal Classification
+- **Positive keys (k > 0)**: Upper anti-diagonals (above main diagonal)
+- **Zero key (k = 0)**: Main anti-diagonal 
+- **Negative keys (k < 0)**: Lower anti-diagonals (below main diagonal)
+
+### 3. Sorting Strategy
+```python
+if k > 0:
+    gridMap[k].sort(reverse=True)  # Descending
+else:
+    gridMap[k].sort()              # Ascending
+```
+
+### 4. Placing Elements Back
+```python
+grid[i][j] = gridMap[i-j].pop(0)  # Use pop(0) to maintain order
+```
+- Use `pop(0)` instead of `pop()` to remove from beginning
+- Maintains the sorted order when placing back
+
+## Common Mistakes to Avoid
+1. Using `i+j` instead of `i-j` (groups main diagonals, not anti-diagonals)
+2. Wrong sorting condition (`k < 0` vs `k > 0`)
+3. Using `pop()` instead of `pop(0)` - disrupts sorted order
+4. Forgetting that matrix traversal order matters for placement
+
+## Visual Example
+For 3x3 matrix, anti-diagonal groups by `i-j`:
+```
+k=2:  [grid[2][0]]
+k=1:  [grid[1][0], grid[2][1]]
+k=0:  [grid[0][0], grid[1][1], grid[2][2]]
+k=-1: [grid[0][1], grid[1][2]]
+k=-2: [grid[0][2]]
+```
+```python
+class Solution:
+    def sortMatrix(self, grid: List[List[int]]) -> List[List[int]]:
+        gridMap = defaultdict(list)
+        n = len(grid)
+
+        for i in range(n):
+            for j in range(n):
+                gridMap[i-j].append(grid[i][j])
+        
+        for k in gridMap:
+            if k < 0: 
+                gridMap[k].sort()
+            else:
+                gridMap[k].sort(reverse=True)
+
+        for i in range(n):
+            for j in range(n):
+                grid[i][j] = gridMap[i-j].pop(0)
+                
+        return grid
+```
