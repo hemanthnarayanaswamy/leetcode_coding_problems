@@ -37,3 +37,50 @@ As all the sides are of different lengths, it will form a scalene triangle.
 	<li><code>nums.length == 3</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+```ini
+Triangle Inequality Theorem: For three sides to form a valid triangle, the sum of any two sides must be strictly greater than the third side.
+
+✅ a + b > c
+✅ a + c > b
+✅ b + c > a
+Your original code used < which means you were checking if the sum was less than the third side, but you need to check if it's less than or equal to (<=) to determine when it's not a valid triangle.
+
+Examples where your original code would fail:
+[1, 2, 3] → 1 + 2 = 3 (not < 3), so your code would say it's a triangle, but it's actually "none"
+[0, 1, 1] → 0 + 1 = 1 (not < 1), should be "none"
+The corrected version properly identifies these as invalid triangles.
+```
+```python
+class Solution:
+    def triangleType(self, nums: List[int]) -> str:
+        a, b, c = nums[0], nums[1], nums[2]
+
+        if (a + b <= c) or (a + c <= b) or (b+ c <= a):
+            return "none"
+        elif a == b == c:
+            return 'equilateral'
+        elif (a == b) or (b == c) or (a == c):
+            return 'isosceles'
+        else:
+            return 'scalene'
+```
+
+---
+```python
+class Solution:
+    def triangleType(self, nums: List[int]) -> str:
+        n = set(nums)
+        a, b, c = nums
+        if a + b <= c or a + c <= b or b + c <= a:
+            return "none"
+        if len(n) == 1:
+            return "equilateral"
+
+        elif len(n) == 2:
+            return "isosceles"
+        
+        elif len(n) == 3:
+            return "scalene"
+```
