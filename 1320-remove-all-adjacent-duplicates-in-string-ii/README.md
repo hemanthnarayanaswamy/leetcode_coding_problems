@@ -37,3 +37,114 @@ Finally delete &quot;ddd&quot;, get &quot;aa&quot;</pre>
 	<li><code>2 &lt;= k &lt;= 10<sup>4</sup></code></li>
 	<li><code>s</code> only contains lowercase English letters.</li>
 </ul>
+
+# Remove All Adjacent Duplicates in String II - Logic Notes
+
+## Problem Understanding
+- Remove k consecutive identical characters from a string
+- Continue removing until no more k consecutive duplicates exist
+- Return the final string after all removals
+
+## Algorithm: Stack-Based Approach
+
+### Core Logic
+Use a stack to track characters and their consecutive counts:
+- Each stack element: `[character, count]`
+- When count reaches `k`, remove the entire group
+
+### Step-by-Step Process
+
+#### 1. Character Processing
+```python
+for char in s:
+    if stack and stack[-1][0] == char:
+        stack[-1][1] += 1  # Increment count of same character
+    else:
+        stack.append([char, 1])  # New character, start count at 1
+```
+
+#### 2. Removal Check
+```python
+if stack[-1][1] == k:
+    stack.pop()  # Remove entire group when count reaches k
+```
+
+#### 3. Result Construction
+```python
+return ''.join(char * count for char, count in stack)
+```
+
+## Key Insights
+
+### Why Stack Works
+- **LIFO nature**: Most recent characters are processed first
+- **Grouping**: Consecutive identical characters are naturally grouped
+- **Efficient removal**: O(1) removal when k duplicates found
+
+### Example Walkthrough
+For `s = "deeedbbcccbdaa"`, `k = 3`:
+
+```
+Input: d-e-e-e-d-b-b-c-c-c-b-d-a-a
+Stack operations:
+- 'd': [['d',1]]
+- 'e': [['d',1], ['e',1]]
+- 'e': [['d',1], ['e',2]]
+- 'e': [['d',1], ['e',3]] → Remove 'eee': [['d',1]]
+- 'd': [['d',2]]
+- 'b': [['d',2], ['b',1]]
+- 'b': [['d',2], ['b',2]]
+- 'c': [['d',2], ['b',2], ['c',1]]
+- 'c': [['d',2], ['b',2], ['c',2]]
+- 'c': [['d',2], ['b',2], ['c',3]] → Remove 'ccc': [['d',2], ['b',2]]
+- 'b': [['d',2], ['b',3]] → Remove 'bbb': [['d',2]]
+- 'd': [['d',3]] → Remove 'ddd': []
+- 'a': [['a',1]]
+- 'a': [['a',2]]
+
+Result: "aa"
+```
+
+## Time & Space Complexity
+- **Time**: O(n) - single pass through string
+- **Space**: O(n) - worst case stack size
+
+## Edge Cases to Consider
+- Empty string
+- k = 1 (remove all characters)
+- No removals needed
+- String becomes empty
+
+```python
+class Solution:
+    def removeDuplicates(self, s: str, k: int) -> str:
+        stack = []
+        
+        for char in s:
+            if stack and stack[-1][0] == char:
+                stack[-1][1] += 1
+            else:
+                stack.append([char, 1])
+            
+            if stack[-1][1] == k:
+                stack.pop()
+        
+        return ''.join(char * count for char, count in stack)
+```
+---
+```python
+class Solution:
+    def removeDuplicates(self, s: str, k: int) -> str:
+        stack = []
+        
+        for char in s:
+            if stack and stack[-1][0] == char:
+                stack[-1][1] += 1
+
+                if stack[-1][1] == k:
+                    stack.pop()
+            else:
+                stack.append([char, 1])
+        
+        return ''.join(s[0] * s[1] for s in stack)
+```
