@@ -1,8 +1,11 @@
 class Solution:
     def countBalls(self, lowLimit: int, highLimit: int) -> int:
         def digitSum(num):
-            tmp = [int(d) for d in str(num)]
-            return sum(tmp)
+            total = 0
+            while num > 0:
+                total += num % 10
+                num //= 10
+            return total
 
         ballBox = {}
         maxBalls = 0
