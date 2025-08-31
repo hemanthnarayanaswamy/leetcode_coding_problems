@@ -5,9 +5,12 @@ class Solution:
             return sum(tmp)
 
         ballBox = {}
+        maxBalls = 0
 
         for i in range(lowLimit, highLimit+1):
             box = digitSum(i)
             ballBox[box] = ballBox.get(box, 0) + 1
+            if ballBox[box] > maxBalls:
+                maxBalls = ballBox[box]
         
-        return max(ballBox.values())
+        return maxBalls
