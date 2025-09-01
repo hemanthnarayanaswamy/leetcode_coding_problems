@@ -8,11 +8,11 @@ class Solution:
                 diagonalMap[i-j].append(mat[i][j])
         
         for id in diagonalMap:
-            diagonalMap[id].sort(reverse=True)
+            diagonalMap[id].sort()
 
         for i in range(m):
             for j in range(n):
-                mat[i][j] = diagonalMap[i-j].pop()
+                mat[i][j] = diagonalMap[i-j].pop(0)
         
         return mat
                 
