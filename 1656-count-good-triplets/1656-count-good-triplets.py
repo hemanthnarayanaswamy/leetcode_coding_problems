@@ -3,6 +3,9 @@ class Solution:
         n = len(arr)
         count = 0
 
+        if n < 3:
+            return 0
+
         for i in range(n):
             for j in range(i+1, n):
                 for k in range(j+1, n):
