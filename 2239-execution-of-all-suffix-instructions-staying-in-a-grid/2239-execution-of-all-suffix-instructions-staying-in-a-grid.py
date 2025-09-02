@@ -11,7 +11,7 @@ class Solution:
                 x += dx
                 y += dy
 
-                if x < 0 or x >= n or y < 0 or y >= n:
+                if not (0 <= x < n and 0 <= y < n):
                     break
                 count += 1
             result.append(count)
