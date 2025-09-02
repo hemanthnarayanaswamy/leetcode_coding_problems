@@ -56,3 +56,48 @@
 	<li><code>0 &lt;= start<sub>row</sub>, start<sub>col</sub> &lt; n</code></li>
 	<li><code>s</code> consists of <code>&#39;L&#39;</code>, <code>&#39;R&#39;</code>, <code>&#39;U&#39;</code>, and <code>&#39;D&#39;</code>.</li>
 </ul>
+
+# Brute Force Solution
+```python
+class Solution:
+    def executeInstructions(self, n: int, startPos: List[int], s: str) -> List[int]:
+        directions = {'L': (0, -1), 'R': (0, 1), 'U': (-1, 0), 'D': (1, 0)}
+        m = len(s)
+        result = [0] * m
+
+        for i in range(len(s)):
+            x, y = startPos
+            count = 0
+            for dir in s[i:]:
+                dx, dy = directions[dir]
+                x += dx
+                y += dy
+
+                if not (0 <= x < n and 0 <= y < n):
+                    break
+                count += 1
+            result[i] = count
+        return result
+```
+---
+```python
+class Solution:
+    def executeInstructions(self, n: int, startPos: List[int], s: str) -> List[int]:
+        directions = {'L': (0, -1), 'R': (0, 1), 'U': (-1, 0), 'D': (1, 0)}
+        result = []
+
+        for start in range(len(s)):
+            x, y = startPos[0], startPos[1]
+            count = 0
+            for i in range(start, len(s)):
+                dx, dy = directions[s[i]]
+                x += dx
+                y += dy
+
+                if not (0 <= x < n and 0 <= y < n):
+                    break
+                count += 1
+            result.append(count)
+        
+        return result
+```
