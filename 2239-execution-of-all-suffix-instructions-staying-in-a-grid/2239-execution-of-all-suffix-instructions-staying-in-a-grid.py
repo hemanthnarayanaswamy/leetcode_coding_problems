@@ -3,19 +3,17 @@ class Solution:
         directions = {'L': (0, -1), 'R': (0, 1), 'U': (-1, 0), 'D': (1, 0)}
         result = []
 
-        for i in range(len(s)):
+        for start in range(len(s)):
             x, y = startPos[0], startPos[1]
             count = 0
-            while i < len(s):
-                x += directions[s[i]][0]
-                y += directions[s[i]][1]
+            for i in range(start, len(s)):
+                dx, dy = directions[s[i]]
+                x += dx
+                y += dy
 
-                if (x > n - 1 or y > n - 1) or (x < 0 or y < 0 ):
+                if x < 0 or x >= n or y < 0 or y >= n:
                     break
-                else:
-                    count += 1
-                    i += 1
+                count += 1
             result.append(count)
         
         return result
-            
