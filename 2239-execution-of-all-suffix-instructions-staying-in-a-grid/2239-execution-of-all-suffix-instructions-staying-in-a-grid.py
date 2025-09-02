@@ -7,9 +7,9 @@ class Solution:
             x, y = startPos[0], startPos[1]
             count = 0
             while i < len(s):
-                x1, y1 = directions[s[i]]
-                x += x1
-                y += y1
+                x += directions[s[i]][0]
+                y += directions[s[i]][1]
+
                 if (x > n - 1 or y > n - 1) or (x < 0 or y < 0 ):
                     break
                 else:
