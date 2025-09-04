@@ -2,21 +2,15 @@ class Solution:
     def dividePlayers(self, skill: List[int]) -> int:
         n = len(skill)
         skill.sort()
-        target = skill[0] + skill[-1]
-        result = skill[0] * skill[-1]
+        total_chemistry = 0
+        target_team_skill = skill[0] + skill[-1]
 
-        if n == 2:
-            return result
-        
-        l, r = 1, n-2
+        for i in range(n // 2):
+            left, right = skill[i], skill[n - 1 - i]
 
-        while l < r:
-            a, b = skill[l], skill[r]
-            if a+b != target:
+            if left + right != target_team_skill:
                 return -1
-            result += (a*b)
-            l += 1
-            r -= 1
+            
+            total_chemistry += (left * right)
         
-        return result
-
+        return total_chemistry
