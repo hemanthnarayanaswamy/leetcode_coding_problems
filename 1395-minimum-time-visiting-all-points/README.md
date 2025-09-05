@@ -42,3 +42,60 @@ Total time = 7 seconds</pre>
 	<li><code>points[i].length == 2</code></li>
 	<li><code>-1000&nbsp;&lt;= points[i][0], points[i][1]&nbsp;&lt;= 1000</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def minTimeToVisitAllPoints(self, points: List[List[int]]) -> int:
+        time = 0
+        for i in range(len(points)-1):
+            x1, y1 = points[i]
+            x2, y2 = points[i+1]
+            
+            time += max(abs(x2 - x1), abs(y2 - y1))
+
+        return time
+```
+---
+```python
+def minTimeToVisitAllPoints(points):
+    time = 0
+    x, y = points[0]
+    for i in range(1, len(points)):
+        x1, y1 = points[i]
+        
+        time += max(abs(x1 - x), abs(y1 - y))
+        x, y = x1, y1
+
+    return time
+```
+
+### Key Insight: Chebyshev Distance
+The minimum time between two points is the **Chebyshev distance** (L∞ metric).
+
+### Mathematical Foundation
+For points (x₁, y₁) and (x₂, y₂):
+- **Manhattan distance**: `|x₂-x₁| + |y₂-y₁|` (only horizontal/vertical moves)
+- **Euclidean distance**: `√[(x₂-x₁)² + (y₂-y₁)²]` (direct line)
+- **Chebyshev distance**: `max(|x₂-x₁|, |y₂-y₁|)` (8-directional movement)
+
+### Why Chebyshev Distance Works
+```
+Example: From (0,0) to (3,2)
+- Optimal path: diagonal moves + remaining straight moves
+- Move diagonally 2 times: (0,0)→(1,1)→(2,2) 
+- Move horizontally 1 time: (2,2)→(3,2)
+- Total time: max(3,2) = 3 seconds
+```
+---
+```python
+def minTimeToVisitAllPoints(points):
+    return sum(max(abs(p2[0] - p1[0]), abs(p2[1] - p1[1])) 
+               for p1, p2 in zip(points, points[1:]))
+```
+
+```ini
+1. **Move diagonally** while possible (reduces both x and y distances)
+2. **Move straight** for remaining distance in one direction
+3. **Total time = max(horizontal_distance, vertical_distance)**
+```
