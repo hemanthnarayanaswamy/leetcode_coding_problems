@@ -41,3 +41,55 @@ Note that s cannot be split into &quot;RL&quot;, &quot;RR&quot;, &quot;RL&quot;,
 	<li><code>s[i]</code> is either <code>&#39;L&#39;</code> or <code>&#39;R&#39;</code>.</li>
 	<li><code>s</code> is a <strong>balanced</strong> string.</li>
 </ul>
+
+# Solution 
+**Local Optimality**: Taking the first balanced substring doesn't prevent finding more later
+**No Backtracking Needed**: Each early split maximizes total splits
+ **Guaranteed Solution**: Input string is always balanced
+
+```python
+def balancedStringSplit(s):
+    balanceCount = 0        # Count of balanced substrings found
+    Lcount = Rcount = 0     # Track current L's and R's
+    
+    for c in s:
+        if c == 'R':
+            Rcount += 1     # Increment R counter
+        else:               # c == 'L'
+            Lcount += 1     # Increment L counter
+        
+        # Check if current substring is balanced
+        if Rcount == Lcount:
+            balanceCount += 1   # Found a balanced substring
+            # Note: No need to reset counters
+    
+    return balanceCount
+```
+---
+```python
+class Solution:
+    def balancedStringSplit(self, s: str) -> int:
+        balanceCount = res = 0
+
+        for c in s:
+            if c == 'R':
+                balanceCount += 1
+            else:
+                balanceCount -= 1
+            
+            if not balanceCount:
+                res += 1
+        
+        return res
+```
+---
+```python
+class Solution:
+    def balancedStringSplit(self, s: str) -> int:
+        res = cnt = 0
+        for c in s:
+            cnt += 1 if c == 'L' else -1
+            if cnt == 0:
+                res += 1
+        return res
+```
