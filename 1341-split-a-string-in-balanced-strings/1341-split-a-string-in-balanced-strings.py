@@ -1,15 +1,14 @@
 class Solution:
     def balancedStringSplit(self, s: str) -> int:
-        balanceCount = 0
-        Lcount = Rcount = 0
+        balanceCount = res = 0
 
         for c in s:
             if c == 'R':
-                Rcount += 1
-            else:
-                Lcount += 1
-            
-            if Rcount == Lcount:
                 balanceCount += 1
+            else:
+                balanceCount -= 1
+            
+            if not balanceCount:
+                res += 1
         
-        return balanceCount
+        return res
