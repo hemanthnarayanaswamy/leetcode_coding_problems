@@ -11,7 +11,7 @@ class Solution:
                 if s[i - k] in vowels:
                     countVowel -= 1
             
-            maxVowels = max(countVowel, maxVowels)
+            if countVowel > maxVowels:
+                maxVowels = countVowel
 
-        
         return maxVowels
