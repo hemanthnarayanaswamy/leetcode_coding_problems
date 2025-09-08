@@ -7,9 +7,8 @@ class Solution:
             if s[i] in vowels:
                 countVowel += 1
             
-            if i >= k:
-                if s[i - k] in vowels:
-                    countVowel -= 1
+            if i >= k and s[i - k] in vowels:
+                countVowel -= 1
             
             if countVowel > maxVowels:
                 maxVowels = countVowel
