@@ -35,3 +35,75 @@
 	<li><code>s</code> consists of lowercase English letters.</li>
 	<li><code>1 &lt;= k &lt;= s.length</code></li>
 </ul>
+
+# Wrong Solution 
+* This solution is working but TLE
+```python
+class Solution:
+    def maxVowels(self, s: str, k: int) -> int:
+        maxVowel = 0
+        vowels = {'a', 'e', 'i', 'o', 'u'}
+
+        for i in range(len(s)):
+            if s[i] in vowels:
+                tmp = 0
+                for c in s[i:i+k]:
+                    if c in vowels:
+                        tmp += 1
+                
+                if tmp == k:
+                    return k
+                else:
+                    maxVowel = max(maxVowel, tmp)
+        
+        return maxVowel
+```
+
+# Solution 
+* Using the Sliding Window technique, We iterate normally while keeping track of the current vowel count and the max count. 
+* when `i >= k` means the window size is exceeded then we remove the last element which is `i - k` 
+* If the removed element if vowel we reduce the count and as usually we keep track of the maxCount.
+
+```python
+class Solution:
+    def maxVowels(self, s: str, k: int) -> int:
+        countVowel = maxVowels = 0
+        vowels = {'a', 'e', 'i', 'o', 'u'}
+
+        for i in range(len(s)):
+            if s[i] in vowels:
+                countVowel += 1
+            
+            if i >= k and s[i - k] in vowels:
+                countVowel -= 1
+            
+            if countVowel > maxVowels:
+                maxVowels = countVowel
+
+        return maxVowels
+```
+---
+```python
+class Solution:
+    def maxVowels(self, s: str, k: int) -> int:
+        vowels = set('aeiou')
+        countVowel = 0
+
+        for c in s[:k]:
+            if c in vowels:
+                countVowel += 1
+        
+        maxVowels = countVowel
+
+        for i in range(k, len(s)):
+            if s[i] in vowels:
+                countVowel += 1
+
+            if s[i - k] in vowels:
+                countVowel -= 1 
+            
+            if countVowel > maxVowels:
+                maxVowels = countVowel 
+
+        return maxVowels
+```
