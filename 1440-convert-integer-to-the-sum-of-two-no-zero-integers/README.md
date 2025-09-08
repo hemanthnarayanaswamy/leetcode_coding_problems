@@ -35,3 +35,46 @@ Note that there are other valid answers as [8, 3] that can be accepted.
 <ul>
 	<li><code>2 &lt;= n &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+# Solution 
+```ini
+It basically means that the number can't have digit 0 in it.
+For example: for 1010: 1,1009 is one of the cases but since 1009 has two 0's in it, so not a possible pair.
+```
+---
+```python
+class Solution:
+    def getNoZeroIntegers(self, n: int) -> List[int]:
+        for i in range(1, n):
+            a = i
+            if '0' not in str(a):
+                b = n - i 
+                if '0' not in str(b):
+                    return [a, b]
+```
+---
+```python
+class Solution:
+    def getNoZeroIntegers(self, n: int) -> List[int]:
+        def hasNoZero(num):
+            return '0' not in str(num)
+        
+        for i in range(1, n):
+            if hasNoZero(i) and hasNoZero(n - i):
+                return [i, n - i]
+```
+---
+```python
+class Solution:
+    def getNoZeroIntegers(self, n: int) -> List[int]:
+        def hasNoZero(num):
+            while num > 0:
+                if num % 10 == 0:
+                    return False
+                num //= 10
+            return True
+        
+        for i in range(1, n):
+            if hasNoZero(i) and hasNoZero(n - i):
+                return [i, n - i]
+```
