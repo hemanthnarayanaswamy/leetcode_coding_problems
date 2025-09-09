@@ -46,3 +46,76 @@
 	<li><code>1 &lt;= code[i] &lt;= 100</code></li>
 	<li><code>-(n - 1) &lt;= k &lt;= n - 1</code></li>
 </ul>
+
+# My Solution 
+* Using the sliding Window approach, We first calculate the inital sum of window size `k`.
+* Now as we move the window we remove the current element from the sum and add the next `i+k` element into the sum. This case is for k > 0. 
+* We can follow the same approach for k < 0, we only need to reverse the given array and the result after the computation. 
+
+```python
+class Solution:
+    def decrypt(self, code: List[int], k: int) -> List[int]:
+        n = len(code)
+        res = [0] * len(code)
+
+        if k > 0:
+            initialSum = sum(code[:k])
+            for i in range(n):
+                res[i] = initialSum - code[i] + code[(i+k) % n]
+                initialSum = res[i]
+        elif k < 0:
+            k = -k
+            code = code[::-1]
+            initialSum = sum(code[:k])
+            for i in range(n):
+                res[i] = initialSum - code[i] + code[(i+k) % n]
+                initialSum = res[i]
+            
+            res = res[::-1]
+        
+        return res
+```
+---
+# Optimal Solution 
+```python
+class Solution:
+    def decrypt(self, code: List[int], k: int) -> List[int]:
+        n = len(code)
+        res = [0] * n
+
+        if k == 0:
+            return res 
+        
+        if k > 0:
+            window_sum = sum(code[1:k+1])
+        else:
+            window_sum = sum(code[k:])
+        
+        res[0] = window_sum 
+
+        for i in range(1, n):
+            if k > 0:
+                window_sum = window_sum - code[i] + code[(i + k) % n]
+            else:
+                # add new leftmost (Previous element) and remove 
+                window_sum = window_sum - code[(i + k - 1) % n] + code[i - 1]
+            
+            res[i] = window_sum
+        
+        return res
+```
+
+#### Step 1: Initialize First Window
+For `k > 0`: Calculate sum of elements `code[1]` to `code[k]` (next k elements after index 0)
+For `k < 0`: Calculate sum of elements `code[k:]` (last |k| elements, which are "previous" to index 0 in circular array)
+
+#### Step 2: Slide the Window
+* For each subsequent index i from `1 to n-1`:
+
+1. When `k > 0` (moving forward):
+		* 		Remove: code[i] (element that was at the start of previous window)
+		* 		Add: `code[(i + k) % n]` (new element entering the window)
+2. When k < 0 (moving backward):
+		* 	Remove: `code[(i + k - 1) % n]` (rightmost element leaving the previous window)
+		* 	Add: `code[i - 1]` (new leftmost element entering the window)
+
