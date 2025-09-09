@@ -218,6 +218,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1742-widest-vertical-area-between-two-points-containing-no-points](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1742-widest-vertical-area-between-two-points-containing-no-points) |
 | [1751-slowest-key](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1751-slowest-key) |
 | [1752-arithmetic-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1752-arithmetic-subarrays) |
+| [1755-defuse-the-bomb](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1755-defuse-the-bomb) |
 | [1781-check-if-two-string-arrays-are-equivalent](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1781-check-if-two-string-arrays-are-equivalent) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
@@ -1140,6 +1141,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
+| [1755-defuse-the-bomb](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1755-defuse-the-bomb) |
 | [1813-maximum-erasure-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1813-maximum-erasure-value) |
 | [1987-substrings-of-size-three-with-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1987-substrings-of-size-three-with-distinct-characters) |
 | [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
