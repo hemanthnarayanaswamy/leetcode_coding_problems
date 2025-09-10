@@ -34,3 +34,26 @@
 	<li><code>points[i].length == 2</code></li>
 	<li><code>1 &lt;= x, y, a<sub>i</sub>, b<sub>i</sub> &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+# Solution 
+* Simple Solution and a simple problem, 
+* Read it carefully 
+
+```python
+class Solution:
+    def nearestValidPoint(self, x: int, y: int, points: List[List[int]]) -> int:
+        index = -1
+        minDistance = float('inf')
+
+        for i, cor in enumerate(points):
+            x1, y1 = cor 
+            
+            if x1 == x or y1 == y:
+                tmpDistance = abs(x - x1) + abs(y - y1)
+
+                if tmpDistance < minDistance:
+                    minDistance = tmpDistance
+                    index = i
+        
+        return index
+```
