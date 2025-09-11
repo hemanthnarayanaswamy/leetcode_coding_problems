@@ -159,3 +159,35 @@
 	<li><code>commands</code> consists only of <code>&quot;UP&quot;</code>, <code>&quot;RIGHT&quot;</code>, <code>&quot;DOWN&quot;</code>, and <code>&quot;LEFT&quot;</code>.</li>
 	<li>The input is generated such the snake will not move outside of the boundaries.</li>
 </ul>
+
+# Solution
+```python
+class Solution:
+    def finalPositionOfSnake(self, n: int, commands: List[str]) -> int:
+        directions = {"RIGHT": [0, 1], "LEFT": [0, -1], "DOWN": [1, 0], "UP": [-1, 0]}
+        i = j = 0
+
+        for command in commands:
+            i += directions[command][0]
+            j += directions[command][1]
+        
+        return i * n + j
+```
+---
+```python
+class Solution:
+    def finalPositionOfSnake(self, n: int, commands: List[str]) -> int:
+        i = j = 0
+
+        for command in commands:
+            if command == "RIGHT":
+                j += 1
+            elif command == "LEFT":
+                j -= 1
+            elif command == "DOWN":
+                i += 1
+            else:
+                i -= 1
+        
+        return i * n + j
+```
