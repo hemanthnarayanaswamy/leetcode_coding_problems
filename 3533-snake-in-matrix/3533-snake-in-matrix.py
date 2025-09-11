@@ -1,6 +1,5 @@
 class Solution:
     def finalPositionOfSnake(self, n: int, commands: List[str]) -> int:
-        
         i = j = 0
 
         for command in commands:
