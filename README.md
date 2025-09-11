@@ -357,6 +357,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3476-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3476-find-minimum-operations-to-make-all-elements-divisible-by-three) |
+| [3533-snake-in-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3533-snake-in-matrix) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3582-find-indices-of-stable-mountains](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3582-find-indices-of-stable-mountains) |
@@ -678,6 +679,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3447-clear-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3447-clear-digits) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3455-minimum-length-of-string-after-operations) |
 | [3468-find-the-encrypted-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3468-find-the-encrypted-string) |
+| [3533-snake-in-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3533-snake-in-matrix) |
 | [3540-hash-divided-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3540-hash-divided-string) |
 | [3553-check-if-two-chessboard-squares-have-the-same-color](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3553-check-if-two-chessboard-squares-have-the-same-color) |
 | [3567-convert-date-to-binary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3567-convert-date-to-binary) |
@@ -747,6 +749,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3426-minimum-number-of-chairs-in-a-waiting-room](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3426-minimum-number-of-chairs-in-a-waiting-room) |
 | [3447-clear-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3447-clear-digits) |
 | [3450-find-the-child-who-has-the-ball-after-k-seconds](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3450-find-the-child-who-has-the-ball-after-k-seconds) |
+| [3533-snake-in-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3533-snake-in-matrix) |
 | [3540-hash-divided-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3540-hash-divided-string) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 | [3768-check-if-digits-are-equal-in-string-after-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3768-check-if-digits-are-equal-in-string-after-operations-i) |
