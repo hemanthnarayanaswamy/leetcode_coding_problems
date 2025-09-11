@@ -6,12 +6,11 @@ class Solution:
         for i in range(len(s)):
             if s[i] in s_vowel:
                 temp.append(s[i])
-                s[i] = '*'
+                s[i] = '_'
         temp.sort(reverse=True)
 
         for i in range(len(s)):
-            if s[i] == '*':
+            if s[i] == '_':
                 s[i] = temp.pop()
         
         return ''.join(s)
-        
