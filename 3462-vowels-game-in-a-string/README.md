@@ -50,3 +50,40 @@ There is no valid play for Alice in her first turn, so Alice loses the game.</p>
 	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>s</code> consists only of lowercase English letters.</li>
 </ul>
+
+# Solution
+*  If there are no vowels in the initial string, then Bob wins.
+*  If the number of vowels in the initial string is odd, then Alice can remove the whole string on her first turn and win.
+*  If the number of vowels in the initial string is Even, then Alice can remove (count - 1) of the whole string that way only one vowel will be left which is odd that means Bob cannot pick even and Alice Wins the game. 
+
+**So Bob only wins when the initial string don't have any vowels else Alice wins everytime**
+```python
+class Solution:
+    def doesAliceWin(self, s: str) -> bool:
+        count = sum(1 for c in s if c in 'aeiou')
+
+        if count == 0:
+            return False
+        else:
+            return True
+```
+---
+```python
+class Solution:
+    def doesAliceWin(self, s: str) -> bool:
+        vowels = 'aeiou'
+
+        for c in s:
+            if c in vowels:
+                return True
+        
+        return False 
+```
+---
+```python
+class Solution:
+    def doesAliceWin(self, s: str) -> bool:
+        count = s.count('a') + s.count('e') + s.count('i') + s.count('o') + s.count('u')
+        
+        return bool(count)
+```
