@@ -1,6 +1,6 @@
 class Solution:
     def subarraySum(self, nums: List[int]) -> int:
-        res = []
+        res = 0
         start = 0
         totalSum = 0
 
@@ -15,8 +15,8 @@ class Solution:
                 totalSum += sum(nums[newStart:start])
                 start = newStart
             
-            res.append(totalSum)
+            res += totalSum
         
-        return sum(res)
+        return res
 
 
