@@ -368,6 +368,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3705-find-the-largest-almost-missing-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3705-find-the-largest-almost-missing-integer) |
 | [3707-find-the-most-common-response](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3707-find-the-most-common-response) |
 | [3723-sum-of-good-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3723-sum-of-good-numbers) |
+| [3731-sum-of-variable-length-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3731-sum-of-variable-length-subarrays) |
 | [3747-maximum-difference-between-adjacent-elements-in-a-circular-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3747-maximum-difference-between-adjacent-elements-in-a-circular-array) |
 | [3748-sort-matrix-by-diagonals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3748-sort-matrix-by-diagonals) |
 | [3778-transform-array-by-parity](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3778-transform-array-by-parity) |
@@ -1000,6 +1001,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3311-ant-on-the-boundary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3311-ant-on-the-boundary) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
+| [3731-sum-of-variable-length-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3731-sum-of-variable-length-subarrays) |
 ## Stack
 |  |
 | ------- |
