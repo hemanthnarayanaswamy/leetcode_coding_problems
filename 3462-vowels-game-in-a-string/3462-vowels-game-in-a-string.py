@@ -1,9 +1,5 @@
 class Solution:
     def doesAliceWin(self, s: str) -> bool:
-        vowels = 'aeiou'
-
-        for c in s:
-            if c in vowels:
-                return True
+        count = s.count('a') + s.count('e') + s.count('i') + s.count('o') + s.count('u')
         
-        return False
+        return bool(count)
