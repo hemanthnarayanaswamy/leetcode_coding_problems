@@ -5,11 +5,8 @@ class Solution:
         idx = -1
 
         for i in range(n):
-            wins = 0
-            for j in range(n):
-                if i != j and grid[i][j] == 1:
-                    wins += 1
-                    
+            wins = grid[i].count(1)
+
             if wins > maxWins:
                 maxWins = wins
                 idx = i
