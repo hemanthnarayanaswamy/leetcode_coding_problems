@@ -1,10 +1,8 @@
 class Solution:
     def findChampion(self, grid: List[List[int]]) -> int:
-        n = len(grid)
-        maxWins = 0
-        idx = -1
+        maxWins = idx = 0
 
-        for i in range(n):
+        for i in range(len(grid)):
             wins = grid[i].count(1)
 
             if wins > maxWins:
