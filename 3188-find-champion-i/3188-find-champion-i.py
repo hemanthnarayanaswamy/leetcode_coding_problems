@@ -9,6 +9,7 @@ class Solution:
             for j in range(n):
                 if i != j and grid[i][j] == 1:
                     wins += 1
+                    
             if wins > maxWins:
                 maxWins = wins
                 idx = i
