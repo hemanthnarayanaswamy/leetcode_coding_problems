@@ -39,3 +39,66 @@ So team 1 will be the champion.
 	<li>For all <code>i, j</code> that <code>i != j</code>, <code>grid[i][j] != grid[j][i]</code>.</li>
 	<li>The input is generated such that if team <code>a</code> is stronger than team <code>b</code> and team <code>b</code> is stronger than team <code>c</code>, then team <code>a</code> is stronger than team <code>c</code>.</li>
 </ul>
+
+# Solution 
+* The rows are for the rounds (grid[n]) that played and columns (grid[n][m]) are for the teams that are playing
+* In rows, there are win(1)/lose(0) statuses for each team
+* For loser team (lets decide it as "Team i"), there is a "0" is written in the index of the team (For Team i, the index will be like `grid[current_round][i] = 0`)
+* For winner team (lets decide it as "Team j"), there is a "1" is written in the index of the team (For Team j, the index will be like `grid[current_round][j] = 1`)
+* Our main purpose is learning the team with most points; who won the most and return it
+
+```python
+class Solution:
+    def findChampion(self, grid: List[List[int]]) -> int:
+        n = len(grid)
+        winsCount = [0] * n
+
+        for i in range(n):
+            for j in range(n):
+                if i != j and grid[i][j] == 1:
+                    winsCount[i] += 1
+        maxWins = 0
+        idx = -1
+
+        for i, w in enumerate(winsCount):
+            if w > maxWins:
+                idx = i
+                maxWins = w
+        
+        return idx
+```
+---
+```python
+class Solution:
+    def findChampion(self, grid: List[List[int]]) -> int:
+        n = len(grid)
+        maxWins = 0
+        idx = -1
+
+        for i in range(n):
+            wins = 0
+            for j in range(n):
+                if i != j and grid[i][j] == 1:
+                    wins += 1
+                    
+            if wins > maxWins:
+                maxWins = wins
+                idx = i
+        
+        return idx
+```
+---
+```python
+class Solution:
+    def findChampion(self, grid: List[List[int]]) -> int:
+        maxWins = idx = 0
+
+        for i in range(len(grid)):
+            wins = grid[i].count(1)
+
+            if wins > maxWins:
+                maxWins = wins
+                idx = i
+        
+        return idx
+```
