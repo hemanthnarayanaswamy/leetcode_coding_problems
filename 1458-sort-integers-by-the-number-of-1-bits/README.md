@@ -30,3 +30,12 @@ The sorted array by bits is [0,1,2,4,8,3,5,6,7]
 	<li><code>1 &lt;= arr.length &lt;= 500</code></li>
 	<li><code>0 &lt;= arr[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+# Solution 
+In Python, `bit_count()` is an integer method that returns the number of `set (1)` bits in the binary representation of the absolute value of the integer. This is also known as the population count or `Hamming weight`.
+
+```python
+class Solution:
+    def sortByBits(self, arr: List[int]) -> List[int]:
+        return sorted(arr, key=lambda x: (x.bit_count(), x))
+```
