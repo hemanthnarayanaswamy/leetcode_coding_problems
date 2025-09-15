@@ -5,8 +5,9 @@ class Solution:
 
         for num in nums:
             if num != 0:
-                res += ((zeroCount) * (zeroCount + 1)) // 2
-                zeroCount = 0
+                if zeroCount:
+                    res += ((zeroCount) * (zeroCount + 1)) // 2
+                    zeroCount = 0
             else:
                 zeroCount += 1
         
