@@ -10,4 +10,3 @@ class Solution:
                     break
         
         return len(text) - cannotType
-                
