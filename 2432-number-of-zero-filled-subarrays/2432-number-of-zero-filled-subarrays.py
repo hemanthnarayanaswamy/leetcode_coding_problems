@@ -1,17 +1,18 @@
 class Solution:
     def zeroFilledSubarray(self, nums: List[int]) -> int:
-        res = 0
+        res = []
         zeroCount = 0
 
         for num in nums:
             if num != 0:
                 if zeroCount:
-                    res += ((zeroCount) * (zeroCount + 1)) // 2
+                    res.append(zeroCount)
                     zeroCount = 0
             else:
                 zeroCount += 1
         
-        res += ((zeroCount) * (zeroCount + 1)) // 2
+        if zeroCount: 
+            res.append(zeroCount)
         
-        return res
+        return sum((n*(n+1))//2 for n in res)
         
