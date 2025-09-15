@@ -40,3 +40,48 @@ There is no occurrence of a subarray with a size more than 3 filled with 0. Ther
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Solution 
+```ini
+If you have given a array of size n you can easily find out the number of subarray using formula int subarr 
+( n ) * ( n + 1 ) / 2 ;
+```
+
+```python
+class Solution:
+    def zeroFilledSubarray(self, nums: List[int]) -> int:
+        zeroCount = res = 0
+
+        for num in nums:
+            if num == 0:
+                zeroCount += 1
+            else: 
+                if zeroCount:
+                    res += ((zeroCount) * (zeroCount + 1)) // 2
+                    zeroCount = 0
+
+        if zeroCount:
+            res += ((zeroCount) * (zeroCount + 1)) // 2
+        
+        return res
+```
+---
+```python
+class Solution:
+    def zeroFilledSubarray(self, nums: List[int]) -> int:
+        res = []
+        zeroCount = 0
+
+        for num in nums:
+            if num != 0:
+                if zeroCount:
+                    res.append(zeroCount)
+                    zeroCount = 0
+            else:
+                zeroCount += 1
+        
+        if zeroCount: 
+            res.append(zeroCount)
+        
+        return sum((n*(n+1))//2 for n in res)
+```
