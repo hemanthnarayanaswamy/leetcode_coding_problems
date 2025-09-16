@@ -52,3 +52,47 @@
 	<li><code>1 &lt;= n == cost.length &lt;= 100</code></li>
 	<li><code>1 &lt;= cost[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+The problem is is equivalent to this problem: For each element in cost, determine the minimum value in costs preceding that element.
+* After you swap with someone, they move behind you. This means once you've paid to swap with someone, you can later swap with people they were in front of for free.
+```python
+class Solution:
+    def minCosts(self, cost: List[int]) -> List[int]:
+        n = len(cost)
+        res= [0] * n
+        prefixMin = 100
+
+        for i in range(n):
+            res[i] = min(prefixMin, cost[i])
+            prefixMin = res[i]
+        
+        return res
+```
+
+* With cost = `[5,3,4,1,3,2]`:
+
+Starting at position 6 (end of line), people are at positions 0-5: `0 1 2 3 4 5 Y(6)`
+* Position 0: Pay person 0 directly (cost 5) = total 5
+* Position 1: Pay person 1 directly (cost 3) = total 3
+* Position 2: First get to position 1 (cost 3), then person 2 can swap with you for free = total 3
+* Position 3: Pay person 3 directly (cost 1) = total 1
+* Position 4: First get to position 3 (cost 1), then person 4 can swap with you for free = total 1
+* Position 5: First get to position 3 (cost 1), then person 5 can swap with you for free = total 1
+
+The free swap rule means that once you're at position `i`, any person at position `j > i` can swap with you for free because they're behind you. 
+This is why after getting to position 3, we can get to positions 4 and 5 without additional cost.
+
+This gives us `[5, 3, 3, 1, 1, 1]` which matches the expected output.
+
+```python
+class Solution:
+    def minCosts(self, cost: List[int]) -> List[int]:
+        a=float('inf')
+        ans=[]
+        for i in range(len(cost)):
+            if cost[i]<=a:
+                a=cost[i]
+            ans.append(a)
+        return ans
+```
