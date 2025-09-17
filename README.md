@@ -454,6 +454,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2177-check-whether-two-strings-are-almost-equivalent](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2177-check-whether-two-strings-are-almost-equivalent) |
 | [2190-count-common-words-with-one-occurrence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2190-count-common-words-with-one-occurrence) |
 | [2215-finding-3-digit-even-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2215-finding-3-digit-even-numbers) |
+| [2226-rings-and-rods](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2226-rings-and-rods) |
 | [2270-find-all-lonely-numbers-in-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2270-find-all-lonely-numbers-in-the-array) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2293-minimum-number-of-steps-to-make-two-strings-anagram-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2293-minimum-number-of-steps-to-make-two-strings-anagram-ii) |
@@ -628,6 +629,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2177-check-whether-two-strings-are-almost-equivalent](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2177-check-whether-two-strings-are-almost-equivalent) |
 | [2190-count-common-words-with-one-occurrence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2190-count-common-words-with-one-occurrence) |
 | [2219-maximum-number-of-words-found-in-sentences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2219-maximum-number-of-words-found-in-sentences) |
+| [2226-rings-and-rods](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2226-rings-and-rods) |
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2231-find-first-palindromic-string-in-the-array) |
 | [2232-adding-spaces-to-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2232-adding-spaces-to-a-string) |
 | [2235-capitalize-the-title](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2235-capitalize-the-title) |
