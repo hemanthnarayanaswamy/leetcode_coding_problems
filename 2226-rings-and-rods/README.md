@@ -53,3 +53,33 @@ Only one ring is given. Thus, no rods have all three colors.
 	<li><code>rings[i]</code> where <code>i</code> is <strong>even</strong> is either <code>&#39;R&#39;</code>, <code>&#39;G&#39;</code>, or <code>&#39;B&#39;</code> (<strong>0-indexed</strong>).</li>
 	<li><code>rings[i]</code> where <code>i</code> is <strong>odd</strong> is a digit from <code>&#39;0&#39;</code> to <code>&#39;9&#39;</code> (<strong>0-indexed</strong>).</li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def countPoints(self, rings: str) -> int:
+        ringRodMap = defaultdict(set)
+        count = set()
+
+        for i in range(0, len(rings), 2):
+            c = rings[i]
+            r = rings[i+1]
+            ringRodMap[r].add(c)
+
+            if len(ringRodMap[r]) == 3 and r not in count:
+                count.add(r)
+
+        return len(count)
+```
+* The Hint is to use the HashMap with the Sets are values to track the colours. 
+
+```python
+class Solution:
+    def countPoints(self, r: str) -> int:
+        ans = 0
+        for i in range(10):
+            i = str(i)
+            if 'R'+i in r and 'G'+i in r and 'B'+i in r:
+                ans += 1
+        return ans
+```
