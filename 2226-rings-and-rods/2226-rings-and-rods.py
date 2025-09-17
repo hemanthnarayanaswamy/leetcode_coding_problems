@@ -8,7 +8,7 @@ class Solution:
             r = rings[i+1]
             ringRodMap[r].add(c)
 
-            if len(ringRodMap[r]) == 3:
+            if len(ringRodMap[r]) == 3 and r not in count:
                 count.add(r)
 
         return len(count)
