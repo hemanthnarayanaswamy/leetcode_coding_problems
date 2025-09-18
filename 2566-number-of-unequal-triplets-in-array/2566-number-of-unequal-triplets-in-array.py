@@ -3,9 +3,9 @@ class Solution:
         count = 0
         n = len(nums)
 
-        for i in range(n): 
+        for i in range(n-2): 
             x = nums[i]
-            for j in range(i+1, n): 
+            for j in range(i+1, n-1): 
                 y = nums[j]
                 if x == y:
                     continue
