@@ -4,11 +4,14 @@ class Solution:
         n = len(nums)
 
         for i in range(n): 
+            x = nums[i]
             for j in range(i+1, n): 
-                if nums[i] == nums[j]:
+                y = nums[j]
+                if x == y:
                     continue
                 for k in range(j+1, n):
-                    if nums[i] != nums[k] != nums[j]:
+                    z = nums[k]
+                    if x != z and y != z:
                         count += 1
         
         return count
