@@ -5,7 +5,11 @@ class Solution:
         for i in range(1, len(s)):
             a, b = s[i-1], s[i]
 
-            if a != b and sMap[a] == int(a) and sMap[b] == int(b):
-                return a+b
+            if a == b:
+                continue
+            
+            if sMap[a] == int(a):
+                if sMap[b] == int(b):
+                    return a + b
         
         return ''
