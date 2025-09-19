@@ -2,8 +2,8 @@ class Solution:
     def findValidPair(self, s: str) -> str:
         sMap = Counter(s)
 
-        for i in range(1, len(s)):
-            a, b = s[i-1], s[i]
+        for i in range(len(s)-1):
+            a, b = s[i], s[i+1]
 
             if a == b:
                 continue
