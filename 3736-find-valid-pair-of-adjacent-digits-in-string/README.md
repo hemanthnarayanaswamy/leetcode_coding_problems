@@ -51,3 +51,34 @@
 	<li><code>2 &lt;= s.length &lt;= 100</code></li>
 	<li><code>s</code> only consists of digits from <code>&#39;1&#39;</code> to <code>&#39;9&#39;</code>.</li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def findValidPair(self, s: str) -> str:
+        sMap = Counter(s)
+
+        for i in range(len(s)-1):
+            a, b = s[i], s[i+1]
+
+            if a == b:
+                continue
+            
+            if sMap[a] == int(a):
+                if sMap[b] == int(b):
+                    return a + b
+        
+        return ''
+```
+---
+```python
+class Solution:
+    def findValidPair(self, s: str) -> str:
+        counter_map = collections.Counter(s)
+        for i in range(len(s) - 1):
+            if s[i] == s[i+1]:
+                continue
+            if counter_map[s[i]] == int(s[i]) and counter_map[s[i+1]] == int(s[i+1]):
+                return s[i:i+2]
+        return ""
+```
