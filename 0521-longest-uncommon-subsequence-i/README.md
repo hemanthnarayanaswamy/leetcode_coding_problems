@@ -35,3 +35,17 @@ Note that &quot;cdc&quot; is also a longest uncommon subsequence.
 	<li><code>1 &lt;= a.length, b.length &lt;= 100</code></li>
 	<li><code>a</code> and <code>b</code> consist of lower-case English letters.</li>
 </ul>
+
+# Solution
+* The longest uncommon subsequence (LUS) is the longest subsequence present in one string but not in the other.
+* If both strings are identical, then no uncommon subsequence exists → return -1.
+* Otherwise, the longer string itself is the LUS, because it cannot be a subsequence of the shorter one.
+
+```python
+class Solution:
+    def findLUSlength(self, a: str, b: str) -> int:
+        if a == b:
+            return -1
+        else:
+            return max(len(a), len(b))  
+```
