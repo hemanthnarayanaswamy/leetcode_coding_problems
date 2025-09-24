@@ -1,16 +1,19 @@
-class Solution(object):
-    def findShortestSubArray(self, nums):
+class Solution:
+    def findShortestSubArray(self, nums: List[int]) -> int:
         left, right, count = {}, {}, {}
-        for i, x in enumerate(nums):
-            if x not in left:
-                left[x] = i
-            right[x] = i
-            count[x] = count.get(x, 0) + 1
 
-        ans = len(nums)
+        for i, num in enumerate(nums):
+            if num not in left:
+                left[num] = i
+            
+            right[num] = i
+            count[num] = count.get(num, 0) + 1
+        
         degree = max(count.values())
-        for x in count:
-            if count[x] == degree:
-                ans = min(ans, right[x] - left[x] + 1)
+        ans = len(nums)
 
+        for x, d in count.items():
+            if d == degree:
+                ans = min(ans, right[x] - left[x] + 1)
+        
         return ans
