@@ -32,3 +32,32 @@ So [2,2,3,1,4,2] is the shortest subarray, therefore returning 6.
 	<li><code>nums.length</code> will be between 1 and 50,000.</li>
 	<li><code>nums[i]</code> will be an integer between 0 and 49,999.</li>
 </ul>
+
+# Solution 
+An array that has degree `d`, must have some element `x` occur `d` times. If some subarray has the same degree, then some element `x` (that occurred `d` times), still occurs `d` times. The shortest such subarray would be from the first occurrence of `x` until the last occurrence.
+
+* For each element in the given array, let's know `left`, **the index of its first occurrence**; and `right`, the** index of its last occurrence**. For example, with `nums = [1,2,3,2,5]` we have `left[2] = 1` and `right[2] = 3`.
+
+* Then, for each element x that occurs the maximum number of times, `right[x] - left[x] + 1` will be our candidate answer, and we'll take the minimum of those candidates.
+
+```python
+class Solution:
+    def findShortestSubArray(self, nums: List[int]) -> int:
+        left, right, count = {}, {}, {}
+
+        for i, num in enumerate(nums):
+            if num not in left:
+                left[num] = i
+            
+            right[num] = i
+            count[num] = count.get(num, 0) + 1
+        
+        degree = max(count.values())
+        ans = len(nums)
+
+        for x, d in count.items():
+            if d == degree:
+                ans = min(ans, right[x] - left[x] + 1)
+        
+        return ans
+```
