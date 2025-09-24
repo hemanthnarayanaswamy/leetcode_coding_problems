@@ -149,6 +149,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0643-maximum-average-subarray-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0643-maximum-average-subarray-i) |
 | [0665-non-decreasing-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0665-non-decreasing-array) |
 | [0682-baseball-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0682-baseball-game) |
+| [0697-degree-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0697-degree-of-an-array) |
 | [0735-asteroid-collision](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0739-daily-temperatures) |
 | [0748-largest-number-at-least-twice-of-others](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0748-largest-number-at-least-twice-of-others) |
@@ -411,6 +412,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0525-contiguous-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0525-contiguous-array) |
 | [0575-distribute-candies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0575-distribute-candies) |
 | [0599-minimum-index-sum-of-two-lists](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0599-minimum-index-sum-of-two-lists) |
+| [0697-degree-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0697-degree-of-an-array) |
 | [0749-shortest-completing-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0749-shortest-completing-word) |
 | [0782-jewels-and-stones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0782-jewels-and-stones) |
 | [0807-custom-sort-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0807-custom-sort-string) |
