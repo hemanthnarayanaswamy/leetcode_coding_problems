@@ -60,3 +60,50 @@
 	<li><code>2 &lt;= n == nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* No complication use prefix sum to track the right and left sums and 
+* Before finding the difference make sure both sums are not zero 
+
+```python
+class Solution:
+    def countPartitions(self, nums: List[int]) -> int:
+        count = 0
+        rightSum = sum(nums)
+        leftSum = 0
+
+        for i in range(len(nums)):
+            rightSum -= nums[i]
+            leftSum += nums[i]
+        
+            if leftSum and rightSum and (leftSum - rightSum) % 2 == 0:
+                count += 1
+        
+        return count
+```
+---
+# Optimal Solution 
+* what we need to calculate after split the array is the difference between the sum of the left and right subarrays
+```
+diff = left_sum - right_sum
+right_sum = total - left_sum
+```
+```
+diff = left_sum - (total - left_sum)
+diff = 2 * left_sum - total
+```
+* To check if diff is even, calculate diff % 2.
+Since `diff = 2 * left_sum - total` , we can write: `(2 * left_sum - total) % 2`.
+Using **modular arithmetic, the term `(2 * left_sum) % 2` equals 0 because any number multiplied by 2 is always even. Thus, the expression simplifies to: `− total % 2`, this further simplifies to:`total % 2`.**
+
+what is it mean if total is even?
+**It means you can cut the each valid position in the array, so the number of partitions is n - 1.**
+
+```python
+class Solution:
+    def countPartitions(self, nums: List[int]) -> int:
+        if sum(nums)%2==0:
+            return len(nums)-1
+        else:
+            return 0        
+```
