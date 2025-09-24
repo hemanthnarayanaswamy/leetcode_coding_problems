@@ -7,8 +7,7 @@ class Solution:
         for i in range(len(nums)):
             rightSum -= nums[i]
             leftSum += nums[i]
-            print(rightSum, leftSum)
-
+        
             if leftSum and rightSum and (leftSum - rightSum) % 2 == 0:
                 count += 1
         
