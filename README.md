@@ -90,6 +90,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3567-convert-date-to-binary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3567-convert-date-to-binary) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3606-minimum-element-after-replacement-with-digit-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3606-minimum-element-after-replacement-with-digit-sum) |
+| [3704-count-partitions-with-even-sum-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3704-count-partitions-with-even-sum-difference) |
 | [3768-check-if-digits-are-equal-in-string-after-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3768-check-if-digits-are-equal-in-string-after-operations-i) |
 | [3817-maximum-containers-on-a-ship](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3817-maximum-containers-on-a-ship) |
 | [3830-find-closest-person](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3830-find-closest-person) |
@@ -371,6 +372,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3606-minimum-element-after-replacement-with-digit-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3606-minimum-element-after-replacement-with-digit-sum) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3685-count-subarrays-of-length-three-with-a-condition](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3685-count-subarrays-of-length-three-with-a-condition) |
+| [3704-count-partitions-with-even-sum-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3704-count-partitions-with-even-sum-difference) |
 | [3705-find-the-largest-almost-missing-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3705-find-the-largest-almost-missing-integer) |
 | [3707-find-the-most-common-response](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3707-find-the-most-common-response) |
 | [3723-sum-of-good-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3723-sum-of-good-numbers) |
@@ -1018,6 +1020,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3311-ant-on-the-boundary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3311-ant-on-the-boundary) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
+| [3704-count-partitions-with-even-sum-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3704-count-partitions-with-even-sum-difference) |
 | [3731-sum-of-variable-length-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3731-sum-of-variable-length-subarrays) |
 ## Stack
 |  |
