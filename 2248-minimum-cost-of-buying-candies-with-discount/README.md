@@ -49,3 +49,47 @@ Hence, the minimum cost to buy all candies is 5 + 5 = 10.
 	<li><code>1 &lt;= cost.length &lt;= 100</code></li>
 	<li><code>1 &lt;= cost[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+**To avoid spending on expensive candies we have first look at expensive ones. so "sort whole list and reverse it".**
+- Then buy 2 candies avail 3rd as free.
+- we have to approach in descending cost order, because we can get 3rd candy for free only if its cost is lesser than the 2 purchased ones.
+---
+```python
+class Solution:
+    def minimumCost(self, cost: List[int]) -> int:
+        cost.sort(reverse=True)
+        total = 0
+
+        for i in range(len(cost)):
+            if (i+1) % 3 != 0: # Easy to under stand 
+                total += cost[i]
+        
+        return total
+```
+---
+```python
+class Solution:
+    def minimumCost(self, cost: List[int]) -> int:
+        cost.sort(reverse=True)
+        total = 0
+
+        for i in range(len(cost)):
+            if i % 3 != 2: # Remember this logic We need to remove the every 3 element
+                total += cost[i]
+        
+        return total
+```
+---
+```python
+class Solution:
+    def minimumCost(self, cost: List[int]) -> int:
+        cost.sort(reverse=True)
+        total = sum(cost)
+
+        for i in range(len(cost)):
+            if (i+1) % 3 == 0:
+                total -= cost[i]
+        
+        return total
+```
