@@ -4,7 +4,7 @@ class Solution:
         total = 0
 
         for i in range(len(cost)):
-            if i % 3 != 2:
+            if (i+1) % 3 != 0:
                 total += cost[i]
         
         return total
