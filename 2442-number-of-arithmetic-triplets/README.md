@@ -38,3 +38,48 @@
 	<li><code>1 &lt;= diff &lt;= 50</code></li>
 	<li><code>nums</code> is <strong>strictly</strong> increasing.</li>
 </ul>
+
+# Python 
+```
+j - i = d
+i = j - d & j = d + i 
+
+k - j = d
+k - i - d = d 
+i = k - 2d 
+
+j = d + i
+k = 2d + i
+```
+* The meaning of the above formula is for a number i if there exists are number `i+d` then that number is `num[j]` and if `i+2d` exists that number is `num[k]` which we can increase the count. 
+* `diff` is always positive and the array is always increasing that means we don't need to worry about condition `i < j < k` since j and k values are obtained after adding associated d values. 
+
+```python
+class Solution:
+    def arithmeticTriplets(self, nums: List[int], diff: int) -> int:
+        count = 0
+        numsU = set(nums)
+
+        for num in nums:
+            y = num + diff
+            z = num + 2*diff 
+
+            if y in numsU and z in numsU:
+                count += 1
+        
+        return count
+```
+---
+```python
+class Solution:
+    def arithmeticTriplets(self, nums: List[int], diff: int) -> int:
+        num_set = set(nums)
+        count = 0
+        
+        for x in nums:
+            if (x + diff in num_set) and (x + 2 * diff in num_set):
+                count += 1
+        
+        return count
+```
+
