@@ -297,6 +297,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2432-number-of-zero-filled-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2433-best-poker-hand](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2433-best-poker-hand) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
+| [2442-number-of-arithmetic-triplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2442-number-of-arithmetic-triplets) |
 | [2447-merge-similar-items](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2447-merge-similar-items) |
 | [2448-count-number-of-bad-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2448-count-number-of-bad-pairs) |
 | [2465-shifting-letters-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2465-shifting-letters-ii) |
@@ -476,6 +477,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2427-first-letter-to-appear-twice](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2427-first-letter-to-appear-twice) |
 | [2433-best-poker-hand](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2433-best-poker-hand) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
+| [2442-number-of-arithmetic-triplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2442-number-of-arithmetic-triplets) |
 | [2447-merge-similar-items](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2447-merge-similar-items) |
 | [2448-count-number-of-bad-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2448-count-number-of-bad-pairs) |
 | [2476-check-distances-between-same-letters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2476-check-distances-between-same-letters) |
@@ -822,6 +824,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2265-partition-array-according-to-given-pivot](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2320-find-all-k-distant-indices-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2320-find-all-k-distant-indices-in-an-array) |
+| [2442-number-of-arithmetic-triplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2442-number-of-arithmetic-triplets) |
 | [2481-strictly-palindromic-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2481-strictly-palindromic-number) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2524-largest-positive-integer-that-exists-with-its-negative](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2524-largest-positive-integer-that-exists-with-its-negative) |
@@ -1203,6 +1206,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1656-count-good-triplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1656-count-good-triplets) |
 | [2122-count-special-quadruplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2122-count-special-quadruplets) |
 | [2215-finding-3-digit-even-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2215-finding-3-digit-even-numbers) |
+| [2442-number-of-arithmetic-triplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2442-number-of-arithmetic-triplets) |
 | [2844-sum-of-squares-of-special-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2844-sum-of-squares-of-special-elements) |
 | [3221-find-the-peaks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3221-find-the-peaks) |
 ## Divide and Conquer
