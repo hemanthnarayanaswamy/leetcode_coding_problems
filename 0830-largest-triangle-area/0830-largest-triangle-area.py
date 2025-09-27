@@ -12,8 +12,8 @@ class Solution:
         n = len(points)
 
         # Iterate through all unique combinations of three points
-        for i in range(n):
-            for j in range(i + 1, n): # Start j from i + 1 to avoid duplicate pairs and self-pairing
+        for i in range(n-2):
+            for j in range(i + 1, n-1): # Start j from i + 1 to avoid duplicate pairs and self-pairing
                 for k in range(j + 1, n): # Start k from j + 1 to avoid duplicate triplets and self-pairing
                     current_area = area(points[i], points[j], points[k])
                     if current_area > maxArea:
