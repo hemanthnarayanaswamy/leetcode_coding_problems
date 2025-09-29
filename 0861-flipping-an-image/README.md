@@ -40,3 +40,44 @@ Then invert the image: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
 	<li><code>1 &lt;= n &lt;= 20</code></li>
 	<li><code>images[i][j]</code> is either <code>0</code> or <code>1</code>.</li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def flipAndInvertImage(self, image: List[List[int]]) -> List[List[int]]:
+        n = len(image)
+        res = []
+
+        for i in range(n):
+            tmp = image[i][::-1]
+            for j in range(n):
+                if tmp[j]:
+                    tmp[j] = 0
+                else:
+                    tmp[j] = 1
+            res.append(tmp)
+        
+        return res
+```
+---
+```python
+class Solution:
+    def flipAndInvertImage(self, image: List[List[int]]) -> List[List[int]]:
+        n = len(image)
+        for row in image:
+            # Reverse and invert simultaneously
+            for i in range((n + 1) // 2):
+                # Swap + invert
+                row[i], row[n - 1 - i] = row[n - 1 - i] ^ 1, row[i] ^ 1
+        return image
+```
+---
+```python
+class Solution:
+    def flipAndInvertImage(self, image: List[List[int]]) -> List[List[int]]:
+        res = []
+        for i in image:
+            i.reverse()
+            res.append([x ^ 1 for x in i])
+        return res
+```
