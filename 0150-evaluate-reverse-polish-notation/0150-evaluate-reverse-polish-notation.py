@@ -7,14 +7,14 @@ class Solution:
 
         stack = []
         signs = {'+': add, '*': multiply, '-': subtract, '/': divide}
-
+        
         for token in tokens:
-            if token not in signs:
-                stack.append(int(token))
-            else:
+            if token in signs:
                 b = stack.pop()
                 a = stack.pop()
                 c = signs[token](a,b)
                 stack.append(c)
-        
+            else:
+                stack.append(int(token))
+
         return stack[0]
