@@ -2,10 +2,10 @@ class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
         stack = []
         ops = {
-            '+': operator.add,
-            '-': operator.sub,
-            '*': operator.mul,
-            '/': operator.truediv
+            "+": lambda a, b: a + b,
+            "-": lambda a, b: a - b,
+            "/": lambda a, b: a / b,
+            "*": lambda a, b: a * b,
         }
         
         for token in tokens:
