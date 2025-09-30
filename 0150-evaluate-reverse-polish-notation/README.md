@@ -51,3 +51,52 @@
 	<li><code>1 &lt;= tokens.length &lt;= 10<sup>4</sup></code></li>
 	<li><code>tokens[i]</code> is either an operator: <code>&quot;+&quot;</code>, <code>&quot;-&quot;</code>, <code>&quot;*&quot;</code>, or <code>&quot;/&quot;</code>, or an integer in the range <code>[-200, 200]</code>.</li>
 </ul>
+
+# Solution 
+**Using the String methods like `isnumeric()` or `isdigit()`, we cannot differenciate the negative numbers becuase of its sign `-` it will not be considered as Number or Digit, We need to use any other method. **
+** Arthemetic Signs cannot be converted from the string format** 
+```python
+class Solution:
+    def evalRPN(self, tokens: List[str]) -> int:
+        def add(a, b): return a + b
+        def subtract(a, b): return a - b
+        def multiply(a, b): return a * b
+        def divide(a, b): return int(a / b)
+
+        stack = []
+        signs = {'+': add, '*': multiply, '-': subtract, '/': divide}
+        
+        for token in tokens:
+            if token in signs:
+                b = stack.pop()
+                a = stack.pop()
+                c = signs[token](a,b)
+                stack.append(c)
+            else:
+                stack.append(int(token))
+
+        return stack[0]
+```
+---
+```python
+class Solution:
+    def evalRPN(self, tokens: List[str]) -> int:
+        stack = []
+        ops = {
+            "+": lambda a, b: a + b,
+            "-": lambda a, b: a - b,
+            "/": lambda a, b: a / b,
+            "*": lambda a, b: a * b,
+        }
+        
+        for token in tokens:
+            if token in ops:
+                b = stack.pop()
+                a = stack.pop()
+                result = ops[token](a, b)
+                stack.append(int(result))  
+            else:
+                stack.append(int(token))
+        
+        return stack[0]
+```
