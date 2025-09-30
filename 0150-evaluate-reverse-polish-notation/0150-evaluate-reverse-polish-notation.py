@@ -1,20 +1,20 @@
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
-        def add(a, b): return a + b
-        def subtract(a, b): return a - b
-        def multiply(a, b): return a * b
-        def divide(a, b): return int(a / b)
-
         stack = []
-        signs = {'+': add, '*': multiply, '-': subtract, '/': divide}
+        ops = {
+            '+': operator.add,
+            '-': operator.sub,
+            '*': operator.mul,
+            '/': operator.truediv
+        }
         
         for token in tokens:
-            if token in signs:
+            if token in ops:
                 b = stack.pop()
                 a = stack.pop()
-                c = signs[token](a,b)
-                stack.append(c)
+                result = ops[token](a, b)
+                stack.append(int(result))  
             else:
                 stack.append(int(token))
-
+        
         return stack[0]
