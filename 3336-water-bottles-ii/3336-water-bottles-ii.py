@@ -3,10 +3,9 @@ class Solution:
         bottlesDrunk = emptyBottles = numBottles 
 
         while emptyBottles >= numExchange:
-            emptyBottles -= numExchange
+            emptyBottles -= numExchange - 1
             numExchange += 1
             bottlesDrunk += 1
-            emptyBottles += 1
 
         return bottlesDrunk
         
