@@ -35,3 +35,50 @@
 	<li><code>1 &lt;= numBottles &lt;= 100 </code></li>
 	<li><code>1 &lt;= numExchange &lt;= 100</code></li>
 </ul>
+
+# Solution
+## Problem Logic:
+* Start with `numBottles` full bottles
+* Drink all bottles → get same number of empty bottles
+* Exchange `numExchange` empty bottles for 1 new full bottle
+After each exchange, `numExchange` increases by 1
+Repeat until not enough empty bottles to exchange
+
+## Algorithm Steps:
+1. Initialize: `bottlesDrunk = emptyBottles = numBottles`
+2. While `emptyBottles >= numExchange`:
+		* Use `numExchange` empty bottles → get 1 new bottle
+		* Drink the new bottle → `bottlesDrunk++`, `emptyBottles++`
+		* Increase `exchange rate → numExchange++`
+		* Remove used `empty bottles → emptyBottles -= numExchange`
+		
+## Key Insight:
+* Each exchange gives 1 new bottle to drink
+* Exchange cost increases each time (gets harder)
+* Track total bottles drunk, not just exchanges
+
+```python
+class Solution:
+    def maxBottlesDrunk(self, numBottles: int, numExchange: int) -> int:
+        bottlesDrunk = emptyBottles = numBottles 
+
+        while emptyBottles >= numExchange:
+            emptyBottles -= numExchange - 1
+            numExchange += 1
+            bottlesDrunk += 1
+
+        return bottlesDrunk
+```
+---
+```python
+class Solution:
+    def maxBottlesDrunk(self, numBottles: int, numExchange: int) -> int:
+        bottlesDrunk = emptyBottles = numBottles 
+
+        while emptyBottles >= numExchange:
+            emptyBottles += 1 - numExchange  # +1 new empty, -numExchange used
+            numExchange += 1
+            bottlesDrunk += 1
+
+        return bottlesDrunk
+```
