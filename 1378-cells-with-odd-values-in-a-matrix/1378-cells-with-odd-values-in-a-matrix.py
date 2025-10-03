@@ -3,7 +3,7 @@ class Solution:
         row = [0] * m
         column = [0] * n
 
-        for r,c in indices: # cumulative values 
+        for r,c in indices:  
             row[r] +=  1  
             column[c] += 1
         
