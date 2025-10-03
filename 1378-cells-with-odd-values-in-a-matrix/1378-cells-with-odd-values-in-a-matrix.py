@@ -16,6 +16,5 @@ class Solution:
                 if result[i][j] % 2:
                     count += 1 
 
-        return count
-        
+        return count  
 
