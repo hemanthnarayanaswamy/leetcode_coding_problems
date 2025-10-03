@@ -8,9 +8,9 @@ class Solution:
             column[c] += 1
         
         odd_count = 0
-        for i in range(m):
-            for j in range(n): 
-                if (row[i] + column[j]) % 2:
+        for i in row:
+            for j in column: 
+                if (i + j) % 2:
                     odd_count += 1 
 
         return odd_count  
