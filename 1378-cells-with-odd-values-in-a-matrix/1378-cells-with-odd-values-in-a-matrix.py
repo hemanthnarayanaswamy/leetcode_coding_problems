@@ -11,8 +11,7 @@ class Solution:
         
         for i in range(m):
             for j in range(n):
-                tmp = row.get(i, 0) + column.get(j, 0)
-                result[i][j] = tmp
+                result[i][j] = row.get(i, 0) + column.get(j, 0)
                 
                 if result[i][j] % 2:
                     count += 1 
