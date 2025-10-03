@@ -40,3 +40,89 @@ The final matrix is [[1,3,1],[1,3,1]], which contains 6 odd numbers.
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Could you solve this in <code>O(n + m + indices.length)</code> time with only <code>O(n + m)</code> extra space?</p>
+
+# Solution 
+* We create two hashMaps `rows` & `columns`, and cumulative the values for each row and each column by incrementing it. 
+* In the next iteration, for the position `result[i][j] = rows.get(i, 0) + columns.get(j, 0)` for that position 
+* We incement that count if its odd and finially return the count.
+
+```python
+class Solution:
+    def oddCells(self, m: int, n: int, indices: List[List[int]]) -> int:
+        row = {}
+        column = {}
+        result = [[0]*n] * m
+        count = 0
+
+        for r,c in indices:
+            row[r] = row.get(r, 0) + 1
+            column[c] = column.get(c, 0) + 1
+        
+        for i in range(m):
+            for j in range(n):
+                result[i][j] = row.get(i, 0) + column.get(j, 0)
+                
+                if result[i][j] % 2:
+                    count += 1 
+
+        return count
+```
+---
+* We don't need to store the result array, we just need to count the odd values. 
+
+```python
+class Solution:
+    def oddCells(self, m: int, n: int, indices: List[List[int]]) -> int:
+        row = {}
+        column = {}
+        count = 0
+
+        for r,c in indices: # cumulative values 
+            row[r] = row.get(r, 0) + 1  
+            column[c] = column.get(c, 0) + 1
+        
+        for i in range(m):
+            for j in range(n): 
+                if (row.get(i, 0) + column.get(j, 0)) % 2:
+                    count += 1 
+
+        return count  
+```
+---
+```python
+class Solution:
+    def oddCells(self, m: int, n: int, indices: List[List[int]]) -> int:
+        row = [0] * m
+        column = [0] * n
+
+        for r,c in indices: # cumulative values 
+            row[r] +=  1  
+            column[c] += 1
+        
+        odd_count = 0
+        for i in range(m):
+            for j in range(n): 
+                if (row[i] + column[j]) % 2:
+                    odd_count += 1 
+
+        return odd_count  
+```
+---
+```python
+class Solution:
+    def oddCells(self, m: int, n: int, indices: List[List[int]]) -> int:
+        row = [0] * m
+        column = [0] * n
+
+        for r,c in indices:  
+            row[r] +=  1  
+            column[c] += 1
+        
+        odd_count = 0
+        for i in row:
+            for j in column: 
+                if (i + j) % 2:
+                    odd_count += 1 
+
+        return odd_count  
+```
