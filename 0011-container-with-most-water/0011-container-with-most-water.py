@@ -4,16 +4,14 @@ class Solution:
         water = 0
 
         while l < r:
-            h = height[l] if height[l] < height[r] else height[r]
-            w = r - l
-
-            volume = h * w
-            if volume > water:
-                water = volume
-        
-            if height[l] > height[r]:
-                r -= 1
-            else:
+            if height[l] < height[r]:
+                area = height[l] * (r - l)
                 l += 1
+            else: 
+                area = height[r] * (r - l)
+                r -= 1
+            
+            if area > water:
+                water = area
         
         return water
