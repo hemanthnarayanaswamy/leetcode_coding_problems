@@ -4,10 +4,13 @@ class Solution:
         water = 0
 
         while l < r:
-            h = min(height[l], height[r])
+            h = height[l] if height[l] < height[r] else height[r]
             w = r - l
-            water = max(water, h*w)
 
+            volume = h * w
+            if volume > water:
+                water = volume
+        
             if height[l] > height[r]:
                 r -= 1
             else:
