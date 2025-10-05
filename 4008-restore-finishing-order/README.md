@@ -42,3 +42,41 @@
 	<li><code>1 &lt;= friends[i] &lt;= n</code></li>
 	<li><code>friends</code> is strictly increasing</li>
 </ul>
+
+# Solution 
+* Get the Index Hash Map for the values in the order 
+* And sort friends array based on the position hashMap. 
+
+```python
+class Solution:
+    def recoverOrder(self, order: List[int], friends: List[int]) -> List[int]:
+        order_index = {val: idx for idx, val in enumerate(order)}
+    
+        # Sort friends based on their index in order; missing friends go to the end
+        return sorted(friends, key=lambda x: order_index.get(x))
+```
+---
+```python
+class Solution:
+    def recoverOrder(self, order: List[int], friends: List[int]) -> List[int]:
+        orderFreq = {o:i for i,o in enumerate(order)}
+        def position(friend):
+            return orderFreq[friend]
+        
+        friends = sorted(friends, key=position)
+        return friends
+```
+---
+```python
+class Solution:
+    def recoverOrder(self, order: List[int], friends: List[int]) -> List[int]:
+        return [i for i in order if i in friends]
+
+class Solution:
+    def recoverOrder(self, order: List[int], friends: List[int]) -> List[int]:
+        l = []
+        for i in order:
+            if i in friends:
+                l.append(i)
+        return l
+```
