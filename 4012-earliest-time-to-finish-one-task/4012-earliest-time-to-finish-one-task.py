@@ -1,9 +1,11 @@
 class Solution:
     def earliestTime(self, tasks: List[List[int]]) -> int:
-        result = []
+        result = float('inf')
 
         for s,t in tasks:
-            result.append(s+t)
+            tmp = s+t
+            if tmp < result:
+                result = tmp
         
-        return min(result)
+        return result
         
