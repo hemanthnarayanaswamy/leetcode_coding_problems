@@ -37,3 +37,34 @@
 	<li><code>tasks[i] = [s<sub>i</sub>, t<sub>i</sub>]</code></li>
 	<li><code>1 &lt;= s<sub>i</sub>, t<sub>i</sub> &lt;= 100</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def earliestTime(self, tasks: List[List[int]]) -> int:
+        result = []
+
+        for s,t in tasks:
+            result.append(s+t)
+        
+        return min(result)
+```
+---
+```python
+class Solution:
+    def earliestTime(self, tasks: List[List[int]]) -> int:
+        result = float('inf')
+
+        for s,t in tasks:
+            tmp = s+t
+            if tmp < result:
+                result = tmp
+        
+        return result
+```
+---
+```python
+class Solution:
+    def earliestTime(self, tasks: List[List[int]]) -> int:
+        return min(s+t for s,t in tasks)
+```
