@@ -47,6 +47,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1610-xor-operation-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1610-xor-operation-in-an-array) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
 | [1642-water-bottles](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1642-water-bottles) |
+| [1674-minimum-operations-to-make-array-equal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1674-minimum-operations-to-make-array-equal) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [1806-count-of-matches-in-tournament](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1806-count-of-matches-in-tournament) |
