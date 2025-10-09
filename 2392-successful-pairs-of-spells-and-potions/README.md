@@ -39,3 +39,90 @@ Thus, [2,0,2] is returned.
 	<li><code>1 &lt;= spells[i], potions[i] &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= success &lt;= 10<sup>10</sup></code></li>
 </ul>
+
+# Brute Force Solution 
+```python
+class Solution:
+    def successfulPairs(self, spells: List[int], potions: List[int], success: int) -> List[int]:
+        result = []
+        potions.sort(reverse=True)
+
+        for i in range(len(spells)):
+            count = 0
+            for j in range(len(potions)):
+                if spells[i] * potions[j] >= success:
+                    count += 1
+                else:
+                    break
+            result.append(count)
+
+        return result
+```
+---
+```python
+class Solution:
+    def successfulPairs(self, spells: List[int], potions: List[int], success: int) -> List[int]:
+            n = len(potions)
+            ns = len(spells)
+            result = [0] * ns
+            potions.sort()
+            
+            def SearchIdx(spell):
+                l = 0
+                r = n - 1
+                while l < r:
+                    m = (l + r) // 2
+                    if potions[m] * spell >= success:
+                        r = m - 1
+                    else:
+                        l = m + 1
+                
+                if r >= 0:
+                    if potions[r] * spell >= success:
+                        return n - r
+                    else:
+                        return n - r - 1
+
+                return n
+            
+            for i in range(ns):
+                result[i] = SearchIdx(spells[i])
+
+            return result
+```
+
+# Approach
+* Sort the potions array to allow efficient binary search.
+* For each spell, Use binary search to find the first potion such that `spell[i] * potions[mid] ≥ success.`
+* All potions to the right of that index will also satisfy the condition.
+* Therefore, the count of `successful pairs = total_potions - found_index`.
+* Store these counts in the answer array and return it.
+
+```python
+class Solution:
+    def successfulPairs(self, spells: List[int], potions: List[int], success: int) -> List[int]:
+        potions.sort()
+        n = len(potions)
+
+        def countFor(spell):
+            l, r = 0, n
+            while l < r:
+                m = (l+r)//2
+                if potions[m] * spell >= success:
+                    r = m
+                else:
+                    l = m + 1
+            
+            return n - l
+        
+        return [countFor(spell) for spell in spells]
+```
+
+# Complexity
+### Time Complexity:
+* Sorting potions: `O(m log m)`
+* Binary search for each spell: `O(n log m)`
+* **Total: `O(m log m + n log m)`**
+
+### Space Complexity:
+* O(1) (excluding the output array) — since sorting is in-place and we use only a few extra variables.
