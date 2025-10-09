@@ -1,7 +1,8 @@
 class Solution:
     def successfulPairs(self, spells: List[int], potions: List[int], success: int) -> List[int]:
             n = len(potions)
-            result = [0] * len(spells)
+            ns = len(spells)
+            result = [0] * ns
             potions.sort()
             
             def SearchIdx(spell):
@@ -22,7 +23,7 @@ class Solution:
 
                 return n
             
-            for i in range(len(spells)):
+            for i in range(ns):
                 result[i] = SearchIdx(spells[i])
 
             return result
