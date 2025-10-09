@@ -1,9 +1,9 @@
 class Solution:
     def successfulPairs(self, spells: List[int], potions: List[int], success: int) -> List[int]:
-            result = []
-            potions.sort()
             n = len(potions)
-
+            result = [0] * len(spells)
+            potions.sort()
+            
             def SearchIdx(spell):
                 l = 0
                 r = n - 1
@@ -13,16 +13,16 @@ class Solution:
                         r = m - 1
                     else:
                         l = m + 1
-    
+                
                 if r >= 0:
                     if potions[r] * spell >= success:
                         return n - r
                     else:
                         return n - r - 1
-                
+
                 return n
             
-            for spell in spells:
-                result.append(SearchIdx(spell))
+            for i in range(len(spells)):
+                result[i] = SearchIdx(spells[i])
 
             return result
