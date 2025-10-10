@@ -89,3 +89,40 @@
 	<li><code>path</code> consists of English letters, digits, period <code>&#39;.&#39;</code>, slash <code>&#39;/&#39;</code> or <code>&#39;_&#39;</code>.</li>
 	<li><code>path</code> is a valid absolute Unix path.</li>
 </ul>
+
+# Solution 
+* Simple Solution, Don't complicate it. 
+* Split the array with `/` as seperator, and ignore all empty spaces and `.`.
+```python
+class Solution:
+    def simplifyPath(self, path: str) -> str:
+        path = path.split('/')
+        stack = []
+
+        for dir in path:
+            if dir and dir != '.':
+                if stack and dir == '..':
+                    stack.pop()
+                elif dir != '..':
+                    stack.append(dir)
+        
+        return '/'+'/'.join(stack)
+```
+---
+
+```python
+class Solution:
+    def simplifyPath(self, path: str) -> str:
+        stack = []
+
+        for token in path.split('/'):
+            if token == '' or token == '.':
+                continue
+            if token == '..':
+                if stack:
+                    stack.pop()
+            else:
+                stack.append(token)
+                
+        return '/' + '/'.join(stack)
+```
