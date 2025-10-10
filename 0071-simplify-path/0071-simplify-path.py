@@ -2,7 +2,6 @@ class Solution:
     def simplifyPath(self, path: str) -> str:
         path = path.split('/')
         stack = []
-        print(path)
 
         for dir in path:
             if dir and dir != '.':
