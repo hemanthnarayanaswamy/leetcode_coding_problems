@@ -143,6 +143,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0455-assign-cookies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0455-assign-cookies) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0485-max-consecutive-ones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0485-max-consecutive-ones) |
+| [0495-teemo-attacking](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0495-teemo-attacking) |
 | [0498-diagonal-traverse](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0498-diagonal-traverse) |
 | [0500-keyboard-row](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0500-keyboard-row) |
 | [0506-relative-ranks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0506-relative-ranks) |
@@ -739,6 +740,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0258-add-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0258-add-digits) |
 | [0412-fizz-buzz](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0412-fizz-buzz) |
 | [0415-add-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0415-add-strings) |
+| [0495-teemo-attacking](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0495-teemo-attacking) |
 | [0498-diagonal-traverse](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0498-diagonal-traverse) |
 | [0657-robot-return-to-origin](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0657-robot-return-to-origin) |
 | [0682-baseball-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0682-baseball-game) |
