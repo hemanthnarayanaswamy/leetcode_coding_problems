@@ -3,7 +3,8 @@ class Solution:
         attackTime = duration
 
         for i in range(len(timeSeries)-1):
-            if timeSeries[i] + duration < timeSeries[i+1]:
+            tmp = timeSeries[i] + duration
+            if tmp < timeSeries[i+1]:
                 attackTime += duration
             else:
                 attackTime += (timeSeries[i+1] - timeSeries[i])
