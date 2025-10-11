@@ -34,3 +34,39 @@ Ashe is poisoned for seconds 1, 2, and 3, which is 3 seconds in total.</pre>
 	<li><code>0 &lt;= timeSeries[i], duration &lt;= 10<sup>7</sup></code></li>
 	<li><code>timeSeries</code> is sorted in <strong>non-decreasing</strong> order.</li>
 </ul>
+
+# Solution 
+* If prev time with duration less or equal curr time, add duration, otherwise add difference between curr time and prev one.
+```python
+class Solution:
+    def findPoisonedDuration(self, timeSeries: List[int], duration: int) -> int:
+        attackTime = duration
+
+        for i in range(len(timeSeries)-1):
+            if timeSeries[i] + duration < timeSeries[i+1]:
+                attackTime += duration
+            else:
+                attackTime += (timeSeries[i+1] - timeSeries[i])
+        
+        return attackTime
+```
+---
+```python
+class Solution:
+    def findPoisonedDuration(self, timeSeries: List[int], duration: int) -> int:
+        if len(timeSeries) == 0:
+            return 0
+
+        total_poisoned = 0
+        start = timeSeries[0]
+        end = start + duration
+
+        for t in timeSeries:
+            if t >= end:
+                total_poisoned += end - start
+                start = t
+            end = t + duration
+
+        total_poisoned += end - start
+        return total_poisoned
+```
