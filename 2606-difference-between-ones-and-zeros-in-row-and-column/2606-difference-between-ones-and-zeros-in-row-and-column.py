@@ -7,10 +7,11 @@ class Solution:
         onesColumn = [0] * n
 
         for i in range(m):
+            row = grid[i]
             for j in range(n):
-                x = grid[i][j] 
-                onesRow[i] +=  x
-                onesColumn[j] += x
+                v = row[j]
+                onesRow[i] +=  v
+                onesColumn[j] += v
     
         diff = []
 
