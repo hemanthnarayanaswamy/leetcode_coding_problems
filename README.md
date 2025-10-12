@@ -326,6 +326,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2566-number-of-unequal-triplets-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2566-number-of-unequal-triplets-in-array) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2589-maximum-value-of-a-string-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2589-maximum-value-of-a-string-in-an-array) |
+| [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
 | [2624-difference-between-element-sum-and-digit-sum-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2624-difference-between-element-sum-and-digit-sum-of-an-array) |
 | [2631-sort-the-students-by-their-kth-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2631-sort-the-students-by-their-kth-score) |
 | [2634-minimum-common-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2634-minimum-common-value) |
@@ -776,6 +777,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2470-removing-stars-from-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2470-removing-stars-from-a-string) |
 | [2551-apply-operations-to-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2551-apply-operations-to-an-array) |
+| [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
 | [2639-separate-the-digits-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2639-separate-the-digits-in-an-array) |
 | [2645-pass-the-pillow](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2645-pass-the-pillow) |
 | [2684-determine-the-winner-of-a-bowling-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2684-determine-the-winner-of-a-bowling-game) |
@@ -1219,6 +1221,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1677-matrix-diagonal-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1677-matrix-diagonal-sum) |
 | [1791-richest-customer-wealth](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1791-richest-customer-wealth) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2244-number-of-laser-beams-in-a-bank) |
+| [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
 | [2631-sort-the-students-by-their-kth-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2631-sort-the-students-by-their-kth-score) |
 | [2737-row-with-maximum-ones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2737-row-with-maximum-ones) |
 | [3188-find-champion-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3188-find-champion-i) |
