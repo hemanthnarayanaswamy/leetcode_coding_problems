@@ -11,14 +11,12 @@ class Solution:
                 if grid[i][j] == 1:
                     onesRow[i] +=  1
                     onesColumn[j] += 1
-        print(onesRow, onesColumn)
+    
         diff = []
 
         for i in range(m):
             tmp = []
             for j in range(n):
-                print(onesRow[i], onesColumn[j], (n - onesRow[i]), (m - onesColumn[j]))
-                print(onesRow[i] + onesColumn[j] - (n - onesRow[i]) - (m - onesColumn[j]))
                 tmp.append(onesRow[i] + onesColumn[j] - (m - onesRow[i]) - (n - onesColumn[j]))
             diff.append(tmp)
 
