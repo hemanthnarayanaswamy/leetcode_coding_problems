@@ -54,3 +54,130 @@
 	<li><code>1 &lt;= m * n &lt;= 10<sup>5</sup></code></li>
 	<li><code>grid[i][j]</code> is either <code>0</code> or <code>1</code>.</li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def onesMinusZeros(self, grid: List[List[int]]) -> List[List[int]]:
+        m = len(grid)
+        n = len(grid[0])
+        
+        onesRow = [0] * m
+        onesColumn = [0] * n
+
+        for i in range(m):
+            for j in range(n):
+                x = grid[i][j] 
+                onesRow[i] +=  x
+                onesColumn[j] += x
+    
+        diff = []
+
+        for i in range(m):
+            tmp = []
+            rowScore = 2*onesRow[i] - n
+            for j in range(n):
+                totalScore = rowScore + (2*onesColumn[j] - m)
+                tmp.append(totalScore)
+            diff.append(tmp)
+
+        return diff
+```
+
+```ini
+Algebra: onesRow[i] + onesCol[j] - (m - onesRow[i]) - (n - onesCol[j]) simplifies to
+(2*onesRow[i] - n) + (2*onesCol[j] - m).
+Precompute rowScore[i] = 2*onesRow[i] - n and colScore[j] = 2*onesCol[j] - m, then sum.
+```
+---
+# Optimal Solution 
+```python
+from typing import List
+
+class Solution:
+    def onesMinusZeros(self, grid: List[List[int]]) -> List[List[int]]:
+        m, n = len(grid), len(grid[0])
+        ones_row = [0] * m
+        ones_col = [0] * n
+
+        for i in range(m):
+            row = grid[i]
+            for j in range(n):
+                v = row[j]
+                ones_row[i] += v
+                ones_col[j] += v
+
+        row_score = [2*r - n for r in ones_row]
+        col_score = [2*c - m for c in ones_col]
+
+        return [[row_score[i] + col_score[j] for j in range(n)] for i in range(m)]
+```
+---
+where:
+- `onesRow[i]` = number of 1s in row `i`
+- `onesColumn[j]` = number of 1s in column `j`
+- `zerosRow[i] = n - onesRow[i]`
+- `zerosColumn[j] = m - onesColumn[j]`
+
+## Steps
+
+1. **Initialize variables**
+   - Let `m = len(grid)` and `n = len(grid[0])`
+   - Create two arrays:
+     - `onesRow` of length `m`, initialized to `0`
+     - `onesColumn` of length `n`, initialized to `0`
+
+2. **Count ones**
+   - Iterate through each cell `(i, j)` in the grid:
+     - If `grid[i][j] == 1`:
+       - Increment `onesRow[i]` by 1
+       - Increment `onesColumn[j]` by 1
+
+3. **Precompute row and column scores**
+   - For each row `i`, compute `rowScore[i] = 2 * onesRow[i] - n`
+   - For each column `j`, compute `colScore[j] = 2 * onesColumn[j] - m`
+
+4. **Compute the final diff matrix**
+   - For each cell `(i, j)`:
+     - `diff[i][j] = rowScore[i] + colScore[j]`
+
+5. **Return the diff matrix**
+
+## Complexity
+- **Time Complexity:** `O(m * n)`
+- **Space Complexity:** `O(m + n)`
+
+---
+
+### What changed: constant factors.
+	•	You computed 2*onesRow[i]-n and 2*onesColumn[j]-m inside the fill loop. I precompute them once (rowScore, colScore) and add. Same big-O, fewer operations per cell.
+	•	I also cache rowScore[i] per row to avoid repeated indexing. Micro win.
+
+## Notes for the final solution:
+	•	Validate input if needed: empty grid, rectangular shape.
+	•	Use direct add v = grid[i][j] since values are 0/1; no branch.
+	•	Prefer comprehensions for the diff build to cut Python overhead.
+	•	Keep names consistent: ones_row, ones_col, row_score, col_score.
+	•	Tests: [[0]], [[1,0,1]], non-square (e.g., 2×3), all-ones, all-zeros.
+	•	If memory is tight and grid is large, you can stream rows: compute rowScore on the fly while keeping colScore precomputed.
+
+---
+```python
+class Solution:
+    def onesMinusZeros(self, grid: List[List[int]]) -> List[List[int]]:
+        m=len(grid)
+        n=len(grid[0])
+        diffX=[0]*m
+        diffY=[0]*n
+        for i in range(m):
+            for j in range(n):
+                if grid[i][j]==1:
+                    diffX[i]+=1
+                    diffY[j]+=1
+
+        o=m+n
+        for i in range(m):
+            for j in range(n):
+                grid[i][j]=2*(diffX[i]+diffY[j])-o
+        return grid
+```
