@@ -8,16 +8,16 @@ class Solution:
 
         for i in range(m):
             for j in range(n):
-                if grid[i][j] == 1:
-                    onesRow[i] +=  1
-                    onesColumn[j] += 1
+                x = grid[i][j] 
+                onesRow[i] +=  x
+                onesColumn[j] += x
     
         diff = []
 
         for i in range(m):
             tmp = []
             for j in range(n):
-                tmp.append(onesRow[i] + onesColumn[j] - (m - onesRow[i]) - (n - onesColumn[j]))
+                tmp.append((2*onesRow[i] - n) + (2*onesColumn[j] - m))
             diff.append(tmp)
 
         return diff
