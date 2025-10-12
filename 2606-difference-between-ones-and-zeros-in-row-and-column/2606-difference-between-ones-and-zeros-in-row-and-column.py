@@ -16,8 +16,10 @@ class Solution:
 
         for i in range(m):
             tmp = []
+            rowScore = 2*onesRow[i] - n
             for j in range(n):
-                tmp.append((2*onesRow[i] - n) + (2*onesColumn[j] - m))
+                totalScore = rowScore + (2*onesColumn[j] - m)
+                tmp.append(totalScore)
             diff.append(tmp)
 
         return diff
