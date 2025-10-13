@@ -4,7 +4,7 @@ class Solution:
         prev_sig = None
         
         for word in words:
-            sig = Counter(word)
+            sig = ''.join(sorted(word))
             if stack and prev_sig == sig:
                     continue
            
