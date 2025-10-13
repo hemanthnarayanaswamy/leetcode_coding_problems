@@ -38,3 +38,66 @@ No two adjacent strings in words are anagrams of each other, so no operations ar
 	<li><code>1 &lt;= words[i].length &lt;= 10</code></li>
 	<li><code>words[i]</code> consists of lowercase English letters.</li>
 </ul>
+
+# Solution 
+* **Use STACK**
+
+```python
+class Solution:
+    def removeAnagrams(self, words: List[str]) -> List[str]:
+        def isAnagram(s1, s2):
+            if Counter(s1) == Counter(s2):
+                return True
+            return False
+        
+        stack = []
+        
+        for i in range(len(words)):
+            if stack:
+                if not isAnagram(stack[-1], words[i]):
+                    stack.append(words[i])
+            else:
+                stack.append(words[i])
+        
+        return stack
+```
+---
+* No need to compute Counter for `stack[-1]` everytime, we can reuse it. 
+* Main issue is cost from Counter allocation and dict equality each step. 
+* Avoid using Counter and look for alternative solution. 
+```python
+class Solution:
+    def removeAnagrams(self, words: List[str]) -> List[str]:
+        stack = []
+        prev_sig = None
+        
+        for word in words:
+            sig = Counter(word)
+            if stack and prev_sig == sig:
+                    continue
+           
+            stack.append(word)
+            prev_sig = sig
+        
+        return stack
+
+```
+---
+* We sort the characters and then check for the anagram condition, Instead of using the hashMap everything. 
+* Complexity: `O(nk log k)` with sorting. We are sorting all words with length `n`. 
+```python
+class Solution:
+    def removeAnagrams(self, words: List[str]) -> List[str]:
+        stack = []
+        prev_sig = None
+        
+        for word in words:
+            sig = ''.join(sorted(word))
+            if stack and prev_sig == sig:
+                    continue
+           
+            stack.append(word)
+            prev_sig = sig
+        
+        return stack
+```
