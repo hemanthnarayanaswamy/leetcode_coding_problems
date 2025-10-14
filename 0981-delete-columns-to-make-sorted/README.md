@@ -61,3 +61,70 @@ All 3 columns are not sorted, so you will delete all 3.
 	<li><code>1 &lt;= strs[i].length &lt;= 1000</code></li>
 	<li><code>strs[i]</code> consists of lowercase English letters.</li>
 </ul>
+
+# Solution 
+* For each element in the columns we need to check ifs in sorted order, we can just use this 
+* compare `str[j][i] < str[j-1][i]` if true `count++;` and break that loop. return that count. 
+
+```python
+class Solution:
+    def minDeletionSize(self, strs: List[str]) -> int:
+        m = len(strs)
+        n = len(strs[0])
+        count = 0
+
+        for i in range(n):
+            for j in range(1,m):
+                if strs[j-1][i] > strs[j][i]:
+                    count += 1
+                    break
+                
+        return count
+```
+---
+```python
+class Solution:
+    def minDeletionSize(self, strs: List[str]) -> int:
+        m = len(strs)
+        n = len(strs[0])
+        count = 0
+
+        for i in range(n):
+            for j in range(m-1):
+                if strs[j][i] > strs[j+1][i]:
+                    count += 1
+                    break
+                
+        return count
+```
+---
+# Optimal Solution
+```ini
+# A list of lists
+list_of_lists = [[1, 2, 3], [4, 5, 6]]
+
+# zip() with one argument (the list)
+print(list(zip(list_of_lists)))
+# Output: [([1, 2, 3],)]
+
+# zip() with the unpacking operator (*)
+print(list(zip(*list_of_lists)))
+# Output: [(1, 4), (2, 5), (3, 6)]
+```
+```python
+class Solution:
+    def minDeletionSize(self, strs: List[str]) -> int:
+        count = 0
+
+        for col in zip(*strs):
+            if list(col) != sorted(col):
+                count += 1
+        
+        return count
+# strs = ["rrjk","furt","guzm"]
+# col will be 
+# ('r', 'f', 'g')
+# ('r', 'u', 'u')
+# ('j', 'r', 'z')
+# ('k', 't', 'm')
+```
