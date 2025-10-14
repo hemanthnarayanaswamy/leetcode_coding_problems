@@ -5,8 +5,8 @@ class Solution:
         count = 0
 
         for i in range(n):
-            for j in range(1,m):
-                if strs[j-1][i] > strs[j][i]:
+            for j in range(m-1):
+                if strs[j][i] > strs[j+1][i]:
                     count += 1
                     break
                 
