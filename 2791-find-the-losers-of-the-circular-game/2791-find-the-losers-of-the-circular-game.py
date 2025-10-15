@@ -2,14 +2,14 @@ class Solution:
     def circularGameLosers(self, n: int, k: int) -> List[int]:
         friendsFreq = {i: 0 for i in range(n)}
         count = 1
-        i = 0
+        idx = 0
 
-        while i in friendsFreq:
-            friendsFreq[i] += 1
-            if friendsFreq[i] == 2:
+        while idx in friendsFreq:
+            friendsFreq[idx] += 1
+            if friendsFreq[idx] == 2:
                 break
             dist = count * k
-            i = (i + dist) % n
+            idx = (idx + dist) % n
             count += 1
         
-        return [p+1 for p in range(n) if not friendsFreq[p]]
+        return [i+1 for i in range(n) if not friendsFreq[i]]
