@@ -47,3 +47,41 @@
 <ul>
 	<li><code>1 &lt;= k &lt;= n &lt;= 50</code></li>
 </ul>
+
+# Solution
+* You can use the zero Index array technique and then finally returning the answer, you can add `+1` to the final answer. 
+
+1. Generate the friendsFreq dict, to track the ball received for each person. 
+2. count = 1 and start index is 0, 
+
+```python
+class Solution:
+    def circularGameLosers(self, n: int, k: int) -> List[int]:
+        friendsFreq = {i: 0 for i in range(n)}
+        count = 1
+        idx = 0
+
+        while idx in friendsFreq:
+            friendsFreq[idx] += 1
+            if friendsFreq[idx] == 2:
+                break
+            dist = count * k
+            idx = (idx + dist) % n
+            count += 1
+        
+        return [i+1 for i in range(n) if not friendsFreq[i]]
+```
+---
+# Optimal Solution 
+```python
+class Solution:
+    def circularGameLosers(self, n: int, k: int) -> List[int]:
+        visited = [False] * n
+        i = 0
+        step = 1
+        while not visited[i]:
+            visited[i] = True
+            i = (i + step * k) % n
+            step += 1
+        return [idx + 1 for idx, seen in enumerate(visited) if not seen]
+```
