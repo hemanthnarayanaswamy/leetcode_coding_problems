@@ -344,6 +344,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2756-buy-two-chocolates](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2756-buy-two-chocolates) |
 | [2767-maximum-sum-with-exactly-k-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2767-maximum-sum-with-exactly-k-elements) |
 | [2785-semi-ordered-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2785-semi-ordered-permutation) |
+| [2791-find-the-losers-of-the-circular-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2791-find-the-losers-of-the-circular-game) |
 | [2836-neither-minimum-nor-maximum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2836-neither-minimum-nor-maximum) |
 | [2844-sum-of-squares-of-special-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2844-sum-of-squares-of-special-elements) |
 | [2847-find-maximum-number-of-string-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2847-find-maximum-number-of-string-pairs) |
@@ -512,6 +513,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2634-minimum-common-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2634-minimum-common-value) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
+| [2791-find-the-losers-of-the-circular-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2791-find-the-losers-of-the-circular-game) |
 | [2825-minimize-string-length](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2825-minimize-string-length) |
 | [2847-find-maximum-number-of-string-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2847-find-maximum-number-of-string-pairs) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2888-minimum-index-of-a-valid-split) |
@@ -790,6 +792,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2684-determine-the-winner-of-a-bowling-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2684-determine-the-winner-of-a-bowling-game) |
 | [2698-find-the-array-concatenation-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2698-find-the-array-concatenation-value) |
 | [2785-semi-ordered-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2785-semi-ordered-permutation) |
+| [2791-find-the-losers-of-the-circular-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2791-find-the-losers-of-the-circular-game) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2800-minimum-string-length-after-removing-substrings) |
 | [2847-find-maximum-number-of-string-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2847-find-maximum-number-of-string-pairs) |
 | [2886-faulty-keyboard](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2886-faulty-keyboard) |
