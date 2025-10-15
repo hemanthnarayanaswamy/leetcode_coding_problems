@@ -44,3 +44,47 @@
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= num[i] &lt;= 200</code></li>
 </ul>
+
+# Solution 
+* Don't complicate it 
+* get the unique length and check is all numbers are present till n and there frequency is 1. 
+* Then check if `n` frequency is 2. 
+
+```python
+class Solution:
+    def isGood(self, nums: List[int]) -> bool:
+        numsMap = Counter(nums)
+        n = len(numsMap)
+
+        if n < 2:
+            return False
+
+        for i in range(1, n):
+            if i not in numsMap or numsMap[i] != 1:
+                return False
+        
+        if numsMap[n] != 2:
+            return False
+        
+        return True
+```
+---
+```python
+class Solution:
+    def isGood(self, nums: List[int]) -> bool:
+        length = len(nums)
+
+        if length < 2:
+            return False
+
+        nums.sort()
+        
+        for i in range(length-1):
+            if nums[i] != i+1:
+                return False
+        
+        if nums[length-1] == nums[length-2]:
+            return True
+        else:
+            return False
+```
