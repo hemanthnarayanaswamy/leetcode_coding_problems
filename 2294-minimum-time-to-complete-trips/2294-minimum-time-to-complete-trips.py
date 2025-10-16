@@ -1,6 +1,6 @@
 class Solution:
     def minimumTime(self, time: List[int], totalTrips: int) -> int:
-        l, r = 0, min(time)*totalTrips
+        l, r = 1, min(time)*totalTrips
 
         while l < r:
             m = (l + r) // 2
