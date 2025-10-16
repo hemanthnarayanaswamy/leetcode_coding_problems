@@ -4,6 +4,8 @@ class Solution:
             trips = 0
             for t in time:
                 trips += (minTime // t)
+                if trips >= totalTrips: # Early Termination to avoid large sums
+                    return trips
             return trips
         
         l, r = 1, min(time)*totalTrips
