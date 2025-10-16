@@ -37,3 +37,90 @@ So the minimum time needed to complete 1 trip is 2.
 	<li><code>1 &lt;= time.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= time[i], totalTrips &lt;= 10<sup>7</sup></code></li>
 </ul>
+
+# Approach 
+Here is an Approach Using `Binary Search` :-
+
+1.Initialize a lower bound to `1` and an upper bound to the maximum possible long value `(min(time) * totalTrips)` , worst case: the fastest bus doing all trips alone
+
+2 .Enter a loop that continues until the lower bound is greater than or equal to the upper bound.
+
+3. In each iteration of the loop, calculate the midpoint between the lower and upper bounds using the formula mid = lo + (hi - lo) / 2.
+
+4. Calculate the number of completed trips that can be made in the mid time using a for loop that iterates over each time in the time array.
+
+5 .If the number of completed trips is greater than or equal to the total number of trips required, update the upper bound hi to the mid value.
+
+6. Otherwise, update the lower bound lo to the mid value plus one.
+
+7. Repeat steps 3 to 6 until the lower bound is greater than or equal to the upper bound.
+
+8. Return the lower bound, which represents the minimum time required to complete the given number of trips based on the times in the array.
+
+```python
+class Solution:
+    def minimumTime(self, time: List[int], totalTrips: int) -> int:
+        l, r = 0, min(time)*totalTrips
+
+        while l < r:
+            m = (l + r) // 2
+            tmp = 0
+            for t in time:
+                tmp += (m // t)
+            
+            if tmp >= totalTrips:
+                r = m
+            else:
+                l = m + 1
+        
+        return l
+```
+---
+```python
+class Solution:
+    def minimumTime(self, time: List[int], totalTrips: int) -> int:
+        def ComputeTrips(minTime):
+            trips = 0
+            for t in time:
+                trips += (minTime // t) # Number of tips a bus can take for new time
+                if trips >= totalTrips: # Early Termination to avoid large sums
+                    break
+            return trips
+        
+        l, r = 1, min(time)*totalTrips # # worst case: the fastest bus doing all trips alone
+
+        while l < r:
+            m = (l + r) // 2
+            trips = ComputeTrips(m)
+
+            if trips < totalTrips:
+                l = m + 1
+            else:
+                r = m
+
+        return l
+```
+```
+class Solution:
+    def minimumTime(self, time: List[int], totalTrips: int) -> int:
+        l, r = 1, min(time)*totalTrips # worst case: the fastest bus doing all trips along
+
+        def isFesible(minTime):
+            trips = 0
+            for t in time:
+                trips += (minTime // t) # Number of tips a bus can take for new time
+                if trips >= totalTrips: # Early Termination to avoid large sums
+                    return True
+            return False
+        
+        while l < r:
+            m = (l + r) // 2
+
+            if isFesible(m):
+                r = m
+            else:
+                l = m + 1
+        return l 
+# Complexity note: O(len(time) * log(min(time)*totalTrips))
+```
+
