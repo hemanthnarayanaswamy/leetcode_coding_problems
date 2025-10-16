@@ -19,4 +19,4 @@ class Solution:
                 l = m + 1
 
         return l 
-# Complexity note: O(len(time) * log(min(time)*totalTrips)). Include this in comments.
+# Complexity note: O(len(time) * log(min(time)*totalTrips))
