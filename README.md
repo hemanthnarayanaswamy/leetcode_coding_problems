@@ -572,6 +572,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0434-number-of-segments-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0434-number-of-segments-in-a-string) |
 | [0443-string-compression](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0443-string-compression) |
 | [0451-sort-characters-by-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0451-sort-characters-by-frequency) |
+| [0482-license-key-formatting](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0482-license-key-formatting) |
 | [0500-keyboard-row](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0500-keyboard-row) |
 | [0520-detect-capital](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0520-detect-capital) |
 | [0521-longest-uncommon-subsequence-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0521-longest-uncommon-subsequence-i) |
