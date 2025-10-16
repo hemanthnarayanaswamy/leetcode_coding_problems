@@ -3,14 +3,11 @@ class Solution:
         sNew = s.replace('-', '')[::-1]
         n = len(sNew)
 
-        if n == 0 or n < k:
-            return sNew.upper()[::-1]
+        if n == 0:
+            return ""
+        elif n <= k:
+            return sNew[::-1].upper()   
         
-        res = []
-
-        for i in range(n):
-            if i != 0 and i % k == 0:
-                res.append('-')
-            res.append(sNew[i].upper())
-        
-        return ''.join(res)[::-1]
+        parts = [sNew[i:i+k] for i in range(0, n, k)]
+        formattedKey = '-'.join(parts)[::-1].upper()
+        return formattedKey 
