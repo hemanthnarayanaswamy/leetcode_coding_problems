@@ -1,16 +1,20 @@
 class Solution:
     def minimumTime(self, time: List[int], totalTrips: int) -> int:
+        def ComputeTrips(minTime):
+            trips = 0
+            for t in time:
+                trips += (minTime // t)
+            return trips
+        
         l, r = 1, min(time)*totalTrips
 
         while l < r:
             m = (l + r) // 2
-            tmp = 0
-            for t in time:
-                tmp += (m // t)
-            
-            if tmp >= totalTrips:
-                r = m
-            else:
+            trips = ComputeTrips(m)
+
+            if trips < totalTrips:
                 l = m + 1
-        
+            else:
+                r = m
+
         return l
