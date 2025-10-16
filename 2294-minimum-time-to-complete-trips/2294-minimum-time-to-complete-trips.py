@@ -18,4 +18,5 @@ class Solution:
             else:
                 l = m + 1
 
-        return l
+        return l 
+# Complexity note: O(len(time) * log(min(time)*totalTrips)). Include this in comments.
