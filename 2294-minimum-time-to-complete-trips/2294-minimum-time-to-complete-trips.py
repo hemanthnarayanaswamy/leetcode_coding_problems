@@ -3,9 +3,9 @@ class Solution:
         def ComputeTrips(minTime):
             trips = 0
             for t in time:
-                trips += (minTime // t)
+                trips += (minTime // t) # Number of tips a bus can take for new time
                 if trips >= totalTrips: # Early Termination to avoid large sums
-                    return trips
+                    break
             return trips
         
         l, r = 1, min(time)*totalTrips
