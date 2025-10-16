@@ -30,3 +30,47 @@ Note that the two extra dashes are not needed and can be removed.
 	<li><code>s</code> consists of English letters, digits, and dashes <code>&#39;-&#39;</code>.</li>
 	<li><code>1 &lt;= k &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+# Solution 
+1. Remove all the `'-'`;
+2. Reverse the string
+3. If some char is lower convert it to upper
+4. when `i%k==0` add `'-'` else keep on adding normally to the string ;
+5. At the end reverse the string you built and return.
+
+```python
+class Solution:
+    def licenseKeyFormatting(self, s: str, k: int) -> str:
+        sNew = s.replace('-', '')[::-1]
+        n = len(sNew)
+
+        if n == 0 or n < k:
+            return sNew.upper()[::-1]
+        
+        res = []
+
+        for i in range(n):
+            if i != 0 and i % k == 0:
+                res.append('-')
+            res.append(sNew[i].upper())
+        
+        return ''.join(res)[::-1]
+```
+---
+# Optimal Solution 
+```python
+class Solution:
+    def licenseKeyFormatting(self, s: str, k: int) -> str:
+        sNew = s.replace('-', '')[::-1]
+        n = len(sNew)
+
+        if n == 0:
+            return ""
+        elif n <= k:
+            return sNew[::-1].upper()   
+        
+        parts = [sNew[i:i+k] for i in range(0, n, k)]
+				print(parts) # ['J3', 'g5', '2']
+        formattedKey = '-'.join(parts)[::-1].upper()
+        return formattedKey 
+```
