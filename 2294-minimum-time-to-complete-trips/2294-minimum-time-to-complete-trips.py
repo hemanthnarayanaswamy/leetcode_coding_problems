@@ -1,5 +1,7 @@
 class Solution:
     def minimumTime(self, time: List[int], totalTrips: int) -> int:
+        l, r = 1, min(time)*totalTrips # worst case: the fastest bus doing all trips along
+        
         def isFesible(minTime):
             trips = 0
             for t in time:
@@ -8,8 +10,6 @@ class Solution:
                     return True
             return False
         
-        l, r = 1, min(time)*totalTrips
-
         while l < r:
             m = (l + r) // 2
 
