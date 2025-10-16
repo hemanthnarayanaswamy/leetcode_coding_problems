@@ -1,22 +1,21 @@
 class Solution:
     def minimumTime(self, time: List[int], totalTrips: int) -> int:
-        def ComputeTrips(minTime):
+        def isFesible(minTime):
             trips = 0
             for t in time:
                 trips += (minTime // t) # Number of tips a bus can take for new time
                 if trips >= totalTrips: # Early Termination to avoid large sums
-                    break
-            return trips
+                    return True
+            return False
         
         l, r = 1, min(time)*totalTrips
 
         while l < r:
             m = (l + r) // 2
-            trips = ComputeTrips(m)
 
-            if trips < totalTrips:
-                l = m + 1
-            else:
+            if isFesible(m):
                 r = m
+            else:
+                l = m + 1
 
         return l
