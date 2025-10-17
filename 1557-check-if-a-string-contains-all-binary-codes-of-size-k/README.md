@@ -33,3 +33,63 @@
 	<li><code>s[i]</code> is either <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code>.</li>
 	<li><code>1 &lt;= k &lt;= 20</code></li>
 </ul>
+
+# Solution 
+* The total number of unique codes of size k is `2 power of k(2 ** k)`. 
+* Use the sliding window technique to get all substings of size k and add them to your unique list and if the lenght of unique list and expected list is same then return True.
+
+```python
+class Solution:
+    def hasAllCodes(self, s: str, k: int) -> bool:
+        uniqueSet = set()
+
+        for i in range(len(s)):
+            codes = s[i:i+k]
+            
+            if codes not in uniqueSet and len(codes) == k:
+                uniqueSet.add(codes)
+        
+        allcodes = 2 ** k
+
+        return len(uniqueSet) == allcodes
+```
+* We can Adjust the range so that the length of codes are always with lenght k, the end character substring lenght will be off so we need to make sure we only iterate to the end string which satifies the lenght which is `n - k + 1`. 
+
+```python
+class Solution:
+    def hasAllCodes(self, s: str, k: int) -> bool:
+        uniqueSet = set()
+        n = len(s)
+
+        for i in range(n - k + 1):
+            codes = s[i:i+k]
+
+            if codes not in uniqueSet:
+                uniqueSet.add(codes)
+        
+        allcodes = 2 ** k
+
+        return len(uniqueSet) == allcodes
+```
+* We can do a early termination if the count satifies without iterating all the way to the end. 
+
+```python
+class Solution:
+    def hasAllCodes(self, s: str, k: int) -> bool:
+        uniqueSet = set()
+        n = len(s)
+        reqCount = 2 ** k
+
+        if k > n:
+            return False
+
+        for i in range(n - k + 1):
+            codes = s[i:i+k]
+            if codes not in uniqueSet:
+                uniqueSet.add(codes)
+                reqCount -= 1
+            if reqCount == 0: # kill the loop once the condition is met
+                return True
+        
+        return False
+```
