@@ -23,3 +23,46 @@
 	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>s[i]</code> is either <code>&#39;A&#39;</code>, <code>&#39;C&#39;</code>, <code>&#39;G&#39;</code>, or <code>&#39;T&#39;</code>.</li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def findRepeatedDnaSequences(self, s: str) -> List[str]:
+        n = len(s)
+        dnaSequence = {}
+        res = []
+
+        if n < 10:
+            return res
+
+        for i in range(n - 9):
+            dna = s[i:i+10]
+            dnaSequence[dna] = dnaSequence.get(dna, 0) + 1
+        
+        for k, v in dnaSequence.items():
+            if v > 1:
+                res.append(k)
+
+        return res
+```
+---
+* Use two sets instead of hashing track and re-iterating it again. 
+```python
+class Solution:
+    def findRepeatedDnaSequences(self, s: str) -> List[str]:
+        n = len(s)
+        if n < 10:
+            return []
+
+        seen = set()
+        dup = set()
+
+        for i in range(n - 9):
+            sub = s[i:i+10]
+            if sub in seen:
+                dup.add(sub)
+            else:
+                seen.add(sub)
+                
+        return list(dup)
+```
