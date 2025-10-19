@@ -44,3 +44,24 @@
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def alternatingSum(self, nums: List[int]) -> int:
+        res = 0
+        for i in range(len(nums)):
+            if i % 2:
+                res -= nums[i]
+            else:
+                res += nums[i]
+        
+        return res
+```
+---
+* cummulated sum of even idx and cummulated sum of odd idx.
+```python
+class Solution:
+    def alternatingSum(self, nums: List[int]) -> int:
+        return sum(nums[::2]) - sum(nums[1::2])
+```
