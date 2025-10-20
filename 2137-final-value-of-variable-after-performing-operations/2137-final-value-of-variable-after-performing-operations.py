@@ -1,12 +1,11 @@
 class Solution:
     def finalValueAfterOperations(self, operations: List[str]) -> int:
-        result = 0
+        x = 0
 
-        for operation in operations:
-            if '+' in operation:
-                result += 1
-            else:
-                result += -1 
+        for opx in operations:
+            if '+' in opx:
+                x += 1
+            else: 
+                x -= 1
         
-        return result
-        
+        return x
