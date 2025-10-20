@@ -1,20 +1,11 @@
 class Solution:
     def commonChars(self, words: List[str]) -> List[str]:
-        res = []
-        commonCharacters = Counter(words[0])
-        n = len(words)
+        if not words:
+            return []
 
-        for i in range(1, n):
-            currentCharacters = Counter(words[i])
+        c = Counter(words[0])
 
-            for ch in commonCharacters:
-                commonCharacters[ch] = min(currentCharacters[ch], commonCharacters[ch])
-        
-        for k, v in commonCharacters.items():
-            while v:
-                res.append(k)
-                v -= 1
-        
-        return res
-        
-        
+        for w in words[1:]:
+            c &= Counter(w)
+                      # min per character
+        return list(c.elements())     # expand by counts
