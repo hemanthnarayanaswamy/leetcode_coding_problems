@@ -182,6 +182,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1001-n-repeated-element-in-size-2n-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1001-n-repeated-element-in-size-2n-array) |
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1019-squares-of-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1019-squares-of-a-sorted-array) |
+| [1044-find-common-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1044-find-common-characters) |
 | [1137-height-checker](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1137-height-checker) |
 | [1168-duplicate-zeros](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1168-duplicate-zeros) |
 | [1210-mean-of-array-after-removing-some-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1210-mean-of-array-after-removing-some-elements) |
@@ -445,6 +446,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0940-fruit-into-baskets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0940-fruit-into-baskets) |
 | [0950-x-of-a-kind-in-a-deck-of-cards](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0950-x-of-a-kind-in-a-deck-of-cards) |
 | [1001-n-repeated-element-in-size-2n-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1001-n-repeated-element-in-size-2n-array) |
+| [1044-find-common-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1044-find-common-characters) |
 | [1217-relative-sort-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1217-relative-sort-array) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1256-rank-transform-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1256-rank-transform-of-an-array) |
@@ -602,6 +604,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0979-di-string-match](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0979-di-string-match) |
 | [0981-delete-columns-to-make-sorted](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0981-delete-columns-to-make-sorted) |
 | [1026-string-without-aaa-or-bbb](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1026-string-without-aaa-or-bbb) |
+| [1044-find-common-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1044-find-common-characters) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1156-occurrences-after-bigram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1156-occurrences-after-bigram) |
 | [1205-defanging-an-ip-address](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1205-defanging-an-ip-address) |
