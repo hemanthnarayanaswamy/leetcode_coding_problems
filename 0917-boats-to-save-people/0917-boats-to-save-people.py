@@ -16,7 +16,6 @@ class Solution:
         while l <= r:
             if people[l] + people[r] <= limit:
                 l += 1
-                
             boats += 1
             r -= 1
         
