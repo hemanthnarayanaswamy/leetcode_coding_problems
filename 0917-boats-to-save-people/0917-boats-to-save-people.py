@@ -9,17 +9,15 @@ class Solution:
             if people[i] >= limit:
                 r = i - 1
                 break 
+        # New r idx will be where that person can the paired with min weight person to share a boat
         
-        boats += len(people[r+1:])
-        print()
+        boats += len(people[r+1:]) # Boats for people greater in Weight
 
         while l <= r:
             if people[l] + people[r] <= limit:
-                boats += 1
                 l += 1
-                r -= 1
-            else:
-                boats += 1
-                r -= 1
+                
+            boats += 1
+            r -= 1
         
         return boats
