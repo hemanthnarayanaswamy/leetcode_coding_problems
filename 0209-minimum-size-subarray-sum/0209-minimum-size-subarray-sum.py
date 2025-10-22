@@ -4,6 +4,9 @@ class Solution:
         curr = 0
         best = float('inf')
 
+        if target>sum(nums):
+            return 0
+
         for right, x in enumerate(nums):
             curr += x
 
@@ -11,5 +14,5 @@ class Solution:
                 best = min(best, right - left + 1)
                 curr -= nums[left]
                 left += 1
-                
+
         return 0 if best == float('inf') else best
