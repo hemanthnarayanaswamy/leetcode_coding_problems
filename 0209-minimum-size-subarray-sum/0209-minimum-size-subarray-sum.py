@@ -12,8 +12,8 @@ class Solution:
 
             while totalSum >= target:
                 totalSum -= nums[left]
+                minLen = min(minLen, i+1-left)
                 left += 1
-                minLen = min(minLen, i+1 - (left-1))
-        
+                
         return minLen
 
