@@ -13,4 +13,3 @@ class Solution:
                 left += 1
                 
         return 0 if minLen == float('inf') else minLen
-
