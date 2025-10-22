@@ -34,3 +34,65 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> If you have figured out the <code>O(n)</code> solution, try coding another solution of which the time complexity is <code>O(n log(n))</code>.
+
+# Approach
+* Define left of window as 0 (leftmost window border), sum to check with target and min (minimal window size);
+* In a loop through nums add each element to sum accumulator;
+* Then in while loop by condition sum >= target update min window length, substract nums[left] from sum and shfit left by 1 forward (window narrowing from left border);
+
+```python
+class Solution:
+    def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+        left = 0
+        minLen = len(nums)
+        totalSum = 0
+
+        if sum(nums) < target:
+            return 0
+
+        for i in range(len(nums)):
+            totalSum += nums[i]
+
+            while totalSum >= target:
+                totalSum -= nums[left]
+                minLen = min(minLen, i+1-left)
+                left += 1
+                
+        return minLen
+```
+---
+```python
+class Solution:
+    def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+        left = 0
+        minLen = float('inf')
+        totalSum = 0
+
+        for i in range(len(nums)):
+            totalSum += nums[i]
+
+            while totalSum >= target:
+                totalSum -= nums[left]
+                minLen = min(minLen, i+1-left)
+                left += 1
+                
+        return 0 if minLen == float('inf') else minLen
+```
+---
+```python
+class Solution:
+    def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+        left = 0
+        curr = 0
+        best = float('inf')
+
+        for right, x in enumerate(nums):
+            curr += x
+
+            while curr >= target:
+                best = min(best, right - left + 1)
+                curr -= nums[left]
+                left += 1
+                
+        return 0 if best == float('inf') else best
+```
