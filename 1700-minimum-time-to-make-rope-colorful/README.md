@@ -40,3 +40,69 @@ There are no longer two consecutive balloons of the same color. Total time = 1 +
 	<li><code>1 &lt;= neededTime[i] &lt;= 10<sup>4</sup></code></li>
 	<li><code>colors</code> contains only lowercase English letters.</li>
 </ul>
+
+# Solution
+* Scan left→right keeping: `curr_color`, `run_sum` of needed times in this run
+* `run_max` largest time in this run. If next `color == curr_color`: update `run_sum += t`, `run_max = max(run_max, t)`.
+**If color changes or at the end: add run_sum - run_max to answer, then reset run_sum = t, run_max = t, curr_color = new color.**
+* Final answer is the sum over all runs.
+
+```python
+class Solution:
+    def minCost(self, colors: str, neededTime: List[int]) -> int:
+        l, r = 0, 1
+        time = 0
+        n = len(colors)
+
+        while r < n:
+            if colors[l] == colors[r]:
+                if neededTime[l] > neededTime[r]:
+                    time += neededTime[r]
+                    r += 1
+                else:
+                    time += neededTime[l]
+                    l = r
+                    r += 1
+            else:
+                l = r
+                r += 1
+
+        return time
+```
+---
+```python
+class Solution:
+    def minCost(self, colors: str, neededTime: List[int]) -> int:
+        total = 0
+        prev_color = ''
+        prev_max = 0
+        
+        for c, t in zip(colors, neededTime):
+            if c == prev_color:
+                total += min(prev_max, t)
+                prev_max = max(prev_max, t)
+            else:
+                prev_color = c
+                prev_max = t
+        return total
+```
+---
+```python
+class Solution:
+    def minCost(self, colors: str, neededTime: List[int]) -> int:
+        n = len(colors)
+        lc = colors[0]
+        lm = neededTime[0]
+        tt = 0
+        for i in range(1, n):
+            if lc == colors[i]:
+                if lm > neededTime[i]:
+                    tt += neededTime[i]
+                else:
+                    tt += lm
+                    lm = neededTime[i]
+            else:
+                lc = colors[i]
+                lm = neededTime[i]
+        return tt
+```
