@@ -1,20 +1,13 @@
 class Solution:
     def minCost(self, colors: str, neededTime: List[int]) -> int:
-        l, r = 0, 1
-        time = 0
-        n = len(colors)
-
-        while r < n:
-            if colors[l] == colors[r]:
-                if neededTime[l] > neededTime[r]:
-                    time += neededTime[r]
-                    r += 1
-                else:
-                    time += neededTime[l]
-                    l = r
-                    r += 1
+        total = 0
+        prev_color = ''
+        prev_max = 0
+        for c, t in zip(colors, neededTime):
+            if c == prev_color:
+                total += min(prev_max, t)
+                prev_max = max(prev_max, t)
             else:
-                l = r
-                r += 1
-
-        return time
+                prev_color = c
+                prev_max = t
+        return total
