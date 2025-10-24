@@ -35,3 +35,28 @@
 	<li>Alice and Bob have a different total number of candies.</li>
 	<li>There will be at least one valid answer for the given input.</li>
 </ul>
+
+# Approach 
+
+* If Alice swaps candy `a`, she expects some specific quantity of candy `b` back.
+* Let `SumA and SumB` be the sum of candies of Alice and Bob, if Alice gives `a` candies then she gets `b` candies back from Bob and Bob gets `a` candies and gives `b` candies back.
+```ini
+From the above statement we can write this equation,
+SumA - a + b = SumB - b + a
+Finally we can arrive at this,
+b = a + (SumB - SumA)/2.
+```
+**If we can find a candy `b` that Bob has for a candy `b` with Alice that satisfies the condition we have arrived at, then we can return 
+`[a, b]`.**
+
+```python
+class Solution:
+    def fairCandySwap(self, aliceSizes: List[int], bobSizes: List[int]) -> List[int]:
+        bobs = set(bobSizes)
+        diff = (sum(bobSizes) - sum(aliceSizes)) // 2
+
+        for a in aliceSizes:
+            b = a + diff
+            if b in bobs:
+                return [a, b]
+```
