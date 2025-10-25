@@ -1,25 +1,17 @@
 class Solution:
     def totalMoney(self, n: int) -> int:
-        startMoney = 1
-        money = 1
-        dayOfWeek = 0
+        fullWeeks = n // 7
+        leftDays = n % 7
         totalMoney = 0
-        totalDays = 0
 
-        while totalDays < n:
-            totalMoney += money
-            dayOfWeek += 1
-            totalDays += 1
-            money += 1
+        for i in range(fullWeeks): # Using AP to calculate the amount for the fullweeks
+            totalMoney += 7 * (1 + i) + 21
+        
+        # calculate amount for remaining weeks
+        f = 1+fullWeeks
+        l = f+leftDays-1 
 
-            if dayOfWeek == 7:
-                dayOfWeek = 0
-                startMoney += 1
-                money = startMoney
+        totalMoney += leftDays * (f + l)//2
         
         return totalMoney
-
-
-
-
-
+        
