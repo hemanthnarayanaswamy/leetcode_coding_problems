@@ -35,3 +35,95 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 1000</code></li>
 </ul>
+
+# Solution 
+* Simulation Processes 
+
+```python
+class Solution:
+    def totalMoney(self, n: int) -> int:
+        startMoney = 1
+        money = 1
+        dayOfWeek = 0
+        totalMoney = 0
+        totalDays = 0
+
+        while totalDays < n:
+            totalMoney += money
+            dayOfWeek += 1
+            totalDays += 1
+            money += 1
+
+            if dayOfWeek == 7:
+                dayOfWeek = 0
+                startMoney += 1
+                money = startMoney
+        
+        return totalMoney
+```
+---
+# Optimal Solution
+* Week `i` (0-indexed) deposits: `(1+i),(2+i),…,(7+i)`.
+* After `w`full weeks and `r` leftover days: `n = 7w + r, 0 ≤ r < 7`.
+
+* Week `i` `total = (1+…+7) + 7i = 28 + 7i` because 1+…+7 = 28.
+* Weekly totals form an `AP: 28, 35, 42, …` with difference 7.
+
+```ini
+Sum over i = 0…w−1:
+
+AP formula: w * (first + last) / 2 = w * (28 + (28+7(w−1))) / 2.
+
+Simplify to 28w + 7 * w(w−1)/2.
+
+Equivalent closed form often used: 7 * w(w+1)/2 + 21w. Same value.
+```
+
+```ini
+Leftover r days:
+
+First leftover deposit = 1 + w (next Monday).
+
+r terms increasing by 1: (1+w),(2+w),…,(w+r).
+
+Sum = r * (first + last) / 2 = r * ((1+w) + (w+r)) / 2 = r * (2w + r + 1) / 2.
+```
+
+```ini
+Total:
+
+total = [full weeks sum] + [leftover sum]
+
+= [28w + 7*w(w−1)/2] + [r * (2w + r + 1) / 2]
+
+Same as 7 * w(w+1)/2 + 21w + r * (2w + r + 1) / 2.
+```
+
+```ini
+n=10 → w=1, r=3.
+
+Full weeks: 28.
+
+Leftover: 3 * (2*1 + 3 + 1) / 2 = 3 * 6 / 2 = 9.
+
+Total = 37
+```
+
+```python
+class Solution:
+    def totalMoney(self, n: int) -> int:
+        fullWeeks = n // 7
+        leftDays = n % 7
+        totalMoney = 0
+
+        for i in range(fullWeeks): # Using AP to calculate the amount for the fullweeks
+            totalMoney += 7 * (1 + i) + 21
+        
+        # calculate amount for remaining weeks
+        f = 1+fullWeeks
+        l = f+leftDays-1 
+
+        totalMoney += leftDays * (f + l)//2
+        
+        return totalMoney
+```
