@@ -6,13 +6,13 @@ class Solution:
 
         for start, end in nums:
             if start <= preEnd:
-                if end < preEnd:
-                    continue
-                else:
+                if end > preEnd:
                     points += (end - preEnd)
-                    preEnd = end
+                else:
+                    continue
             else:
                 points += (end - start + 1)
-                preEnd = end
+
+            preEnd = end
         
         return points
