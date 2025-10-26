@@ -27,3 +27,61 @@
 	<li><code>nums[i].length == 2</code></li>
 	<li><code><font face="monospace">1 &lt;= start<sub>i</sub>&nbsp;&lt;= end<sub>i</sub>&nbsp;&lt;= 100</font></code></li>
 </ul>
+
+# Brute Force Solution 
+* For each `start, end` create a range and append numbers from that range into the set. 
+* That set will have all the unique numbers and the result will be the lenght of that set. 
+
+```python
+class Solution:
+    def numberOfPoints(self, nums: List[List[int]]) -> int:
+        res = set()
+
+        for s, e in nums:
+            for i in range(s,e+1):
+                res.add(i)
+        
+        return len(res)
+```
+---
+# Optimal Solution 
+**Sort the array according to first element and then starting from the 0th index remove the overlapping parts and return the count of non-overlapping points.**
+```python
+class Solution:
+    def numberOfPoints(self, nums: List[List[int]]) -> int:
+        nums = sorted(nums, key=lambda x: x[0])
+        preEnd = 0
+        points = 0
+
+        for start, end in nums:
+            if start <= preEnd:
+                if end < preEnd:
+                    continue
+                else:
+                    points += (end - preEnd)
+                    preEnd = end
+            else:
+                points += (end - start + 1)
+                preEnd = end
+        
+        return points
+```
+```python
+class Solution:
+    def numberOfPoints(self, nums: List[List[int]]) -> int:
+        nums = sorted(nums, key=lambda x: x[0])
+        points = preEnd = 0
+
+        for start, end in nums:
+            if start <= preEnd:
+                if end > preEnd:
+                    points += (end - preEnd)
+                else:
+                    continue
+            else:
+                points += (end - start + 1)
+
+            preEnd = end
+        
+        return points
+```
