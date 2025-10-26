@@ -1,9 +1,18 @@
 class Solution:
     def numberOfPoints(self, nums: List[List[int]]) -> int:
-        res = set()
+        nums = sorted(nums, key=lambda x: x[0])
+        preEnd = 0
+        points = 0
 
-        for s, e in nums:
-            for i in range(s,e+1):
-                res.add(i)
+        for start, end in nums:
+            if start <= preEnd:
+                if end < preEnd:
+                    continue
+                else:
+                    points += (end - preEnd)
+                    preEnd = end
+            else:
+                points += (end - start + 1)
+                preEnd = end
         
-        return len(res)
+        return points
