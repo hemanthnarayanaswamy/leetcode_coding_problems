@@ -361,6 +361,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2892-check-if-array-is-good](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2892-check-if-array-is-good) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [2977-check-if-a-string-is-an-acronym-of-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2977-check-if-a-string-is-an-acronym-of-words) |
+| [3034-points-that-intersect-with-cars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3034-points-that-intersect-with-cars) |
 | [3044-minimum-operations-to-collect-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3044-minimum-operations-to-collect-elements) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3151-minimum-processing-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3151-minimum-processing-time) |
@@ -530,6 +531,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2847-find-maximum-number-of-string-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2847-find-maximum-number-of-string-pairs) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2888-minimum-index-of-a-valid-split) |
 | [2892-check-if-array-is-good](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2892-check-if-array-is-good) |
+| [3034-points-that-intersect-with-cars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3034-points-that-intersect-with-cars) |
 | [3044-minimum-operations-to-collect-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3044-minimum-operations-to-collect-elements) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3206-find-common-elements-between-two-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3206-find-common-elements-between-two-arrays) |
@@ -1083,6 +1085,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2571-find-the-pivot-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2571-find-the-pivot-integer) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2576-minimum-penalty-for-a-shop) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2691-count-vowel-strings-in-ranges) |
+| [3034-points-that-intersect-with-cars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3034-points-that-intersect-with-cars) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3311-ant-on-the-boundary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3311-ant-on-the-boundary) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
