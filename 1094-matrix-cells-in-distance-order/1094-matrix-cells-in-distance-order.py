@@ -10,6 +10,7 @@ class Solution:
         
         ans = []
         for key in sorted(res):
+            # print(res[key])
             ans += res[key]
 
         return ans
