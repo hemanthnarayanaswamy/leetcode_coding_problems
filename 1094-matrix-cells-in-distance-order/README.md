@@ -39,3 +39,49 @@ There are other answers that would also be accepted as correct, such as [[1,2],[
 	<li><code>0 &lt;= rCenter &lt; rows</code></li>
 	<li><code>0 &lt;= cCenter &lt; cols</code></li>
 </ul>
+
+# Solution 
+* After calculating the distance use the hashMap to store the dist along with coordinate in the hashMap like this `{0: [[0,0],[1,0].[1,1]], 1:[[2,1]]}`
+* Then sort the hashMap with respect to the keys. 
+* Then do the unpacking on the nested list into a list. 
+
+```python
+nested_list = [[1, 2], [3, 4], [5, 6]]
+flat_list = [item for sublist in nested_list for item in sublist]
+print(flat_list) [1,2,3,4,5,6] 
+```
+---
+```python
+class Solution:
+    def allCellsDistOrder(self, rows: int, cols: int, rCenter: int, cCenter: int) -> List[List[int]]:
+        res = defaultdict(list)
+        
+        for i in range(rows):
+            rdist = abs(rCenter - i)
+            for j in range(cols):
+                dist = rdist + abs(cCenter - j)
+                res[dist].append([i, j])
+        
+        res = sorted(res.items())
+
+        return [c for _,cor in res for c in cor]
+```
+---
+```python
+class Solution:
+    def allCellsDistOrder(self, rows: int, cols: int, rCenter: int, cCenter: int) -> List[List[int]]:
+        res = defaultdict(list)
+
+        for i in range(rows):
+            rdist = abs(rCenter - i)
+            for j in range(cols):
+                dist = rdist + abs(cCenter - j)
+                res[dist].append([i, j])
+        
+        ans = []
+        for key in sorted(res):
+            # print(res[key])
+            ans += res[key]
+
+        return ans
+```
