@@ -4,13 +4,12 @@ class Solution:
         numsSum = sum(nums)
         res = 0
 
-        for i in range(len(nums)):
-            curr = nums[i]
-            l = left_sum + curr
+        for num in nums:
+            l = left_sum + num
             r = abs(numsSum - left_sum)
             left_sum = l
 
-            if curr == 0:
+            if num == 0:
                 diff = abs(l - r)
                 if diff == 0:
                     res += 2
