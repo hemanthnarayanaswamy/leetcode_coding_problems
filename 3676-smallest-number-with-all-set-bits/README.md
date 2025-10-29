@@ -45,3 +45,24 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 1000</code></li>
 </ul>
+
+# Solution 
+**Set Bits**: Number with all bits equal to 1. 
+![](https://www.onlinemathlearning.com/image-files/binary-to-decimal.png)
+![](https://images.examples.com/wp-content/uploads/2024/05/Binary-Numbers-Table.png)
+* If you observe the table, the number with all set bits are `2 power x - 1`
+
+**Find the strictly greater power of 2, and subtract 1 from it.**
+
+```python
+class Solution:
+    def smallestNumber(self, n: int) -> int:
+        res = 0
+        power = 1
+
+        while res < n:
+            res = (2**power)-1
+            power += 1
+
+        return res
+```
