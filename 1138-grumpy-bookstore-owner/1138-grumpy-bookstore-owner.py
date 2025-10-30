@@ -10,13 +10,15 @@ class Solution:
             else:
                 gain.append(c)
         
-        i = 0
-        newSatified = sum(gain[i:i+minutes]) +  initialSatified      
+        if minutes == 0:
+            return initialSatified
+        
+        newSatified = sum(gain[:minutes]) +  initialSatified      
         maxSatified = newSatified
     
-        while i < len(gain)-minutes:
-            i += 1
-            newSatified += gain[i+minutes-1] - gain[i-1] 
+        for i in range(1, len(gain)-minutes+1):
+            newSatified += gain[i+minutes-1] - gain[i-1]
+            
             if newSatified > maxSatified:
                 maxSatified = newSatified
         
