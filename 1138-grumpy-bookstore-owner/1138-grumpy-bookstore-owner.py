@@ -13,8 +13,6 @@ class Solution:
         i = 0
         gainSatified = sum(gain[i:i+minutes])        
         maxSatified = initialSatified + gainSatified
-
-        print(gain, initialSatified)
     
         while i < len(gain)-minutes:
             i += 1
