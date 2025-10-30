@@ -1,27 +1,23 @@
 class Solution:
     def maxSatisfied(self, customers: List[int], grumpy: List[int], minutes: int) -> int:
-        gain = []
-        initialSatified = 0
-    
-        for c,g in zip(customers, grumpy):
-            if not g:
-                initialSatified += c
-                gain.append(0)
-            else:
-                gain.append(c)
-        
-        if minutes == 0:
-            return initialSatified
-        
-        newSatified = sum(gain[:minutes]) +  initialSatified      
-        maxSatified = newSatified
-    
-        for i in range(1, len(gain)-minutes+1):
-            newSatified += gain[i+minutes-1] - gain[i-1]
-            
-            if newSatified > maxSatified:
-                maxSatified = newSatified
-        
-        return maxSatified
-            
+        n = len(customers)
+        base = 0          # customers already satisfied when not grumpy
+        win = 0           # current window gain
+        best = 0          # best gain over any window of length minutes
+        left = 0
 
+        for right in range(n):
+            if grumpy[right] == 0:
+                base += customers[right]
+            else:
+                win += customers[right]
+
+            if right - left + 1 > minutes:
+                if grumpy[left] == 1:
+                    win -= customers[left]
+                left += 1
+
+            if win > best:
+                best = win
+
+        return base + best
