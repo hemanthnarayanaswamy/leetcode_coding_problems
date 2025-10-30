@@ -1,11 +1,8 @@
 class Solution:
     def possibleStringCount(self, word: str) -> int:
-        n = len(word)
-        answer = 1
+        res = 1
 
-        for i in range(1, n):
-            if word[i-1] == word[i]:
-                answer += 1
-        
-        return answer
-        
+        for i in range(1, len(word)):
+            if (word[i] == word[i-1]):
+                res += 1
+        return res
