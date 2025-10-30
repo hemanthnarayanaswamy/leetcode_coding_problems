@@ -1,8 +1,18 @@
 class Solution:
     def possibleStringCount(self, word: str) -> int:
-        res = 1
+        total = 1
+        consecutiveCount = 0
+        previousChar = ''
 
-        for i in range(1, len(word)):
-            if (word[i] == word[i-1]):
-                res += 1
-        return res
+        for i in range(len(word)):
+            if word[i] != previousChar:
+                total += consecutiveCount
+                consecutiveCount = 0
+                previousChar = word[i]
+            else:
+                consecutiveCount += 1
+        
+        if consecutiveCount:
+            total += consecutiveCount
+            
+        return total
