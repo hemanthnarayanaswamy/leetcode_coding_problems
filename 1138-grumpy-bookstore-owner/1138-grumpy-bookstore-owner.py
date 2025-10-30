@@ -1,15 +1,26 @@
 class Solution:
     def maxSatisfied(self, customers: List[int], grumpy: List[int], minutes: int) -> int:
-        initialSatified = sum(c for c,g in zip(customers, grumpy) if not g)
-        maxSatified = initialSatified
+        gain = []
+        initialSatified = 0
+    
+        for c,g in zip(customers, grumpy):
+            if not g:
+                initialSatified += c
+                gain.append(0)
+            else:
+                gain.append(c)
         
-        for i in range(len(customers)-minutes+1):
-            tmp = initialSatified
-            for j in range(i, i + minutes):
-                if grumpy[j]:
-                    tmp += customers[j]
-            
-            if tmp > maxSatified:
-                maxSatified = tmp
+        i = 0
+        gainSatified = sum(gain[i:i+minutes])        
+        maxSatified = initialSatified + gainSatified
+
+        print(gain, initialSatified)
+    
+        while i < len(gain)-minutes:
+            i += 1
+            gainSatified = gainSatified - gain[i-1] + gain[i+minutes-1]
+            maxSatified = max(maxSatified, initialSatified+gainSatified)
         
         return maxSatified
+            
+
