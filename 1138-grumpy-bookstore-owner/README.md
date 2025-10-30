@@ -40,3 +40,87 @@
 	<li><code>0 &lt;= customers[i] &lt;= 1000</code></li>
 	<li><code>grumpy[i]</code> is either <code>0</code> or <code>1</code>.</li>
 </ul>
+
+# Approach 
+* We need to find the maximum number of customers that can be satisfied. 
+* **Number of Customers Satified = sum of customers at which owner is not Grumpy i.e `grumpy[i]=0`**.
+* Now to make the above count maximum, We need to use `minutes` effectively. i.e But placing minutes consecutive at the place where the above sum becomes max. 
+
+1. Compute Initial Satified customers. and other varible to track the maximum Satified Customers. 
+2. Now for the `window Size = minutes`, compute a tmp satified customers, which is intial satified customers plus any new ones in the window where the owner was grumpy before. 
+3. If this tmp is greater than the max satified customer, replace it and move to next window. 
+
+# Brute Force Solution 
+```python
+class Solution:
+    def maxSatisfied(self, customers: List[int], grumpy: List[int], minutes: int) -> int:
+        initialSatified = sum(c for c,g in zip(customers, grumpy) if not g)
+        maxSatified = initialSatified
+        
+        for i in range(len(customers)-minutes+1):
+            tmp = initialSatified
+            for j in range(i, i + minutes):
+                if grumpy[j]:
+                    tmp += customers[j]
+            
+            if tmp > maxSatified:
+                maxSatified = tmp
+        
+        return maxSatified
+```
+# Optimal Solution 
+* Seperate the processes `Base = customers when owner not grumpy`. `Gain = extra customers you could satisfy by turning off grumpiness`.
+* Create a `Potential Gain Array`, `gain[i] = customers[i] if grumpy[i] == 1, else 0`
+```python
+class Solution:
+    def maxSatisfied(self, customers: List[int], grumpy: List[int], minutes: int) -> int:
+        gain = []
+        initialSatified = 0
+    
+        for c,g in zip(customers, grumpy):
+            if not g:
+                initialSatified += c
+                gain.append(0)
+            else:
+                gain.append(c)
+        
+        if minutes == 0:
+            return initialSatified
+        
+        newSatified = sum(gain[:minutes]) +  initialSatified      
+        maxSatified = newSatified
+    
+        for i in range(1, len(gain)-minutes+1):
+            newSatified += gain[i+minutes-1] - gain[i-1]
+            
+            if newSatified > maxSatified:
+                maxSatified = newSatified
+        
+        return maxSatified
+```
+---
+```python
+class Solution:
+    def maxSatisfied(self, customers: List[int], grumpy: List[int], minutes: int) -> int:
+        n = len(customers)
+        base = 0          # customers already satisfied when not grumpy
+        win = 0           # current window gain
+        best = 0          # best gain over any window of length minutes
+        left = 0
+
+        for right in range(n):
+            if grumpy[right] == 0:
+                base += customers[right]
+            else:
+                win += customers[right]
+
+            if right - left + 1 > minutes:
+                if grumpy[left] == 1:
+                    win -= customers[left]
+                left += 1
+
+            if win > best:
+                best = win
+
+        return base + best
+```
