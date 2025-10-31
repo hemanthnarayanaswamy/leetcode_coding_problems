@@ -9,6 +9,5 @@ class Solution:
         b = int(num1[i+1:-1]) # Ignore the i
         c = int(num2[:j])
         d = int(num2[j+1:-1])
-        print(a, b, c, d)
 
         return str(a*c - b*d) + '+' + str(a*d + b*c) + 'i'
