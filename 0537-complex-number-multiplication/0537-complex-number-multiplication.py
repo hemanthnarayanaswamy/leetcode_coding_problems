@@ -1,13 +1,7 @@
 class Solution:
     def complexNumberMultiply(self, num1: str, num2: str) -> str:
-        a = b = c = d = 0
-    
-        i = num1.index('+')
-        j = num2.index('+')
+        r1,i1 = map(int, num1[:-1].split('+'))
+        r2,i2 = map(int, num2[:-1].split('+'))
         
-        a = int(num1[:i])
-        b = int(num1[i+1:-1]) # Ignore the i
-        c = int(num2[:j])
-        d = int(num2[j+1:-1])
-
-        return str(a*c - b*d) + '+' + str(a*d + b*c) + 'i'
+        return str(r1*r2 - i1*i2) + "+" + str(r1*i2 + r2*i1) + 'i' 
+        
