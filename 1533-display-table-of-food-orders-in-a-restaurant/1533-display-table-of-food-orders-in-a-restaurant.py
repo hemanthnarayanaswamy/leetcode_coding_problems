@@ -3,7 +3,6 @@ class Solution:
         header = set()
         orderDetails = defaultdict(lambda: defaultdict(int))
         tables = set()
-        displayTable = []
 
         for order in orders:
             table = int(order[1])
@@ -14,7 +13,7 @@ class Solution:
         
         header = ["Table"]+sorted(header)
         tables = sorted(tables)
-        displayTable.append(header)
+        displayTable = [header]
 
         for t in tables:
             tmp = []
