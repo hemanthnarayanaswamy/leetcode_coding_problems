@@ -23,5 +23,3 @@ class Solution:
             displayTable.append(tmp)
 
         return displayTable 
-
-
