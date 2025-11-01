@@ -45,4 +45,82 @@ For the table 12: James, Ratesh and Amadeus order &quot;Fried Chicken&quot;.
 	<li><code>1 &lt;= customerName<sub>i</sub>.length, foodItem<sub>i</sub>.length &lt;= 20</code></li>
 	<li><code>customerName<sub>i</sub></code> and <code>foodItem<sub>i</sub></code> consist of lowercase and uppercase English letters and the space character.</li>
 	<li><code>tableNumber<sub>i</sub>&nbsp;</code>is a valid integer between <code>1</code> and <code>500</code>.</li>
+
 </ul>
+
+# Approach 
+**`defaultdict` with nested dict with different types**
+```python
+from collections import defaultdict
+d = defaultdict(lambda: defaultdict(int))
+```
+* This will create a new `defaultdict(int)` whenever a new key is accessed in `d`, 
+
+```python
+a = [("key1", {"a1":22, "a2":33}),
+     ("key2", {"a1":32, "a2":55}),
+     ("key3", {"a1":43, "a2":44})]
+```
+---
+
+```python
+class Solution:
+    def displayTable(self, orders: List[List[str]]) -> List[List[str]]:
+        header = set()
+        orderDetails = defaultdict(lambda: defaultdict(int))
+        tables = set()
+
+        for order in orders:
+            table = int(order[1])
+            tables.add(table)
+            for item in order[2:]:
+                header.add(item)
+                orderDetails[table][item] += 1
+        
+        header = ["Table"]+sorted(header)
+        tables = sorted(tables)
+        displayTable = [header]
+
+        for t in tables:
+            tmp = []
+            tmp.append(str(t))
+            for item in header[1:]:
+                tmp.append(str(orderDetails[t][item]))
+            displayTable.append(tmp)
+
+        return displayTable 
+```
+---
+# Optimal Solution 
+	1. `tables = defaultdict(Counter)`: maps table → counts of each food.
+	2. `foods = set()`: collects all distinct food names.
+	3.	For each `order (_, table, food)`:
+	4. Increment `tables[table][food] += 1`. Add food to foods.
+	5. Sort foods to define the column order. Sort table numbers for row order.
+	6. Build `header ["Table"] + sorted_foods`.
+	7. For each table, `emit [str(table)] + [str(count[food])` for food in sorted_foods].
+	8. Missing foods default to 0 because Counter returns 0 for unseen keys.
+	
+```python
+from collections import defaultdict, Counter
+from typing import List
+
+def displayTable(orders):
+    tables = defaultdict(Counter)   # table -> {food: count}
+    foods = set()
+
+    for _, table, food in orders:   # each order has one food
+        print(table, food) # 3 Ceviche, 10 Beef Burrito, 3 Fried Chicken, 5 Ceviche
+        t = int(table)
+        tables[t][food] += 1
+        foods.add(food)
+    
+    print(tables) # defaultdict(<class 'collections.Counter'>, {3: Counter({'Ceviche': 2, 'Fried Chicken': 1}), 10: Counter({'Beef Burrito': 1}), 5: Counter({'Water': 1, 'Ceviche': 1})})
+
+    food_list = sorted(foods)
+    out = [["Table"] + food_list]
+    for t in sorted(tables):
+        c = tables[t]
+        out.append([str(t)] + [str(c[f]) for f in food_list])
+    return out
+```
