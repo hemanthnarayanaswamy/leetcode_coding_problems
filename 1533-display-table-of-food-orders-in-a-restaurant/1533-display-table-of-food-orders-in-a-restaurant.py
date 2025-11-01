@@ -14,7 +14,6 @@ class Solution:
         
         header = ["Table"]+sorted(header)
         tables = sorted(tables)
-        print(tables)
         displayTable.append(header)
 
         for t in tables:
