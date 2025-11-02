@@ -29,3 +29,23 @@
 	<li><code>1 &lt;= m * n &lt;= 10<sup>5</sup></code></li>
 	<li><code>-10<sup>9</sup> &lt;= matrix[i][j] &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Approach 
+* The transpose of a matrix `A` with dimensions `R x C` is a matrix ans with dimensions `C x R` for which `ans[c][r] = A[r][c]`.
+
+```python
+class Solution:
+    def transpose(self, matrix):
+        n = len(matrix)
+        m = len(matrix[0])
+
+        ans = []
+
+        for j in range(m):
+            temp = []
+            for i in range(n):
+                temp.append(matrix[i][j])
+            ans.append(temp)
+
+        return ans
+```
