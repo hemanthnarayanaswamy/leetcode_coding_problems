@@ -6,12 +6,9 @@ class Solution:
             for i in range(1, len(grid)):
                 p = grid[i-1][j] 
                 c = grid[i][j]
-                if p > c:
+                if p >= c:
                     tmp = p - c + 1
                     grid[i][j] += tmp
                     operations += tmp
-                elif p == c:
-                    grid[i][j] += 1
-                    operations += 1
 
         return operations
