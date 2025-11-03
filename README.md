@@ -407,6 +407,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3616-make-array-elements-equal-to-zero](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3616-make-array-elements-equal-to-zero) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3685-count-subarrays-of-length-three-with-a-condition](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3685-count-subarrays-of-length-three-with-a-condition) |
+| [3691-minimum-operations-to-make-columns-strictly-increasing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3691-minimum-operations-to-make-columns-strictly-increasing) |
 | [3704-count-partitions-with-even-sum-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3704-count-partitions-with-even-sum-difference) |
 | [3705-find-the-largest-almost-missing-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3705-find-the-largest-almost-missing-integer) |
 | [3707-find-the-most-common-response](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3707-find-the-most-common-response) |
@@ -1191,6 +1192,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3334-apple-redistribution-into-boxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3334-apple-redistribution-into-boxes) |
+| [3691-minimum-operations-to-make-columns-strictly-increasing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3691-minimum-operations-to-make-columns-strictly-increasing) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 | [3871-minimum-deletions-for-at-most-k-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3871-minimum-deletions-for-at-most-k-distinct-characters) |
 ## Heap (Priority Queue)
@@ -1296,6 +1298,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3188-find-champion-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3188-find-champion-i) |
 | [3227-find-missing-and-repeated-values](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3227-find-missing-and-repeated-values) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
+| [3691-minimum-operations-to-make-columns-strictly-increasing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3691-minimum-operations-to-make-columns-strictly-increasing) |
 | [3748-sort-matrix-by-diagonals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3748-sort-matrix-by-diagonals) |
 ## Enumeration
 |  |
