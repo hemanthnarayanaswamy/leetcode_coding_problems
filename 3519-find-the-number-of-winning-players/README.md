@@ -60,3 +60,47 @@
 	<li><code>0 &lt;= x<sub>i</sub> &lt;= n - 1 </code></li>
 	<li><code>0 &lt;= y<sub>i</sub> &lt;= 10</code></li>
 </ul>
+
+# Solution 
+* Need to use a nested dict to store players and there frequency of picked colors. using `defaultdict(Counter)`
+
+1. First Iteration to fill the nested dict for all picks the of players. 
+2. Second Iteration to check if the player `i` has picked more the `i` balls of same colour. 
+
+```python
+class Solution:
+    def winningPlayerCount(self, n: int, pick: List[List[int]]) -> int:
+        playersPicks = defaultdict(Counter)
+        playersWon = 0
+
+        for player, ball in pick:
+            playersPicks[player][ball] += 1
+
+        for i in range(n):
+            for count in playersPicks[i].values():
+                if count > i:
+                    playersWon += 1
+                    break
+                    
+        return playersWon
+```
+---
+# Single Pass Solution 
+* We keep track of a set to add players won and contine without iterating the pick for that player. 
+* After updating the nested dict, we check for the win condition to add the player to the set.
+* Final we return the len for Players Won set. 
+```python
+class Solution:
+    def winningPlayerCount(self, n: int, pick: List[List[int]]) -> int:
+        playersPicks = defaultdict(Counter)
+        playersWon = set()
+
+        for player, ball in pick:
+            if player in playersWon:
+                continue
+            playersPicks[player][ball] += 1
+            if playersPicks[player][ball] > player:
+                playersWon.add(player)
+
+        return len(playersWon)
+```
