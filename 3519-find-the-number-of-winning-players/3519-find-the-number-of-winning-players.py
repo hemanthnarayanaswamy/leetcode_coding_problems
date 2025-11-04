@@ -1,15 +1,15 @@
 class Solution:
     def winningPlayerCount(self, n: int, pick: List[List[int]]) -> int:
         playersPicks = defaultdict(Counter)
-        playersWon = 0
+        playersWon = set()
+        
 
         for player, ball in pick:
+            if player in playersWon:
+                continue
+                
             playersPicks[player][ball] += 1
+            if playersPicks[player][ball] > player:
+                playersWon.add(player)
 
-        for i in range(n):
-            for count in playersPicks[i].values():
-                if count > i:
-                    playersWon += 1
-                    break
-                    
-        return playersWon
+        return len(playersWon)
