@@ -4,7 +4,6 @@ class Solution:
 
         for i, num in enumerate(nums):
             if bin(i).count('1') == k:
-                print(num)
                 res += num
         
         return res
