@@ -3,7 +3,7 @@ class Solution:
         res = 0
 
         for i, num in enumerate(nums):
-            if bin(i).count('1') == k:
+            if i.bit_count() == k:
                 res += num
         
         return res
