@@ -659,6 +659,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1666-make-the-string-great](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1666-make-the-string-great) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1700-minimum-time-to-make-rope-colorful) |
 | [1720-crawler-log-folder](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1720-crawler-log-folder) |
+| [1737-maximum-nesting-depth-of-the-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1737-maximum-nesting-depth-of-the-parentheses) |
 | [1751-slowest-key](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1751-slowest-key) |
 | [1781-check-if-two-string-arrays-are-equivalent](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1781-check-if-two-string-arrays-are-equivalent) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
@@ -1132,6 +1133,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1666-make-the-string-great](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1666-make-the-string-great) |
 | [1720-crawler-log-folder](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1720-crawler-log-folder) |
+| [1737-maximum-nesting-depth-of-the-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1737-maximum-nesting-depth-of-the-parentheses) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2128-reverse-prefix-of-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2128-reverse-prefix-of-word) |
