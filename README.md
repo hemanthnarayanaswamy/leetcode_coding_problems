@@ -370,6 +370,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2977-check-if-a-string-is-an-acronym-of-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2977-check-if-a-string-is-an-acronym-of-words) |
 | [3034-points-that-intersect-with-cars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3034-points-that-intersect-with-cars) |
 | [3044-minimum-operations-to-collect-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3044-minimum-operations-to-collect-elements) |
+| [3093-sum-of-values-at-indices-with-k-set-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3093-sum-of-values-at-indices-with-k-set-bits) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3151-minimum-processing-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3151-minimum-processing-time) |
 | [3188-find-champion-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3188-find-champion-i) |
@@ -1243,6 +1244,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2427-first-letter-to-appear-twice](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2427-first-letter-to-appear-twice) |
 | [2659-number-of-even-and-odd-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2659-number-of-even-and-odd-bits) |
 | [3044-minimum-operations-to-collect-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3044-minimum-operations-to-collect-elements) |
+| [3093-sum-of-values-at-indices-with-k-set-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3093-sum-of-values-at-indices-with-k-set-bits) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3676-smallest-number-with-all-set-bits) |
 ## Binary Search
