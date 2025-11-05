@@ -45,3 +45,34 @@ Hence, the answer is nums[3] = 1.
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= k &lt;= 10</code></li>
 </ul>
+
+# Solution 
+* Recommended to use bit manipulation, But I don't know how to do it. 
+* Here is the alternative approach
+
+1. If the binary representation of a index of a number has `k` set bits, then add that number to your result. 
+```python
+class Solution:
+    def sumIndicesWithKSetBits(self, nums: List[int], k: int) -> int:
+        res = 0
+
+        for i, num in enumerate(nums):
+            if bin(i).count('1') == k:
+                res += num
+        
+        return res
+```
+---
+* You can use 'bit_count()` instread of using `bin()` and then counting ones. 
+
+```python
+class Solution:
+    def sumIndicesWithKSetBits(self, nums: List[int], k: int) -> int:
+        res = 0
+
+        for i, num in enumerate(nums):
+            if i.bit_count() == k:
+                res += num
+        
+        return res
+```
