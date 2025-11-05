@@ -41,3 +41,21 @@
 	<li><code>s</code> consists of digits <code>0-9</code> and characters <code>&#39;+&#39;</code>, <code>&#39;-&#39;</code>, <code>&#39;*&#39;</code>, <code>&#39;/&#39;</code>, <code>&#39;(&#39;</code>, and <code>&#39;)&#39;</code>.</li>
 	<li>It is guaranteed that parentheses expression <code>s</code> is a VPS.</li>
 </ul>
+
+# Solution 
+* For every `(` we increase and depth and for every `)` we decrease the depth.
+* We never we detect the closing bracket, to record the max Depth, and return at the end of iteration. 
+```python
+class Solution:
+    def maxDepth(self, s: str) -> int:
+        depth = maxDepth = 0
+
+        for c in s:
+            if c == '(':
+                depth += 1
+            elif c == ')':
+                maxDepth = max(maxDepth, depth)
+                depth -= 1
+                
+        return maxDepth
+```
