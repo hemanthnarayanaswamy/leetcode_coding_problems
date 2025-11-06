@@ -45,6 +45,16 @@ The red arrow denotes the order in which the cells should be presented.
 	<li><code>s</code> consists of uppercase English letters, digits and <code>&#39;:&#39;</code>.</li>
 </ul>
 
+# Optimal Solution 
+```python
+class Solution:
+    def cellsInRange(self, s: str) -> List[str]:
+        lo, hi = s.split(':')
+        c1, c2 = ord(lo[0]), ord(hi[0])
+        r1, r2 = int(lo[1:]), int(hi[1:])
+        return [f"{chr(c)}{r}" for c in range(c1, c2 + 1) for r in range(r1, r2 + 1)]
+```
+
 # Solution 
 1. First, we get the `c1` and `c2` range & and row range `r1` and `r2` range. 
 ```python
