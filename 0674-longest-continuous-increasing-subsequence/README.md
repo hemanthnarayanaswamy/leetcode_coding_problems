@@ -29,3 +29,39 @@ increasing.
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
 	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Solution
+* We need to track two Length `max Len` and `current Len`. 
+* When ever the condition `nums[i] < nums[i+1]`, fail, we find the `maxLen` and reset the `current Length`. 
+
+```python
+class Solution:
+    def findLengthOfLCIS(self, nums: List[int]) -> int:
+        maxLen = 1
+        currLen = 1
+
+        for i in range(len(nums) - 1):
+            if nums[i] < nums[i+1]:
+                currLen += 1
+            else:
+                maxLen = max(maxLen, currLen)
+                currLen = 1
+                
+        maxLen = max(maxLen, currLen)
+        
+        return maxLen
+```
+---
+# Optimal Solution 
+* Use `Prefix Sum` method to track the longest subsequence Length at each index.
+```python
+class Solution:
+    def findLengthOfLCIS(self, nums: List[int]) -> int:
+        n = len(nums)
+        prefix = [1] * n
+        for i in range(1, n):
+            if nums[i] > nums[i - 1]:
+                prefix[i] = prefix[i - 1] + 1
+        
+        return max(prefix)
+```
