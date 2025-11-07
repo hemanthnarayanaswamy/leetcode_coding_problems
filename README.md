@@ -160,6 +160,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0628-maximum-product-of-three-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0628-maximum-product-of-three-numbers) |
 | [0643-maximum-average-subarray-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0643-maximum-average-subarray-i) |
 | [0665-non-decreasing-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0665-non-decreasing-array) |
+| [0674-longest-continuous-increasing-subsequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0674-longest-continuous-increasing-subsequence) |
 | [0682-baseball-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0682-baseball-game) |
 | [0697-degree-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0697-degree-of-an-array) |
 | [0735-asteroid-collision](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0735-asteroid-collision) |
