@@ -426,6 +426,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [4008-restore-finishing-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4008-restore-finishing-order) |
 | [4012-earliest-time-to-finish-one-task](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4012-earliest-time-to-finish-one-task) |
 | [4058-compute-alternating-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4058-compute-alternating-sum) |
+| [4107-find-missing-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4107-find-missing-elements) |
 ## Hash Table
 |  |
 | ------- |
@@ -569,6 +570,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3871-minimum-deletions-for-at-most-k-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3871-minimum-deletions-for-at-most-k-distinct-characters) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 | [4008-restore-finishing-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4008-restore-finishing-order) |
+| [4107-find-missing-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4107-find-missing-elements) |
 ## String
 |  |
 | ------- |
@@ -1029,6 +1031,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3778-transform-array-by-parity](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3778-transform-array-by-parity) |
 | [3859-maximum-product-of-two-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3859-maximum-product-of-two-digits) |
 | [3871-minimum-deletions-for-at-most-k-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3871-minimum-deletions-for-at-most-k-distinct-characters) |
+| [4107-find-missing-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4107-find-missing-elements) |
 ## Counting
 |  |
 | ------- |
