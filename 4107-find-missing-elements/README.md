@@ -50,3 +50,52 @@
 	<li><code>2 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* Get the lower and upper range and run a range iteration, to find the missing numbers. 
+
+```python 
+class Solution:
+    def findMissingElements(self, nums: List[int]) -> List[int]:
+        l = min(nums)
+        u = max(nums)
+        numsSeach = set(nums)
+        res = []
+
+        for i in range(l, u+1):
+            if i not in numsSeach:
+                res.append(i)
+        
+        return res
+```
+---
+```python
+class Solution:
+    def findMissingElements(self, nums: List[int]) -> List[int]:
+        nums.sort()
+        l = nums[0]
+        u = nums[-1]
+        numsSeach = set(nums)
+        res = []
+
+        for i in range(l, u+1):
+            if i not in numsSeach:
+                res.append(i)
+        
+        return res
+```
+---
+```python
+class Solution:
+    def findMissingElements(self, nums: List[int]) -> List[int]:
+        res = []
+        nums.sort()
+        i = 0
+        n = len(nums)
+        for j in range(nums[0], nums[n-1] + 1):   
+            if i < n and j == nums[i]:
+                i += 1
+            else:
+                res.append(j)
+        return res
+```
