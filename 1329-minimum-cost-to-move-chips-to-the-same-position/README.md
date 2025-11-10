@@ -38,6 +38,43 @@ Total cost is 1.
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
+# Solution 
+**`Hint` : We can bring all the odd positioned coins at one odd place at cost 0 and similarly, we can bring all the even positioned coins at one even place at cost 0. After this, we just need to find whether we place odd to even or even to odd at the cost of min( odd, even);**
+
+1. To Move the chips from `odd to odd` or `even to even`, the cost is zero `position[i] + 2 or position[i] - 2 with cost = 0`
+2. But if you move to a different parit from anywhere else, the `cost=1`
+3. Now counting all chips at even and odd while moving by keeping the moves zero. 
+4. Now We need to move from the chips in from `even to odd/ odd to even` based on the minimum moves, 
+5. The cost to moving all the chips `n` from `odd to even/ even to odd` is n.
+6. So we need to find the minimum cost, the the minimum cost is to move the the chips with minimum count into other. 
+
+```python
+class Solution:
+    def minCostToMoveChips(self, position: List[int]) -> int:
+        chips_even = 0
+        chips_odd = 0
+
+        for p in position:
+            if p % 2:
+                chips_odd += 1
+            else:
+                chips_even += 1
+        
+        return min(chips_even, chips_odd)
+```
+
+## Approach
+* Identify Parity:
+Chips at even positions can be moved amongst each other at no cost, similarly for odd positions due to the zero-cost of two-position moves.
+The only time a cost is incurred is when moving a chip from an even position to an odd position, or vice versa, as this requires a one-position move.
+* Count Parity:
+Iterate through the array of chip positions.
+Maintain two counters: one for chips at even positions (evenCount) and another for chips at odd positions (oddCount).
+* Calculate Minimum Cost:
+Since moving chips within the same parity group (even to even or odd to odd) costs nothing, the only decision is to determine the lesser cost between moving all even-positioned chips to an odd position or moving all odd-positioned chips to an even position.
+The cost is directly proportional to the number of chips being moved. Hence, to minimize the cost, you would move all chips from the smaller group (either oddCount or evenCount) to the larger group.
+* Return the Result:
+The function returns the smaller of the two counts (evenCount or oddCount), representing the minimum cost based on the number of moves required.
 <ul>
 	<li><code>1 &lt;= position.length &lt;= 100</code></li>
 	<li><code>1 &lt;= position[i] &lt;= 10^9</code></li>
