@@ -36,6 +36,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1094-matrix-cells-in-distance-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1094-matrix-cells-in-distance-order) |
 | [1195-distribute-candies-to-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1195-distribute-candies-to-people) |
 | [1289-day-of-the-week](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1289-day-of-the-week) |
+| [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
 | [1378-cells-with-odd-values-in-a-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1378-cells-with-odd-values-in-a-matrix) |
 | [1395-minimum-time-visiting-all-points](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1395-minimum-time-visiting-all-points) |
 | [1406-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1406-subtract-the-product-and-sum-of-digits-of-an-integer) |
@@ -209,6 +210,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1306-minimum-absolute-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1306-minimum-absolute-difference) |
 | [1310-watering-plants](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1310-watering-plants) |
 | [1319-unique-number-of-occurrences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1319-unique-number-of-occurrences) |
+| [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
 | [1333-sort-the-jumbled-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1333-sort-the-jumbled-numbers) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 | [1354-find-players-with-zero-or-one-losses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1354-find-players-with-zero-or-one-losses) |
@@ -1163,6 +1165,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0982-minimum-increment-to-make-array-unique](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0982-minimum-increment-to-make-array-unique) |
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1026-string-without-aaa-or-bbb](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1026-string-without-aaa-or-bbb) |
+| [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
 | [1341-split-a-string-in-balanced-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1341-split-a-string-in-balanced-strings) |
 | [1407-group-the-people-given-the-group-size-they-belong-to](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1407-group-the-people-given-the-group-size-they-belong-to) |
 | [1448-maximum-69-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1448-maximum-69-number) |
