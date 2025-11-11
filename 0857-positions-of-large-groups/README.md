@@ -40,3 +40,51 @@
 	<li><code>1 &lt;= s.length &lt;= 1000</code></li>
 	<li><code>s</code> contains lowercase English letters only.</li>
 </ul>
+
+# Solution 
+* Track the start and prev element and then if the strek is broken then check if the length is `>= 3`, then appened the start and end & reset `start` and `prev`. 
+* If the length `n` is less then 3, terminate early. 
+* And If all the elements in the array are same then the condition won't be satified, then we need to check if `start and len(s)`, is `>= 3`
+```python
+class Solution:
+    def largeGroupPositions(self, s: str) -> List[List[int]]:
+        res = []
+        n = len(s)
+        start = 0
+        prev = s[0]
+
+        if n < 3:
+            return res
+
+        for i in range(1, n):
+            if s[i] != prev:
+                if (i - start) >= 3:
+                    res.append([start, i-1])
+                start = i
+                prev = s[i]
+        
+        if (n - start) >= 3:
+            res.append([start, n-1])
+
+        return res
+```
+---
+# Optimal Solution 
+* Maintain pointers `i, j with i <= j`. The `i` pointer will represent the start of the current group, and we will increment `j` forward until it reaches the end of the group.
+* We know that we have reached the end of the group **when j is at the end of the string**, or `S[j] != S[j+1]`. 
+* At this point, we have some group `[i, j]`; and after, we will update `i = j+1`, the start of the next group.
+```python
+class Solution:
+    def largeGroupPositions(self, s: str) -> List[List[int]]:
+        n = len(s)
+        start = 0
+        largeGroup = []
+
+        for i in range(1, n + 1):
+            if i == n or s[i] != s[i - 1]:
+                if i - start >= 3:
+                    largeGroup.append([start, i - 1])
+                start = i
+
+        return largeGroup
+```
