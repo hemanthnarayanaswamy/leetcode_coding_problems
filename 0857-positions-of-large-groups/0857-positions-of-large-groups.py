@@ -1,13 +1,11 @@
-class Solution:
-    def largeGroupPositions(self, s: str) -> List[List[int]]:
-        n = len(s)
-        start = 0
-        largeGroup = []
-
-        for i in range(1, n + 1):
-            if i == n or s[i] != s[i - 1]:
-                if i - start >= 3:
-                    largeGroup.append([start, i - 1])
-                start = i
-
-        return largeGroup
+class Solution(object):
+    def largeGroupPositions(self, S):
+        ans = []
+        i = 0 # The start of each group
+        for j in range(len(S)):
+            if j == len(S) - 1 or S[j] != S[j+1]:
+                # Here, [i, j] represents a group.
+                if j-i+1 >= 3:
+                    ans.append([i, j])
+                i = j+1
+        return ans
