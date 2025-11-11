@@ -1,21 +1,13 @@
 class Solution:
     def largeGroupPositions(self, s: str) -> List[List[int]]:
-        res = []
         n = len(s)
         start = 0
-        prev = s[0]
+        largeGroup = []
 
-        if n < 3:
-            return res
-
-        for i in range(1, n):
-            if s[i] != prev:
-                if (i - start) >= 3:
-                    res.append([start, i-1])
+        for i in range(1, n + 1):
+            if i == n or s[i] != s[i - 1]:
+                if i - start >= 3:
+                    largeGroup.append([start, i - 1])
                 start = i
-                prev = s[i]
-        
-        if (n - start) >= 3:
-            res.append([start, n-1])
 
-        return res
+        return largeGroup
