@@ -80,6 +80,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2630-alternating-digit-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2630-alternating-digit-sum) |
 | [2645-pass-the-pillow](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2645-pass-the-pillow) |
 | [2650-split-with-minimum-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2650-split-with-minimum-sum) |
+| [2679-count-distinct-numbers-on-board](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2679-count-distinct-numbers-on-board) |
 | [2704-maximum-difference-by-remapping-a-digit](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2704-maximum-difference-by-remapping-a-digit) |
 | [2715-k-items-with-the-maximum-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2715-k-items-with-the-maximum-sum) |
 | [2748-calculate-delayed-arrival-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2748-calculate-delayed-arrival-time) |
@@ -354,6 +355,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2634-minimum-common-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2634-minimum-common-value) |
 | [2639-separate-the-digits-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2639-separate-the-digits-in-an-array) |
 | [2654-count-the-number-of-vowel-strings-in-range](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2654-count-the-number-of-vowel-strings-in-range) |
+| [2679-count-distinct-numbers-on-board](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2679-count-distinct-numbers-on-board) |
 | [2684-determine-the-winner-of-a-bowling-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2684-determine-the-winner-of-a-bowling-game) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2698-find-the-array-concatenation-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2698-find-the-array-concatenation-value) |
@@ -543,6 +545,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2566-number-of-unequal-triplets-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2566-number-of-unequal-triplets-in-array) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2634-minimum-common-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2634-minimum-common-value) |
+| [2679-count-distinct-numbers-on-board](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2679-count-distinct-numbers-on-board) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
 | [2791-find-the-losers-of-the-circular-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2791-find-the-losers-of-the-circular-game) |
@@ -837,6 +840,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
 | [2639-separate-the-digits-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2639-separate-the-digits-in-an-array) |
 | [2645-pass-the-pillow](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2645-pass-the-pillow) |
+| [2679-count-distinct-numbers-on-board](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2679-count-distinct-numbers-on-board) |
 | [2684-determine-the-winner-of-a-bowling-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2684-determine-the-winner-of-a-bowling-game) |
 | [2698-find-the-array-concatenation-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2698-find-the-array-concatenation-value) |
 | [2785-semi-ordered-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2785-semi-ordered-permutation) |
