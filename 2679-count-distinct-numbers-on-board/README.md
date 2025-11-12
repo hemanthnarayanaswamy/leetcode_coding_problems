@@ -42,3 +42,20 @@ After a billion days, the only two distinct numbers on the board are 2 and 3.
 <ul>
 	<li><code>1 &lt;= n &lt;= 100</code></li>
 </ul>
+
+# Solution 
+**For `n > 2`, `n % (n - 1) == 1` thus `n - 1` will be added on the board the next day.**
+`As the operations are performed for so long time, all the numbers lesser than n except 1 will be added to the board.`
+
+* `1` will be never added to the board because `(n % 1) == 0` which will not satify the condition `x % i == 1`, hence `1` cannot be added on the board if the given number is `n > 2`, apart from `1` all numbers will be added over the time. 
+
+* Hence, if a number `n` is placed on the board, Over the time we will have all the number from range (2, n) i.e `n-1` distinct number except `1`. 
+
+**If the number `1` is placed on the board, then only 1 will be present. 
+
+```python
+class Solution:
+    def distinctIntegers(self, n: int) -> int:
+        return n - 1 if n > 2 else 1
+```
+
