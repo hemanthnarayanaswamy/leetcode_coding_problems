@@ -34,6 +34,54 @@ It can be proven that 3 is the maximum possible sum.
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
+# Solution 
+* Simple Problem, Don't complicate it, You can build the array and when take the sum  of thatt array of `k` elements. 
+
+```python
+class Solution:
+    def kItemsWithMaximumSum(self, numOnes: int, numZeros: int, numNegOnes: int, k: int) -> int:
+        items = [1] * numOnes + [0] * numZeros + [-1] * numNegOnes
+
+        return sum(items[:k])
+```
+---
+```python
+class Solution:
+    def kItemsWithMaximumSum(self, numOnes: int, numZeros: int, numNegOnes: int, k: int) -> int:
+        res = 0
+
+        while k:
+            if numOnes:
+                res += 1
+                numOnes -= 1
+            elif numZeros:
+                numZeros -= 1
+            else:
+                res -= 1
+                numNegOnes -= 1
+            
+            k -= 1
+        
+        return res
+```
+---
+```python
+class Solution:
+    def kItemsWithMaximumSum(self, numOnes: int, numZeros: int, numNegOnes: int, k: int) -> int:
+
+        maxi = 0
+        for i in range(k):
+            if numOnes > 0:
+                maxi += 1
+                numOnes -=1
+            else:
+                if numZeros > 0:
+                    numZeros -= 1
+                else:
+                    maxi -= 1
+        return maxi
+```
+
 <ul>
 	<li><code>0 &lt;= numOnes, numZeros, numNegOnes &lt;= 50</code></li>
 	<li><code>0 &lt;= k &lt;= numOnes + numZeros + numNegOnes</code></li>
