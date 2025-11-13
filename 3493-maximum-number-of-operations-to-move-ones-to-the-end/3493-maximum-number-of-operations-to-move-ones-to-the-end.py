@@ -1,14 +1,18 @@
 class Solution:
     def maxOperations(self, s: str) -> int:
-        operations = 0
-        onesCounter = 0
-        n = len(s)
+        ones = [len(i) for i in s.split('0') if i]
+        if not ones:
+            return 0
+        tot = 0
+        ans = 0
+        # print(ones[:-1])
+        for f in ones[:-1]: # Ignore the last 1
+            tot += f
+            ans += tot
+        if s[-1] == '1':
+            return ans
+        else:
+            tot += ones[-1]
+            ans += tot
 
-        for i, b in enumerate(s):
-            if b == '1':
-                onesCounter += 1
-            else:
-                if i == n - 1 or s[i+1] == '1':
-                    operations += onesCounter 
-
-        return operations
+        return ans
