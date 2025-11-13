@@ -1,15 +1,12 @@
 class Solution:
     def maxOperations(self, s: str) -> int:
-        count_one = 0
-        ans = 0
-        i = 0
-        
-        while i < len(s):
-            if s[i] == "0":
-                while i + 1 < len(s) and s[i + 1] == "0":
+        n, total, ones, i = len(s), 0, 0, 0
+        while(i < n):
+            if(s[i] == '0'):
+                total += ones
+                while(i < n and s[i] != '1'):
                     i += 1
-                ans += count_one
-            else:
-                count_one += 1
+            ones += 1
             i += 1
-        return ans
+        return total
+        
