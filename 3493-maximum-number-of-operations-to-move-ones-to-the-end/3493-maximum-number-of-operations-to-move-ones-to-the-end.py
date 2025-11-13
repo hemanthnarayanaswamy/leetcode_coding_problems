@@ -1,12 +1,14 @@
 class Solution:
     def maxOperations(self, s: str) -> int:
-        n, total, ones, i = len(s), 0, 0, 0
-        while(i < n):
-            if(s[i] == '0'):
-                total += ones
-                while(i < n and s[i] != '1'):
-                    i += 1
-            ones += 1
-            i += 1
-        return total
-        
+        operations = 0
+        onesCounter = 0
+        n = len(s)
+
+        for i in range(n):
+            if s[i] == '1':
+                onesCounter += 1
+            else:
+                if i == n - 1 or s[i+1] == '1':
+                    operations += onesCounter 
+
+        return operations
