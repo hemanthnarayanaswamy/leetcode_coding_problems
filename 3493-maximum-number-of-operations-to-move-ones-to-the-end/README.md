@@ -44,3 +44,111 @@
 	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>s[i]</code> is either <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code>.</li>
 </ul>
+
+# Solution 
+* We need to keep track of number of ones we encounter on the way while iterating.
+* When we encounter zero, we check if the next number `s[i+1] == 1` or if we are at the end of iteration `i = n -1`, if yes then we add the operation to number of ones, **As we are moving all the encounter `1's` to this position which is number of operations**. 
+* Scan the string. As we scan, count how many 1s we've seen so far (counted_ones). Every time we start a new zero block (0 after 1), all previous 1s will cross it eventually -> so add counted_ones to the answer.
+
+```python
+class Solution:
+    def maxOperations(self, s: str) -> int:
+        operations = 0
+        onesCounter = 0
+        n = len(s)
+
+        for i in range(n):
+            if s[i] == '1':
+                onesCounter += 1
+            else:
+                if i == n - 1 or s[i+1] == '1':
+                    operations += onesCounter 
+
+        return operations
+```
+---
+```python
+class Solution:
+    def maxOperations(self, s: str) -> int:
+        count_one = 0
+        ans = 0
+        i = 0
+        while i < len(s):
+            if s[i] == "0":
+                while i + 1 < len(s) and s[i + 1] == "0":
+                    i += 1
+                ans += count_one
+            else:
+                count_one += 1
+            i += 1
+        return ans
+```
+---
+# Optimal Solution 
+```python
+# Solution 
+* We need to keep track of number of ones we encounter on the way while iterating.
+* When we encounter zero, we check if the next number `s[i+1] == 1` or if we are at the end of iteration `i = n -1`, if yes then we add the operation to number of ones, **As we are moving all the encounter `1's` to this position which is number of operations**. 
+* Scan the string. As we scan, count how many 1s we've seen so far (counted_ones). Every time we start a new zero block (0 after 1), all previous 1s will cross it eventually -> so add counted_ones to the answer.
+
+```python
+class Solution:
+    def maxOperations(self, s: str) -> int:
+        operations = 0
+        onesCounter = 0
+        n = len(s)
+
+        for i in range(n):
+            if s[i] == '1':
+                onesCounter += 1
+            else:
+                if i == n - 1 or s[i+1] == '1':
+                    operations += onesCounter 
+
+        return operations
+```
+---
+```python
+class Solution:
+    def maxOperations(self, s: str) -> int:
+        count_one = 0
+        ans = 0
+        i = 0
+        while i < len(s):
+            if s[i] == "0":
+                while i + 1 < len(s) and s[i + 1] == "0":
+                    i += 1
+                ans += count_one
+            else:
+                count_one += 1
+            i += 1
+        return ans
+```
+---
+# Optimal Solution 
+```python
+class Solution:
+    def maxOperations(self, s: str) -> int:
+        ones = [len(i) for i in s.split('0') if i]
+        
+        if not ones:
+            return 0
+        tot = 0
+        ans = 0
+        # print(ones[:-1])
+        for f in ones[:-1]: # Ignore the last 1
+            tot += f
+            ans += tot
+        if s[-1] == '1':
+            return ans
+        else:
+            tot += ones[-1]
+            ans += tot
+
+        return ans
+```
+* We count the number of ones divided by intermediate zeros.
+* We we'll remove the last element of ones.
+
+* We count all the ones, In the iteration and If the last element was `1`, we return the result.
+* But If the last element was not `1`, then we need to consider the last batch of `1's` we ignored, add that to
