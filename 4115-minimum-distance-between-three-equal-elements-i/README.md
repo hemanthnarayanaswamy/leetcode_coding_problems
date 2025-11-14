@@ -54,3 +54,59 @@
 	<li><code>1 &lt;= n == nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= n</code></li>
 </ul>
+
+# Approach
+* Your observation is the key to this problem. The distance formula is: `Distance = abs(i - j) + abs(j - k) + abs(k - i)`
+* Let's find a good tuple `(i, j, k)` and sort the indices, calling them `a, b, c` such that `a < b < c .abs(i - j) abs(j - k) abs(k - i)`
+When we plug them in, the formula becomes: `Distance = abs(a - b) + abs(b - c) + abs(c - a)` Since we know `a < b < c`, **we can remove the absolute value signs:**
+```ini
+abs(a - b) = b - a
+abs(b - c) = c - b
+abs(c - a) = c - a
+```
+* Now, let's add them together: `Distance = (b - a) + (c - b) + (c - a)` -> `Distance = -a + c + c - a` -> `Distance = 2 * (c - a)`
+**The distance of any good tuple is just 2 times the difference between its largest and smallest index. The middle index doesn't affect the final distance at all.**
+
+**Our goal is no longer to find the minimum `abs(i - j) + abs(j - k) + abs(k - i)`, but to find the minimum `2 * (max_index - min_index)` for any three indices that point to the same value.**
+
+```python
+class Solution:
+    def minimumDistance(self, nums: List[int]) -> int:
+        res = float('inf')
+        numsMap = defaultdict(list)
+
+        for i in range(len(nums)):
+            numsMap[nums[i]].append(i)
+						n = len(numsMap[nums[i]]) 
+            if n == 3:
+                l = numsMap[nums[i]][0]
+                u = numsMap[nums[i]][-1]
+                res = min(res, 2*(u - l))
+            elif n > 3:
+                numsMap[nums[i]].pop(0)
+                l = numsMap[nums[i]][0]
+                u = numsMap[nums[i]][-1]
+                res = min(res, 2*(u - l))
+            
+        return res if res != float('inf') else -1
+```
+* We store all the index of the elements in the map, and when the `len()` is equal to 3 we calculate the distance, and if we have more then 3 element we `pop()` the first element index and have the only 3 elements. 
+
+```python
+class Solution:
+    def minimumDistance(self, nums: List[int]) -> int:
+        res = float('inf')
+        numsMap = defaultdict(list)
+
+        for i in range(len(nums)):
+            numsMap[nums[i]].append(i)
+            n = len(numsMap[nums[i]]) 
+            if n >= 3:
+                if n > 3:
+                    numsMap[nums[i]].pop(0)
+
+                l = numsMap[nums[i]][0]
+                res = min(res, 2*(i - l))
+            
+        return res if res != float('inf') else -1
+```
