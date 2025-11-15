@@ -33,3 +33,45 @@ The <strong>frequency</strong> of a digit <code>x</code> is the number of times 
 <ul>
 	<li><code>1 &lt;= n &lt;= 2<sup>31</sup>​​​​​​​ - 1</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def getLeastFrequentDigit(self, n: int) -> int:
+        n = str(n)
+        nFreq = Counter(n)
+        minFreq = len(n)
+
+        for f in nFreq.values():
+            if f < minFreq:
+                minFreq = f
+
+        ans = []
+        for num,f in nFreq.items():
+            if f == minFreq:
+                ans.append(int(num))
+        
+        return min(ans)
+```
+* The above solution can be improved to have a single iteration. 
+
+# Optimal Solution 
+```python
+class Solution:
+    def getLeastFrequentDigit(self, n: int) -> int:
+        n = str(n)
+        nFreq = Counter(n)
+        minFreq = len(n) # worst freq can be the whole lenght being the same number
+        answer = inf # Assign infinity number
+
+        for num, f in nFreq.items():
+            num = int(num)
+            if f < minFreq:
+                minFreq = f
+                answer = num
+            elif f == minFreq:
+                if num < answer:
+                    answer = num
+        
+        return answer
+```
