@@ -37,3 +37,47 @@ In the 2<sup>nd</sup> column, both 12 and -2 are of length 2.
 	<li><code>1 &lt;= m, n &lt;= 100 </code></li>
 	<li><code>-10<sup>9</sup> &lt;= grid[r][c] &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Description 
+You are given a 0-indexed `m x n` integer matrix `grid`, where `n` is the number of columns.
+
+The length of an integer `x` with `len` digits is equal to `len` if `x` is non-negative, and `len + 1` otherwise.
+
+*For example, **the length of `3` is `1`, the length of `-3` is `2`**, and the length of `-42` is `3`.
+
+**The width of a column is the maximum length of its integers.**
+
+**Return an integer array ans of size n where ans[i] is the width of the ith column.**
+
+```ini
+Example:
+Input: grid = [
+    [-15, 1, 3],
+    [15, 7, 12],
+    [5, 6, -2]
+]
+Output: [3, 1, 2]
+
+Explanation: 
+In the 0th column, -15 has the biggest length of 3.
+In the 1st column, all integers are of length 1. 
+In the 2nd column, both 12 and -2 share the biggest length of 2.
+```
+# Solution 
+```python
+class Solution:
+    def findColumnWidth(self, grid: List[List[int]]) -> List[int]:
+        ans = []
+        n = len(grid[0])
+        m = len(grid)
+
+        for j in range(n):
+            longest = 0
+            for i in range(m):
+                x = len(str(grid[i][j]))
+                if x > longest:
+                    longest = x
+            ans.append(longest)
+        
+        return ans
+```
