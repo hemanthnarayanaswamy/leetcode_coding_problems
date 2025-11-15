@@ -3,14 +3,14 @@ class Solution:
         n = str(n)
         nFreq = Counter(n)
         minFreq = len(n)
-        ans = []
+        ans = set()
 
         for num, f in nFreq.items():
             if f < minFreq:
                 minFreq = f
                 ans.clear()
-                ans.append(int(num))
+                ans.add(int(num))
             elif f == minFreq:
-                ans.append(int(num))
+                ans.add(int(num))
         
         return min(ans)
