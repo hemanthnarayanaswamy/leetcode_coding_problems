@@ -5,12 +5,14 @@ class Solution:
         m = len(grid)
 
         for j in range(n):
-            tmp = 0
+            longest = 0
             for i in range(m):
                 x = len(str(grid[i][j]))
-                if x > tmp:
-                    tmp = x
-            ans.append(tmp)
+                
+                if x > longest:
+                    longest = x
+
+            ans.append(longest)
         
         return ans
 
