@@ -8,11 +8,8 @@ class Solution:
             longest = 0
             for i in range(m):
                 x = len(str(grid[i][j]))
-                
                 if x > longest:
                     longest = x
-
             ans.append(longest)
         
         return ans
-
