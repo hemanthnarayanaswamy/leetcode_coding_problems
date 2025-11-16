@@ -1,16 +1,15 @@
 class Solution:
     def numSub(self, s: str) -> int:
-        totalSubstrings = 0
-        onesCount = 0
         MOD = 10**9 + 7
-
-        for c in s:
-            if c == '1':
-                onesCount += 1
+        total = 0
+        run = 0
+        for ch in s:
+            if ch == '1':
+                run += 1
+                total += run
             else:
-                totalSubstrings += (onesCount * (onesCount + 1))// 2
-                onesCount = 0
-        
-        totalSubstrings += (onesCount * (onesCount + 1))// 2
-
-        return totalSubstrings % MOD
+                run = 0
+            if total >= MOD:  # optional, keeps value small
+                total %= MOD
+                
+        return total % MOD
