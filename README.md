@@ -49,6 +49,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1500-count-largest-group](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1500-count-largest-group) |
 | [1610-xor-operation-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1610-xor-operation-in-an-array) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
+| [1636-number-of-substrings-with-only-1s](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1642-water-bottles](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1642-water-bottles) |
 | [1674-minimum-operations-to-make-array-equal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1674-minimum-operations-to-make-array-equal) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
@@ -674,6 +675,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1619-path-crossing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1619-path-crossing) |
+| [1636-number-of-substrings-with-only-1s](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1651-shuffle-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1651-shuffle-string) |
 | [1666-make-the-string-great](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1666-make-the-string-great) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1700-minimum-time-to-make-rope-colorful) |
