@@ -49,3 +49,16 @@
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 	<li><code>1 &lt;= k &lt;= nums.length</code></li>
 </ul>
+
+# Solution 
+* Good Problem, We need to get the top k distinct elements from the given number array. 
+* First we remove all the duplicates using the set, and sort the set in reverse order. 
+* Give the sliced result till k. 
+
+```python
+class Solution:
+    def maxKDistinct(self, nums: List[int], k: int) -> List[int]:
+        distinctNums = sorted(set(nums), reverse=True)
+
+        return distinctNums[:k]
+```
