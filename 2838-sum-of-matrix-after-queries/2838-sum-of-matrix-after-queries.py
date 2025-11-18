@@ -1,24 +1,24 @@
 class Solution:
     def matrixSumQueries(self, n: int, queries: List[List[int]]) -> int:
-        row_seen = set()    # 0/1 flags faster than set lookups
-        col_seen = set()
-        rem_rows = n
-        rem_cols = n
-        total = 0
+        col_visited = [False] * n
+        col_visited_count = 0
+        
+        row_visited = [False] * n
+        row_visited_count = 0
+        
+        res = 0
 
-        for t, idx, val in reversed(queries):
-            if rem_rows == 0 and rem_cols == 0:
-                break
-
-            if t:
-                if idx not in col_seen:
-                    total += val * rem_rows
-                    col_seen.add(idx)
-                    rem_cols -= 1
+        for set_col, index, val in reversed(queries):
+            if set_col:
+                if col_visited[index]:
+                    continue
+                col_visited[index] = True
+                col_visited_count += 1
+                res += val * (n - row_visited_count)
             else:
-                if idx not in row_seen:
-                    total += val * rem_cols
-                    row_seen.add(idx)
-                    rem_rows -= 1
-            
-        return total
+                if row_visited[index]:
+                    continue
+                row_visited[index] = True
+                row_visited_count += 1
+                res += val * (n - col_visited_count)
+        return res
