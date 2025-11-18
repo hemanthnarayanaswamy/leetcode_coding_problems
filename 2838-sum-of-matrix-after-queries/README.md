@@ -37,3 +37,71 @@
 	<li><code>0 &lt;= index<sub>i</sub>&nbsp;&lt; n</code></li>
 	<li><code>0 &lt;= val<sub>i</sub> &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+# Approach
+1. Process queries in reversed order, as the latest queries represent the most recent changes in the matrix.
+2. Once you encounter an operation on some row/column, no further operations will affect the values in this row/column. Keep track of seen rows and columns with a set. 
+3. When operating on an unseen row/column, the number of affected cells is the number of columns/rows you haven't previously seen. 
+
+**If it's a `row assignment (t == 0)` and the row is not seen, it sets that row’s cells for every column that is not already fixed by a seen column. `Contribution = val * (n - len(colSeen))`. Then mark the row seen.**
+**If it's a `column assignment (t == 1)` and the column is not seen, it sets that column’s cells for every row not already fixed by a seen row. `Contribution = val * (n - len(rowSeen))`. Then mark the column seen.**
+
+
+```ini
+Quick trace for n=3, queries = [[0,0,1],[1,2,2],[0,2,3],[1,0,4]] (processed reversed):
+
+(1,0,4) col 0 val 4 -> add 4*(3-0)=12, colSeen={0}
+(0,2,3) row 2 val 3 -> add 3*(3-1)=6, rowSeen={2} # the idea sum of that row is (3 * 3) but we already by coloumn 0 as value assigned so we set value in only column 1 & 2, (3 * 3 - 3 * 1) = 3*(3 - 1) = 6
+(1,2,2) col 2 val 2 -> add 2*(3-1)=4, colSeen={0,2} 
+(0,0,1) row 0 val 1 -> add 1*(3-2)=1, rowSeen={2,0}
+Total = 12+6+4+1 = 23
+```
+
+# Solution 
+```python
+class Solution:
+    def matrixSumQueries(self, n: int, queries: List[List[int]]) -> int:
+        rowSeen = set()
+        colSeen = set()
+        totalSum = 0
+
+        for query in queries[::-1]:
+            t, idx, val = query
+            if not t:
+                if idx not in rowSeen:
+                    totalSum += val * (n - len(colSeen))
+                    rowSeen.add(idx)
+            else:
+                if idx not in colSeen:
+                    totalSum += val * (n - len(rowSeen))
+                    colSeen.add(idx)
+        return totalSum
+```
+---
+# Optimal Solution 
+```python
+class Solution:
+    def matrixSumQueries(self, n: int, queries: List[List[int]]) -> int:
+        col_visited = [False] * n
+        col_visited_count = 0
+        
+        row_visited = [False] * n
+        row_visited_count = 0
+        
+        res = 0
+
+        for set_col, index, val in reversed(queries):
+            if set_col:
+                if col_visited[index]:
+                    continue
+                col_visited[index] = True
+                col_visited_count += 1
+                res += val * (n - row_visited_count)
+            else:
+                if row_visited[index]:
+                    continue
+                row_visited[index] = True
+                row_visited_count += 1
+                res += val * (n - col_visited_count)
+        return res
+```
