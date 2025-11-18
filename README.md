@@ -371,6 +371,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2785-semi-ordered-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2785-semi-ordered-permutation) |
 | [2791-find-the-losers-of-the-circular-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2791-find-the-losers-of-the-circular-game) |
 | [2836-neither-minimum-nor-maximum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2836-neither-minimum-nor-maximum) |
+| [2838-sum-of-matrix-after-queries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2838-sum-of-matrix-after-queries) |
 | [2844-sum-of-squares-of-special-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2844-sum-of-squares-of-special-elements) |
 | [2847-find-maximum-number-of-string-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2847-find-maximum-number-of-string-pairs) |
 | [2876-number-of-employees-who-met-the-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2876-number-of-employees-who-met-the-target) |
@@ -556,6 +557,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
 | [2791-find-the-losers-of-the-circular-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2791-find-the-losers-of-the-circular-game) |
 | [2825-minimize-string-length](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2825-minimize-string-length) |
+| [2838-sum-of-matrix-after-queries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2838-sum-of-matrix-after-queries) |
 | [2847-find-maximum-number-of-string-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2847-find-maximum-number-of-string-pairs) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2888-minimum-index-of-a-valid-split) |
 | [2892-check-if-array-is-good](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2892-check-if-array-is-good) |
