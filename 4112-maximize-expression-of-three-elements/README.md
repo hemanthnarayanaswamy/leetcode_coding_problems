@@ -36,3 +36,34 @@
 	<li><code>3 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>-100 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* Simple Problem Sorting Solution
+```python
+class Solution:
+    def maximizeExpressionOfThree(self, nums: List[int]) -> int:
+        nums.sort()
+        return nums[-1] + nums[-2] - nums[0]  
+```
+---
+# Optimal Solution 
+* `O(n)` solution without sorting
+```python
+class Solution:
+    def maximizeExpressionOfThree(self, nums: List[int]) -> int:
+        mx1 = mx2 = -inf
+        mn = inf 
+
+        for x in nums:
+            if x > mx1:
+                mx2 = mx1
+                mx1 = x
+            elif x > mx2:
+                mx2 = x
+            
+            if x < mn:
+                mn = x
+        
+        return mx1 + mx2 - mn
+```
+				
