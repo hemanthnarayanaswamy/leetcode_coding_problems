@@ -1,6 +1,17 @@
 class Solution:
     def maximizeExpressionOfThree(self, nums: List[int]) -> int:
-        nums.sort()
+        mx1 = mx2 = -inf
+        mn = inf 
 
-        return sum(nums[-2:]) - nums[0]
+        for x in nums:
+            if x > mx1:
+                mx2 = mx1
+                mx1 = x
+            elif x > mx2:
+                mx2 = x
+            
+            if x < mn:
+                mn = x
+        
+        return mx1 + mx2 - mn
         
