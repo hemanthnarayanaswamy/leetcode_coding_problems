@@ -439,6 +439,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [4012-earliest-time-to-finish-one-task](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4012-earliest-time-to-finish-one-task) |
 | [4058-compute-alternating-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4058-compute-alternating-sum) |
 | [4107-find-missing-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4107-find-missing-elements) |
+| [4112-maximize-expression-of-three-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4112-maximize-expression-of-three-elements) |
 | [4115-minimum-distance-between-three-equal-elements-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4115-minimum-distance-between-three-equal-elements-i) |
 ## Hash Table
 |  |
@@ -1055,6 +1056,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3871-minimum-deletions-for-at-most-k-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3871-minimum-deletions-for-at-most-k-distinct-characters) |
 | [3997-maximize-sum-of-at-most-k-distinct-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3997-maximize-sum-of-at-most-k-distinct-elements) |
 | [4107-find-missing-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4107-find-missing-elements) |
+| [4112-maximize-expression-of-three-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4112-maximize-expression-of-three-elements) |
 ## Counting
 |  |
 | ------- |
@@ -1236,6 +1238,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 | [3871-minimum-deletions-for-at-most-k-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3871-minimum-deletions-for-at-most-k-distinct-characters) |
 | [3997-maximize-sum-of-at-most-k-distinct-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3997-maximize-sum-of-at-most-k-distinct-elements) |
+| [4112-maximize-expression-of-three-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4112-maximize-expression-of-three-elements) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -1356,6 +1359,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2442-number-of-arithmetic-triplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2442-number-of-arithmetic-triplets) |
 | [2844-sum-of-squares-of-special-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2844-sum-of-squares-of-special-elements) |
 | [3221-find-the-peaks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3221-find-the-peaks) |
+| [4112-maximize-expression-of-three-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4112-maximize-expression-of-three-elements) |
 ## Divide and Conquer
 |  |
 | ------- |
