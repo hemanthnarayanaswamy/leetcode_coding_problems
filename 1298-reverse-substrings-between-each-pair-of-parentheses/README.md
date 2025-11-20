@@ -36,3 +36,47 @@
 	<li><code>s</code> only contains lower case English characters and parentheses.</li>
 	<li>It is guaranteed that all parentheses are balanced.</li>
 </ul>
+
+# Solution 
+* We need to reverse every substring inside the every bracket, and then remove that bracket. 
+* We try to append all the characters, expext `)` when it is detected. 
+* So whenever, `)` is detected, we run a loop until `(` is found in the stack. which covers working on string inside the brackets. 
+* When we `pop()` the strings and store in a 'temp` array, and once `(` is detected, we can end the loop, `pop()` the `(` and than appened the stored `temp` back to the stack. 
+* and return the `stack`. `''.join(stack) if stack else ''`
+```python
+class Solution:
+    def reverseParentheses(self, s: str) -> str:
+        stack = ['']
+
+        for c in s:
+            if c == ')':
+                temp = []
+                while stack and stack[-1] != '(':
+                    temp.append(stack.pop()[::-1])
+                stack.pop()
+                stack.append(''.join(temp))
+            else:
+                stack.append(c)
+
+        return ''.join(stack)
+```
+---
+# Improved Solution
+* We can remove the use of `temp` array and perform the operations inside the `stack` itself. 
+
+```python
+def reverseParentheses(s):
+    stack = [""]
+
+    for c in s:
+        if c == "(":
+            stack.append("")
+        elif c == ")":
+            rev = stack[-1][::-1]
+            stack.pop()
+            stack[-1] += rev
+        else:
+            stack[-1] += c
+
+    return stack[0]
+```
