@@ -1,6 +1,6 @@
 class Solution:
     def reverseParentheses(self, s: str) -> str:
-        stack = []
+        stack = ['']
 
         for c in s:
             if c == ')':
@@ -12,5 +12,5 @@ class Solution:
             else:
                 stack.append(c)
 
-        return ''.join(stack) if stack else ''
+        return ''.join(stack)
             
