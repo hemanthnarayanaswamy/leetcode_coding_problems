@@ -1,10 +1,10 @@
 class Solution:
     def smallestIndex(self, nums: List[int]) -> int:
-        def digitSum(num):
+        def digitSum(x):
             total = 0
-            while num:
-                total += num % 10
-                num //= 10
+            while x:
+                total += x % 10
+                x //= 10
             return total 
 
         for i, num in enumerate(nums):
