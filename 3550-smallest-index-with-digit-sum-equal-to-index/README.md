@@ -56,3 +56,38 @@
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>0 &lt;= nums[i] &lt;= 1000</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def smallestIndex(self, nums: List[int]) -> int:
+        def digitSum(num):
+            total = 0
+            while num:
+                total += num % 10
+                num //= 10
+            return total 
+
+        for i, num in enumerate(nums):
+            if i == digitSum(num):
+                return i
+        
+        return -1
+```
+# Optimal Solution
+```python
+class Solution:
+    def smallestIndex(self, nums: List[int]) -> int:
+        def digitSum(x):
+            total = 0
+            while x:
+                total += x % 10
+                x //= 10
+            return total 
+
+        for i, num in enumerate(nums):
+            if i == digitSum(num):
+                return i
+        
+        return -1
+```
