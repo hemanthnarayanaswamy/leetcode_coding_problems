@@ -8,7 +8,6 @@ class Solution:
             return total 
 
         for i, num in enumerate(nums):
-            print(i, num)
             if i == digitSum(num):
                 return i
         
