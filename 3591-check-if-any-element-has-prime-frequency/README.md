@@ -50,3 +50,43 @@
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>0 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* Have a set with all prime numbers. 
+```python
+class Solution:
+    def checkPrimeFrequency(self, nums: List[int]) -> bool:
+        prime = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97}
+        numsFreq = Counter(nums)
+
+        for num, freq in numsFreq.items():
+            if freq in prime:
+                return True
+        
+        return False
+```
+
+# Check Prime 
+* To check if the number is prime, We need to check the modulo of the number from `2, sqrt(n)`
+
+```python
+class Solution:
+    def checkPrimeFrequency(self, nums: List[int]) -> bool:
+        counts = {}
+        for num in nums:
+            counts[num] = counts.get(num, 0) + 1
+        
+        def is_prime(n):
+            if n <= 1:
+                return False
+            for i in range(2, int(n**0.5) + 1):
+                if n % i == 0:
+                    return False
+            return True
+        
+        for count in counts.values():
+            if is_prime(count):
+                return True
+        
+        return False
+```
