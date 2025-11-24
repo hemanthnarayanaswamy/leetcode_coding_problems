@@ -12,4 +12,4 @@ class Solution:
             else:
                 stack.append(i)
         
-        return not stack
+        return False if stack else True
