@@ -605,6 +605,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0005-longest-palindromic-substring](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0005-longest-palindromic-substring) |
 | [0013-roman-to-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0014-longest-common-prefix) |
+| [0020-valid-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0020-valid-parentheses) |
 | [0043-multiply-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0043-multiply-strings) |
 | [0049-group-anagrams](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0049-group-anagrams) |
 | [0058-length-of-last-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0058-length-of-last-word) |
@@ -1163,6 +1164,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0020-valid-parentheses) |
 | [0071-simplify-path](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0071-simplify-path) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0232-implement-queue-using-stacks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0232-implement-queue-using-stacks) |
