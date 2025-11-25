@@ -103,3 +103,55 @@
 	<li><code>0 &lt;= tokens.length &lt;= 1000</code></li>
 	<li><code>0 &lt;= tokens[i], power &lt; 10<sup>4</sup></code></li>
 </ul>
+
+# Solution 
+* We want to keep track of the running `score` and `max score`, We sort the tokens such that when we play `Face up` we want to compare the power with lower token counts and when we play `Face Down` we want to add maximum token count to the power. 
+* We always need to play `Face up` first because the `score = 0` initially to play the `Face Down`
+* We only play `Face Down`, When we don't have enough power and we get max tokens to the power using the high pointer. 
+```python
+class Solution:
+    def bagOfTokensScore(self, tokens: List[int], power: int) -> int:
+        tokens.sort()
+        maxScore = 0 # Track max Score
+        tmpScore = 0 # Track running Score
+        l, h = 0, len(tokens)-1
+
+        while l <= h:
+            if power >= tokens[l]: # We Play, Face Up first to increase the score checking the lower token values
+                tmpScore += 1       
+                power -= tokens[l] 
+                l += 1
+                maxScore = max(maxScore, tmpScore)
+            elif tmpScore:
+                power += tokens[h] 
+                h -= 1
+                tmpScore -= 1
+            else:
+                break
+        
+        return max(maxScore, tmpScore)
+```
+---
+```python
+class Solution:
+    def bagOfTokensScore(self, tokens: List[int], power: int) -> int:
+        tokens.sort()
+        maxScore = 0
+        tmpScore = 0
+        l, h = 0, len(tokens)-1
+
+        while l <= h:
+            if power >= tokens[l]:
+                tmpScore += 1
+                power -= tokens[l]
+                l += 1
+                maxScore = max(maxScore, tmpScore)
+            elif tmpScore:
+                power += tokens[h] 
+                h -= 1
+                tmpScore -= 1
+            else:
+                break
+        
+        return max(maxScore, tmpScore)
+```
