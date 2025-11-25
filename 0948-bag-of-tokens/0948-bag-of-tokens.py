@@ -7,13 +7,11 @@ class Solution:
 
         while l <= h:
             if power >= tokens[l]:
-                print("playing face up")
                 tmpScore += 1
                 power -= tokens[l]
                 l += 1
                 maxScore = max(maxScore, tmpScore)
             elif tmpScore:
-                print("playing face down")
                 power += tokens[h] 
                 h -= 1
                 tmpScore -= 1
