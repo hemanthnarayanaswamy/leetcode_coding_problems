@@ -1,10 +1,10 @@
 class Solution:
     def constructTransformedArray(self, nums: List[int]) -> List[int]:
         n = len(nums)
-        res = [0] * n
+        res = []
 
         for i,num in enumerate(nums):
                 j = (i + num) % n
-                res[i] = nums[j]
+                res.append(nums[j])
         
         return res
