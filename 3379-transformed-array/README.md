@@ -52,3 +52,48 @@ For each index <code>i</code> (where <code>0 &lt;= i &lt; nums.length</code>), p
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>-100 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution
+* If you observe the solution the logic is the same for `num > 0 & num < 0` and we can combine that
+```python
+class Solution:
+    def constructTransformedArray(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        res = [0] * n
+
+        for i,num in enumerate(nums):
+            if nums[i] > 0:
+                j = (i + nums[i]) % n
+                res[i] = nums[j]
+            else:
+                j = (i + nums[i]) % n
+                res[i] = nums[j]
+        
+        return res
+```
+---
+```python
+class Solution:
+    def constructTransformedArray(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        res = [0] * n
+
+        for i,num in enumerate(nums):
+                j = (i + num) % n
+                res[i] = nums[j]
+        
+        return res
+```
+---
+```python
+class Solution:
+    def constructTransformedArray(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        res = []
+
+        for i,num in enumerate(nums):
+                j = (i + num) % n
+                res.append(nums[j])
+        
+        return res
+```
