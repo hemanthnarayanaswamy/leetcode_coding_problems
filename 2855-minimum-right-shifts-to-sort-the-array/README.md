@@ -37,3 +37,26 @@ Now nums is sorted; therefore the answer is 2.
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 	<li><code>nums</code> contains distinct integers.</li>
 </ul>
+
+# Solution 
+* First we definite a variable to track a `pivot Index`, When we find a discrepency in the array we trigger this variable. 
+* So whenever the sort condition fails, we check if the `pivot` was previously found if it's found then return `-1` because it impossible to do cyclist shift when there are `2` index where the condition fails. 
+* If its the first `pivot`, then we trigger the `pivot index` bool variable and calculate shift ` shifts = n - i - 1`
+**Shift is calculated as we move the pivot index to the end of array, So the shift value is number of place shift required to the end index from the current index**
+```python
+class Solution:
+    def minimumRightShifts(self, nums: List[int]) -> int:
+        pivotIdx = False
+        shifts = 0
+        n = len(nums)
+
+        for i in range(n):
+            if nums[i] > nums[(i+1)%n]:
+                if pivotIdx:
+                    return -1
+                else:
+                    pivotIdx = True 
+                    shifts = n - i - 1
+        
+        return shifts
+```
