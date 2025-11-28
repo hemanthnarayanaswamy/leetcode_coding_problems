@@ -45,3 +45,39 @@
 	<li><code>2 &lt;= s.length &lt;= 100</code></li>
 	<li><code>s</code> consists of lowercase English letters.</li>
 </ul>
+
+# Solution
+```python
+class Solution:
+    def scoreBalance(self, s: str) -> bool:
+        prefixSum = [0] * len(s)
+        prev = 0
+
+        for i in range(len(s)):
+            prefixSum[i] = prev + (ord(s[i]) - 96)
+            prev = prefixSum[i]
+        
+        totalVal = prefixSum[-1]
+
+        for s in prefixSum:
+            if s == (totalVal - s):
+                return True
+                
+        return False
+```
+---
+```python
+class Solution:
+    def scoreBalance(self, s: str) -> bool:
+        tot = 0
+        for k in s:
+            tot += ord(k) - 96
+        if tot % 2 != 0:
+            return False
+        ps = 0
+        for k in s:
+            ps += ord(k) - 96
+            if ps*2 == tot:
+                return True
+        return False
+```
