@@ -38,3 +38,18 @@
 	<li><code>0 &lt;= start &lt; nums.length</code></li>
 	<li><code>target</code> is in <code>nums</code>.</li>
 </ul>
+
+# solution 
+```python
+class Solution:
+    def getMinDistance(self, nums: List[int], target: int, start: int) -> int:
+        minVal = float('inf')
+
+        for i, num in enumerate(nums):
+            if num == target:
+                tmpVal = abs(i - start)
+                if tmpVal < minVal:
+                    minVal = tmpVal
+        
+        return minVal
+```
