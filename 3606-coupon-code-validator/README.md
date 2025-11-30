@@ -60,3 +60,48 @@
 	<li><code>code[i]</code> and <code>businessLine[i]</code> consist of printable ASCII characters.</li>
 	<li><code>isActive[i]</code> is either <code>true</code> or <code>false</code>.</li>
 </ul>
+
+# Solution 
+* Store all the coupon codes in the hashmap with the businesses as the keys. 
+* Sort the hash map first with reference to the keys and then while store the values inside the result then sort the values based on the values to apply condition lexicographical order. 
+
+```python
+class Solution:
+    def validateCoupons(self, code: List[str], businessLine: List[str], isActive: List[bool]) -> List[str]:
+        validCoupons = defaultdict(list)
+        business = {"electronics", "grocery", "pharmacy", "restaurant"}
+        res = []
+
+        for c,b,a in zip(code, businessLine, isActive):
+            print(a)
+            if c and c.replace('_', 'a').isalnum() and a and (b in business):
+                validCoupons[b].append(c)
+        
+        sortedValidCoupons = sorted(validCoupons.items())
+        
+        for _, v in sortedValidCoupons:
+            v.sort()
+            res.extend(v)
+        
+        return res
+```
+---
+```python
+class Solution:
+    def validateCoupons(self, code: List[str], businessLine: List[str], isActive: List[bool]) -> List[str]:
+        validCoupons = {"electronics": [], "grocery": [], "pharmacy": [], "restaurant": []}
+        res = []
+
+        for c,b,a in zip(code, businessLine, isActive):
+            print(a)
+            if c and c.replace('_', 'a').isalnum() and a and (b in validCoupons):
+                validCoupons[b].append(c)
+        
+        sortedValidCoupons = sorted(validCoupons.items())
+        
+        for _, v in sortedValidCoupons:
+            v.sort()
+            res.extend(v)
+        
+        return res
+```
