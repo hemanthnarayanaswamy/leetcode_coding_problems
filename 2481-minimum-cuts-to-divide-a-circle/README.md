@@ -36,3 +36,18 @@ Also note that the first cut will not divide the circle into distinct parts.
 <ul>
 	<li><code>1 &lt;= n &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* This problem asks for the minimum number of cuts to divide a circle into n equal slices. The logic can be summarized as:
+1. If `n = 1`, you need 0 cuts.
+2. If `n > 1` and is even, you need `n / 2` cuts (e.g., 4 slices need 2 cuts).
+3. If `n > 1` and is odd, you need `n` cuts (e.g., 3 slices need 3 cuts).
+
+```python
+class Solution:
+    def numberOfCuts(self, n: int) -> int:
+        if n % 2 and n > 1:
+            return n
+        else:
+            return n // 2
+```
