@@ -56,3 +56,12 @@
 <ul>
 	<li><code>0 &lt;= purchaseAmount &lt;= 100</code></li>
 </ul>
+
+# Solution 
+**Another solution is observing that the rounded amount is `floor((purchaseAmount + 5) / 10) * 10`. Using this formula, we can calculate the account balance without having to brute force the rounded amount.**
+
+```python
+class Solution:
+    def accountBalanceAfterPurchase(self, purchaseAmount: int) -> int:
+        return 100 - floor((purchaseAmount + 5)/10) * 10
+```
