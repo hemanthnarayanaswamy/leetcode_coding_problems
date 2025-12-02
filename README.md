@@ -280,6 +280,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1848-sum-of-unique-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1848-sum-of-unique-elements) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1878-check-if-array-is-sorted-and-rotated) |
+| [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
 | [1888-find-nearest-point-that-has-the-same-x-or-y-coordinate](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1888-find-nearest-point-that-has-the-same-x-or-y-coordinate) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1899-count-items-matching-a-rule](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1899-count-items-matching-a-rule) |
@@ -1374,6 +1375,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1496-lucky-numbers-in-a-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1677-matrix-diagonal-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1677-matrix-diagonal-sum) |
 | [1791-richest-customer-wealth](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1791-richest-customer-wealth) |
+| [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
 | [2631-sort-the-students-by-their-kth-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2631-sort-the-students-by-their-kth-score) |
