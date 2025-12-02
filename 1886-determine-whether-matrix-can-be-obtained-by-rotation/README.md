@@ -34,3 +34,63 @@
 	<li><code>1 &lt;= n &lt;= 10</code></li>
 	<li><code>mat[i][j]</code> and <code>target[i][j]</code> are either <code>0</code> or <code>1</code>.</li>
 </ul>
+
+# Solution 
+**90 Degree Rotation `mat[i][j] -> mat[j][n-i-1]`**
+* Lets have a function that does the rotation of the array, and array can to rotated 3 times to have unique orientation but the 4 time will be same the first time
+* first rotation 90, second rotation 180, thrid rotation 270 and fouth will return to the original array. 
+
+**Use the Different fresh variable to store the result instead of inline assignment to the same variable**
+
+```ini
+tmp = [[0] * n] * n creates n references to the same row. 
+Writing tmp[i][j] updates every row at column j. Build with a list-comprehension instead:
+
+Correct way: tmp = [[0] * n for _ in range(n)]
+
+Because it duplicates the same row object n times. List multiplication is shallow: [[0] * n] * n builds one inner list, then repeats references to it. All rows alias each other, so writing tmp[i][j] updates column j in every row.
+
+Quick demonstration:
+
+Construct:
+
+row = [0, 0, 0]
+
+tmp = [row, row, row] ← all entries point to the same row
+
+Do tmp[1][2] = 9
+
+Now tmp becomes [[0,0,9],[0,0,9],[0,0,9]] because it’s the same row three times.
+
+You can see it via identities: id(tmp[0]) == id(tmp[1]) == id(tmp[2]).
+
+tmp = [[0] * n for _ in range(n)]
+
+Here the comprehension runs n times, building a new inner list each time, so rows are independent and mutating one doesn’t affect the others.
+```
+```python
+class Solution:
+    def findRotation(self, mat: List[List[int]], target: List[List[int]]) -> bool:
+        n = len(mat)
+        
+        if mat == target:
+            return True 
+
+        def rotateMatrix(mat):
+            tmp = [[0] * n for _ in range(n)]
+            for i in range(n):
+                for j in range(n):
+                    tmp[i][j] = mat[j][n - i - 1] #out[i][j] = in[n - 1 - j][i]
+            return tmp
+        
+        rotations = 0
+
+        while rotations < 3:
+            tmp = rotateMatrix(mat)
+            if tmp == target:
+                return True 
+            mat = tmp
+            rotations += 1
+        
+        return False
+```
