@@ -30,3 +30,75 @@
 	<li><code>1 &lt;= arr.length &lt;= 10<sup>4</sup></code></li>
 	<li><code>0 &lt;= arr[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+# Solution 
+* Edge cases to handle is if the array only has `upward` or `downward`, code will fail so we need to check the `sorting` result.
+
+```python
+class Solution:
+    def validMountainArray(self, arr: List[int]) -> bool:
+        mountainPeak = False
+        n = len(arr)
+        sortedArr = sorted(arr)
+
+        if n < 3:             # If lenght is < 3 return False
+            return False
+        elif sortedArr == arr or sortedArr == arr[::-1]:   # If array has only upward or downward range then return False
+            return False
+
+        for i in range(n - 1):
+            if arr[i] > arr[i+1]: # When the formate breaks we found the peak of the mountain
+                mountainPeak = True 
+
+            if not mountainPeak and arr[i] >= arr[i+1]: # when the peak is not found and the prefix is upwards then return
+                return False
+            elif mountainPeak and arr[i] <= arr[i+1]: # is the 
+                return False
+        
+        return True
+```
+---
+# Optimal Solution 
+```python
+class Solution:
+    def validMountainArray(self, arr: List[int]) -> bool:
+        n = len(arr)
+        if n < 3:
+            return False
+
+        peak = arr.index(max(arr))
+
+        # Peak cannot be at edges
+        if peak == 0 or peak == n - 1:
+            return False
+
+        # Check strictly increasing
+        for i in range(peak):
+            if arr[i] >= arr[i + 1]:
+                return False
+
+        # Check strictly decreasing
+        for i in range(peak, n - 1):
+            if arr[i] <= arr[i + 1]:
+                return False
+
+        return True
+```
+---
+```python
+class Solution:
+    def validMountainArray(self, arr: List[int]) -> bool:
+        if len(arr) < 3:
+            return False
+
+        Increasing = True
+
+        for i in range(1, len(arr)):
+            if arr[i] > arr[i-1] and Increasing:
+                continue
+            elif arr[i] < arr[i-1] and i > 1:
+                Increasing = False
+            else:
+                return False
+        return True and not Increasing
+```
