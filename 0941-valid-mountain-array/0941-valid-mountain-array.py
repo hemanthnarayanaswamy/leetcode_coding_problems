@@ -1,22 +1,23 @@
 class Solution:
     def validMountainArray(self, arr: List[int]) -> bool:
-        mountainPeak = False
         n = len(arr)
-        sortedArr = sorted(arr)
-
         if n < 3:
             return False
-        elif sortedArr == arr or sortedArr == arr[::-1]:
+
+        peak = arr.index(max(arr))
+
+        # Peak cannot be at edges
+        if peak == 0 or peak == n - 1:
             return False
 
-        for i in range(n - 1):
-            if arr[i] > arr[i+1]:
-                mountainPeak = True 
+        # Check strictly increasing
+        for i in range(peak):
+            if arr[i] >= arr[i + 1]:
+                return False
 
-            if not mountainPeak and arr[i] >= arr[i+1]:
+        # Check strictly decreasing
+        for i in range(peak, n - 1):
+            if arr[i] <= arr[i + 1]:
                 return False
-            elif mountainPeak and arr[i] <= arr[i+1]:
-                return False
-        
+
         return True
-            
