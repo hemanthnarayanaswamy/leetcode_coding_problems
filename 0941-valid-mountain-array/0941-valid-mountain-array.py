@@ -19,5 +19,5 @@ class Solution:
             elif mountainPeak and arr[i] <= arr[i+1]:
                 return False
         
-        return mountainPeak
+        return True
             
