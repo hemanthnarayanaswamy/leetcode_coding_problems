@@ -30,3 +30,25 @@ Then 4 is the first bad version.
 <ul>
 	<li><code>1 &lt;= bad &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+# Solution 
+* We need to use binary seach to check at what index the version is bad. 
+
+```python
+# The isBadVersion API is already defined for you.
+# def isBadVersion(version: int) -> bool:
+
+class Solution:
+    def firstBadVersion(self, n: int) -> int:
+        l = 1
+        h = n 
+
+        while l < h:
+            m = (l + h)//2 
+            if isBadVersion(m):
+                h = m
+            else: 
+                l = m + 1
+        
+        return l
+```
