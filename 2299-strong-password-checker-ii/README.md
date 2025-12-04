@@ -42,3 +42,61 @@
 	<li><code>1 &lt;= password.length &lt;= 100</code></li>
 	<li><code>password</code> consists of letters, digits, and special characters: <code>&quot;!@#$%^&amp;*()-+&quot;</code>.</li>
 </ul>
+
+# Solution 
+* Use the Flags to check each condition 
+
+```python
+class Solution:
+    def strongPasswordCheckerII(self, password: str) -> bool:
+        length = False
+        low = False
+        up = False
+        digit = False
+        special = False
+        specialChars = "!@#$%^&*()-+"
+        prev = ''
+
+        n = len(password)
+
+        if n >= 8:
+            length = True
+
+        for c in password:
+            if c == prev:
+                return False
+            elif c.islower():
+                low = True
+            elif c.isupper():
+                up = True
+            elif c.isdigit():
+                digit = True
+            elif c in specialChars:
+                special = True
+            prev = c
+
+        return length and low and up and special and digit
+```
+---
+```python
+class Solution:
+    def strongPasswordCheckerII(self, password: str) -> bool:
+        n = len(password)
+        if n < 8:
+            return False
+        up, lo, num, sp, spc = False, False, False, "!@#$%^&*()-+", False
+        for i in range(n):
+            if i > 0 and password[i] == password[i - 1]:
+                return False
+            
+            if password[i].isupper():
+                up = True
+            elif password[i].islower():
+                lo = True
+            elif password[i].isdigit():
+                num = True
+            elif password[i] in sp:
+                spc = True
+            
+        return up and lo and spc and num
+```
