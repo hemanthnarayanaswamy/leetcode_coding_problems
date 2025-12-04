@@ -26,6 +26,4 @@ class Solution:
                 special = True
             prev = c
 
-        print(length, low, up, special)
-
         return length and low and up and special and digit
