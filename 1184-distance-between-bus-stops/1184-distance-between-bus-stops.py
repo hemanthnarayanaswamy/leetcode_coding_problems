@@ -1,11 +1,12 @@
 class Solution:
     def distanceBetweenBusStops(self, distance: List[int], start: int, destination: int) -> int:
-        clockWiseDistance = 0
 
-        if start > destination:
-            start, destination = destination, start
-
-        for i in range(start, destination):
-            clockWiseDistance += distance[i]
+        total=sum(distance)
+        direct=0
+        l=min(start,destination)
+        r=max(start,destination)
+        while l<r:
+            direct+=distance[l]
+            l+=1
+        return min(direct,total-direct)
         
-        return min(clockWiseDistance, sum(distance) - clockWiseDistance)
