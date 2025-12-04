@@ -7,8 +7,8 @@ class Solution:
             start, destination = destination, start
 
         for i in range(start, destination):
-            clockWiseDistance += distance[i%n]
+            clockWiseDistance += distance[i]
 
         anticlockWiseDistance = sum(distance) - clockWiseDistance
         
-        return min(clockWiseDistance, anticlockWiseDistance)
+        return clockWiseDistance if clockWiseDistance < anticlockWiseDistance else anticlockWiseDistance
