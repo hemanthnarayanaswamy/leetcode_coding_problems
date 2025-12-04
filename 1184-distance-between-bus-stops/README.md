@@ -46,4 +46,50 @@
 	<li><code>distance.length == n</code></li>
 	<li><code>0 &lt;= start, destination &lt; n</code></li>
 	<li><code>0 &lt;= distance[i] &lt;= 10^4</code></li>
+
 </ul>
+
+# Solution 
+* We find the clockWise direction assuming that `start < destination` for easy operation and handle the edge case where `start > destination` but swapping those values. 
+
+```python
+class Solution:
+    def distanceBetweenBusStops(self, distance: List[int], start: int, destination: int) -> int:
+        clockWiseDistance = anticlockWiseDistance = 0
+        n = len(distance)
+
+        if start > destination:
+            start, destination = destination, start
+
+        for i in range(start, destination):
+            clockWiseDistance += distance[i%n]
+
+        anticlockWiseDistance = sum(distance) - clockWiseDistance
+        
+        return min(clockWiseDistance, anticlockWiseDistance)
+```
+---
+```python
+class Solution:
+    def distanceBetweenBusStops(self, distance: List[int], start: int, destination: int) -> int:
+        clockWiseDistance = 0
+
+        if start > destination:
+            start, destination = destination, start
+
+        for i in range(start, destination):
+            clockWiseDistance += distance[i]
+        
+        return min(clockWiseDistance, sum(distance) - clockWiseDistance)
+```
+
+# Optimal Solution 
+```python
+class Solution:
+    def distanceBetweenBusStops(self, distance: list[int], start: int, destination: int) -> int:
+        if start > destination:
+            start, destination = destination, start
+        clockwise = sum(distance[start:destination])
+        total = sum(distance)
+        return min(clockwise, total - clockwise)
+```
