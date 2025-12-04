@@ -7,7 +7,6 @@ class Solution:
             start, destination = destination, start
 
         for i in range(start, destination):
-            print(i)
             clockWiseDistance += distance[i%n]
 
         anticlockWiseDistance = sum(distance) - clockWiseDistance
