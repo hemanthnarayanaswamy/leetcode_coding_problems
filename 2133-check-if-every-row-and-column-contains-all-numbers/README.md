@@ -29,3 +29,48 @@ Hence, we return false.
 	<li><code>1 &lt;= n &lt;= 100</code></li>
 	<li><code>1 &lt;= matrix[i][j] &lt;= n</code></li>
 </ul>
+
+# Solution 
+* We check the uniqueness of the rows first to check if its length is `n`. 
+* Then transpore the matrix and do the same for the newly created matrix. 
+* To extract the columns values from the matrix use this ` for col in zip(*matrix):`, print columns in `tuple` form
+```ini
+[[1,2,3],[3,1,2],[2,3,1]]
+
+(1, 3, 2)
+(2, 1, 3)
+(3, 2, 1)
+```
+```python
+class Solution:
+    def checkValid(self, matrix: List[List[int]]) -> bool:
+        n = len(matrix)
+
+        for row in matrix:
+            if len(set(row)) != n:
+                return False
+        
+        matrix_transpose = list(map(list, zip(*matrix)))
+
+        for row in matrix_transpose:
+            if len(set(row)) != n:
+                return False 
+        
+        return True
+```
+---
+```python
+class Solution:
+    def checkValid(self, matrix: List[List[int]]) -> bool:
+        n = len(matrix)
+        
+        for row in matrix:
+            if len(set(row)) != n:
+                return False
+        
+        for col in zip(*matrix):
+            if len(set(col)) != n:
+                return False
+        
+        return True
+```
