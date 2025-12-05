@@ -97,6 +97,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3336-water-bottles-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3336-water-bottles-ii) |
 | [3367-find-the-sum-of-encrypted-integers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3367-find-the-sum-of-encrypted-integers) |
 | [3371-harshad-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3371-harshad-number) |
+| [3432-count-partitions-with-even-sum-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3432-count-partitions-with-even-sum-difference) |
 | [3450-find-the-child-who-has-the-ball-after-k-seconds](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3450-find-the-child-who-has-the-ball-after-k-seconds) |
 | [3462-vowels-game-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3462-vowels-game-in-a-string) |
 | [3476-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3476-find-minimum-operations-to-make-all-elements-divisible-by-three) |
@@ -423,6 +424,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3421-count-pairs-that-form-a-complete-day-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3421-count-pairs-that-form-a-complete-day-i) |
 | [3429-special-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3429-special-array-i) |
 | [3430-count-days-without-meetings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3430-count-days-without-meetings) |
+| [3432-count-partitions-with-even-sum-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3432-count-partitions-with-even-sum-difference) |
 | [3446-find-the-number-of-good-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3446-find-the-number-of-good-pairs-i) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
@@ -1180,6 +1182,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3034-points-that-intersect-with-cars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3034-points-that-intersect-with-cars) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3311-ant-on-the-boundary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3311-ant-on-the-boundary) |
+| [3432-count-partitions-with-even-sum-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3432-count-partitions-with-even-sum-difference) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3616-make-array-elements-equal-to-zero) |
 | [3704-count-partitions-with-even-sum-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3704-count-partitions-with-even-sum-difference) |
