@@ -7,7 +7,6 @@ class Solution:
                 return False
         
         for col in zip(*matrix):
-            print(col)
             if len(set(col)) != n:
                 return False
         
