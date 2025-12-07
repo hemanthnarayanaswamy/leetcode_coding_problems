@@ -5,10 +5,13 @@ class Solution:
         sfreq = Counter(s)
         gfreq = Counter(goal)
 
-        if sn != gn:
+        if (sn != gn) or (sfreq != gfreq):
             return False
-        elif sfreq != gfreq:
-            return False
+        
+        if s == goal:
+            for v in sfreq.values():
+                if v >= 2:
+                    return True
         
         swap = 2
         for c1, c2 in zip(s, goal):
@@ -21,9 +24,5 @@ class Solution:
         if swap == 0:
             return True
         
-        if sfreq == gfreq:
-            for v in sfreq.values():
-                if v >= 2:
-                    return True
         
         return False
