@@ -14,12 +14,12 @@ class Solution:
                     return True
             return False
         
-        swap = 2
+        misMatch = 0
         for c1, c2 in zip(s, goal):
             if c1 != c2:
-                swap -= 1
+                misMatch += 1
             
-            if swap < 0:
+            if misMatch > 2:
                 return False
         
         return True
