@@ -1,25 +1,15 @@
 class Solution:
     def buddyStrings(self, s: str, goal: str) -> bool:
-        sn = len(s)
-        gn = len(goal)
-        sfreq = Counter(s)
-        gfreq = Counter(goal)
+        if len(s) != len(goal):
+            return False
 
-        if (sn != gn) or (sfreq != gfreq):
-            return False
-        
         if s == goal:
-            for v in sfreq.values():
-                if v >= 2:
-                    return True
+            # need at least one duplicate to allow a no-op swap
+            return any(c >= 2 for c in Counter(s).values())
+
+        # collect mismatched positions
+        diffs = [(a, b) for a, b in zip(s, goal) if a != b]
+        if len(diffs) != 2:
             return False
-        
-        misMatch = 0
-        for c1, c2 in zip(s, goal):
-            if c1 != c2:
-                misMatch += 1
-            
-            if misMatch > 2:
-                return False
-        
-        return True
+        (a1, b1), (a2, b2) = diffs
+        return a1 == b2 and a2 == b1
