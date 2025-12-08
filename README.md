@@ -359,6 +359,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2502-sort-the-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2502-sort-the-people) |
 | [2524-largest-positive-integer-that-exists-with-its-negative](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2524-largest-positive-integer-that-exists-with-its-negative) |
 | [2525-count-number-of-distinct-integers-after-reverse-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2525-count-number-of-distinct-integers-after-reverse-operations) |
+| [2529-maximum-count-of-positive-integer-and-negative-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2529-maximum-count-of-positive-integer-and-negative-integer) |
 | [2542-average-value-of-even-numbers-that-are-divisible-by-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2542-average-value-of-even-numbers-that-are-divisible-by-three) |
 | [2547-odd-string-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2547-odd-string-difference) |
 | [2551-apply-operations-to-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2551-apply-operations-to-an-array) |
@@ -1147,6 +1148,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2448-count-number-of-bad-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2448-count-number-of-bad-pairs) |
 | [2486-most-frequent-even-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2486-most-frequent-even-element) |
 | [2525-count-number-of-distinct-integers-after-reverse-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2525-count-number-of-distinct-integers-after-reverse-operations) |
+| [2529-maximum-count-of-positive-integer-and-negative-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2529-maximum-count-of-positive-integer-and-negative-integer) |
 | [2532-remove-letter-to-equalize-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2532-remove-letter-to-equalize-frequency) |
 | [2654-count-the-number-of-vowel-strings-in-range](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2654-count-the-number-of-vowel-strings-in-range) |
 | [3019-furthest-point-from-origin](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3019-furthest-point-from-origin) |
@@ -1356,6 +1358,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2210-find-target-indices-after-sorting-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2210-find-target-indices-after-sorting-array) |
 | [2294-minimum-time-to-complete-trips](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2294-minimum-time-to-complete-trips) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2392-successful-pairs-of-spells-and-potions) |
+| [2529-maximum-count-of-positive-integer-and-negative-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2529-maximum-count-of-positive-integer-and-negative-integer) |
 | [2634-minimum-common-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2634-minimum-common-value) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 ## Sliding Window
