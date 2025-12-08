@@ -38,3 +38,60 @@
 	<li><code>1 &lt;= s.length, goal.length &lt;= 2 * 10<sup>4</sup></code></li>
 	<li><code>s</code> and <code>goal</code> consist of lowercase letters.</li>
 </ul>
+
+# Solution 
+* **If length of `s` and length of `goal` aren't equal, return `false`.**
+* **If `s == goal` but none of the characters in `S` occur more than once, return `False`, else return `True`.
+* **if `s[i] != goals[i]` at more than `2` different places, return `False`.**
+
+1. If length or frequey of chars vary between the 2 strings we terminate the program. 
+2. But if two strings are equal, then we check if any characters has a frequency more then `2`, This way we can swap the similar characters and maintain the equality. **It is mandatory to swap the characters**
+3. If two strings are different, We check the inequity between two strings can only be at two places which can be fixed by a swap to make them equal. 
+```python
+class Solution:
+    def buddyStrings(self, s: str, goal: str) -> bool:
+        sn = len(s)
+        gn = len(goal)
+        sfreq = Counter(s)
+        gfreq = Counter(goal)
+
+        if (sn != gn) or (sfreq != gfreq):
+            return False
+        
+        if s == goal:
+            for v in sfreq.values():
+                if v >= 2:
+                    return True
+            return False
+        
+        misMatch = 0
+        for c1, c2 in zip(s, goal):
+            if c1 != c2:
+                misMatch += 1
+            
+            if misMatch > 2:
+                return False
+        
+        return True
+```
+---
+# Optimal Solution 
+```python
+class Solution:
+    def buddyStrings(self, s: str, goal: str) -> bool:
+        if len(s) != len(goal):
+            return False
+
+        if s == goal:
+            # need at least one duplicate to allow a no-op swap
+            return any(c >= 2 for c in Counter(s).values())
+
+        # collect mismatched positions
+        diffs = [(a, b) for a, b in zip(s, goal) if a != b]
+        if len(diffs) != 2:
+            return False
+
+        (a1, b1), (a2, b2) = diffs
+        
+        return a1 == b2 and a2 == b1
+```
