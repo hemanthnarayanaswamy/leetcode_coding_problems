@@ -25,3 +25,35 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 250</code></li>
 </ul>
+
+# Python 
+* Instread of running three loops, use only 2 loops
+
+```python
+class Solution:
+    def countTriples(self, n: int) -> int:
+        triplesCount = 0
+
+        for a in range(1, n+1):
+            for b in range(1, n+1):
+                c = int(sqrt(a**2 + b**2))
+                if c <= n and c**2 == a**2 + b**2:
+                    triplesCount += 1
+        
+        return triplesCount
+```
+---
+```python
+class Solution:
+    def countTriples(self, n: int) -> int:
+        total = 0
+        squares = set([i**2 for i in range(1, n+1)])
+
+
+        for x in range(1, n+1):
+            for y in range(x+1, n+1):
+                if x**2 + y**2 in squares: 
+                    total += 2 # Here count is 2 because the x and y can be swapped to get other pair (x,y,z), (y,x,z)
+        
+        return total
+```
