@@ -58,6 +58,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1817-calculate-money-in-leetcode-bank](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1817-calculate-money-in-leetcode-bank) |
 | [1844-maximum-number-of-balls-in-a-box](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1844-maximum-number-of-balls-in-a-box) |
 | [1920-determine-color-of-a-chessboard-square](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1920-determine-color-of-a-chessboard-square) |
+| [1925-count-square-sum-triples](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1925-count-square-sum-triples) |
 | [2032-largest-odd-number-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2032-largest-odd-number-in-string) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2106-find-greatest-common-divisor-of-array) |
 | [2238-a-number-after-a-double-reversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2238-a-number-after-a-double-reversal) |
@@ -1406,6 +1407,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1212-sequential-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1212-sequential-digits) |
 | [1363-greatest-english-letter-in-upper-and-lower-case](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1363-greatest-english-letter-in-upper-and-lower-case) |
 | [1656-count-good-triplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1656-count-good-triplets) |
+| [1925-count-square-sum-triples](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1925-count-square-sum-triples) |
 | [2122-count-special-quadruplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2122-count-special-quadruplets) |
 | [2215-finding-3-digit-even-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2215-finding-3-digit-even-numbers) |
 | [2442-number-of-arithmetic-triplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2442-number-of-arithmetic-triplets) |
