@@ -42,3 +42,65 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Can you solve the problem in <code>O(log(n))</code> time complexity?</p>
+
+# Solution 
+* We only count the negative numbers and when we find our first positive number, we break the loop. 
+```python
+class Solution:
+    def maximumCount(self, nums: List[int]) -> int:
+        negative = positive = 0
+        n = len(nums)
+
+        for i in range(n):
+            if nums[i] > 0:
+                positive = n - i
+                break
+            elif nums[i] < 0:
+                negative += 1
+        
+        return max(negative, positive)
+```
+# Binary Search
+**You’re off by one because your searches use a closed interval `[0, n-1]` but then you return an index even when no element matches. For this problem you need functions that can legally return `n`**
+
+```ini 
+if l, r = 0, len(nums) then while loop should be l < r
+if l, r = 0, len(nums)-1 then while loop should be l <= r
+```
+
+```python
+class Solution:
+    def upperBound(self, nums):
+        n = len(nums)
+        l, r = 0, n
+
+        while l < r:
+            m = (l + r) // 2
+            if nums[m] <= 0:
+                l = m + 1
+            else:
+                r = m
+        
+        return l
+    
+    def lowerBound(self, nums):
+        n = len(nums)
+        l, r = 0, n
+
+        while l < r:
+            m = (l + r) // 2
+            if nums[m] < 0:
+                l = m + 1
+            else:
+                r = m
+        
+        return l
+        
+    def maximumCount(self, nums: List[int]) -> int:
+        n = len(nums)
+        print(self.upperBound(nums), self.lowerBound(nums))
+        positive = n - self.upperBound(nums)
+        negative = self.lowerBound(nums)
+        
+        return max(positive, negative)
+```
