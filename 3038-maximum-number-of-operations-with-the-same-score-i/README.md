@@ -56,3 +56,29 @@
 	<li><code>2 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 1000</code></li>
 </ul>
+
+# Solution 
+**DESCRIPTION IS NOT GOOD**
+**You need to count the number of sums of paired elements equal to `nums[0] and nums[1]` in a row i.e. consecutively - `you do not need to count their total number in the entire array`.**
+
+1. Make the length to even always.
+2. check if the sum of the pair is equal to the score, if not then break the return. 
+
+```python
+class Solution:
+    def maxOperations(self, nums: List[int]) -> int:
+        score = sum(nums[:2])
+        operations = 1
+        n = len(nums)
+
+        if n%2:
+            n -= 1
+
+        for i in range(2, n, 2):
+            if sum(nums[i:i+2]) != score:
+                break
+            
+            operations += 1
+        
+        return operations
+```
