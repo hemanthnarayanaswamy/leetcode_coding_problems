@@ -46,3 +46,41 @@
 	<li><code>startTime<sub>2</sub> &lt;= endTime<sub>2</sub></code></li>
 	<li>All the event times follow the <code>HH:MM</code> format.</li>
 </ul>
+
+# Solution 
+* We can do the comparison with the strings itself no need to change them to intergers. 
+* Everytime we assume `EVENT1` starts before `EVENT2` and make required changes when working on it. 
+
+```python
+class Solution:
+    def haveConflict(self, event1: List[str], event2: List[str]) -> bool:
+        start1, end1 = event1
+        start2, end2 = event2
+
+        if start1 > start2:  # if event2 starts before event1 we swap the variables
+            start1, start2 = start2, start1
+            end1, end2 = end2, end1
+				# This way we are sure to assure that event1 should be over before event2
+        
+        if end1 >= start2: # checking the conflict
+            return True        # End time of earlier event should not conflict with the start of the next event
+        else:
+            return False
+```
+---
+```python
+class Solution:
+    def haveConflict(self, a: list[str], b: list[str]) -> bool:
+        a_start, a_end = a
+        b_start, b_end = b
+
+        # First event starts before second ends or ends after second starts
+        if b_start <= a_start <= b_end or b_start <= a_end <= b_end:
+            return True
+
+        # Second event starts before first ends or ends after first starts
+        if a_start <= b_start <= a_end or a_start <= b_end <= a_end:
+            return True
+
+        return False
+```
