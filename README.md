@@ -399,6 +399,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [2977-check-if-a-string-is-an-acronym-of-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2977-check-if-a-string-is-an-acronym-of-words) |
 | [3034-points-that-intersect-with-cars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3034-points-that-intersect-with-cars) |
+| [3038-maximum-number-of-operations-with-the-same-score-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3038-maximum-number-of-operations-with-the-same-score-i) |
 | [3044-minimum-operations-to-collect-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3044-minimum-operations-to-collect-elements) |
 | [3093-sum-of-values-at-indices-with-k-set-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3093-sum-of-values-at-indices-with-k-set-bits) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
@@ -900,6 +901,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2800-minimum-string-length-after-removing-substrings) |
 | [2847-find-maximum-number-of-string-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2847-find-maximum-number-of-string-pairs) |
 | [2886-faulty-keyboard](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2886-faulty-keyboard) |
+| [3038-maximum-number-of-operations-with-the-same-score-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3038-maximum-number-of-operations-with-the-same-score-i) |
 | [3220-count-tested-devices-after-test-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3220-count-tested-devices-after-test-operations) |
 | [3311-ant-on-the-boundary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3311-ant-on-the-boundary) |
 | [3336-water-bottles-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3336-water-bottles-ii) |
