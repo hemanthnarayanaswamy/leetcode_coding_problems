@@ -7,9 +7,4 @@ class Solution:
             if complexity[i] <= root:
                 return 0
 
-        premutation = 1
-        for i in range(1, n):
-            premutation *= i
-            premutation %= (10**9 + 7)
-        
-        return premutation
+        return factorial(n-1) % (10**9 + 7)
