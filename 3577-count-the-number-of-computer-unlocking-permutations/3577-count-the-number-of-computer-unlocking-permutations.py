@@ -1,10 +1,15 @@
 class Solution:
     def countPermutations(self, complexity: List[int]) -> int:
+        MOD = 10**9 + 7
         n = len(complexity)
-        root = complexity[0]
 
+        min_c = complexity[0]
         for i in range(1, n):
-            if complexity[i] <= root:
+            if complexity[i] <= min_c:
                 return 0
 
-        return factorial(n-1) % (10**9 + 7)
+        fact = 1
+        for i in range(1, n):
+            fact = (fact * i) % MOD
+            
+        return fact
