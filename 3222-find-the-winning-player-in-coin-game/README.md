@@ -44,3 +44,41 @@
 <ul>
 	<li><code>1 &lt;= x, y &lt;= 100</code></li>
 </ul>
+
+# Solution
+1. We try to play turn by turn until `x and y`
+```python
+class Solution:
+    def winningPlayer(self, x: int, y: int) -> str:
+        play = False
+
+        while x and y:
+            x -= 1
+            y -= 4
+
+            if x < 0 or y < 0:
+                break
+            else:
+                play = not play
+        
+        return "Alice" if play else "Bob"
+```
+---
+1. We count how many turns the game has continued until the loop runs
+2. **If the count is `odd` we know that last successful turn was played by `Alice` so he wins, If the count is `even` we know the last successful turn was played by `Bob`**
+
+```python
+class Solution:
+    def winningPlayer(self, x: int, y: int) -> str:
+        count = 0
+        while x > 0 and y > 0:
+            x -= 1
+            y -= 4
+
+            if x >= 0 and y >= 0:
+                count += 1
+        
+        count %= 2
+        
+        return 'Alice' if count else 'Bob'
+```
