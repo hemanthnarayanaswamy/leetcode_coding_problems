@@ -7,13 +7,12 @@ class Solution:
         for i in range(1, n):
             if complexity[i] > pre:
                 unlocked += 1
-                pre = min(pre, complexity[i])
+            else:
+                return 0
         
-        if unlocked == n:
-            premutation = 1
-            for i in range(1, unlocked):
-                premutation *= i
-            
-            return premutation % (10 ** 9 + 7)
+        premutation = 1
+        for i in range(1, n):
+            premutation *= i
+            premutation %= (10**9 + 7)
         
-        return 0
+        return premutation
