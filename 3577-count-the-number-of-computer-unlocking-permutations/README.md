@@ -60,6 +60,77 @@
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
+# Solution 
+**Need to find the number of permutations in which `ALL the computers` can be unlocked.**
+
+1. We find the total number of computers that can be unlocked based on the condition given. 
+2. And check if we can unlock all if we cannot unlock all we return `0`
+3. ELSE we find the permuation of the number unlocked. 
+
+```python
+class Solution:
+    def countPermutations(self, complexity: List[int]) -> int:
+        n = len(complexity)
+        pre = complexity[0]
+        unlocked = 1
+
+        for i in range(1, n):
+            if complexity[i] > pre:
+                unlocked += 1
+                pre = min(pre, complexity[i])
+        
+        if unlocked == n:  # check if all computers are unlocked
+            premutation = 1
+            for i in range(1, unlocked):
+                premutation *= i
+            
+            return premutation % (10 ** 9 + 7)
+        
+        return 0
+```
+---
+# Improved Version 
+* Earlier `TERMINATION`, If we are not able to unlock any computer. 
+```python
+for i in range(1, n):
+            if complexity[i] > pre:
+                unlocked += 1
+            else:
+                return 0
+```
+* After the first loop we know all the computers will be unlocked, we just need to find the permuation of the variable `n`. 
+
+```python
+class Solution:
+    def countPermutations(self, complexity: List[int]) -> int:
+        MOD = 10**9 + 7
+        n = len(complexity)
+
+        min_c = complexity[0]
+        for i in range(1, n):
+            if complexity[i] <= min_c:
+                return 0
+
+        fact = 1
+        for i in range(1, n):
+            fact = (fact * i) % MOD
+            
+        return fact
+```
+---
+```python
+class Solution:
+    def countPermutations(self, complexity: List[int]) -> int:
+        n = len(complexity)
+        root = complexity[0]
+
+        for i in range(1, n):
+            if complexity[i] <= root:
+                return 0
+
+        return factorial(n-1) % (10**9 + 7)
+```
+
 <ul>
 	<li><code>2 &lt;= complexity.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= complexity[i] &lt;= 10<sup>9</sup></code></li>
