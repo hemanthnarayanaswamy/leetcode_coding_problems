@@ -1,15 +1,12 @@
 class Solution:
     def countPermutations(self, complexity: List[int]) -> int:
         n = len(complexity)
-        pre = complexity[0]
-        unlocked = 1
+        root = complexity[0]
 
         for i in range(1, n):
-            if complexity[i] > pre:
-                unlocked += 1
-            else:
+            if complexity[i] <= root:
                 return 0
-        
+
         premutation = 1
         for i in range(1, n):
             premutation *= i
