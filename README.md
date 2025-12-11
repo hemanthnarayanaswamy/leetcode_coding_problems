@@ -264,6 +264,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1626-can-make-arithmetic-progression-from-sequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1626-can-make-arithmetic-progression-from-sequence) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
 | [1646-kth-missing-positive-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1646-kth-missing-positive-number) |
+| [1646-get-maximum-in-generated-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1646-get-maximum-in-generated-array) |
 | [1651-shuffle-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1651-shuffle-string) |
 | [1656-count-good-triplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1656-count-good-triplets) |
 | [1677-matrix-diagonal-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1677-matrix-diagonal-sum) |
@@ -874,6 +875,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1505-create-target-array-in-the-given-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1505-create-target-array-in-the-given-order) |
 | [1552-build-an-array-with-stack-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1552-build-an-array-with-stack-operations) |
 | [1642-water-bottles](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1642-water-bottles) |
+| [1646-get-maximum-in-generated-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1646-get-maximum-in-generated-array) |
 | [1803-average-waiting-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1803-average-waiting-time) |
 | [1806-count-of-matches-in-tournament](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1806-count-of-matches-in-tournament) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2021-remove-all-occurrences-of-a-substring) |
