@@ -49,3 +49,46 @@ Hence, nums = [0,1,1,2,1,3,2,3], and the maximum is max(0,1,1,2,1,3,2,3) = 3.
 <ul>
 	<li><code>0 &lt;= n &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* Logical question 
+
+```python
+class Solution:
+    def getMaximumGenerated(self, n: int) -> int:
+        if n == 0:
+            return 0
+
+        nums = [0, 1] + [0] * (n-1)
+
+        for i in range(2, n+1):
+            q, r = divmod(i, 2)
+            nums[i] += nums[q]
+            if r:
+                nums[i] += nums[q+1]          
+
+        return max(nums) 
+```
+* Keep track of `max` values as we iterate
+
+```python
+class Solution:
+    def getMaximumGenerated(self, n: int) -> int:
+        if n == 0:
+            return 0
+
+        nums = [0] * (n+1)
+				nums[1] = 1
+        maxVal = 1
+
+        for i in range(2, n+1):
+            q, r = divmod(i, 2)
+            nums[i] += nums[q]
+            if r:
+                nums[i] += nums[q+1] 
+
+            if nums[i] > maxVal:
+                maxVal = nums[i]         
+
+        return maxVal
+ ```
