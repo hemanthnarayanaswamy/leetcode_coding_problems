@@ -9,9 +9,9 @@ class Solution:
             if taskTime > maxTaskTime:
                 EmpId = id
                 maxTaskTime = taskTime
-            elif taskTime == maxTaskTime:
-                EmpId = min(id, EmpId)
-            
+            elif taskTime == maxTaskTime and id < EmpId:
+                EmpId = id
+                
             startTime = endTime
             
         return EmpId
