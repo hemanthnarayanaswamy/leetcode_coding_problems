@@ -4,12 +4,16 @@ class Solution:
             return 0
 
         nums = [0, 1] + [0] * (n-1)
+        maxVal = 1
 
         for i in range(2, n+1):
             q, r = divmod(i, 2)
             nums[i] += nums[q]
             if r:
-                nums[i] += nums[q+1]          
+                nums[i] += nums[q+1] 
 
-        return max(nums) 
+            if nums[i] > maxVal:
+                maxVal = nums[i]         
+
+        return maxVal
         
