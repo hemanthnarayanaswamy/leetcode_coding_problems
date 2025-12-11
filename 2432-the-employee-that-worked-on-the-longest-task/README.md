@@ -61,3 +61,26 @@ The tasks with the longest time are tasks 0 and 1. The employees that worked on 
 	<li><code>id<sub>i</sub> != id<sub>i+1</sub></code></li>
 	<li><code>leaveTime<sub>i</sub></code> are sorted in a strictly increasing order.</li>
 </ul>
+
+# Solution 
+**We have to reapetedly compare the time values and return the id of the worker who worked the most time on a single task.**
+* We create two variables time and id to store the maximum time required for a single task to complete and the id of the worker who did the task respectively.
+```python
+class Solution:
+    def hardestWorker(self, n: int, logs: List[List[int]]) -> int:
+        startTime = 0
+        maxTaskTime = 0
+        EmpId = None
+
+        for id, endTime in logs:
+            taskTime = endTime - startTime
+            if taskTime > maxTaskTime:
+                EmpId = id
+                maxTaskTime = taskTime
+            elif taskTime == maxTaskTime and id < EmpId:
+                EmpId = id
+                
+            startTime = endTime
+            
+        return EmpId
+```
