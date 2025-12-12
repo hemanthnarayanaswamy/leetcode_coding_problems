@@ -3,10 +3,7 @@ class Solution:
         offlineTime = {str(i): 0 for i in range(numberOfUsers)}
         mentioned = {str(i): 0 for i in range(numberOfUsers)}
         order = {'OFFLINE': 0, 'MESSAGE': 1}
-
-        def processOffline(t, users):
-            offlineTime[users] = t + 60
-            
+        
         def processMessage(t, users):
             if users == 'ALL':
                 for k in mentioned:
@@ -26,7 +23,7 @@ class Solution:
             e, t, users = event 
             t = int(t)
             if e == 'OFFLINE':
-                processOffline(t, users)
+                offlineTime[users] = t + 60
             elif e == 'MESSAGE':
                 processMessage(t, users)
                 
