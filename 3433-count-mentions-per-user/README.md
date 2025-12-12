@@ -95,3 +95,109 @@
 	<li><code>0 &lt;= &lt;number&gt; &lt;= numberOfUsers - 1</code></li>
 	<li>It is <strong>guaranteed</strong> that the user id referenced in the <code>OFFLINE</code> event is <strong>online</strong> at the time the event occurs.</li>
 </ul>
+
+# Solution 
+In this problem, we’re asked to simulate a messaging system where users can be mentioned in messages under different rules:
+* `id<number>` → directly mentions that user
+* `ALL` → mentions every user
+* `HERE` → mentions only users who are online at that moment
+A user may also go offline through an `OFFLINE` event, and they remain offline for **exactly 60 time units.**
+
+-> If a message and an offline event share the same timestamp, the offline event must be processed first, following the problem’s rules.
+**Count how many times each user was mentioned across all messages.**
+```python
+class Solution:
+    def countMentions(self, numberOfUsers: int, events: List[List[str]]) -> List[int]:
+        offlineTime = {str(i): 0 for i in range(numberOfUsers)}
+        mentioned = {str(i): 0 for i in range(numberOfUsers)}
+        order = {'OFFLINE': 0, 'MESSAGE': 1}
+
+        def processOffline(t, users):
+            offlineTime[users] = t + 60
+            
+        def processMessage(t, users):
+            if users == 'ALL':
+                for k in mentioned:
+                    mentioned[k] += 1
+            elif users == 'HERE':
+                for k in mentioned:
+                    if (offlineTime[k] and t >= offlineTime[k]) or not offlineTime[k]:
+                        mentioned[k] += 1
+            else:
+                users = users.split()
+                for user in users:
+                    id = user[2:]
+                    mentioned[id] += 1
+        
+        events = sorted(events, key=lambda x: (int(x[1]), order[x[0]]))
+        for event in events:
+            e, t, users = event 
+            t = int(t)
+            if e == 'OFFLINE':
+                processOffline(t, users)
+            elif e == 'MESSAGE':
+                processMessage(t, users)
+                
+        return [v for v in mentioned.values()]
+```
+---
+# Improved Solution 
+```python
+class Solution:
+    def countMentions(self, numberOfUsers: int, events: List[List[str]]) -> List[int]:
+        offlineTime = {str(i): 0 for i in range(numberOfUsers)}
+        mentioned = {str(i): 0 for i in range(numberOfUsers)}
+        order = {'OFFLINE': 0, 'MESSAGE': 1}
+        
+        def processMessage(t, users):
+            if users == 'ALL':
+                for k in mentioned:
+                    mentioned[k] += 1
+            elif users == 'HERE':
+                for k in mentioned:
+                    if (offlineTime[k] and t >= offlineTime[k]) or not offlineTime[k]:
+                        mentioned[k] += 1
+            else:
+                users = users.split()
+                for user in users:
+                    id = user[2:]
+                    mentioned[id] += 1
+        
+        events = sorted(events, key=lambda x: (int(x[1]), order[x[0]]))
+        for event in events:
+            e, t, users = event[0], int(event[1]), event[2]
+
+            if e == 'OFFLINE':
+                offlineTime[users] = t + 60
+            elif e == 'MESSAGE':
+                processMessage(t, users)
+                
+        return [mentioned[k] for k in mentioned]
+```
+
+# Optimal Solution
+```python
+class Solution:
+    def countMentions(self, numberOfUsers: int, events: List[List[str]]) -> List[int]:
+        events.sort(key = lambda x: (int(x[1]), x[0] == "MESSAGE"))
+        online_lst = [0] * numberOfUsers
+        mentions = [0] * numberOfUsers
+        all_num = 0
+        for event in events:
+            if "MESSAGE" == event[0]:
+                if "ALL" == event[2]:
+                    all_num += 1
+                elif "HERE" == event[2]:
+                    time = int(event[1])
+                    for i in range(numberOfUsers):
+                        if online_lst[i] <= time:
+                            mentions[i] += 1
+                else:
+                    for i in event[2].split():
+                        mentions[int(i[2:])] += 1
+            else:
+                online_lst[int(event[2])] = int(event[1]) + 60
+        for i in range(numberOfUsers):
+            mentions[i] += all_num
+        return mentions
+```
