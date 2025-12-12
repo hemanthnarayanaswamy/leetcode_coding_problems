@@ -26,4 +26,4 @@ class Solution:
             elif e == 'MESSAGE':
                 processMessage(t, users)
                 
-        return [v for v in mentioned.values()]
+        return [mentioned[str(i)] for i in range(numberOfUsers)]
