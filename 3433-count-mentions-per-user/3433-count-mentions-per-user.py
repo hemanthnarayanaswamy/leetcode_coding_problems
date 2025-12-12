@@ -21,7 +21,6 @@ class Solution:
         events = sorted(events, key=lambda x: (int(x[1]), order[x[0]]))
         for event in events:
             e, t, users = event[0], int(event[1]), event[2]
-            t = int(t)
             if e == 'OFFLINE':
                 offlineTime[users] = t + 60
             elif e == 'MESSAGE':
