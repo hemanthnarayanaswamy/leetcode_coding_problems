@@ -32,3 +32,26 @@
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>-100 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution 
+
+```python
+class Solution:
+    def frequencySort(self, nums: List[int]) -> List[int]:
+        numsFreq = Counter(nums)
+
+        return sorted(nums, key=lambda x: (numsFreq[x], -x))
+```
+---
+```python
+class Solution:
+    def frequencySort(self, nums: List[int]) -> List[int]:
+        numsFreq = Counter(nums)
+        sortedFreq = sorted(numsFreq.items(), key=lambda x: (x[1], -x[0]))
+
+        result = []
+        for num, count in sortedFreq:
+            result.extend([num] * count)
+            
+        return result
+```
