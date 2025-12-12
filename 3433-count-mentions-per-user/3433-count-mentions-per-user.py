@@ -29,7 +29,6 @@ class Solution:
             t = int(t)
             if e == 'OFFLINE':
                 processOffline(t, users)
-                print(offlineTime)
             elif e == 'MESSAGE':
                 processMessage(t, users)
                 
