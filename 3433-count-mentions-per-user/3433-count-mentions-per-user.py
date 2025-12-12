@@ -1,30 +1,23 @@
 class Solution:
     def countMentions(self, numberOfUsers: int, events: List[List[str]]) -> List[int]:
-        offlineTime = {str(i): 0 for i in range(numberOfUsers)}
-        mentioned = {str(i): 0 for i in range(numberOfUsers)}
-        order = {'OFFLINE': 0, 'MESSAGE': 1}
-        
-        def processMessage(t, users):
-            if users == 'ALL':
-                for k in mentioned:
-                    mentioned[k] += 1
-            elif users == 'HERE':
-                for k in mentioned:
-                    if (offlineTime[k] and t >= offlineTime[k]) or not offlineTime[k]:
-                        mentioned[k] += 1
-            else:
-                users = users.split()
-                for user in users:
-                    id = user[2:]
-                    mentioned[id] += 1
-        
-        events = sorted(events, key=lambda x: (int(x[1]), order[x[0]]))
+        events.sort(key = lambda x: (int(x[1]), x[0] == "MESSAGE"))
+        online_lst = [0] * numberOfUsers
+        mentions = [0] * numberOfUsers
+        all_num = 0
         for event in events:
-            e, t, users = event[0], int(event[1]), event[2]
-
-            if e == 'OFFLINE':
-                offlineTime[users] = t + 60
-            elif e == 'MESSAGE':
-                processMessage(t, users)
-                
-        return [mentioned[k] for k in mentioned]
+            if "MESSAGE" == event[0]:
+                if "ALL" == event[2]:
+                    all_num += 1
+                elif "HERE" == event[2]:
+                    time = int(event[1])
+                    for i in range(numberOfUsers):
+                        if online_lst[i] <= time:
+                            mentions[i] += 1
+                else:
+                    for i in event[2].split():
+                        mentions[int(i[2:])] += 1
+            else:
+                online_lst[int(event[2])] = int(event[1]) + 60
+        for i in range(numberOfUsers):
+            mentions[i] += all_num
+        return mentions
