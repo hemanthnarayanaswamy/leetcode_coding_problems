@@ -24,7 +24,6 @@ class Solution:
                     mentioned[id] += 1
         
         events = sorted(events, key=lambda x: (int(x[1]), order[x[0]]))
-        print(events)
         for event in events:
             e, t, users = event 
             t = int(t)
