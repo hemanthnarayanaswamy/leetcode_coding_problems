@@ -13,9 +13,7 @@ class Solution:
                     mentioned[k] += 1
             elif users == 'HERE':
                 for k in mentioned:
-                    if offlineTime[k] and t >= offlineTime[k]:
-                        mentioned[k] += 1
-                    elif not offlineTime[k]:
+                    if (offlineTime[k] and t >= offlineTime[k]) or not offlineTime[k]:
                         mentioned[k] += 1
             else:
                 users = users.split()
