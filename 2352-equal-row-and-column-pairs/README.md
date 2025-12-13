@@ -31,3 +31,34 @@
 	<li><code>1 &lt;= n &lt;= 200</code></li>
 	<li><code>1 &lt;= grid[i][j] &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+# Solution
+* create a new array for columns and then compare the cols with rows to increment the count. 
+
+```python
+class Solution:
+    def equalPairs(self, grid: List[List[int]]) -> int:
+        columns = list(zip(*grid))
+        count = 0
+
+        for row in grid:
+            for col in columns:
+                if row == list(col):
+                    count += 1
+        
+        return count
+```
+---
+# Use the HashMap 
+```python
+class Solution:
+    def equalPairs(self, grid: List[List[int]]) -> int:
+        row_counts = Counter(map(tuple, grid))
+        answer = 0
+
+        for col in list(zip(*grid)):
+            answer += row_counts[col]
+        
+        return answer
+```
+* Count all the rows using the HashMap **HashMap KEY should be immutable like `Tuple` not LIST**.
