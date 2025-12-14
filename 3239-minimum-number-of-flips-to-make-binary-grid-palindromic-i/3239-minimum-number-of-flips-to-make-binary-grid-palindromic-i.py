@@ -1,26 +1,26 @@
 class Solution:
     def minFlips(self, grid: List[List[int]]) -> int:
-        flipr = 0
-        flipc = 0
+        fr = fc = 0
+        n, m = len(grid), len(grid[0])
+
+        for r in grid:
+            x = 0
+            y = m - 1
+            while x < y:
+                if r[x] != r[y]:
+                    fr += 1
+                x += 1
+                y -= 1
         
-        def checkPalindrome(seq):
-            flip = 0
-            l, r = 0, len(seq)-1
-            while l <= r:
-                if seq[l] != seq[r]:
-                    flip += 1
-                l += 1
-                r -= 1
-            return flip
+        for j in range(m):
+            x = 0
+            y = n - 1
+            while x < y:
+                if grid[x][j] != grid[y][j]:
+                    fc += 1
+                x += 1
+                y -= 1
         
-        for row in grid:
-            flipr += checkPalindrome(row)
-        
-        for col in zip(*grid):
-            flipc += checkPalindrome(col)
-            
-            if flipc >= flipr:
-                return flipr
-        
-        return flipc
+        return min(fc, fr)
+ 
         
