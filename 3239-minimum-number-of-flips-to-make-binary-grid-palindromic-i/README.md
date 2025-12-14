@@ -56,3 +56,63 @@
 	<li><code>1 &lt;= m * n &lt;= 2 * 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= grid[i][j] &lt;= 1</code></li>
 </ul>
+
+# Solution 
+**Split the problem into 2 parts `minimum flips to make all rows palindromatic` and `minimum flips to all column palindromatic`.**
+**Get the flip count for both operations and return the minimum**
+**Use two pointer to check the palindrome seperately**
+
+```python
+class Solution:
+    def minFlips(self, grid: List[List[int]]) -> int:
+        flipr = 0
+        flipc = 0
+        
+        def checkPalindrome(seq):
+            flip = 0
+            l, r = 0, len(seq)-1
+            while l <= r:
+                if seq[l] != seq[r]:
+                    flip += 1
+                l += 1
+                r -= 1
+            return flip
+        
+        for row in grid:
+            flipr += checkPalindrome(row)
+        
+        for col in zip(*grid):
+            flipc += checkPalindrome(col)
+            
+            if flipc >= flipr: # Quick return of flipr if flipc at any point is greater or equal the the flipr value
+                return flipr
+        
+        return flipc
+```
+---
+# Optimal Solution
+```python
+class Solution:
+    def minFlips(self, grid: List[List[int]]) -> int:
+        n, m = len(grid), len(grid[0])
+        if n == 1 or m == 1: return 0
+        rc = 0
+        for r in grid:
+            x = 0
+            y = m - 1
+            while x < y:
+                if r[x] != r[y]:
+                    rc += 1
+                x += 1
+                y -= 1
+        cc = 0
+        for j in range(m):
+            x = 0
+            y = n - 1
+            while x < y:
+                if grid[x][j] != grid[y][j]:
+                    cc += 1
+                x += 1
+                y -= 1
+        return min(rc,cc)
+```
