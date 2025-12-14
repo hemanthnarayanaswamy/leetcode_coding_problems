@@ -17,7 +17,7 @@ class Solution:
             flipr += checkPalindrome(row)
         
         for col in zip(*grid):
-            flipc += checkPalindrome(list(col))
+            flipc += checkPalindrome(col)
         
         return min(flipr, flipc)
         
