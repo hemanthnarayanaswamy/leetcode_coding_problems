@@ -18,6 +18,9 @@ class Solution:
         
         for col in zip(*grid):
             flipc += checkPalindrome(col)
+            
+            if flipc >= flipr:
+                return flipr
         
-        return min(flipr, flipc)
+        return flipc
         
