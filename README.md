@@ -61,6 +61,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1925-count-square-sum-triples](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1925-count-square-sum-triples) |
 | [2032-largest-odd-number-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2032-largest-odd-number-in-string) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2106-find-greatest-common-divisor-of-array) |
+| [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2238-a-number-after-a-double-reversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2238-a-number-after-a-double-reversal) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
@@ -310,6 +311,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2099-number-of-strings-that-appear-as-substrings-in-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2099-number-of-strings-that-appear-as-substrings-in-word) |
 | [2102-find-the-middle-index-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2102-find-the-middle-index-in-array) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2106-find-greatest-common-divisor-of-array) |
+| [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [2116-count-number-of-pairs-with-absolute-difference-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2116-count-number-of-pairs-with-absolute-difference-k) |
 | [2122-count-special-quadruplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2122-count-special-quadruplets) |
@@ -1012,6 +1014,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0392-is-subsequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0392-is-subsequence) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1700-minimum-time-to-make-rope-colorful) |
+| [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 ## Sorting
 |  |
 | ------- |
