@@ -39,3 +39,44 @@ Note that [8,6] is not a smooth descent period as 8 - 6 &ne; 1.
 	<li><code>1 &lt;= prices.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= prices[i] &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+# Solution 
+**Given a list of integers, find the length n of each complete sequence in the list that is of consecutive, decreasing integers. (For example 8,7,6,5 is such a sequence, and its length is 4.) Return the sum of the nth Triangle numbers such sequences of length n for the list. (For example, the 4th Triangle number is `1 + 2+ 3+ 4 = 4 * (4 + 1)//2 = 10.)`**
+
+1. You can calculate the number of days when the continuous streak breaks with formula `n(n+1)//2` 
+```python
+class Solution:
+    def getDescentPeriods(self, prices: List[int]) -> int:
+        descentDays = 0
+        contiguousDays = 1
+
+        for i in range(1, len(prices)):
+            if prices[i] == prices[i-1]-1:
+                contiguousDays += 1
+            else:
+                descentDays += (contiguousDays*(contiguousDays+1)) // 2
+                contiguousDays = 1
+        
+        descentDays += (contiguousDays*(contiguousDays+1)) // 2
+
+        return descentDays
+```
+---
+2. Continous keep adding the `contiguous` values. 
+* Here `descentDays = 1` is always counted initially
+```python
+class Solution:
+    def getDescentPeriods(self, prices: List[int]) -> int:
+        descentDays = 1
+        contiguousDays = 1
+
+        for i in range(1, len(prices)):
+            if prices[i] == prices[i-1]-1:
+                contiguousDays += 1
+            else:
+                contiguousDays = 1
+        
+            descentDays += contiguousDays 
+
+        return descentDays
+```
