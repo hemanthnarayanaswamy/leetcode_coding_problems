@@ -41,3 +41,84 @@ Note that we did not use all of the additional rocks.
 	<li><code>0 &lt;= rocks[i] &lt;= capacity[i]</code></li>
 	<li><code>1 &lt;= additionalRocks &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Solution
+* Maximum bags that could have full capacity should be returned. 
+* so **Which bag should you fill completely first?**,
+*  `The bags close to being full should be filled in first in a sorted order`
+
+1. We compute a new array to calculate the remaining space left in the bags to fill the rocks. 
+2. and we sort this new array which gives the list of bags which are close to being filled. 
+
+```python
+class Solution:
+    def maximumBags(self, capacity: List[int], rocks: List[int], additionalRocks: int) -> int:
+        remainingCapacity = [c-r for c,r in zip(capacity, rocks)]
+        remainingCapacity.sort()
+
+        fullBags = 0
+
+        for i in range(len(remainingCapacity)):
+            if remainingCapacity[i] and remainingCapacity[i] <= additionalRocks:
+                additionalRocks -= remainingCapacity[i]
+                remainingCapacity[i] = 0
+            
+            if remainingCapacity[i] == 0:
+                fullBags += 1
+            
+            if additionalRocks == 0:
+                break
+
+        return fullBags
+```
+* Solution is working but its not clean, can be better
+```python
+class Solution:
+    def maximumBags(self, capacity: List[int], rocks: List[int], additionalRocks: int) -> int:
+        remainingCapacity = [c-r for c,r in zip(capacity, rocks)]
+        remainingCapacity.sort()
+
+        fullBags = 0
+
+        for cap in remainingCapacity:
+            if cap == 0:
+                fullBags += 1
+            elif cap <= additionalRocks:
+                fullBags += 1
+                additionalRocks -= cap
+                if not additionalRocks:
+                    break
+        
+        return fullBags
+```
+---
+# Optimal Solution 
+```python
+class Solution:
+    def maximumBags(self, capacity: List[int], rocks: List[int], additionalRocks: int) -> int:
+        remainingCapacity = []
+        fullBags = 0
+
+        for c,r in zip(capacity, rocks):
+            if c == r:
+                fullBags += 1
+            else:
+                remainingCapacity.append(c-r)
+
+        spaceAvailable = sum(remainingCapacity)
+
+        if(additionalRocks  >= spaceAvailable):
+            fullBags += len(remainingCapacity)
+            return fullBags
+
+        remainingCapacity.sort()
+        
+        for cap in remainingCapacity:
+            if cap <= additionalRocks:
+                fullBags += 1
+                additionalRocks -= cap
+                if not additionalRocks:
+                    break
+        
+        return fullBags
+```
