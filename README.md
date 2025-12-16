@@ -339,6 +339,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2271-rearrange-array-elements-by-sign](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2277-count-equal-and-divisible-pairs-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2277-count-equal-and-divisible-pairs-in-an-array) |
+| [2279-maximum-bags-with-full-capacity-of-rocks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2279-maximum-bags-with-full-capacity-of-rocks) |
 | [2283-sort-even-and-odd-indices-independently](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2283-sort-even-and-odd-indices-independently) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2294-minimum-time-to-complete-trips](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2294-minimum-time-to-complete-trips) |
@@ -1093,6 +1094,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
 | [2269-count-elements-with-strictly-smaller-and-greater-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2269-count-elements-with-strictly-smaller-and-greater-elements) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2274-keep-multiplying-found-values-by-two) |
+| [2279-maximum-bags-with-full-capacity-of-rocks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2279-maximum-bags-with-full-capacity-of-rocks) |
 | [2283-sort-even-and-odd-indices-independently](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2283-sort-even-and-odd-indices-independently) |
 | [2284-smallest-value-of-the-rearranged-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2284-smallest-value-of-the-rearranged-number) |
 | [2331-intersection-of-multiple-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2331-intersection-of-multiple-arrays) |
@@ -1296,6 +1298,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2199-two-furthest-houses-with-different-colors](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2199-two-furthest-houses-with-different-colors) |
 | [2248-minimum-cost-of-buying-candies-with-discount](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2248-minimum-cost-of-buying-candies-with-discount) |
 | [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
+| [2279-maximum-bags-with-full-capacity-of-rocks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2279-maximum-bags-with-full-capacity-of-rocks) |
 | [2345-minimum-number-of-operations-to-convert-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2345-minimum-number-of-operations-to-convert-time) |
 | [2362-minimum-rounds-to-complete-all-tasks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
