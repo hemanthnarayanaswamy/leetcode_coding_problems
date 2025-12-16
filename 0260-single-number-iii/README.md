@@ -33,3 +33,20 @@
 	<li><code>-2<sup>31</sup> &lt;= nums[i] &lt;= 2<sup>31</sup> - 1</code></li>
 	<li>Each integer in <code>nums</code> will appear twice, only two integers will appear once.</li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def singleNumber(self, nums: List[int]) -> List[int]:
+        numsFreq = Counter(nums)
+        res = []
+
+        for num in numsFreq:
+            if numsFreq[num] == 1:
+                res.append(num)
+            
+            if len(res) == 2:
+                return res
+```
+---
+# Bit Manipulation
