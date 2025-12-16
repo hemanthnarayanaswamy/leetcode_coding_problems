@@ -5,15 +5,14 @@ class Solution:
 
         fullBags = 0
 
-        for i in range(len(remainingCapacity)):
-            if remainingCapacity[i] and remainingCapacity[i] <= additionalRocks:
-                additionalRocks -= remainingCapacity[i]
-                remainingCapacity[i] = 0
-            
-            if remainingCapacity[i] == 0:
+        for cap in remainingCapacity:
+            if cap == 0:
                 fullBags += 1
             
-            if additionalRocks == 0:
-                break
-
+            if cap and cap <= additionalRocks:
+                fullBags += 1
+                additionalRocks -= cap
+                if not additionalRocks:
+                    break
+        
         return fullBags
