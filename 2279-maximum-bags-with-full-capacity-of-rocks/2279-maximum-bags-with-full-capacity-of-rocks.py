@@ -8,8 +8,7 @@ class Solution:
         for cap in remainingCapacity:
             if cap == 0:
                 fullBags += 1
-            
-            if cap and cap <= additionalRocks:
+            elif cap <= additionalRocks:
                 fullBags += 1
                 additionalRocks -= cap
                 if not additionalRocks:
