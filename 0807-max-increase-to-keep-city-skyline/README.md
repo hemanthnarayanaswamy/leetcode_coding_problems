@@ -38,3 +38,50 @@ gridNew = [ [8, 4, 8, 7],
 	<li><code>2 &lt;= n &lt;= 50</code></li>
 	<li><code>0 &lt;= grid[r][c] &lt;= 100</code></li>
 </ul>
+
+# Approach 
+**For every `square ([i][j])` calculate the max value it can have without altering the city skyline `(i.e. the minimum of the highest value of the column and row it is in)`**
+`Than calculate the total sum of height increases you could do. So all your max values - the actual values. and return that number.`
+
+The skyline looking from the top is `col_maxes = [max(column_0), max(column_1), ...]`. Similarly, the skyline from the left is `row_maxes [max(row_0), max(row_1), ...]`
+
+In particular, each building `grid[r][c]` could become height `min(max(row_r), max(col_c))`, and this is the largest such height. If it were larger, say `grid[r][c] > max(row_r)`, then the part of the skyline `row_maxes = [..., max(row_r), ...]` would change.
+
+These increases are also independent (none of them change the skyline), so we can perform them independently.
+# Solution 
+```python
+class Solution:
+    def maxIncreaseKeepingSkyline(self, grid: List[List[int]]) -> int:
+        rowMax = defaultdict(int)
+        colMax = defaultdict(int)
+        totalSum = 0
+        n = len(grid)
+
+        for i in range(n):
+            rowMax[i] = max(grid[i])
+            for j in range(n):
+                h = grid[i][j]
+                if colMax[j] < h:
+                    colMax[j] = h
+        
+        for i in range(n):
+            for j in range(n):
+                totalSum += abs(grid[i][j] - min(rowMax[i], colMax[j]))
+        
+        return totalSum
+```
+---
+```python
+class Solution:
+    def maxIncreaseKeepingSkyline(self, grid: List[List[int]]) -> int:
+        n = len(grid)
+        rowMax = [max(row) for row in grid]
+        colMax = [max(col) for col in zip(*grid)]
+        
+        totalSum = 0
+        for i in range(n):
+            for j in range(n):
+                totalSum += min(rowMax[i], colMax[j]) - grid[i][j]
+        
+        return totalSum
+```
