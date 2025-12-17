@@ -7,6 +7,6 @@ class Solution:
         totalSum = 0
         for i in range(n):
             for j in range(n):
-                totalSum += abs(min(rowMax[i], colMax[j])) - grid[i][j]
+                totalSum += min(rowMax[i], colMax[j]) - grid[i][j]
         
         return totalSum
