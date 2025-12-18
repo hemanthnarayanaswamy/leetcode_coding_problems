@@ -697,6 +697,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0859-buddy-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0859-buddy-strings) |
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0920-uncommon-words-from-two-sentences) |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [0953-reverse-only-letters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0953-reverse-only-letters) |
 | [0979-di-string-match](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0979-di-string-match) |
 | [0981-delete-columns-to-make-sorted](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0981-delete-columns-to-make-sorted) |
@@ -1239,6 +1240,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0735-asteroid-collision](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0739-daily-temperatures) |
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [0983-validate-stack-sequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0983-validate-stack-sequences) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
@@ -1268,6 +1270,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0807-max-increase-to-keep-city-skyline](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0807-max-increase-to-keep-city-skyline) |
 | [0890-lemonade-change](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0890-lemonade-change) |
 | [0917-boats-to-save-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0917-boats-to-save-people) |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [0948-bag-of-tokens](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0948-bag-of-tokens) |
 | [0979-di-string-match](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0979-di-string-match) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0982-minimum-increment-to-make-array-unique) |
