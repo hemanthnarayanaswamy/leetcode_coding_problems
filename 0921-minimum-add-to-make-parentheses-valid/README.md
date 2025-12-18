@@ -36,3 +36,28 @@
 	<li><code>1 &lt;= s.length &lt;= 1000</code></li>
 	<li><code>s[i]</code> is either <code>&#39;(&#39;</code> or <code>&#39;)&#39;</code>.</li>
 </ul>
+
+# Solution 
+1. Every `(`, we put it into the stack
+2. When `)`, we see if there are any `)` in `stack` and `pop()` it.
+3. If `)` and no elements in `stack` means we need to add a extra `(` to make the string valid. 
+4. Now after the iteration **If there are still elements in the stack that means, We need to add extrac closing brackets for all opening brackets in stack**
+
+```python
+class Solution:
+    def minAddToMakeValid(self, s: str) -> int:
+        stack = []
+        toAdd = 0
+
+        for c in s:
+            if c == '(':
+                stack.append(c)
+            elif stack:
+                stack.pop()
+            else:
+                toAdd += 1
+        
+        toAdd += len(stack)
+
+        return toAdd
+```
