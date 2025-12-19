@@ -11,9 +11,6 @@ class Solution:
             tmpSum += i
             if tmpSum > maxSum:
                 return count
-            elif tmpSum == maxSum:
-                count += 1
-                return count
             else:
                 count += 1
         
