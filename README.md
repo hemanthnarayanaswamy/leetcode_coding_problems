@@ -203,6 +203,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0940-fruit-into-baskets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0940-fruit-into-baskets) |
 | [0941-sort-array-by-parity](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0941-sort-array-by-parity) |
 | [0941-valid-mountain-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0941-valid-mountain-array) |
+| [0944-delete-columns-to-make-sorted](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0944-delete-columns-to-make-sorted) |
 | [0948-sort-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0948-sort-an-array) |
 | [0948-bag-of-tokens](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0948-bag-of-tokens) |
 | [0950-x-of-a-kind-in-a-deck-of-cards](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0950-x-of-a-kind-in-a-deck-of-cards) |
@@ -702,6 +703,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0921-minimum-add-to-make-parentheses-valid) |
+| [0944-delete-columns-to-make-sorted](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0944-delete-columns-to-make-sorted) |
 | [0953-reverse-only-letters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0953-reverse-only-letters) |
 | [0979-di-string-match](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0979-di-string-match) |
 | [0981-delete-columns-to-make-sorted](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0981-delete-columns-to-make-sorted) |
