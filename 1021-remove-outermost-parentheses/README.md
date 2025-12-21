@@ -49,3 +49,76 @@ After removing outer parentheses of each part, this is &quot;&quot; + &quot;&quo
 	<li><code>s[i]</code> is either <code>&#39;(&#39;</code> or <code>&#39;)&#39;</code>.</li>
 	<li><code>s</code> is a valid parentheses string.</li>
 </ul>
+
+# Approach
+* For a `valid parentheses`, `Opening Brackets == Closing Brackets`
+* When the above condition is met for the stored string, we remove the `first & last` index. Then store the intermediate result before proceeding to next valid iteration. 
+
+```python
+class Solution:
+    def removeOuterParentheses(self, s: str) -> str:
+        openCount = closeCount = 0
+        res = ''
+        stack = []
+
+        for i in range(len(s)):
+            stack.append(s[i])
+            if s[i] == '(':
+                openCount += 1
+            else:
+                closeCount += 1
+
+            if openCount == closeCount:
+                stack.pop()
+                stack.pop(0)
+                res += ''.join(stack)
+                stack = []
+
+        return res
+```
+---
+# Improved Solution 
+```python
+class Solution:
+    def removeOuterParentheses(self, s: str) -> str:
+        openCount = closeCount = 0
+        res = ''
+        idx = 0
+
+        for i in range(len(s)):
+            if s[i] == '(':
+                openCount += 1
+            else:
+                closeCount += 1
+
+            if openCount == closeCount:
+                res += s[idx+1:i]
+                idx = i+1
+
+        return res
+```
+---
+# Optimal Solution 
+```python
+class Solution(object):
+    def removeOuterParentheses(self, s):
+        result = ""
+        count = 0
+
+        for ch in s:
+            if ch == "(":
+                if count > 0:
+                    result += ch
+                count += 1
+            else:
+                count -= 1
+                if count > 0:
+                    result += ch
+
+        return result
+```
+1. If the character is '(': --> Append it only if count > 0 (not outermost). --> Increment count.
+2. If the character is ')': --> Decrement count. --> Append it only if count > 0 after decrement.
+**This removes the outermost parentheses from every primitive substring.**
+
+            
