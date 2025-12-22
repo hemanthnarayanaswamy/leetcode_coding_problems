@@ -43,3 +43,59 @@ For the prefix [1, 1, 2, 4, 8, 16], the conversion array is [2, 2, 4, 8, 16, 32]
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Solution 
+For each position `i`, we need: **The maximum value seen so far**. 
+* The cumulative sum of all converted values. Instead of recomputing max and prefix sum at every step (which would be costly), we maintain running values: Update max as we go. 
+* Update `prefix sum (sum)` as we go. This way, everything can be done in one pass.
+
+```python
+class Solution:
+    def findPrefixScore(self, nums: List[int]) -> List[int]:
+        conver = []
+        prefix = 0
+        currentMax = nums[0]
+
+        for i in range(len(nums)):
+            if currentMax < nums[i]:
+                currentMax = nums[i]
+            score = prefix + nums[i] + currentMax
+            conver.append(score)
+            prefix = score
+        
+        return conver
+```
+---
+```python
+class Solution:
+    def findPrefixScore(self, nums: List[int]) -> List[int]:
+        conver = []
+        prefix = 0
+        currentMax = nums[0]
+
+        for num in nums:
+            if num > currentMax:
+                currentMax = num
+            score = prefix + num + currentMax
+            conver.append(score)
+            prefix = score
+        
+        return conver
+```
+---
+```python
+class Solution:
+    def findPrefixScore(self, nums: List[int]) -> List[int]:
+        conver = []
+        prefix = 0
+        currentMax = nums[0]
+
+        for num in nums:
+            if num > currentMax:
+                currentMax = num
+
+            prefix += num + currentMax
+            conver.append(prefix)
+        
+        return conver
+```
