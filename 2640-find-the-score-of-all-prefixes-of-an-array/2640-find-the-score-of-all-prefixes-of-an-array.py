@@ -7,8 +7,8 @@ class Solution:
         for num in nums:
             if num > currentMax:
                 currentMax = num
-            score = prefix + num + currentMax
-            conver.append(score)
-            prefix = score
+
+            prefix += num + currentMax
+            conver.append(prefix)
         
         return conver
