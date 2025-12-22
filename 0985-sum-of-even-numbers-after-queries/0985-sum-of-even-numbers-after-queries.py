@@ -6,11 +6,10 @@ class Solution:
         for val, idx in queries:
             if nums[idx] % 2 == 0:
                 evenSum -= nums[idx]
+            nums[idx] += val
             
-            nums[idx] += val 
             if nums[idx] % 2 == 0:
                 evenSum += nums[idx]
-            
             res.append(evenSum)
         
         return res
