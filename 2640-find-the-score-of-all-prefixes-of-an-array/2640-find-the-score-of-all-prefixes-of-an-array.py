@@ -4,10 +4,10 @@ class Solution:
         prefix = 0
         currentMax = nums[0]
 
-        for i in range(len(nums)):
-            if currentMax < nums[i]:
-                currentMax = nums[i]
-            score = prefix + nums[i] + currentMax
+        for num in nums:
+            if num > currentMax:
+                currentMax = num
+            score = prefix + num + currentMax
             conver.append(score)
             prefix = score
         
