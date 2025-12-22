@@ -34,3 +34,44 @@ After adding 2 to nums[3], the array is [-2,-1,3,6], and the sum of even values 
 	<li><code>-10<sup>4</sup> &lt;= val<sub>i</sub> &lt;= 10<sup>4</sup></code></li>
 	<li><code>0 &lt;= index<sub>i</sub> &lt; nums.length</code></li>
 </ul>
+
+# Solution 
+1. Calculate the `evenSum` initially and before modifying `nums[i]` check if the value was even before then subtract from the original `evenSum` and then after adding the `val` to `nums[i]` again check if, its even and then again add back to `evenSum`. 
+```python
+class Solution:
+    def sumEvenAfterQueries(self, nums: List[int], queries: List[List[int]]) -> List[int]:
+        n = len(nums)
+        evenSum = sum(num for num in nums if num % 2 == 0)
+        qn = len(queries)
+        res = [0] * qn
+
+        for i, query in enumerate(queries):
+            val, idx = query
+
+            if nums[idx] % 2 == 0:
+                evenSum -= nums[idx]
+            
+            nums[idx] += val 
+            if nums[idx] % 2 == 0:
+                evenSum += nums[idx]
+            
+            res[i] = evenSum 
+        
+        return res
+```
+---
+```python
+class Solution:
+    def sumEvenAfterQueries(self, nums: List[int], queries: List[List[int]]) -> List[int]:
+        even = sum(x for x in nums if x % 2 == 0)
+        answer = []
+        for val, idx in queries:
+            if nums[idx] % 2 == 0:
+                even -= nums[idx]
+            nums[idx] += val
+            if nums[idx] % 2 == 0:
+                even += nums[idx]
+
+            answer.append(even)
+        return answer
+```
