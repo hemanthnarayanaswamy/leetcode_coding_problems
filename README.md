@@ -212,6 +212,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0981-delete-columns-to-make-sorted](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0981-delete-columns-to-make-sorted) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0982-minimum-increment-to-make-array-unique) |
 | [0983-validate-stack-sequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0983-validate-stack-sequences) |
+| [0985-sum-of-even-numbers-after-queries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0985-sum-of-even-numbers-after-queries) |
 | [1001-n-repeated-element-in-size-2n-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1001-n-repeated-element-in-size-2n-array) |
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1019-squares-of-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1019-squares-of-a-sorted-array) |
@@ -890,6 +891,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
 | [0898-transpose-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0898-transpose-matrix) |
 | [0983-validate-stack-sequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0983-validate-stack-sequences) |
+| [0985-sum-of-even-numbers-after-queries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0985-sum-of-even-numbers-after-queries) |
 | [1195-distribute-candies-to-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1195-distribute-candies-to-people) |
 | [1310-watering-plants](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1310-watering-plants) |
 | [1378-cells-with-odd-values-in-a-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1378-cells-with-odd-values-in-a-matrix) |
