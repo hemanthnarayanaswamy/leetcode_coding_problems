@@ -1,17 +1,8 @@
 class Solution:
     def occurrencesOfElement(self, nums: List[int], queries: List[int], x: int) -> List[int]:
-        occurrence = []
-        res = []
+        ocs = [i for i, v in enumerate(nums) if v == x]
+        n = len(ocs)
 
-        for i, num in enumerate(nums):
-            if num == x:
-                occurrence.append(i)
-        
-        no = len(occurrence)
-        for q in queries:
-            if q > no:
-                res.append(-1)
-            else:
-                res.append(occurrence[q-1])
-        
-        return res
+        ret = [ocs[q - 1] if q <= n else -1 for q in queries]
+
+        return ret
