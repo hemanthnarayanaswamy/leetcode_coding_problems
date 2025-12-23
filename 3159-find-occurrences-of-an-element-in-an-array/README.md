@@ -44,3 +44,49 @@
 	<li><code>1 &lt;= queries[i] &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= nums[i], x &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+# Solution 
+```ini
+Better explanation for example #1:
+
+The 1st occurrence of 1 in nums is at index 0.
+The 3rd occurrence of 1 does not exist (-1).
+The 2nd occurrence of 1 is at index 2.
+The 4th occurrence of 1 does not exist (-1).
+
+Output: [0,-1,2,-1]
+```
+---
+```python
+class Solution:
+    def occurrencesOfElement(self, nums: List[int], queries: List[int], x: int) -> List[int]:
+        occurrence = []
+        res = []
+
+        for i, num in enumerate(nums):
+            if num == x:
+                occurrence.append(i)
+        
+        no = len(occurrence)
+        for q in queries:
+            if q > no:
+                res.append(-1)
+            else:
+                res.append(occurrence[q-1])
+        
+        return res
+```
+---
+# Optimal Solution 
+
+```python
+class Solution:
+    def occurrencesOfElement(self, nums: List[int], queries: List[int], x: int) -> List[int]:
+        ocs = [i for i, v in enumerate(nums) if v == x]
+        n = len(ocs)
+
+        ret = [ocs[q - 1] if q <= n else -1 for q in queries]
+
+        return ret
+```
+
