@@ -3,12 +3,7 @@ class Solution:
         happiness.sort(reverse=True)
         maxHappy = 0
         
-        for i in range(len(happiness)):
-            tmp = happiness[i] - i 
-            if tmp > 0:
-                maxHappy += tmp
-            k -= 1
-            if k == 0:
-                break
+        for i in range(k):
+            maxHappy += max(happiness[i] - i, 0)
 
         return maxHappy
