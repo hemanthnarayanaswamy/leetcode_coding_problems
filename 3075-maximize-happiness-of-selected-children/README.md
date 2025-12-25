@@ -47,3 +47,71 @@ The sum of the happiness values of the selected children is 5.
 	<li><code>1 &lt;= happiness[i] &lt;= 10<sup>8</sup></code></li>
 	<li><code>1 &lt;= k &lt;= n</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def maximumHappinessSum(self, happiness: List[int], k: int) -> int:
+        happiness.sort(reverse=True)
+        maxHappy = 0
+        
+        for i in range(len(happiness)):
+            if k:
+                tmp = happiness[i] - i 
+                k -= 1
+                if tmp > 0:
+                    maxHappy += tmp
+            else:
+                break
+        
+        return maxHappy
+```
+---
+```python
+class Solution:
+    def maximumHappinessSum(self, happiness: List[int], k: int) -> int:
+        happiness.sort(reverse=True)
+        maxHappy = 0
+        
+        for i in range(len(happiness)):
+            tmp = happiness[i] - i 
+            if tmp > 0:
+                maxHappy += tmp
+            k -= 1
+            if k == 0:
+                break
+
+        return maxHappy
+```
+---
+# Optimal Solution 
+```python
+class Solution:
+    def maximumHappinessSum(self, happiness: List[int], k: int) -> int:
+        happiness.sort(reverse=True)
+        maxHappy = 0
+        
+        for i in range(k):
+            maxHappy += max(happiness[i] - i, 0)
+
+        return maxHappy
+```
+```python
+class Solution:
+    def maximumHappinessSum(self, happiness: List[int], k: int) -> int:
+        # 妙哉   
+
+        happiness.sort(reverse = True)
+
+        res = 0
+
+        for i in range(k):
+            gain = happiness[i] - i
+
+            if gain <= 0: # If the gain is zero here, then everything after is also zero as its a sorted array
+                return res
+            
+            res += gain
+        
+        return res
+```
