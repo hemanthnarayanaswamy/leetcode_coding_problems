@@ -6,10 +6,11 @@ class Solution:
         for i in range(len(happiness)):
             if k:
                 tmp = happiness[i] - i 
-                k -= 1
                 if tmp > 0:
                     maxHappy += tmp
-            else:
+            k -= 1
+            if k == 0:
                 break
-        
+
         return maxHappy
+        
