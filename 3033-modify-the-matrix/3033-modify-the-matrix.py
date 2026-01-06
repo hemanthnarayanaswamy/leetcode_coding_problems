@@ -1,14 +1,15 @@
 class Solution:
     def modifiedMatrix(self, matrix: List[List[int]]) -> List[List[int]]:
-        colMax = defaultdict(int)
-        i = 0
+        colMax = []
 
         for col in zip(*matrix):
-            colMax[i] = max(col)
-            i += 1 
+            colMax.append(max(col))
         
-        for i in range(len(matrix)):
-            for j in range(len(matrix[0])):
+        n = len(matrix)
+        m = len(matrix[0])
+        
+        for i in range(n):
+            for j in range(m):
                 if matrix[i][j] == -1:
                     matrix[i][j] = colMax[j]
         
