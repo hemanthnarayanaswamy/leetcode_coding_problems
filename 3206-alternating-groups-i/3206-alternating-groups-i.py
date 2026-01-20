@@ -8,7 +8,7 @@ class Solution:
             curr = colors[i]
             nxt = colors[(i + 1) % n]
             
-            if prev != curr != nxt:
+            if prev != curr != prev and curr != nxt:
                 count += 1
                 
         return count  
