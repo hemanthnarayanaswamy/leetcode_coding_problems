@@ -47,3 +47,21 @@
 	<li><code>s</code> consists of lowercase English letters.</li>
 	<li><code>1 &lt;= k &lt;= s.length</code></li>
 </ul>
+
+# Solution
+```python
+class Solution:
+    def reversePrefix(self, s: str, k: int) -> str:
+        if k == 1:
+            return s
+        elif k == len(s):
+            return s[::-1]
+        else:
+            return s[:k][::-1] + s[k:]
+```
+---
+```python
+class Solution:
+    def reversePrefix(self, s: str, k: int) -> str:
+        return s[:k][::-1] + s[k:]
+```
