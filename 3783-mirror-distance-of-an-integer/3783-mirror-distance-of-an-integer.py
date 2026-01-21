@@ -3,8 +3,9 @@ class Solution:
         def mirrorNum(n):
             res = 0
             while n:
-                res = res*10 + (n % 10)
-                n //= 10
+                quotient, remainder = divmod(n, 10)
+                res = res*10 + remainder
+                n = quotient
             return res
         
         mn = mirrorNum(n)
