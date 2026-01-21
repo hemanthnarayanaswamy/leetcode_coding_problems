@@ -58,3 +58,33 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Solution
+```python
+class Solution:
+    def mirrorDistance(self, n: int) -> int:
+        def mirrorNum(n):
+            res = 0
+            while n:
+                quotient, remainder = divmod(n, 10)
+                res = res*10 + remainder
+                n = quotient
+            return res
+        
+        mn = mirrorNum(n)
+        return abs(n - mn)
+```
+---
+```python
+class Solution:
+    def mirrorDistance(self, n: int) -> int:
+        def reversedNum(num):
+            res = 0
+            while num:
+                res *= 10
+                res += (num%10)
+                num = num // 10
+            return res
+        
+        return abs(n - reversedNum(n))
+```
