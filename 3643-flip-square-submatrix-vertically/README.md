@@ -43,3 +43,31 @@
 	<li><code>0 &lt;= y &lt; n</code></li>
 	<li><code>1 &lt;= k &lt;= min(m - x, n - y)</code></li>
 </ul>
+
+# Solution 
+**Use two pointers at the block's top and bottom rows and swap their k columns pairwise until the pointers meet.**
+
+```python
+class Solution:
+    def reverseSubmatrix(self, grid: List[List[int]], x: int, y: int, k: int) -> List[List[int]]:
+        l, h = x, x + k - 1 # low and high pointer between the botton and the top rows
+
+        while l < r:
+            grid[l][y:y+k], grid[h][y:y+k] = grid[h][y:y+k], grid[l][y:y+k] # swapping bottom and top rows
+            l += 1
+            h -= 1
+        
+        return grid
+```
+---
+```python
+class Solution:
+    def reverseSubmatrix(self, grid: List[List[int]], x: int, y: int, k: int) -> List[List[int]]:
+
+        for i in range(k // 2):
+            rowA, rowB = grid[x + i], grid[x - i + k - 1]
+            rowA[y: y + k], rowB[y: y + k] = rowB[y: y + k], rowA[y: y + k]
+
+        return grid
+```
+**time complexity is O(K^2)**
