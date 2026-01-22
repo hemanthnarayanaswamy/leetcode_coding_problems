@@ -48,3 +48,31 @@
 	<li><code>1 &lt;= s.length &lt;= 100</code></li>
 	<li><code>s</code> consists only of the characters <code>&#39;1&#39;</code> and <code>&#39;2&#39;</code>.</li>
 </ul>
+
+# Solution
+* Use the string into list and use it as stack and pop elements until you find `2` at the end (having 2 at the end means its a even number). 
+```python
+class Solution:
+    def largestEven(self, s: str) -> str:
+        s = list(s)
+        for i in range(len(s)-1, -1, -1):
+            if s[i] == '2':
+                break
+            else:
+                s.pop()
+        
+        return ''.join(s)
+```
+---
+```python
+class Solution:
+    def largestEven(self, s: str) -> str:
+        x=int(s)
+        while True:
+            if x%2==0:
+                return str(x)
+            else:
+                x=x//10
+                if x==0:
+                    return ""
+```
