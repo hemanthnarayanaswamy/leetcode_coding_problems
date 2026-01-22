@@ -5,6 +5,6 @@ class Solution:
             if s[i] == '2':
                 break
             else:
-                s.pop(i)
+                s.pop()
         
         return ''.join(s)
