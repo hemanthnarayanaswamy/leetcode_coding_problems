@@ -419,6 +419,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2881-split-strings-by-separator](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2881-split-strings-by-separator) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2888-minimum-index-of-a-valid-split) |
 | [2892-check-if-array-is-good](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2892-check-if-array-is-good) |
+| [2903-find-indices-with-index-and-value-difference-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2903-find-indices-with-index-and-value-difference-i) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [2977-check-if-a-string-is-an-acronym-of-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2977-check-if-a-string-is-an-acronym-of-words) |
 | [3033-modify-the-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3033-modify-the-matrix) |
@@ -1030,6 +1031,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2634-minimum-common-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2634-minimum-common-value) |
 | [2698-find-the-array-concatenation-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2698-find-the-array-concatenation-value) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
+| [2903-find-indices-with-index-and-value-difference-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2903-find-indices-with-index-and-value-difference-i) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [3239-minimum-number-of-flips-to-make-binary-grid-palindromic-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3239-minimum-number-of-flips-to-make-binary-grid-palindromic-i) |
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
