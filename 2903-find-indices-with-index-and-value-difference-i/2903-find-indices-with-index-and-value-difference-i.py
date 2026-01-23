@@ -4,7 +4,10 @@ class Solution:
 
         for i in range(n-indexDifference):
             for j in range(i+indexDifference, n):
-                if abs(nums[i] - nums[j]) >= valueDifference:
-                    return [i, j]
+                notSuitable = set()
+                if nums[j] not in notSuitable:
+                    if abs(nums[i] - nums[j]) >= valueDifference:
+                        return [i, j]
+                    notSuitable.add(nums[j])
         
         return [-1, -1]
