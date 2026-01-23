@@ -33,3 +33,30 @@
 	<li><code>3 &lt;= arr.length &lt;= 5 * 10<sup>4</sup></code></li>
 	<li><code>-10<sup>4</sup> &lt;= arr[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+# Intuition
+* Firstly, For the array to be divided into 3 parts, the sum of the array should always be divisible by 2. If the sum is not divisible or divide into 3 parts then `False`.
+* Next part is to check, if we have 3 groups with the equal parts. 
+
+```python
+class Solution:
+    def canThreePartsEqualSum(self, arr: List[int]) -> bool:
+        total = sum(arr)
+        q, r = divmod(total, 3)
+    
+        if r:    # Check if the array can be divided into 3 parts 
+            return False
+
+        tmp = count = 0
+        for num in arr:
+            tmp += num  
+
+            if tmp == q:
+                tmp = 0
+                count += 1
+                if count == 3:
+                    return True
+        
+        return False
+```
+
