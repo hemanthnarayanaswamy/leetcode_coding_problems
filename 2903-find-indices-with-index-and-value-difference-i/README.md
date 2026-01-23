@@ -51,3 +51,52 @@ Hence, [-1,-1] is returned.</pre>
 	<li><code>0 &lt;= indexDifference &lt;= 100</code></li>
 	<li><code>0 &lt;= valueDifference &lt;= 50</code></li>
 </ul>
+
+# Solution 
+* Loop with `i` from start to `n-IndexDiff`; Inside, **loop with `j` from `indexDiff + i to n`**
+* If the two numbers satisfy the condition, return the pair `[i,j]`
+
+```python
+class Solution:
+    def findIndices(self, nums: List[int], indexDifference: int, valueDifference: int) -> List[int]:
+        n = len(nums)
+
+        for i in range(n-indexDifference):
+            for j in range(i+indexDifference, n):
+                if abs(nums[i] - nums[j]) >= valueDifference:
+                    return [i, j]
+        
+        return [-1, -1]
+```
+---
+```python
+class Solution:
+    def findIndices(self, nums: List[int], indexDifference: int, valueDifference: int) -> List[int]:
+        n = len(nums)
+
+        for i in range(n-indexDifference):
+            for j in range(i+indexDifference, n):
+                notSuitable = set()
+                if nums[j] not in notSuitable:
+                    if abs(nums[i] - nums[j]) >= valueDifference:
+                        return [i, j]
+                    notSuitable.add(nums[j])
+        
+        return [-1, -1]
+```
+---
+```python
+class Solution:
+    def findIndices(self, nums: List[int], indexDifference: int, valueDifference: int) -> List[int]:
+        for i, val in enumerate(nums):
+            for j, val2 in enumerate(nums):
+                if abs(val - val2) < valueDifference:
+                    continue
+                if abs(i -j) < indexDifference:
+                    continue
+
+                # if abs(val - val2) >= valueDifference and abs(i -j) >= indexDifference:
+                return [i, j]
+                
+        return [-1, -1]
+```
