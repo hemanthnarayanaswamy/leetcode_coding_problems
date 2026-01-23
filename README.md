@@ -215,6 +215,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0983-validate-stack-sequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0983-validate-stack-sequences) |
 | [0985-sum-of-even-numbers-after-queries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0985-sum-of-even-numbers-after-queries) |
 | [1001-n-repeated-element-in-size-2n-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1001-n-repeated-element-in-size-2n-array) |
+| [1013-partition-array-into-three-parts-with-equal-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1013-partition-array-into-three-parts-with-equal-sum) |
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1019-squares-of-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1019-squares-of-a-sorted-array) |
 | [1029-two-city-scheduling](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1029-two-city-scheduling) |
@@ -1307,6 +1308,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0948-bag-of-tokens](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0948-bag-of-tokens) |
 | [0979-di-string-match](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0979-di-string-match) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0982-minimum-increment-to-make-array-unique) |
+| [1013-partition-array-into-three-parts-with-equal-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1013-partition-array-into-three-parts-with-equal-sum) |
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1026-string-without-aaa-or-bbb](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1026-string-without-aaa-or-bbb) |
 | [1029-two-city-scheduling](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1029-two-city-scheduling) |
