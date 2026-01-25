@@ -4,7 +4,6 @@ class Solution:
 
         while n:
             quotient, remainder = divmod(n, 10)
-            print(quotient, remainder)
             if remainder:
                 res.append(str(remainder))
             n = quotient
