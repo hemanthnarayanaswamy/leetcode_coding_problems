@@ -33,3 +33,55 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 10<sup>15</sup></code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def removeZeros(self, n: int) -> int:
+        res = []
+
+        while n:
+            quotient, remainder = divmod(n, 10)
+            if remainder:
+                res.append(str(remainder))
+            n = quotient
+        
+        return int(''.join(res[::-1]))
+```
+---
+```python
+class Solution:
+    def removeZeros(self, n: int) -> int:
+        res = []
+
+        for i in str(n):
+            if i != '0':
+                res.append(i)
+        
+        return int(''.join(res))
+```
+---
+```python
+class Solution:
+    def removeZeros(self, n: int) -> int:
+        res = 0
+
+        for i in str(n):
+            if i != '0':
+                res = res * 10 + int(i)
+        
+        return res
+```
+---
+```python
+class Solution(object):
+    def removeZeros(self, n: int) -> int:
+        s = ""
+        while n:
+            rem = n % 10
+            if rem != 0:
+                s = s + str(rem)
+            n //= 10
+        s = s[::-1]
+        return int(s)
+```
