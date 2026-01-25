@@ -2,10 +2,8 @@ class Solution:
     def removeZeros(self, n: int) -> int:
         res = []
 
-        while n:
-            quotient, remainder = divmod(n, 10)
-            if remainder:
-                res.append(str(remainder))
-            n = quotient
+        for i in str(n):
+            if i != '0':
+                res.append(i)
         
-        return int(''.join(res[::-1]))
+        return int(''.join(res))
