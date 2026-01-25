@@ -1,9 +1,10 @@
-class Solution:
+class Solution(object):
     def removeZeros(self, n: int) -> int:
-        res = 0
-
-        for i in str(n):
-            if i != '0':
-                res = res * 10 + int(i)
-        
-        return res
+        s = ""
+        while n:
+            rem = n % 10
+            if rem != 0:
+                s = s + str(rem)
+            n //= 10
+        s = s[::-1]
+        return int(s)
