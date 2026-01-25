@@ -1,9 +1,9 @@
 class Solution:
     def removeZeros(self, n: int) -> int:
-        res = []
+        res = 0
 
         for i in str(n):
             if i != '0':
-                res.append(i)
+                res = res * 10 + int(i)
         
-        return int(''.join(res))
+        return res
