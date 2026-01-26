@@ -8,7 +8,7 @@ class Solution:
         min1 = min(nums1)
         min2 = min(nums2)
 
-        if min1 < min2:
-            return min1 * 10 + min2
-        else:
-            return min2 * 10 + min1
+        if min2 < min1:
+            min1, min2 = min2, min1
+
+        return min1 * 10 + min2
