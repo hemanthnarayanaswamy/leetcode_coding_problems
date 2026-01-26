@@ -5,10 +5,7 @@ class Solution:
         if commonNums:
             return min(commonNums)
 
-        min1 = min(nums1)
-        min2 = min(nums2)
+        n1 = min(nums1)
+        n2 = min(nums2)
 
-        if min2 < min1:
-            min1, min2 = min2, min1
-
-        return min1 * 10 + min2
+        return min(n1, n2) * 10 + max(n1, n2)
