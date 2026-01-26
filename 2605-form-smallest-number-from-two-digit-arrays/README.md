@@ -24,3 +24,52 @@
 	<li><code>1 &lt;= nums1[i], nums2[i] &lt;= 9</code></li>
 	<li>All digits in each array are <strong>unique</strong>.</li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def minNumber(self, nums1: List[int], nums2: List[int]) -> int:
+        commonNums = set(nums1) & set(nums2)
+
+        if commonNums:
+            return min(commonNums)
+
+        min1 = min(nums1)
+        min2 = min(nums2)
+
+        if min1 < min2:
+            return min1 * 10 + min2
+        else:
+            return min2 * 10 + min1
+```
+---
+```python
+class Solution:
+    def minNumber(self, nums1: List[int], nums2: List[int]) -> int:
+        commonNums = set(nums1) & set(nums2)
+
+        if commonNums:
+            return min(commonNums)
+
+        min1 = min(nums1)
+        min2 = min(nums2)
+
+        if min2 < min1:
+            min1, min2 = min2, min1
+
+        return min1 * 10 + min2
+```
+---
+```python
+class Solution:
+    def minNumber(self, nums1: List[int], nums2: List[int]) -> int:
+        commonNums = set(nums1) & set(nums2)
+
+        if commonNums:
+            return min(commonNums)
+
+        n1 = min(nums1)
+        n2 = min(nums2)
+
+        return min(n1, n2) * 10 + max(n1, n2)
+```
