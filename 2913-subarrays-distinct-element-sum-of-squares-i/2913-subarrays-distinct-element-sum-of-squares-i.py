@@ -10,6 +10,6 @@ class Solution:
                 if c not in distinct:
                     distinct.add(c)
                     l += 1
-                count += l**2
+                count += l*l
         
         return count
