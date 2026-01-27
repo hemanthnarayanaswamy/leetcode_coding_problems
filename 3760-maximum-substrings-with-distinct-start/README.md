@@ -55,3 +55,37 @@
 	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>s</code> consists of lowercase English letters.</li>
 </ul>
+
+# Solution
+
+```python
+class Solution:
+    def maxDistinct(self, s: str) -> int:
+        distinctChar = set()
+
+        for c in s:
+            if c not in distinctChar:
+                distinctChar.add(c)
+        
+        return len(distinctChar)
+```
+---
+```python
+class Solution:
+    def maxDistinct(self, s: str) -> int:
+        distinct = set()
+        count = 0
+
+        for c in s:
+            if c not in distinct:
+                count += 1
+                distinct.add(c)
+        
+        return count
+```
+---
+```python
+class Solution:
+    def maxDistinct(self, s: str) -> int:
+        return len(set(s))
+```
