@@ -6,9 +6,9 @@ class Solution:
         for i in range(n):
             distinct = set()
             l = 0  # To track lenght instead of re calculating everytime
-            for j in range(i, n):
-                if nums[j] not in distinct:
-                    distinct.add(nums[j])
+            for c in nums[i:]:
+                if c not in distinct:
+                    distinct.add(c)
                     l += 1
                 count += l*l
         
