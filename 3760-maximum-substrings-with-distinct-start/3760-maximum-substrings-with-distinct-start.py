@@ -1,9 +1,11 @@
 class Solution:
     def maxDistinct(self, s: str) -> int:
-        distinctChar = set()
+        distinct = set()
+        count = 0
 
         for c in s:
-            if c not in distinctChar:
-                distinctChar.add(c)
+            if c not in distinct:
+                count += 1
+                distinct.add(c)
         
-        return len(distinctChar)
+        return count
