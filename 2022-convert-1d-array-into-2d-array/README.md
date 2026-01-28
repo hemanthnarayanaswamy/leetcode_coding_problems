@@ -41,3 +41,50 @@ It is impossible to fit 2 elements in a 1x1 2D array, so return an empty 2D arra
 	<li><code>1 &lt;= original[i] &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= m, n &lt;= 4 * 10<sup>4</sup></code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def construct2DArray(self, original: List[int], m: int, n: int) -> List[List[int]]:
+        if m * n != len(original):
+            return []
+
+        result = [[0 for _ in range(n)] for _ in range(m)]
+        original = original[::-1]
+
+        for i in range(m):
+            for j in range(n):
+                result[i][j] = original.pop()
+        
+        return result
+```
+---
+```python
+class Solution:
+    def construct2DArray(self, original: List[int], m: int, n: int) -> List[List[int]]:
+        result = []
+        if m * n != len(original):
+            return result
+        
+        i = 0
+        while m:
+            result.append(original[i:i+n])
+            i += n
+            m -= 1
+        
+        return result
+```            
+---
+```python
+class Solution:
+    def construct2DArray(self, original: List[int], m: int, n: int) -> List[List[int]]:
+        result = []
+        idx = 0
+        if m * n == len(original):
+            for i in range(m):
+                result.append(original[idx:idx+n])
+                idx += n
+        
+        return result
+```
+					
