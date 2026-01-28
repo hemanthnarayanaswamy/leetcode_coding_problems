@@ -7,7 +7,6 @@ class Solution:
         i = 0
         while m:
             result.append(original[i:i+n])
-            print(i, i+n, original[i:i+n])
             i += n
             m -= 1
         
