@@ -495,6 +495,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3731-sum-of-variable-length-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3731-sum-of-variable-length-subarrays) |
 | [3747-maximum-difference-between-adjacent-elements-in-a-circular-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3747-maximum-difference-between-adjacent-elements-in-a-circular-array) |
 | [3748-sort-matrix-by-diagonals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3748-sort-matrix-by-diagonals) |
+| [3769-sort-integers-by-binary-reflection](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3769-sort-integers-by-binary-reflection) |
 | [3778-transform-array-by-parity](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3778-transform-array-by-parity) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 | [3832-minimum-cost-to-reach-every-position](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3832-minimum-cost-to-reach-every-position) |
@@ -1174,6 +1175,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
 | [3606-coupon-code-validator](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3606-coupon-code-validator) |
 | [3748-sort-matrix-by-diagonals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3748-sort-matrix-by-diagonals) |
+| [3769-sort-integers-by-binary-reflection](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3769-sort-integers-by-binary-reflection) |
 | [3778-transform-array-by-parity](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3778-transform-array-by-parity) |
 | [3859-maximum-product-of-two-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3859-maximum-product-of-two-digits) |
 | [3871-minimum-deletions-for-at-most-k-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3871-minimum-deletions-for-at-most-k-distinct-characters) |
