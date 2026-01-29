@@ -52,3 +52,41 @@ Note that 3 and 6 have the same reflection, so we arrange them in increasing ord
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Solution 
+* First find the Reflection array for the given array. 
+```ini
+for num in nums:
+       ref = int(bin(num)[2::][::-1], 2)
+       numsRev.append((ref, num))
+```
+* In the new array append the **(Reflection, original Num)** as `Tuple` into the array. 
+* Now `sort()` the array, which sorts the new array on tuples based on the first index which is the reflection numbers and iterate it once again to get the original numbers seperately. 
+
+```python
+class Solution:
+    def sortByReflection(self, nums: List[int]) -> List[int]:
+        numsRev = []
+
+        for num in nums:
+            ref = int(bin(num)[2::][::-1], 2)
+            numsRev.append((ref, num))
+
+        numsRev.sort()
+        
+        return [num for ref, num in numsRev]
+```
+---
+```python
+class Solution:
+    def sortByReflection(self, nums: List[int]) -> List[int]:
+        numsRev = []
+
+        for num in nums:
+            ref = int(bin(num)[-1:1:-1], 2)
+            numsRev.append((ref, num))
+
+        numsRev.sort()
+        
+        return [num for ref, num in numsRev]
+```
