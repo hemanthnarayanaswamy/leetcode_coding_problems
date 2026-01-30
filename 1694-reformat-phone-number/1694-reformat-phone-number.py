@@ -1,6 +1,6 @@
 class Solution:
     def reformatNumber(self, number: str) -> str:
-        number = ''.join([num for num in number if num.isnumeric()])
+        number = number.replace(" ", "").replace("-", "")
         n = len(number)
         res = []
         i = 0           
