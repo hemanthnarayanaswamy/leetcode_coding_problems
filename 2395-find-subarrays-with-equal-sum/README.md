@@ -37,3 +37,21 @@ Note that even though the subarrays have the same content, the two subarrays are
 	<li><code>2 &lt;= nums.length &lt;= 1000</code></li>
 	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Solution 
+**determine whether there exist two subarrays of `length 2`**, Need to check the contiguous pairs sum and store it.  
+```python
+class Solution:
+    def findSubarrays(self, nums: List[int]) -> bool:
+        pairSum = set()
+
+        for i in range(len(nums)-1):
+            tmp = nums[i] + nums[i+1]
+
+            if tmp in pairSum:
+                return True
+                
+            pairSum.add(tmp)
+        
+        return False
+```
