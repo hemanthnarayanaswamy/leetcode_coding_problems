@@ -366,6 +366,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2362-minimum-rounds-to-complete-all-tasks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [2386-min-max-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2386-min-max-game) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2392-successful-pairs-of-spells-and-potions) |
+| [2395-find-subarrays-with-equal-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2395-find-subarrays-with-equal-sum) |
 | [2421-maximum-number-of-pairs-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2421-maximum-number-of-pairs-in-array) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2432-the-employee-that-worked-on-the-longest-task](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2432-the-employee-that-worked-on-the-longest-task) |
@@ -604,6 +605,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2362-minimum-rounds-to-complete-all-tasks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [2372-rearrange-characters-to-make-target-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2372-rearrange-characters-to-make-target-string) |
 | [2377-check-if-number-has-equal-digit-count-and-digit-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2377-check-if-number-has-equal-digit-count-and-digit-value) |
+| [2395-find-subarrays-with-equal-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2395-find-subarrays-with-equal-sum) |
 | [2406-decode-the-message](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2406-decode-the-message) |
 | [2421-maximum-number-of-pairs-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2421-maximum-number-of-pairs-in-array) |
 | [2427-first-letter-to-appear-twice](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2427-first-letter-to-appear-twice) |
