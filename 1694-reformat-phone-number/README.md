@@ -55,3 +55,47 @@ Joining the blocks gives &quot;123-456-78&quot;.
 	<li><code>number</code> consists of digits and the characters <code>&#39;-&#39;</code> and <code>&#39; &#39;</code>.</li>
 	<li>There are at least <strong>two</strong> digits in <code>number</code>.</li>
 </ul>
+
+# Solution
+1. Discard all the spaces and dashes.
+2. Use a while loop. While the string still has digits, check its length and see which rule to apply.
+
+```python
+def reformatNumber(number):
+        number = ''.join([num for num in number if num.isnumeric()])
+        n = len(number)
+        res = []
+        i = 0           
+        while i < n:
+            if n - i > 4: # If the left over digits is more then 4
+                res.append(number[i:i+3])
+                i += 3
+            elif n - i == 4: # If the left over digits is equal to 4, split into 2 parts
+                res.append(number[i:i+2])
+                i += 2 
+            else: # anything left after 4, will form a group
+                res.append(number[i:])
+                i = n
+        
+        return '-'.join(res)
+```
+---
+```python
+class Solution:
+    def reformatNumber(self, number: str) -> str:
+        number = number.replace(" ", "").replace("-", "") # Instead of List conversion, we can replace inside the string
+        n = len(number)
+        res = []
+        i = 0           
+        while i < n:
+            if n - i > 4:
+                res.append(number[i:i+3])
+                i += 3
+            elif n - i == 4:
+                res.append(number[i:i+2])
+                i += 2 
+            else:
+                res.append(number[i:])
+                i = n
+        
+        return '-'.join(res)
