@@ -4,12 +4,11 @@ class Solution:
         n = len(nums)
 
         for i in range(1, n):
-            if nums[i] == prev + 1:
-                res += nums[i]
-                prev = nums[i]
-            else:
+            if nums[i] != prev + 1:
                 break
-        
+            res += nums[i]
+            prev = nums[i]
+
         numsSearch = set(nums)
 
         while res in numsSearch:
