@@ -28,3 +28,46 @@
 	<li><code>1 &lt;= nums.length &lt;= 50</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 50</code></li>
 </ul>
+
+# Solution
+```python
+class Solution:
+    def missingInteger(self, nums: List[int]) -> int:
+        res = prev = nums[0]
+        n = len(nums)
+
+        for i in range(1, n):
+            if nums[i] == prev + 1:
+                res += nums[i]
+                prev = nums[i]
+            else:
+                break
+        
+        numsSearch = set(nums)
+
+        while res in numsSearch:
+            res += 1
+        
+        return res
+```
+---
+```python
+class Solution:
+    def missingInteger(self, nums: List[int]) -> int:
+        res = prev = nums[0]
+        n = len(nums)
+
+        for i in range(1, n):
+            num = nums[i]
+            if num != prev + 1:
+                break
+            prev = num
+            res += prev
+
+        numsSearch = set(nums)
+
+        while res in numsSearch:
+            res += 1
+        
+        return res
+```
