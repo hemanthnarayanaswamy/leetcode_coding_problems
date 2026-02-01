@@ -1,9 +1,7 @@
 class Solution:
     def minimumCost(self, nums: List[int]) -> int:
-        minCost = nums[0]
-        newNums = nums[1:]
-        newNums.sort()
+        new = nums[1:]
+        new.sort()
 
-        minCost += newNums[0] + newNums[1]
-
-        return minCost
+        return nums[0] + new[0] + new[1]
+        
