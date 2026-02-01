@@ -43,3 +43,32 @@ It can be shown that 12 is the minimum cost achievable.
 	<li><code>3 &lt;= n &lt;= 50</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 50</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def minimumCost(self, nums: List[int]) -> int:
+        m1 = m2 = float('inf')
+        minCost = nums[0]
+
+        for i in range(1, len(nums)):
+            if nums[i] < m1:
+                m2 = m1
+                m1 = nums[i]
+            elif nums[i] < m2:
+                m2 = nums[i]
+        
+        minCost += (m1 + m2)
+       
+        return minCost
+```
+---
+```python
+class Solution:
+    def minimumCost(self, nums: List[int]) -> int:
+        new = nums[1:]
+        new.sort()
+
+        return nums[0] + new[0] + new[1]
+```        
+				
