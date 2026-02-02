@@ -7,9 +7,7 @@ class Solution:
             c1 = s[l]
             c2 = s[r]
             if c1 != c2:
-                o1 = ord(c1)
-                o2 = ord(c2)
-                if o1 < o2:
+                if c1 < c2:
                     s[r] = c1
                 else:
                     s[l] = c2
