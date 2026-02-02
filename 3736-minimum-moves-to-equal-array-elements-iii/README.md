@@ -51,3 +51,22 @@
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+# Solution
+```python
+class Solution:
+    def minMoves(self, nums: List[int]) -> int:
+        maxNum = max(nums)
+        moves = 0
+
+        for num in nums:
+            moves += maxNum - num
+        
+        return moves
+```
+---
+```python
+class Solution:
+    def minMoves(self, nums: List[int]) -> int:
+        return max(nums) * len(nums) - sum(nums)
+```
