@@ -861,6 +861,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2589-maximum-value-of-a-string-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2589-maximum-value-of-a-string-in-an-array) |
 | [2654-count-the-number-of-vowel-strings-in-range](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2654-count-the-number-of-vowel-strings-in-range) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2691-count-vowel-strings-in-ranges) |
+| [2697-lexicographically-smallest-palindrome](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2697-lexicographically-smallest-palindrome) |
 | [2727-number-of-senior-citizens](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2727-number-of-senior-citizens) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2800-minimum-string-length-after-removing-substrings) |
 | [2819-remove-trailing-zeros-from-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2819-remove-trailing-zeros-from-a-string) |
@@ -1051,6 +1052,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2572-append-characters-to-string-to-make-subsequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2572-append-characters-to-string-to-make-subsequence) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2634-minimum-common-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2634-minimum-common-value) |
+| [2697-lexicographically-smallest-palindrome](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2697-lexicographically-smallest-palindrome) |
 | [2698-find-the-array-concatenation-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2698-find-the-array-concatenation-value) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [2903-find-indices-with-index-and-value-difference-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2903-find-indices-with-index-and-value-difference-i) |
@@ -1377,6 +1379,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2554-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2554-maximum-number-of-integers-to-choose-from-a-range-i) |
 | [2572-append-characters-to-string-to-make-subsequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2572-append-characters-to-string-to-make-subsequence) |
 | [2650-split-with-minimum-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2650-split-with-minimum-sum) |
+| [2697-lexicographically-smallest-palindrome](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2697-lexicographically-smallest-palindrome) |
 | [2704-maximum-difference-by-remapping-a-digit](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2704-maximum-difference-by-remapping-a-digit) |
 | [2715-k-items-with-the-maximum-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2715-k-items-with-the-maximum-sum) |
 | [2756-buy-two-chocolates](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2756-buy-two-chocolates) |
