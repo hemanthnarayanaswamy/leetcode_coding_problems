@@ -1,5 +1,8 @@
 class Solution:
     def makeSmallestPalindrome(self, s: str) -> str:
+        if s == s[::-1]:
+            return s
+            
         l, r =  0, len(s)-1
         s = list(s)
 
