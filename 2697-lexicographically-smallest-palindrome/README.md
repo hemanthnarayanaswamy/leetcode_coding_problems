@@ -38,3 +38,64 @@
 	<li><code>1 &lt;= s.length &lt;= 1000</code></li>
 	<li><code>s</code>&nbsp;consists of only lowercase English letters<b>.</b></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def makeSmallestPalindrome(self, s: str) -> str:
+        l, r =  0, len(s)-1
+        s = list(s)
+
+        while l < r:
+            c1 = s[l]
+            c2 = s[r]
+            if c1 != c2:
+                o1 = ord(c1)
+                o2 = ord(c2)
+                if o1 < o2:
+                    s[r] = c1
+                else:
+                    s[l] = c2
+            l += 1
+            r -= 1
+        
+        return ''.join(s)
+```
+---
+```python
+class Solution:
+    def makeSmallestPalindrome(self, s: str) -> str:
+        l, r =  0, len(s)-1
+        s = list(s)
+
+        while l < r:
+            c1 = s[l]
+            c2 = s[r]
+            if c1 != c2:
+                if c1 < c2:
+                    s[r] = c1
+                else:
+                    s[l] = c2
+            l += 1
+            r -= 1
+        
+        return ''.join(s)
+```
+---
+```python
+class Solution:
+    def makeSmallestPalindrome(self, s: str) -> str:
+        i = 0
+        j = len(s)-1
+        if s == s[::-1]:
+            return s
+        s = list(s)
+        while i <= j: 
+            if s[i] > s[j]:
+                s[i] = s[j]
+            else:
+                s[j] = s[i]
+            i+=1
+            j-=1
+        return "".join(s)
+```
