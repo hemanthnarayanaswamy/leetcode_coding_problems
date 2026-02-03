@@ -38,3 +38,104 @@
 	<li><code>nums.length == nums<sub>i</sub>.length</code></li>
 	<li><code>1 &lt;= nums<span style="font-size: 10.8333px;">[i][j]</span>&nbsp;&lt;= 4*10<sup>6</sup></code></li>
 </ul>
+
+# Solution 
+1. **Primary diagonal:** Elements where `row index = column index`.
+2. **Secondary diagonal:** Elements where `row index + column index = number of columns - 1`.
+
+### Check if the number is Prime
+```python
+def isPrime(num):
+    if num<= 1:
+        return False
+    for i in range(2, int(num**0.5)+1): # for i in range(2, int(math.sqrt(num))+1):
+        if num % i == 0:
+            return False
+    return True
+```
+---
+```python
+class Solution:
+    def diagonalPrime(self, nums: List[List[int]]) -> int:
+		
+        def isPrime(num):
+            if num<= 1:
+                return False
+            for i in range(2, int(num**0.5)+1): # for i in range(2, int(math.sqrt(num))+1):
+                if num % i == 0:
+                    return False
+            return True
+        
+        res = 0
+        n = len(nums[0])
+        m = len(nums)
+
+        for i in range(m):
+            for j in range(n):
+                if i == j or i + j == n - 1:
+                    num = nums[i][j]
+                    if num > res and isPrime(num):
+                        res = num
+        
+        return res
+```
+---
+```ini
+For primary Diagnol we know i == j, that means nums[i][j] can be written as nums[i][i] or nums[j][j]
+For the Secondary Diagnol, 
+
+i + j = n - 1
+j = n - i - 1
+so nums[i][j] can be written as nums[i][n -1 - i]
+
+This means we don't need to a variable j and we can avoid using the seconday for loop
+```
+
+```python
+class Solution:
+    def diagonalPrime(self, nums: List[List[int]]) -> int:
+        def isPrime(num):
+            if num<= 1:
+                return False
+            for i in range(2, int(num**0.5)+1): # for i in range(2, int(math.sqrt(num))+1):
+                if num % i == 0:
+                    return 0
+            return num
+        
+        res = 0
+        n = len(nums)
+
+        for i in range(n):
+            num1 = nums[i][i]
+            num2 = nums[i][n - i - 1]
+            res = max(res, isPrime(num1), isPrime(num2))
+        
+        return res
+```
+---
+```python
+class Solution:
+    def diagonalPrime(self, nums: List[List[int]]) -> int:
+        def isPrime(num):
+            if num<= 1:
+                return False
+            for i in range(2, int(num**0.5)+1): # for i in range(2, int(math.sqrt(num))+1):
+                if num % i == 0:
+                    return False
+            return True
+        
+        res = 0
+        n = len(nums)
+
+        for i in range(n):
+            num1 = nums[i][i]
+            num2 = nums[i][n - i - 1]
+            
+            if num1 > res and isPrime(num1):
+                res = num1
+            
+            if num2 > res and isPrime(num2):
+                res = num2
+        
+        return res
+```
