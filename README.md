@@ -492,6 +492,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3616-make-array-elements-equal-to-zero](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3616-make-array-elements-equal-to-zero) |
 | [3643-flip-square-submatrix-vertically](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3643-flip-square-submatrix-vertically) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
+| [3678-smallest-absent-positive-greater-than-average](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3678-smallest-absent-positive-greater-than-average) |
 | [3685-count-subarrays-of-length-three-with-a-condition](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3685-count-subarrays-of-length-three-with-a-condition) |
 | [3691-minimum-operations-to-make-columns-strictly-increasing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3691-minimum-operations-to-make-columns-strictly-increasing) |
 | [3704-count-partitions-with-even-sum-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3704-count-partitions-with-even-sum-difference) |
@@ -666,6 +667,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3591-check-if-any-element-has-prime-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3591-check-if-any-element-has-prime-frequency) |
 | [3606-coupon-code-validator](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3606-coupon-code-validator) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
+| [3678-smallest-absent-positive-greater-than-average](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3678-smallest-absent-positive-greater-than-average) |
 | [3705-find-the-largest-almost-missing-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3705-find-the-largest-almost-missing-integer) |
 | [3707-find-the-most-common-response](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3707-find-the-most-common-response) |
 | [3712-sum-of-elements-with-frequency-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3712-sum-of-elements-with-frequency-divisible-by-k) |
