@@ -2,10 +2,9 @@ class Solution:
     def smallestAbsent(self, nums: List[int]) -> int:
         if max(nums) < 0:
             return 1
-            
-        total = sum(nums)
-        avg = total / len(nums)
-        num = floor(avg) + 1 # Instead of using the int, floor the avg and add 1
+
+        avg = sum(nums) / len(nums)
+        num = floor(avg) + 1 #Instead of using the int, floor the avg and add 1
 
         if num <= 0:
             num = 1
