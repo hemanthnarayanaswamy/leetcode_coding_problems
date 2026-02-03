@@ -5,18 +5,15 @@ class Solution:
                 return False
             for i in range(2, int(num**0.5)+1): # for i in range(2, int(math.sqrt(num))+1):
                 if num % i == 0:
-                    return False
-            return True
+                    return 0
+            return num
         
         res = 0
-        n = len(nums[0])
-        m = len(nums)
+        n = len(nums)
 
-        for i in range(m):
-            for j in range(n):
-                if i == j or i + j == n - 1:
-                    num = nums[i][j]
-                    if num > res and isPrime(num):
-                        res = num
+        for i in range(n):
+            num1 = nums[i][i]
+            num2 = nums[i][n - i - 1]
+            res = max(res, isPrime(num1), isPrime(num2))
         
         return res
