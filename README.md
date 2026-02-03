@@ -80,6 +80,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2556-convert-the-temperature](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2556-convert-the-temperature) |
 | [2571-find-the-pivot-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2571-find-the-pivot-integer) |
 | [2608-count-the-digits-that-divide-a-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2608-count-the-digits-that-divide-a-number) |
+| [2614-prime-in-diagonal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2614-prime-in-diagonal) |
 | [2624-difference-between-element-sum-and-digit-sum-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2624-difference-between-element-sum-and-digit-sum-of-an-array) |
 | [2630-alternating-digit-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2630-alternating-digit-sum) |
 | [2645-pass-the-pillow](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2645-pass-the-pillow) |
@@ -397,6 +398,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2589-maximum-value-of-a-string-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2589-maximum-value-of-a-string-in-an-array) |
 | [2605-form-smallest-number-from-two-digit-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2605-form-smallest-number-from-two-digit-arrays) |
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
+| [2614-prime-in-diagonal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2614-prime-in-diagonal) |
 | [2624-difference-between-element-sum-and-digit-sum-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2624-difference-between-element-sum-and-digit-sum-of-an-array) |
 | [2631-sort-the-students-by-their-kth-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2631-sort-the-students-by-their-kth-score) |
 | [2634-minimum-common-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2634-minimum-common-value) |
@@ -1515,6 +1517,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2352-equal-row-and-column-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2352-equal-row-and-column-pairs) |
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
+| [2614-prime-in-diagonal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2614-prime-in-diagonal) |
 | [2631-sort-the-students-by-their-kth-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2631-sort-the-students-by-their-kth-score) |
 | [2675-find-the-width-of-columns-of-a-grid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2675-find-the-width-of-columns-of-a-grid) |
 | [2737-row-with-maximum-ones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2737-row-with-maximum-ones) |
@@ -1582,6 +1585,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0950-x-of-a-kind-in-a-deck-of-cards](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0950-x-of-a-kind-in-a-deck-of-cards) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2106-find-greatest-common-divisor-of-array) |
 | [2491-smallest-even-multiple](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2491-smallest-even-multiple) |
+| [2614-prime-in-diagonal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2614-prime-in-diagonal) |
 | [3591-check-if-any-element-has-prime-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3591-check-if-any-element-has-prime-frequency) |
 | [3768-check-if-digits-are-equal-in-string-after-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3768-check-if-digits-are-equal-in-string-after-operations-i) |
 ## Game Theory
