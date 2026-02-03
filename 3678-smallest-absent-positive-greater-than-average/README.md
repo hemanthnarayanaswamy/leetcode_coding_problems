@@ -51,6 +51,42 @@ The <strong>average</strong> of an array is defined as the sum of all its elemen
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
+# Solution 
+* The Average needs to in float, then `num = floor(avg) + 1` **Instead of using the int, floor the avg and add 1**
+* The Question is asking for the missing positive number, if `num <= 0`, we reset that to `num = 1`, before stating the search in the while loop.
+* Compute the average, `set x = floor(avg) + 1` (the smallest integer greater than the average).
+
+```python
+class Solution:
+    def smallestAbsent(self, nums: List[int]) -> int:
+        total = sum(nums)
+        avg = total / len(nums)
+        numsPresent = set(nums)
+        num = floor(avg) + 1 # Instead of using the int, floor the avg and add 1
+        
+        if num <= 0:
+            num = 1
+
+        while num in numsPresent:
+            num += 1
+        
+        return num
+```
+---
+```python
+class Solution:
+    def smallestAbsent(self, nums: List[int]) -> int:
+        avg = sum(nums) / len(nums)
+        num = max(1, floor(avg) + 1) #Instead of using the int, floor the avg and add 1
+        numsPresent = set(nums) # if num is negative we are resetting its start value to 1
+        
+        while num in numsPresent:
+            num += 1
+        
+        return num
+```
+					
+
 <ul>
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>-100 &lt;= nums[i] &lt;= 100</code>​​​​​​​</li>
