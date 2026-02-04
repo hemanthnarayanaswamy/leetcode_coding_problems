@@ -1,7 +1,6 @@
 class Solution:
     def majorityFrequencyGroup(self, s: str) -> str:
         sFreq = Counter(s)
-        print(sFreq)
         freq = [v for v in sFreq.values()]
         freqGroups = Counter(freq)
         majorityGroup = 0
@@ -13,12 +12,10 @@ class Solution:
                 groupSize = v
             elif v == groupSize:
                 majorityGroup = max(k, majorityGroup)
-            print(majorityGroup)
         
         res = ''
         for k, v in sFreq.items():
             if v == majorityGroup:
                 res += k
-        print(freqGroups)
-        print(majorityGroup)
+                
         return res
