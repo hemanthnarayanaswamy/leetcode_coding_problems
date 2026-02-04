@@ -10,8 +10,8 @@ class Solution:
                     break
                 for k in range(j+1, n):
                     c = nums[k]
-                    if c >= b:
+                    if c >= b or (a+b+c) >= res:
                         continue
-                    res = min(res, a+b+c)
+                    res = a+b+c
         
         return res if res != float('inf') else -1
