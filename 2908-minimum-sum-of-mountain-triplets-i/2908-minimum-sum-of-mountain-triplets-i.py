@@ -14,4 +14,4 @@ class Solution:
                         continue
                     res = a+b+c
         
-        return res if res != float('inf') else -1
+        return -1 if res == float('inf') else res
