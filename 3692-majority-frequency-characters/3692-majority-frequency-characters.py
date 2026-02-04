@@ -2,15 +2,15 @@ class Solution:
     def majorityFrequencyGroup(self, s: str) -> str:
         sFreq = Counter(s)
         freqGroups = Counter([sFreq[k] for k in sFreq])
-        majorFreqGroups = groupSize = 0
+        majorFreqGroup = groupSize = 0
 
         for k, v in freqGroups.items():
             if v > groupSize:
-                majorFreqGroups = k
+                majorFreqGroup = k
                 groupSize = v
             elif v == groupSize:
-                majorFreqGroups = max(k, majorFreqGroups)
+                majorFreqGroup = max(k, majorFreqGroup)
         
-        res = [k for k, v in sFreq.items() if v == majorFreqGroups]
+        res = [k for k, v in sFreq.items() if v == majorFreqGroup]
         
         return ''.join(res)
