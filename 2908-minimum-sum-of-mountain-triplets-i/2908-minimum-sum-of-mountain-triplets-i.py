@@ -22,8 +22,6 @@ class Solution:
             current = nums[i]
 
             if current > left and current > right:
-                total = left + current + right
-                if total < res:
-                    res = total
-        
+                res = min(res, left + current + right)
+                
         return -1 if res == float('inf') else res
