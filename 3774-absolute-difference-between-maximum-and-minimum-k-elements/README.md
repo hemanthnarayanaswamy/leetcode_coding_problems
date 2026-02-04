@@ -50,3 +50,24 @@
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 	<li><code>1 &lt;= k &lt;= n</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def absDifference(self, nums: List[int], k: int) -> int:
+        nums.sort()
+        maxSum = sum(nums[-k:])
+        minSum = sum(nums[:k])
+
+        return maxSum - minSum
+```
+---
+```python
+class Solution:
+    def absDifference(self, nums: List[int], k: int) -> int:
+        nums.sort()
+        largeSum = sum(nums[-k:])
+        smallSum = sum(nums[:k])
+
+        return largeSum - smallSum
+```
