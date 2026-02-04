@@ -131,3 +131,67 @@
 	<li><code>1 &lt;= s.length &lt;= 100</code></li>
 	<li><code>s</code> consists only of lowercase English letters.</li>
 </ul>
+
+# Solution
+```python
+class Solution:
+    def majorityFrequencyGroup(self, s: str) -> str:
+        sFreq = Counter(s)
+        freq = [v for v in sFreq.values()]
+        freqGroups = Counter(freq)
+        majorityGroup = 0
+        groupSize = 0
+
+        for k, v in freqGroups.items():
+            if v > groupSize:
+                majorityGroup = k
+                groupSize = v
+            elif v == groupSize:
+                majorityGroup = max(k, majorityGroup)
+        
+        res = ''
+        for k, v in sFreq.items():
+            if v == majorityGroup:
+                res += k
+                
+        return res
+```
+---
+```python
+class Solution:
+    def majorityFrequencyGroup(self, s: str) -> str:
+        sFreq = Counter(s)
+        freqGroups = Counter([sFreq[k] for k in sFreq])
+        majorFreqGroups = groupSize = 0
+
+        for k, v in freqGroups.items():
+            if v > groupSize:
+                majorFreqGroups = k
+                groupSize = v
+            elif v == groupSize:
+                majorFreqGroups = max(k, majorFreqGroups)
+        
+        res = [k for k, v in sFreq.items() if v == majorFreqGroups]
+        
+        return ''.join(res)
+```
+---
+# Optimized Approach 
+* Get the Frequency of all the characters. 
+* and have a array created and of the characters that has that freq go into the a particular array inside a `defaultdict`. 
+* now iterate though the array to get, `max(len(arr))`
+* return the contents of the array. 
+
+```python
+class Solution:
+    def majorityFrequencyGroup(self, s: str) -> str:
+        counter = Counter(s)
+        d = defaultdict(list)
+
+        for ch, freq in counter.items():
+            d[freq].append(ch)
+
+        ans = max(d, key = lambda x: (len(d[x]), x)) 
+
+        return ''.join(d[ans])
+```        
