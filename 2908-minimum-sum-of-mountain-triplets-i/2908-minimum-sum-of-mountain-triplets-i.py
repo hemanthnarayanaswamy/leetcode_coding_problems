@@ -5,11 +5,13 @@ class Solution:
 
         for i in range(n-2):
             for j in range(i+1, n-1):
-                if nums[i] >= nums[j]:
+                a, b = nums[i], nums[j]
+                if a >= b:
                     break
                 for k in range(j+1, n):
-                    if nums[k] >= nums[j]:
+                    c = nums[k]
+                    if c >= b:
                         continue
-                    res = min(res, nums[i]+nums[j]+nums[k])
+                    res = min(res, a+b+c)
         
         return res if res != float('inf') else -1
