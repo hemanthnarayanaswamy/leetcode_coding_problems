@@ -1,17 +1,29 @@
 class Solution:
     def minimumSum(self, nums: List[int]) -> int:
-        res = float('inf')
         n = len(nums)
 
-        for i in range(n-2):
-            for j in range(i+1, n-1):
-                a, b = nums[i], nums[j]
-                if a >= b:
-                    break
-                for k in range(j+1, n):
-                    c = nums[k]
-                    if c >= b or (a+b+c) >= res:
-                        continue
-                    res = a+b+c
+        left_min = [0] * n
+        left_min[0] = nums[0]
+
+        for i in range(1, n):
+            left_min[i] = min(nums[i], left_min[i-1])
+        
+        right_min = [0] * n
+        right_min[n-1] = nums[n-1]
+
+        for i in range(n-2, -1, -1):
+            right_min[i] = min(nums[i], right_min[i+1])
+        
+        res = float('inf')
+
+        for i in range(1, n-1):
+            left = left_min[i-1]
+            right = right_min[i+1]
+            current = nums[i]
+
+            if current > left and current > right:
+                total = left + current + right
+                if total < res:
+                    res = total
         
         return -1 if res == float('inf') else res
