@@ -6,8 +6,5 @@ class Solution:
         for ch, freq in counter.items():
             d[freq].append(ch)
 
-        idx = None
-        maxLen = 0
-
         ans = max(d, key = lambda x: (len(d[x]), x)) 
         return ''.join(d[ans])
