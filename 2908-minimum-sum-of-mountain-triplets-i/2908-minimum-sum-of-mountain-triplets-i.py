@@ -7,7 +7,6 @@ class Solution:
             for j in range(i+1, n-1):
                 if nums[i] >= nums[j]:
                     break
-                print(i, j)
                 for k in range(j+1, n):
                     if nums[k] >= nums[j]:
                         continue
