@@ -7,4 +7,6 @@ class Solution:
             d[freq].append(ch)
 
         ans = max(d, key = lambda x: (len(d[x]), x)) 
+
         return ''.join(d[ans])
+        
