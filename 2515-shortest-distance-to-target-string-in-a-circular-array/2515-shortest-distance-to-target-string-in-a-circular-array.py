@@ -3,8 +3,7 @@ class Solution:
         n = len(words)
         shortDistance = float('inf')
 
-        for i in range(startIndex, n+startIndex):
-            i = i % n
+        for i in range(n):
             if words[i] == target:
                 dist = abs(startIndex - i)
                 shortDistance = min(shortDistance, dist, n - dist)
