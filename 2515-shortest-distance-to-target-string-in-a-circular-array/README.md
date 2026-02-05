@@ -49,3 +49,39 @@ The shortest distance to reach &quot;leetcode&quot; is 1.</pre>
 	<li><code>words[i]</code> and <code>target</code> consist of only lowercase English letters.</li>
 	<li><code>0 &lt;= startIndex &lt; words.length</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def closestTarget(self, words: List[str], target: str, startIndex: int) -> int:
+        n = len(words)
+        shortDistance = float('inf')
+
+        for i in range(startIndex, n+startIndex):
+            i = i % n
+            if words[i] == target:
+                dist = abs(startIndex - i)
+                shortDistance = min(shortDistance, dist, n - dist)
+        
+        return -1 if shortDistance == float('inf') else shortDistance
+```
+1. We'll do the iteration from `startidx to n + startidx` which will cover the entire array. for `i = i % n`
+2. Now when we find the `target`, we calculate the `clockwise` and `counter clockwise` distance. 
+3. Normal distance will be `abs(startIdx - i)`, while the counter clockwise distance will be `n - abs(startIdx - i)` and we'll calculate the minimum between them everytime the target is encountered. 
+
+# Optimal Solution 
+* Actually, you don't need to modify the `range(start , start+n)`, you can directly do the the `range(n)` and do the rest of the calculations when the target is found.
+
+```python
+class Solution:
+    def closestTarget(self, words: List[str], target: str, startIndex: int) -> int:
+        n = len(words)
+        shortDistance = float('inf')
+
+        for i in range(n):
+            if words[i] == target:
+                dist = abs(startIndex - i)
+                shortDistance = min(shortDistance, dist, n - dist)
+        
+        return -1 if shortDistance == float('inf') else shortDistance
+```
