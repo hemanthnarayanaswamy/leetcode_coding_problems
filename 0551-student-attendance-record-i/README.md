@@ -39,3 +39,67 @@
 	<li><code>1 &lt;= s.length &lt;= 1000</code></li>
 	<li><code>s[i]</code> is either <code>&#39;A&#39;</code>, <code>&#39;L&#39;</code>, or <code>&#39;P&#39;</code>.</li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def checkRecord(self, s: str) -> bool:
+        absentCount = lateCount = 0
+
+        for d in s:
+            if d == 'A':
+                absentCount += 1
+                lateCount = 0
+            elif d == 'L':
+                lateCount += 1
+            else:
+                lateCount = 0
+            
+            if absentCount == 2 or lateCount == 3:
+                return False
+        
+        return True
+```
+---
+```python
+class Solution:
+    def checkRecord(self, s: str) -> bool:
+        absentCount = lateCount = 0
+
+        for d in s:
+            if d == 'A':
+                absentCount += 1
+                lateCount = 0
+                if absentCount == 2:
+                    return False
+            elif d == 'L':
+                lateCount += 1
+                if lateCount == 3:
+                    return False
+            else:
+                lateCount = 0
+        
+        return True
+```
+---
+```python
+class Solution:
+    def checkRecord(self, s: str) -> bool:
+        late_count = 0
+        absent_count = 0
+
+        for i in range(len(s)):
+            char = s[i]
+            if char == 'A':
+                absent_count += 1
+                if absent_count >= 2:
+                    return False
+            if char == 'L':
+                late_count += 1
+                if late_count == 3:
+                    return False
+            else:
+                late_count = 0
+        
+        return absent_count < 2 and late_count < 3
+```
