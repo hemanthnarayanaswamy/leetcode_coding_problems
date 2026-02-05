@@ -4,7 +4,6 @@ class Solution:
         res = [0] * n
 
         for i,num in enumerate(nums):
-                j = (i + num) % n
-                res[i] = nums[j]
+                res[i] = nums[(i + num) % n]
         
         return res
