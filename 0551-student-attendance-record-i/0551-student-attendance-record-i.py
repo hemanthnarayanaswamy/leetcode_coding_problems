@@ -6,12 +6,13 @@ class Solution:
             if d == 'A':
                 absentCount += 1
                 lateCount = 0
+                if absentCount == 2:
+                    return False
             elif d == 'L':
                 lateCount += 1
+                if lateCount == 3:
+                    return False
             else:
                 lateCount = 0
-            
-            if absentCount == 2 or lateCount == 3:
-                return False
         
         return True
