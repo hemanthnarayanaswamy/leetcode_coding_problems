@@ -61,3 +61,57 @@
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 	<li><code>1 &lt;= k &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+# Solution 
+1. sort array
+**Rewriting the question- `find the maximum length subarray such the the following condition is valid`**
+* `minimum * k >= maximum element`
+* now use sliding window - find maxlength by expanding window and shrinking always from left.
+* If you think to shrink from right then the loop must terminate in next step as all elements should be removed from right.
+
+```python
+class Solution:
+    def minRemoval(self, nums: List[int], k: int) -> int:
+        nums.sort()
+        n = len(nums)
+        moves = float('inf')
+
+        l, r = 0, 1
+
+        while r < n:
+            if nums[r] > k * nums[l]:
+                moves = min(moves, n - (r - l))
+                l += 1
+            else:
+                r += 1
+        
+        moves = min(moves, n - (r - l))
+        
+        return 0 if moves == float('inf') else moves
+```
+---
+```python
+class Solution:
+    def minRemoval(self, nums: List[int], k: int) -> int:
+        nums.sort()
+        l = 0
+        
+        for r in range(len(nums)):
+            if nums[r] > nums[l] * k:
+                l += 1
+        return l
+```
+* It finds the largest valid window where: 'max < min * k` and counts how many elements must be removed to achieve that.
+But instead of returning: `len(nums) - size_of_largest_valid_window` --> `l`, which is the number of elements that were “pushed out” from the left.
+
+```ini
+Sorted: 
+Window checks:
+• 	r=0 → window = [1] → valid
+• 	r=1 → window = [1,3] → 3 ≤ 1*3 → valid
+• 	r=2 → window = [1,3,9] → 9 > 1*3 → invalid → l=1
+Now window = [3,9] → valid
+• 	r=3 → window = [3,9,10] → 10 > 3*3 → invalid → l=2
+Now window = [9,10] → valid
+Final  → remove 2 elements.
+```
