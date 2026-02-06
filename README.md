@@ -492,6 +492,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3606-minimum-element-after-replacement-with-digit-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3606-minimum-element-after-replacement-with-digit-sum) |
 | [3606-coupon-code-validator](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3606-coupon-code-validator) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3616-make-array-elements-equal-to-zero) |
+| [3634-minimum-removals-to-balance-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3634-minimum-removals-to-balance-array) |
 | [3643-flip-square-submatrix-vertically](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3643-flip-square-submatrix-vertically) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3678-smallest-absent-positive-greater-than-average](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3678-smallest-absent-positive-greater-than-average) |
@@ -1198,6 +1199,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3433-count-mentions-per-user](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3433-count-mentions-per-user) |
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
 | [3606-coupon-code-validator](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3606-coupon-code-validator) |
+| [3634-minimum-removals-to-balance-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3634-minimum-removals-to-balance-array) |
 | [3748-sort-matrix-by-diagonals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3748-sort-matrix-by-diagonals) |
 | [3769-sort-integers-by-binary-reflection](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3769-sort-integers-by-binary-reflection) |
 | [3774-absolute-difference-between-maximum-and-minimum-k-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3774-absolute-difference-between-maximum-and-minimum-k-elements) |
@@ -1509,6 +1511,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [3206-alternating-groups-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3206-alternating-groups-i) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
+| [3634-minimum-removals-to-balance-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3634-minimum-removals-to-balance-array) |
 ## Matrix
 |  |
 | ------- |
