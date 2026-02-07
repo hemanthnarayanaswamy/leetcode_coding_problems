@@ -916,6 +916,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3794-reverse-string-prefix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3794-reverse-string-prefix) |
 | [3798-largest-even-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3798-largest-even-number) |
 | [3811-reverse-degree-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3811-reverse-degree-of-a-string) |
+| [3823-reverse-letters-then-special-characters-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3823-reverse-letters-then-special-characters-in-a-string) |
 | [3871-minimum-deletions-for-at-most-k-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3871-minimum-deletions-for-at-most-k-distinct-characters) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Trie
@@ -1002,6 +1003,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3726-remove-zeros-in-decimal-representation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3726-remove-zeros-in-decimal-representation) |
 | [3768-check-if-digits-are-equal-in-string-after-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3768-check-if-digits-are-equal-in-string-after-operations-i) |
 | [3811-reverse-degree-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3811-reverse-degree-of-a-string) |
+| [3823-reverse-letters-then-special-characters-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3823-reverse-letters-then-special-characters-in-a-string) |
 | [4058-compute-alternating-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4058-compute-alternating-sum) |
 ## Two Pointers
 |  |
@@ -1073,6 +1075,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
 | [3643-flip-square-submatrix-vertically](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3643-flip-square-submatrix-vertically) |
 | [3794-reverse-string-prefix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3794-reverse-string-prefix) |
+| [3823-reverse-letters-then-special-characters-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3823-reverse-letters-then-special-characters-in-a-string) |
 ## Dynamic Programming
 |  |
 | ------- |
