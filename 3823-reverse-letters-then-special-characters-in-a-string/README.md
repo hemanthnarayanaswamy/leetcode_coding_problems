@@ -67,3 +67,66 @@
 	<li><code>1 &lt;= s.length &lt;= 100</code></li>
 	<li><code>s</code> consists only of lowercase English letters and the special characters in <code>&quot;!@#$%^&amp;*()&quot;</code>.</li>
 </ul>
+
+# Solution 
+1. Use two pointers from ends, skipping non-letters.
+2. Use two pointers from ends, skipping letters. 
+
+```python
+class Solution:
+    def reverseByType(self, s: str) -> str:
+        
+        letter = []
+        spec = []
+
+        for c in s:
+            if c.isalpha():
+                letter.append(c)
+            else:
+                spec.append(c)
+
+        result = []
+        for c in s:
+            if c.isalpha():
+                v = letter.pop()
+                result.append(v)
+            else:
+                v = spec.pop()
+                result.append(v)
+
+        return ''.join(result)
+```
+---
+```python
+class Solution:
+    def reverseByType(self, s: str) -> str:
+        s = list(s)
+        def reverseLetter(s):
+            l, r = 0, len(s)-1
+            while l < r:
+                if not s[l].isalpha():
+                    l += 1
+                elif not s[r].isalpha():
+                    r -= 1
+                else:
+                    s[l], s[r] = s[r], s[l]
+                    l += 1
+                    r -= 1
+            return reverseSpecialChar(s)
+        
+        def reverseSpecialChar(s):
+            l, r = 0, len(s)-1
+            while l < r:
+                if s[l].isalpha():
+                    l += 1
+                elif s[r].isalpha():
+                    r -= 1
+                else:
+                    s[l], s[r] = s[r], s[l]
+                    l += 1
+                    r -= 1
+            return ''.join(s)
+
+        return reverseLetter(s)
+```        
+				
