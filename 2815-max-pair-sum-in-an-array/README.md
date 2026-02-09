@@ -50,3 +50,73 @@
 	<li><code>2 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+# Approach
+1. Create a `defaultdict(list)` to store the maximum digit and the list will contains its associated numbers in them. 
+2. Now Iterate that `defaultdict` and find the list with `lenght > 2`, sort that and store the `sum of first 2 numbers` and iterate thought other lists with length > 2 and store to check which one is maximum sum and return the sum.
+
+```python
+class Solution:
+    def maxSum(self, nums: List[int]) -> int:
+        numsMap = defaultdict(list)
+        res = -1
+
+        def maxDigit(num):
+            d = 0
+            while num:
+                q, r = divmod(num, 10)
+                d = max(d, r)
+                num = q
+            return d
+        
+        for num in nums:
+            d = maxDigit(num)
+            numsMap[d].append(num)
+        
+        for _, numList in numsMap.items():
+            if len(numList) >= 2:
+                numList.sort()
+                res = max(res, sum(numList[-2:]))
+        
+        return res
+```
+---
+# Improved Version
+
+```python
+class Solution:
+    def maxSum(self, nums: List[int]) -> int:
+        max_by_digit = defaultdict(int)
+        max_sum = -1
+
+        for num in nums:
+            digit = max(str(num))
+
+            if digit in max_by_digit:
+                max_sum = max(max_sum, max_by_digit[digit] + num)
+
+            max_by_digit[digit] = max(max_by_digit[digit], num)
+
+        return max_sum
+```
+---
+### NO SORT
+```python
+class Solution:
+    def maxSum(self, nums: List[int]) -> int:
+        max_num_by_d = [0] * 10
+        max_sum = -1
+
+        for num in nums:
+            key, temp = 0, num
+            while temp > 0:
+                key = max(key, temp % 10)
+                temp //= 10
+            if max_num_by_d[key]:
+                max_sum = max(max_sum, num + max_num_by_d[key])
+                max_num_by_d[key] = max(max_num_by_d[key], num)
+            else:
+                max_num_by_d[key] = num
+        
+        return max_sum
+```
