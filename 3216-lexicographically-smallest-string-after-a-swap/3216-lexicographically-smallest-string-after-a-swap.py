@@ -1,14 +1,9 @@
 class Solution:
     def getSmallestString(self, s: str) -> str:
-        res = s
-        n = len(s)
-
-        for i in range(n-1):
-            a, b = s[i], s[i+1]
-
-            if int(a) % 2 == int(b) % 2 and b < a:
-                num = s[:i] + s[i:i+2][::-1] + s[i+2:] 
-                if num < res:
-                    res = num
-                    
-        return res
+        for i in range(len(s)-1):
+            cur = int(s[i])
+            nxt = int(s[i+1])
+            if cur > nxt and cur % 2 == nxt % 2:
+                return s[:i] + s[i:i+2][::-1] + s[i+2:]
+        
+        return s
