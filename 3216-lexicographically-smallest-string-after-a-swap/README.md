@@ -34,3 +34,56 @@
 	<li><code>2 &lt;= s.length &lt;= 100</code></li>
 	<li><code>s</code> consists only of digits.</li>
 </ul>
+
+# Solution 
+* Stop after one swap and after checking the swap, revert back to the original. 
+
+1. We iterate through the digits of s by pairs, checking whether the pair is in descending order and whether the two digits have the same even-odd parity.
+2. Once we encounter such a pair we reverse their order and return the revised string.
+3. 
+```python
+class Solution:
+    def getSmallestString(self, s: str) -> str:
+        res = s
+        n = len(s)
+
+        for i in range(n-1):
+            a, b = s[i], s[i+1]
+
+            #if int(a) % 2 == int(b) % 2:   # Only check if b < a 
+			if int(a) % 2 == int(b) % 2 and b < a:
+                num = s[:i]+b+a+s[i+2:] 
+                if num < res:
+                    res = num
+                    
+        return res
+```
+---
+```python
+class Solution:
+    def getSmallestString(self, s: str) -> str:
+        res = s
+        n = len(s)
+
+        for i in range(n-1):
+            a, b = s[i], s[i+1]
+
+            if int(a) % 2 == int(b) % 2 and b < a:
+                num = s[:i] + s[i:i+2][::-1] + s[i+2:] 
+                if num < res:
+                    res = num
+                    
+        return res
+```
+---
+```python
+class Solution:
+    def getSmallestString(self, s: str) -> str:
+        for i in range(len(s)-1):
+            cur = int(s[i])
+            nxt = int(s[i+1])
+            if cur > nxt and cur % 2 == nxt % 2:
+                return s[:i] + s[i:i+2][::-1] + s[i+2:]
+        
+        return s
+```
