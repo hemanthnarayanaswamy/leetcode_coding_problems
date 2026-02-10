@@ -842,6 +842,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2239-execution-of-all-suffix-instructions-staying-in-a-grid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2239-execution-of-all-suffix-instructions-staying-in-a-grid) |
 | [2243-check-if-all-as-appears-before-all-bs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2243-check-if-all-as-appears-before-all-bs) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2244-number-of-laser-beams-in-a-bank) |
+| [2259-remove-digit-from-number-to-maximize-result](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2259-remove-digit-from-number-to-maximize-result) |
 | [2260-divide-a-string-into-groups-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2260-divide-a-string-into-groups-of-size-k) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2293-minimum-number-of-steps-to-make-two-strings-anagram-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2293-minimum-number-of-steps-to-make-two-strings-anagram-ii) |
@@ -1389,6 +1390,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2154-minimum-moves-to-convert-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2154-minimum-moves-to-convert-string) |
 | [2199-two-furthest-houses-with-different-colors](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2199-two-furthest-houses-with-different-colors) |
 | [2248-minimum-cost-of-buying-candies-with-discount](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2248-minimum-cost-of-buying-candies-with-discount) |
+| [2259-remove-digit-from-number-to-maximize-result](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2259-remove-digit-from-number-to-maximize-result) |
 | [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
 | [2279-maximum-bags-with-full-capacity-of-rocks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2279-maximum-bags-with-full-capacity-of-rocks) |
 | [2345-minimum-number-of-operations-to-convert-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2345-minimum-number-of-operations-to-convert-time) |
@@ -1557,6 +1559,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1925-count-square-sum-triples](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1925-count-square-sum-triples) |
 | [2122-count-special-quadruplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2122-count-special-quadruplets) |
 | [2215-finding-3-digit-even-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2215-finding-3-digit-even-numbers) |
+| [2259-remove-digit-from-number-to-maximize-result](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2259-remove-digit-from-number-to-maximize-result) |
 | [2442-number-of-arithmetic-triplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2442-number-of-arithmetic-triplets) |
 | [2605-form-smallest-number-from-two-digit-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2605-form-smallest-number-from-two-digit-arrays) |
 | [2844-sum-of-squares-of-special-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2844-sum-of-squares-of-special-elements) |
