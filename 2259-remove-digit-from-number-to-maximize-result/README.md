@@ -38,3 +38,34 @@ Both result in the string &quot;51&quot;.
 	<li><code>digit</code> is a digit from <code>&#39;1&#39;</code> to <code>&#39;9&#39;</code>.</li>
 	<li><code>digit</code> occurs at least once in <code>number</code>.</li>
 </ul>
+
+# Solution
+1. To remove a character at index `i`, concatenate the substring from index `0 to i - 1` and the substring from index `i + 1 to n`.
+
+```python
+class Solution:
+    def removeDigit(self, number: str, digit: str) -> str:
+        maxRes = set()
+        n = len(number)
+
+        for i in range(len(number)):
+            if number[i] == digit:
+                maxRes.add(number[0:i]+number[i+1:n])
+        
+        return max(maxRes)
+```
+---
+```python
+class Solution:
+    def removeDigit(self, number: str, digit: str) -> str:
+        maxRes = '0'
+        n = len(number)
+
+        for i in range(len(number)):
+            if number[i] == digit:
+                tmp = number[0:i]+number[i+1:n]
+                if tmp > maxRes:
+                    maxRes = tmp
+        
+        return maxRes
+```
