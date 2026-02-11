@@ -32,3 +32,36 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> A linked list can be reversed either iteratively or recursively. Could you implement both?</p>
+
+
+# Solution 
+
+![visual](https://assets.leetcode.com/users/images/88001cde-da6d-4c9b-b071-dab8ff72c737_1746460191.785913.gif)
+
+* Use two pointers: `prev (starts as null)` and `curr (starts at head)`.
+* At each step:
+    1 . Store `curr.next` in temp.
+    2 . Reverse `curr.next` to point to `prev`.
+    3 . Move `prev to curr` and `curr to temp`.
+* Repeat until curr is null.
+* `prev` becomes the **new head** of the reversed list.
+
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        prev = None
+        cur = head
+
+        while cur:
+            nxt = cur.next
+            cur.next = prev
+            prev = cur
+            cur = nxt
+        
+        return prev
+```
