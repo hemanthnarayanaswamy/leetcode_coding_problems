@@ -26,3 +26,19 @@
 	<li>The number of nodes in the list is in the range <code>[1, 100]</code>.</li>
 	<li><code>1 &lt;= Node.val &lt;= 100</code></li>
 </ul>
+
+# Solution 
+* Slow and Fast Pointer
+
+```python
+class Solution(object):
+    def middleNode(self, head):
+        slow_pointer = head
+        fast_pointer = head
+
+        while fast_pointer is not None and fast_pointer.next is not None:
+            slow_pointer = slow_pointer.next
+            fast_pointer = fast_pointer.next.next
+
+        return slow_pointer
+```
