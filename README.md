@@ -1634,6 +1634,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Recursion
 |  |
 | ------- |
+| [0206-reverse-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0206-reverse-linked-list) |
 | [0231-power-of-two](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0231-power-of-two) |
 | [0273-integer-to-english-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0273-integer-to-english-words) |
 | [0326-power-of-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0326-power-of-three) |
@@ -1698,5 +1699,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Linked List
 |  |
 | ------- |
+| [0206-reverse-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0206-reverse-linked-list) |
 | [0876-middle-of-the-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0876-middle-of-the-linked-list) |
 <!---LeetCode Topics End-->
