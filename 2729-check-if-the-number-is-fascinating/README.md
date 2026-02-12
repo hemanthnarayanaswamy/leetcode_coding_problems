@@ -33,3 +33,46 @@
 <ul>
 	<li><code>100 &lt;= n &lt;= 999</code></li>
 </ul>
+
+# Solution
+```python
+class Solution:
+    def isFascinating(self, n: int) -> bool:
+        n2 = n * 2
+        n3 = n * 3
+    
+        conStr = Counter(str(n) + str(n2) + str(n3))
+        print(conStr)
+        
+        if '0' in conStr or len(conStr) != 9:
+            return False
+        
+        for _, val in conStr.items():
+            if val > 1:
+                return False
+        
+        return True
+```
+---
+* The concentrated string will always contain `9 or more` numbers. 
+* and In the condition we need to only check, if the number is 0 and any number is repeacted thats it, no need to check is the lenght is `9` because, initally after concentating `n1,n2,n3` we'll have 9 digits, if there is no repeat or no `0`, all 9 nums are unique thats the assumption we are operating under.
+
+```python
+class Solution:
+    def isFascinating(self, n: int) -> bool:
+        n2 = n * 2
+        n3 = n * 3
+        numsFreq = set()
+    
+        nums = (str(n) + str(n2) + str(n3))
+
+        for num in nums:
+            if num in numsFreq or num == '0':
+                return False
+            else:
+                numsFreq.add(num)
+        
+        return True
+```        
+        
+        
