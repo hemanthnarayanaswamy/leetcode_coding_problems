@@ -12,7 +12,7 @@ class Solution:
             else:
                 numsFreq.add(num)
         
-        return True if len(numsFreq) == 9 else False
+        return True
         
         
         
