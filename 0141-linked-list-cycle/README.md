@@ -40,3 +40,46 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Can you solve it using <code>O(1)</code> (i.e. constant) memory?</p>
+
+# Solution
+Given `head`, the `head` of a linked list, determine if the linked list has a cycle in it.
+
+- There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the `next` pointer. Internally, `pos` is used to denote the index of the node that tail's next pointer is connected to. J**Note that pos is not passed as a parameter.**
+
+- Return `true` if there is a cycle in the linked list. Otherwise, return `false`.
+---
+
+#### Intuition💡:
+- Use `two pointers` : `slow (tortoise 🐢 )` and `fast (hare 🐇 )`. **The slow pointer moves one step at a time, while the fast pointer moves two steps at a time. If there's a cycle, the fast pointer will eventually meet the slow pointer inside the cycle. If there's no cycle, the fast pointer will reach the end of the list.**
+
+1. Floyd’s Cycle-Finding Algorithm // fast slow approach // 2 pointers
+2. tortoise and the hare algorithm (Tortoise and Hare)
+3. For More Visualization for Beginner (Floyd's Tortoise and Hare Explained)
+
+---
+#### Approach
+1. Start both pointers at the head of the list.
+2. Move `slow` by 1 step and `fast` by 2 step
+3.if `fast` meets `slow`, a cycle exists.
+4. If `fast` reaches the end(null) no cycle exists. 
+
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def hasCycle(self, head: Optional[ListNode]) -> bool:
+            slow = head
+            fast = head
+
+            while fast is not None and fast.next is not None:
+                slow = slow.next
+                fast = fast.next.next
+                if slow == fast:
+                    return True  # Cycle detected
+
+            return False  # No cycle
+```
