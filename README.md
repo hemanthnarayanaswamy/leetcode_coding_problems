@@ -406,6 +406,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2634-minimum-common-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2634-minimum-common-value) |
 | [2639-separate-the-digits-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2639-separate-the-digits-in-an-array) |
 | [2640-find-the-score-of-all-prefixes-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2640-find-the-score-of-all-prefixes-of-an-array) |
+| [2644-find-the-maximum-divisibility-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2644-find-the-maximum-divisibility-score) |
 | [2654-count-the-number-of-vowel-strings-in-range](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2654-count-the-number-of-vowel-strings-in-range) |
 | [2670-find-the-distinct-difference-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2670-find-the-distinct-difference-array) |
 | [2675-find-the-width-of-columns-of-a-grid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2675-find-the-width-of-columns-of-a-grid) |
