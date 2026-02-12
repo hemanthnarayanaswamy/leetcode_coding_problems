@@ -64,3 +64,75 @@
 	<li><code>1 &lt;= nums.length, divisors.length &lt;= 1000</code></li>
 	<li><code>1 &lt;= nums[i], divisors[i] &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Solution
+1. Handle the condition when the `count` is zero for all the `divisors`.
+2. Handle the condition when the `count == maxScore`
+
+```python
+class Solution:
+    def maxDivScore(self, nums: List[int], divisors: List[int]) -> int:
+        maxScore = 0
+        res = None
+
+        for d in divisors:
+            count = 0
+            for num in nums:
+                if num % d == 0:
+                    count += 1
+            
+            if count >= maxScore:
+                if count > maxScore:
+                    maxScore = count
+                    res = d
+                else:
+                    if res:
+                        res = min(res, d)
+                    else:
+                        res = d
+        
+        return res
+```
+---
+```python
+class Solution:
+    def maxDivScore(self, nums: List[int], divisors: List[int]) -> int:
+        maxScore = -1
+        res = -1
+
+        for d in divisors:
+            count = 0
+            for num in nums:
+                if num % d == 0:
+                    count += 1
+            
+            if count >= maxScore:
+                if count > maxScore:
+                    maxScore = count
+                    res = d
+                else:
+                    res = min(res, d)
+        return res
+```
+---
+* We **sort** `divisors.sort()` divisors, this way, `we don't need to check for condition when the score's are equal because, the divisor which is already present is minimum conpared to ones comes after that as the array was sorted before use.
+
+```python
+class Solution:
+    def maxDivScore(self, nums: List[int], divisors: List[int]) -> int:
+        maxScore = -1
+        res = -1
+        divisors.sort()
+
+        for d in divisors:
+            count = 0
+            for num in nums:
+                if num % d == 0:
+                    count += 1
+            
+            if count > maxScore:
+                maxScore = count
+                res = d
+
+        return res
+```
