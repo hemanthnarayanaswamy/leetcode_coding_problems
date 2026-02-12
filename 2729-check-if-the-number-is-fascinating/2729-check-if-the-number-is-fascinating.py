@@ -2,15 +2,19 @@ class Solution:
     def isFascinating(self, n: int) -> bool:
         n2 = n * 2
         n3 = n * 3
+        numsFreq = {}
     
-        conStr = Counter(str(n) + str(n2) + str(n3))
-        print(conStr)
-        
-        if '0' in conStr or len(conStr) != 9:
-            return False
-        
-        for _, val in conStr.items():
-            if val > 1:
+        nums = (str(n) + str(n2) + str(n3))
+
+        for num in nums:
+            if num in numsFreq:
                 return False
+            elif num == '0':
+                return False
+            else:
+                numsFreq[num] = 1
         
         return True
+        
+        
+        
