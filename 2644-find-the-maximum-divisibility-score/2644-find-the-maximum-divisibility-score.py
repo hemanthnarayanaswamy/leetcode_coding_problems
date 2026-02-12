@@ -1,7 +1,7 @@
 class Solution:
     def maxDivScore(self, nums: List[int], divisors: List[int]) -> int:
-        maxScore = 0
-        res = None
+        maxScore = -1
+        res = -1
 
         for d in divisors:
             count = 0
@@ -14,9 +14,5 @@ class Solution:
                     maxScore = count
                     res = d
                 else:
-                    if res:
-                        res = min(res, d)
-                    else:
-                        res = d
-        
+                    res = min(res, d)
         return res
