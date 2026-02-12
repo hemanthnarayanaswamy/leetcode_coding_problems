@@ -2,19 +2,17 @@ class Solution:
     def isFascinating(self, n: int) -> bool:
         n2 = n * 2
         n3 = n * 3
-        numsFreq = {}
+        numsFreq = set()
     
         nums = (str(n) + str(n2) + str(n3))
 
         for num in nums:
-            if num in numsFreq:
-                return False
-            elif num == '0':
+            if num in numsFreq or num == '0':
                 return False
             else:
-                numsFreq[num] = 1
+                numsFreq.add(num)
         
-        return True
+        return True if len(numsFreq) == 9 else False
         
         
         
