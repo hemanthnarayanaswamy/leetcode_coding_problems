@@ -48,3 +48,37 @@
 	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>s[i]</code> is either <code>&#39;a&#39;</code> or <code>&#39;b&#39;</code>.</li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def minLengthAfterRemovals(self, s: str) -> int:
+        stack = []
+
+        for c in s:
+            if stack and stack[-1] != c:
+                stack.pop()
+            else:
+                stack.append(c)
+        
+        return len(stack)
+```
+---
+* I think we can use `HashMaps` to count the frequency, and find the `freq Diff`, which will be the resulting length.
+
+```python
+class Solution:
+    def minLengthAfterRemovals(self, s: str) -> int:
+        sFreq = Counter(s)
+
+        return abs(sFreq.get('a', 0) - sFreq.get('b', 0))
+```
+---
+```python
+class Solution:
+    def minLengthAfterRemovals(self, s: str) -> int:
+        a_count = s.count('a')
+        b_count = s.count('b')
+        return abs(a_count - b_count)
+```        
+
