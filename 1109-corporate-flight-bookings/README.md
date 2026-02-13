@@ -43,3 +43,21 @@ Hence, answer = [10,25]
 	<li><code>1 &lt;= first<sub>i</sub> &lt;= last<sub>i</sub> &lt;= n</code></li>
 	<li><code>1 &lt;= seats<sub>i</sub> &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+# Difference Array Solution 
+* Refer to your algo notes to learn about the algorithm and procedures.
+```python
+class Solution:
+    def corpFlightBookings(self, bookings: List[List[int]], n: int) -> List[int]:
+        diff = [0] * (n+1)
+            
+        for f, l, s in bookings:
+            diff[f] += s
+            if l + 1 <= n:
+                diff[l+1] -= s
+        
+        for i in range(1, n+1):
+            diff[i] += diff[i-1]
+        
+        return diff[1:]
+```
