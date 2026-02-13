@@ -1,11 +1,6 @@
 class Solution:
     def minLengthAfterRemovals(self, s: str) -> int:
-        stack = []
+        sFreq = Counter(s)
 
-        for c in s:
-            if stack and stack[-1] != c:
-                stack.pop()
-            else:
-                stack.append(c)
-        
-        return len(stack)
+        return abs(sFreq.get('a', 0) - sFreq.get('b', 0))
+
