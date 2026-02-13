@@ -918,6 +918,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3707-find-the-most-common-response](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3707-find-the-most-common-response) |
 | [3707-equal-score-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3707-equal-score-substrings) |
 | [3736-find-valid-pair-of-adjacent-digits-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3736-find-valid-pair-of-adjacent-digits-in-string) |
+| [3746-minimum-string-length-after-balanced-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3746-minimum-string-length-after-balanced-removals) |
 | [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
 | [3760-maximum-substrings-with-distinct-start](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3760-maximum-substrings-with-distinct-start) |
 | [3768-check-if-digits-are-equal-in-string-after-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3768-check-if-digits-are-equal-in-string-after-operations-i) |
@@ -1287,6 +1288,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3707-find-the-most-common-response](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3707-find-the-most-common-response) |
 | [3712-sum-of-elements-with-frequency-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3712-sum-of-elements-with-frequency-divisible-by-k) |
 | [3736-find-valid-pair-of-adjacent-digits-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3736-find-valid-pair-of-adjacent-digits-in-string) |
+| [3746-minimum-string-length-after-balanced-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3746-minimum-string-length-after-balanced-removals) |
 | [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
 | [3778-transform-array-by-parity](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3778-transform-array-by-parity) |
 | [3871-minimum-deletions-for-at-most-k-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3871-minimum-deletions-for-at-most-k-distinct-characters) |
@@ -1351,6 +1353,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2470-removing-stars-from-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2470-removing-stars-from-a-string) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2800-minimum-string-length-after-removing-substrings) |
 | [3447-clear-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3447-clear-digits) |
+| [3746-minimum-string-length-after-balanced-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3746-minimum-string-length-after-balanced-removals) |
 ## Greedy
 |  |
 | ------- |
