@@ -30,3 +30,40 @@
 	<li><code>-10^4 &lt;=&nbsp;coordinates[i][0],&nbsp;coordinates[i][1] &lt;= 10^4</code></li>
 	<li><code>coordinates</code>&nbsp;contains no duplicate point.</li>
 </ul>
+
+# Solution 
+* Slope Formula `(y2-y1)(x1-x0)==(y1-y0)(x2-x1)`, for any three points. 
+
+```python
+class Solution:
+    def checkStraightLine(self, coordinates: List[List[int]]) -> bool:
+        x0, y0 = coordinates[0]
+        x1, y1 = coordinates[1]
+
+        for i in range(2, len(coordinates)):
+            x2, y2 = coordinates[i]
+
+            if (y2-y1) * (x1-x0) != (y1-y0) * (x2-x1):
+                return False
+        
+        return True
+```
+
+- The slope for a line through any 2 points `(x0, y0)` and `(x1, y1)` is `(y1 - y0) / (x1 - x0)`; 
+- Therefore, for any given 3 points (denote the 3rd point as (x, y)), if they are in a straight line, **the slopes of the lines from the 3rd point to the 2nd point and the 2nd point to the 1st point must be equal**
+
+`(y - y1) / (x - x1) = (y1 - y0) / (x1 - x0)`
+
+**In order to avoid being divided by 0, `use multiplication form`**
+
+```ini
+(x1 - x0) * (y2 - y1) = (x2 - x1) * (y1 - y0)   =>  (y2 - y1) / (x2 - x1) = (y1 - y0) / (x1 - x0)
+```
+```python
+    def checkStraightLine(self, coordinates: List[List[int]]) -> bool:
+        (x0, y0), (x1, y1) = coordinates[: 2]
+        for x, y in coordinates:
+            if (x1 - x0) * (y - y1) != (x - x1) * (y1 - y0):
+                return False
+        return True
+```
