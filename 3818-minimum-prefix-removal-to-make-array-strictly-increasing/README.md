@@ -48,3 +48,38 @@
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup>​​​​​​​</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def minimumPrefixLength(self, nums: List[int]) -> int:
+        checkPoint = 0
+        n = len(nums)
+        prev = nums[0]
+
+        for i in range(1, n):
+            curr = nums[i]
+            if curr <= prev:
+                checkPoint = i
+            prev = curr
+        
+        return checkPoint
+```
+* In this solution, We are moving through the entire array, So the easier way to break, reduce the whole iteration
+* Start Iterating from the **back of array** and `stop iteration, when the condition breaks`. 
+---
+* Find the first index `i` from the right such that `nums[i] >= nums[i + 1]`.
+* If such an index exists, the answer is `i + 1`; otherwise, the array is already strictly increasing.
+
+```python
+class Solution:
+    def minimumPrefixLength(self, nums: List[int]) -> int:
+        n = len(nums)
+        i = n - 1
+
+        while i > 0 and nums[i] > nums[i-1]:
+            i -= 1
+        
+        return i
+```
+        
