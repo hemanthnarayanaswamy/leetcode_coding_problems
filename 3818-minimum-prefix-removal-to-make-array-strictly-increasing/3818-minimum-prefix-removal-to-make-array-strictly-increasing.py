@@ -2,9 +2,12 @@ class Solution:
     def minimumPrefixLength(self, nums: List[int]) -> int:
         checkPoint = 0
         n = len(nums)
+        prev = nums[0]
 
         for i in range(1, n):
-            if nums[i] <= nums[i-1]:
+            curr = nums[i]
+            if curr <= prev:
                 checkPoint = i
+            prev = curr
         
         return checkPoint
