@@ -37,6 +37,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1195-distribute-candies-to-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1195-distribute-candies-to-people) |
 | [1232-check-if-it-is-a-straight-line](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1232-check-if-it-is-a-straight-line) |
 | [1289-day-of-the-week](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1289-day-of-the-week) |
+| [1290-convert-binary-number-in-a-linked-list-to-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1290-convert-binary-number-in-a-linked-list-to-integer) |
 | [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
 | [1378-cells-with-odd-values-in-a-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1378-cells-with-odd-values-in-a-matrix) |
 | [1395-minimum-time-visiting-all-points](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1395-minimum-time-visiting-all-points) |
@@ -1717,6 +1718,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0141-linked-list-cycle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0141-linked-list-cycle) |
 | [0206-reverse-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0206-reverse-linked-list) |
 | [0876-middle-of-the-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0876-middle-of-the-linked-list) |
+| [1290-convert-binary-number-in-a-linked-list-to-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1290-convert-binary-number-in-a-linked-list-to-integer) |
 ## Database
 |  |
 | ------- |
