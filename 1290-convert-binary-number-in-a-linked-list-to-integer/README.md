@@ -28,3 +28,37 @@
 	<li>Number of nodes will not exceed <code>30</code>.</li>
 	<li>Each node&#39;s value is either <code>0</code> or <code>1</code>.</li>
 </ul>
+
+# Solution 
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def getDecimalValue(self, head: Optional[ListNode]) -> int:
+        binary = ''
+        cur = head
+
+        while cur:
+            binary += str(cur.val)
+            cur = cur.next
+        
+        return int(binary, 2)
+```
+---
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def getDecimalValue(self, head: Optional[ListNode]) -> int:
+        n = ""
+        while head:
+            n+=str(head.val)
+            head = head.next
+        return int(n, 2)
+```
