@@ -1648,6 +1648,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Recursion
 |  |
 | ------- |
+| [0203-remove-linked-list-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0206-reverse-linked-list) |
 | [0231-power-of-two](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0231-power-of-two) |
 | [0273-integer-to-english-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0273-integer-to-english-words) |
@@ -1716,6 +1717,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0083-remove-duplicates-from-sorted-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0083-remove-duplicates-from-sorted-list) |
 | [0141-linked-list-cycle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0141-linked-list-cycle) |
+| [0203-remove-linked-list-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0206-reverse-linked-list) |
 | [0876-middle-of-the-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0876-middle-of-the-linked-list) |
 | [1290-convert-binary-number-in-a-linked-list-to-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1290-convert-binary-number-in-a-linked-list-to-integer) |
