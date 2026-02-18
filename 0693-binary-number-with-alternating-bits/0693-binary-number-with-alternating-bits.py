@@ -1,4 +1,5 @@
-class Solution:
-    def hasAlternatingBits(self, n: int) -> bool:
-        x = n ^ (n >> 1)
-        return (x & (x + 1)) == 0
+class Solution(object):
+    def hasAlternatingBits(self, n):
+        binaryVal = bin(n)
+        return False if '00' in binaryVal or '11' in binaryVal else True
+        
