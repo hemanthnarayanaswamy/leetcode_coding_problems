@@ -4,11 +4,10 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        n = len(s)
         groups = [1]
         ans = 0
 
-        for i in range(n-1):
+        for i in range(len(s)-1):
             if s[i] != s[i+1]:
                 groups.append(1)
             else:
