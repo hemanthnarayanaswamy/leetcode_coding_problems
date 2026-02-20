@@ -1,31 +1,26 @@
 class Solution:
     def modifyString(self, s: str) -> str:
-        def replacement(c1, c2):
+        def replacement(avoid):
             lower = 'abcdefghijklmnopqrstuvwxyz'
             c = 'a'
-            while c == c1 or c == c2:
+            while c in avoid:
                 c = lower[(ord(c) - 97 + 1) % 26]
             return c
         
         characters = list(s)
+        n = len(s)
 
-        for i in range(1, len(s)):
+        for i in range(1, n):
             if characters[i] == '?':
-                if i == len(s)-1:
-                    c1 = c2 = characters[i-1]
+                if i != n-1:
+                    avoid = characters[i-1] + characters[i+1]
                 else:
-                    c1 = characters[i-1]
-                    c2 = characters[i+1]
+                    avoid = characters[i-1]
 
-                characters[i] = replacement(c1, c2)
+                characters[i] = replacement(avoid)
         
         if characters[0] == '?':
-            if len(s) == 1:
-                return 'a'
-            else:
-                c1 = c2 = characters[1]
-                characters[0] = replacement(c1, c2)
-
+            avoid = '' if n == 1 else characters[1]
+            characters[0] = replacement(avoid)
         
         return ''.join(characters)
-
