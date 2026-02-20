@@ -796,6 +796,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1561-rearrange-words-in-a-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1561-rearrange-words-in-a-sentence) |
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
+| [1576-replace-all-s-to-avoid-consecutive-repeating-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1576-replace-all-s-to-avoid-consecutive-repeating-characters) |
 | [1619-path-crossing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1619-path-crossing) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1651-shuffle-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1651-shuffle-string) |
