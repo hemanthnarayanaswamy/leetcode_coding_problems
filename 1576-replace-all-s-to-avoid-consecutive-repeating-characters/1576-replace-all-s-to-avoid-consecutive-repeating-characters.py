@@ -1,26 +1,20 @@
 class Solution:
     def modifyString(self, s: str) -> str:
-        def replacement(avoid):
+        def replacement(pc, nc):
             lower = 'abcdefghijklmnopqrstuvwxyz'
             c = 'a'
-            while c in avoid:
+            while c == pc or c == nc:
                 c = lower[(ord(c) - 97 + 1) % 26]
             return c
         
         characters = list(s)
         n = len(s)
 
-        for i in range(1, n):
+        for i in range(n):
             if characters[i] == '?':
-                if i != n-1:
-                    avoid = characters[i-1] + characters[i+1]
-                else:
-                    avoid = characters[i-1]
+                pc = characters[i - 1] if i > 0 else None
+                nc = characters[i + 1] if i < n - 1 else None
 
-                characters[i] = replacement(avoid)
-        
-        if characters[0] == '?':
-            avoid = '' if n == 1 else characters[1]
-            characters[0] = replacement(avoid)
+                characters[i] = replacement(pc, nc)
         
         return ''.join(characters)
