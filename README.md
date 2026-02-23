@@ -476,6 +476,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3367-find-the-sum-of-encrypted-integers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3367-find-the-sum-of-encrypted-integers) |
 | [3372-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3372-longest-strictly-increasing-or-strictly-decreasing-subarray) |
 | [3379-transformed-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3379-transformed-array) |
+| [3386-button-with-longest-push-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3386-button-with-longest-push-time) |
 | [3397-find-the-integer-added-to-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3397-find-the-integer-added-to-array-i) |
 | [3421-count-pairs-that-form-a-complete-day-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3421-count-pairs-that-form-a-complete-day-i) |
 | [3429-special-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3429-special-array-i) |
