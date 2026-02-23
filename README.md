@@ -582,6 +582,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1354-find-players-with-zero-or-one-losses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1354-find-players-with-zero-or-one-losses) |
 | [1363-greatest-english-letter-in-upper-and-lower-case](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1363-greatest-english-letter-in-upper-and-lower-case) |
 | [1407-group-the-people-given-the-group-size-they-belong-to](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1407-group-the-people-given-the-group-size-they-belong-to) |
+| [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1464-reduce-array-size-to-the-half](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1464-reduce-array-size-to-the-half) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1469-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1469-minimum-number-of-steps-to-make-two-strings-anagram) |
@@ -782,6 +783,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1430-find-the-k-beauty-of-a-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1430-find-the-k-beauty-of-a-number) |
 | [1434-decrypt-string-from-alphabet-to-integer-mapping](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1434-decrypt-string-from-alphabet-to-integer-mapping) |
 | [1454-remove-palindromic-subsequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1454-remove-palindromic-subsequences) |
+| [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1469-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1469-minimum-number-of-steps-to-make-two-strings-anagram) |
 | [1472-increasing-decreasing-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1472-increasing-decreasing-string) |
 | [1490-generate-a-string-with-characters-that-have-odd-counts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1490-generate-a-string-with-characters-that-have-odd-counts) |
@@ -1475,6 +1477,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1054-complement-of-base-10-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1054-complement-of-base-10-integer) |
 | [1444-number-of-steps-to-reduce-a-number-to-zero](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1444-number-of-steps-to-reduce-a-number-to-zero) |
 | [1458-sort-integers-by-the-number-of-1-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1458-sort-integers-by-the-number-of-1-bits) |
+| [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1557-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1557-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1610-xor-operation-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1610-xor-operation-in-an-array) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
@@ -1710,11 +1713,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0187-repeated-dna-sequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0187-repeated-dna-sequences) |
+| [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1557-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1557-check-if-a-string-contains-all-binary-codes-of-size-k) |
 ## Hash Function
 |  |
 | ------- |
 | [0187-repeated-dna-sequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0187-repeated-dna-sequences) |
+| [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1557-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1557-check-if-a-string-contains-all-binary-codes-of-size-k) |
 ## Linked List
 |  |
