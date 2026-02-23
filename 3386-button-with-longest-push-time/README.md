@@ -51,3 +51,30 @@
 	<li><code>1 &lt;= index<sub>i</sub>, time<sub>i</sub> &lt;= 10<sup>5</sup></code></li>
 	<li>The input is generated such that <code>events</code> is sorted in increasing order of <code>time<sub>i</sub></code>.</li>
 </ul>
+
+# Solution
+* I used a simple iterative approach to solve this problem. I initialized two variables, `longestTime` and `res`, to keep track of the `maximum time difference` and the `index` of the corresponding button which is initiallzes to first event by  default. 
+* Then, I iterated through the list of events, calculating the time difference between each pair of consecutive events. using `prevTime` by changing it to current as we move. 
+*  If the time difference was greater than or equal to the current maximum time difference, I updated current_total and current_index accordingly.
+
+
+```python
+class Solution:
+    def buttonWithLongestTime(self, events: List[List[int]]) -> int:
+        prevTime = longestTime = events[0][1]
+        res = events[0][0]
+
+        for i in range(1, len(events)):
+            idx, time = events[i]
+            tmpTime = (time - prevTime)
+
+            if tmpTime > longestTime:
+                longestTime = tmpTime
+                res = idx
+            elif tmpTime == longestTime:
+                res = min(res, idx)
+            
+            prevTime = time
+        
+        return res
+```
