@@ -48,3 +48,33 @@ There is only one node with a twin in the linked list having twin sum of 1 + 100
 	<li>The number of nodes in the list is an <strong>even</strong> integer in the range <code>[2, 10<sup>5</sup>]</code>.</li>
 	<li><code>1 &lt;= Node.val &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+# Solution 
+* We will use `slow & fast pointer` technique. 
+
+1. until the when the fast pointer reachs the end, the slow pointer stops at the first half of the numbers. 
+2. Now after terminating that loop, start the second loop to iterate slow pointer, while adding its twin numbers which were stored in the stack in the first iteration. 
+![iamge](https://i.ytimg.com/vi/l91Q-Ds1RGE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCA7bSa8nFzjGcYcR-HVHw7jpJ0lg)
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def pairSum(self, head: Optional[ListNode]) -> int:
+        stack = []
+        slow = fast = head 
+
+        while fast:
+            stack.append(slow.val)
+            slow = slow.next
+            fast = fast.next.next
+        
+        res = 0
+        while slow:
+            res = max(res, stack.pop() + slow.val)
+            slow = slow.next
+        
+        return res
+```
