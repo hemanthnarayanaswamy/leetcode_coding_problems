@@ -10,6 +10,9 @@ class Solution:
         while head.val in nums:
             head = head.next
         
+        if head is None:
+            return head
+            
         prev = head
         cur = head.next
         while cur:
@@ -17,7 +20,7 @@ class Solution:
                 prev.next = cur.next
             else:
                 prev = cur
-                
+
             cur = cur.next
         
         return head
