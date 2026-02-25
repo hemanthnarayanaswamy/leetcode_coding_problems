@@ -54,3 +54,59 @@
 	<li><code>1 &lt;= Node.val &lt;= 10<sup>5</sup></code></li>
 	<li>The input is generated such that there is at least one node in the linked list that has a value not present in <code>nums</code>.</li>
 </ul>
+
+# Approach
+* Since `nums` is array and the unique, we'll convert `nums` into `set()` so the search complexity is `O(1)`. 
+* Then just follow the procude to delete a node, using a `prev` pointer, shifting the pointer if `val` in `nums`.
+```python
+# Definition for singly-linked list.
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+class Solution:
+    def modifiedList(self, nums: List[int], head: Optional[ListNode]) -> Optional[ListNode]:
+        nums = set(nums)
+
+        while head.val in nums:
+            head = head.next
+        
+        if head is None: # Reduce Execution Time
+            return head
+            
+        prev = head
+        cur = head.next
+        while cur:
+            if cur.val in nums:
+                prev.next = cur.next
+            else:
+                prev = cur
+
+            cur = cur.next
+        
+        return head
+```
+---
+## Dummy Pointer Approach & Single Iteration
+
+```python
+class Solution:
+    def modifiedList(
+        self, nums: List[int], head: Optional[ListNode]
+    ) -> Optional[ListNode]:
+        start = ListNode() # start a dummy pointer and we'll use this to track or create linked lists that are not in nums
+
+        current = start
+
+        nums = set(nums)
+
+        while head:
+            if head.val not in nums: # For the ones not in nums we'll link those nodes to new head
+                current.next = head 
+                current = current.next
+            head = head.next
+
+        current.next = None # To indicate the End of the new linked list
+
+        return start.next
+```
