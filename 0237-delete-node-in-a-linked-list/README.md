@@ -47,3 +47,34 @@
 	<li>The value of each node in the list is <strong>unique</strong>.</li>
 	<li>The <code>node</code> to be deleted is <strong>in the list</strong> and is <strong>not a tail</strong> node.</li>
 </ul>
+
+# Approach 
+
+* Here `head` is not given but only the `node` to be deleted that position is given. 
+
+```ini
+According to the problem statement, we've to remove the value of given node and decrease the number of nodes by one.
+
+1. Given Node can't be the last node of the linked list.
+2. All the values before should be in the same order.
+```
+- In order to remove the value of given node, we'll replace the value of given node with the value of next node. 
+- Connect the given node with next to next node to decrease the number of nodes by one
+- **Order of values will be same after performing above steps**
+
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def deleteNode(self, node):
+        """
+        :type node: ListNode
+        :rtype: void Do not return anything, modify node in-place instead.
+        """
+        node.val = node.next.val
+        node.next = node.next.next
+```
