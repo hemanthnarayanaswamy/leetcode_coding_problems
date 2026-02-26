@@ -64,6 +64,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2032-largest-odd-number-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2032-largest-odd-number-in-string) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2106-find-greatest-common-divisor-of-array) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
+| [2139-minimum-moves-to-reach-target-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2139-minimum-moves-to-reach-target-score) |
 | [2238-a-number-after-a-double-reversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2238-a-number-after-a-double-reversal) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
@@ -1414,6 +1415,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2077-largest-number-after-mutating-substring](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2077-largest-number-after-mutating-substring) |
 | [2085-array-with-elements-not-equal-to-average-of-neighbors](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2085-array-with-elements-not-equal-to-average-of-neighbors) |
 | [2088-minimum-time-to-type-word-using-special-typewriter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2088-minimum-time-to-type-word-using-special-typewriter) |
+| [2139-minimum-moves-to-reach-target-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2139-minimum-moves-to-reach-target-score) |
 | [2148-minimum-number-of-moves-to-seat-everyone](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2148-minimum-number-of-moves-to-seat-everyone) |
 | [2154-minimum-moves-to-convert-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2154-minimum-moves-to-convert-string) |
 | [2199-two-furthest-houses-with-different-colors](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2199-two-furthest-houses-with-different-colors) |
