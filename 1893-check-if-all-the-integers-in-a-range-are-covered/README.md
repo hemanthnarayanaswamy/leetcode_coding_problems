@@ -32,3 +32,52 @@
 	<li><code>1 &lt;= start<sub>i</sub> &lt;= end<sub>i</sub> &lt;= 50</code></li>
 	<li><code>1 &lt;= left &lt;= right &lt;= 50</code></li>
 </ul>
+
+# Brute Force Solution 
+```python
+class Solution:
+    def isCovered(self, ranges: List[List[int]], left: int, right: int) -> bool:
+        nums_in_ranges = set()
+
+        for l, r in ranges:
+            for num in range(l, r+1):
+                nums_in_ranges.add(num)
+        
+        for num in range(left, right+1):
+            if num not in nums_in_ranges:
+                return False
+        
+        return True
+```
+---
+```python
+class Solution:
+    def isCovered(self, ranges: List[List[int]], left: int, right: int) -> bool:
+        covered=[0]*51
+        for start,end in ranges:
+            for i in range(start,end+1):
+                covered[i]=True
+        for i in range(left,right+1):
+            if not covered[i]:
+                return False
+        return True
+```
+# Difference Array Approach
+[Diff Array Algo Apporach](https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/solutions/7109522/beats-100-o51-prefix-sum-sweep-diff-arra-zcz5/)
+
+```python
+class Solution:
+    def isCovered(self, ranges: List[List[int]], left: int, right: int) -> bool:
+        diff = [0] * 52                         # 1..50 domain
+        for l, r in ranges:
+            diff[l] += 1
+            diff[r + 1] -= 1
+        cover = 0
+        for x in range(1, 51):
+            cover += diff[x]
+            if left <= x <= right and cover == 0:
+                return False
+            if x == right:
+                return True
+        return True
+```
