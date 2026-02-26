@@ -61,3 +61,49 @@
 	<li><code>1 &lt;= s.length &lt;= 100</code></li>
 	<li><code>s</code> consists of lowercase English letters, spaces and digits.</li>
 </ul>
+
+# Solution 
+`Simulate as described`
+
+```python
+class Solution:
+    def vowelConsonantScore(self, s: str) -> int:
+        vowels = 'aeiou'
+        v = c = 0
+
+        for chr in s:
+            if chr in vowels:
+                v += 1
+            elif chr.isalpha():
+                c += 1
+        
+        return floor(v/c) if c > 0 else 0
+```
+---
+```python
+class Solution:
+    def vowelConsonantScore(self, s: str) -> int:
+        v = c = 0
+        for char in s:
+            if char in "aeiou":
+                v += 1
+            elif char > "9":
+                c += 1
+        return floor(v / c) if c else 0
+```
+---
+```python
+class Solution:
+    def vowelConsonantScore(self, s: str) -> int:
+        vowels = 'aeiou'
+        v = c = 0
+
+        for chr in s:
+            if chr in vowels:
+                v += 1
+
+            if chr.isalpha():
+                c += 1
+        
+        return 0 if c == v else floor(v/(c-v))
+```
