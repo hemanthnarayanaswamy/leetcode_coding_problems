@@ -3,6 +3,10 @@ class Solution:
         moves = 0
 
         while target != 1:
+            if not maxDoubles:
+                moves += (target - 1)
+                break
+
             if maxDoubles and target % 2 == 0:
                 target //= 2
                 maxDoubles -= 1
@@ -10,10 +14,6 @@ class Solution:
                 target -= 1
             
             moves += 1
-
-            if not maxDoubles:
-                moves += (target - 1)
-                break
         
         return moves
         
