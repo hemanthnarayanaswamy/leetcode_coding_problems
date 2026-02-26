@@ -52,3 +52,43 @@ Double again so x = 10
 	<li><code>1 &lt;= target &lt;= 10<sup>9</sup></code></li>
 	<li><code>0 &lt;= maxDoubles &lt;= 100</code></li>
 </ul>
+
+# Solution 
+
+```ini
+Solve the opposite problem: start at the given score and move to 1.
+
+reverse the process
+subtract 1 (if target is odd)
+Divide by 2 (if target is even)
+```
+- Early termination, when we don't have `maxDouble` only way is to reduce the `target` by `1` in single move to number of moves to make target to `1` is -> `moves = (target - 1)`.
+
+```python
+if not maxDoubles:
+        moves += (target - 1)
+        break
+```
+
+```python
+class Solution:
+    def minMoves(self, target: int, maxDoubles: int) -> int:
+        moves = 0
+
+        while target != 1:
+            if not maxDoubles:
+                moves += (target - 1)
+                break
+
+            if maxDoubles and target % 2 == 0:
+                target //= 2
+                maxDoubles -= 1
+            else:
+                target -= 1
+            
+            moves += 1
+        
+        return moves
+```      
+
+                
