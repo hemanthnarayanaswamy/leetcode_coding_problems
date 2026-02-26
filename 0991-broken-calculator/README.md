@@ -38,3 +38,41 @@
 <ul>
 	<li><code>1 &lt;= startValue, target &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Solution
+1. We have two operations, multiple and subtract
+
+```ini
+We reverse the problem, we'll make the target match the startValue
+
+Operations used will become
+- diviide 
+- add
+```
+### `Condition1: target > startValue`
+- if `target` is odd we increase `target += 1`
+- if `target` is even and `target is greater than startValue`, we'll half target `target //= 2`
+
+### `Condition2: target < startValue`
+- only thing to do is increace `target` by one until we reach `startValue`, so the number moves will be `moves += (startValue - target)`
+
+```python
+class Solution:
+    def brokenCalc(self, startValue: int, target: int) -> int:
+        moves = 0
+
+        while target != startValue:
+            if target < startValue:
+                moves += startValue - target
+                break
+                
+            # Assuming that target needs to be reduced to match startValue
+            if target % 2 == 0 and target > startValue:
+                target //= 2
+            else:
+                target += 1
+            moves += 1
+
+        return moves
+```
+
