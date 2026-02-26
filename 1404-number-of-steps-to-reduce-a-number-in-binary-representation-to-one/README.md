@@ -50,3 +50,22 @@ Step 1) 2 is even, divide by 2 and obtain 1.&nbsp;
 	<li><code>s</code> consists of characters &#39;0&#39; or &#39;1&#39;</li>
 	<li><code>s[0] == &#39;1&#39;</code></li>
 </ul>
+
+# Solution
+* We are converting `binary string` into `int` to perform the operation. 
+* For optimal solution would be to use `bit manipulation`
+```python
+class Solution:
+    def numSteps(self, s: str) -> int:
+        sInt = int(s, 2)
+        count = 0
+
+        while sInt != 1:
+            if sInt % 2:
+                sInt += 1
+            else:
+                sInt //= 2
+            count += 1
+        
+        return count
+```
