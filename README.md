@@ -32,6 +32,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0728-self-dividing-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0728-self-dividing-numbers) |
 | [0830-largest-triangle-area](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0830-largest-triangle-area) |
 | [0950-x-of-a-kind-in-a-deck-of-cards](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0950-x-of-a-kind-in-a-deck-of-cards) |
+| [0991-broken-calculator](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0991-broken-calculator) |
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1094-matrix-cells-in-distance-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1094-matrix-cells-in-distance-order) |
 | [1195-distribute-candies-to-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1195-distribute-candies-to-people) |
@@ -1389,6 +1390,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0948-bag-of-tokens](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0948-bag-of-tokens) |
 | [0979-di-string-match](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0979-di-string-match) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0982-minimum-increment-to-make-array-unique) |
+| [0991-broken-calculator](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0991-broken-calculator) |
 | [1013-partition-array-into-three-parts-with-equal-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1013-partition-array-into-three-parts-with-equal-sum) |
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1026-string-without-aaa-or-bbb](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1026-string-without-aaa-or-bbb) |
