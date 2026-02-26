@@ -6,7 +6,8 @@ class Solution:
         for chr in s:
             if chr in vowels:
                 v += 1
-            elif chr.isalpha():
+
+            if chr.isalpha():
                 c += 1
         
-        return floor(v/c) if c > 0 else 0
+        return 0 if c == v else floor(v/(c-v))
