@@ -9,12 +9,13 @@ class Solution:
         nonZeroPointer = head.next
 
         while nonZeroPointer and nonZeroPointer.next:
-            if nonZeroPointer.val != 0:
-                zeroPointer.val += nonZeroPointer.val
+            c, v, n = nonZeroPointer, nonZeroPointer.val, nonZeroPointer.next
+            if v != 0:
+                zeroPointer.val += v
             else:
-                zeroPointer.next = nonZeroPointer
+                zeroPointer.next = c
                 zeroPointer = zeroPointer.next      
-            nonZeroPointer = nonZeroPointer.next
+            nonZeroPointer = n
         
         zeroPointer.next = None
         return head
