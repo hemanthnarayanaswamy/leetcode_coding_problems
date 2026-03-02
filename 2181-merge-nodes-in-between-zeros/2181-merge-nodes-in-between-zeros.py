@@ -8,15 +8,13 @@ class Solution:
         zeroPointer = head
         nonZeroPointer = head.next
 
-        while nonZeroPointer:
+        while nonZeroPointer and nonZeroPointer.next:
             if nonZeroPointer.val != 0:
                 zeroPointer.val += nonZeroPointer.val
             else:
-                if nonZeroPointer.next:
-                    zeroPointer.next = nonZeroPointer
-                    zeroPointer = zeroPointer.next 
-                else:
-                    zeroPointer.next = None
-                    return head
-                
+                zeroPointer.next = nonZeroPointer
+                zeroPointer = zeroPointer.next      
             nonZeroPointer = nonZeroPointer.next
+        
+        zeroPointer.next = None
+        return head
