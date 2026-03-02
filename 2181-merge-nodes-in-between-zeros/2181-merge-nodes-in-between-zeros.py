@@ -7,15 +7,19 @@ class Solution:
     def mergeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
         zeroPointer = head
         nonZeroPointer = head.next
+        currentSum = 0
 
         while nonZeroPointer and nonZeroPointer.next:
             c, v, n = nonZeroPointer, nonZeroPointer.val, nonZeroPointer.next
             if v != 0:
-                zeroPointer.val += v
+                currentSum += v
             else:
+                zeroPointer.val = currentSum
+                currentSum = 0
                 zeroPointer.next = c
                 zeroPointer = zeroPointer.next      
             nonZeroPointer = n
         
+        zeroPointer.val = currentSum
         zeroPointer.next = None
         return head
