@@ -37,3 +37,82 @@ The above figure represents the given linked list. The modified list contains
 	<li>There are <strong>no</strong> two consecutive nodes with <code>Node.val == 0</code>.</li>
 	<li>The <strong>beginning</strong> and <strong>end</strong> of the linked list have <code>Node.val == 0</code>.</li>
 </ul>
+
+# Approach
+**There are no two consecutive nodes with `Node.val == 0.`**
+* The `beginning` and `end` of the linked list have `Node.val == 0`.
+
+1. We'll use 2 pointers, `zeroPointer` & `nonZeroPointer`.
+2. We'll keep adding the non-zero values to the `first zeroPointer`
+
+```python
+zeroPointer = head
+        nonZeroPointer = head.next
+
+        while nonZeroPointer:
+            if nonZeroPointer.val != 0:
+                zeroPointer.val += nonZeroPointer.val
+```
+3. Now when the `nonZeroPointer` value becomes zero.
+    * we skip all the nodes in-between and make `zeroPointer.next = nonZeroPointer` where zero was detected and bring the `zeroPointer` to this recent zero location. 
+    * But we know at the end we also have a zero, `if nonZeroPointer.next` is valid only we follow the above steps, 
+    * If `nonZeroPointer.next` becomes `NONE`, then we know we have reached the end of the Nodes, so that should be ignored, and
+    * So, the recent zeroPointer's next we'll be NONE and we return `zeroPointer.next = None`
+
+```python
+else:
+                if nonZeroPointer.next:
+                    zeroPointer.next = nonZeroPointer
+                    zeroPointer = zeroPointer.next 
+                else:
+                    zeroPointer.next = None
+                    return head
+```
+---
+```python
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def mergeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        zeroPointer = head
+        nonZeroPointer = head.next
+
+        while nonZeroPointer:
+            if nonZeroPointer.val != 0:
+                zeroPointer.val += nonZeroPointer.val
+            else:
+                if nonZeroPointer.next:
+                    zeroPointer.next = nonZeroPointer
+                    zeroPointer = zeroPointer.next 
+                else:
+                    zeroPointer.next = None
+                    return head
+                
+            nonZeroPointer = nonZeroPointer.next
+```
+---
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def mergeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        zeroPointer = head
+        nonZeroPointer = head.next
+
+        while nonZeroPointer and nonZeroPointer.next:
+            if nonZeroPointer.val != 0:
+                zeroPointer.val += nonZeroPointer.val
+            else:
+                zeroPointer.next = nonZeroPointer
+                zeroPointer = zeroPointer.next      
+            nonZeroPointer = nonZeroPointer.next
+        
+        zeroPointer.next = None
+        return head
+```
