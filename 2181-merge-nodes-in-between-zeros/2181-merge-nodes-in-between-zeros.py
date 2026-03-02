@@ -11,12 +11,12 @@ class Solution:
         while nonZeroPointer:
             if nonZeroPointer.val != 0:
                 zeroPointer.val += nonZeroPointer.val
-                nonZeroPointer = nonZeroPointer.next
             else:
                 if nonZeroPointer.next:
                     zeroPointer.next = nonZeroPointer
-                    zeroPointer = zeroPointer.next
-                    nonZeroPointer = nonZeroPointer.next
+                    zeroPointer = zeroPointer.next 
                 else:
                     zeroPointer.next = None
                     return head
+                
+            nonZeroPointer = nonZeroPointer.next
