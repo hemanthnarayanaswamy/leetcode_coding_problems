@@ -277,6 +277,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1552-build-an-array-with-stack-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1552-build-an-array-with-stack-operations) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1560-number-of-students-doing-homework-at-a-given-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1560-number-of-students-doing-homework-at-a-given-time) |
+| [1560-most-visited-sector-in-a-circular-track](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1560-most-visited-sector-in-a-circular-track) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1580-shuffle-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1580-shuffle-the-array) |
 | [1584-average-salary-excluding-the-minimum-and-maximum-salary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1584-average-salary-excluding-the-minimum-and-maximum-salary) |
@@ -976,6 +977,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one) |
 | [1505-create-target-array-in-the-given-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1505-create-target-array-in-the-given-order) |
 | [1552-build-an-array-with-stack-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1552-build-an-array-with-stack-operations) |
+| [1560-most-visited-sector-in-a-circular-track](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1560-most-visited-sector-in-a-circular-track) |
 | [1642-water-bottles](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1642-water-bottles) |
 | [1646-get-maximum-in-generated-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1646-get-maximum-in-generated-array) |
 | [1803-average-waiting-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1803-average-waiting-time) |
