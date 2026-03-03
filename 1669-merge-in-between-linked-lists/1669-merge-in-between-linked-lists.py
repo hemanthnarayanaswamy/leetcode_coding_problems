@@ -6,24 +6,21 @@
 class Solution:
     def mergeInBetween(self, list1: ListNode, a: int, b: int, list2: ListNode) -> ListNode:
         tail2 = list2
-
         while tail2.next:
             tail2 = tail2.next
         
-        prev = list1
-        cur = list1.next
-
+        cur = list1
         node = 1
 
         while cur:
+            next = cur.next
             if node == a:
-                prev.next = list2
-            if node == b:
+                cur.next = list2
+            if node == b+1:
                 tail2.next = cur.next
                 break
-                
+
             node += 1
-            prev = cur
-            cur = cur.next
+            cur = next
         
         return list1
