@@ -31,3 +31,67 @@
 	<li><code>1 &lt;= a &lt;= b &lt; list1.length - 1</code></li>
 	<li><code>1 &lt;= list2.length &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+## Solution
+
+[Algorithm FLOW]("blob:https://leetcode.com/8dcce3f7-f20c-4a8f-baa3-23da3d492bb4")
+- The `next` of the node at index `a - 1` of `list1` points to the `head` of `list2`.
+- The `next` of the `tail` of `list2` points to the node at `index b + 1` of `list1`.
+
+##### 1. Step 1
+* Find the node at index `a - 1` of list1, which we will call `start`. Set `start.next = list2`
+
+##### 2. Step 2
+* Find the node at `(original)` `index b` of list1, which we will call `end`, Set the `next` of the `tail` of `list2` to `end.next`.
+
+```python
+class Solution:
+    def mergeInBetween(self, list1: ListNode, a: int, b: int, list2: ListNode) -> ListNode:
+        start = ListNode()
+        end = list1
+
+        # Set start to node a - 1 and end to node b
+        for index in range (b):
+            if index == a - 1:
+                start = end
+            end = end.next
+
+        # Connect the start node to list2
+        start.next = list2
+
+        # Find the tail of list2
+        while (list2.next is not None):
+            list2 = list2.next
+        # Set the tail of list2 to end.next
+        list2.next = end.next
+        end.next = None
+        
+        return list1
+```
+---
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def mergeInBetween(self, list1: ListNode, a: int, b: int, list2: ListNode) -> ListNode:
+        tail = list2
+        while tail.next:
+            tail = tail.next
+        
+        cur = list1
+        node = 0
+
+        for i in range(b+1):
+            next = cur.next
+            if i == a-1:
+                cur.next = list2
+            if i == b:
+                tail.next = cur.next
+
+            cur = next
+        
+        return list1
+```
