@@ -35,3 +35,50 @@ There are no pairs of adjacent nodes, so we return the initial linked list.
 	<li>The number of nodes in the list is in the range <code>[1, 5000]</code>.</li>
 	<li><code>1 &lt;= Node.val &lt;= 1000</code></li>
 </ul>
+
+# Solution
+```python
+class Solution:
+    def insertGreatestCommonDivisors(
+        self, head: Optional[ListNode]
+    ) -> Optional[ListNode]:
+        # Helper method to calculate the greatest common divisor using the Euclidean algorithm
+        def _calculate_gcd(a, b):
+            while b != 0:
+                a, b = b, a % b
+            return a
+
+        # If the list contains only one node, return the head as no insertion is needed
+        if not head.next:
+            return head
+
+        # Initialize pointers to traverse the list
+        node1 = head
+        node2 = head.next
+
+        # Traverse the linked list
+        while node2:
+            gcd_value = _calculate_gcd(node1.val, node2.val)
+            gcd_node = ListNode(gcd_value)
+
+            # Insert the GCD node between node1 and node2
+            node1.next = gcd_node
+            gcd_node.next = node2
+
+            # Move to the next pair of nodes
+            node1 = node2
+            node2 = node2.next
+
+        return head
+```
+
+* If the list contains only one node (`head.next` is null), return the `head` as no insertion is needed.
+* Initialize `ListNode` variables `node1` and `node2` to `head` and `head.next` respectively, to traverse the linked list.
+* While `node2` is not null:
+		* Calculate the `GCD's` of the values in `node1` and `node2`.
+		* Create a `new` ListNode `gcdNode` with the calculated GCD value.
+		* Update `node1.next` to `gcdNode`.
+		* Update `gcdNode.next` to `node2`.
+		* Set `node1` to `node2` and `node2` to `node2.next`, respectively. 
+		* This essentially moves `node1` and `node2` to the next pair of nodes in the list.
+* Return the modified head of the list as our answer.
