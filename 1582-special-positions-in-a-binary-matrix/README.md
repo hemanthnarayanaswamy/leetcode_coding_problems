@@ -28,3 +28,51 @@
 	<li><code>1 &lt;= m, n &lt;= 100</code></li>
 	<li><code>mat[i][j]</code> is either <code>0</code> or <code>1</code>.</li>
 </ul>
+
+# Solution
+* First Iteration, We count the frequency of ones, in each `rows` and `columns`
+* and In the Second Iteration, when there is one, for that respective `row` and `col`, when check if the frequency is exactly `1`, than that means **We have a special position +1**
+
+```python
+class Solution:
+    def numSpecial(self, mat: List[List[int]]) -> int:
+        rows = defaultdict(int)
+        cols = defaultdict(int)
+
+        for i in range(len(mat)):
+            for j in range(len(mat[0])):
+                if mat[i][j] == 1:
+                    rows[i] += 1
+                    cols[j] += 1
+        
+        res = 0
+        
+        for i in range(len(mat)):
+            for j in range(len(mat[0])):
+                if mat[i][j] == 1 and rows[i] == 1 and cols[j] == 1:
+                    res += 1
+        
+        return res
+```
+---
+```python
+class Solution:
+    def numSpecial(self, mat: List[List[int]]) -> int:
+        rows = defaultdict(int)
+        cols = defaultdict(int)
+
+        for i in range(len(mat)):
+            for j in range(len(mat[0])):
+                if mat[i][j]:
+                    rows[i] += 1
+                    cols[j] += 1
+        
+        ans = 0
+        for i in range(len(mat)):
+            for j in range(len(mat[0])):
+                if mat[i][j]:
+                    if rows[i] == 1 and cols[j] == 1:
+                        ans += 1
+        
+        return ans
+```
