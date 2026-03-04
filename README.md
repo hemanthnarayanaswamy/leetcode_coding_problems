@@ -281,6 +281,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1560-most-visited-sector-in-a-circular-track](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1560-most-visited-sector-in-a-circular-track) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1580-shuffle-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1580-shuffle-the-array) |
+| [1582-special-positions-in-a-binary-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1582-special-positions-in-a-binary-matrix) |
 | [1584-average-salary-excluding-the-minimum-and-maximum-salary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1584-average-salary-excluding-the-minimum-and-maximum-salary) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1603-running-sum-of-1d-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1603-running-sum-of-1d-array) |
@@ -1574,6 +1575,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1253-sort-the-matrix-diagonally](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1253-sort-the-matrix-diagonally) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1496-lucky-numbers-in-a-matrix) |
+| [1582-special-positions-in-a-binary-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1582-special-positions-in-a-binary-matrix) |
 | [1677-matrix-diagonal-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1677-matrix-diagonal-sum) |
 | [1791-richest-customer-wealth](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1791-richest-customer-wealth) |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
