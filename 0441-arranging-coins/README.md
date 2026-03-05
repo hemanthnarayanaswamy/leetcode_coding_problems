@@ -25,3 +25,33 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+# Brute Force Solution 
+```python
+class Solution:
+    def arrangeCoins(self, n: int) -> int:
+        i = 1
+        rows = 0
+
+        while i <= n:
+            n -= i
+            rows += 1
+            i += 1
+        
+        return rows
+```
+---
+```ini
+1+2+3+...+x = n # n is given and we need to find x
+-> (1+x)x/2 = n
+-> x^2+x = 2n
+-> x^2+x+1/4 = 2n +1/4
+-> (x+1/2)^2 = 2n +1/4
+-> (x+0.5) = sqrt(2n+0.25)
+-> x = -0.5 + sqrt(2n+0.25)
+```
+```python
+class Solution:
+    def arrangeCoins(self, n: int) -> int:
+        return int(-0.5 + math.sqrt(2*n + 0.25))
+```
