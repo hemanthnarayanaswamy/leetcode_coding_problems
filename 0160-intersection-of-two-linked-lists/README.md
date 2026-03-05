@@ -65,3 +65,68 @@ Explanation: The two lists do not intersect, so return null.
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you write a solution that runs in <code>O(m + n)</code> time and use only <code>O(1)</code> memory?
+
+# Solution 
+
+1. If the lenght of the two linked list is the same, then we can check each node and keep moving forward until we get the intersection point, If there is no intersection point then it returns `NONE`
+
+**How can we make the two lists the same lenght ?**
+
+```ini
+A: 4 → 1 → 8
+B: 5 → 6 → 1 → 8
+
+- The Strategy is to connect both lists with each other.
+A: 4 → 1 → 8 → 5 → 6 → 1 → 8
+B: 5 → 6 → 1 → 8 → 4 → 1 → 8
+
+- When we reach end of lists, go back to head of other list, so that we can find intersection at some point.
+```
+---
+```ini
+                           B→→→→→→→→→→→→
+A: 4 → 1 → 8 → 4 → 5 → n → 5 → 6 → 1 → 8
+B: 5 → 6 → 1 → 8 → 4 → 5 → n → 4 → 1 → 8
+                               A→→→→→→→→
+n is null
+
+                   B→→→→→→→→
+A: 2 → 6 → 4 → n → 1 → 5 → n
+B: 1 → 5 → n → 2 → 6 → 4 → n
+               A→→→→→→→→→→→→
+n is null
+```
+---
+```python
+# Definition for singly-linked list.
+from typing import *
+
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+class Solution:
+    def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+        listA = headA
+        listB = headB
+
+        while listA != listB:
+            listA = listA.next if listA else headB
+            listB = listB.next if listB else headA
+        
+        return listA
+```
+---
+1. Two pointers, `lista` and `listb`, are initialized to the heads of the two input linked lists `(headA and headB)`. These pointers will traverse the lists to find the intersection point.
+2. `while lista != listb:`, The loop continues as long as `lista` and `listb` do not point to the same node. 
+    - If there is an intersection, they will eventually meet at the intersecting node. 
+    - If not, both pointers will reach None at the same time, breaking the loop.
+3. If `lista` is not `None`, it moves to the `next node` `(lista.next)`. Otherwise, it switches to the head of the other list `(headB)`.
+   - Similarly, if `listb` is not `None`, it moves to the `next node` (listb.next). Otherwise, it switches to the head of the other list `(headA)`.
+
+**When a pointer reaches the end of one list and switches to the other, the difference in lengths between the two lists is neutralized. This ensures that both pointers traverse the same total distance before meeting.**
+
+4. At this point, the loop has exited, `meaning lista and listb are pointing to the same node`.
+   - If there is an intersection, this node is the intersecting node. If there is no intersection, `both pointers are None`, and the function returns `None`.
+
