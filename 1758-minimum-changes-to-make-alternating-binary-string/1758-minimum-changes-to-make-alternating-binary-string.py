@@ -3,11 +3,7 @@ class Solution:
         res1 = 0
 
         for i in range(len(s)):
-            if (i % 2):
-                if s[i] != '1':
-                    res1 += 1
-            else:
-                if s[i] != '0':
-                    res1 += 1
+           if s[i] != ('1' if i % 2 else '0'):
+                res1 += 1
         
         return min(res1, len(s)-res1)
