@@ -1,11 +1,3 @@
 class Solution:
     def arrangeCoins(self, n: int) -> int:
-        i = 1
-        rows = 0
-
-        while i <= n:
-            n -= i
-            rows += 1
-            i += 1
-        
-        return rows
+        return int(-0.5 + math.sqrt(2*n + 0.25))
