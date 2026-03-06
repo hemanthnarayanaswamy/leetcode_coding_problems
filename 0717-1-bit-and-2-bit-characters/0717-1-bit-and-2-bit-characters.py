@@ -4,7 +4,7 @@ class Solution:
 
         for i in range(len(bits)):
             if stack:
-                if not stack[-1]:
+                if stack[-1]:
                     stack.pop()
                 else:
                     stack.pop()
