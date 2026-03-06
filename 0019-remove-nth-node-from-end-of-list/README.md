@@ -34,3 +34,59 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Could you do this in one pass?</p>
+
+# Fast & Slow Pointer Approach
+**MY ONLY MISTAKE WAS NOT CONSIDERING THE DUMMY POINTER**
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        forward = delay = head
+
+        while n:
+            forward = forward.next
+            n -= 1
+        
+        if not forward: # Here we can return NONE, but if n == lenght, then also forward will be none, but we need to remove the first node, 
+            return head.next # so we remove head and return head.next (which will still be none)
+        
+        while forward.next:
+            forward = forward.next
+            delay = delay.next
+            
+        delay.next = delay.next.next
+
+        return head
+```
+---
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        dummy = ListNode(0, head)
+        forward = delay = dummy
+
+        for _ in range(n):
+            forward = forward.next
+        
+        while forward.next:
+            forward = forward.next
+            delay = delay.next
+            
+        delay.next = delay.next.next
+
+        return dummy.next
+```
+* Here we initiated a `dummy` node and start the pointers `slow & fast` at dummy, and we fast forward `fast` pointer to `slow + n` positions forward. 
+* now until `fast.next` we move and now when we find the end of iteration. 
+* The since the distance between `slow & fast` was `n`, when the `fast` is at the end `slow` should be at `end - n`, that means we need to delete the next node from the slow. 
+* so `slow.next = slow.next.next` skip the next node. 
+* return `dummy.next` i.e `head`.
