@@ -20,4 +20,46 @@
 
 <ul>
 	<li><code>0 &lt;= low &lt;= high&nbsp;&lt;= 10^9</code></li>
+
 </ul>
+
+# Brute Force Solution 
+```python
+class Solution:
+    def countOdds(self, low: int, high: int) -> int:
+        count = 0
+        
+        for num in range(low, high+1):
+            if num % 2:
+                count += 1
+        
+        return count
+```
+* `Key Insight:` Instead of checking each number individually, we can use a simple mathematical formula to get the answer directly in constant time.
+---
+* If both ends are even then the number of odd numbers between them is the formula.
+```python
+class Solution:
+    def countOdds(self, low: int, high: int) -> int:
+        lm = low % 2
+        hm = high % 2
+        count = (high - low) // 2
+
+        if lm == 0 and hm == 0:
+            return count
+        else:
+            return count + 1
+```        
+```ini
+return (high + 1) / 2 - (low / 2);
+```
+* `(high + 1) / 2` → Counts how many odd numbers are in the range `[0, high]`
+* `low / 2` → Counts how many odd numbers are in the range `[0, low-1]`
+* Subtract them → Gets the count in `[low, high]`
+
+---
+```python
+class Solution:
+    def countOdds(self, low: int, high: int) -> int:
+        return (high + 1) // 2 - (low // 2)
+```
