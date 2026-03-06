@@ -4,10 +4,8 @@ class Solution:
 
         for i in range(len(bits)):
             if stack:
-                if stack[-1]:
-                    stack.pop()
-                else:
-                    stack.pop()
+                bit = stack.pop()
+                if bit == 0:
                     stack.append(bits[i])
             else:
                 stack.append(bits[i])
