@@ -35,6 +35,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0950-x-of-a-kind-in-a-deck-of-cards](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0950-x-of-a-kind-in-a-deck-of-cards) |
 | [0991-broken-calculator](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0991-broken-calculator) |
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
+| [1037-valid-boomerang](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1037-valid-boomerang) |
 | [1094-matrix-cells-in-distance-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1094-matrix-cells-in-distance-order) |
 | [1195-distribute-candies-to-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1195-distribute-candies-to-people) |
 | [1232-check-if-it-is-a-straight-line](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1232-check-if-it-is-a-straight-line) |
@@ -231,6 +232,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1019-squares-of-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1019-squares-of-a-sorted-array) |
 | [1029-two-city-scheduling](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1029-two-city-scheduling) |
+| [1037-valid-boomerang](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1037-valid-boomerang) |
 | [1044-find-common-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1044-find-common-characters) |
 | [1094-matrix-cells-in-distance-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1094-matrix-cells-in-distance-order) |
 | [1109-corporate-flight-bookings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1109-corporate-flight-bookings) |
@@ -1736,6 +1738,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0830-largest-triangle-area](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0830-largest-triangle-area) |
+| [1037-valid-boomerang](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1037-valid-boomerang) |
 | [1094-matrix-cells-in-distance-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1094-matrix-cells-in-distance-order) |
 | [1232-check-if-it-is-a-straight-line](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1232-check-if-it-is-a-straight-line) |
 | [1395-minimum-time-visiting-all-points](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1395-minimum-time-visiting-all-points) |
