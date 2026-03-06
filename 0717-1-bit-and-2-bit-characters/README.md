@@ -33,3 +33,59 @@ So the last character is not one-bit character.
 	<li><code>1 &lt;= bits.length &lt;= 1000</code></li>
 	<li><code>bits[i]</code> is either <code>0</code> or <code>1</code>.</li>
 </ul>
+
+We use three bit-representations to represent three characters : 0, 10, 11 (the corresponding characters don't matter)
+So bits representation 1, 01 are not valid.
+**Given an array of bits ending with 0**, 
+- find out if it's only valid to translate the last 0 into the 0 bit representation (means it's not valid when the last 0 is translated into the 10 bits representation)
+
+# Brute Force Solution 
+* We use stack, and and we `pop()` stack everytime and only append, only when `stack[-1] = = 0` and at the  end we check if the length of stack is `one`
+
+```python
+class Solution:
+    def isOneBitCharacter(self, bits: List[int]) -> bool:
+        stack = []
+
+        for i in range(len(bits)):
+            if stack:
+                if stack[-1]:
+                    stack.pop()
+                else:
+                    stack.pop()
+                    stack.append(bits[i])
+            else:
+                stack.append(bits[i])
+        
+        return len(stack) == 1
+```
+---
+```python
+class Solution:
+    def isOneBitCharacter(self, bits: List[int]) -> bool:
+        stack = []
+
+        for i in range(len(bits)):
+            if stack:
+                bit = stack.pop()
+                if bit == 0:
+                    stack.append(bits[i])
+            else:
+                stack.append(bits[i])
+        
+        return len(stack) == 1
+```
+---
+```python
+class Solution:
+    def isOneBitCharacter(self, bits: List[int]) -> bool:
+        i = 0
+        while i < len(bits):
+            if bits[i] == 0:
+                i += 1
+                res = True
+            else:
+                i += 2
+                res = False
+        return res
+```
