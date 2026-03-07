@@ -106,6 +106,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3222-find-the-winning-player-in-coin-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3222-find-the-winning-player-in-coin-game) |
 | [3227-find-missing-and-repeated-values](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3227-find-missing-and-repeated-values) |
+| [3270-find-the-key-of-the-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3270-find-the-key-of-the-numbers) |
 | [3321-type-of-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3321-type-of-triangle) |
 | [3336-water-bottles-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3336-water-bottles-ii) |
 | [3367-find-the-sum-of-encrypted-integers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3367-find-the-sum-of-encrypted-integers) |
