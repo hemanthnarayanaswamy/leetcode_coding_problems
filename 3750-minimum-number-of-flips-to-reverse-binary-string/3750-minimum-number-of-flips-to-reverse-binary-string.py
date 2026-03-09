@@ -1,11 +1,10 @@
 class Solution:
     def minimumFlips(self, n: int) -> int:
-        b = bin(n)[2:]
-        rb = b[::-1]
-        res = 0
-
-        for i in range(len(b)):
-            if b[i] != rb[i]:
-                res += 1
-        
-        return res
+        s=bin(n)[2:]
+        rev=s[::-1]
+        c=0
+        for i in range(len(s)):
+            if s[i]!=rev[i]:
+                c+=1
+        return c
+            
