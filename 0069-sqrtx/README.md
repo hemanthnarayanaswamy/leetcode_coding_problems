@@ -29,3 +29,62 @@
 <ul>
 	<li><code>0 &lt;= x &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def mySqrt(self, x: int) -> int:
+        if not x:
+            return 0
+
+        if x <= 3:
+            return 1
+
+        l, r = 2, x//2
+
+        while l <= r:
+            mid = (l + r) // 2
+            square = mid * mid
+
+            if square == x:
+                return mid
+            elif square > x:
+                r = mid - 1
+            else:
+                l = mid + 1
+
+        return r
+```
+After this loop style `(while l <= r, with l = mid + 1 / r = mid - 1)`, the clean invariant is:
+* `r` ends as the largest value whose square is `<= x`.
+
+---
+```python
+class Solution:
+    def mySqrt(self, x: int) -> int:
+        low = 0
+        high = x
+        ans = -1
+
+        while low <= high:
+            mid = (low + high) // 2
+            midsq = mid * mid
+
+            if midsq == x:
+                return mid
+            elif midsq > x:
+                high = mid - 1
+            else:
+                ans = mid
+                low = mid + 1
+
+        return ans
+```
+
+## Approach: Binary Search
+
+1. `Search space:` Consider all integers from 0 to x as potential square roots
+2. `Middle calculation:` Compute mid and check if mid² equals, exceeds, or is less than x
+3. `Exact match:` If `mid² == x`, we found the exact square root
+4. Too large: If `mid² > x`, search smaller values `(right = mid - 1)`
+5. Candidate found: If `mid² < x`, save mid as potential answer and search larger values
