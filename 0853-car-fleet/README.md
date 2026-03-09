@@ -63,3 +63,68 @@ There is only one car, hence there is only one fleet.</div>
 	<li>All the values of <code>position</code> are <strong>unique</strong>.</li>
 	<li><code>0 &lt; speed[i] &lt;= 10<sup>6</sup></code></li>
 </ul>
+
+# Intuition
+Call the "lead fleet" the fleet furthest in position.
+
+- If the car `S` (Second) behind the lead car `F` (First) would **arrive earlier**, then `S` forms a fleet with the lead car `F`. 
+- Otherwise, fleet `F` is final as no car can catch up to it - cars behind `S` would form fleets with `S`, never `F`.
+
+### Algorithm
+
+- A car is a `(position, speed)` which implies some arrival time `(target - position) / speed`. **Sort the cars by position.**
+- Now apply the above reasoning -` if the lead fleet drives away, then count it and continue. Otherwise, merge the fleets and continue.`
+# Approach
+* We `sort()`, the positions based on which cars are closer to the target, by mapping it with the speeds. 
+```python
+order = [(p,s) for p,s in zip(position, speed)]
+order.sort(reverse=True)
+```
+* Now for each car, we calculate the `time`, it'll take to reach the `target`, and append it into the `stack`.
+* This is where we need to check for the `fleets` condition. 
+
+```ini
+Lets say we have time x, in the stack
+
+the next car time is faster x-1, that means this next car will catch up to the previous car before reaching the destination
+
+As per the question, when this next car reaches the previous car, the next car slows down and travels with the previous car to reach the target. 
+
+That means, the take to this car will also become same as the time in stack (So no need to append a new time in stack)
+
+Now lets say other car which is slower then the previous car, this car will never catch up to the car in front of it and it alone with be the fleet so we append its time to the stack.
+
+At the end stack will have all the car fleets time, so the length of stack will be the number of car fleets.
+```
+```python
+class Solution:
+    def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
+        order = [(p,s) for p,s in zip(position, speed)]
+        order.sort(reverse=True)
+        stack = []
+
+        for p,s in order:
+            t = (target - p)/s # Don't round off time value 
+            if stack:
+                if t > stack[-1]:  # We only add time to stack, if the car will not catch up to the previous car for which time should be less then previous
+                    stack.append(t) 
+            else:
+                stack.append(t)
+        
+        return len(stack)
+```
+---
+```python
+class Solution:
+    def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
+        order = sorted(zip(position, speed), reverse=True)
+        stack = []
+
+        for p,s in order:
+            t = (target - p)/s
+
+            if not stack or t > stack[-1]:
+                stack.append(t)
+        
+        return len(stack)
+```
