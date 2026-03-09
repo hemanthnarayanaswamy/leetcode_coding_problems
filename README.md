@@ -23,6 +23,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0273-integer-to-english-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0273-integer-to-english-words) |
 | [0326-power-of-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0342-power-of-four) |
+| [0367-valid-perfect-square](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0367-valid-perfect-square) |
 | [0412-fizz-buzz](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0412-fizz-buzz) |
 | [0415-add-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0415-add-strings) |
 | [0441-arranging-coins](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0441-arranging-coins) |
@@ -1535,6 +1536,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0268-missing-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0268-missing-number) |
 | [0278-first-bad-version](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0278-first-bad-version) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0367-valid-perfect-square](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0367-valid-perfect-square) |
 | [0374-guess-number-higher-or-lower](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0374-guess-number-higher-or-lower) |
 | [0441-arranging-coins](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0441-arranging-coins) |
 | [0540-single-element-in-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0540-single-element-in-a-sorted-array) |
