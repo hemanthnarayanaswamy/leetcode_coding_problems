@@ -11,7 +11,6 @@ class Solution:
         while l <= r:
             mid = (l + r) // 2
             square = mid * mid
-            print(l, r, mid)
 
             if square == x:
                 return mid
@@ -20,4 +19,4 @@ class Solution:
             else:
                 l = mid + 1
 
-        return (l+r)//2
+        return r
