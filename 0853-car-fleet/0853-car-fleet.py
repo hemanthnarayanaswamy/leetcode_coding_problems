@@ -6,10 +6,8 @@ class Solution:
 
         for p,s in order:
             t = (target - p)/s
-            if stack:
-                if t > stack[-1]:
-                    stack.append(t)
-            else:
+            
+            if not stack or t > stack[-1]:
                 stack.append(t)
         
         return len(stack)
