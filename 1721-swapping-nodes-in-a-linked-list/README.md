@@ -25,3 +25,66 @@
 	<li><code>1 &lt;= k &lt;= n &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= Node.val &lt;= 100</code></li>
 </ul>
+
+---
+
+## Approach 
+1. We first use the, `fast & slow` pointer techniques to find the kth node from the last and save it's position.
+2. And in the next iteration take `cur` pointer to the kth node from the start. 
+3. Once we have two positions locked-in, we swap there values `slow.val, cur.val = cur.val, slow.val` and return `head`
+
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def swapNodes(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
+        slow = fast = head
+
+        for i in range(k):
+            fast = fast.next
+        
+        cur = fast
+        while fast:
+            slow = slow.next
+            fast = fast.next
+        
+        cur = head
+        n = 1
+        while n != k:
+            cur = cur.next
+            n += 1
+        
+        slow.val, cur.val = cur.val, slow.val
+
+        return head
+```
+
+* We'll try to combine everything under one iteration.
+* We are already moving the fast pointer by kth nodes, which means its already passed the kth node from start so we assign current when fast is at kth node to avoid, double iteration. 
+
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def swapNodes(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
+        cur = head
+
+        for i in range(k-1):
+            cur = cur.next
+        
+        fast = cur.next
+        slow = head
+        while fast:
+            slow = slow.next
+            fast = fast.next
+        
+        slow.val, cur.val = cur.val, slow.val
+
+        return head
+```
