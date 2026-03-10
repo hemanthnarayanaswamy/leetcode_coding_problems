@@ -12,7 +12,7 @@ class Solution:
 
         while cur.next:
             nxt = cur.next
-            if (cur.val < prev.val and cur.val < nxt.val) or (cur.val > prev.val and cur.val > nxt.val) :
+            if (prev.val > cur.val < nxt.val) or (prev.val < cur.val > nxt.val) :
                 nodes.append(n)
             n += 1
             prev = cur
