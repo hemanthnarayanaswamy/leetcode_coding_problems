@@ -42,3 +42,34 @@
 	<li>How can we prove that at least one duplicate number must exist in <code>nums</code>?</li>
 	<li>Can you solve the problem in linear runtime complexity?</li>
 </ul>
+
+# Solution
+* Here we are using extra space to store the numbers
+```python
+class Solution:
+    def findDuplicate(self, nums: List[int]) -> int:
+        uniq = set()
+
+        for i in range(len(nums)):
+            if nums[i] in uniq:
+                return nums[i]
+            else:
+                uniq.add(nums[i])
+```
+---
+``ini
+nums = [1, 2, 3] = sum = 6
+nums = [1, 2, 2] = sum = 5
+---
+## Mark visited element negative
+* There is cycle in the array numbers are from (1,n) for for nums[nums[i]] always exists and we make every visited number negative and if we fall on the element again which is negative that is the repeated number because that number was marked negative 
+```python
+class Solution:
+    def findDuplicate(self, nums: List[int]) -> int:
+        for i in range(len(nums)):
+            ind = abs(nums[i])
+            if nums[ind] < 0:
+                return ind
+            nums[ind] = -nums[ind]
+        return -1
+```
