@@ -9,17 +9,13 @@ class Solution:
         cur = head
 
         while cur:
-            nxt = cur.next
             while stack and cur.val > stack[-1].val:
                 stack.pop()
+            
+            if stack:
+                stack[-1].next = cur
+                
             stack.append(cur)
             cur = cur.next
-
-        dummy = ListNode(0)
-        cur = dummy 
-        for i in range(len(stack)):
-            cur.next = stack[i]
-            cur = cur.next
-        cur.next = None
-
-        return dummy.next
+        
+        return stack[0]
