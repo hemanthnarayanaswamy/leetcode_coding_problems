@@ -10,15 +10,15 @@ class Solution:
 
         while cur:
             nxt = cur.next
-            while stack and cur.val > stack[-1]:
+            while stack and cur.val > stack[-1].val:
                 stack.pop()
-            stack.append(cur.val)
+            stack.append(cur)
             cur = cur.next
 
         dummy = ListNode(0)
         cur = dummy 
         for i in range(len(stack)):
-            cur.next = ListNode(stack[i])
+            cur.next = stack[i]
             cur = cur.next
         cur.next = None
 
