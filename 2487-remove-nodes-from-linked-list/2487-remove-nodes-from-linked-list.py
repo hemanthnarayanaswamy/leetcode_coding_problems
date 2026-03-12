@@ -5,26 +5,23 @@
 #         self.next = next
 class Solution:
     def removeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        def reverseLinkedList(head):
-            cur = head
-            prev = None
-            while cur:
-                nxt = cur.next
-                cur.next = prev
-                prev = cur
-                cur = nxt
-            return prev
-        
-
-        head = reverseLinkedList(head)
+        stack = []
         cur = head
-        nxt = cur.next
-        while nxt:
-            if cur.val > nxt.val:
-                cur.next = nxt.next 
-            else:
-                cur = nxt
-            nxt = nxt.next
+
+        while cur:
+            nxt = cur.next
+            while stack and cur.val > stack[-1]:
+                stack.pop()
+            stack.append(cur.val)
+            cur = cur.next
+        print(stack)
+
+        dummy = ListNode(0)
+        cur = dummy 
+        for i in range(len(stack)):
+            cur.next = ListNode(stack[i])
+            cur = cur.next
         
-        return reverseLinkedList(head)
-        
+        cur.next = None
+
+        return dummy.next
