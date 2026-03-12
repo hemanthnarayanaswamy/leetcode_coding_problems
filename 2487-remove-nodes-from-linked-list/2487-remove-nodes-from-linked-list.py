@@ -14,14 +14,12 @@ class Solution:
                 stack.pop()
             stack.append(cur.val)
             cur = cur.next
-        print(stack)
 
         dummy = ListNode(0)
         cur = dummy 
         for i in range(len(stack)):
             cur.next = ListNode(stack[i])
             cur = cur.next
-        
         cur.next = None
 
         return dummy.next
