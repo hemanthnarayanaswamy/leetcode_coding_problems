@@ -930,6 +930,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3194-find-words-containing-character](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3194-find-words-containing-character) |
 | [3216-lexicographically-smallest-string-after-a-swap](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3216-lexicographically-smallest-string-after-a-swap) |
 | [3312-number-of-changing-keys](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3312-number-of-changing-keys) |
+| [3324-find-the-sequence-of-strings-appeared-on-the-screen](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3324-find-the-sequence-of-strings-appeared-on-the-screen) |
 | [3353-existence-of-a-substring-in-a-string-and-its-reverse](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3353-existence-of-a-substring-in-a-string-and-its-reverse) |
 | [3379-score-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3379-score-of-a-string) |
 | [3396-valid-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3396-valid-word) |
@@ -1037,6 +1038,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3220-count-tested-devices-after-test-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3220-count-tested-devices-after-test-operations) |
 | [3222-find-the-winning-player-in-coin-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3222-find-the-winning-player-in-coin-game) |
 | [3311-ant-on-the-boundary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3311-ant-on-the-boundary) |
+| [3324-find-the-sequence-of-strings-appeared-on-the-screen](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3324-find-the-sequence-of-strings-appeared-on-the-screen) |
 | [3336-water-bottles-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3336-water-bottles-ii) |
 | [3347-distribute-elements-into-two-arrays-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3347-distribute-elements-into-two-arrays-i) |
 | [3379-transformed-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3379-transformed-array) |
