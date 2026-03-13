@@ -13,7 +13,6 @@ class Solution:
             else:
                 n = res
                 c = 0
-            print(n, c)
             return n, c
         
         dummy = ListNode(0)
