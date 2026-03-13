@@ -48,3 +48,63 @@
 	<li><code>1 &lt;= target.length &lt;= 400</code></li>
 	<li><code>target</code> consists only of lowercase English letters.</li>
 </ul>
+
+# Solution
+```python
+class Solution:
+    def stringSequence(self, target: str) -> List[str]:
+        alphabets = 'abcdefghijklmnopqrstuvwxyz'
+        res = []
+        prev = ''
+        
+        def subSequence(prev, letter):
+            tmp = []
+            for i in alphabets:
+                tmp.append(prev+i)
+                if i == letter:
+                    break
+            return tmp
+        
+        for letter in target:
+            subArr = subSequence(prev, letter)
+            prev += letter
+            res.extend(subArr)
+        
+        return res
+```
+* You don't need to rebuild `prev` from scratch, it's just the last built string and each new string its just `prev + new_letter`
+* Right now, each iteration builds a list of intermediate strings. You only need to output the sequence in order. You don’t need to store intermediate lists.
+
+```python
+class Solution:
+    def stringSequence(self, target: str) -> List[str]:
+        alphabets = 'abcdefghijklmnopqrstuvwxyz'
+        res = []
+        prev = ''
+        
+        for letter in target:
+            for i in alphabets:
+                res.append(prev+i)
+                if i == letter:
+                    break
+            prev += letter
+            
+        return res
+```
+* Instead of `alphabets` string pre defined. You don’t need to loop through the entire alphabet each time. You already know the target letter.You know the alphabet is ordered. You know exactly how many steps you need to take.
+
+```python
+class Solution:
+    def stringSequence(self, target: str) -> List[str]:
+        res = []
+        prev = ''
+        
+        for letter in target:
+            start = ord('a')
+            end = ord(letter)+1
+            for i in range(start, end):
+                res.append(prev+chr(i))
+            prev += letter
+            
+        return res
+```
