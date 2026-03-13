@@ -7,12 +7,8 @@ class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         def add(a, b, c):
             res = a+b+c
-            if res >= 10:
-                n = res % 10
-                c = res // 10
-            else:
-                n = res
-                c = 0
+            n = res % 10
+            c = res // 10
             return n, c
         
         dummy = ListNode(0)
