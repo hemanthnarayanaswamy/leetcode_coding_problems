@@ -4,14 +4,11 @@ class Solution:
         res = []
         prev = ''
         
-        def subSequence(prev, letter):
+        for letter in target:
             for i in alphabets:
                 res.append(prev+i)
                 if i == letter:
                     break
-        
-        for letter in target:
-            subSequence(prev, letter)
             prev += letter
             
         return res
