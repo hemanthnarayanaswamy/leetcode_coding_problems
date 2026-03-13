@@ -5,16 +5,13 @@ class Solution:
         prev = ''
         
         def subSequence(prev, letter):
-            tmp = []
             for i in alphabets:
-                tmp.append(prev+i)
+                res.append(prev+i)
                 if i == letter:
                     break
-            return tmp
         
         for letter in target:
-            subArr = subSequence(prev, letter)
-            res.extend(subArr)
+            subSequence(prev, letter)
             prev += letter
             
         return res
