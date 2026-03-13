@@ -14,7 +14,7 @@ class Solution:
         
         for letter in target:
             subArr = subSequence(prev, letter)
-            prev = subArr[-1]
             res.extend(subArr)
-        
+            prev += letter
+            
         return res
