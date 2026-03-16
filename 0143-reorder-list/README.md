@@ -34,3 +34,52 @@ L<sub>0</sub> &rarr; L<sub>n</sub> &rarr; L<sub>1</sub> &rarr; L<sub>n - 1</sub>
 	<li>The number of nodes in the list is in the range <code>[1, 5 * 10<sup>4</sup>]</code>.</li>
 	<li><code>1 &lt;= Node.val &lt;= 1000</code></li>
 </ul>
+
+# Solution
+
+```python
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def reorderList(self, head: Optional[ListNode]) -> None:
+        """
+        Do not return anything, modify head in-place instead.
+        """
+        # Use Floyd's Slow and Fast pointers approach
+        # use slow and fast pointers to split the given list into two (slow = 0, fast = 1)
+        # reverse the directions in second part of the list 
+        # then, use two pointers to merge two lists: one from beginning of first list (left to right) and 
+        # another one from end of second list (but traverse from right to left since directions are flipped)
+        
+        slow, fast = head, head.next
+        
+        # use slow and fast to split the given list into two lists
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+            
+        # beginning of second half is after slow (when fast is at null or reached to the last element in the list)
+        second = slow.next
+        slow.next = None # this is assigning the last node.next to null from the first part of the list (if not, there will be a cycle)
+        prev = None
+        # reverse the second part of the list (directions)
+        while second:
+            temp = second.next
+            second.next = prev
+            prev = second 
+            second = temp
+            
+        # merge two halfs of the list
+        # after prev while loop, prev will be at the last node of second list
+        first, second = head, prev
+        # second half of the list can be shorter if the given list is odd so it can reach to null before first
+        while second:
+            temp1, temp2 = first.next, second.next
+            first.next = second
+            second.next = temp1
+            first = temp1
+            second = temp2
+
+```
