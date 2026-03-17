@@ -54,3 +54,55 @@
 	<li><code>1 &lt;= k &lt;= s.length</code></li>
 	<li><code>s[i]</code> is either <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code>.</li>
 </ul>
+
+# Solution
+* We need to count the number of substrings in s such that the number of `0's & 1's` in each substring does not exceed `k`.
+*  we can use a sliding window approach to count the number of substrings, going from an exponential complexity to linear `(O(n))`. 
+*  We use `l & r` to represent the boundaries for each window. Also, we use `ones` and `zeros` to represent the counts for the number of ones and zeros and each substring/window.
+
+**We expand the window in each iteration and increment ones and zeros accordingly. If at any point both ones and zeros becomes greater than k, we shrink the window from the left side while also decrementing ones and zeros accordingly.**
+
+- Then at the end of each iteration, we add the number of subarrays that we can create out of the current window (represented by `r - l + 1`) to res
+
+```ini
+* When your window is valid, it covers the substring: s[start: i]
+The window has length is i - start + 1
+
+Every substring that ends at index i and starts anywhere between  start and i is valid
+
+If the window is start ... i
+
+Then the valid substrings ending at i are:
+s[i:i+1]
+s[i-1:i+1]
+s[i-2:i+1]
+...
+s[start:i+1] # How many substring is that
+
+Count the starting Positions:         start, start+1, ..., i
+That’s exactly:                                i - start + 1
+```
+---
+```python
+class Solution:
+    def countKConstraintSubstrings(self, s: str, k: int) -> int:
+        zeroCount = oneCount = 0
+        res = 0
+        start = 0
+
+        for i in range(len(s)):
+            if s[i] == '1':
+                oneCount += 1
+            else:
+                zeroCount += 1
+            
+            while zeroCount > k and oneCount > k:
+                if s[start] == '1':
+                    oneCount -= 1
+                else:
+                    zeroCount -= 1
+                start += 1
+            res += i - start + 1
+        
+        return res
+```
