@@ -931,6 +931,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3174-minimum-number-of-changes-to-make-binary-string-beautiful](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3174-minimum-number-of-changes-to-make-binary-string-beautiful) |
 | [3194-find-words-containing-character](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3194-find-words-containing-character) |
 | [3216-lexicographically-smallest-string-after-a-swap](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3216-lexicographically-smallest-string-after-a-swap) |
+| [3258-count-substrings-that-satisfy-k-constraint-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3258-count-substrings-that-satisfy-k-constraint-i) |
 | [3312-number-of-changing-keys](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3312-number-of-changing-keys) |
 | [3324-find-the-sequence-of-strings-appeared-on-the-screen](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3324-find-the-sequence-of-strings-appeared-on-the-screen) |
 | [3353-existence-of-a-substring-in-a-string-and-its-reverse](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3353-existence-of-a-substring-in-a-string-and-its-reverse) |
@@ -1603,6 +1604,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [3206-alternating-groups-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3206-alternating-groups-i) |
+| [3258-count-substrings-that-satisfy-k-constraint-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3258-count-substrings-that-satisfy-k-constraint-i) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3634-minimum-removals-to-balance-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3634-minimum-removals-to-balance-array) |
 ## Matrix
