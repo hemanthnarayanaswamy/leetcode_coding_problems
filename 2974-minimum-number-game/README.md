@@ -34,3 +34,36 @@ At the begining of round two, nums = [5,4]. Now, first Alice removes 4 and then 
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 	<li><code>nums.length % 2 == 0</code></li>
 </ul>
+
+# Solution 
+```python
+class Solution:
+    def numberGame(self, nums: List[int]) -> List[int]:
+        nums.sort(reverse=True)
+        res = []
+
+        while nums:
+            p1 = nums.pop()
+            p2 = nums.pop()
+            res.append(p2)
+            res.append(p1)
+        
+        return res
+```
+* You don't need to store `p1` and `p2` separately, you can avoid repeated list resizing because `pop()` causes shrinking. 
+`Take the two smallest remaining numbers -> output them swapped`
+---
+```python
+class Solution:
+    def numberGame(self, nums: List[int]) -> List[int]:
+        nums.sort()
+        res = []
+
+        # nums is sorted ascending, so smallest elements are at the front
+        # We take them in pairs and swap them
+        for i in range(0, len(nums), 2):
+            res.append(nums[i+1])
+            res.append(nums[i])
+
+        return res
+```        
