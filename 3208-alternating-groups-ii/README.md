@@ -64,3 +64,59 @@
 	<li><code>0 &lt;= colors[i] &lt;= 1</code></li>
 	<li><code>3 &lt;= k &lt;= colors.length</code></li>
 </ul>
+
+# Solution
+**There is a clever trick to avoid circular arrays: instead of implementing wrap-around logic, simply append the entire array to end. But for this question is good appending only the first `k-1` elements is sufficient.**
+
+* A key insight is that once a sequence fails to maintain the alternating pattern at a certain index, any longer sequence containing that point is also invalid. 
+* This means we don’t need to check every possible starting position separately - we can slide over the array and discard invalid sequences as soon as we encounter a mismatch.
+
+**This is where the Sliding Window technique comes in. Instead of restarting our search at every index, we maintain a moving window of size k, adjusting it as we go. The moment we detect a mismatch, we move the window forward without unnecessary checks, making the solution much more efficient. Since each tile is processed at most once, the time complexity is reduced to `O(n)`, making this approach suitable for larger inputs.**
+
+1. We use a `start` variable to track the start of the window at idx `0` and other variable `i` to check the alternativity of the array at `1`
+2. We use the while loop to iteration `i < len(colors)`
+3. In each iteration we check the alternativity using this condition `if colors[i] != colors[i-1]`, If the condition is `true` we can keep expanding the window.
+4. We check the length of subarray `>=k` we don't need to shrink the window size because if its greater then `k` its still satifies the condition we only need to do the count.
+5. If the alternativity breaks then we reset the window `start` to i and continue to loop 
+
+```python
+class Solution:
+    def numberOfAlternatingGroups(self, colors: List[int], k: int) -> int:
+        colors.extend(colors[:k-1])
+        start = 0
+        i = 1
+        res = 0
+
+        while i < len(colors):
+            if colors[i] != colors[i-1]:
+                if i - start + 1 >= k:
+                    res += 1
+            else:
+                start = i
+            i += 1
+        
+        return res
+```
+
+---
+
+```python
+class Solution:
+    def numberOfAlternatingGroups(self, colors: List[int], k: int) -> int:
+        colors +=colors[:k-1]
+        n=len(colors)
+        subLen=1
+        ans=0
+
+        for i in range(1,n):
+            if colors[i] != colors[i-1]:
+                subLen += 1
+            else:
+                subLen = 1
+
+            if subLen >= k:
+                ans+=1
+                
+        return ans
+```
+
