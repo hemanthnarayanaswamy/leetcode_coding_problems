@@ -1,17 +1,17 @@
 class Solution:
     def numberOfAlternatingGroups(self, colors: List[int], k: int) -> int:
-        colors.extend(colors[:k-1])
-        start = 0
-        i = 1
-        res = 0
+        colors +=colors[:k-1]
+        n=len(colors)
+        subLen=1
+        ans=0
 
-        while i < len(colors):
+        for i in range(1,n):
             if colors[i] != colors[i-1]:
-                if i - start + 1 >= k:
-                    res += 1
+                subLen += 1
             else:
-                start = i
-            i += 1
-        
-        return res
+                subLen = 1
 
+            if subLen >= k:
+                ans+=1
+                
+        return ans
