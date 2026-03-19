@@ -469,6 +469,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3033-modify-the-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3033-modify-the-matrix) |
 | [3034-points-that-intersect-with-cars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3034-points-that-intersect-with-cars) |
 | [3038-maximum-number-of-operations-with-the-same-score-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3038-maximum-number-of-operations-with-the-same-score-i) |
+| [3042-count-prefix-and-suffix-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3042-count-prefix-and-suffix-pairs-i) |
 | [3044-minimum-operations-to-collect-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3044-minimum-operations-to-collect-elements) |
 | [3074-apple-redistribution-into-boxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3074-apple-redistribution-into-boxes) |
 | [3075-maximize-happiness-of-selected-children](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3075-maximize-happiness-of-selected-children) |
@@ -933,6 +934,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2977-check-if-a-string-is-an-acronym-of-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2977-check-if-a-string-is-an-acronym-of-words) |
 | [2999-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2999-check-if-strings-can-be-made-equal-with-operations-i) |
 | [3019-furthest-point-from-origin](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3019-furthest-point-from-origin) |
+| [3042-count-prefix-and-suffix-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3042-count-prefix-and-suffix-pairs-i) |
 | [3055-maximum-odd-binary-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3055-maximum-odd-binary-number) |
 | [3174-minimum-number-of-changes-to-make-binary-string-beautiful](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3174-minimum-number-of-changes-to-make-binary-string-beautiful) |
 | [3194-find-words-containing-character](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3194-find-words-containing-character) |
@@ -978,6 +980,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0014-longest-common-prefix) |
+| [3042-count-prefix-and-suffix-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3042-count-prefix-and-suffix-pairs-i) |
 ## Simulation
 |  |
 | ------- |
@@ -1724,6 +1727,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1524-string-matching-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1524-string-matching-in-an-array) |
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2292-counting-words-with-a-given-prefix) |
+| [3042-count-prefix-and-suffix-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3042-count-prefix-and-suffix-pairs-i) |
 ## Queue
 |  |
 | ------- |
@@ -1800,12 +1804,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0187-repeated-dna-sequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0187-repeated-dna-sequences) |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1557-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1557-check-if-a-string-contains-all-binary-codes-of-size-k) |
+| [3042-count-prefix-and-suffix-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3042-count-prefix-and-suffix-pairs-i) |
 ## Hash Function
 |  |
 | ------- |
 | [0187-repeated-dna-sequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0187-repeated-dna-sequences) |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1557-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1557-check-if-a-string-contains-all-binary-codes-of-size-k) |
+| [3042-count-prefix-and-suffix-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3042-count-prefix-and-suffix-pairs-i) |
 ## Linked List
 |  |
 | ------- |
