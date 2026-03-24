@@ -17,7 +17,7 @@ class Solution:
         
         postfix = 1
         for i in range((n*m)-1, -1, -1):
-            res[i] *= postfix
+            res[i] = (res[i] * postfix) % 12345
             postfix = (postfix * nums[i]) % 12345
         
         i = 0
@@ -25,7 +25,7 @@ class Solution:
         for _ in range(m):
             tmp = []
             for _ in range(n):
-                tmp.append(res[i] % 12345)
+                tmp.append(res[i])
                 i += 1
             prodMat.append(tmp)
 
