@@ -462,6 +462,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2888-minimum-index-of-a-valid-split](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2888-minimum-index-of-a-valid-split) |
 | [2892-check-if-array-is-good](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2892-check-if-array-is-good) |
 | [2903-find-indices-with-index-and-value-difference-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2903-find-indices-with-index-and-value-difference-i) |
+| [2906-construct-product-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2906-construct-product-matrix) |
 | [2908-minimum-sum-of-mountain-triplets-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2908-minimum-sum-of-mountain-triplets-i) |
 | [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2913-subarrays-distinct-element-sum-of-squares-i) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
@@ -1394,6 +1395,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2576-minimum-penalty-for-a-shop](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2576-minimum-penalty-for-a-shop) |
 | [2640-find-the-score-of-all-prefixes-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2640-find-the-score-of-all-prefixes-of-an-array) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2691-count-vowel-strings-in-ranges) |
+| [2906-construct-product-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2906-construct-product-matrix) |
 | [3034-points-that-intersect-with-cars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3034-points-that-intersect-with-cars) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3311-ant-on-the-boundary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3311-ant-on-the-boundary) |
@@ -1658,6 +1660,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2631-sort-the-students-by-their-kth-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2631-sort-the-students-by-their-kth-score) |
 | [2675-find-the-width-of-columns-of-a-grid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2675-find-the-width-of-columns-of-a-grid) |
 | [2737-row-with-maximum-ones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2737-row-with-maximum-ones) |
+| [2906-construct-product-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2906-construct-product-matrix) |
 | [3033-modify-the-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3033-modify-the-matrix) |
 | [3188-find-champion-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3188-find-champion-i) |
 | [3227-find-missing-and-repeated-values](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3227-find-missing-and-repeated-values) |
