@@ -28,3 +28,68 @@
 	<li>The number of nodes in the linked list is in the range <code>[0, 10<sup>4</sup>]</code>.</li>
 	<li><code>-10<sup>6</sup> &lt;= Node.val &lt;= 10<sup>6</sup></code></li>
 </ul>
+
+# Approach
+**"Please note here we are talking about the node number and not the value in the nodes.".**
+
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def oddEvenList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head or not head.next: # Handle short and no LL initially
+            return head
+
+        dummyEven = ListNode(0)
+        even = dummyEven
+        prev = cur = head (The main LL will be odd and we build even and at the end we connect even to main)
+
+        while cur and cur.next:
+            nxt = cur.next # we skip the evens and remove them from main and link them to dummy new ll
+            even.next = nxt
+            even = even.next
+            cur.next = nxt.next
+            prev = cur 
+            cur = cur.next
+
+        even.next = None # We end the even properly
+        if cur: # If cur is even we use it or we use the prev
+            cur.next = dummyEven.next
+        else:
+            prev.next = dummyEven.next
+        
+        return head
+```
+* Avoid `dummy` allocation; keep `even_head = head.next`
+* You can remove `prev` and end-branching if you maintain separate `odd` and `even` runners.
+* Repeated rewiring via temporary `next` is extra work; standard two-pointer relink is fewer assignments per look
+* Loop condition can be driven by even runner `while even and even.next` for cleaner invariants.
+* `odd tail points to saved even head.`
+---
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def oddEvenList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head or not head.next:
+            return head
+        
+        odd = head
+        even_head = head.next
+        even = even_head
+
+        while even and even.next:
+            odd.next = even.next
+            odd = odd.next
+            even.next = odd.next
+            even = even.next
+        
+        odd.next = even_head
+        return head
+```
