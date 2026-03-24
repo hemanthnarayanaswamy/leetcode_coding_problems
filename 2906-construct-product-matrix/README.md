@@ -37,3 +37,90 @@ So the answer is [[2],[0],[0]].</pre>
 	<li><code>2 &lt;= n * m &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= grid[i][j] &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Solution
+1. Convert the 2D into 1D array
+2. Then compute the `prefix` product and `postfix` product, use the `% 12345` for `prefix & postfix` also `res` to store lower numbers.
+
+```python
+class Solution:
+    def constructProductMatrix(self, grid: List[List[int]]) -> List[List[int]]:
+        m = len(grid)
+        n = len(grid[0])
+        nums = []
+
+        for i in range(m):
+            for j in range(n):
+                nums.append(grid[i][j])
+
+        res = [1]*(n*m)
+
+        prefix = 1
+        for i in range(n*m):
+            res[i] = prefix
+            prefix = (prefix * nums[i]) % 12345
+        
+        postfix = 1
+        for i in range((n*m)-1, -1, -1):
+            res[i] = (res[i] * postfix) % 12345
+            postfix = (postfix * nums[i]) % 12345
+        
+        i = 0
+        prodMat = []
+        for _ in range(m):
+            tmp = []
+            for _ in range(n):
+                tmp.append(res[i])
+                i += 1
+            prodMat.append(tmp)
+
+        return prodMat
+```
+* use list compression for conversion between `1D -> 2D` & `2D to 1D`
+
+```python
+class Solution:
+    def constructProductMatrix(self, grid: List[List[int]]) -> List[List[int]]:
+        m = len(grid)
+        n = len(grid[0])
+        nums = [element for row in grid for element in row]
+        lenght = len(nums)
+
+        res = [1]*(lenght)
+
+        prefix = 1
+        for i in range(lenght):
+            res[i] = prefix
+            prefix = (prefix * nums[i]) % 12345
+        
+        postfix = 1
+        for i in range((lenght)-1, -1, -1):
+            res[i] = (res[i] * postfix) % 12345
+            postfix = (postfix * nums[i]) % 12345
+        
+        return [res[i:i+n] for i in range(0, lenght, n)]
+```
+---
+* you can avoid the conversion
+
+```python
+class Solution:
+    def constructProductMatrix(self, grid: List[List[int]]) -> List[List[int]]:
+        MOD = 12345
+        n, m = len(grid), len(grid[0])
+        p = [[0] * m for _ in range(n)]
+
+        suffix = 1
+        for i in range(n - 1, -1, -1):
+            for j in range(m - 1, -1, -1):
+                p[i][j] = suffix
+                suffix = (suffix * grid[i][j]) % MOD
+
+        prefix = 1
+        for i in range(n):
+            for j in range(m):
+                p[i][j] = (p[i][j] * prefix) % MOD
+                prefix = (prefix * grid[i][j]) % MOD
+
+        return p
+```
