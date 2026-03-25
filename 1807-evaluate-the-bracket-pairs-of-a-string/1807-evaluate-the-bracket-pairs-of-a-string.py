@@ -1,23 +1,12 @@
 class Solution:
-    def evaluate(self, s: str, knowledge: List[List[str]]) -> str:
-        knowledgeMap = {k: v for k,v in knowledge}
-        res = []
-        question = '?'
-        i = 0
+    def evaluate(self, st: str, knowledge: List[List[str]]) -> str:
+        d = {k:v for k, v in knowledge}
+        s = st.split('(')
+        res = s[0]
 
-        while i < len(s):
-            c = s[i]
-            if c == '(':
-                i += 1
-                start = i
-                while s[i] != ')':
-                    i += 1
-                end = i
-                i += 1
-                tmp = knowledgeMap.get(s[start:end], question)
-                res.append(tmp)
-            else:
-                res.append(c)
-                i += 1
+        for i in range(1, len(s)):
+            a, b = s[i].split(')')
+            res += d.get(a, '?') + b
         
-        return ''.join(res)
+        return res
+
