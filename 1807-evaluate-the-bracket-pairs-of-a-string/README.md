@@ -61,3 +61,49 @@ Notice that the &quot;a&quot;s not in a bracket pair are not evaluated.
 	<li><code>key<sub>i</sub></code> and <code>value<sub>i</sub></code> consist of lowercase English letters.</li>
 	<li>Each <code>key<sub>i</sub></code> in <code>knowledge</code> is unique.</li>
 </ul>
+
+# Dirty Solution
+* We create a `knowledgeMap` using the `knowledge`.
+* We are using two `while` loops but can do better, If `s[i] == '('` when we run the second `while loop` until we find `)`, the then `knowledgeMap.get(s[start:end], '?')`
+* Then we join the `''.join(res)`
+
+```python
+class Solution:
+    def evaluate(self, s: str, knowledge: List[List[str]]) -> str:
+        knowledgeMap = {k: v for k,v in knowledge}
+        res = []
+        question = '?'
+        i = 0
+
+        while i < len(s):
+            c = s[i]
+            if c == '(':
+                i += 1
+                start = i
+                while s[i] != ')':
+                    i += 1
+                end = i
+                i += 1
+                tmp = knowledgeMap.get(s[start:end], question)
+                res.append(tmp)
+            else:
+                res.append(c)
+                i += 1
+        
+        return ''.join(res)
+```
+---
+# Optimized Solution
+```python
+class Solution:
+    def evaluate(self, st: str, knowledge: List[List[str]]) -> str:
+        d = {k:v for k, v in knowledge}
+        s = st.split('(')
+        res = [s[0]]
+
+        for i in range(1, len(s)):
+            a, b = s[i].split(')')
+            res.append(d.get(a, '?') + b)
+        
+        return ''.join(res)
+```
