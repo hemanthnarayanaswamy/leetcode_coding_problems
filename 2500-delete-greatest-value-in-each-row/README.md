@@ -43,3 +43,54 @@ The final answer = 10.
 	<li><code>1 &lt;= m, n &lt;= 50</code></li>
 	<li><code>1 &lt;= grid[i][j] &lt;= 100</code></li>
 </ul>
+
+# Solution
+1. We `sort()` each element in the row 
+2. We use a while loop to iterate until the grid is empty and `pop()` the max element in each row and then adding the max num to `res`
+```python
+class Solution:
+    def deleteGreatestValue(self, grid: List[List[int]]) -> int:
+        for row in grid:
+            row.sort()
+        res = 0
+
+        while grid[0]:
+            tmp = []
+            for row in grid:
+                tmp.append(row.pop())
+            res += max(tmp)
+        
+        return res
+```
+---
+```python
+class Solution:
+    def deleteGreatestValue(self, grid: List[List[int]]) -> int:
+        for row in grid:
+            row.sort()
+        res = 0
+
+        while grid[0]:
+            maxNum = 0
+            for row in grid:
+                num = row.pop()
+                if num > maxNum:
+                    maxNum = num
+            res += maxNum
+        
+        return res
+```
+---
+* Instead of actually `pop()` do a column wise iteration to get the maximum value per column.
+```python
+class Solution:
+    def deleteGreatestValue(self, grid: List[List[int]]) -> int:
+        for row in grid:
+            row.sort()
+        res = 0
+
+        for col in zip(*grid):
+            res += max(col)
+        
+        return res
+```
