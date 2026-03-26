@@ -4,12 +4,7 @@ class Solution:
             row.sort()
         res = 0
 
-        while grid[0]:
-            maxNum = 0
-            for row in grid:
-                num = row.pop()
-                if num > maxNum:
-                    maxNum = num
-            res += maxNum
+        for col in zip(*grid):
+            res += max(col)
         
         return res
