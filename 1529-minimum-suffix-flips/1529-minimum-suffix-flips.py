@@ -1,12 +1,11 @@
 class Solution:
     def minFlips(self, target: str) -> int:
-        n = len(target)
         current = '0'
         flips = 0
 
-        for i in range(n):
-            if target[i] != current:
+        for b in target:
+            if b != current:
                 flips += 1
-                current = '1' if current == '0' else '0'
+                current = b
         
         return flips
