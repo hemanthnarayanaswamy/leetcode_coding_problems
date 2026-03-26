@@ -73,3 +73,23 @@ The unique ID of Meir is 2.
 The unique ID of Winston is 3.
 The unique ID of Jonathan is 1.
 </pre>
+
+# Solution
+
+* We want all the rows from the `Employee` table but only the matched result from the `EmployeeUNI` table `All from Left and match from Right` `LEFT JOIN`
+
+```sql
+# Write your MySQL query statement below
+SELECT EmployeeUNI.unique_id, Employees.name
+FROM Employees
+LEFT JOIN EmployeeUNI
+ON EmployeeUNI.id = Employees.id
+```
+
+```sql
+SELECT r.unique_id, l.name 
+FROM Employees as l
+LEFT JOIN EmployeeUNI as r 
+ON l.id = r.id
+```
+
