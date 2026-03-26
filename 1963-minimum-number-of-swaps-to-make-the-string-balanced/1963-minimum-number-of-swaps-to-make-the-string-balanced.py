@@ -10,5 +10,5 @@ class Solution:
                     stack.pop()  # balancing closing bracket ] with an open bracket in the stack
         
         # size of stack = number of unbalanced open brackets
-        return (len(stack) + 1) // 2
+        return math.ceil(len(stack)/2)
         
