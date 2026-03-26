@@ -1,15 +1,14 @@
 class Solution:
     def minSwaps(self, s: str) -> int:
-        unmatched = 0
-
+        stack = []
+        
         for ch in s:
             if ch == '[':
-                unmatched +=1
-            else:
-                if unmatched > 0:
-                    unmatched -= 1
-                else:
-                    unmatched += 1
+                stack.append(ch)
+            else:  # ch == ']'
+                if stack:
+                    stack.pop()  # balancing closing bracket ] with an open bracket in the stack
         
-        return (unmatched+1)//2
-
+        # size of stack = number of unbalanced open brackets
+        return (len(stack) + 1) // 2
+        
