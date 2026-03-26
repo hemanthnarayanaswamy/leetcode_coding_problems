@@ -830,6 +830,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1472-increasing-decreasing-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1472-increasing-decreasing-string) |
 | [1490-generate-a-string-with-characters-that-have-odd-counts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1490-generate-a-string-with-characters-that-have-odd-counts) |
 | [1524-string-matching-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1524-string-matching-in-an-array) |
+| [1529-minimum-suffix-flips](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1529-minimum-suffix-flips) |
 | [1530-check-if-a-string-can-break-another-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1530-check-if-a-string-can-break-another-string) |
 | [1532-reformat-the-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1532-reformat-the-string) |
 | [1533-display-table-of-food-orders-in-a-restaurant](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1533-display-table-of-food-orders-in-a-restaurant) |
@@ -1471,6 +1472,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1448-maximum-69-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1448-maximum-69-number) |
 | [1464-reduce-array-size-to-the-half](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1464-reduce-array-size-to-the-half) |
 | [1519-minimum-subsequence-in-non-increasing-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1519-minimum-subsequence-in-non-increasing-order) |
+| [1529-minimum-suffix-flips](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1529-minimum-suffix-flips) |
 | [1530-check-if-a-string-can-break-another-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1530-check-if-a-string-can-break-another-string) |
 | [1604-least-number-of-unique-integers-after-k-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1604-least-number-of-unique-integers-after-k-removals) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
