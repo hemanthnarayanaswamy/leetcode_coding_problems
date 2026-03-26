@@ -45,3 +45,41 @@ We need at least 3 flip operations to form target.
 	<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>
 	<li><code>target[i]</code> is either <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code>.</li>
 </ul>
+
+# Solution
+* We want to find the minimum number of flips required to make all elements of the given binary string 'target' the same.
+
+* We initialize a counter `flips` to keep track of the number of flips required. We also initialize a variable 'current' to store the encountered character in `s`, initially set to '0'. We iterate through each character 'b' in the 'target' string.
+* If `current` is not equal to `target[i]`, it means a `flip` is required to make target[i]` the same as `current`.
+* In that case, we increment `flips` by `1` and update 'current' to its complement.
+* Finally, we return `flips` as the minimum number of flips required.
+
+```python
+class Solution:
+    def minFlips(self, target: str) -> int:
+        n = len(target)
+        current = '0'
+        flips = 0
+
+        for i in range(n):
+            if target[i] != current:
+                flips += 1
+                current = '1' if current == '0' else '0'
+        
+        return flips
+```
+* Instead of complimenting the `current` each time, make `current = target[i]` because it'll be the same as the `target[i]`
+
+```python
+class Solution:
+    def minFlips(self, target: str) -> int:
+        current = '0'
+        flips = 0
+
+        for b in target:
+            if b != current:
+                flips += 1
+                current = b
+        
+        return flips
+```
