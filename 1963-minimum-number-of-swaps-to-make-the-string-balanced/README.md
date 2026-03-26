@@ -51,3 +51,73 @@ The resulting string is &quot;[[][]]&quot;.
 	<li><code>s[i]</code> is either <code>&#39;[&#39; </code>or <code>&#39;]&#39;</code>.</li>
 	<li>The number of opening brackets <code>&#39;[&#39;</code> equals <code>n / 2</code>, and the number of closing brackets <code>&#39;]&#39;</code> equals <code>n / 2</code>.</li>
 </ul>
+
+# Hints
+* Iterate over the string and keep track of the number of opening and closing brackets on each step.
+**If the number of closing brackets is even larger, you need to make a swap.**
+**Swap it with the opening bracket closest to the end of `s`.**
+
+```python
+class Solution:
+    def minSwaps(self, s: str) -> int:
+        s = list(s)
+        brackets = {'[': 0, ']': 0}
+        l, r = 0, len(s)-1
+        swaps = 0
+
+        while l < r:
+            brackets[s[l]] += 1
+
+            while brackets[']'] > brackets['[']:
+                if s[l] == ']' and s[r] == '[':
+                    s[l], s[r] = s[r], s[l]
+                    brackets['['] += 1
+                    brackets[']'] -= 1
+                    swaps += 1
+                else:
+                    r -= 1  
+            l += 1
+        
+        return swaps
+```
+---
+* We are given a 0-indexed string `s` of even length `n` made up of `n/2` opening brackets `[` and `n/2` closing brackets `]`. Our task is to return the minimum number of swaps to make the string balanced.
+* Balanced parentheses mean that every opening bracket `[` has a matching closing bracket `]` in the correct order. **Unbalanced parentheses**occur when there are more closing brackets `]` than opening brackets `[` at some point in the string.
+
+1. Swapping balanced brackets won't help. If you swap characters in a balanced pair like `[]`, it becomes `][`, which makes the string unbalanced. So, this type of swap increases the problem instead of solving it.
+2. Swapping unbalanced brackets can fix the string. If a closing bracket `]` appears before its matching opening bracket `[`, a swap between an unbalanced `]` and an unbalanced `[` will balance one pair.
+
+**What is the maximum number of brackets that you can balance with a single swap?**
+- The answer is `2` for all parentheses of the form `][`. Therefore, the optimal approach is to swap unbalanced parentheses with each other. Since 2 unbalanced parentheses are made balanced with a single swap, **the total number of swaps to balance are given by `unbalanced / 2`.**
+
+```python
+class Solution:
+    def minSwaps(self, s: str) -> int:
+        stack = []
+        
+        for ch in s:
+            if ch == '[':
+                stack.append(ch)
+            else:  # ch == ']'
+                if stack:
+                    stack.pop()  # balancing closing bracket ] with an open bracket in the stack
+        
+        # size of stack = number of unbalanced open brackets
+        return math.ceil(len(stack)/2)
+```
+---
+```python
+class Solution:
+    def minSwaps(self, s: str) -> int:
+        stack = []
+        
+        for ch in s:
+            if ch == '[':
+                stack.append(ch)
+            else:  # ch == ']'
+                if stack:
+                    stack.pop()  # balancing closing bracket ] with an open bracket in the stack
+        
+        # size of stack = number of unbalanced open brackets
+        return (len(stack) + 1) // 2
+```
