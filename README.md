@@ -1880,6 +1880,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Database
 |  |
 | ------- |
+| [0175-combine-two-tables](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0175-combine-two-tables) |
 | [0584-find-customer-referee](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0584-find-customer-referee) |
 | [0595-big-countries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0595-big-countries) |
 | [1068-product-sales-analysis-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1068-product-sales-analysis-i) |
