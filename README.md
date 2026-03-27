@@ -105,6 +105,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2806-account-balance-after-rounded-purchase](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2806-account-balance-after-rounded-purchase) |
 | [2807-insert-greatest-common-divisors-in-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2807-insert-greatest-common-divisors-in-linked-list) |
 | [2812-find-the-maximum-achievable-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2812-find-the-maximum-achievable-number) |
+| [2946-matrix-similarity-after-cyclic-shifts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3055-maximum-odd-binary-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3055-maximum-odd-binary-number) |
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3172-divisible-and-non-divisible-sums-difference) |
 | [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
@@ -469,6 +470,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2908-minimum-sum-of-mountain-triplets-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2908-minimum-sum-of-mountain-triplets-i) |
 | [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2913-subarrays-distinct-element-sum-of-squares-i) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
+| [2946-matrix-similarity-after-cyclic-shifts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2974-minimum-number-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2974-minimum-number-game) |
 | [2977-check-if-a-string-is-an-acronym-of-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2977-check-if-a-string-is-an-acronym-of-words) |
@@ -1062,6 +1064,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2800-minimum-string-length-after-removing-substrings) |
 | [2847-find-maximum-number-of-string-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2847-find-maximum-number-of-string-pairs) |
 | [2886-faulty-keyboard](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2886-faulty-keyboard) |
+| [2946-matrix-similarity-after-cyclic-shifts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [2974-minimum-number-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2974-minimum-number-game) |
 | [3038-maximum-number-of-operations-with-the-same-score-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3038-maximum-number-of-operations-with-the-same-score-i) |
 | [3220-count-tested-devices-after-test-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3220-count-tested-devices-after-test-operations) |
@@ -1678,6 +1681,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2675-find-the-width-of-columns-of-a-grid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2675-find-the-width-of-columns-of-a-grid) |
 | [2737-row-with-maximum-ones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2737-row-with-maximum-ones) |
 | [2906-construct-product-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2906-construct-product-matrix) |
+| [2946-matrix-similarity-after-cyclic-shifts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3033-modify-the-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3033-modify-the-matrix) |
 | [3188-find-champion-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3188-find-champion-i) |
 | [3227-find-missing-and-repeated-values](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3227-find-missing-and-repeated-values) |
