@@ -3,7 +3,6 @@ class Solution:
         n = len(mat[0])
         r = k % n
         smat = copy.deepcopy(mat)
-        print(r)
 
         if r == 0:
             return True
@@ -13,12 +12,7 @@ class Solution:
                 if i % 2 == 0:
                     smat[i] = smat[i][1:] + smat[i][:1]
                 else:
-                    smat[i] = smat[i][-1:] + smat[i][:n-1] 
-                print(smat)  
+                    smat[i] = smat[i][-1:] + smat[i][:n-1]   
             r -= 1
-        print(smat, mat)
-        if smat == mat:
-            return True
-        else:
-            return False
-
+        
+        return mat == smat
