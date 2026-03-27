@@ -64,3 +64,45 @@
 	<li><code>1 &lt;= mat[i][j] &lt;= 25</code></li>
 	<li><code>1 &lt;= k &lt;= 50</code></li>
 </ul>
+
+# Solution
+* we cannot `mat = smat` change `smat` and check because here `mat & smat` are both reference to the same object so changing `smat` will also change `mat` and eventually both will be the same.
+
+```python
+class Solution:
+    def areSimilar(self, mat: List[List[int]], k: int) -> bool:
+        n = len(mat[0])
+        r = k % n
+        smat = copy.deepcopy(mat)
+
+        if r == 0:
+            return True
+        
+        while r:
+            for i in range(len(smat)):
+                if i % 2 == 0:
+                    smat[i] = smat[i][1:] + smat[i][:1]
+                else:
+                    smat[i] = smat[i][-1:] + smat[i][:n-1]   
+            r -= 1
+        
+        return mat == smat
+```
+* Instead of doing `one rotation` at a time, do `r` rotations at once.
+* Determining whether a row cyclically shifted to the right by `k` positions is identical to the original is equivalent to checking whether it remains the same when shifted to the left by `k` positions. In essence, both checks verify whether `mat[i][j]=mat[i][(j+k) mod n]`, where `n` is the number of columns.
+
+```python
+class Solution:
+    def areSimilar(self, mat: List[List[int]], k: int) -> bool:
+        m = len(mat)
+        n = len(mat[0])
+        k %= n
+
+        for i in range(m):
+            for j in range(n):
+                if mat[i][j] != mat[i][(j+k) % n]:
+                    return False
+        
+        return True
+```
+
