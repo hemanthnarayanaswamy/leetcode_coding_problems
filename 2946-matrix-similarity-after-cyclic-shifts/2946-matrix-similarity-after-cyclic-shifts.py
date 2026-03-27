@@ -1,18 +1,12 @@
 class Solution:
     def areSimilar(self, mat: List[List[int]], k: int) -> bool:
+        m = len(mat)
         n = len(mat[0])
-        r = k % n
-        smat = copy.deepcopy(mat)
+        k %= n
 
-        if r == 0:
-            return True
+        for i in range(m):
+            for j in range(n):
+                if mat[i][j] != mat[i][(j+k) % n]:
+                    return False
         
-        while r:
-            for i in range(len(smat)):
-                if i % 2 == 0:
-                    smat[i] = smat[i][1:] + smat[i][:1]
-                else:
-                    smat[i] = smat[i][-1:] + smat[i][:n-1]   
-            r -= 1
-        
-        return mat == smat
+        return True
