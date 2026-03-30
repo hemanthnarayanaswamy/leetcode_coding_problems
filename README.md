@@ -1892,6 +1892,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0620-not-boring-movies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0620-not-boring-movies) |
 | [1068-product-sales-analysis-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1068-product-sales-analysis-i) |
 | [1148-article-views-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1148-article-views-i) |
+| [1280-students-and-examinations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1280-students-and-examinations) |
 | [1378-replace-employee-id-with-the-unique-identifier](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1378-replace-employee-id-with-the-unique-identifier) |
 | [1683-invalid-tweets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-invalid-tweets) |
 | [1693-daily-leads-and-partners](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1693-daily-leads-and-partners) |
