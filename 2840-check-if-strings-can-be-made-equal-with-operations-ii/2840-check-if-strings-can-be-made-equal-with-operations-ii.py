@@ -1,8 +1,6 @@
 class Solution:
     def checkStrings(self, s1: str, s2: str) -> bool:
         n = len(s1)
-        if Counter(s1) != Counter(s2):
-            return False
         
         odds1 = s1[1:n:2]
         evens1 = s1[0:n:2]
