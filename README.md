@@ -621,6 +621,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1319-unique-number-of-occurrences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1319-unique-number-of-occurrences) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 | [1354-find-players-with-zero-or-one-losses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1354-find-players-with-zero-or-one-losses) |
+| [1358-number-of-substrings-containing-all-three-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1363-greatest-english-letter-in-upper-and-lower-case](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1363-greatest-english-letter-in-upper-and-lower-case) |
 | [1407-group-the-people-given-the-group-size-they-belong-to](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1407-group-the-people-given-the-group-size-they-belong-to) |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
@@ -824,6 +825,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
 | [1341-split-a-string-in-balanced-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1341-split-a-string-in-balanced-strings) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1353-find-resultant-array-after-removing-anagrams) |
+| [1358-number-of-substrings-containing-all-three-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1363-greatest-english-letter-in-upper-and-lower-case](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1363-greatest-english-letter-in-upper-and-lower-case) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one) |
@@ -1643,6 +1645,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0940-fruit-into-baskets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0940-fruit-into-baskets) |
 | [1138-grumpy-bookstore-owner](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1138-grumpy-bookstore-owner) |
 | [1248-count-number-of-nice-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1248-count-number-of-nice-subarrays) |
+| [1358-number-of-substrings-containing-all-three-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1430-find-the-k-beauty-of-a-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1430-find-the-k-beauty-of-a-number) |
 | [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
