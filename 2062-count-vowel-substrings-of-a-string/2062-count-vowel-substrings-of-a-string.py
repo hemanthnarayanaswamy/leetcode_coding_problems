@@ -15,6 +15,6 @@ class Solution:
                     if len(current) == 5:
                         count += 1
 						
-            current = set()
+            current.clear()
                         
         return count 
