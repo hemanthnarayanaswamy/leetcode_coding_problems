@@ -4,7 +4,7 @@ class Solution:
         left = 0
         res = count = 0
 
-        for right, num in enumerate(nums):
+        for num in nums:
             if num == maxNum:
                 count += 1
             
