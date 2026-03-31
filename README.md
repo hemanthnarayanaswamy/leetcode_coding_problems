@@ -652,6 +652,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1960-check-if-the-sentence-is-pangram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1960-check-if-the-sentence-is-pangram) |
 | [1987-substrings-of-size-three-with-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1987-substrings-of-size-three-with-distinct-characters) |
 | [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
+| [2062-count-vowel-substrings-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2062-count-vowel-substrings-of-a-string) |
 | [2116-count-number-of-pairs-with-absolute-difference-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2116-count-number-of-pairs-with-absolute-difference-k) |
 | [2122-count-special-quadruplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2122-count-special-quadruplets) |
 | [2133-number-of-pairs-of-strings-with-concatenation-equal-to-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2133-number-of-pairs-of-strings-with-concatenation-equal-to-target) |
@@ -888,6 +889,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2032-largest-odd-number-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2032-largest-odd-number-in-string) |
 | [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
+| [2062-count-vowel-substrings-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2062-count-vowel-substrings-of-a-string) |
 | [2076-sum-of-digits-of-string-after-convert](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2076-sum-of-digits-of-string-after-convert) |
 | [2077-largest-number-after-mutating-substring](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2077-largest-number-after-mutating-substring) |
 | [2088-minimum-time-to-type-word-using-special-typewriter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2088-minimum-time-to-type-word-using-special-typewriter) |
