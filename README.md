@@ -441,6 +441,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2640-find-the-score-of-all-prefixes-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2640-find-the-score-of-all-prefixes-of-an-array) |
 | [2644-find-the-maximum-divisibility-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2644-find-the-maximum-divisibility-score) |
 | [2654-count-the-number-of-vowel-strings-in-range](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2654-count-the-number-of-vowel-strings-in-range) |
+| [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [2670-find-the-distinct-difference-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2670-find-the-distinct-difference-array) |
 | [2675-find-the-width-of-columns-of-a-grid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2675-find-the-width-of-columns-of-a-grid) |
 | [2679-count-distinct-numbers-on-board](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2679-count-distinct-numbers-on-board) |
@@ -698,6 +699,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2605-form-smallest-number-from-two-digit-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2605-form-smallest-number-from-two-digit-arrays) |
 | [2634-minimum-common-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2634-minimum-common-value) |
+| [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [2670-find-the-distinct-difference-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2670-find-the-distinct-difference-array) |
 | [2679-count-distinct-numbers-on-board](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2679-count-distinct-numbers-on-board) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
@@ -1599,6 +1601,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2308-divide-array-into-equal-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2308-divide-array-into-equal-pairs) |
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2323-minimum-bit-flips-to-convert-number) |
 | [2427-first-letter-to-appear-twice](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2427-first-letter-to-appear-twice) |
+| [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [2659-number-of-even-and-odd-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2659-number-of-even-and-odd-bits) |
 | [3044-minimum-operations-to-collect-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3044-minimum-operations-to-collect-elements) |
 | [3093-sum-of-values-at-indices-with-k-set-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3093-sum-of-values-at-indices-with-k-set-bits) |
