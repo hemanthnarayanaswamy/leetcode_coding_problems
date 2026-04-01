@@ -3,9 +3,9 @@ class Solution:
         freq = Counter(nums)
         res = tmp = 0
 
-        for key, count in freq.items():
-            if freq[key+1]:
-                tmp = count + freq.get(key+1, 0)
+        for num in freq:
+            if freq[num+1]:
+                tmp = freq[num] + freq[num+1]
 
             if tmp and tmp > res:
                 res = tmp
