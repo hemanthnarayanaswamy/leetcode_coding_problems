@@ -7,7 +7,7 @@ class Solution:
             if freq[num+1]:
                 tmp = freq[num] + freq[num+1]
 
-            if tmp and tmp > res:
-                res = tmp
-        
+                if tmp > res:
+                    res = tmp
+
         return res
