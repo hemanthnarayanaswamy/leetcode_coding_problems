@@ -49,3 +49,54 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+# Solution 
+1. Break the number down digit by digit starting from the ones place.
+```python
+ def digits(n):
+				dig = []
+				while n:
+						d, r = divmod(n, 10)
+						dig.append(r)
+						n = d
+				return dig
+```
+2. Each nonzero digit contributes a base-10 component. `nums[i] * 10 ** i`
+		
+```python
+class Solution:
+    def decimalRepresentation(self, n: int) -> List[int]:
+        def digits(n):
+            dig = []
+            while n:
+                d, r = divmod(n, 10)
+                dig.append(r)
+                n = d
+            return dig
+        
+        nums = digits(n)
+        res = []
+        
+        for i in range(len(nums)-1, -1, -1):
+            tmp = nums[i] * 10 ** i
+            if tmp:
+                res.append(tmp)
+        return res
+```
+* Try doing it in one iteration, using a `factor` and multiplicating it for each digit place and incrementing it to the next place as we iterate.
+
+```python
+class Solution:
+    def decimalRepresentation(self, n: int) -> List[int]:
+        res = []
+        factor = 1
+
+        while n:
+            q, r = divmod(n, 10)
+            if r:
+                res.append(r * factor)
+            n = q
+            factor *= 10
+
+        return res[::-1]
+```
