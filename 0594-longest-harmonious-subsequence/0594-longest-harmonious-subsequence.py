@@ -1,13 +1,11 @@
+
 class Solution:
     def findLHS(self, nums: List[int]) -> int:
-        freq = Counter(nums)
-        res = tmp = 0
+        cnt = Counter(nums)
+        LHS = 0
 
-        for num in freq:
-            if freq[num+1]:
-                tmp = freq[num] + freq[num+1]
+        for x in cnt:
+            if x + 1 in cnt:
+                LHS = max(LHS, cnt[x] + cnt[x + 1])
 
-                if tmp > res:
-                    res = tmp
-
-        return res
+        return LHS
