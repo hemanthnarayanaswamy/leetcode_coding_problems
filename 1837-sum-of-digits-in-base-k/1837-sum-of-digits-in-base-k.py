@@ -1,10 +1,10 @@
 class Solution:
     def sumBase(self, n: int, k: int) -> int:
-        q, r = divmod(n, k)
-        res = r
+        res = 0
 
-        while q:
-            q, r = divmod(q,k)
-            res += r
-            
+        while n:
+            res += n % k
+            n //= k
+        
         return res
+        
