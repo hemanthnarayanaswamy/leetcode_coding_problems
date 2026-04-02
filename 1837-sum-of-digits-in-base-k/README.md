@@ -26,3 +26,36 @@
 	<li><code>1 &lt;= n &lt;= 100</code></li>
 	<li><code>2 &lt;= k &lt;= 10</code></li>
 </ul>
+
+# Approach
+1. Conversion from `base 10 to base 6` can be done by **dividing the number by 6 until the quotient is 0.**
+```ini
+34 divides 6, Quotient = 5, remaining = 4
+5 divides 6, Quotient = 0, remaining =5
+```
+* until `quotient` keep dividing it by `k` and keep adding the `r` remainder to the result and return the result after the iteration.
+
+```python
+class Solution:
+    def sumBase(self, n: int, k: int) -> int:
+        q, r = divmod(n, k)
+        res = r
+
+        while q:
+            q, r = divmod(q,k)
+            res += r
+            
+        return res
+```
+---
+```python
+class Solution:
+    def sumBase(self, n: int, k: int) -> int:
+        res = 0
+
+        while n:
+            res += n % k
+            n //= k
+        
+        return res
+```
