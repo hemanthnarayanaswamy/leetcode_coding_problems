@@ -38,17 +38,3 @@ rotate 2 steps to the right: [3,99,-1,-100]
 	<li>Try to come up with as many solutions as you can. There are at least <strong>three</strong> different ways to solve this problem.</li>
 	<li>Could you do it in-place with <code>O(1)</code> extra space?</li>
 </ul>
-
-**To Rotate a `1D` array by `k` step make sure `k = k % n` and then ` grid1D[:k], grid1D[k:] = grid1D[-k:], grid1D[:-k]`**
-
-```python
-class Solution:
-    def rotate(self, nums: List[int], k: int) -> None:
-        """
-        Do not return anything, modify nums in-place instead.
-        """
-        k %= len(nums)
-
-        if k:
-            nums[:k], nums[k:] = nums[-k:], nums[:-k]
-```
