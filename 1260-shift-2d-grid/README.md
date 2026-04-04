@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/shift-2d-grid/">1386. Shift 2D Grid</a></h2><h3>Easy</h3><hr><p>Given a 2D <code>grid</code> of size <code>m x n</code>&nbsp;and an integer <code>k</code>. You need to shift the <code>grid</code>&nbsp;<code>k</code> times.</p>
+<h2><a href="https://leetcode.com/problems/shift-2d-grid">1386. Shift 2D Grid</a></h2><h3>Easy</h3><hr><p>Given a 2D <code>grid</code> of size <code>m x n</code>&nbsp;and an integer <code>k</code>. You need to shift the <code>grid</code>&nbsp;<code>k</code> times.</p>
 
 <p>In one shift operation:</p>
 
@@ -43,68 +43,3 @@
 	<li><code>-1000 &lt;= grid[i][j] &lt;= 1000</code></li>
 	<li><code>0 &lt;= k &lt;= 100</code></li>
 </ul>
-
-# Approach
-`Flatten this 2d array and do some modulo with k if is bigger than the length.`
-**When approaching this problem, it's helpful to think of the 2D grid as a flattened 1D array for easier indexing. By treating the grid this way, each element's position can be represented by a single index, which simplifies the logic needed to perform the shift.**
-
-**To Rotate a `1D` array by `k` step make sure `k = k % n` and then ` grid1D[:k], grid1D[k:] = grid1D[-k:], grid1D[:-k]`**
-
-* Conver the `1D` array into `2D` array with row size `m`
-
-* Conver `2D` array into `1D`: `1D = [2D[i][j] for i in range(m) for j in range(n)]`
-```ini
-arr = [1,2,3,4,5,6,7,8,9]
-m = 3
-res = [[1,2,3],[4,5,6],[7,8,9]]
-for i in range(0, len(arr), m): (start, stop, step)
-            res.append(arr[i:i+m])
-```
-
-```python
-class Solution:
-    def shiftGrid(self, grid: List[List[int]], k: int) -> List[List[int]]:
-        m = len(grid[0])
-        grid1D = []
-        res = []
-
-        for row in grid:
-            grid1D.extend(row)
-        
-        k = (k % len(grid1D))
-
-        if k == 0:
-            return grid
-        
-        grid1D[:k], grid1D[k:] = grid1D[-k:], grid1D[:-k] # Rotating the 1D array by 
-        
-        for i in range(0, len(grid1D), m):
-            res.append(grid1D[i:i+m])
-
-        return res
-```
----
-```python
-class Solution:
-    def shiftGrid(self, grid: List[List[int]], k: int) -> List[List[int]]:
-        m, n = len(grid), len(grid[0])
-        total = m * n
-        
-        # Flatten the grid
-        flat = [grid[i][j] for i in range(m) for j in range(n)]
-        
-        # Effective shifts
-        k = k % total
-        
-        # Rotate the array
-        flat = flat[-k:] + flat[:-k]
-        
-        # Rebuild the grid
-        new_grid = []
-        for i in range(m):
-            row = flat[i*n:(i+1)*n]
-            new_grid.append(row)
-        
-        return new_grid
-```
-        
