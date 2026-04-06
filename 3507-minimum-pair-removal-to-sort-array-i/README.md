@@ -46,3 +46,78 @@
 	<li><code>1 &lt;= nums.length &lt;= 50</code></li>
 	<li><code>-1000 &lt;= nums[i] &lt;= 1000</code></li>
 </ul>
+
+# Solution 
+* Follow the proceduce until the array becomes sorted.
+
+```python
+class Solution:
+    def minimumPairRemoval(self, nums: List[int]) -> int:
+        moves = 0
+
+        if len(nums) < 2:
+            return moves
+
+        def check_sorted(nums):
+            return nums == sorted(nums)
+        
+        def replacePair(nums, i1, i2):
+            new = nums[:i1] + [sum(nums[i1:i2+1])] + nums[i2+1:]
+            return new
+        
+        while not check_sorted(nums):
+            minSum = float('inf')
+            i1 = i2 = None
+
+            for i in range(1, len(nums)):
+                p, c = nums[i-1], nums[i]
+                tmp = p+c
+                if tmp < minSum:
+                    minSum = tmp
+                    i1 = i-1
+                    i2 = i
+
+            nums = replacePair(nums, i1, i2)
+            moves += 1
+        
+        return moves
+```
+* No need to `sort()` each time instead check for `nums[i] < nums[i-1]`
+* Instead of recalculating and reconstructing the `nums` array, sort the index and replace that index with the minSum and `pop()` and second index.
+
+```python
+	nums[idx] = min_sum
+	nums.pop(idx + 1)
+	operations += 1
+```
+---
+
+```python
+class Solution:
+    def minimumPairRemoval(self, nums):
+        def is_sorted(arr):
+            for i in range(1, len(arr)):
+                if arr[i] < arr[i - 1]:
+                    return False
+            return True
+
+        operations = 0
+
+        while not is_sorted(nums):
+            min_sum = nums[0] + nums[1]
+            idx = 0
+
+            # Find leftmost adjacent pair with minimum sum
+            for i in range(1, len(nums) - 1):
+                curr_sum = nums[i] + nums[i + 1]
+                if curr_sum < min_sum:
+                    min_sum = curr_sum
+                    idx = i
+
+            # Merge the pair
+            nums[idx] = min_sum
+            nums.pop(idx + 1)
+            operations += 1
+
+        return operations
+```
