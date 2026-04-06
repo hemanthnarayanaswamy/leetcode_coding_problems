@@ -1,6 +1,7 @@
 class Solution:
     def minimumPairRemoval(self, nums: List[int]) -> int:
         moves = 0
+
         if len(nums) < 2:
             return moves
 
@@ -12,11 +13,10 @@ class Solution:
             return new
         
         while not check_sorted(nums):
-            minSum = sum(nums[:2])
-            i1 = 0
-            i2 = 1
+            minSum = float('inf')
+            i1 = i2 = None
 
-            for i in range(2, len(nums)):
+            for i in range(1, len(nums)):
                 p, c = nums[i-1], nums[i]
                 tmp = p+c
                 if tmp < minSum:
