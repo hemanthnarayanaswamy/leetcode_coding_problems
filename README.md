@@ -531,6 +531,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3476-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3476-find-minimum-operations-to-make-all-elements-divisible-by-three) |
+| [3507-minimum-pair-removal-to-sort-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3519-find-the-number-of-winning-players](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3519-find-the-number-of-winning-players) |
 | [3533-snake-in-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3533-snake-in-matrix) |
@@ -737,6 +738,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3421-count-pairs-that-form-a-complete-day-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3421-count-pairs-that-form-a-complete-day-i) |
 | [3446-find-the-number-of-good-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3446-find-the-number-of-good-pairs-i) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3455-minimum-length-of-string-after-operations) |
+| [3507-minimum-pair-removal-to-sort-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3519-find-the-number-of-winning-players](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3519-find-the-number-of-winning-players) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3591-check-if-any-element-has-prime-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3591-check-if-any-element-has-prime-frequency) |
@@ -1097,6 +1099,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3433-count-mentions-per-user](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3433-count-mentions-per-user) |
 | [3447-clear-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3447-clear-digits) |
 | [3450-find-the-child-who-has-the-ball-after-k-seconds](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3450-find-the-child-who-has-the-ball-after-k-seconds) |
+| [3507-minimum-pair-removal-to-sort-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3533-snake-in-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3533-snake-in-matrix) |
 | [3540-hash-divided-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3540-hash-divided-string) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
@@ -1572,6 +1575,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2500-delete-greatest-value-in-each-row](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2500-delete-greatest-value-in-each-row) |
 | [2974-minimum-number-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2974-minimum-number-game) |
+| [3507-minimum-pair-removal-to-sort-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 ## Bucket Sort
 |  |
@@ -1823,6 +1827,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [1533-display-table-of-food-orders-in-a-restaurant](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1533-display-table-of-food-orders-in-a-restaurant) |
 | [2447-merge-similar-items](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2447-merge-similar-items) |
+| [3507-minimum-pair-removal-to-sort-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 ## Design
 |  |
 | ------- |
@@ -1905,6 +1910,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2487-remove-nodes-from-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2487-remove-nodes-from-linked-list) |
 | [2807-insert-greatest-common-divisors-in-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2807-insert-greatest-common-divisors-in-linked-list) |
 | [3217-delete-nodes-from-linked-list-present-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3217-delete-nodes-from-linked-list-present-in-array) |
+| [3507-minimum-pair-removal-to-sort-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 ## Database
 |  |
 | ------- |
@@ -1923,4 +1929,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1757-recyclable-and-low-fat-products](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1757-recyclable-and-low-fat-products) |
 | [1978-employees-whose-manager-left-the-company](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1978-employees-whose-manager-left-the-company) |
 | [2356-number-of-unique-subjects-taught-by-each-teacher](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2356-number-of-unique-subjects-taught-by-each-teacher) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [3507-minimum-pair-removal-to-sort-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 <!---LeetCode Topics End-->
