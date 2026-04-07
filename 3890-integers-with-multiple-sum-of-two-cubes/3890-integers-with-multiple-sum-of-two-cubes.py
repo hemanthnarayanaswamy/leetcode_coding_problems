@@ -2,6 +2,7 @@ class Solution:
     def findGoodIntegers(self, n: int) -> list[int]:
         freq = defaultdict(int)
         limit = int(n**1/3)
+        res = set()
 
         for i in range(limit):
             a = i ** 3
@@ -13,11 +14,9 @@ class Solution:
                 if x <= n:
                     freq[x] += 1  
                 else:
-                    break      
-        
-        res = []
-        for num, f in freq.items():
-            if f > 1:
-                res.append(num)
+                    break
+
+                if freq[x] > 1:
+                    res.add(x)      
         
         return sorted(res)
