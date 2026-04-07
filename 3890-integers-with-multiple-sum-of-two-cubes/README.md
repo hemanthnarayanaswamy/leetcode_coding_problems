@@ -48,3 +48,72 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+
+### Definition of a good integer
+- An integer x is considered good only if:
+
+There exist at least two distinct pairs `(a,b)` such that
+• `a` and `b` are positive integers
+• `a≤b` 
+• `x = a^3 + b^3`
+✅ The key phrase is `at least two distinct pairs`.
+
+```ini
+Why 9 = 1³ + 2³ is NOT a good integer
+
+There is no second, different pair (a,b) that also gives 9.
+9 is NOT a good integer
+```
+## Approach
+* Use a `map` to count how many times each value of a3 + b3 appears. A value is good if it can be formed by at least two distinct pairs. Collect all such values and return them in sorted order
+
+## Solution
+```python
+class Solution:
+    def findGoodIntegers(self, n: int) -> list[int]:
+        freq = defaultdict(int)
+
+        for i in range(n):
+            for j in range(i, n):
+                tmp = i**3 + j**3
+                if tmp <= n:
+                    freq[tmp] += 1        
+        
+        res = []
+        
+        for num, f in freq.items():
+            if f > 1:
+                res.append(num)
+        
+        return sorted(res)
+```
+* Too many iterations, need to reduce the range (use n^1/3)
+* Break the first loop is `i**3 > n`
+* Can I stop computing further b values once a³ + b³ > n for fixed a? **Break second loop when x > n**
+* No need seperate loop for freq and not need to add `+= 1` everytime and don't need to add duplicates.
+
+```python
+class Solution:
+    def findGoodIntegers(self, n: int) -> list[int]:
+        freq = defaultdict(int)
+        limit = int(n**(1/3)) + 1
+        res = set()
+
+        for i in range(1, limit):
+            a = i ** 3
+            if a >= n:
+                break
+            for j in range(i, limit):
+                b = j ** 3
+                x = a + b
+                if x <= n:
+                    if x in freq and x not in res:
+                        res.add(x)
+                    else:
+                        freq[x] = 1  
+                else:
+                    break       
+        
+        return sorted(res)
+```
