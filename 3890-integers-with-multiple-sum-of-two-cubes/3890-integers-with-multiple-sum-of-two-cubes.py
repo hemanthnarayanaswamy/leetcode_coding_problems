@@ -1,10 +1,10 @@
 class Solution:
     def findGoodIntegers(self, n: int) -> list[int]:
         freq = defaultdict(int)
-        limit = int(n**1/3)
+        limit = int(n**(1/3)) + 1
         res = set()
 
-        for i in range(limit):
+        for i in range(1, limit):
             a = i ** 3
             if a >= n:
                 break
@@ -12,11 +12,11 @@ class Solution:
                 b = j ** 3
                 x = a + b
                 if x <= n:
-                    freq[x] += 1  
+                    if x in freq and x not in res:
+                        res.add(x)
+                    else:
+                        freq[x] = 1  
                 else:
-                    break
-
-                if freq[x] > 1:
-                    res.add(x)      
+                    break       
         
         return sorted(res)
