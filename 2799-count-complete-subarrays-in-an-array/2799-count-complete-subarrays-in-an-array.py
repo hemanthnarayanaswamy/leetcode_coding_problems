@@ -1,5 +1,6 @@
 class Solution:
     def countCompleteSubarrays(self, nums: List[int]) -> int:
+        n = len(nums)
         freq = defaultdict(int)
         k = len(set(nums))
         left = 0
@@ -9,13 +10,11 @@ class Solution:
             freq[nums[i]] += 1
 
             while len(freq) == k:
+                count += (n - i)
                 freq[nums[left]] -= 1
+
                 if freq[nums[left]] == 0:
-                    freq[nums[left]] += 1
-                    break
+                    del freq[nums[left]]
                 left += 1
-
-            if len(freq) == k:
-                count += left + 1
-
+        
         return count
