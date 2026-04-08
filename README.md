@@ -464,6 +464,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2767-maximum-sum-with-exactly-k-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2767-maximum-sum-with-exactly-k-elements) |
 | [2785-semi-ordered-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2785-semi-ordered-permutation) |
 | [2791-find-the-losers-of-the-circular-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2791-find-the-losers-of-the-circular-game) |
+| [2799-count-complete-subarrays-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2799-count-complete-subarrays-in-an-array) |
 | [2815-max-pair-sum-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2815-max-pair-sum-in-an-array) |
 | [2836-neither-minimum-nor-maximum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2836-neither-minimum-nor-maximum) |
 | [2838-sum-of-matrix-after-queries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2838-sum-of-matrix-after-queries) |
@@ -716,6 +717,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
 | [2729-check-if-the-number-is-fascinating](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2729-check-if-the-number-is-fascinating) |
 | [2791-find-the-losers-of-the-circular-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2791-find-the-losers-of-the-circular-game) |
+| [2799-count-complete-subarrays-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2799-count-complete-subarrays-in-an-array) |
 | [2815-max-pair-sum-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2815-max-pair-sum-in-an-array) |
 | [2825-minimize-string-length](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2825-minimize-string-length) |
 | [2838-sum-of-matrix-after-queries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2838-sum-of-matrix-after-queries) |
@@ -1683,6 +1685,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1987-substrings-of-size-three-with-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1987-substrings-of-size-three-with-distinct-characters) |
 | [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
+| [2799-count-complete-subarrays-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2799-count-complete-subarrays-in-an-array) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2962-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2962-count-subarrays-where-max-element-appears-at-least-k-times) |
 | [3206-alternating-groups-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3206-alternating-groups-i) |
