@@ -10,15 +10,13 @@ class Solution:
                     arr.append(perm[i//2])
             return arr
 
-        operations = 0
         initial = [i for i in range(n)]
         perm = initial
 
         for i in range(n):
             perm = specialOperation(perm)
-            operations += 1
 
             if perm == initial:
                 break
         
-        return operations
+        return i+1
