@@ -67,6 +67,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [1806-count-of-matches-in-tournament](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1806-count-of-matches-in-tournament) |
+| [1806-minimum-number-of-operations-to-reinitialize-a-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1806-minimum-number-of-operations-to-reinitialize-a-permutation) |
 | [1817-calculate-money-in-leetcode-bank](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1817-calculate-money-in-leetcode-bank) |
 | [1837-sum-of-digits-in-base-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1837-sum-of-digits-in-base-k) |
 | [1844-maximum-number-of-balls-in-a-box](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1844-maximum-number-of-balls-in-a-box) |
@@ -336,6 +337,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [1791-richest-customer-wealth](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1791-richest-customer-wealth) |
 | [1803-average-waiting-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1803-average-waiting-time) |
+| [1806-minimum-number-of-operations-to-reinitialize-a-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1806-minimum-number-of-operations-to-reinitialize-a-permutation) |
 | [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1807-evaluate-the-bracket-pairs-of-a-string) |
 | [1813-maximum-erasure-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1813-maximum-erasure-value) |
 | [1829-maximum-units-on-a-truck](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1829-maximum-units-on-a-truck) |
@@ -1058,6 +1060,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1646-get-maximum-in-generated-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1646-get-maximum-in-generated-array) |
 | [1803-average-waiting-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1803-average-waiting-time) |
 | [1806-count-of-matches-in-tournament](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1806-count-of-matches-in-tournament) |
+| [1806-minimum-number-of-operations-to-reinitialize-a-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1806-minimum-number-of-operations-to-reinitialize-a-permutation) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2022-convert-1d-array-into-2d-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2022-convert-1d-array-into-2d-array) |
 | [2048-build-array-from-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2048-build-array-from-permutation) |
