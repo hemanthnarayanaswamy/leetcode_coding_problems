@@ -45,3 +45,47 @@ Note that in particular, &quot;zzxy&quot; is not special equivalent to &quot;zzy
 	<li><code>words[i]</code> consist of lowercase English letters.</li>
 	<li>All the strings are of the same length.</li>
 </ul>
+
+NOTE: **RETURN THE NUMBER OF GROUPS OF SPECIAL-EQUIVALENT STRINGS**, `NOT THE MAXIMUM GROUP SIZE`
+![image](https://s3-lc-upload.s3.amazonaws.com/users/ihainan72/image_1535252579.png)
+```python
+class Solution:
+    def numSpecialEquivGroups(self, words: List[str]) -> int:
+        specialFreq = defaultdict(int)
+        def stringSort(word):
+            n = len(word)
+            sortedWord = ''.join(sorted(word[0:n:2])) + ''.join(sorted(word[1:n:2]))
+            return sortedWord
+
+        for word in words:
+            formatedWord = stringSort(word)
+            specialFreq[formatedWord] += 1
+
+        return len(specialFreq)
+```
+---
+```python
+class Solution:
+    def numSpecialEquivGroups(self, words: List[str]) -> int:
+        specialFreq = set()
+
+        for word in words:
+            n = len(word)
+            formatedWord = ''.join(sorted(word[0:n:2])) + ''.join(sorted(word[1:n:2]))
+            specialFreq.add(formatedWord)
+
+        return len(specialFreq)
+```
+---
+```python
+class Solution:
+    def numSpecialEquivGroups(self, words):
+        seen = set()
+        
+        for word in words:
+            even = ''.join(sorted(word[::2]))
+            odd = ''.join(sorted(word[1::2]))
+            seen.add((even, odd))
+        
+        return len(seen)
+```
