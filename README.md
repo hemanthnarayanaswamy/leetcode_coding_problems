@@ -229,6 +229,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0853-car-fleet](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0853-car-fleet) |
 | [0861-flipping-an-image](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0861-flipping-an-image) |
 | [0890-lemonade-change](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0890-lemonade-change) |
+| [0893-groups-of-special-equivalent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0893-groups-of-special-equivalent-strings) |
 | [0898-transpose-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0898-transpose-matrix) |
 | [0917-boats-to-save-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0917-boats-to-save-people) |
 | [0924-fair-candy-swap](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0924-fair-candy-swap) |
@@ -619,6 +620,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0822-unique-morse-code-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0822-unique-morse-code-words) |
 | [0829-subdomain-visit-count](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0829-subdomain-visit-count) |
 | [0859-buddy-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0859-buddy-strings) |
+| [0893-groups-of-special-equivalent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0893-groups-of-special-equivalent-strings) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0924-fair-candy-swap](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0924-fair-candy-swap) |
 | [0930-binary-subarrays-with-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0930-binary-subarrays-with-sum) |
@@ -824,6 +826,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0857-positions-of-large-groups](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0857-positions-of-large-groups) |
 | [0859-buddy-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0859-buddy-strings) |
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
+| [0893-groups-of-special-equivalent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0893-groups-of-special-equivalent-strings) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [0944-delete-columns-to-make-sorted](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0944-delete-columns-to-make-sorted) |
@@ -1238,6 +1241,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0748-largest-number-at-least-twice-of-others](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0748-largest-number-at-least-twice-of-others) |
 | [0807-custom-sort-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0807-custom-sort-string) |
 | [0853-car-fleet](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0853-car-fleet) |
+| [0893-groups-of-special-equivalent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0893-groups-of-special-equivalent-strings) |
 | [0917-boats-to-save-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0917-boats-to-save-people) |
 | [0924-fair-candy-swap](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0924-fair-candy-swap) |
 | [0941-sort-array-by-parity](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0941-sort-array-by-parity) |
