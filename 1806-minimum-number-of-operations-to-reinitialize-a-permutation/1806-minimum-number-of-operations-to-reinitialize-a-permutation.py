@@ -13,10 +13,10 @@ class Solution:
         initial = [i for i in range(n)]
         perm = initial
 
-        for i in range(n):
+        for i in range(1, n):
             perm = specialOperation(perm)
 
             if perm == initial:
                 break
         
-        return i+1
+        return i
