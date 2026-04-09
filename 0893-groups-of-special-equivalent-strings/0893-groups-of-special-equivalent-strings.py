@@ -1,10 +1,10 @@
 class Solution:
-    def numSpecialEquivGroups(self, words: List[str]) -> int:
-        specialFreq = set()
-
+    def numSpecialEquivGroups(self, words):
+        seen = set()
+        
         for word in words:
-            n = len(word)
-            formatedWord = ''.join(sorted(word[0:n:2])) + ''.join(sorted(word[1:n:2]))
-            specialFreq.add(formatedWord)
-
-        return len(specialFreq)
+            even = ''.join(sorted(word[::2]))
+            odd = ''.join(sorted(word[1::2]))
+            seen.add((even, odd))
+        
+        return len(seen)
