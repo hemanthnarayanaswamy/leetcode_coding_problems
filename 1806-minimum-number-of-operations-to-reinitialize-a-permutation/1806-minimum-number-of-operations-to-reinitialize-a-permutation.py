@@ -11,8 +11,8 @@ class Solution:
             return arr
 
         operations = 0
-        perm = [i for i in range(n)]
-        initial = perm
+        initial = [i for i in range(n)]
+        perm = initial
 
         for i in range(n):
             perm = specialOperation(perm)
@@ -22,7 +22,3 @@ class Solution:
                 break
         
         return operations
-
-        
-
-
