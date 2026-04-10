@@ -171,3 +171,56 @@
 	<li><code>1 &lt;= s.length &lt;= 5 * 10<sup>5</sup></code></li>
 	<li><code>s</code> consists only of lowercase English letters and digits.</li>
 </ul>
+
+# Solution 
+* Mirroring lower case alphabets `chr(ord('z') - (ord('c') - ord('a')))`
+
+1. We use different mirror computation logic for both letter and number. 
+2. To store the mirror frequency we use `tuple` as key in `HashMaps` like `(character, mirror character) or (mirror character, character)` in a `sorted` order, That way only unique is preserved without worry about the duplicates. 
+
+
+```python
+class Solution:
+    def mirrorFrequency(self, s: str) -> int:
+        freq = Counter(s)
+        mirrorFreq = defaultdict(int)
+
+        for c in s:
+            if c.isnumeric():
+                mir = str(9 - int(c))
+                f = abs(freq[mir] - freq[c])
+                k = (c, mir) if c > mir else (mir, c)
+                mirrorFreq[k] = f
+            else:
+                mir = chr(ord('z') - (ord(c) - ord('a')))
+                f = abs(freq[mir] - freq[c])
+                k = (c, mir) if c > mir else (mir, c)
+                mirrorFreq[k] = f
+        
+        return sum(mirrorFreq.values())
+```
+* Do a running dynamic sum, instead of doing a reiteration at the end. 
+---
+```python
+class Solution:
+    def mirrorFrequency(self, s: str) -> int:
+        freq = Counter(s)
+        mirrorFreq = set()
+        total = 0
+
+        for c in freq:
+            if c.isnumeric():
+                mir = str(9 - int(c))
+            else:
+                mir = chr(ord('z') - (ord(c) - ord('a')))
+
+            pair = (c, mir) if c > mir else (mir, c) # we generate character and mirror pair in sorted order
+
+            if pair not in mirrorFreq: # If the pair is unique only find the absolute difference
+                total += abs(freq[mir] - freq[c])
+                mirrorFreq.add(pair) 
+        
+        return total # We need to return the sum of absolute difference of all unique pairs
+```
+*  Iterating over `s` causes unnecessary repeated work, So iterate thourh unique keys from `freq`
+*  Don't need to store the `tuple pair` , you can store					
