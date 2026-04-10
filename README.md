@@ -562,6 +562,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3705-find-the-largest-almost-missing-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3705-find-the-largest-almost-missing-integer) |
 | [3707-find-the-most-common-response](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3707-find-the-most-common-response) |
 | [3712-sum-of-elements-with-frequency-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3712-sum-of-elements-with-frequency-divisible-by-k) |
+| [3718-smallest-missing-multiple-of-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3718-smallest-missing-multiple-of-k) |
 | [3723-sum-of-good-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3723-sum-of-good-numbers) |
 | [3731-sum-of-variable-length-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3731-sum-of-variable-length-subarrays) |
 | [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3736-minimum-moves-to-equal-array-elements-iii) |
@@ -759,6 +760,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3705-find-the-largest-almost-missing-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3705-find-the-largest-almost-missing-integer) |
 | [3707-find-the-most-common-response](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3707-find-the-most-common-response) |
 | [3712-sum-of-elements-with-frequency-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3712-sum-of-elements-with-frequency-divisible-by-k) |
+| [3718-smallest-missing-multiple-of-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3718-smallest-missing-multiple-of-k) |
 | [3736-find-valid-pair-of-adjacent-digits-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3736-find-valid-pair-of-adjacent-digits-in-string) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
