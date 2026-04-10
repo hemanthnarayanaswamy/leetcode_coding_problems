@@ -766,6 +766,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 | [3871-minimum-deletions-for-at-most-k-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3871-minimum-deletions-for-at-most-k-distinct-characters) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3872-find-most-frequent-vowel-and-consonant) |
+| [3889-mirror-frequency-distance](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3889-mirror-frequency-distance) |
 | [3994-find-the-least-frequent-digit](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3994-find-the-least-frequent-digit) |
 | [3997-maximize-sum-of-at-most-k-distinct-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3997-maximize-sum-of-at-most-k-distinct-elements) |
 | [4008-restore-finishing-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4008-restore-finishing-order) |
@@ -1025,6 +1026,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3823-reverse-letters-then-special-characters-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3823-reverse-letters-then-special-characters-in-a-string) |
 | [3871-minimum-deletions-for-at-most-k-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3871-minimum-deletions-for-at-most-k-distinct-characters) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3872-find-most-frequent-vowel-and-consonant) |
+| [3889-mirror-frequency-distance](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3889-mirror-frequency-distance) |
 ## Trie
 |  |
 | ------- |
@@ -1422,6 +1424,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3778-transform-array-by-parity](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3778-transform-array-by-parity) |
 | [3871-minimum-deletions-for-at-most-k-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3871-minimum-deletions-for-at-most-k-distinct-characters) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3872-find-most-frequent-vowel-and-consonant) |
+| [3889-mirror-frequency-distance](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3889-mirror-frequency-distance) |
 | [3994-find-the-least-frequent-digit](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3994-find-the-least-frequent-digit) |
 ## Prefix Sum
 |  |
