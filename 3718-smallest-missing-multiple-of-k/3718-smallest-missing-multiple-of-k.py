@@ -5,5 +5,5 @@ class Solution:
 
         for i in range(1, max):
             n = i * k
-            if n not in nums:
+            if n not in new:
                 return n
