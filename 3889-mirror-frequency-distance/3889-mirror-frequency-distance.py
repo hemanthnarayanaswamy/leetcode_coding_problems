@@ -4,7 +4,7 @@ class Solution:
         mirrorFreq = set()
         total = 0
 
-        for c in s:
+        for c in freq.keys():
             if c.isnumeric():
                 mir = str(9 - int(c))
             else:
