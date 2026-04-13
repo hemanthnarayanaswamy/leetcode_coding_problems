@@ -1,25 +1,15 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
-
 class Solution:
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
         if not head or not head.next:
             return True
 
-        # 1. Find the middle using slow & fast pointers
-        slow = fast = head
+        # Step 1: Find the middle
+        slow, fast = head, head
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
 
-        # 2. If odd length, skip the middle element
-        if fast:
-            slow = slow.next
-
-        # 3. Reverse the second half
+        # Step 2: Reverse the second half
         prev = None
         while slow:
             nxt = slow.next
@@ -27,12 +17,12 @@ class Solution:
             prev = slow
             slow = nxt
 
-        # 4. Compare first half and reversed second half
-        left, right = head, prev
-        while right and left:
-            if left.val != right.val:
+        # Step 3: Compare the two halves
+        head1, head2 = head, prev
+        while head2:
+            if head1.val != head2.val:
                 return False
-            left = left.next
-            right = right.next
+            head1 = head1.next
+            head2 = head2.next
 
         return True
