@@ -252,6 +252,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0983-validate-stack-sequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0983-validate-stack-sequences) |
 | [0985-sum-of-even-numbers-after-queries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0985-sum-of-even-numbers-after-queries) |
 | [1001-n-repeated-element-in-size-2n-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1001-n-repeated-element-in-size-2n-array) |
+| [1004-max-consecutive-ones-iii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1004-max-consecutive-ones-iii) |
 | [1013-partition-array-into-three-parts-with-equal-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1013-partition-array-into-three-parts-with-equal-sum) |
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1019-squares-of-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1019-squares-of-a-sorted-array) |
@@ -1442,6 +1443,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0713-subarray-product-less-than-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0713-subarray-product-less-than-k) |
 | [0930-binary-subarrays-with-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0930-binary-subarrays-with-sum) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0974-subarray-sums-divisible-by-k) |
+| [1004-max-consecutive-ones-iii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1004-max-consecutive-ones-iii) |
 | [1109-corporate-flight-bookings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1109-corporate-flight-bookings) |
 | [1248-count-number-of-nice-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1248-count-number-of-nice-subarrays) |
 | [1514-minimum-value-to-get-positive-step-by-step-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1514-minimum-value-to-get-positive-step-by-step-sum) |
@@ -1668,6 +1670,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0745-find-smallest-letter-greater-than-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0745-find-smallest-letter-greater-than-target) |
 | [0792-binary-search](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0792-binary-search) |
 | [0924-fair-candy-swap](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0924-fair-candy-swap) |
+| [1004-max-consecutive-ones-iii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1004-max-consecutive-ones-iii) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1486-find-the-distance-value-between-two-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1486-find-the-distance-value-between-two-arrays) |
@@ -1691,6 +1694,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0713-subarray-product-less-than-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0713-subarray-product-less-than-k) |
 | [0930-binary-subarrays-with-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0930-binary-subarrays-with-sum) |
 | [0940-fruit-into-baskets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0940-fruit-into-baskets) |
+| [1004-max-consecutive-ones-iii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1004-max-consecutive-ones-iii) |
 | [1138-grumpy-bookstore-owner](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1138-grumpy-bookstore-owner) |
 | [1248-count-number-of-nice-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1248-count-number-of-nice-subarrays) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1358-number-of-substrings-containing-all-three-characters) |
