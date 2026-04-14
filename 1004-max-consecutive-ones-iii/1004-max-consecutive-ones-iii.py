@@ -10,8 +10,7 @@ class Solution:
             while freq[0] > k:
                 freq[nums[left]] -= 1
                 left += 1
-            
-            if sum(freq) > maxCount:
-                maxCount = sum(freq)
+            else:
+                maxCount = max(maxCount, sum(freq))
        
         return maxCount
