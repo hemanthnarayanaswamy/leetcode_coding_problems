@@ -39,3 +39,50 @@
 	<li><code>1 &lt;= cardPoints[i] &lt;= 10<sup>4</sup></code></li>
 	<li><code>1 &lt;= k &lt;= cardPoints.length</code></li>
 </ul>
+
+# Approach
+* Let the sum of all points be `total_pts`. You need to remove a sub-array from cardPoints with `length n - k`.
+* Keep a window of size `n - k` over the array. The answer is `max(answer, total_pts - sumOfCurrentWindow)`
+
+```python
+class Solution:
+    def maxScore(self, cardPoints: List[int], k: int) -> int:
+        totalPoints = sum(cardPoints)
+        maxTotal = 0
+        n = len(cardPoints)
+        if k == n:
+            return totalPoints
+        
+        subTotal = sum(cardPoints[:n-k])
+        left = 0
+
+        for i in range(n-k, n):
+            maxTotal = max(maxTotal , totalPoints - subTotal)
+            subTotal = subTotal - cardPoints[left] + cardPoints[i]
+            left += 1
+        
+        return maxTotal
+```
+* Order is wrong, you are missing out the possible valid iteration.
+
+```python
+class Solution:
+    def maxScore(self, cardPoints: List[int], k: int) -> int:
+        totalPoints = sum(cardPoints)
+        n = len(cardPoints)
+
+        if k == n:
+            return totalPoints
+
+        windowSize = n - k
+        subTotal = sum(cardPoints[:windowSize])
+        maxTotal = totalPoints - subTotal
+
+        left = 0
+        for right in range(windowSize, n):
+            subTotal = subTotal - cardPoints[left] + cardPoints[right]
+            left += 1
+            maxTotal = max(maxTotal, totalPoints - subTotal)
+
+        return maxTotal
+```
