@@ -11,6 +11,7 @@ class Solution:
                 freq[nums[left]] -= 1
                 left += 1
             
-            maxCount = max(maxCount, sum(freq))
+            if sum(freq) > maxCount:
+                maxCount = sum(freq)
        
         return maxCount
