@@ -1,7 +1,6 @@
 class Solution:
     def longestOnes(self, nums: List[int], k: int) -> int: 
-        numsFreq = Counter(nums)
-        maxCount = count = 0
+        maxCount = 0
         freq = defaultdict(int)
         left = 0
 
@@ -12,13 +11,7 @@ class Solution:
                 freq[nums[left]] -= 1
                 left += 1
             
-            count = freq[1]
-            if count > maxCount:
-                maxCount = count
-        
-        if k > numsFreq[0]:
-            total = maxCount + numsFreq[0]
-        else:
-            total = maxCount + k
-
-        return total
+            if freq[0] <= k:
+                maxCount = max(maxCount, freq[0]+freq[1])
+       
+        return maxCount
