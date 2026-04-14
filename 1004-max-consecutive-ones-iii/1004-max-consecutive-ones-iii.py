@@ -11,7 +11,6 @@ class Solution:
                 freq[nums[left]] -= 1
                 left += 1
             
-            if freq[0] <= k:
-                maxCount = max(maxCount, freq[0]+freq[1])
+            maxCount = max(maxCount, freq[0]+freq[1])
        
         return maxCount
