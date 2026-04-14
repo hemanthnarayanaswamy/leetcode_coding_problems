@@ -26,3 +26,114 @@ Bolded numbers were flipped from 0 to 1. The longest subarray is underlined.
 	<li><code>nums[i]</code> is either <code>0</code> or <code>1</code>.</li>
 	<li><code>0 &lt;= k &lt;= nums.length</code></li>
 </ul>
+
+# Approach
+* We don't have a fixed size window in this case. The window size can grow and shrink depending upon the number of zeros we have (we don't actually have to flip the zeros here!).
+
+```python
+class Solution:
+    def longestOnes(self, nums: List[int], k: int) -> int: 
+        numsFreq = Counter(nums)
+        maxCount = count = 0
+        freq = defaultdict(int)
+        left = 0
+
+        for right in range(len(nums)):
+            freq[nums[right]] += 1
+
+            while freq[0] > k:
+                freq[nums[left]] -= 1
+                left += 1
+            
+            count = freq[1]
+            if count > maxCount:
+                maxCount = count
+        
+        if k > numsFreq[0]:
+            total = maxCount + numsFreq[0]
+        else:
+            total = maxCount + k
+
+        return total
+```
+* We don't need other counter to compute the `total`
+* Do a running `maxCount` by having the condition `if freq[0] <= k:`
+
+```python
+class Solution:
+    def longestOnes(self, nums: List[int], k: int) -> int: 
+        maxCount = 0
+        freq = defaultdict(int)
+        left = 0
+
+        for right in range(len(nums)):
+            freq[nums[right]] += 1
+
+            while freq[0] > k:
+                freq[nums[left]] -= 1
+                left += 1
+            
+            if freq[0] <= k:
+                maxCount = max(maxCount, freq[0]+freq[1])
+       
+        return maxCount
+```
+* We don't need the condition `if freq[0] <= k:` because it'll be always true as we are running `while loop` to maintain that.
+* Since we have only `1 & 0` no need to use counter using `Array`
+
+```python
+class Solution:
+    def longestOnes(self, nums: List[int], k: int) -> int: 
+        maxCount = 0
+        freq = [0, 0]
+        left = 0
+
+        for right in range(len(nums)):
+            freq[nums[right]] += 1
+
+            while freq[0] > k:
+                freq[nums[left]] -= 1
+                left += 1
+            
+            if sum(freq) > maxCount:
+                maxCount = sum(freq)
+       
+        return maxCount
+```
+---
+# OPtimal Solution
+
+```python
+class Solution:
+    def longestOnes(self, nums, k):
+        left, maxLength, zeroCount = 0, 0, 0
+
+        for right in range(len(nums)):
+            if nums[right] == 0:
+                zeroCount += 1
+
+            while zeroCount > k:
+                if nums[left] == 0:
+                    zeroCount -= 1
+                left += 1
+            else:
+                maxLength = max(maxLength, right - left + 1)
+
+        return maxLength
+```
+---
+```python
+class Solution:
+    def longestOnes(self, nums: List[int], k: int) -> int:
+        left = 0
+        for right in range(len(nums)):
+            if nums[right] == 0:
+                k -= 1
+            
+            if k < 0:
+                if nums[left] == 0:
+                    k += 1
+                left += 1
+        
+        return len(nums) - left
+```
