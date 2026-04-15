@@ -710,6 +710,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2486-most-frequent-even-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2486-most-frequent-even-element) |
 | [2487-optimal-partition-of-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2487-optimal-partition-of-string) |
 | [2502-sort-the-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2502-sort-the-people) |
+| [2516-take-k-of-each-character-from-left-and-right](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2516-take-k-of-each-character-from-left-and-right) |
 | [2524-largest-positive-integer-that-exists-with-its-negative](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2524-largest-positive-integer-that-exists-with-its-negative) |
 | [2525-count-number-of-distinct-integers-after-reverse-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2525-count-number-of-distinct-integers-after-reverse-operations) |
 | [2532-remove-letter-to-equalize-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2532-remove-letter-to-equalize-frequency) |
@@ -969,6 +970,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2487-optimal-partition-of-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2487-optimal-partition-of-string) |
 | [2502-sort-the-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2502-sort-the-people) |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2515-shortest-distance-to-target-string-in-a-circular-array) |
+| [2516-take-k-of-each-character-from-left-and-right](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2516-take-k-of-each-character-from-left-and-right) |
 | [2532-remove-letter-to-equalize-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2532-remove-letter-to-equalize-frequency) |
 | [2547-odd-string-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2547-odd-string-difference) |
 | [2572-append-characters-to-string-to-make-subsequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2572-append-characters-to-string-to-make-subsequence) |
@@ -1711,6 +1713,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1987-substrings-of-size-three-with-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1987-substrings-of-size-three-with-distinct-characters) |
 | [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
+| [2516-take-k-of-each-character-from-left-and-right](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2516-take-k-of-each-character-from-left-and-right) |
 | [2799-count-complete-subarrays-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2799-count-complete-subarrays-in-an-array) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2962-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2962-count-subarrays-where-max-element-appears-at-least-k-times) |
