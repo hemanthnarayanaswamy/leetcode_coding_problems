@@ -19,8 +19,6 @@ class Solution:
                 left += 1
 
             # Valid window → compute characters taken from ends
-            remove = right - left + 1
-            take_count = n - remove
-            answer = min(answer, take_count)
+            answer = min(answer, n - (right - left + 1))
 
         return answer
