@@ -1,25 +1,27 @@
 class Solution:
     def takeCharacters(self, s: str, k: int) -> int:
-        freq = remaining = Counter(s)
         n = len(s)
-        
-        if not k:
-            return k
+        freq = Counter(s)
 
+        # If we can't get k of each, impossible
         if freq['a'] < k or freq['b'] < k or freq['c'] < k:
             return -1
         
+        # Sliding window over the middle segment we SKIP
+        remaining = freq.copy()
         left = 0
-        answer = n
-        for right in range(n):
-            c = s[right]
-            remaining[c] -= 1
+        answer = n  # worst case: take everything
 
-            while remaining[c] < k:
+        for right in range(n):
+            remaining[s[right]] -= 1
+
+            # Shrink window while invalid
+            while remaining['a'] < k or remaining['b'] < k or remaining['c'] < k:
                 remaining[s[left]] += 1
                 left += 1
-            
+
+            # Valid window → compute characters taken from ends
             take_count = left + (n - 1 - right)
             answer = min(answer, take_count)
-        
+
         return answer
