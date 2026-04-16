@@ -541,6 +541,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3476-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3476-find-minimum-operations-to-make-all-elements-divisible-by-three) |
+| [3488-closest-equal-element-queries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3488-closest-equal-element-queries) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3519-find-the-number-of-winning-players](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3519-find-the-number-of-winning-players) |
@@ -754,6 +755,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3421-count-pairs-that-form-a-complete-day-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3421-count-pairs-that-form-a-complete-day-i) |
 | [3446-find-the-number-of-good-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3446-find-the-number-of-good-pairs-i) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3455-minimum-length-of-string-after-operations) |
+| [3488-closest-equal-element-queries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3488-closest-equal-element-queries) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3519-find-the-number-of-winning-players](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3519-find-the-number-of-winning-players) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
@@ -1686,6 +1688,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2554-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2554-maximum-number-of-integers-to-choose-from-a-range-i) |
 | [2634-minimum-common-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2634-minimum-common-value) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
+| [3488-closest-equal-element-queries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3488-closest-equal-element-queries) |
 ## Sliding Window
 |  |
 | ------- |
