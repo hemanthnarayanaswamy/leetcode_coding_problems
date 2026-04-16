@@ -20,7 +20,6 @@ class Solution:
             pos = bisect_left(positions, idx)
 
             # Find the exact index of idx inside positions
-            # (bisect_left may point to idx or to next element)
             if pos < len(positions) and positions[pos] == idx:
                 k = pos
 
