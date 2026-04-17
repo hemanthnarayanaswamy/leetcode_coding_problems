@@ -1,17 +1,13 @@
 class Solution:
     def checkDivisibility(self, n: int) -> bool:
         num = n
-        arr = []
+        s = 0
+        p = 1
 
         while num:
             q, r = divmod(num, 10)
-            arr.append(r)
+            s += r
+            p *= r
             num = q
-        
-        s = sum(arr)
-        p = 1
-        for i in arr:
-            p *= i
-        
-        return n % (s+p) == 0
 
+        return n % (s+p) == 0
