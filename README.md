@@ -135,6 +135,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3591-check-if-any-element-has-prime-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3591-check-if-any-element-has-prime-frequency) |
 | [3606-minimum-element-after-replacement-with-digit-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3606-minimum-element-after-replacement-with-digit-sum) |
+| [3622-check-divisibility-by-digit-sum-and-product](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3622-check-divisibility-by-digit-sum-and-product) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3658-gcd-of-odd-and-even-sums) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3676-smallest-number-with-all-set-bits) |
 | [3697-compute-decimal-representation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3697-compute-decimal-representation) |
