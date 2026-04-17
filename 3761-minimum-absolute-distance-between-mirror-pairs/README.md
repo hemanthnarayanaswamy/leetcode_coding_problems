@@ -64,3 +64,52 @@
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code>​​​​​​​</li>
 </ul>
+
+# Brute Force Solution 
+
+```python
+class Solution:
+    def minMirrorPairDistance(self, nums: List[int]) -> int:
+        minDist = float('inf')
+        n = len(nums)
+
+        for i in range(n):
+            rev = int(str(nums[i])[::-1])
+            for j in range(i+1, n):
+                if nums[j] == rev:
+                    minDist = min(minDist, j-i)
+        
+        if minDist == float('inf'):
+            return -1
+        else:
+            return minDist
+```
+---
+# Optimal Solution
+```ini
+We want the minimum distance between indices (i, j) such that:   i < j
+
+reverse(nums[i]) == nums[j]
+Distance = j - i.
+```
+
+For each number at index `idx`:
+1. Check if this number has appeared before as a reversed value.
+2. If yes → we found a mirror pair. -> Update the minimum distance.
+3. Then store the reversed version of the current number for future matches. (keep overwriting it)
+
+```python
+class Solution:
+    def minMirrorPairDistance(self, nums: List[int]) -> int:
+        rev = {}
+        minDist = float('inf')
+
+        for idx, num in enumerate(nums):
+            if num in rev:
+                dist = idx - rev[num]
+                minDist = min(minDist, dist)
+            numR = int(str(num)[::-1])
+            rev[numR] = idx
+        
+        return -1 if minDist == float('inf') else minDist
+```
