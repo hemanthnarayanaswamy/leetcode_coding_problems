@@ -1,13 +1,12 @@
 class Solution:
-    def sumAndMultiply(self, n: int) -> int:
-        new_n = power = total = 0
+    def sumAndMultiply(self, n: int) -> int:   
+        total = power = num = 0
 
-        while n > 0:
-            n, m = divmod(n,10)
+        while n:
+            n, m = divmod(n, 10)
             if m:
-                new_n += m * (10**power)
                 total += m
+                num += m * (10 ** power)
                 power += 1
-
-        return new_n * total
         
+        return total * num
