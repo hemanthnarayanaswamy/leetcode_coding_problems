@@ -144,6 +144,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3726-remove-zeros-in-decimal-representation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3726-remove-zeros-in-decimal-representation) |
 | [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3736-minimum-moves-to-equal-array-elements-iii) |
 | [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
+| [3754-concatenate-non-zero-digits-and-multiply-by-sum-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3754-concatenate-non-zero-digits-and-multiply-by-sum-i) |
 | [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3761-minimum-absolute-distance-between-mirror-pairs) |
 | [3768-check-if-digits-are-equal-in-string-after-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3768-check-if-digits-are-equal-in-string-after-operations-i) |
 | [3783-mirror-distance-of-an-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3783-mirror-distance-of-an-integer) |
