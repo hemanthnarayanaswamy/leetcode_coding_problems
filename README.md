@@ -352,6 +352,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1843-number-of-rectangles-that-can-form-the-largest-square](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1843-number-of-rectangles-that-can-form-the-largest-square) |
 | [1848-sum-of-unique-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1848-sum-of-unique-elements) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1848-minimum-distance-to-the-target-element) |
+| [1855-maximum-distance-between-a-pair-of-values](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
 | [1888-find-nearest-point-that-has-the-same-x-or-y-coordinate](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1888-find-nearest-point-that-has-the-same-x-or-y-coordinate) |
@@ -1196,6 +1197,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
 | [1721-swapping-nodes-in-a-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1721-swapping-nodes-in-a-linked-list) |
 | [1850-minimum-length-of-string-after-deleting-similar-ends](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1850-minimum-length-of-string-after-deleting-similar-ends) |
+| [1855-maximum-distance-between-a-pair-of-values](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [1894-merge-strings-alternately](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1894-merge-strings-alternately) |
 | [1963-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1963-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [1988-minimize-maximum-pair-sum-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1988-minimize-maximum-pair-sum-in-array) |
@@ -1689,6 +1691,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1468-check-if-n-and-its-double-exist](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1486-find-the-distance-value-between-two-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1486-find-the-distance-value-between-two-arrays) |
 | [1646-kth-missing-positive-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1646-kth-missing-positive-number) |
+| [1855-maximum-distance-between-a-pair-of-values](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2210-find-target-indices-after-sorting-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2210-find-target-indices-after-sorting-array) |
 | [2294-minimum-time-to-complete-trips](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2294-minimum-time-to-complete-trips) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2392-successful-pairs-of-spells-and-potions) |
