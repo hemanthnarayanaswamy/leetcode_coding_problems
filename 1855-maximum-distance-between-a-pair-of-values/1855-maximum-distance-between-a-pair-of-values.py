@@ -15,7 +15,7 @@ class Solution:
         for i in range(len(nums1)):
             j = binarySearch(nums1[i])
 
-            dist = 0 if (j - i) < 0 else j-i
+            dist = j-i
                 
             if dist > maxDist:
                 maxDist = dist
