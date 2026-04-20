@@ -5,8 +5,7 @@ class Solution:
 
         for i in range(n-1,-1,-1):
             if colors[i] != colors[0]:
-                diff = i
-                ans = max(ans,diff)
+                ans = i
                 break
 
         for i in range(n):
