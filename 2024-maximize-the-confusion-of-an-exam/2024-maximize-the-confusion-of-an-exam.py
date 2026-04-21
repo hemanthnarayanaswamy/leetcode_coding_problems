@@ -1,9 +1,12 @@
 class Solution:
     def maxConsecutiveAnswers(self, answerKey: str, k: int) -> int:
         n = len(answerKey)
+        
+        if k == n:
+            return n
+
         left = 0
-        countT = countF = 0
-        maxLen = 0
+        maxLen = countT = countF = 0
 
         for right in range(n):
             if answerKey[right] == 'T':
