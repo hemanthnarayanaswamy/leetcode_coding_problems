@@ -39,6 +39,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0830-largest-triangle-area](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0830-largest-triangle-area) |
 | [0950-x-of-a-kind-in-a-deck-of-cards](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0950-x-of-a-kind-in-a-deck-of-cards) |
 | [0991-broken-calculator](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0991-broken-calculator) |
+| [1015-smallest-integer-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1037-valid-boomerang](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1037-valid-boomerang) |
 | [1094-matrix-cells-in-distance-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1094-matrix-cells-in-distance-order) |
@@ -644,6 +645,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0950-x-of-a-kind-in-a-deck-of-cards](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0950-x-of-a-kind-in-a-deck-of-cards) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0974-subarray-sums-divisible-by-k) |
 | [1001-n-repeated-element-in-size-2n-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1001-n-repeated-element-in-size-2n-array) |
+| [1015-smallest-integer-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1044-find-common-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1044-find-common-characters) |
 | [1217-relative-sort-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1217-relative-sort-array) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1227-number-of-equivalent-domino-pairs) |
