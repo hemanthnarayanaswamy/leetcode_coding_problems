@@ -383,6 +383,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [2116-count-number-of-pairs-with-absolute-difference-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2116-count-number-of-pairs-with-absolute-difference-k) |
+| [2121-intervals-between-identical-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2121-intervals-between-identical-elements) |
 | [2122-count-special-quadruplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2122-count-special-quadruplets) |
 | [2133-number-of-pairs-of-strings-with-concatenation-equal-to-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2133-number-of-pairs-of-strings-with-concatenation-equal-to-target) |
 | [2133-check-if-every-row-and-column-contains-all-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2133-check-if-every-row-and-column-contains-all-numbers) |
@@ -689,6 +690,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
 | [2062-count-vowel-substrings-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2062-count-vowel-substrings-of-a-string) |
 | [2116-count-number-of-pairs-with-absolute-difference-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2116-count-number-of-pairs-with-absolute-difference-k) |
+| [2121-intervals-between-identical-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2121-intervals-between-identical-elements) |
 | [2122-count-special-quadruplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2122-count-special-quadruplets) |
 | [2133-number-of-pairs-of-strings-with-concatenation-equal-to-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2133-number-of-pairs-of-strings-with-concatenation-equal-to-target) |
 | [2133-check-if-every-row-and-column-contains-all-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2133-check-if-every-row-and-column-contains-all-numbers) |
@@ -1477,6 +1479,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [2024-maximize-the-confusion-of-an-exam](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2024-maximize-the-confusion-of-an-exam) |
 | [2102-find-the-middle-index-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2102-find-the-middle-index-in-array) |
+| [2121-intervals-between-identical-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2121-intervals-between-identical-elements) |
 | [2465-shifting-letters-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2465-shifting-letters-ii) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [2571-find-the-pivot-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2571-find-the-pivot-integer) |
