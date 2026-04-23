@@ -455,6 +455,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2605-form-smallest-number-from-two-digit-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2605-form-smallest-number-from-two-digit-arrays) |
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
 | [2614-prime-in-diagonal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2614-prime-in-diagonal) |
+| [2615-sum-of-distances](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2615-sum-of-distances) |
 | [2624-difference-between-element-sum-and-digit-sum-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2624-difference-between-element-sum-and-digit-sum-of-an-array) |
 | [2631-sort-the-students-by-their-kth-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2631-sort-the-students-by-their-kth-score) |
 | [2634-minimum-common-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2634-minimum-common-value) |
@@ -730,6 +731,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2566-number-of-unequal-triplets-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2566-number-of-unequal-triplets-in-array) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2605-form-smallest-number-from-two-digit-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2605-form-smallest-number-from-two-digit-arrays) |
+| [2615-sum-of-distances](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2615-sum-of-distances) |
 | [2634-minimum-common-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2634-minimum-common-value) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [2670-find-the-distinct-difference-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2670-find-the-distinct-difference-array) |
@@ -1479,6 +1481,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [2571-find-the-pivot-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2571-find-the-pivot-integer) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2576-minimum-penalty-for-a-shop) |
+| [2615-sum-of-distances](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2615-sum-of-distances) |
 | [2640-find-the-score-of-all-prefixes-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2640-find-the-score-of-all-prefixes-of-an-array) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2906-construct-product-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2906-construct-product-matrix) |
