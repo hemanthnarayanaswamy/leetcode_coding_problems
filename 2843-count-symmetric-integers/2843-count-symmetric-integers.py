@@ -3,11 +3,12 @@ class Solution:
         symmetric = 0
 
         for x in range(low, high+1):
-            num = [int(d) for d in str(x)]
-            n = len(num)
-            
+            x = str(x)
+            n = len(x)
             if n % 2:
                 continue
+
+            num = [int(d) for d in x]
             m = n // 2
            
             if sum(num[:m]) == sum(num[m:]):
