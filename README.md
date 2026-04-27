@@ -111,6 +111,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2806-account-balance-after-rounded-purchase](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2806-account-balance-after-rounded-purchase) |
 | [2807-insert-greatest-common-divisors-in-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2807-insert-greatest-common-divisors-in-linked-list) |
 | [2812-find-the-maximum-achievable-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2812-find-the-maximum-achievable-number) |
+| [2843-count-symmetric-integers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2843-count-symmetric-integers) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3055-maximum-odd-binary-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3055-maximum-odd-binary-number) |
@@ -1805,6 +1806,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2259-remove-digit-from-number-to-maximize-result](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2259-remove-digit-from-number-to-maximize-result) |
 | [2442-number-of-arithmetic-triplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2442-number-of-arithmetic-triplets) |
 | [2605-form-smallest-number-from-two-digit-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2605-form-smallest-number-from-two-digit-arrays) |
+| [2843-count-symmetric-integers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2843-count-symmetric-integers) |
 | [2844-sum-of-squares-of-special-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2844-sum-of-squares-of-special-elements) |
 | [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 | [3221-find-the-peaks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3221-find-the-peaks) |
