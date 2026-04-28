@@ -76,6 +76,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1920-determine-color-of-a-chessboard-square](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1920-determine-color-of-a-chessboard-square) |
 | [1925-count-square-sum-triples](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1925-count-square-sum-triples) |
 | [2032-largest-odd-number-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2032-largest-odd-number-in-string) |
+| [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2106-find-greatest-common-divisor-of-array) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2139-minimum-moves-to-reach-target-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2139-minimum-moves-to-reach-target-score) |
@@ -369,6 +370,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1988-minimize-maximum-pair-sum-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1988-minimize-maximum-pair-sum-in-array) |
 | [2016-reduction-operations-to-make-the-array-elements-equal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2016-reduction-operations-to-make-the-array-elements-equal) |
 | [2022-convert-1d-array-into-2d-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2022-convert-1d-array-into-2d-array) |
+| [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2042-maximum-product-difference-between-two-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2042-maximum-product-difference-between-two-pairs) |
 | [2048-build-array-from-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2048-build-array-from-permutation) |
 | [2049-eliminate-maximum-number-of-monsters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2049-eliminate-maximum-number-of-monsters) |
@@ -1328,6 +1330,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1984-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1984-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [1988-minimize-maximum-pair-sum-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1988-minimize-maximum-pair-sum-in-array) |
 | [2016-reduction-operations-to-make-the-array-elements-equal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2016-reduction-operations-to-make-the-array-elements-equal) |
+| [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2042-maximum-product-difference-between-two-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2042-maximum-product-difference-between-two-pairs) |
 | [2049-eliminate-maximum-number-of-monsters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2049-eliminate-maximum-number-of-monsters) |
 | [2085-array-with-elements-not-equal-to-average-of-neighbors](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2085-array-with-elements-not-equal-to-average-of-neighbors) |
@@ -1775,6 +1778,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1791-richest-customer-wealth](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1791-richest-customer-wealth) |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
 | [2022-convert-1d-array-into-2d-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2022-convert-1d-array-into-2d-array) |
+| [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2133-check-if-every-row-and-column-contains-all-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2133-check-if-every-row-and-column-contains-all-numbers) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2352-equal-row-and-column-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2352-equal-row-and-column-pairs) |
