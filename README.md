@@ -680,6 +680,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
 | [1636-sort-array-by-increasing-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1636-sort-array-by-increasing-frequency) |
 | [1752-arithmetic-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1752-arithmetic-subarrays) |
+| [1781-sum-of-beauty-of-all-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1781-sum-of-beauty-of-all-substrings) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1807-evaluate-the-bracket-pairs-of-a-string) |
 | [1813-maximum-erasure-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1813-maximum-erasure-value) |
@@ -916,6 +917,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1751-slowest-key](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1751-slowest-key) |
 | [1758-minimum-changes-to-make-alternating-binary-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1758-minimum-changes-to-make-alternating-binary-string) |
 | [1781-check-if-two-string-arrays-are-equivalent](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1781-check-if-two-string-arrays-are-equivalent) |
+| [1781-sum-of-beauty-of-all-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1781-sum-of-beauty-of-all-substrings) |
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1784-check-if-binary-string-has-at-most-one-segment-of-ones) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1797-goal-parser-interpretation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1797-goal-parser-interpretation) |
@@ -1412,6 +1414,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1472-increasing-decreasing-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1472-increasing-decreasing-string) |
 | [1604-least-number-of-unique-integers-after-k-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1604-least-number-of-unique-integers-after-k-removals) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
+| [1781-sum-of-beauty-of-all-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1781-sum-of-beauty-of-all-substrings) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1823-determine-if-string-halves-are-alike](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1823-determine-if-string-halves-are-alike) |
 | [1844-maximum-number-of-balls-in-a-box](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1844-maximum-number-of-balls-in-a-box) |
