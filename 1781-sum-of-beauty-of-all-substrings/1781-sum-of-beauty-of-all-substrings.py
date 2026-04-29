@@ -4,11 +4,13 @@ class Solution:
         total = 0
 
         for i in range(n):
-            freq = defaultdict(int)
+            arr = [0] * 26
+            maxC = 0
             for j in range(i, n):
-                freq[s[j]] += 1
-                maxC = max(freq.values())
-                minC = min(freq.values())
+                idx = ord(s[j])-97
+                arr[idx] += 1
+                maxC = max(maxC, arr[idx])
+                minC = min([val for val in arr if val != 0])
                 total += (maxC - minC)
         
         return total
