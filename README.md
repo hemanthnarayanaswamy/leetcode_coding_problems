@@ -266,6 +266,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1029-two-city-scheduling](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1029-two-city-scheduling) |
 | [1037-valid-boomerang](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1037-valid-boomerang) |
 | [1044-find-common-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1044-find-common-characters) |
+| [1046-last-stone-weight](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1046-last-stone-weight) |
 | [1094-matrix-cells-in-distance-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1094-matrix-cells-in-distance-order) |
 | [1109-corporate-flight-bookings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1109-corporate-flight-bookings) |
 | [1137-height-checker](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1137-height-checker) |
@@ -1638,6 +1639,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0451-sort-characters-by-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0451-sort-characters-by-frequency) |
 | [0506-relative-ranks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0506-relative-ranks) |
 | [0948-sort-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0948-sort-an-array) |
+| [1046-last-stone-weight](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1046-last-stone-weight) |
 | [1464-reduce-array-size-to-the-half](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1464-reduce-array-size-to-the-half) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
