@@ -5,7 +5,6 @@ class Solution:
 
         if totalEnergy >= initialEnergy:
             energyTrainingTime = (totalEnergy - initialEnergy) + 1
-            initialEnergy += energyTrainingTime
             totalTime += energyTrainingTime
 
         for en, exp in zip(energy, experience):
@@ -14,7 +13,6 @@ class Solution:
                 totalTime += expTrainingTime
                 initialExperience += (expTrainingTime)
 
-            initialEnergy -= en
             initialExperience += exp
         
         return totalTime
