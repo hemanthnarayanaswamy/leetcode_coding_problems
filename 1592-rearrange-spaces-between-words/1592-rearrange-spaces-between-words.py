@@ -7,19 +7,13 @@ class Solution:
 
         words = text.split()
         n = len(words)
-        if n - 1 <= 0:
-            words.extend([" "]*spaceCount)
-            return "".join(words)
-
+        if n == 1:
+            return words[0] + " " * spaceCount
+        
         d, m = divmod(spaceCount, n-1)
 
-        res = []
-        for i in range(n):
-            res.append(words[i])
-            if i != n - 1:
-                res.extend([" "]*d)
-        
+        res = (" "*d).join(words)
         if m:
-            res.extend([" "]*m)
-        
-        return "".join(res)
+            res += " "*m
+            
+        return res
