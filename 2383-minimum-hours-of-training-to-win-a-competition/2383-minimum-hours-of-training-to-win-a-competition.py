@@ -1,10 +1,10 @@
 class Solution:
     def minNumberOfHours(self, initialEnergy: int, initialExperience: int, energy: List[int], experience: List[int]) -> int:    
         totalTime = 0
-        totalEnergy = sum(energy)
+        totalEnergy = sum(energy) + 1
 
         if totalEnergy >= initialEnergy:
-            energyTrainingTime = (totalEnergy - initialEnergy) + 1
+            energyTrainingTime = (totalEnergy - initialEnergy)
             totalTime += energyTrainingTime
 
         for en, exp in zip(energy, experience):
