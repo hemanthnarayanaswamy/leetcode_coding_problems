@@ -9,12 +9,12 @@ class Solution:
             totalTime += energyTrainingTime
 
         for en, exp in zip(energy, experience):
-            if initialExperience > exp:
-                initialExperience += exp
-            else:
+            if initialExperience <= exp:
                 expTrainingTime = exp - initialExperience + 1
                 totalTime += expTrainingTime
-                initialExperience += (expTrainingTime + exp)
+                initialExperience += (expTrainingTime)
+
             initialEnergy -= en
+            initialExperience += exp
         
         return totalTime
