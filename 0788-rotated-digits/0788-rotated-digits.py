@@ -7,12 +7,10 @@ class Solution:
         for i in range(1, n+1):
             s = str(i)
             new = ''
+            if '3' in s or '4' in s or '7' in s:
+                continue
             for c in s:
-                if c in inValid:
-                    new = ''
-                    break
-                else:
-                    new += rotate[c]
+                new += rotate[c]
             
             if new and new != s:
                 res += 1
