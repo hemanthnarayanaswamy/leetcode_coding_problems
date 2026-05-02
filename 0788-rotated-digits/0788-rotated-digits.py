@@ -7,7 +7,7 @@ class Solution:
         for i in range(1, n+1):
             s = str(i)
 
-            if any(c in inValid for c in s):
+            if any(x in s for x in inValid):
                 continue
 
             new = "".join(rotate[c] for c in s)
