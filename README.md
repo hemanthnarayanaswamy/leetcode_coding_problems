@@ -36,6 +36,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0537-complex-number-multiplication](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0537-complex-number-multiplication) |
 | [0628-maximum-product-of-three-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0628-maximum-product-of-three-numbers) |
 | [0728-self-dividing-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0728-self-dividing-numbers) |
+| [0788-rotated-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0788-rotated-digits) |
 | [0830-largest-triangle-area](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0830-largest-triangle-area) |
 | [0950-x-of-a-kind-in-a-deck-of-cards](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0950-x-of-a-kind-in-a-deck-of-cards) |
 | [0991-broken-calculator](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0991-broken-calculator) |
@@ -1259,6 +1260,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0119-pascals-triangle-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0119-pascals-triangle-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0392-is-subsequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0392-is-subsequence) |
+| [0788-rotated-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0788-rotated-digits) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1700-minimum-time-to-make-rope-colorful) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
