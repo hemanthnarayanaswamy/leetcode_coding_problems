@@ -6,15 +6,15 @@ class Solution:
         res = 0
         for i in range(1, n+1):
             s = str(i)
-            new = ''
-            if '3' in s or '4' in s or '7' in s:
+
+            if any(c in inValid for c in s):
                 continue
-            for c in s:
-                new += rotate[c]
-            
-            if new and new != s:
+
+            new = "".join(rotate[c] for c in s)
+
+            if new != s:
                 res += 1
-        
+            
         return res
 
 
