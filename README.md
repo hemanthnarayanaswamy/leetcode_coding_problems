@@ -11,6 +11,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0009-palindrome-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0009-palindrome-number) |
 | [0013-roman-to-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0013-roman-to-integer) |
 | [0043-multiply-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0043-multiply-strings) |
+| [0048-rotate-image](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0048-rotate-image) |
 | [0066-plus-one](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0066-plus-one) |
 | [0067-add-binary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0067-add-binary) |
 | [0069-sqrtx](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0069-sqrtx) |
@@ -169,6 +170,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0035-search-insert-position](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0035-search-insert-position) |
 | [0041-first-missing-positive](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0041-first-missing-positive) |
+| [0048-rotate-image](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0049-group-anagrams) |
 | [0056-merge-intervals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0057-insert-interval) |
@@ -1775,6 +1777,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0048-rotate-image) |
 | [0498-diagonal-traverse](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0498-diagonal-traverse) |
 | [0807-max-increase-to-keep-city-skyline](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0807-max-increase-to-keep-city-skyline) |
 | [0861-flipping-an-image](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0861-flipping-an-image) |
