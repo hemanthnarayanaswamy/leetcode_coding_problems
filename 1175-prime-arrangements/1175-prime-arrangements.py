@@ -9,20 +9,19 @@ class Solution:
                 if num % i == 0:
                     return False
             return True
-
-        p = 0
-
-        for i in range(1, n+1):
-            if isprime(i):
-                p += 1
-        
-        np = n - p
         
         def fact(num):
             answer = 1
             for i in range(2, num+1):
                 answer = (answer * i) % mod
             return answer
+
+        primeCount = 0
+        for i in range(1, n+1):
+            if isprime(i):
+                primeCount += 1
         
-        return (fact(p) * fact(np)) % mod
+        nonPrimeCount = n - primeCount
+
+        return (fact(primeCount) * fact(nonPrimeCount)) % mod
         
