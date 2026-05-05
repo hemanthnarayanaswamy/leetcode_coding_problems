@@ -45,6 +45,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1037-valid-boomerang](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1037-valid-boomerang) |
 | [1094-matrix-cells-in-distance-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1094-matrix-cells-in-distance-order) |
+| [1175-prime-arrangements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1175-prime-arrangements) |
 | [1195-distribute-candies-to-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1195-distribute-candies-to-people) |
 | [1232-check-if-it-is-a-straight-line](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1232-check-if-it-is-a-straight-line) |
 | [1248-count-number-of-nice-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1248-count-number-of-nice-subarrays) |
