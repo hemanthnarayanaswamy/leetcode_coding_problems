@@ -28,8 +28,7 @@ class Solution:
         for _ in range(steps - 1):
             new_tail = new_tail.next
         
-        nxt = new_tail.next
+        new_head = new_tail.next
         new_tail.next = None
-        head = nxt 
     
-        return head
+        return new_head
