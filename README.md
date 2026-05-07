@@ -76,6 +76,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1817-calculate-money-in-leetcode-bank](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1817-calculate-money-in-leetcode-bank) |
 | [1837-sum-of-digits-in-base-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1837-sum-of-digits-in-base-k) |
 | [1844-maximum-number-of-balls-in-a-box](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1844-maximum-number-of-balls-in-a-box) |
+| [1860-incremental-memory-leak](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1860-incremental-memory-leak) |
 | [1920-determine-color-of-a-chessboard-square](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1920-determine-color-of-a-chessboard-square) |
 | [1925-count-square-sum-triples](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1925-count-square-sum-triples) |
 | [2032-largest-odd-number-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2032-largest-odd-number-in-string) |
@@ -1111,6 +1112,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1803-average-waiting-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1803-average-waiting-time) |
 | [1806-count-of-matches-in-tournament](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1806-count-of-matches-in-tournament) |
 | [1806-minimum-number-of-operations-to-reinitialize-a-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1806-minimum-number-of-operations-to-reinitialize-a-permutation) |
+| [1860-incremental-memory-leak](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1860-incremental-memory-leak) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2022-convert-1d-array-into-2d-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2022-convert-1d-array-into-2d-array) |
 | [2048-build-array-from-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2048-build-array-from-permutation) |
