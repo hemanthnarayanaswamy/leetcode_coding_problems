@@ -344,6 +344,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1700-minimum-time-to-make-rope-colorful) |
 | [1720-crawler-log-folder](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1720-crawler-log-folder) |
+| [1726-tuple-with-same-product](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1726-tuple-with-same-product) |
 | [1742-widest-vertical-area-between-two-points-containing-no-points](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1742-widest-vertical-area-between-two-points-containing-no-points) |
 | [1751-slowest-key](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1751-slowest-key) |
 | [1752-arithmetic-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1752-arithmetic-subarrays) |
@@ -686,6 +687,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1619-path-crossing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1619-path-crossing) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
 | [1636-sort-array-by-increasing-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1636-sort-array-by-increasing-frequency) |
+| [1726-tuple-with-same-product](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1726-tuple-with-same-product) |
 | [1752-arithmetic-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1752-arithmetic-subarrays) |
 | [1781-sum-of-beauty-of-all-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1781-sum-of-beauty-of-all-substrings) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
@@ -1428,6 +1430,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1472-increasing-decreasing-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1472-increasing-decreasing-string) |
 | [1604-least-number-of-unique-integers-after-k-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1604-least-number-of-unique-integers-after-k-removals) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
+| [1726-tuple-with-same-product](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1726-tuple-with-same-product) |
 | [1781-sum-of-beauty-of-all-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1781-sum-of-beauty-of-all-substrings) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1823-determine-if-string-halves-are-alike](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1823-determine-if-string-halves-are-alike) |
