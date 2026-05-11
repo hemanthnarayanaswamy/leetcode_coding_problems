@@ -1,12 +1,12 @@
 class Solution:
     def findingUsersActiveMinutes(self, logs: List[List[int]], k: int) -> List[int]:
-        uam = defaultdict(set)
-        res = [0] * k
+        user_minutes = defaultdict(set)
+        for user_id, time in logs:
+            user_minutes[user_id].add(time)
 
-        for id, t in logs:
-            uam[id].add(t)
-        
-        for time in uam.values():
-            res[len(time)-1] += 1
-        
-        return res
+        count = [0] * k
+        for minutes in user_minutes.values():
+            uam = len(minutes)
+            count[uam - 1] += 1
+
+        return count
