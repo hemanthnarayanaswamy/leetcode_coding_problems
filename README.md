@@ -357,6 +357,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1806-minimum-number-of-operations-to-reinitialize-a-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1806-minimum-number-of-operations-to-reinitialize-a-permutation) |
 | [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1807-evaluate-the-bracket-pairs-of-a-string) |
 | [1813-maximum-erasure-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1813-maximum-erasure-value) |
+| [1817-finding-the-users-active-minutes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1817-finding-the-users-active-minutes) |
 | [1829-maximum-units-on-a-truck](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1829-maximum-units-on-a-truck) |
 | [1833-find-the-highest-altitude](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1833-find-the-highest-altitude) |
 | [1843-number-of-rectangles-that-can-form-the-largest-square](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1843-number-of-rectangles-that-can-form-the-largest-square) |
@@ -694,6 +695,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1807-evaluate-the-bracket-pairs-of-a-string) |
 | [1813-maximum-erasure-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1813-maximum-erasure-value) |
+| [1817-finding-the-users-active-minutes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1817-finding-the-users-active-minutes) |
 | [1844-maximum-number-of-balls-in-a-box](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1844-maximum-number-of-balls-in-a-box) |
 | [1848-sum-of-unique-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1848-sum-of-unique-elements) |
 | [1893-check-if-all-the-integers-in-a-range-are-covered](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1893-check-if-all-the-integers-in-a-range-are-covered) |
