@@ -6,8 +6,9 @@ class Solution:
     
         for energy, required_energy in sorted_tasks:
             if remaining_energy < required_energy:
-                initial_energy += required_energy - remaining_energy
-                remaining_energy += (required_energy - remaining_energy)
+                deficit = required_energy - remaining_energy
+                initial_energy += deficit
+                remaining_energy = required_energy
             remaining_energy -= energy
         
         return initial_energy
