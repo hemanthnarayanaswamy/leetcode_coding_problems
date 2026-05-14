@@ -494,6 +494,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2737-row-with-maximum-ones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2737-row-with-maximum-ones) |
 | [2756-buy-two-chocolates](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2756-buy-two-chocolates) |
 | [2767-maximum-sum-with-exactly-k-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2767-maximum-sum-with-exactly-k-elements) |
+| [2784-check-if-array-is-good](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2784-check-if-array-is-good) |
 | [2785-semi-ordered-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2785-semi-ordered-permutation) |
 | [2791-find-the-losers-of-the-circular-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2791-find-the-losers-of-the-circular-game) |
 | [2799-count-complete-subarrays-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2799-count-complete-subarrays-in-an-array) |
@@ -762,6 +763,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
 | [2729-check-if-the-number-is-fascinating](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2729-check-if-the-number-is-fascinating) |
+| [2784-check-if-array-is-good](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2784-check-if-array-is-good) |
 | [2791-find-the-losers-of-the-circular-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2791-find-the-losers-of-the-circular-game) |
 | [2799-count-complete-subarrays-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2799-count-complete-subarrays-in-an-array) |
 | [2815-max-pair-sum-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2815-max-pair-sum-in-an-array) |
@@ -1386,6 +1388,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2631-sort-the-students-by-their-kth-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2631-sort-the-students-by-their-kth-score) |
 | [2650-split-with-minimum-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2650-split-with-minimum-sum) |
 | [2756-buy-two-chocolates](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2756-buy-two-chocolates) |
+| [2784-check-if-array-is-good](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2784-check-if-array-is-good) |
 | [2836-neither-minimum-nor-maximum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2836-neither-minimum-nor-maximum) |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
 | [2887-sort-vowels-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2887-sort-vowels-in-a-string) |
