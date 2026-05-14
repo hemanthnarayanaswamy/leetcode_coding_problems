@@ -425,6 +425,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2283-sort-even-and-odd-indices-independently](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2283-sort-even-and-odd-indices-independently) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2294-minimum-time-to-complete-trips](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2294-minimum-time-to-complete-trips) |
+| [2294-partition-array-such-that-maximum-difference-is-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2294-partition-array-such-that-maximum-difference-is-k) |
 | [2308-divide-array-into-equal-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2308-divide-array-into-equal-pairs) |
 | [2312-most-frequent-number-following-key-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2312-most-frequent-number-following-key-in-an-array) |
 | [2316-count-hills-and-valleys-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2316-count-hills-and-valleys-in-an-array) |
@@ -1373,6 +1374,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2279-maximum-bags-with-full-capacity-of-rocks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2279-maximum-bags-with-full-capacity-of-rocks) |
 | [2283-sort-even-and-odd-indices-independently](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2283-sort-even-and-odd-indices-independently) |
 | [2284-smallest-value-of-the-rearranged-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2284-smallest-value-of-the-rearranged-number) |
+| [2294-partition-array-such-that-maximum-difference-is-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2294-partition-array-such-that-maximum-difference-is-k) |
 | [2331-intersection-of-multiple-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2331-intersection-of-multiple-arrays) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
@@ -1633,6 +1635,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2259-remove-digit-from-number-to-maximize-result](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2259-remove-digit-from-number-to-maximize-result) |
 | [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
 | [2279-maximum-bags-with-full-capacity-of-rocks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2279-maximum-bags-with-full-capacity-of-rocks) |
+| [2294-partition-array-such-that-maximum-difference-is-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2294-partition-array-such-that-maximum-difference-is-k) |
 | [2345-minimum-number-of-operations-to-convert-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2345-minimum-number-of-operations-to-convert-time) |
 | [2362-minimum-rounds-to-complete-all-tasks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [2383-minimum-hours-of-training-to-win-a-competition](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2383-minimum-hours-of-training-to-win-a-competition) |
