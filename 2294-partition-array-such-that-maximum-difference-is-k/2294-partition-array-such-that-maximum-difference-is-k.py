@@ -1,7 +1,7 @@
 class Solution:
     def partitionArray(self, nums: List[int], k: int) -> int:
         n = len(nums)
-        subCount = 0
+        subCount = 1 # Atleast we'll have one subsequence
         nums.sort()
         numMin = nums[0]
 
@@ -10,4 +10,4 @@ class Solution:
                 subCount += 1
                 numMin = nums[i]
         
-        return subCount + 1
+        return subCount
