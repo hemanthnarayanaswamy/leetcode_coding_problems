@@ -20,6 +20,11 @@ class Solution:
 
             if i == -1 or j == -1 or i == j:
                 continue
-            count += len(set(s[i+1: j]))
-        
+            between = set()
+
+            for k in range(i + 1, j):
+                between.add(s[k])
+
+            count += len(between)
+
         return count
