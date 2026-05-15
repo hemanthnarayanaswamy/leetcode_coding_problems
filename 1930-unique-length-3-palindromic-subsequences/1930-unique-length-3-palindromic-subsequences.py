@@ -6,7 +6,6 @@ class Solution:
         for letter in letters:
             i, j = s.index(letter), s.rindex(letter)
             between = set()
-            print(s[i+1:j])
             for c in s[i+1:j]:
                 between.add(c)
             count += len(between)
