@@ -708,6 +708,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1893-check-if-all-the-integers-in-a-range-are-covered](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1893-check-if-all-the-integers-in-a-range-are-covered) |
 | [1904-second-largest-digit-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1904-second-largest-digit-in-a-string) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
+| [1930-unique-length-3-palindromic-subsequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1930-unique-length-3-palindromic-subsequences) |
 | [1933-number-of-different-integers-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1933-number-of-different-integers-in-a-string) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1960-check-if-the-sentence-is-pangram) |
 | [1987-substrings-of-size-three-with-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1987-substrings-of-size-three-with-distinct-characters) |
@@ -956,6 +957,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1910-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1910-check-if-binary-string-has-at-most-one-segment-of-ones) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [1920-determine-color-of-a-chessboard-square](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1920-determine-color-of-a-chessboard-square) |
+| [1930-unique-length-3-palindromic-subsequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1930-unique-length-3-palindromic-subsequences) |
 | [1933-number-of-different-integers-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1933-number-of-different-integers-in-a-string) |
 | [1944-truncate-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1944-truncate-sentence) |
 | [1954-replace-all-digits-with-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1954-replace-all-digits-with-characters) |
@@ -1524,6 +1526,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1833-find-the-highest-altitude](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1833-find-the-highest-altitude) |
 | [1893-check-if-all-the-integers-in-a-range-are-covered](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1893-check-if-all-the-integers-in-a-range-are-covered) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
+| [1930-unique-length-3-palindromic-subsequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1930-unique-length-3-palindromic-subsequences) |
 | [2024-maximize-the-confusion-of-an-exam](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2024-maximize-the-confusion-of-an-exam) |
 | [2102-find-the-middle-index-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2102-find-the-middle-index-in-array) |
 | [2121-intervals-between-identical-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2121-intervals-between-identical-elements) |
@@ -1716,6 +1719,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1557-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1557-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1610-xor-operation-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1610-xor-operation-in-an-array) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1786-count-the-number-of-consistent-strings) |
+| [1930-unique-length-3-palindromic-subsequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1930-unique-length-3-palindromic-subsequences) |
 | [2159-two-out-of-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2159-two-out-of-three) |
 | [2308-divide-array-into-equal-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2308-divide-array-into-equal-pairs) |
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2323-minimum-bit-flips-to-convert-number) |
