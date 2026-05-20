@@ -376,6 +376,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1893-check-if-all-the-integers-in-a-range-are-covered](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1893-check-if-all-the-integers-in-a-range-are-covered) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1899-count-items-matching-a-rule](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1899-count-items-matching-a-rule) |
+| [1899-merge-triplets-to-form-target-triplet](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1899-merge-triplets-to-form-target-triplet) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1927-maximum-ascending-subarray-sum) |
 | [1938-minimum-operations-to-make-the-array-increasing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1938-minimum-operations-to-make-the-array-increasing) |
 | [1944-truncate-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1944-truncate-sentence) |
@@ -1625,6 +1626,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1807-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1807-partitioning-into-minimum-number-of-deci-binary-numbers) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1818-maximum-score-from-removing-substrings) |
 | [1829-maximum-units-on-a-truck](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1829-maximum-units-on-a-truck) |
+| [1899-merge-triplets-to-form-target-triplet](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1899-merge-triplets-to-form-target-triplet) |
 | [1938-minimum-operations-to-make-the-array-increasing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1938-minimum-operations-to-make-the-array-increasing) |
 | [1961-maximum-ice-cream-bars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1961-maximum-ice-cream-bars) |
 | [1963-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1963-minimum-number-of-swaps-to-make-the-string-balanced) |
