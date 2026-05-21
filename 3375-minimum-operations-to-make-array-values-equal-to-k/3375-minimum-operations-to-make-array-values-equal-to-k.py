@@ -1,13 +1,13 @@
 class Solution:
     def minOperations(self, nums: List[int], k: int) -> int:
-        freq = dict(sorted(Counter(nums).items(), reverse=True))
+        nums = sorted(set(nums), reverse=True)
         
-        if min(freq) < k:
+        if min(nums) < k:
             return -1
         
         operations = 0 
-        for key in freq:
-            if key != k:
+        for num in nums:
+            if num != k:
                 operations += 1
             else:
                 break
