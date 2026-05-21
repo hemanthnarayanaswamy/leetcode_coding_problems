@@ -6,5 +6,4 @@ class Solution:
 
         n = len(set(nums))
 
-        return n if minNum != k else n-1
-        
+        return n if minNum != k else n-1 
