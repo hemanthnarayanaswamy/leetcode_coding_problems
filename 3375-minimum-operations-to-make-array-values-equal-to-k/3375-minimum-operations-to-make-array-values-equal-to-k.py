@@ -4,11 +4,7 @@ class Solution:
         if minNum < k:
             return -1
 
-        nums = set(nums)
-        n = len(nums)
+        n = len(set(nums))
 
-        if minNum != k:
-            return n
-        else: 
-            return n-1
+        return n if minNum != k else n-1
         
