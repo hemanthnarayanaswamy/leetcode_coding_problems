@@ -1,9 +1,7 @@
 class Solution:
     def minOperations(self, nums: List[int], k: int) -> int:
-        minNum = min(nums)
-        if minNum < k:
-            return -1
-
-        n = len(set(nums))
-
-        return n if minNum != k else n-1 
+        min_num = min(nums)
+        if min_num >= k:
+            return len(set(nums)) - (min_num == k)
+        return -1
+        
