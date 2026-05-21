@@ -561,6 +561,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3347-distribute-elements-into-two-arrays-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3347-distribute-elements-into-two-arrays-i) |
 | [3367-find-the-sum-of-encrypted-integers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3367-find-the-sum-of-encrypted-integers) |
 | [3372-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3372-longest-strictly-increasing-or-strictly-decreasing-subarray) |
+| [3375-minimum-operations-to-make-array-values-equal-to-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3375-minimum-operations-to-make-array-values-equal-to-k) |
 | [3379-transformed-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3379-transformed-array) |
 | [3386-button-with-longest-push-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3386-button-with-longest-push-time) |
 | [3397-find-the-integer-added-to-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3397-find-the-integer-added-to-array-i) |
@@ -795,6 +796,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3242-count-elements-with-maximum-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3324-split-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3324-split-the-array) |
 | [3353-existence-of-a-substring-in-a-string-and-its-reverse](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3353-existence-of-a-substring-in-a-string-and-its-reverse) |
+| [3375-minimum-operations-to-make-array-values-equal-to-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3375-minimum-operations-to-make-array-values-equal-to-k) |
 | [3408-count-the-number-of-special-characters-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3408-count-the-number-of-special-characters-i) |
 | [3412-permutation-difference-between-two-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3412-permutation-difference-between-two-strings) |
 | [3421-count-pairs-that-form-a-complete-day-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3421-count-pairs-that-form-a-complete-day-i) |
