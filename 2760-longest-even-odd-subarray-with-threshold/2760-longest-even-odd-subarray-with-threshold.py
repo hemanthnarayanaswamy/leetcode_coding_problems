@@ -4,7 +4,7 @@ class Solution:
         n = len(nums)
 
         for i in range(n):
-            if nums[i] % 2 == 0 and nums[i] <= threshold:
+            if nums[i] % 2 == 0 and nums[i] <= threshold and i >= longestSub:
                 if i != n-1:
                     l, r = i, i+1
                 else:
