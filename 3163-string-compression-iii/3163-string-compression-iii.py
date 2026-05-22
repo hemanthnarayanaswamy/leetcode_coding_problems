@@ -1,22 +1,22 @@
 class Solution:
     def compressedString(self, word: str) -> str:
-        stack = []
-        res = ''
+        if not word: 
+            return ""
 
-        for i in range(len(word)):
-            if stack:
-                if stack[-1] == word[i]:
-                    stack.append(word[i])
-                    if len(stack) == 9:
-                        res += f'9{stack[-1]}'
-                        stack = []
-                else:
-                    res += f'{len(stack)}{stack[-1]}'
-                    stack = [word[i]]
+        res = []
+        prev_c = word[0]
+        count = 0
+
+        for c in word:
+            if prev_c == c and count < 9:
+                count += 1
             else:
-                stack.append(word[i])
-        
-        if stack:
-            res += f'{len(stack)}{stack[-1]}'
-            
-        return res
+                res.append(str(count))
+                res.append(prev_c)
+                prev_c = c
+                count = 1
+
+        res.append(str(count))
+        res.append(prev_c)
+
+        return "".join(res)
