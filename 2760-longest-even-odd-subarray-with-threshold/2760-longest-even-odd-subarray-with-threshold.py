@@ -18,7 +18,6 @@ class Solution:
                     l += 1
                     r += 1
                
-                print(i, l, r)
                 longestSub = max(longestSub, l - i + 1)
         
         return longestSub
