@@ -1,15 +1,16 @@
 class Solution:
     def generateTag(self, caption: str) -> str:
-        tag = ['#']
+        tag = '#'
         caption = caption.strip().split()
 
         if not caption:
-            return ''.join(tag)
+            return tag
         
-        for i in range(len(caption)):
-            if i == 0:
-                tag.append(caption[i].lower())
-            else:
-                tag.append(caption[i].capitalize())
+        caption[0] = caption[0].lower()
+
         
-        return ''.join(tag)[:100]
+        for i in range(1, len(caption)):
+                caption[i] = caption[i].capitalize()
+        
+        tag += "".join(caption)
+        return tag[:100]
