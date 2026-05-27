@@ -4,11 +4,11 @@ class Solution:
         special_count = 0
 
         for i, c in enumerate(word):
-            if c.islower():
-                charOccurrence[c] = i
-            else:
+            if c.isupper():
                 if c not in charOccurrence:
                     charOccurrence[c] = i
+            else:
+                charOccurrence[c] = i
         
         for o in range(ord('a'), ord('z')+1):
             letter = chr(o)
