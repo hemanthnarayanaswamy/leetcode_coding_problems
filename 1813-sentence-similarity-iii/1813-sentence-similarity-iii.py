@@ -21,7 +21,4 @@ class Solution:
             right1 -= 1
             right2 -= 1
         
-        if left > right2: 
-            return True
-        else:
-            return False
+        return left > right2
