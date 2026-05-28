@@ -504,6 +504,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2756-buy-two-chocolates](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2756-buy-two-chocolates) |
 | [2760-longest-even-odd-subarray-with-threshold](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2760-longest-even-odd-subarray-with-threshold) |
 | [2767-maximum-sum-with-exactly-k-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2767-maximum-sum-with-exactly-k-elements) |
+| [2779-maximum-beauty-of-an-array-after-applying-operation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2779-maximum-beauty-of-an-array-after-applying-operation) |
 | [2784-check-if-array-is-good](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2784-check-if-array-is-good) |
 | [2785-semi-ordered-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2785-semi-ordered-permutation) |
 | [2791-find-the-losers-of-the-circular-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2791-find-the-losers-of-the-circular-game) |
@@ -1415,6 +1416,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2631-sort-the-students-by-their-kth-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2631-sort-the-students-by-their-kth-score) |
 | [2650-split-with-minimum-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2650-split-with-minimum-sum) |
 | [2756-buy-two-chocolates](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2756-buy-two-chocolates) |
+| [2779-maximum-beauty-of-an-array-after-applying-operation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2779-maximum-beauty-of-an-array-after-applying-operation) |
 | [2784-check-if-array-is-good](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2784-check-if-array-is-good) |
 | [2836-neither-minimum-nor-maximum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2836-neither-minimum-nor-maximum) |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
@@ -1794,6 +1796,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2529-maximum-count-of-positive-integer-and-negative-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2529-maximum-count-of-positive-integer-and-negative-integer) |
 | [2554-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2554-maximum-number-of-integers-to-choose-from-a-range-i) |
 | [2634-minimum-common-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2634-minimum-common-value) |
+| [2779-maximum-beauty-of-an-array-after-applying-operation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2779-maximum-beauty-of-an-array-after-applying-operation) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [3488-closest-equal-element-queries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3488-closest-equal-element-queries) |
 ## Sliding Window
@@ -1826,6 +1829,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [2516-take-k-of-each-character-from-left-and-right](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2516-take-k-of-each-character-from-left-and-right) |
 | [2760-longest-even-odd-subarray-with-threshold](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2760-longest-even-odd-subarray-with-threshold) |
+| [2779-maximum-beauty-of-an-array-after-applying-operation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2779-maximum-beauty-of-an-array-after-applying-operation) |
 | [2799-count-complete-subarrays-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2799-count-complete-subarrays-in-an-array) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2962-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2962-count-subarrays-where-max-element-appears-at-least-k-times) |
