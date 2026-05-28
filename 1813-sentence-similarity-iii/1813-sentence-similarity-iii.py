@@ -7,7 +7,8 @@ class Solution:
 
         # We make s1 is longer and s2 is shorter string
         if n1 < n2:
-            return self.areSentencesSimilar(sentence2, sentence1)
+            s1, s2 = s2, s1
+            n1, n2 = n2, n1
         
         left = 0
         right1 = n1-1
@@ -19,8 +20,6 @@ class Solution:
         while right2 >= 0 and s1[right1] == s2[right2]:
             right1 -= 1
             right2 -= 1
-        
-        print(left, right1, right2)
         
         if left > right2: 
             return True
