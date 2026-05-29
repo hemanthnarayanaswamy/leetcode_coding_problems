@@ -1224,6 +1224,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0061-rotate-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0061-rotate-list) |
 | [0075-sort-colors](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0075-sort-colors) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
+| [0086-partition-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0086-partition-list) |
 | [0088-merge-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0088-merge-sorted-array) |
 | [0125-valid-palindrome](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0141-linked-list-cycle) |
@@ -2052,6 +2053,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0024-swap-nodes-in-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0024-swap-nodes-in-pairs) |
 | [0061-rotate-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0061-rotate-list) |
 | [0083-remove-duplicates-from-sorted-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0083-remove-duplicates-from-sorted-list) |
+| [0086-partition-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0086-partition-list) |
 | [0141-linked-list-cycle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0141-linked-list-cycle) |
 | [0143-reorder-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0143-reorder-list) |
 | [0160-intersection-of-two-linked-lists](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0160-intersection-of-two-linked-lists) |
