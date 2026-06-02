@@ -599,6 +599,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3606-minimum-element-after-replacement-with-digit-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3606-minimum-element-after-replacement-with-digit-sum) |
 | [3606-coupon-code-validator](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3606-coupon-code-validator) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3616-make-array-elements-equal-to-zero) |
+| [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3634-minimum-removals-to-balance-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3634-minimum-removals-to-balance-array) |
 | [3643-flip-square-submatrix-vertically](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3643-flip-square-submatrix-vertically) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
@@ -1302,6 +1303,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [3239-minimum-number-of-flips-to-make-binary-grid-palindromic-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3239-minimum-number-of-flips-to-make-binary-grid-palindromic-i) |
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
+| [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3643-flip-square-submatrix-vertically](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3643-flip-square-submatrix-vertically) |
 | [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
 | [3794-reverse-string-prefix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3794-reverse-string-prefix) |
@@ -1447,6 +1449,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3433-count-mentions-per-user](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3433-count-mentions-per-user) |
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
 | [3606-coupon-code-validator](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3606-coupon-code-validator) |
+| [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3634-minimum-removals-to-balance-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3634-minimum-removals-to-balance-array) |
 | [3748-sort-matrix-by-diagonals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3748-sort-matrix-by-diagonals) |
 | [3769-sort-integers-by-binary-reflection](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3769-sort-integers-by-binary-reflection) |
@@ -1700,6 +1703,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3334-apple-redistribution-into-boxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3334-apple-redistribution-into-boxes) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
+| [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3691-minimum-operations-to-make-columns-strictly-increasing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3691-minimum-operations-to-make-columns-strictly-increasing) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 | [3871-minimum-deletions-for-at-most-k-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3871-minimum-deletions-for-at-most-k-distinct-characters) |
@@ -1807,6 +1811,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2779-maximum-beauty-of-an-array-after-applying-operation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2779-maximum-beauty-of-an-array-after-applying-operation) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [3488-closest-equal-element-queries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3488-closest-equal-element-queries) |
+| [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 ## Sliding Window
 |  |
 | ------- |
