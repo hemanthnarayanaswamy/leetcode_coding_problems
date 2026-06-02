@@ -458,6 +458,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2446-determine-if-two-events-have-conflict](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2446-determine-if-two-events-have-conflict) |
 | [2447-merge-similar-items](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2447-merge-similar-items) |
 | [2448-count-number-of-bad-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2448-count-number-of-bad-pairs) |
+| [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2465-shifting-letters-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2465-shifting-letters-ii) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [2476-check-distances-between-same-letters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2476-check-distances-between-same-letters) |
@@ -758,6 +759,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2442-number-of-arithmetic-triplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2442-number-of-arithmetic-triplets) |
 | [2447-merge-similar-items](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2447-merge-similar-items) |
 | [2448-count-number-of-bad-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2448-count-number-of-bad-pairs) |
+| [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2476-check-distances-between-same-letters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2476-check-distances-between-same-letters) |
 | [2486-most-frequent-even-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2486-most-frequent-even-element) |
 | [2487-optimal-partition-of-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2487-optimal-partition-of-string) |
@@ -1832,6 +1834,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1987-substrings-of-size-three-with-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1987-substrings-of-size-three-with-distinct-characters) |
 | [2024-maximize-the-confusion-of-an-exam](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2024-maximize-the-confusion-of-an-exam) |
 | [2112-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2112-minimum-difference-between-highest-and-lowest-of-k-scores) |
+| [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [2516-take-k-of-each-character-from-left-and-right](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2516-take-k-of-each-character-from-left-and-right) |
 | [2760-longest-even-odd-subarray-with-threshold](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2760-longest-even-odd-subarray-with-threshold) |
