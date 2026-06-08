@@ -2131,4 +2131,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
+## Tree
+|  |
+| ------- |
+| [2236-root-equals-sum-of-children](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2236-root-equals-sum-of-children) |
+## Binary Tree
+|  |
+| ------- |
+| [2236-root-equals-sum-of-children](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2236-root-equals-sum-of-children) |
 <!---LeetCode Topics End-->
