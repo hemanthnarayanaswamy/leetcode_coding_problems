@@ -4,8 +4,9 @@ class Solution:
 
         for x1,y1,r in queries:
             count = 0
+            r2 = r**2
             for x2, y2 in points:
-                if (x2 - x1)**2 + (y2 - y1)**2 <= r**2:
+                if (x2 - x1)**2 + (y2 - y1)**2 <= r2:
                     count += 1
             ans.append(count)
         
