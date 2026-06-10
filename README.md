@@ -75,6 +75,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1806-count-of-matches-in-tournament](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1806-count-of-matches-in-tournament) |
 | [1806-minimum-number-of-operations-to-reinitialize-a-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1806-minimum-number-of-operations-to-reinitialize-a-permutation) |
 | [1817-calculate-money-in-leetcode-bank](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1817-calculate-money-in-leetcode-bank) |
+| [1828-queries-on-number-of-points-inside-a-circle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1828-queries-on-number-of-points-inside-a-circle) |
 | [1837-sum-of-digits-in-base-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1837-sum-of-digits-in-base-k) |
 | [1844-maximum-number-of-balls-in-a-box](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1844-maximum-number-of-balls-in-a-box) |
 | [1860-incremental-memory-leak](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1860-incremental-memory-leak) |
@@ -370,6 +371,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1813-maximum-erasure-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1813-maximum-erasure-value) |
 | [1813-sentence-similarity-iii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1813-sentence-similarity-iii) |
 | [1817-finding-the-users-active-minutes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1817-finding-the-users-active-minutes) |
+| [1828-queries-on-number-of-points-inside-a-circle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1828-queries-on-number-of-points-inside-a-circle) |
 | [1829-maximum-units-on-a-truck](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1829-maximum-units-on-a-truck) |
 | [1833-find-the-highest-altitude](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1833-find-the-highest-altitude) |
 | [1843-number-of-rectangles-that-can-form-the-largest-square](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1843-number-of-rectangles-that-can-form-the-largest-square) |
@@ -2061,6 +2063,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1094-matrix-cells-in-distance-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1094-matrix-cells-in-distance-order) |
 | [1232-check-if-it-is-a-straight-line](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1232-check-if-it-is-a-straight-line) |
 | [1395-minimum-time-visiting-all-points](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1395-minimum-time-visiting-all-points) |
+| [1828-queries-on-number-of-points-inside-a-circle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1828-queries-on-number-of-points-inside-a-circle) |
 | [2481-minimum-cuts-to-divide-a-circle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2481-minimum-cuts-to-divide-a-circle) |
 ## Rolling Hash
 |  |
