@@ -6,22 +6,18 @@ class Solution:
             end_idx[ch] = i
         
         res = []
-        start =  0
-        l = r = 0 
+        start = 0
+        r = 0
 
-        while r < len(s) and l < len(s):
+        for l in range(len(s)):
             if l > r:
-                res.append(l - start)
+                res.append(r - start + 1)
                 start = l
                 r = l
             
             if r < end_idx[s[l]]:
                 r = end_idx[s[l]]
-            l += 1
         
-        res.append(l - start)
+        res.append(r - start + 1)
 
         return res
-
-
-        
