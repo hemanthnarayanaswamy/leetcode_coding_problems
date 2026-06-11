@@ -6,18 +6,13 @@ class Solution:
             end_idx[ch] = i
         
         res = []
-        start = 0
-        r = 0
+        start = end = 0
 
-        for l in range(len(s)):
-            if l > r:
-                res.append(r - start + 1)
-                start = l
-                r = l
-            
-            if r < end_idx[s[l]]:
-                r = end_idx[s[l]]
-        
-        res.append(r - start + 1)
+        for i, ch in enumerate(s):
+            end = max(end, end_idx[ch])
+
+            if i == end:
+                res.append(end - start + 1)
+                start = i + 1
 
         return res
