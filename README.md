@@ -678,6 +678,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0599-minimum-index-sum-of-two-lists](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0599-minimum-index-sum-of-two-lists) |
 | [0697-degree-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0697-degree-of-an-array) |
 | [0749-shortest-completing-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0749-shortest-completing-word) |
+| [0763-partition-labels](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0763-partition-labels) |
 | [0782-jewels-and-stones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0782-jewels-and-stones) |
 | [0807-custom-sort-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0807-custom-sort-string) |
 | [0822-unique-morse-code-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0822-unique-morse-code-words) |
@@ -900,6 +901,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0696-count-binary-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0696-count-binary-substrings) |
 | [0742-to-lower-case](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0742-to-lower-case) |
 | [0749-shortest-completing-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0749-shortest-completing-word) |
+| [0763-partition-labels](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0763-partition-labels) |
 | [0782-jewels-and-stones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0782-jewels-and-stones) |
 | [0796-rotate-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0796-rotate-string) |
 | [0807-custom-sort-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0807-custom-sort-string) |
@@ -1262,6 +1264,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0557-reverse-words-in-a-string-iii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0557-reverse-words-in-a-string-iii) |
 | [0680-valid-palindrome-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0680-valid-palindrome-ii) |
 | [0696-count-binary-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0696-count-binary-substrings) |
+| [0763-partition-labels](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0763-partition-labels) |
 | [0841-shortest-distance-to-a-character](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0841-shortest-distance-to-a-character) |
 | [0861-flipping-an-image](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0861-flipping-an-image) |
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
@@ -1643,6 +1646,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0455-assign-cookies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0455-assign-cookies) |
 | [0561-array-partition](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0561-array-partition) |
 | [0680-valid-palindrome-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0680-valid-palindrome-ii) |
+| [0763-partition-labels](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0763-partition-labels) |
 | [0807-max-increase-to-keep-city-skyline](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0807-max-increase-to-keep-city-skyline) |
 | [0890-lemonade-change](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0890-lemonade-change) |
 | [0917-boats-to-save-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0917-boats-to-save-people) |
