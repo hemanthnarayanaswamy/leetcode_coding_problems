@@ -2135,6 +2135,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1141-user-activity-for-the-past-30-days-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1141-user-activity-for-the-past-30-days-i) |
 | [1148-article-views-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1148-article-views-i) |
 | [1193-monthly-transactions-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1193-monthly-transactions-i) |
+| [1251-average-selling-price](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1251-average-selling-price) |
 | [1280-students-and-examinations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1280-students-and-examinations) |
 | [1378-replace-employee-id-with-the-unique-identifier](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1378-replace-employee-id-with-the-unique-identifier) |
 | [1661-average-time-of-process-per-machine](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1661-average-time-of-process-per-machine) |
