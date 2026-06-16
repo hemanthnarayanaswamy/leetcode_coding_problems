@@ -1107,6 +1107,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3567-convert-date-to-binary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3567-convert-date-to-binary) |
 | [3582-generate-tag-for-video-caption](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3582-generate-tag-for-video-caption) |
 | [3606-coupon-code-validator](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3606-coupon-code-validator) |
+| [3612-process-string-with-special-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3612-process-string-with-special-operations-i) |
 | [3617-find-the-original-typed-string-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3617-find-the-original-typed-string-i) |
 | [3636-check-balanced-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3636-check-balanced-string) |
 | [3692-majority-frequency-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3692-majority-frequency-characters) |
@@ -1222,6 +1223,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3540-hash-divided-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3540-hash-divided-string) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 | [3582-generate-tag-for-video-caption](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3582-generate-tag-for-video-caption) |
+| [3612-process-string-with-special-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3612-process-string-with-special-operations-i) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3616-make-array-elements-equal-to-zero) |
 | [3726-remove-zeros-in-decimal-representation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3726-remove-zeros-in-decimal-representation) |
 | [3768-check-if-digits-are-equal-in-string-after-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3768-check-if-digits-are-equal-in-string-after-operations-i) |
