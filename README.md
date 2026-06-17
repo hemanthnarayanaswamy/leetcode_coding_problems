@@ -1612,6 +1612,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0094-binary-tree-inorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0094-binary-tree-inorder-traversal) |
 | [0143-reorder-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0143-reorder-list) |
 | [0144-binary-tree-preorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0144-binary-tree-preorder-traversal) |
+| [0145-binary-tree-postorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0145-binary-tree-postorder-traversal) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0232-implement-queue-using-stacks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0234-palindrome-linked-list) |
@@ -2044,6 +2045,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0094-binary-tree-inorder-traversal) |
 | [0144-binary-tree-preorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0144-binary-tree-preorder-traversal) |
+| [0145-binary-tree-postorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0145-binary-tree-postorder-traversal) |
 | [2438-find-closest-node-to-given-two-nodes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2438-find-closest-node-to-given-two-nodes) |
 ## Graph
 |  |
@@ -2165,11 +2167,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0094-binary-tree-inorder-traversal) |
 | [0144-binary-tree-preorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0144-binary-tree-preorder-traversal) |
+| [0145-binary-tree-postorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0145-binary-tree-postorder-traversal) |
 | [2236-root-equals-sum-of-children](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2236-root-equals-sum-of-children) |
 ## Binary Tree
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0094-binary-tree-inorder-traversal) |
 | [0144-binary-tree-preorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0144-binary-tree-preorder-traversal) |
+| [0145-binary-tree-postorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0145-binary-tree-postorder-traversal) |
 | [2236-root-equals-sum-of-children](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2236-root-equals-sum-of-children) |
 <!---LeetCode Topics End-->
