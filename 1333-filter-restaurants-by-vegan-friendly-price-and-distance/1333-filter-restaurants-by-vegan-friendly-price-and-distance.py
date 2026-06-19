@@ -3,12 +3,9 @@ class Solution:
         res = []
 
         for restaurant in restaurants:
-            id, r, v, p, d = restaurant
-
-            if (veganFriendly and not v) or p > maxPrice or d > maxDistance:
-                continue
+            if restaurant[2] >= veganFriendly and restaurant[3] <= maxPrice and restaurant[4] <= maxDistance:
+                res.append([restaurant[0], restaurant[1]])
             
-            res.append([id, r])
-        
+            
         res = sorted(res, key=lambda row: (row[1], row[0]), reverse=True)
-        return [row[0] for row in res]
+        return [r[0] for r in res]
