@@ -2169,6 +2169,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1729-find-followers-count](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1729-find-followers-count) |
 | [1741-find-total-time-spent-by-each-employee](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1741-find-total-time-spent-by-each-employee) |
 | [1757-recyclable-and-low-fat-products](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1757-recyclable-and-low-fat-products) |
+| [1890-the-latest-login-in-2020](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1890-the-latest-login-in-2020) |
 | [1978-employees-whose-manager-left-the-company](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1978-employees-whose-manager-left-the-company) |
 | [2356-number-of-unique-subjects-taught-by-each-teacher](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2356-number-of-unique-subjects-taught-by-each-teacher) |
 | [3475-dna-pattern-recognition](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-dna-pattern-recognition) |
