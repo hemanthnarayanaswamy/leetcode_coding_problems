@@ -1,11 +1,13 @@
 class Solution:
     def maxNumberOfBalloons(self, text: str) -> int:
-        balloon_ref = {'b': 1, 'a': 1, 'l': 2, 'o': 2, 'n': 1}
-        text_ballon = {}
-
-        for letter in text:
-            if letter in balloon_ref:
-                text_ballon[letter] = text_ballon.get(letter, 0) + 1
-
-        # Calculate the maximum number of "balloon" words that can be formed
-        return min(text_ballon.get(letter, 0) // balloon_ref[letter] for letter in balloon_ref)
+        d = defaultdict(int)
+        word = "balloon"
+        
+        for t in text:
+            if t in word:
+                d[t] +=1
+        
+        if any(t not in d for t in word):
+            return 0
+        else:
+            return min(d['b']//1, d['a']//1, d['l']//2, d['o']//2, d['n']//1)
