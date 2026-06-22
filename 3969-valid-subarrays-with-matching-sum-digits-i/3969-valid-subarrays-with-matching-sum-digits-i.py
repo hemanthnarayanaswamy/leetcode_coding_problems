@@ -1,12 +1,21 @@
 class Solution:
-    def countValidSubarrays(self, nums: list[int], x: int) -> int:
+    def countValidSubarrays(self, nums: List[int], x: int) -> int:
+        n = len(nums)
         ans = 0
-        for i in range(len(nums)):
-            ss = 0
-            for j in range(i, len(nums)):
-                ss += nums[j]
-                cur = str(ss)
-                if cur[0] == str(x) and cur[-1] == str(x):
+
+        for left in range(n):
+            s = 0
+            for right in range(left, n):
+                s += nums[right]
+
+                if s % 10 != x:
+                    continue
+
+                first = s
+                while first >= 10:
+                    first //= 10
+
+                if first == x:
                     ans += 1
+
         return ans
-                
