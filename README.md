@@ -700,6 +700,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1001-n-repeated-element-in-size-2n-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1001-n-repeated-element-in-size-2n-array) |
 | [1015-smallest-integer-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1044-find-common-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1044-find-common-characters) |
+| [1189-maximum-number-of-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1189-maximum-number-of-balloons) |
 | [1217-relative-sort-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1217-relative-sort-array) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1248-count-number-of-nice-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1248-count-number-of-nice-subarrays) |
@@ -932,6 +933,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1044-find-common-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1044-find-common-characters) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1156-occurrences-after-bigram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1156-occurrences-after-bigram) |
+| [1189-maximum-number-of-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1189-maximum-number-of-balloons) |
 | [1205-defanging-an-ip-address](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1205-defanging-an-ip-address) |
 | [1264-maximum-number-of-words-you-can-type](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1264-maximum-number-of-words-you-can-type) |
 | [1283-reformat-date](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1283-reformat-date) |
@@ -1499,6 +1501,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0920-uncommon-words-from-two-sentences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0950-x-of-a-kind-in-a-deck-of-cards](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0950-x-of-a-kind-in-a-deck-of-cards) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0982-minimum-increment-to-make-array-unique) |
+| [1189-maximum-number-of-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1189-maximum-number-of-balloons) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1297-maximum-number-of-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1297-maximum-number-of-balloons) |
 | [1341-split-a-string-in-balanced-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1341-split-a-string-in-balanced-strings) |
