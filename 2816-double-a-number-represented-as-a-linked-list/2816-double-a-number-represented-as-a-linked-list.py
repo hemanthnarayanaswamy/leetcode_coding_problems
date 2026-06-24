@@ -28,13 +28,12 @@ class Solution:
             cur = cur.next
         
         head = reverselinkedlist(head)
-        
+
         if carry:
-            dummy = ListNode(carry)
-            dummy.next = head
-            return dummy
-        else:
-            return head
+            fullHead = ListNode(carry, head)
+            head = fullHead
+
+        return head
         
 
 
