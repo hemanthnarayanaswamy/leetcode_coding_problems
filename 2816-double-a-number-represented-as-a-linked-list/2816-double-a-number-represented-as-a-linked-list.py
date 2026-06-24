@@ -27,12 +27,14 @@ class Solution:
             carry, cur.val = divmod(v, 10)
             cur = cur.next
         
+        head = reverselinkedlist(head)
+        
         if carry:
             dummy = ListNode(carry)
-            dummy.next = reverselinkedlist(head)
+            dummy.next = head
             return dummy
         else:
-            return reverselinkedlist(head)
+            return head
         
 
 
