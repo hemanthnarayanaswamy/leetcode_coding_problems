@@ -1,11 +1,8 @@
 # Write your MySQL query statement below
-select lb.book_id, lb.title, lb.author, lb.genre, lb.publication_year, t2.not_returned as current_borrowers
-from library_books lb
-join (
-        select book_id, Count(*) as not_returned
-        from borrowing_records 
-        where ISNULL(return_date) 
-        group by book_id
-     ) t2 on t2.book_id = lb.book_id
-where (lb.total_copies - t2.not_returned) = 0
-order by current_borrowers DESC, lb.title ASC
+select a.book_id, a.title, a.author, a.genre, a.publication_year, count(b.record_id) as current_borrowers
+from library_books a
+inner join borrowing_records b on a.book_id = b.book_id
+where b.return_date is null
+group by a.book_id, a.title, a.author, a.genre, a.publication_year, a.total_copies
+having a.total_copies = count(b.record_id)
+order by current_borrowers desc, a.title asc
