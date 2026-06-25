@@ -628,6 +628,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3723-sum-of-good-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3723-sum-of-good-numbers) |
 | [3731-sum-of-variable-length-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3731-sum-of-variable-length-subarrays) |
 | [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3736-minimum-moves-to-equal-array-elements-iii) |
+| [3737-count-subarrays-with-majority-element-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3737-count-subarrays-with-majority-element-i) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3741-minimum-distance-between-three-equal-elements-ii) |
 | [3747-maximum-difference-between-adjacent-elements-in-a-circular-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3747-maximum-difference-between-adjacent-elements-in-a-circular-array) |
@@ -846,6 +847,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3712-sum-of-elements-with-frequency-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3712-sum-of-elements-with-frequency-divisible-by-k) |
 | [3718-smallest-missing-multiple-of-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3718-smallest-missing-multiple-of-k) |
 | [3736-find-valid-pair-of-adjacent-digits-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3736-find-valid-pair-of-adjacent-digits-in-string) |
+| [3737-count-subarrays-with-majority-element-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3737-count-subarrays-with-majority-element-i) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3741-minimum-distance-between-three-equal-elements-ii) |
 | [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
@@ -1561,6 +1563,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3707-find-the-most-common-response](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3707-find-the-most-common-response) |
 | [3712-sum-of-elements-with-frequency-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3712-sum-of-elements-with-frequency-divisible-by-k) |
 | [3736-find-valid-pair-of-adjacent-digits-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3736-find-valid-pair-of-adjacent-digits-in-string) |
+| [3737-count-subarrays-with-majority-element-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3737-count-subarrays-with-majority-element-i) |
 | [3746-minimum-string-length-after-balanced-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3746-minimum-string-length-after-balanced-removals) |
 | [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
 | [3778-transform-array-by-parity](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3778-transform-array-by-parity) |
@@ -1614,6 +1617,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3704-count-partitions-with-even-sum-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3704-count-partitions-with-even-sum-difference) |
 | [3707-equal-score-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3707-equal-score-substrings) |
 | [3731-sum-of-variable-length-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3731-sum-of-variable-length-subarrays) |
+| [3737-count-subarrays-with-majority-element-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3737-count-subarrays-with-majority-element-i) |
 ## Stack
 |  |
 | ------- |
@@ -1960,6 +1964,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0191-number-of-1-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0191-number-of-1-bits) |
 | [0347-top-k-frequent-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0347-top-k-frequent-elements) |
 | [0948-sort-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0948-sort-an-array) |
+| [3737-count-subarrays-with-majority-element-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3737-count-subarrays-with-majority-element-i) |
 ## Quickselect
 |  |
 | ------- |
@@ -1973,6 +1978,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0148-sort-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0148-sort-list) |
 | [0948-sort-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0948-sort-an-array) |
+| [3737-count-subarrays-with-majority-element-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3737-count-subarrays-with-majority-element-i) |
 ## Radix Sort
 |  |
 | ------- |
@@ -2198,4 +2204,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0144-binary-tree-preorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0145-binary-tree-postorder-traversal) |
 | [2236-root-equals-sum-of-children](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2236-root-equals-sum-of-children) |
+## Segment Tree
+|  |
+| ------- |
+| [3737-count-subarrays-with-majority-element-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3737-count-subarrays-with-majority-element-i) |
 <!---LeetCode Topics End-->
