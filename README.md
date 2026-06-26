@@ -670,6 +670,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0242-valid-anagram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0268-missing-number) |
 | [0290-word-pattern](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0290-word-pattern) |
+| [0299-bulls-and-cows](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0299-bulls-and-cows) |
 | [0347-top-k-frequent-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0347-top-k-frequent-elements) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0383-ransom-note](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0383-ransom-note) |
@@ -884,6 +885,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0242-valid-anagram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0242-valid-anagram) |
 | [0273-integer-to-english-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0273-integer-to-english-words) |
 | [0290-word-pattern](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0290-word-pattern) |
+| [0299-bulls-and-cows](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0299-bulls-and-cows) |
 | [0344-reverse-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0345-reverse-vowels-of-a-string) |
 | [0383-ransom-note](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0383-ransom-note) |
@@ -1496,6 +1498,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0169-majority-element](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0229-majority-element-ii) |
+| [0299-bulls-and-cows](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0299-bulls-and-cows) |
 | [0347-top-k-frequent-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0383-ransom-note) |
 | [0451-sort-characters-by-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0451-sort-characters-by-frequency) |
