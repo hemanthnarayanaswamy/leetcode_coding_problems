@@ -1,19 +1,17 @@
 class Solution:
     def getHint(self, secret: str, guess: str) -> str:
-        sfreq = Counter(secret)
-        gfreq = Counter(guess)
-        bulls = 0
+        uniqSecret = set()
+        bulls = cows = 0
 
-        for s,g in zip(secret, guess):
-            if s == g:
+        for i in range(len(secret)):
+            if secret[i] == guess[i]:
                 bulls += 1
-                sfreq[s] -= 1
-                gfreq[g] -= 1
+            uniqSecret.add(secret[i])
         
-        cows = 0
-        for c in sfreq:
-            cows += min(sfreq[c], gfreq[c])
         
-        return str(bulls)+'A'+str(cows)+'B'
+        for c in uniqSecret:
+            cows += min(secret.count(c), guess.count(c))
+        
+        return str(bulls)+'A'+str(cows-bulls)+'B'
         
 
