@@ -393,6 +393,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1938-minimum-operations-to-make-the-array-increasing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1938-minimum-operations-to-make-the-array-increasing) |
 | [1944-truncate-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1944-truncate-sentence) |
 | [1961-maximum-ice-cream-bars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1961-maximum-ice-cream-bars) |
+| [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [1984-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1984-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [1988-minimize-maximum-pair-sum-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1988-minimize-maximum-pair-sum-in-array) |
 | [2016-reduction-operations-to-make-the-array-elements-equal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2016-reduction-operations-to-make-the-array-elements-equal) |
@@ -1007,6 +1008,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1954-replace-all-digits-with-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1954-replace-all-digits-with-characters) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1960-check-if-the-sentence-is-pangram) |
 | [1963-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1963-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [1970-sorting-the-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1970-sorting-the-sentence) |
 | [1987-substrings-of-size-three-with-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1987-substrings-of-size-three-with-distinct-characters) |
 | [1999-longer-contiguous-segments-of-ones-than-zeros](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1999-longer-contiguous-segments-of-ones-than-zeros) |
