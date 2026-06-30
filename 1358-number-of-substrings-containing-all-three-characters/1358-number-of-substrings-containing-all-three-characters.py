@@ -1,17 +1,17 @@
 class Solution:
     def numberOfSubstrings(self, s: str) -> int:
-        freq = defaultdict(int)
-        left = 0 
-        res = 0
+        track = defaultdict(int)
+        subcount = 0
+        left = 0
 
         for right, c in enumerate(s):
-            freq[c] += 1
+            track[c] += 1
 
-            while len(freq) == 3 and freq[s[left]] > 1:
-                freq[s[left]] -= 1
+            while len(track) == 3 and track[s[left]] > 1:
+                track[s[left]] -= 1
                 left += 1
             
-            if len(freq) == 3:
-                res += (left + 1)
-            
-        return res
+            if len(track) == 3:
+                subcount += (left + 1)
+        
+        return subcount
