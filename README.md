@@ -105,6 +105,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2542-average-value-of-even-numbers-that-are-divisible-by-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2542-average-value-of-even-numbers-that-are-divisible-by-three) |
 | [2556-convert-the-temperature](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2556-convert-the-temperature) |
 | [2571-find-the-pivot-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2571-find-the-pivot-integer) |
+| [2579-count-total-number-of-colored-cells](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2579-count-total-number-of-colored-cells) |
 | [2608-count-the-digits-that-divide-a-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2608-count-the-digits-that-divide-a-number) |
 | [2614-prime-in-diagonal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2614-prime-in-diagonal) |
 | [2624-difference-between-element-sum-and-digit-sum-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2624-difference-between-element-sum-and-digit-sum-of-an-array) |
