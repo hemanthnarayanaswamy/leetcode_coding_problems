@@ -4,7 +4,6 @@ class Solution:
         
         stack = []
         for slot in intervals:
-            print(stack, slot)
             if stack:
                 if slot[0] not in range(stack[-1][0], stack[-1][1]+1) or slot[1] not in range(stack[-1][0], stack[-1][1]+1):
                     stack.append(slot)
