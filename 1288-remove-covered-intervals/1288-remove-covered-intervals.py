@@ -2,12 +2,14 @@ class Solution:
     def removeCoveredIntervals(self, intervals: List[List[int]]) -> int:
         intervals = sorted(intervals, key=lambda x: (x[0], -x[1]))
         
-        stack = []
-        for slot in intervals:
-            if stack:
-                if slot[0] not in range(stack[-1][0], stack[-1][1]+1) or slot[1] not in range(stack[-1][0], stack[-1][1]+1):
-                    stack.append(slot)
-            else:
-                stack.append(slot)
+        prev = intervals[0]
+        count = 1
         
-        return len(stack)
+        for i in range(1, len(intervals)):
+            if prev[0] <= intervals[i][0] <= prev[1] and prev[0] <= intervals[i][1] <= prev[1]:
+               continue
+            
+            count += 1
+            prev = intervals[i]
+
+        return count
