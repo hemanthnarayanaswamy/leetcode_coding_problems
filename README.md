@@ -304,6 +304,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1253-sort-the-matrix-diagonally](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1253-sort-the-matrix-diagonally) |
 | [1256-rank-transform-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1256-rank-transform-of-an-array) |
 | [1260-shift-2d-grid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1260-shift-2d-grid) |
+| [1288-remove-covered-intervals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1288-remove-covered-intervals) |
 | [1293-three-consecutive-odds](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1293-three-consecutive-odds) |
 | [1306-minimum-absolute-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1306-minimum-absolute-difference) |
 | [1310-watering-plants](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1310-watering-plants) |
@@ -1401,6 +1402,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1217-relative-sort-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1217-relative-sort-array) |
 | [1253-sort-the-matrix-diagonally](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1253-sort-the-matrix-diagonally) |
 | [1256-rank-transform-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1256-rank-transform-of-an-array) |
+| [1288-remove-covered-intervals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1288-remove-covered-intervals) |
 | [1306-minimum-absolute-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1306-minimum-absolute-difference) |
 | [1333-sort-the-jumbled-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1333-sort-the-jumbled-numbers) |
 | [1333-filter-restaurants-by-vegan-friendly-price-and-distance](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1333-filter-restaurants-by-vegan-friendly-price-and-distance) |
