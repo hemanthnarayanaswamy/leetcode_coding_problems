@@ -642,6 +642,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3774-absolute-difference-between-maximum-and-minimum-k-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3774-absolute-difference-between-maximum-and-minimum-k-elements) |
 | [3778-transform-array-by-parity](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3778-transform-array-by-parity) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
+| [3804-number-of-centered-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3804-number-of-centered-subarrays) |
 | [3818-minimum-prefix-removal-to-make-array-strictly-increasing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3818-minimum-prefix-removal-to-make-array-strictly-increasing) |
 | [3832-minimum-cost-to-reach-every-position](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3832-minimum-cost-to-reach-every-position) |
 | [3838-weighted-word-mapping](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3838-weighted-word-mapping) |
@@ -859,6 +860,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3760-maximum-substrings-with-distinct-start](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3760-maximum-substrings-with-distinct-start) |
 | [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3761-minimum-absolute-distance-between-mirror-pairs) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
+| [3804-number-of-centered-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3804-number-of-centered-subarrays) |
 | [3871-minimum-deletions-for-at-most-k-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3871-minimum-deletions-for-at-most-k-distinct-characters) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 | [3889-mirror-frequency-distance](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3889-mirror-frequency-distance) |
@@ -1964,6 +1966,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 | [3221-find-the-peaks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3221-find-the-peaks) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3751-total-waviness-of-numbers-in-range-i) |
+| [3804-number-of-centered-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3804-number-of-centered-subarrays) |
 | [4112-maximize-expression-of-three-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4112-maximize-expression-of-three-elements) |
 ## Divide and Conquer
 |  |
