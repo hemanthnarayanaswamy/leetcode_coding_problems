@@ -13,6 +13,5 @@ class Solution:
                 left += 1
             
             maxlen = max(maxlen, sum(freq.values()))
-            print(freq, maxlen)
         
         return maxlen
