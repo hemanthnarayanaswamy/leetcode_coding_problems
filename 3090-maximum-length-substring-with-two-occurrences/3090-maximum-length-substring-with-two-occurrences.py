@@ -12,6 +12,6 @@ class Solution:
                 freq[s[left]] -= 1
                 left += 1
             
-            maxlen = max(maxlen, sum(freq.values()))
+            maxlen = max(maxlen, right - left + 1)
         
         return maxlen
