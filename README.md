@@ -310,6 +310,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1310-watering-plants](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1310-watering-plants) |
 | [1319-unique-number-of-occurrences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1319-unique-number-of-occurrences) |
 | [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
+| [1331-rank-transform-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1331-rank-transform-of-an-array) |
 | [1333-sort-the-jumbled-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1333-sort-the-jumbled-numbers) |
 | [1333-filter-restaurants-by-vegan-friendly-price-and-distance](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1333-filter-restaurants-by-vegan-friendly-price-and-distance) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
@@ -716,6 +717,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1264-maximum-number-of-words-you-can-type](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1264-maximum-number-of-words-you-can-type) |
 | [1297-maximum-number-of-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1297-maximum-number-of-balloons) |
 | [1319-unique-number-of-occurrences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1319-unique-number-of-occurrences) |
+| [1331-rank-transform-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1331-rank-transform-of-an-array) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 | [1354-find-players-with-zero-or-one-losses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1354-find-players-with-zero-or-one-losses) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1358-number-of-substrings-containing-all-three-characters) |
@@ -1410,6 +1412,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1256-rank-transform-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1256-rank-transform-of-an-array) |
 | [1288-remove-covered-intervals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1288-remove-covered-intervals) |
 | [1306-minimum-absolute-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1306-minimum-absolute-difference) |
+| [1331-rank-transform-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1331-rank-transform-of-an-array) |
 | [1333-sort-the-jumbled-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1333-sort-the-jumbled-numbers) |
 | [1333-filter-restaurants-by-vegan-friendly-price-and-distance](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1333-filter-restaurants-by-vegan-friendly-price-and-distance) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1353-find-resultant-array-after-removing-anagrams) |
