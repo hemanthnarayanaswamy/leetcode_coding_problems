@@ -84,6 +84,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1920-determine-color-of-a-chessboard-square](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1920-determine-color-of-a-chessboard-square) |
 | [1925-count-square-sum-triples](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1925-count-square-sum-triples) |
 | [1952-three-divisors](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1952-three-divisors) |
+| [1979-find-greatest-common-divisor-of-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [2032-largest-odd-number-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2032-largest-odd-number-in-string) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2106-find-greatest-common-divisor-of-array) |
@@ -400,6 +401,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1944-truncate-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1944-truncate-sentence) |
 | [1961-maximum-ice-cream-bars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1961-maximum-ice-cream-bars) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
+| [1979-find-greatest-common-divisor-of-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [1984-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1984-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [1988-minimize-maximum-pair-sum-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1988-minimize-maximum-pair-sum-in-array) |
 | [2016-reduction-operations-to-make-the-array-elements-equal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2016-reduction-operations-to-make-the-array-elements-equal) |
@@ -2032,6 +2034,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0258-add-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0258-add-digits) |
 | [0950-x-of-a-kind-in-a-deck-of-cards](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0950-x-of-a-kind-in-a-deck-of-cards) |
 | [1952-three-divisors](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1952-three-divisors) |
+| [1979-find-greatest-common-divisor-of-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2106-find-greatest-common-divisor-of-array) |
 | [2427-number-of-common-factors](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2427-number-of-common-factors) |
 | [2491-smallest-even-multiple](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2491-smallest-even-multiple) |
