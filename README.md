@@ -2260,6 +2260,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0111-minimum-depth-of-binary-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0111-minimum-depth-of-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0145-binary-tree-postorder-traversal) |
+| [0700-search-in-a-binary-search-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0700-search-in-a-binary-search-tree) |
 | [2236-root-equals-sum-of-children](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2236-root-equals-sum-of-children) |
 ## Binary Tree
 |  |
@@ -2269,6 +2270,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0111-minimum-depth-of-binary-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0111-minimum-depth-of-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0145-binary-tree-postorder-traversal) |
+| [0700-search-in-a-binary-search-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0700-search-in-a-binary-search-tree) |
 | [2236-root-equals-sum-of-children](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2236-root-equals-sum-of-children) |
 ## Segment Tree
 |  |
@@ -2283,4 +2285,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0111-minimum-depth-of-binary-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0111-minimum-depth-of-binary-tree) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0700-search-in-a-binary-search-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0700-search-in-a-binary-search-tree) |
 <!---LeetCode Topics End-->
