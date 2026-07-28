@@ -1,18 +1,8 @@
 class Solution:
     def smallestPalindrome(self, s: str) -> str:
-        if len(s) == 1:
-            return s
+        partition = len(s) // 2
 
-        freq = dict(sorted(Counter(s).items()))
-        res = mid = ''
-        
-        for c in freq:
-            if freq[c] % 2:
-                mid = c
-                
-            count = freq[c] // 2
-            res += c * count
-        
-        return res + mid + res[::-1]
+        base = sorted(s[:partition])
+        mid = [s[partition]] if len(s) % 2 == 1 else []
 
-
+        return "".join(base + mid + base[::-1])
