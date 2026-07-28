@@ -9,8 +9,7 @@ class Solution:
         for c in freq:
             if freq[c] % 2:
                 mid = c
-                freq[c] -= 1
-            
+                
             count = freq[c] // 2
             res += c * count
         
