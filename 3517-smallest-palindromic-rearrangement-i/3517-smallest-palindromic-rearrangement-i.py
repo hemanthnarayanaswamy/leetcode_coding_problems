@@ -4,8 +4,7 @@ class Solution:
             return s
 
         freq = dict(sorted(Counter(s).items()))
-        res = ''
-        mid = ''
+        res = mid = ''
         
         for c in freq:
             if freq[c] % 2:
@@ -15,9 +14,6 @@ class Solution:
             count = freq[c] // 2
             res += c * count
         
-        if mid:
-            return res + mid + res[::-1]
-        else:
-            return res + res[::-1]
+        return res + mid + res[::-1]
 
 
