@@ -1134,6 +1134,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3462-vowels-game-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3462-vowels-game-in-a-string) |
 | [3468-find-the-encrypted-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3468-find-the-encrypted-string) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
+| [3517-smallest-palindromic-rearrangement-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3517-smallest-palindromic-rearrangement-i) |
 | [3533-snake-in-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3533-snake-in-matrix) |
 | [3540-hash-divided-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3540-hash-divided-string) |
 | [3553-check-if-two-chessboard-squares-have-the-same-color](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3553-check-if-two-chessboard-squares-have-the-same-color) |
@@ -1508,6 +1509,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3430-count-days-without-meetings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3430-count-days-without-meetings) |
 | [3433-count-mentions-per-user](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3433-count-mentions-per-user) |
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
+| [3517-smallest-palindromic-rearrangement-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3517-smallest-palindromic-rearrangement-i) |
 | [3536-maximum-product-of-two-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3536-maximum-product-of-two-digits) |
 | [3606-coupon-code-validator](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3606-coupon-code-validator) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
@@ -2033,6 +2035,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
 | [1961-maximum-ice-cream-bars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1961-maximum-ice-cream-bars) |
 | [2148-minimum-number-of-moves-to-seat-everyone](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2148-minimum-number-of-moves-to-seat-everyone) |
+| [3517-smallest-palindromic-rearrangement-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3517-smallest-palindromic-rearrangement-i) |
 ## Number Theory
 |  |
 | ------- |
