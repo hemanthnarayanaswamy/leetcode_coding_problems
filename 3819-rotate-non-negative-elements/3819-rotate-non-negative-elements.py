@@ -6,7 +6,6 @@ class Solution:
         for i in range(n):
             if nums[i] >= 0:
                 nonNeg.append(nums[i])
-                nums[i] = 'x'
         
         if not nonNeg:
             return nums
@@ -15,7 +14,7 @@ class Solution:
         nonNeg = nonNeg[k:] + nonNeg[:k]
 
         for i in range(n-1, -1, -1):
-            if nums[i] == 'x':
+            if nums[i] >= 0:
                 nums[i] = nonNeg.pop()
 
         return nums
