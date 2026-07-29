@@ -7,10 +7,13 @@ class Solution:
             if nums[i] >= 0:
                 nonNeg.append(nums[i])
         
-        if not nonNeg:
+        if not nonNeg or len(nonNeg) == 1:
             return nums
         
         k = k % len(nonNeg)
+        if not k:
+            return nums
+            
         nonNeg = nonNeg[k:] + nonNeg[:k]
 
         for i in range(n-1, -1, -1):
