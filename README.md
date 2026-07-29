@@ -651,6 +651,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 | [3804-number-of-centered-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3804-number-of-centered-subarrays) |
 | [3818-minimum-prefix-removal-to-make-array-strictly-increasing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3818-minimum-prefix-removal-to-make-array-strictly-increasing) |
+| [3819-rotate-non-negative-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3819-rotate-non-negative-elements) |
 | [3832-minimum-cost-to-reach-every-position](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3832-minimum-cost-to-reach-every-position) |
 | [3838-weighted-word-mapping](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3838-weighted-word-mapping) |
 | [3846-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3846-minimum-operations-to-make-array-sum-divisible-by-k) |
@@ -1263,6 +1264,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3768-check-if-digits-are-equal-in-string-after-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3768-check-if-digits-are-equal-in-string-after-operations-i) |
 | [3811-reverse-degree-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3811-reverse-degree-of-a-string) |
 | [3813-vowel-consonant-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3813-vowel-consonant-score) |
+| [3819-rotate-non-negative-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3819-rotate-non-negative-elements) |
 | [3823-reverse-letters-then-special-characters-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3823-reverse-letters-then-special-characters-in-a-string) |
 | [3838-weighted-word-mapping](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3838-weighted-word-mapping) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3867-sum-of-gcd-of-formed-pairs) |
