@@ -36,6 +36,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0507-perfect-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0507-perfect-number) |
 | [0509-fibonacci-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0509-fibonacci-number) |
 | [0537-complex-number-multiplication](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0537-complex-number-multiplication) |
+| [0539-minimum-time-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0539-minimum-time-difference) |
 | [0628-maximum-product-of-three-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0628-maximum-product-of-three-numbers) |
 | [0728-self-dividing-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0728-self-dividing-numbers) |
 | [0788-rotated-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0788-rotated-digits) |
@@ -231,6 +232,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0500-keyboard-row](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0500-keyboard-row) |
 | [0506-relative-ranks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0506-relative-ranks) |
 | [0525-contiguous-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0525-contiguous-array) |
+| [0539-minimum-time-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0539-minimum-time-difference) |
 | [0540-single-element-in-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0540-single-element-in-a-sorted-array) |
 | [0560-subarray-sum-equals-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0560-subarray-sum-equals-k) |
 | [0561-array-partition](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0561-array-partition) |
@@ -925,6 +927,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0520-detect-capital](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0520-detect-capital) |
 | [0521-longest-uncommon-subsequence-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0521-longest-uncommon-subsequence-i) |
 | [0537-complex-number-multiplication](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0537-complex-number-multiplication) |
+| [0539-minimum-time-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0539-minimum-time-difference) |
 | [0541-reverse-string-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0541-reverse-string-ii) |
 | [0551-student-attendance-record-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0551-student-attendance-record-i) |
 | [0557-reverse-words-in-a-string-iii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0557-reverse-words-in-a-string-iii) |
@@ -1407,6 +1410,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0455-assign-cookies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0455-assign-cookies) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0506-relative-ranks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0506-relative-ranks) |
+| [0539-minimum-time-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0539-minimum-time-difference) |
 | [0561-array-partition](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0561-array-partition) |
 | [0594-longest-harmonious-subsequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0594-longest-harmonious-subsequence) |
 | [0628-maximum-product-of-three-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0628-maximum-product-of-three-numbers) |
