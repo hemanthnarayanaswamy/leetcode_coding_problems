@@ -1,12 +1,14 @@
 class Solution:
     def countValidPrefixes(self, s: str) -> int:
-        freq = defaultdict(int)
-        pre = 0
+        pre = z = o = 0
 
         for c in s:
-            freq[c] += 1
-
-            if abs(freq['1'] - freq['0']) <= 1:
+            if c == '0':
+                z += 1
+            else:
+                o += 1
+            
+            if abs(z - o) <= 1:
                 pre += 1
         
         return pre
