@@ -15,4 +15,3 @@ class Solution:
                     strength = tmp
         
         return strength
-
