@@ -641,6 +641,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3718-smallest-missing-multiple-of-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3718-smallest-missing-multiple-of-k) |
 | [3723-sum-of-good-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3723-sum-of-good-numbers) |
 | [3731-sum-of-variable-length-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3731-sum-of-variable-length-subarrays) |
+| [3731-find-missing-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3731-find-missing-elements) |
 | [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3736-minimum-moves-to-equal-array-elements-iii) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3737-count-subarrays-with-majority-element-i) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
@@ -870,6 +871,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3707-find-the-most-common-response](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3707-find-the-most-common-response) |
 | [3712-sum-of-elements-with-frequency-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3712-sum-of-elements-with-frequency-divisible-by-k) |
 | [3718-smallest-missing-multiple-of-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3718-smallest-missing-multiple-of-k) |
+| [3731-find-missing-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3731-find-missing-elements) |
 | [3736-find-valid-pair-of-adjacent-digits-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3736-find-valid-pair-of-adjacent-digits-in-string) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3737-count-subarrays-with-majority-element-i) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
@@ -1526,6 +1528,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3634-minimum-removals-to-balance-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3634-minimum-removals-to-balance-array) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
+| [3731-find-missing-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3731-find-missing-elements) |
 | [3748-sort-matrix-by-diagonals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3748-sort-matrix-by-diagonals) |
 | [3769-sort-integers-by-binary-reflection](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3769-sort-integers-by-binary-reflection) |
 | [3774-absolute-difference-between-maximum-and-minimum-k-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3774-absolute-difference-between-maximum-and-minimum-k-elements) |
