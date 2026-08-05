@@ -1,9 +1,5 @@
-# Write your MySQL query statement below
-select distinct(p.product_id), p.product_name
-from Sales s
-join Product p on s.product_id = p.product_id
-where p.product_id not in (
-    select product_id
-    from Sales
-    where sale_date < '2019-01-01' OR sale_date > '2019-03-31'
-)
+SELECT p.product_id, p.product_name
+FROM Product p
+JOIN Sales s ON p.product_id = s.product_id
+GROUP BY p.product_id, p.product_name
+HAVING MIN(s.sale_date) >= '2019-01-01' AND MAX(s.sale_date) <= '2019-03-31';
