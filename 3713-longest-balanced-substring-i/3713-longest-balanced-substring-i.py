@@ -4,22 +4,14 @@ class Solution:
         n = len(s)
 
         for i in range(n):
-            freq = Counter()
-            countFreq = Counter()
+            freq = defaultdict(int)
             for j in range(i, n):
-                c = s[j]
-                old = freq[c]
+                freq[s[j]] += 1
 
-                if old > 0:
-                    countFreq[old] -= 1
+                values = freq.values()
+                first = next(iter(values))
 
-                    if countFreq[old] == 0:
-                        del countFreq[old]
-
-                freq[c] += 1
-                countFreq[freq[s[j]]] += 1
-        
-                if len(countFreq) == 1:
+                if all(v == first for v in values):
                     longest = max(longest, j - i + 1)
         
         return longest
