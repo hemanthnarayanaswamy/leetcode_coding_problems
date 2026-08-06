@@ -128,6 +128,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2812-find-the-maximum-achievable-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2812-find-the-maximum-achievable-number) |
 | [2816-double-a-number-represented-as-a-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2816-double-a-number-represented-as-a-linked-list) |
 | [2843-count-symmetric-integers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2843-count-symmetric-integers) |
+| [2928-distribute-candies-among-children-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2928-distribute-candies-among-children-i) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3055-maximum-odd-binary-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3055-maximum-odd-binary-number) |
@@ -2015,6 +2016,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2605-form-smallest-number-from-two-digit-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2605-form-smallest-number-from-two-digit-arrays) |
 | [2843-count-symmetric-integers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2843-count-symmetric-integers) |
 | [2844-sum-of-squares-of-special-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2844-sum-of-squares-of-special-elements) |
+| [2928-distribute-candies-among-children-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2928-distribute-candies-among-children-i) |
 | [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 | [3221-find-the-peaks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3221-find-the-peaks) |
 | [3345-smallest-divisible-digit-product-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3345-smallest-divisible-digit-product-i) |
@@ -2148,6 +2150,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [2063-vowels-of-all-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2063-vowels-of-all-substrings) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2324-find-triangular-sum-of-an-array) |
+| [2928-distribute-candies-among-children-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2928-distribute-candies-among-children-i) |
 | [3577-count-the-number-of-computer-unlocking-permutations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3577-count-the-number-of-computer-unlocking-permutations) |
 | [3768-check-if-digits-are-equal-in-string-after-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3768-check-if-digits-are-equal-in-string-after-operations-i) |
 ## Monotonic Stack
