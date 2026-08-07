@@ -1,25 +1,18 @@
 class Solution:
     def maximumProduct(self, nums: List[int], m: int) -> int:
-        n = len(nums)
-        maxProd = float('-inf')
+        N = len(nums)
+        maxLeft = minLeft = nums[0]
 
-        suffixMax = [0]*n
-        suffixMin = [0]*n
+        # Start off being at least m-1 distance apart (this gives subsequence of size m)
+        max_product = -inf
+        for idx in range(m-1, N):
+            rightVal = nums[idx]
 
-        suffixMax[-1] = suffixMin[-1] = nums[-1]
+            # Check to see if there are new updates to maxLeft and minLeft
+            maxLeft = max(maxLeft, nums[idx+1-m])
+            minLeft = min(minLeft, nums[idx+1-m])
 
+            # Check to see if there is a new max product
+            max_product = max(max_product, rightVal * maxLeft, rightVal * minLeft)
 
-        for i in range(n-2, -1, -1):
-            suffixMax[i] = max(suffixMax[i+1], nums[i])
-            suffixMin[i] = min(suffixMin[i+1], nums[i])
-
-        for i in range(n-m+1):
-            if nums[i] > 0:
-                p = nums[i] * suffixMax[i+m-1]
-            else:
-                p = nums[i] * suffixMin[i+m-1]
-            
-            if p > maxProd:
-                maxProd = p
-        
-        return maxProd
+        return max_product
