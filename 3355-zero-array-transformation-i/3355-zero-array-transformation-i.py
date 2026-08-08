@@ -13,7 +13,7 @@ class Solution:
             d[i] += d[i-1]
         
         for i in range(n):
-            if nums[i] + d[i] > 0:
+            if nums[i] > -d[i]:
                 return False
         
         return True
