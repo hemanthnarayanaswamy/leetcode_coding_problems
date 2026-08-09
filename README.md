@@ -1877,6 +1877,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3676-smallest-number-with-all-set-bits) |
 | [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
+| [3827-count-monobit-integers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3827-count-monobit-integers) |
 ## Binary Search
 |  |
 | ------- |
@@ -2029,6 +2030,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3713-longest-balanced-substring-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3713-longest-balanced-substring-i) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 | [3804-number-of-centered-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3804-number-of-centered-subarrays) |
+| [3827-count-monobit-integers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3827-count-monobit-integers) |
 | [4112-maximize-expression-of-three-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4112-maximize-expression-of-three-elements) |
 ## Divide and Conquer
 |  |
