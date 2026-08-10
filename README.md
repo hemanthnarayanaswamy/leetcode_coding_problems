@@ -153,6 +153,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3550-smallest-index-with-digit-sum-equal-to-index) |
 | [3553-check-if-two-chessboard-squares-have-the-same-color](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3553-check-if-two-chessboard-squares-have-the-same-color) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
+| [3560-find-minimum-log-transportation-cost](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3560-find-minimum-log-transportation-cost) |
 | [3567-convert-date-to-binary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3567-convert-date-to-binary) |
 | [3577-count-the-number-of-computer-unlocking-permutations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3577-count-the-number-of-computer-unlocking-permutations) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
