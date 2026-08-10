@@ -886,6 +886,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3760-maximum-substrings-with-distinct-start](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3760-maximum-substrings-with-distinct-start) |
 | [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3761-minimum-absolute-distance-between-mirror-pairs) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
+| [3803-count-residue-prefixes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3803-count-residue-prefixes) |
 | [3804-number-of-centered-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3804-number-of-centered-subarrays) |
 | [3871-minimum-deletions-for-at-most-k-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3871-minimum-deletions-for-at-most-k-distinct-characters) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3872-find-most-frequent-vowel-and-consonant) |
@@ -1173,6 +1174,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3775-reverse-words-with-same-vowel-count](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3775-reverse-words-with-same-vowel-count) |
 | [3794-reverse-string-prefix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3794-reverse-string-prefix) |
 | [3798-largest-even-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3798-largest-even-number) |
+| [3803-count-residue-prefixes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3803-count-residue-prefixes) |
 | [3811-reverse-degree-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3811-reverse-degree-of-a-string) |
 | [3813-vowel-consonant-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3813-vowel-consonant-score) |
 | [3823-reverse-letters-then-special-characters-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3823-reverse-letters-then-special-characters-in-a-string) |
