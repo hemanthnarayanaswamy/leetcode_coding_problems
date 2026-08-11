@@ -2,11 +2,14 @@ class Solution:
     def constructRectangle(self, area: int) -> List[int]:
         L, W = area, 1
         
-        for i in range(1, int(math.sqrt(area))+1):
+        for i in range(int(area ** 0.5), 0, -1):
+            if area % i:
+                continue
+
             w = i 
             l = area // i
 
-            if l >= w and (l * w) == area and abs(l - w) < abs(L - W):
+            if abs(l - w) < abs(L - W):
                 L = l
                 W = w
         
