@@ -1,7 +1,6 @@
 class Solution:
     def removeSubstring(self, s: str, k: int) -> str:
         stack = []
-        res = ''
 
         for c in s:
             if stack and stack[-1][0] == c:
@@ -9,20 +8,21 @@ class Solution:
             else:
                 stack.append([c, 1])
 
-            if len(stack) >= 2:
-                if stack[-2][0] == '(' and min(stack[-1][1], stack[-2][1]) >= k:
+            while len(stack) >= 2:
+                prev = stack[-2]
+                curr = stack[-1]
+
+                if prev[0] == '(' and prev[1] >= k and curr[1] >= k:
                     stack.pop()
-                    if stack[-1][1] == k:
+
+                    if prev[1] == k:
                         stack.pop()
                     else:
-                        stack[-1][1] -= k
+                        prev[1] -= k
+                else:
+                    break
         
-        for c, n in stack:
-            res += c * n
+        return ''.join(ch * cnt for ch, cnt in stack)
         
-        return res
 
-
-
-
-
+            
