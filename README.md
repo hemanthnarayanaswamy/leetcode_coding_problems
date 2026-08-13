@@ -2162,6 +2162,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0111-minimum-depth-of-binary-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0111-minimum-depth-of-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0145-binary-tree-postorder-traversal) |
+| [0543-diameter-of-binary-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0543-diameter-of-binary-tree) |
 | [0938-range-sum-of-bst](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0938-range-sum-of-bst) |
 | [2438-find-closest-node-to-given-two-nodes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2438-find-closest-node-to-given-two-nodes) |
 ## Graph
@@ -2323,6 +2324,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0111-minimum-depth-of-binary-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0111-minimum-depth-of-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0145-binary-tree-postorder-traversal) |
+| [0543-diameter-of-binary-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0543-diameter-of-binary-tree) |
 | [0700-search-in-a-binary-search-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0700-search-in-a-binary-search-tree) |
 | [0938-range-sum-of-bst](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0938-range-sum-of-bst) |
 | [2236-root-equals-sum-of-children](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2236-root-equals-sum-of-children) |
@@ -2334,6 +2336,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0111-minimum-depth-of-binary-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0111-minimum-depth-of-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0145-binary-tree-postorder-traversal) |
+| [0543-diameter-of-binary-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0543-diameter-of-binary-tree) |
 | [0700-search-in-a-binary-search-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0700-search-in-a-binary-search-tree) |
 | [0938-range-sum-of-bst](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0938-range-sum-of-bst) |
 | [2236-root-equals-sum-of-children](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2236-root-equals-sum-of-children) |
@@ -2355,4 +2358,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0700-search-in-a-binary-search-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0700-search-in-a-binary-search-tree) |
 | [0938-range-sum-of-bst](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0938-range-sum-of-bst) |
+## DP on Trees
+|  |
+| ------- |
+| [0543-diameter-of-binary-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0543-diameter-of-binary-tree) |
 <!---LeetCode Topics End-->
