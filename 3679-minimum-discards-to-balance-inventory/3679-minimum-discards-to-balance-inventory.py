@@ -7,7 +7,7 @@ class Solution:
         for curr, item in enumerate(arrivals):
             inventory[item] += 1
 
-            while curr - start + 1 > w:
+            if curr - start + 1 > w:
                 if start not in discardIdx:
                     inventory[arrivals[start]] -= 1
                 start += 1
