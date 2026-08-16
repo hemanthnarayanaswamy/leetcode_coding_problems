@@ -9,8 +9,9 @@ class Solution:
 
             m = abs(x - x2) + abs(y - y2)
 
-            if m <= r and m < dist:
-                dist = m
-                res = i
+            if m <= r:
+                if m < dist:
+                    dist = m
+                    res = i
         
         return res
