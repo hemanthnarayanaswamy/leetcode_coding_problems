@@ -613,6 +613,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3446-find-the-number-of-good-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3446-find-the-number-of-good-pairs-i) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
 | [3471-minimum-average-of-smallest-and-largest-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-minimum-average-of-smallest-and-largest-elements) |
+| [3471-find-the-largest-almost-missing-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-find-the-largest-almost-missing-integer) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3476-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3476-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3488-closest-equal-element-queries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3488-closest-equal-element-queries) |
@@ -867,6 +868,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3421-count-pairs-that-form-a-complete-day-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3421-count-pairs-that-form-a-complete-day-i) |
 | [3446-find-the-number-of-good-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3446-find-the-number-of-good-pairs-i) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3455-minimum-length-of-string-after-operations) |
+| [3471-find-the-largest-almost-missing-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-find-the-largest-almost-missing-integer) |
 | [3488-closest-equal-element-queries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3488-closest-equal-element-queries) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3519-find-the-number-of-winning-players](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3519-find-the-number-of-winning-players) |
