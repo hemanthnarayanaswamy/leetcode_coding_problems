@@ -1,31 +1,24 @@
 class Solution:
     def maxNumberOfFamilies(self, n: int, reservedSeats: List[List[int]]) -> int:
         bookings = defaultdict(set)
-        reservedRows = set()
-
+        left = {2, 3, 4, 5}
+        middle = {4, 5, 6, 7}
+        right = {6, 7, 8, 9}
+        
         for r, s in reservedSeats:
-            bookings[r].add(s)
-            reservedRows.add(r)
-        # print(bookings)
+            if s != 1 and s != 10:
+                bookings[r].add(s)
 
-        ans = (n - len(reservedRows)) * 2
-        for r in reservedRows:
-            if r in bookings:
-                row = [1] * 11
-                v = 0
-                for s in bookings[r]:
-                    row[s] = 0
-                #print(r, row)
-                if sum(row[2:6]) == 4:
-                    v += 4
-                if sum(row[6:10]) == 4:
-                    v += 1
-                if sum(row[4:8]) == 4:
-                    v += 2
-                
-                if v == 7 or v == 5:
-                    ans += 2
-                elif v != 0:
-                    ans += 1
+        ans = (n - len(bookings)) * 2
+
+        for r, seats in bookings.items():
+            left_available = seats.isdisjoint(left)
+            right_available = seats.isdisjoint(right)
+            middle_available = seats.isdisjoint(middle)
+            
+            if left_available and right_available:
+                ans += 2
+            elif left_available or middle_available or right_available:
+                ans += 1
 
         return ans
