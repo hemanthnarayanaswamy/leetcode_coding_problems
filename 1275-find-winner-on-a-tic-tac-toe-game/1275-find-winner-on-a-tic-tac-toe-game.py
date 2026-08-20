@@ -1,64 +1,22 @@
 class Solution:
     def tictactoe(self, moves: List[List[int]]) -> str:
-        rows = defaultdict(list)
-        cols = defaultdict(list)
-
-        A_win = ['x', 'x', 'x']
-        B_win = ['o', 'o', 'o']
+        rows = [0] * 3
+        cols = [0] * 3
+        diag = 0
+        anti_diag = 0
         
-        turn = False
-
-        diagonal = []
-        antidiagonal = []
-
-        for r, c in moves:
-            play = 'o' if turn else 'x'
-            turn = not turn
-            rows[r].append(play)
-            cols[c].append(play)
+        for i, (r, c) in enumerate(moves):
+            val = 1 if i % 2 else -1
+            
+            rows[r] += val
+            cols[c] += val
             
             if r == c:
-                diagonal.append(play)
-            
+                diag += val
             if r + c == 2:
-                antidiagonal.append(play)
-        
-        for v in rows.values():
-            if v == A_win:
-                return 'A'
-            
-            if v == B_win:
-                return 'B'
-        
-        for v in cols.values():
-            if v == A_win:
-                return 'A'
-            
-            if v == B_win:
-                return 'B'
-
-        if diagonal == A_win:
-            return 'A'
-        
-        if diagonal == B_win:
-            return 'B'
-
-        if antidiagonal == A_win:
-            return 'A'
-
-        if antidiagonal == B_win:
-            return 'B'
-        
-        for v in rows.values():
-            if len(v) < 3:
-                return "Pending"
-        
-        for v in cols.values():
-            if len(v) < 3:
-                return "Pending"
-        
-        return 'Draw'
-
-
-        
-
+                anti_diag += val
+                
+            if abs(rows[r]) == 3 or abs(cols[c]) == 3 or abs(diag) == 3 or abs(anti_diag) == 3:
+                return "A" if val == -1 else "B"
+                
+        return "Draw" if len(moves) == 9 else "Pending"
