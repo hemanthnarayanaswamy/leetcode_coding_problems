@@ -569,6 +569,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3038-maximum-number-of-operations-with-the-same-score-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3038-maximum-number-of-operations-with-the-same-score-i) |
 | [3042-count-prefix-and-suffix-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3042-count-prefix-and-suffix-pairs-i) |
 | [3044-minimum-operations-to-collect-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3044-minimum-operations-to-collect-elements) |
+| [3069-distribute-elements-into-two-arrays-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3069-distribute-elements-into-two-arrays-i) |
 | [3074-apple-redistribution-into-boxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3074-apple-redistribution-into-boxes) |
 | [3075-maximize-happiness-of-selected-children](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3075-maximize-happiness-of-selected-children) |
 | [3093-sum-of-values-at-indices-with-k-set-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3093-sum-of-values-at-indices-with-k-set-bits) |
@@ -1271,6 +1272,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [2974-minimum-number-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2974-minimum-number-game) |
 | [3038-maximum-number-of-operations-with-the-same-score-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3038-maximum-number-of-operations-with-the-same-score-i) |
+| [3069-distribute-elements-into-two-arrays-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3069-distribute-elements-into-two-arrays-i) |
 | [3220-count-tested-devices-after-test-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3220-count-tested-devices-after-test-operations) |
 | [3222-find-the-winning-player-in-coin-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3222-find-the-winning-player-in-coin-game) |
 | [3311-ant-on-the-boundary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3311-ant-on-the-boundary) |
