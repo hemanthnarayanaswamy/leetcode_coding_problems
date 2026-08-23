@@ -8,5 +8,4 @@ class Solution:
             print(b)
             binaryStr += ('0'+b[2:])
         
-        print(binaryStr)
         return binaryStr == binaryStr[::-1]
