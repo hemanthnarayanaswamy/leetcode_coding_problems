@@ -1,10 +1,10 @@
 class Solution:
     def isPalindromic(self, s: str) -> bool:
-        binaryStr = ''
+        binary = ''
 
-        for c in s:
-            key = ord(c)
-            b = bin(key)
-            binaryStr += ('0'+b[2:]) # to make it 8 bit representation
-        
-        return binaryStr == binaryStr[::-1]
+        for letter in s:
+            ascii_value = bin(ord(letter))[2:]
+            ascii_value = '0' * (8-len(ascii_value)) + ascii_value
+            binary = binary + ascii_value
+            
+        return binary == binary[::-1]
