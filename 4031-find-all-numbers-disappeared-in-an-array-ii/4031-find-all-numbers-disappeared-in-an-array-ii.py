@@ -1,28 +1,19 @@
 class Solution:
     def findDisappearedNumbers(self, nums: list[int], lower: int, upper: int) -> list[list[int]]:
         nums = set(nums)
-        present = set()
+        result = []
+        start = None
 
-        for i in range(lower, upper+1):
-            if i in nums:
-                present.add(i)
-        
-        res = []
-        start = lower
+        for number in range(lower, upper + 1):
+            if number not in nums:
+                if start is None:
+                    start = number
+            elif start is not None:
+                result.append([start, number - 1])
+                start = None
 
-        while start in present and start <= upper:
-            start += 1
+        # Handle a missing range that continues through upper
+        if start is not None:
+            result.append([start, upper])
 
-        end = start
-
-        while end <= upper:
-            while end not in present and end <= upper:
-                end += 1
-            else:
-                res.append([start, end-1])
-                start = end
-                while start in present and start <= upper:
-                    start += 1
-                end = start
-        
-        return res
+        return result
