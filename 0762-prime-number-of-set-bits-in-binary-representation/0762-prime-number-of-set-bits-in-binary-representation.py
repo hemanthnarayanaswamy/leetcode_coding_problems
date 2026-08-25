@@ -4,9 +4,7 @@ class Solution:
         res = 0
 
         for num in range(left, right+1):
-            freq = Counter(bin(num)[2:])
-
-            if freq['1'] in primeNums:
+            if bin(num).count('1') in primeNums:
                 res += 1
         
         return res
