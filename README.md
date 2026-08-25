@@ -40,6 +40,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0539-minimum-time-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0539-minimum-time-difference) |
 | [0628-maximum-product-of-three-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0628-maximum-product-of-three-numbers) |
 | [0728-self-dividing-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0728-self-dividing-numbers) |
+| [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [0788-rotated-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0788-rotated-digits) |
 | [0830-largest-triangle-area](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0830-largest-triangle-area) |
 | [0908-smallest-range-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0908-smallest-range-i) |
@@ -1878,6 +1879,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0461-hamming-distance](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0461-hamming-distance) |
 | [0476-number-complement](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0476-number-complement) |
 | [0693-binary-number-with-alternating-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0693-binary-number-with-alternating-bits) |
+| [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [0861-flipping-an-image](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0861-flipping-an-image) |
 | [1009-complement-of-base-10-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1009-complement-of-base-10-integer) |
 | [1054-complement-of-base-10-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1054-complement-of-base-10-integer) |
@@ -2377,4 +2379,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0543-diameter-of-binary-tree](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0543-diameter-of-binary-tree) |
+## Primality Test
+|  |
+| ------- |
+| [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 <!---LeetCode Topics End-->
