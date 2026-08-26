@@ -1,11 +1,12 @@
 class Solution:
     def duplicateNumbersXOR(self, nums: List[int]) -> int:
-        freq = Counter(nums)
-
+        seen = set()
         res = 0
 
-        for k, v in freq.items():
-            if v == 2:
-                res ^= k
+        for num in nums:
+            if num in seen:
+                res ^= num
+            else:
+                seen.add(num)
         
         return res
