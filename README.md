@@ -1139,6 +1139,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2881-split-strings-by-separator](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2881-split-strings-by-separator) |
 | [2886-faulty-keyboard](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2886-faulty-keyboard) |
 | [2887-sort-vowels-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2887-sort-vowels-in-a-string) |
+| [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
 | [2977-check-if-a-string-is-an-acronym-of-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2977-check-if-a-string-is-an-acronym-of-words) |
 | [2999-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2999-check-if-strings-can-be-made-equal-with-operations-i) |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
@@ -1986,6 +1987,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2760-longest-even-odd-subarray-with-threshold](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2760-longest-even-odd-subarray-with-threshold) |
 | [2779-maximum-beauty-of-an-array-after-applying-operation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2779-maximum-beauty-of-an-array-after-applying-operation) |
 | [2799-count-complete-subarrays-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2799-count-complete-subarrays-in-an-array) |
+| [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2962-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2962-count-subarrays-where-max-element-appears-at-least-k-times) |
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3090-maximum-length-substring-with-two-occurrences) |
