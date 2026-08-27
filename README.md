@@ -248,6 +248,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0599-minimum-index-sum-of-two-lists](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0599-minimum-index-sum-of-two-lists) |
 | [0628-maximum-product-of-three-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0628-maximum-product-of-three-numbers) |
 | [0643-maximum-average-subarray-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0643-maximum-average-subarray-i) |
+| [0661-image-smoother](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0661-image-smoother) |
 | [0665-non-decreasing-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0665-non-decreasing-array) |
 | [0674-longest-continuous-increasing-subsequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0674-longest-continuous-increasing-subsequence) |
 | [0682-baseball-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0682-baseball-game) |
@@ -2011,6 +2012,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0048-rotate-image](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0048-rotate-image) |
 | [0073-set-matrix-zeroes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0073-set-matrix-zeroes) |
 | [0498-diagonal-traverse](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0498-diagonal-traverse) |
+| [0661-image-smoother](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0661-image-smoother) |
 | [0807-max-increase-to-keep-city-skyline](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0807-max-increase-to-keep-city-skyline) |
 | [0861-flipping-an-image](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0861-flipping-an-image) |
 | [0898-transpose-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0898-transpose-matrix) |
