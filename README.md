@@ -1202,6 +1202,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3871-minimum-deletions-for-at-most-k-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3871-minimum-deletions-for-at-most-k-distinct-characters) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 | [3889-mirror-frequency-distance](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3889-mirror-frequency-distance) |
+| [4026-maximum-gap-between-stations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4026-maximum-gap-between-stations) |
 ## Trie
 |  |
 | ------- |
@@ -1412,6 +1413,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3794-reverse-string-prefix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3794-reverse-string-prefix) |
 | [3823-reverse-letters-then-special-characters-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3823-reverse-letters-then-special-characters-in-a-string) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3867-sum-of-gcd-of-formed-pairs) |
+| [4026-maximum-gap-between-stations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4026-maximum-gap-between-stations) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -1846,6 +1848,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 | [3871-minimum-deletions-for-at-most-k-distinct-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3871-minimum-deletions-for-at-most-k-distinct-characters) |
 | [3997-maximize-sum-of-at-most-k-distinct-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3997-maximize-sum-of-at-most-k-distinct-elements) |
+| [4026-maximum-gap-between-stations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4026-maximum-gap-between-stations) |
 | [4112-maximize-expression-of-three-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/4112-maximize-expression-of-three-elements) |
 ## Heap (Priority Queue)
 |  |
