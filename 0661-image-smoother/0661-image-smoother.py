@@ -5,15 +5,13 @@ class Solution:
         res = [[0]*n for _ in range(m)]
 
         def getAvg(x, y):
-            count = 0
-            total = 0
-
+            count = total = 0
             for i in range(max(0, x-1), min(x+2, m)):
                 for j in range(max(0, y-1), min(y+2, n)):
                     count += 1
                     total += img[i][j]
-            
-            return math.floor(total/count)
+    
+            return total//count
         
         for i in range(m):
             for j in range(n):
