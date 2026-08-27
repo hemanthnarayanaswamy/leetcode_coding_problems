@@ -1,20 +1,29 @@
 class Solution:
     def imageSmoother(self, img: List[List[int]]) -> List[List[int]]:
-        m = len(img)
-        n = len(img[0])
-        res = [[0]*n for _ in range(m)]
+        rows = len(img)
+        cols = len(img[0])
+        result = [[0] * cols for _ in range(rows)]
 
-        def getAvg(x, y):
-            count = total = 0
-            for i in range(max(0, x-1), min(x+2, m)):
-                for j in range(max(0, y-1), min(y+2, n)):
-                    count += 1
-                    total += img[i][j]
-    
-            return total//count
-        
-        for i in range(m):
-            for j in range(n):
-                res[i][j] = getAvg(i, j)
+        def get_average(row, col):
+            row_start = max(0, row - 1)
+            row_end = min(rows, row + 1)
 
-        return res
+            col_start = max(0, col - 1)
+            col_end = min(cols, col + 1)
+
+            total = 0
+            points = 0
+
+            for current_row in img[row_start:row_end+1]:
+                neighbors = current_row[col_start:col_end+1]
+
+                total += sum(neighbors)
+                points += len(neighbors)
+
+            return total // points
+
+        for row in range(rows):
+            for col in range(cols):
+                result[row][col] = get_average(row, col)
+
+        return result
