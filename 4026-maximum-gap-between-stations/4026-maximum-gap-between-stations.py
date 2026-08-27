@@ -3,7 +3,7 @@ class Solution:
         n1 = len(skill)
         n2 = len(station)
 
-        if n1 == 1:
+        if n1 <= 1:
             return 0
 
         earliest = [0] * n1
@@ -23,9 +23,9 @@ class Solution:
                 r1 -= 1
             r2 -= 1
         
-        gap = 0
+        maxGap = 0
         for i in range(1, n1):
-            gap = max(gap, latest[i]-earliest[i-1])
+            maxGap = max(maxGap, latest[i]-earliest[i-1])
         
-        return gap
+        return maxGap
 
