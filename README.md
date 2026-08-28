@@ -51,6 +51,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1018-largest-perimeter-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1018-largest-perimeter-triangle) |
 | [1037-valid-boomerang](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1037-valid-boomerang) |
 | [1094-matrix-cells-in-distance-order](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1094-matrix-cells-in-distance-order) |
+| [1154-day-of-the-year](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1154-day-of-the-year) |
 | [1175-prime-arrangements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1175-prime-arrangements) |
 | [1195-distribute-candies-to-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1195-distribute-candies-to-people) |
 | [1232-check-if-it-is-a-straight-line](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1232-check-if-it-is-a-straight-line) |
@@ -991,6 +992,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1026-string-without-aaa-or-bbb](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1026-string-without-aaa-or-bbb) |
 | [1044-find-common-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1044-find-common-characters) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
+| [1154-day-of-the-year](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1154-day-of-the-year) |
 | [1156-occurrences-after-bigram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1156-occurrences-after-bigram) |
 | [1189-maximum-number-of-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1189-maximum-number-of-balloons) |
 | [1205-defanging-an-ip-address](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1205-defanging-an-ip-address) |
