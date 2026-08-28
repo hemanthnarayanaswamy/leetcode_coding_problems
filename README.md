@@ -951,6 +951,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0434-number-of-segments-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0434-number-of-segments-in-a-string) |
 | [0443-string-compression](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0443-string-compression) |
 | [0451-sort-characters-by-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0451-sort-characters-by-frequency) |
+| [0459-repeated-substring-pattern](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0459-repeated-substring-pattern) |
 | [0482-license-key-formatting](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0482-license-key-formatting) |
 | [0500-keyboard-row](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0500-keyboard-row) |
 | [0520-detect-capital](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0520-detect-capital) |
@@ -2143,6 +2144,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String Matching
 |  |
 | ------- |
+| [0459-repeated-substring-pattern](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0459-repeated-substring-pattern) |
 | [0796-rotate-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0796-rotate-string) |
 | [0812-rotate-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0812-rotate-string) |
 | [1524-string-matching-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1524-string-matching-in-an-array) |
@@ -2408,4 +2410,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0204-count-primes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0204-count-primes) |
+## Z Algorithm
+|  |
+| ------- |
+| [0459-repeated-substring-pattern](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0459-repeated-substring-pattern) |
+## Knuth–Morris–Pratt Algorithm
+|  |
+| ------- |
+| [0459-repeated-substring-pattern](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0459-repeated-substring-pattern) |
 <!---LeetCode Topics End-->
