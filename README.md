@@ -26,6 +26,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0263-ugly-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0263-ugly-number) |
 | [0268-missing-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0268-missing-number) |
 | [0273-integer-to-english-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0273-integer-to-english-words) |
+| [0292-nim-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0292-nim-game) |
 | [0326-power-of-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0342-power-of-four) |
 | [0367-valid-perfect-square](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0367-valid-perfect-square) |
@@ -2138,6 +2139,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Game Theory
 |  |
 | ------- |
+| [0292-nim-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0292-nim-game) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [3222-find-the-winning-player-in-coin-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3222-find-the-winning-player-in-coin-game) |
 | [3462-vowels-game-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3462-vowels-game-in-a-string) |
@@ -2175,6 +2177,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Brainteaser
 |  |
 | ------- |
+| [0292-nim-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0292-nim-game) |
 | [2481-strictly-palindromic-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2481-strictly-palindromic-number) |
 | [3462-vowels-game-in-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3462-vowels-game-in-a-string) |
 | [3577-count-the-number-of-computer-unlocking-permutations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3577-count-the-number-of-computer-unlocking-permutations) |
@@ -2418,4 +2421,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0459-repeated-substring-pattern](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0459-repeated-substring-pattern) |
+## Minimax
+|  |
+| ------- |
+| [0292-nim-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0292-nim-game) |
+## Nim Game
+|  |
+| ------- |
+| [0292-nim-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0292-nim-game) |
+## Impartial Game
+|  |
+| ------- |
+| [0292-nim-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0292-nim-game) |
 <!---LeetCode Topics End-->
