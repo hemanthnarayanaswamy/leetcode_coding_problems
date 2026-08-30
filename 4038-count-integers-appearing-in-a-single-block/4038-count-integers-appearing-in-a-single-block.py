@@ -1,16 +1,20 @@
 class Solution:
     def countSpecialIntegers(self, nums: list[int]) -> int:
         count = 0 
-        freq = defaultdict(list)
+        freq = Counter(nums)
+        l = r = 0
 
-        for i, num in enumerate(nums):
-            freq[num].append(i)
+        while r < len(nums):
+            if nums[l] == nums[r]:
+                r += 1
+            else:
+                if freq[nums[l]] == r - l:
+                    count += 1
+                l = r
         
-        for arr in freq.values():
-            n = len(arr)
-            if max(arr) - min(arr) + 1 == n:
-                count += 1
-        
+        if freq[nums[l]] == r - l:
+            count += 1
+
         return count
                 
 
