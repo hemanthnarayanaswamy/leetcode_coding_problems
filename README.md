@@ -432,6 +432,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2077-largest-number-after-mutating-substring](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2077-largest-number-after-mutating-substring) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2085-array-with-elements-not-equal-to-average-of-neighbors](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2085-array-with-elements-not-equal-to-average-of-neighbors) |
+| [2091-removing-minimum-and-maximum-from-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2091-removing-minimum-and-maximum-from-array) |
 | [2093-check-if-string-is-a-prefix-of-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2093-check-if-string-is-a-prefix-of-array) |
 | [2099-number-of-strings-that-appear-as-substrings-in-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2099-number-of-strings-that-appear-as-substrings-in-word) |
 | [2102-find-the-middle-index-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2102-find-the-middle-index-in-array) |
@@ -1815,6 +1816,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2078-two-furthest-houses-with-different-colors](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2085-array-with-elements-not-equal-to-average-of-neighbors](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2085-array-with-elements-not-equal-to-average-of-neighbors) |
 | [2088-minimum-time-to-type-word-using-special-typewriter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2088-minimum-time-to-type-word-using-special-typewriter) |
+| [2091-removing-minimum-and-maximum-from-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2091-removing-minimum-and-maximum-from-array) |
 | [2139-minimum-moves-to-reach-target-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2139-minimum-moves-to-reach-target-score) |
 | [2148-minimum-number-of-moves-to-seat-everyone](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2148-minimum-number-of-moves-to-seat-everyone) |
 | [2154-minimum-moves-to-convert-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2154-minimum-moves-to-convert-string) |
