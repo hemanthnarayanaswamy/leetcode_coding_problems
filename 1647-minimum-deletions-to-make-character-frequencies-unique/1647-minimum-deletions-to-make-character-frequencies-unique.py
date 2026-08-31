@@ -9,12 +9,10 @@ class Solution:
             return count
 
         for f in arr:
-            while freq_val[f] > 1:
+            while f > 0 and freq_val[f] > 1:
                 count += 1
                 freq_val[f] -= 1
                 f -= 1
-                if f == 0:
-                    break
                 freq_val[f] += 1
         
         return count
