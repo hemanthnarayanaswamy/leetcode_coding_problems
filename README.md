@@ -776,6 +776,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1619-path-crossing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1619-path-crossing) |
 | [1635-number-of-good-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1635-number-of-good-pairs) |
 | [1636-sort-array-by-increasing-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1636-sort-array-by-increasing-frequency) |
+| [1647-minimum-deletions-to-make-character-frequencies-unique](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1647-minimum-deletions-to-make-character-frequencies-unique) |
 | [1726-tuple-with-same-product](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1726-tuple-with-same-product) |
 | [1752-arithmetic-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1752-arithmetic-subarrays) |
 | [1781-sum-of-beauty-of-all-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1781-sum-of-beauty-of-all-substrings) |
@@ -1034,6 +1035,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1592-rearrange-spaces-between-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1592-rearrange-spaces-between-words) |
 | [1619-path-crossing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1619-path-crossing) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1636-number-of-substrings-with-only-1s) |
+| [1647-minimum-deletions-to-make-character-frequencies-unique](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1647-minimum-deletions-to-make-character-frequencies-unique) |
 | [1651-shuffle-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1651-shuffle-string) |
 | [1666-make-the-string-great](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1666-make-the-string-great) |
 | [1694-reformat-phone-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1694-reformat-phone-number) |
@@ -1503,6 +1505,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1604-least-number-of-unique-integers-after-k-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1604-least-number-of-unique-integers-after-k-removals) |
 | [1626-can-make-arithmetic-progression-from-sequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1626-can-make-arithmetic-progression-from-sequence) |
 | [1636-sort-array-by-increasing-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1636-sort-array-by-increasing-frequency) |
+| [1647-minimum-deletions-to-make-character-frequencies-unique](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1647-minimum-deletions-to-make-character-frequencies-unique) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [1742-widest-vertical-area-between-two-points-containing-no-points](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1742-widest-vertical-area-between-two-points-containing-no-points) |
@@ -1793,6 +1796,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1529-minimum-suffix-flips](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1529-minimum-suffix-flips) |
 | [1530-check-if-a-string-can-break-another-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1530-check-if-a-string-can-break-another-string) |
 | [1604-least-number-of-unique-integers-after-k-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1604-least-number-of-unique-integers-after-k-removals) |
+| [1647-minimum-deletions-to-make-character-frequencies-unique](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1647-minimum-deletions-to-make-character-frequencies-unique) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1700-minimum-time-to-make-rope-colorful) |
