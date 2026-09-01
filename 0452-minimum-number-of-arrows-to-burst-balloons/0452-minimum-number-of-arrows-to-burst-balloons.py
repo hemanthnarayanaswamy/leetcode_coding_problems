@@ -13,4 +13,6 @@ class Solution:
                 a1 = max(a1, b1)
                 a2 = min(a2, b2)
         
-        return arrows + 1
+        arrows += 1
+
+        return arrows
