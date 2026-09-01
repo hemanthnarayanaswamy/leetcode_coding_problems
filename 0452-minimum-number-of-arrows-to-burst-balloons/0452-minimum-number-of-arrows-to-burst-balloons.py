@@ -1,7 +1,7 @@
 class Solution:
     def findMinArrowShots(self, points: List[List[int]]) -> int:
         points.sort(key=lambda x: (x[0], x[1]))
-        arrows = 0
+        arrows = 1
         a1, a2 = points[0]
 
         for i in range(1, len(points)):
@@ -12,7 +12,5 @@ class Solution:
             else:
                 a1 = max(a1, b1)
                 a2 = min(a2, b2)
-        
-        arrows += 1
 
         return arrows
