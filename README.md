@@ -232,6 +232,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0350-intersection-of-two-arrays-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0414-third-maximum-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0414-third-maximum-number) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0442-find-all-duplicates-in-an-array) |
+| [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [0455-assign-cookies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0455-assign-cookies) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
@@ -1456,6 +1457,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0389-find-the-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0389-find-the-difference) |
 | [0414-third-maximum-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0414-third-maximum-number) |
 | [0451-sort-characters-by-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0451-sort-characters-by-frequency) |
+| [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0455-assign-cookies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0455-assign-cookies) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0506-relative-ranks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0506-relative-ranks) |
@@ -1770,6 +1772,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0011-container-with-most-water](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0011-container-with-most-water) |
 | [0402-remove-k-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0402-remove-k-digits) |
 | [0409-longest-palindrome](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0409-longest-palindrome) |
+| [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0455-assign-cookies](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0455-assign-cookies) |
 | [0561-array-partition](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0561-array-partition) |
 | [0680-valid-palindrome-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0680-valid-palindrome-ii) |
