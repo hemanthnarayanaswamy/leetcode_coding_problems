@@ -1,14 +1,16 @@
 class Solution:
     def getSmallestString(self, n: int, k: int) -> str:
-        s = 'abcdefghijklmnopqrstuvwxyz'
-        res = ['a'] * n
-        p = 25
-
-        for i in range(len(res)):
-            while p + n > k:
-                p -= 1
-            res[i] = s[p]
-            k -= (p+1)
-            n -= 1
+        s = ['a'] * n
+        k -= n
         
-        return ''.join(res[::-1])
+        i = n-1
+        while k:
+            if k >= 25:
+                s[i] = 'z'
+                k -= 25
+            else:
+                s[i] = chr(ord('a')+k)
+                k = 0
+            i -= 1
+
+        return "".join(s)
