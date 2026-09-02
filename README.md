@@ -1041,6 +1041,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1636-number-of-substrings-with-only-1s](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1647-minimum-deletions-to-make-character-frequencies-unique](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1647-minimum-deletions-to-make-character-frequencies-unique) |
 | [1651-shuffle-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1651-shuffle-string) |
+| [1663-smallest-string-with-a-given-numeric-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1663-smallest-string-with-a-given-numeric-value) |
 | [1666-make-the-string-great](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1666-make-the-string-great) |
 | [1694-reformat-phone-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1694-reformat-phone-number) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1700-minimum-time-to-make-rope-colorful) |
@@ -1803,6 +1804,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1530-check-if-a-string-can-break-another-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1530-check-if-a-string-can-break-another-string) |
 | [1604-least-number-of-unique-integers-after-k-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1604-least-number-of-unique-integers-after-k-removals) |
 | [1647-minimum-deletions-to-make-character-frequencies-unique](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1647-minimum-deletions-to-make-character-frequencies-unique) |
+| [1663-smallest-string-with-a-given-numeric-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1663-smallest-string-with-a-given-numeric-value) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1700-minimum-time-to-make-rope-colorful) |
