@@ -183,6 +183,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3859-maximum-product-of-two-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3859-maximum-product-of-two-digits) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 | [3875-construct-uniform-parity-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3875-construct-uniform-parity-array-i) |
+| [3876-construct-uniform-parity-array-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3876-construct-uniform-parity-array-ii) |
 | [3994-find-the-least-frequent-digit](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3994-find-the-least-frequent-digit) |
 ## Array
 |  |
@@ -685,6 +686,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3846-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3846-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 | [3875-construct-uniform-parity-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3875-construct-uniform-parity-array-i) |
+| [3876-construct-uniform-parity-array-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3876-construct-uniform-parity-array-ii) |
 | [3975-filter-occupied-intervals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3975-filter-occupied-intervals) |
 | [3994-find-the-least-frequent-digit](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3994-find-the-least-frequent-digit) |
 | [3997-maximize-sum-of-at-most-k-distinct-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3997-maximize-sum-of-at-most-k-distinct-elements) |
