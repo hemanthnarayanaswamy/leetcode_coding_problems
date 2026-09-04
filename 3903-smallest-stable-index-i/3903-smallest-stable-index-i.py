@@ -1,17 +1,13 @@
 class Solution:
     def firstStableIndex(self, nums: list[int], k: int) -> int:
-        prefixMax = []
+        n = len(nums)
         numMax = 0
-        numMin = float('inf')
-        idx = -1
 
-        for i in range(len(nums)):
-            numMax = max(numMax, nums[i])
-            prefixMax.append(numMax)
+        for i, num in enumerate(nums):
+                numMax = max(numMax, num)
+                numMin = min(nums[i:])
 
-        for i in range(len(nums)-1, -1, -1):
-            numMin = min(numMin, nums[i])
-            if prefixMax[i] - numMin <= k:
-                idx = i
-
-        return idx
+                if numMax - numMin <= k:
+                    return i
+        
+        return -1
