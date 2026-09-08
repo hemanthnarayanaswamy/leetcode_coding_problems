@@ -656,6 +656,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3678-smallest-absent-positive-greater-than-average](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3678-smallest-absent-positive-greater-than-average) |
 | [3679-minimum-discards-to-balance-inventory](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3679-minimum-discards-to-balance-inventory) |
 | [3685-count-subarrays-of-length-three-with-a-condition](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3685-count-subarrays-of-length-three-with-a-condition) |
+| [3688-bitwise-or-of-even-numbers-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3688-bitwise-or-of-even-numbers-in-an-array) |
 | [3689-maximum-total-subarray-value-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3689-maximum-total-subarray-value-i) |
 | [3691-minimum-operations-to-make-columns-strictly-increasing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3691-minimum-operations-to-make-columns-strictly-increasing) |
 | [3697-compute-decimal-representation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3697-compute-decimal-representation) |
@@ -1322,6 +1323,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3612-process-string-with-special-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3612-process-string-with-special-operations-i) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3616-make-array-elements-equal-to-zero) |
 | [3679-minimum-discards-to-balance-inventory](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3679-minimum-discards-to-balance-inventory) |
+| [3688-bitwise-or-of-even-numbers-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3688-bitwise-or-of-even-numbers-in-an-array) |
 | [3703-remove-k-balanced-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3703-remove-k-balanced-substrings) |
 | [3726-remove-zeros-in-decimal-representation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3726-remove-zeros-in-decimal-representation) |
 | [3768-check-if-digits-are-equal-in-string-after-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3768-check-if-digits-are-equal-in-string-after-operations-i) |
@@ -1941,6 +1943,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3674-minimum-operations-to-equalize-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3674-minimum-operations-to-equalize-array) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3676-smallest-number-with-all-set-bits) |
+| [3688-bitwise-or-of-even-numbers-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3688-bitwise-or-of-even-numbers-in-an-array) |
 | [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
 | [3827-count-monobit-integers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3827-count-monobit-integers) |
 ## Binary Search
