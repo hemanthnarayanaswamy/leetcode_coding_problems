@@ -3,7 +3,6 @@ class Solution:
         commas = 0
 
         while n:
-            print(n, commas)
             if n < 1000:
                 return commas
             elif 1000 <= n <= 999999:
