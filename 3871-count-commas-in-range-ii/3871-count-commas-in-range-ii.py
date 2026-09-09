@@ -7,8 +7,9 @@ class Solution:
             if n < 1000:
                 return commas
             elif 1000 <= n <= 999999:
-                commas += (n - 999)
-                return commas
+                d = (n - 999)
+                commas += (1*d) 
+                n = 999
             elif 10 ** 6 <= n <= 999999999:
                 d = (n - 999999)
                 commas += (2*d)
