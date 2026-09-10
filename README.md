@@ -1943,6 +1943,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3044-minimum-operations-to-collect-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3044-minimum-operations-to-collect-elements) |
 | [3093-sum-of-values-at-indices-with-k-set-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3093-sum-of-values-at-indices-with-k-set-bits) |
 | [3158-find-the-xor-of-numbers-which-appear-twice](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3158-find-the-xor-of-numbers-which-appear-twice) |
+| [3226-number-of-bit-changes-to-make-two-integers-equal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3226-number-of-bit-changes-to-make-two-integers-equal) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3674-minimum-operations-to-equalize-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3674-minimum-operations-to-equalize-array) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3676-smallest-number-with-all-set-bits) |
