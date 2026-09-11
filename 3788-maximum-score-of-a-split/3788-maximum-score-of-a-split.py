@@ -1,7 +1,7 @@
 class Solution:
     def maximumScore(self, nums: List[int]) -> int:
         n = len(nums)
-        res = []
+        res = float('-inf')
 
         suffixMin = [0]*n
         prefix = 0
@@ -14,7 +14,10 @@ class Solution:
 
         for i in range(n-1):
             prefix += nums[i]
-            res.append(prefix - suffixMin[i])
+            tmp = prefix - suffixMin[i]
+            
+            if tmp > res:
+                res = tmp
         
-        return max(res)
+        return res
         
