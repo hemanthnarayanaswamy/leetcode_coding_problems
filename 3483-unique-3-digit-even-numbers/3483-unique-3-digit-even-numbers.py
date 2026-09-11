@@ -2,7 +2,6 @@ class Solution:
     def totalNumbers(self, digits: List[int]) -> int:
         even = set()
         n = len(digits)
-        res = 0
 
         for i in range(n):
             for j in range(n):
@@ -11,11 +10,8 @@ class Solution:
                         continue
 
                     num = 100*digits[i]+10*digits[j]+digits[k]
-
-                    if num not in even:
-                        res += 1
-                        even.add(num)
+                    even.add(num)
         
-        return res
+        return len(even)
 
 
