@@ -15,11 +15,9 @@ class Solution:
         for i in range(n-1, -1, -1):
             if i < n-1:
                 suffixMin[i] = min(suffixMin[i+1], nums[i+1])
+                res.append(prefixSum[i] - suffixMin[i])
             else:
                 suffixMin[i] = nums[i]
-        
-        for p, s in zip(prefixSum, suffixMin[:-1]):
-            res.append(p - s)
         
         return max(res)
         
