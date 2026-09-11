@@ -1,23 +1,18 @@
 class Solution:
     def maximumScore(self, nums: List[int]) -> int:
-        n = len(nums)
-        res = float('-inf')
+        suff, pref = nums.pop(), sum(nums)  
+        ans = float('-inf')
 
-        suffixMin = [0]*n
-        prefix = 0
+        while nums:  
+            tmp = pref - suff                       
+            if  ans < tmp: 
+                ans = pref - suff
 
-        for i in range(n-1, -1, -1):
-            if i < n-1:
-                suffixMin[i] = min(suffixMin[i+1], nums[i+1])
-            else:
-                suffixMin[i] = nums[i]
+            num = nums.pop()
+            pref-= num     
+                              
+            if  suff > num:
+                suff = num      
 
-        for i in range(n-1):
-            prefix += nums[i]
-            tmp = prefix - suffixMin[i]
-            
-            if tmp > res:
-                res = tmp
-        
-        return res
-        
+        return ans
+    
