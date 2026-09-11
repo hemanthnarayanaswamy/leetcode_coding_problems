@@ -683,6 +683,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3774-absolute-difference-between-maximum-and-minimum-k-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3774-absolute-difference-between-maximum-and-minimum-k-elements) |
 | [3778-transform-array-by-parity](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3778-transform-array-by-parity) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
+| [3788-maximum-score-of-a-split](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3788-maximum-score-of-a-split) |
 | [3804-number-of-centered-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3804-number-of-centered-subarrays) |
 | [3818-minimum-prefix-removal-to-make-array-strictly-increasing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3818-minimum-prefix-removal-to-make-array-strictly-increasing) |
 | [3819-rotate-non-negative-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3819-rotate-non-negative-elements) |
@@ -1741,6 +1742,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3707-equal-score-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3707-equal-score-substrings) |
 | [3731-sum-of-variable-length-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3731-sum-of-variable-length-subarrays) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3737-count-subarrays-with-majority-element-i) |
+| [3788-maximum-score-of-a-split](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3788-maximum-score-of-a-split) |
 | [3903-smallest-stable-index-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3903-smallest-stable-index-i) |
 | [3904-smallest-stable-index-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3904-smallest-stable-index-ii) |
 ## Stack
