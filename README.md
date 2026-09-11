@@ -634,6 +634,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3471-find-the-largest-almost-missing-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-find-the-largest-almost-missing-integer) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3476-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3476-find-minimum-operations-to-make-all-elements-divisible-by-three) |
+| [3483-unique-3-digit-even-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3483-unique-3-digit-even-numbers) |
 | [3488-closest-equal-element-queries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3488-closest-equal-element-queries) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
@@ -898,6 +899,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3446-find-the-number-of-good-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3446-find-the-number-of-good-pairs-i) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3455-minimum-length-of-string-after-operations) |
 | [3471-find-the-largest-almost-missing-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3471-find-the-largest-almost-missing-integer) |
+| [3483-unique-3-digit-even-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3483-unique-3-digit-even-numbers) |
 | [3488-closest-equal-element-queries](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3488-closest-equal-element-queries) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3519-find-the-number-of-winning-players](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3519-find-the-number-of-winning-players) |
@@ -2106,6 +2108,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 | [3221-find-the-peaks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3221-find-the-peaks) |
 | [3345-smallest-divisible-digit-product-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3345-smallest-divisible-digit-product-i) |
+| [3483-unique-3-digit-even-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3483-unique-3-digit-even-numbers) |
 | [3713-longest-balanced-substring-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3713-longest-balanced-substring-i) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 | [3804-number-of-centered-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3804-number-of-centered-subarrays) |
@@ -2205,6 +2208,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0342-power-of-four](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0342-power-of-four) |
 | [0509-fibonacci-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0509-fibonacci-number) |
 | [2487-remove-nodes-from-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2487-remove-nodes-from-linked-list) |
+| [3483-unique-3-digit-even-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3483-unique-3-digit-even-numbers) |
 ## Brainteaser
 |  |
 | ------- |
