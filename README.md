@@ -623,6 +623,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3379-transformed-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3379-transformed-array) |
 | [3386-button-with-longest-push-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3386-button-with-longest-push-time) |
 | [3397-find-the-integer-added-to-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3397-find-the-integer-added-to-array-i) |
+| [3417-zigzag-grid-traversal-with-skip](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3417-zigzag-grid-traversal-with-skip) |
 | [3421-count-pairs-that-form-a-complete-day-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3421-count-pairs-that-form-a-complete-day-i) |
 | [3429-special-array-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3429-special-array-i) |
 | [3430-count-days-without-meetings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3430-count-days-without-meetings) |
@@ -1317,6 +1318,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3336-water-bottles-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3336-water-bottles-ii) |
 | [3347-distribute-elements-into-two-arrays-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3347-distribute-elements-into-two-arrays-i) |
 | [3379-transformed-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3379-transformed-array) |
+| [3417-zigzag-grid-traversal-with-skip](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3417-zigzag-grid-traversal-with-skip) |
 | [3426-minimum-number-of-chairs-in-a-waiting-room](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3426-minimum-number-of-chairs-in-a-waiting-room) |
 | [3433-count-mentions-per-user](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3433-count-mentions-per-user) |
 | [3447-clear-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3447-clear-digits) |
@@ -2084,6 +2086,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3188-find-champion-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3188-find-champion-i) |
 | [3227-find-missing-and-repeated-values](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3227-find-missing-and-repeated-values) |
 | [3239-minimum-number-of-flips-to-make-binary-grid-palindromic-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3239-minimum-number-of-flips-to-make-binary-grid-palindromic-i) |
+| [3417-zigzag-grid-traversal-with-skip](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3417-zigzag-grid-traversal-with-skip) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
 | [3643-flip-square-submatrix-vertically](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3643-flip-square-submatrix-vertically) |
 | [3691-minimum-operations-to-make-columns-strictly-increasing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3691-minimum-operations-to-make-columns-strictly-increasing) |
