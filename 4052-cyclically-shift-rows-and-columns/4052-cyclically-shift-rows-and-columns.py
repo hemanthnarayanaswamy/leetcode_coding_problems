@@ -1,7 +1,9 @@
 class Solution:
     def cyclicShift(self, n: int, grid: list[list[int]], rowShift: list[int], colShift: list[int]) -> list[list[int]]:
         for i in range(n):
-            k = rowShift[i]
+            k = rowShift[i] % n
+            if k == 0:
+                continue
             grid[i] = grid[i][k:]+grid[i][:k]
         
         for j in range(n):
@@ -9,6 +11,7 @@ class Solution:
 
             if k == 0:
                 continue
+
             cols = [grid[i][j] for i in range(n)]
             cols = cols[k:] + cols[:k] 
 
