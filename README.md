@@ -127,6 +127,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2704-maximum-difference-by-remapping-a-digit](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2704-maximum-difference-by-remapping-a-digit) |
 | [2715-k-items-with-the-maximum-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2715-k-items-with-the-maximum-sum) |
 | [2729-check-if-the-number-is-fascinating](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2729-check-if-the-number-is-fascinating) |
+| [2739-total-distance-traveled](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2739-total-distance-traveled) |
 | [2748-calculate-delayed-arrival-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2748-calculate-delayed-arrival-time) |
 | [2752-sum-multiples](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2752-sum-multiples) |
 | [2806-account-balance-after-rounded-purchase](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2806-account-balance-after-rounded-purchase) |
@@ -1306,6 +1307,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2679-count-distinct-numbers-on-board](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2679-count-distinct-numbers-on-board) |
 | [2684-determine-the-winner-of-a-bowling-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2684-determine-the-winner-of-a-bowling-game) |
 | [2698-find-the-array-concatenation-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2698-find-the-array-concatenation-value) |
+| [2739-total-distance-traveled](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2739-total-distance-traveled) |
 | [2785-semi-ordered-permutation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2785-semi-ordered-permutation) |
 | [2791-find-the-losers-of-the-circular-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2791-find-the-losers-of-the-circular-game) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2800-minimum-string-length-after-removing-substrings) |
