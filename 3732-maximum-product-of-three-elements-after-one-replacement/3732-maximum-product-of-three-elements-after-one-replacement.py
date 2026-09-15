@@ -8,7 +8,5 @@ class Solution:
                 m1, m2 = num, m1
             elif num > m2:
                 m2 = num
-        
-        res = 10**5 * m1 * m2
 
-        return res if res > 0 else -res
+        return 10**5 * m1 * m2
