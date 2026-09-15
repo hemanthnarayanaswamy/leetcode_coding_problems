@@ -1,26 +1,14 @@
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
-        nums.sort()
-        res = 10**5
-        
-        l, r = 0, len(nums)-1
-        count = 2
+        m1, m2 = 0, 0
 
-        while count:
-            if abs(nums[l]) > abs(nums[r]):
-                res *= nums[l]
-                l += 1
-            else:
-                res *= nums[r]
-                r -= 1
-            count -= 1
+        for num in nums:
+            num = abs(num)
+            if num > m1:
+                m1, m2 = num, m1
+            elif num > m2:
+                m2 = num
         
-        if res < 0:
-            return -res
-        else:
-            return res
-            
-        
+        res = 10**5 * m1 * m2
 
-
-        
+        return res if res > 0 else -res
