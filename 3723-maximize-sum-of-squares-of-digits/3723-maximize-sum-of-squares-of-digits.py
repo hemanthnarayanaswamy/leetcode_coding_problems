@@ -4,21 +4,18 @@ class Solution:
         if sum > 9 * num:
             return res
         
-        score = 0
-
-        for _ in range(num):
+        for i in range(num):
             if sum >= 9:
                 d = 9
             else:
                 d = sum
 
-            score += (d * d)
             res += str(d)
             sum -= d
 
             if sum == 0:
                 break
         
-        res += '0'*(num - len(res))
+        res += '0'*(num - i - 1)
         return res
             
