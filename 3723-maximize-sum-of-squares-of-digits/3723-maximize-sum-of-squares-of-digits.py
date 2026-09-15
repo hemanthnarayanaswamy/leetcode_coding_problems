@@ -4,18 +4,11 @@ class Solution:
         if sum > 9 * num:
             return res
         
-        for i in range(num):
-            if sum >= 9:
-                d = 9
-            else:
-                d = sum
-
-            res += str(d)
-            sum -= d
-
-            if sum == 0:
-                break
+        while sum > 9:
+            res += str(9)
+            sum -= 9
         
-        res += '0'*(num - i - 1)
+        res += str(sum)
+        res += '0'*(num - len(res))
+
         return res
-            
