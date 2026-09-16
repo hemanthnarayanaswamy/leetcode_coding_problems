@@ -1,13 +1,20 @@
 class Solution:
     def minAllOneMultiple(self, k: int) -> int:
-        num = 1
-        res = 1 
+        if k % 2 == 0: # even k can't divide 11...
+            return -1
 
-        for i in range(1, 8056):
-            if num % k == 0:
-                return res
-            
-            num = (num *10) + 1
-            res += 1
+        seen = {1}
+        num = 1
+        count = 1
+
+        while num % k != 0:
+            num = ((num * 10)+1) % k 
+            if num in seen:
+                return -1
+                
+            seen.add(num)
+            count += 1
         
-        return -1
+        return count
+        
+
