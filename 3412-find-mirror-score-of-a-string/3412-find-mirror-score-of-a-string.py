@@ -5,7 +5,7 @@ class Solution:
 
         for i, w in enumerate(s):
             mir = chr(ord('z')-ord(w)+97)
-            print(mir, score)
+
             if mir in prev and prev[mir]:
                 j = prev[mir].pop()
                 score += i - j
