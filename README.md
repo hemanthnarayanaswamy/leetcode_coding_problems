@@ -613,6 +613,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3251-maximum-area-of-longest-diagonal-rectangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3251-maximum-area-of-longest-diagonal-rectangle) |
 | [3254-find-the-power-of-k-size-subarrays-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3254-find-the-power-of-k-size-subarrays-i) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3262-find-polygon-with-the-largest-perimeter) |
+| [3295-report-spam-message](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3295-report-spam-message) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3311-ant-on-the-boundary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3311-ant-on-the-boundary) |
 | [3321-type-of-triangle](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3321-type-of-triangle) |
@@ -899,6 +900,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3217-delete-nodes-from-linked-list-present-in-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3217-delete-nodes-from-linked-list-present-in-array) |
 | [3227-find-missing-and-repeated-values](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3227-find-missing-and-repeated-values) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3242-count-elements-with-maximum-frequency) |
+| [3295-report-spam-message](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3295-report-spam-message) |
 | [3324-split-the-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3324-split-the-array) |
 | [3353-existence-of-a-substring-in-a-string-and-its-reverse](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3353-existence-of-a-substring-in-a-string-and-its-reverse) |
 | [3375-minimum-operations-to-make-array-values-equal-to-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3375-minimum-operations-to-make-array-values-equal-to-k) |
@@ -1192,6 +1194,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3194-find-words-containing-character](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3194-find-words-containing-character) |
 | [3216-lexicographically-smallest-string-after-a-swap](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3216-lexicographically-smallest-string-after-a-swap) |
 | [3258-count-substrings-that-satisfy-k-constraint-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3258-count-substrings-that-satisfy-k-constraint-i) |
+| [3295-report-spam-message](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3295-report-spam-message) |
 | [3312-number-of-changing-keys](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3312-number-of-changing-keys) |
 | [3324-find-the-sequence-of-strings-appeared-on-the-screen](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3324-find-the-sequence-of-strings-appeared-on-the-screen) |
 | [3353-existence-of-a-substring-in-a-string-and-its-reverse](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3353-existence-of-a-substring-in-a-string-and-its-reverse) |
