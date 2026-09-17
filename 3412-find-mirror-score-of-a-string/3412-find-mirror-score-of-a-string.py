@@ -4,7 +4,8 @@ class Solution:
         score = 0
 
         for i, w in enumerate(s):
-            mir = chr(ord('z')-ord(w)+97)
+            # chr(ord('z')-ord(w)+97)
+            mir = chr(219 - ord(w))
 
             if mir in prev and prev[mir]:
                 j = prev[mir].pop()
