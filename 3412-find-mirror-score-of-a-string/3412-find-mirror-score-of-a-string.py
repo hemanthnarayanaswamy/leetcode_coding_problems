@@ -7,7 +7,7 @@ class Solution:
             # chr(ord('z')-ord(w)+97)
             mir = chr(219 - ord(w))
 
-            if mir in prev and prev[mir]:
+            if prev[mir]:
                 j = prev[mir].pop()
                 score += i - j
             else:
