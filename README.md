@@ -906,6 +906,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3375-minimum-operations-to-make-array-values-equal-to-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3375-minimum-operations-to-make-array-values-equal-to-k) |
 | [3408-count-the-number-of-special-characters-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3408-count-the-number-of-special-characters-i) |
 | [3412-permutation-difference-between-two-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3412-permutation-difference-between-two-strings) |
+| [3412-find-mirror-score-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3412-find-mirror-score-of-a-string) |
 | [3421-count-pairs-that-form-a-complete-day-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3421-count-pairs-that-form-a-complete-day-i) |
 | [3446-find-the-number-of-good-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3446-find-the-number-of-good-pairs-i) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3455-minimum-length-of-string-after-operations) |
@@ -1202,6 +1203,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3396-valid-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3396-valid-word) |
 | [3408-count-the-number-of-special-characters-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3408-count-the-number-of-special-characters-i) |
 | [3412-permutation-difference-between-two-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3412-permutation-difference-between-two-strings) |
+| [3412-find-mirror-score-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3412-find-mirror-score-of-a-string) |
 | [3426-minimum-number-of-chairs-in-a-waiting-room](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3426-minimum-number-of-chairs-in-a-waiting-room) |
 | [3447-clear-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3447-clear-digits) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3455-minimum-length-of-string-after-operations) |
@@ -1330,6 +1332,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3336-water-bottles-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3336-water-bottles-ii) |
 | [3347-distribute-elements-into-two-arrays-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3347-distribute-elements-into-two-arrays-i) |
 | [3379-transformed-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3379-transformed-array) |
+| [3412-find-mirror-score-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3412-find-mirror-score-of-a-string) |
 | [3417-zigzag-grid-traversal-with-skip](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3417-zigzag-grid-traversal-with-skip) |
 | [3426-minimum-number-of-chairs-in-a-waiting-room](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3426-minimum-number-of-chairs-in-a-waiting-room) |
 | [3433-count-mentions-per-user](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3433-count-mentions-per-user) |
@@ -1802,6 +1805,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2487-remove-nodes-from-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2487-remove-nodes-from-linked-list) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2800-minimum-string-length-after-removing-substrings) |
 | [2816-double-a-number-represented-as-a-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2816-double-a-number-represented-as-a-linked-list) |
+| [3412-find-mirror-score-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3412-find-mirror-score-of-a-string) |
 | [3447-clear-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3447-clear-digits) |
 | [3703-remove-k-balanced-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3703-remove-k-balanced-substrings) |
 | [3746-minimum-string-length-after-balanced-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3746-minimum-string-length-after-balanced-removals) |
