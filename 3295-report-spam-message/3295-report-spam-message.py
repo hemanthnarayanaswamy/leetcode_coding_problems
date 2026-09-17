@@ -1,10 +1,10 @@
 class Solution:
     def reportSpam(self, message: List[str], bannedWords: List[str]) -> bool:
         spamCount = 0
-        freq = Counter(bannedWords)
+        banned = set(bannedWords)
 
         for word in message:
-            if word in freq:
+            if word in banned:
                 spamCount += 1
         
         return spamCount >= 2
