@@ -6,5 +6,8 @@ class Solution:
         for word in message:
             if word in banned:
                 spamCount += 1
+            
+            if spamCount >= 2:
+                return True
         
-        return spamCount >= 2
+        return False
