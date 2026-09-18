@@ -15,8 +15,8 @@ class Solution:
                     tmp.append(0)
 
             
-            if tmp and sum(tmp) < deletions:
+            if sum(tmp) < deletions:
                 deletions = sum(tmp)
         
-        return deletions if deletions != float('inf') else 0
+        return deletions
 
