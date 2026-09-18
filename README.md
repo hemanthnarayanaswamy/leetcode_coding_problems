@@ -890,6 +890,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
 | [3034-points-that-intersect-with-cars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3034-points-that-intersect-with-cars) |
 | [3044-minimum-operations-to-collect-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3044-minimum-operations-to-collect-elements) |
+| [3085-minimum-deletions-to-make-string-k-special](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3085-minimum-deletions-to-make-string-k-special) |
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3090-maximum-length-substring-with-two-occurrences) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3120-count-the-number-of-special-characters-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3120-count-the-number-of-special-characters-i) |
@@ -1187,6 +1188,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3019-furthest-point-from-origin](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3019-furthest-point-from-origin) |
 | [3042-count-prefix-and-suffix-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3042-count-prefix-and-suffix-pairs-i) |
 | [3055-maximum-odd-binary-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3055-maximum-odd-binary-number) |
+| [3085-minimum-deletions-to-make-string-k-special](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3085-minimum-deletions-to-make-string-k-special) |
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3090-maximum-length-substring-with-two-occurrences) |
 | [3120-count-the-number-of-special-characters-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3120-count-the-number-of-special-characters-i) |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3121-count-the-number-of-special-characters-ii) |
@@ -1601,6 +1603,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
 | [3074-apple-redistribution-into-boxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3074-apple-redistribution-into-boxes) |
 | [3075-maximize-happiness-of-selected-children](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3075-maximize-happiness-of-selected-children) |
+| [3085-minimum-deletions-to-make-string-k-special](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3085-minimum-deletions-to-make-string-k-special) |
 | [3151-minimum-processing-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3151-minimum-processing-time) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3262-find-polygon-with-the-largest-perimeter) |
@@ -1690,6 +1693,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2833-furthest-point-from-origin](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2833-furthest-point-from-origin) |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
 | [3019-furthest-point-from-origin](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3019-furthest-point-from-origin) |
+| [3085-minimum-deletions-to-make-string-k-special](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3085-minimum-deletions-to-make-string-k-special) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3220-count-tested-devices-after-test-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3220-count-tested-devices-after-test-operations) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3242-count-elements-with-maximum-frequency) |
@@ -1892,6 +1896,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3055-maximum-odd-binary-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3055-maximum-odd-binary-number) |
 | [3074-apple-redistribution-into-boxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3074-apple-redistribution-into-boxes) |
 | [3075-maximize-happiness-of-selected-children](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3075-maximize-happiness-of-selected-children) |
+| [3085-minimum-deletions-to-make-string-k-special](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3085-minimum-deletions-to-make-string-k-special) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3151-minimum-processing-time](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3151-minimum-processing-time) |
 | [3216-lexicographically-smallest-string-after-a-swap](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3216-lexicographically-smallest-string-after-a-swap) |
