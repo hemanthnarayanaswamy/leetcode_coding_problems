@@ -6,9 +6,7 @@ class Solution:
 
         for i in range(n):
             f = flips[i]
-            
-            if f > maxSeen:
-                maxSeen = f
+            maxSeen = max(maxSeen, f)
             
             if maxSeen == i+1:
                 res += 1
