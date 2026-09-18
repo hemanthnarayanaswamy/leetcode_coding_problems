@@ -346,6 +346,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 | [1354-find-players-with-zero-or-one-losses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1354-find-players-with-zero-or-one-losses) |
+| [1375-number-of-times-binary-string-is-prefix-aligned](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1375-number-of-times-binary-string-is-prefix-aligned) |
 | [1378-cells-with-odd-values-in-a-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1378-cells-with-odd-values-in-a-matrix) |
 | [1382-calculate-amount-paid-in-taxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1382-calculate-amount-paid-in-taxes) |
 | [1386-cinema-seat-allocation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1386-cinema-seat-allocation) |
