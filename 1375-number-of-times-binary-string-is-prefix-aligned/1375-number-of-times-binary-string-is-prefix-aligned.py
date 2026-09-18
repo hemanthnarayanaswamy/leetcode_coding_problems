@@ -1,16 +1,10 @@
 class Solution:
-    def numTimesAllBlue(self, flips: list[int]) -> int:
-        n = len(flips)
-        maxSeen = -1
-        res = 0
-
-        for i in range(n):
-            f = flips[i]
-            maxSeen = max(maxSeen, f)
-            
-            if maxSeen == i+1:
-                res += 1
-        
-        return res
-            
-            
+    def numTimesAllBlue(self, flips: List[int]) -> int:
+        ans = 0
+        max_pos = 0
+        for step, pos in enumerate(flips, 1):
+            if pos > max_pos:
+                max_pos = pos
+            if max_pos == step:
+                ans += 1
+        return ans
