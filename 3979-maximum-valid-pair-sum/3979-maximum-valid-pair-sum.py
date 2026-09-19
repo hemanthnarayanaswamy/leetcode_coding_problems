@@ -1,16 +1,13 @@
 class Solution:
     def maxValidPairSum(self, nums: list[int], k: int) -> int:
-        total = 0
         n = len(nums)
-        maxTracker = [0]*n
+        max_total = 0
+        suffix_max = nums[-1]
 
-        for i in range(n-1, -1, -1):
-            if i == n-1:
-                maxTracker[i] = nums[i]
-            else:
-                maxTracker[i] = max(maxTracker[i+1], nums[i])
+        # Iterate backward from the last valid index for i
+        for i in range(n - k - 1, -1, -1):
+            # Update suffix_max to include the valid choice at index i + k
+            suffix_max = max(suffix_max, nums[i + k])
+            max_total = max(max_total, nums[i] + suffix_max)
 
-        for i in range(n-k):
-            total = max(total, nums[i]+maxTracker[i+k])
-            
-        return total
+        return max_total
