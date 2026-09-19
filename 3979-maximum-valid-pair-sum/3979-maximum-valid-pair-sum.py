@@ -10,9 +10,7 @@ class Solution:
             else:
                 maxTracker[i] = max(maxTracker[i+1], nums[i])
 
-        print(maxTracker)
         for i in range(n-k):
-            print(i, i+k)
             total = max(total, nums[i]+maxTracker[i+k])
             
         return total
