@@ -11,7 +11,7 @@ class Solution:
             if s[right-1] == s[right]:
                 repeat += 1
             
-            while repeat > 1 and left < right:
+            while repeat > 1:
                 if s[left] == s[left + 1]:
                     repeat -= 1
                 left += 1
