@@ -1173,6 +1173,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2691-count-vowel-strings-in-ranges](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2697-lexicographically-smallest-palindrome](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2697-lexicographically-smallest-palindrome) |
 | [2727-number-of-senior-citizens](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2727-number-of-senior-citizens) |
+| [2730-find-the-longest-semi-repetitive-substring](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2730-find-the-longest-semi-repetitive-substring) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2800-minimum-string-length-after-removing-substrings) |
 | [2819-remove-trailing-zeros-from-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2819-remove-trailing-zeros-from-a-string) |
 | [2825-minimize-string-length](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2825-minimize-string-length) |
@@ -2064,6 +2065,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [2516-take-k-of-each-character-from-left-and-right](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2516-take-k-of-each-character-from-left-and-right) |
+| [2730-find-the-longest-semi-repetitive-substring](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2730-find-the-longest-semi-repetitive-substring) |
 | [2760-longest-even-odd-subarray-with-threshold](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2760-longest-even-odd-subarray-with-threshold) |
 | [2779-maximum-beauty-of-an-array-after-applying-operation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2779-maximum-beauty-of-an-array-after-applying-operation) |
 | [2799-count-complete-subarrays-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2799-count-complete-subarrays-in-an-array) |
