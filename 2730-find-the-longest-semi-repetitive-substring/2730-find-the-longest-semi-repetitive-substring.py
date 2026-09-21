@@ -1,14 +1,10 @@
 class Solution:
     def longestSemiRepetitiveSubstring(self, s: str) -> int:
         n = len(s)
-
-        if n <= 1:
-            return n
-
         left = maxLen = repeat= 0 
 
-        for right in range(1, n):
-            if s[right-1] == s[right]:
+        for right in range(n):
+            if right > 0 and s[right-1] == s[right]:
                 repeat += 1
             
             while repeat > 1:
