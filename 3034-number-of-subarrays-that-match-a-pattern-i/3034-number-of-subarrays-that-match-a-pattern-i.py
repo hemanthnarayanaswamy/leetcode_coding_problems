@@ -7,18 +7,17 @@ class Solution:
         for i in range(n-m):
             valid = True
             for j in range(i, i+m):
-                k = j - i
-                pat = pattern[k]
-                print(nums[j], nums[j+1])
-                if pattern[k] == 0 and nums[j] != nums[j+1]:
+                pat = pattern[j-i]
+                n1, n2 = nums[j], nums[j+1]
+                if pat == 0 and n1 != n2:
                     valid = False
                     break
                     
-                if pattern[k] == 1 and nums[j] >= nums[j+1]:
+                if pat == 1 and n1 >= n2:
                     valid = False
                     break
 
-                if pattern[k] == -1 and nums[j] <= nums[j+1]:
+                if pat == -1 and n1 <= n2:
                     valid = False
                     break
             if valid:
