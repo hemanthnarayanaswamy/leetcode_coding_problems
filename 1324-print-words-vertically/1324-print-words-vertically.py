@@ -9,13 +9,10 @@ class Solution:
         
         for letter in arr:
             tmp = [w for w in letter]
-            if len(letter) < maxLen:
-                tmp.extend([" "]*(maxLen - len(letter)))
-            
+            tmp.extend([" "]*(maxLen - len(letter)))
             matrix.append(tmp)
         
         res = []
-
         for ver in zip(*matrix):
             res.append(''.join(ver).rstrip())
 
