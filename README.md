@@ -588,6 +588,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 | [3033-modify-the-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3033-modify-the-matrix) |
 | [3034-points-that-intersect-with-cars](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3034-points-that-intersect-with-cars) |
+| [3034-number-of-subarrays-that-match-a-pattern-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3034-number-of-subarrays-that-match-a-pattern-i) |
 | [3038-maximum-number-of-operations-with-the-same-score-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3038-maximum-number-of-operations-with-the-same-score-i) |
 | [3042-count-prefix-and-suffix-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3042-count-prefix-and-suffix-pairs-i) |
 | [3044-minimum-operations-to-collect-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3044-minimum-operations-to-collect-elements) |
@@ -2227,6 +2228,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1524-string-matching-in-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1524-string-matching-in-an-array) |
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2292-counting-words-with-a-given-prefix) |
+| [3034-number-of-subarrays-that-match-a-pattern-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3034-number-of-subarrays-that-match-a-pattern-i) |
 | [3042-count-prefix-and-suffix-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3042-count-prefix-and-suffix-pairs-i) |
 ## Queue
 |  |
@@ -2321,6 +2323,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0187-repeated-dna-sequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0187-repeated-dna-sequences) |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1557-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1557-check-if-a-string-contains-all-binary-codes-of-size-k) |
+| [3034-number-of-subarrays-that-match-a-pattern-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3034-number-of-subarrays-that-match-a-pattern-i) |
 | [3042-count-prefix-and-suffix-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3042-count-prefix-and-suffix-pairs-i) |
 ## Hash Function
 |  |
@@ -2328,6 +2331,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0187-repeated-dna-sequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0187-repeated-dna-sequences) |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1557-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1557-check-if-a-string-contains-all-binary-codes-of-size-k) |
+| [3034-number-of-subarrays-that-match-a-pattern-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3034-number-of-subarrays-that-match-a-pattern-i) |
 | [3042-count-prefix-and-suffix-pairs-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3042-count-prefix-and-suffix-pairs-i) |
 ## Linked List
 |  |
