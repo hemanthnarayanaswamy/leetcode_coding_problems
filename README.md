@@ -339,6 +339,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1306-minimum-absolute-difference](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1306-minimum-absolute-difference) |
 | [1310-watering-plants](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1310-watering-plants) |
 | [1319-unique-number-of-occurrences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1319-unique-number-of-occurrences) |
+| [1324-print-words-vertically](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1324-print-words-vertically) |
 | [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
 | [1331-rank-transform-of-an-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1331-rank-transform-of-an-array) |
 | [1333-sort-the-jumbled-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1333-sort-the-jumbled-numbers) |
@@ -1040,6 +1041,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1302-delete-characters-to-make-fancy-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1302-delete-characters-to-make-fancy-string) |
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
+| [1324-print-words-vertically](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1324-print-words-vertically) |
 | [1341-split-a-string-in-balanced-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1341-split-a-string-in-balanced-strings) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1358-number-of-substrings-containing-all-three-characters) |
@@ -1278,6 +1280,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1260-shift-2d-grid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1260-shift-2d-grid) |
 | [1275-find-winner-on-a-tic-tac-toe-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1275-find-winner-on-a-tic-tac-toe-game) |
 | [1310-watering-plants](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1310-watering-plants) |
+| [1324-print-words-vertically](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1324-print-words-vertically) |
 | [1378-cells-with-odd-values-in-a-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1378-cells-with-odd-values-in-a-matrix) |
 | [1382-calculate-amount-paid-in-taxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1382-calculate-amount-paid-in-taxes) |
 | [1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one) |
