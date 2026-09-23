@@ -1,11 +1,15 @@
 class Solution:
     def createGrid(self, m: int, n: int) -> list[str]:
         res = []
+        free = '.'
+        block = '#'
 
         for i in range(m):
-            if i == 0:
-                res.append('.'*n)
+            if i:
+                path = block * (n-1) + free
             else:
-                res.append('#'*(n-1)+'.')
+                path = free * n
+            
+            res.append(path)
         
         return res
