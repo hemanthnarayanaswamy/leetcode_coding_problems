@@ -21,6 +21,5 @@ class Solution:
             
             if prefixSum == target:
                 subLen = max(subLen, right - left + 1)
-                print(subLen)
         
         return (n - subLen) if subLen else -1
