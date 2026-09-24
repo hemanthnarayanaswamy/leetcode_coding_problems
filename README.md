@@ -273,6 +273,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0745-find-smallest-letter-greater-than-target](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0745-find-smallest-letter-greater-than-target) |
 | [0748-largest-number-at-least-twice-of-others](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0748-largest-number-at-least-twice-of-others) |
 | [0749-shortest-completing-word](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0749-shortest-completing-word) |
+| [0769-max-chunks-to-make-sorted](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0769-max-chunks-to-make-sorted) |
 | [0792-binary-search](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0792-binary-search) |
 | [0807-max-increase-to-keep-city-skyline](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0807-max-increase-to-keep-city-skyline) |
 | [0822-unique-morse-code-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0822-unique-morse-code-words) |
@@ -1515,6 +1516,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0594-longest-harmonious-subsequence](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0594-longest-harmonious-subsequence) |
 | [0628-maximum-product-of-three-numbers](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0628-maximum-product-of-three-numbers) |
 | [0748-largest-number-at-least-twice-of-others](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0748-largest-number-at-least-twice-of-others) |
+| [0769-max-chunks-to-make-sorted](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0769-max-chunks-to-make-sorted) |
 | [0807-custom-sort-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0807-custom-sort-string) |
 | [0853-car-fleet](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0853-car-fleet) |
 | [0893-groups-of-special-equivalent-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0893-groups-of-special-equivalent-strings) |
@@ -1798,6 +1800,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0682-baseball-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0682-baseball-game) |
 | [0735-asteroid-collision](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0739-daily-temperatures) |
+| [0769-max-chunks-to-make-sorted](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0769-max-chunks-to-make-sorted) |
 | [0853-car-fleet](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0853-car-fleet) |
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0921-minimum-add-to-make-parentheses-valid) |
@@ -1837,6 +1840,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0561-array-partition](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0561-array-partition) |
 | [0680-valid-palindrome-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0680-valid-palindrome-ii) |
 | [0763-partition-labels](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0763-partition-labels) |
+| [0769-max-chunks-to-make-sorted](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0769-max-chunks-to-make-sorted) |
 | [0807-max-increase-to-keep-city-skyline](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0807-max-increase-to-keep-city-skyline) |
 | [0890-lemonade-change](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0890-lemonade-change) |
 | [0917-boats-to-save-people](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0917-boats-to-save-people) |
@@ -2308,6 +2312,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0402-remove-k-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0402-remove-k-digits) |
 | [0739-daily-temperatures](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0739-daily-temperatures) |
+| [0769-max-chunks-to-make-sorted](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0769-max-chunks-to-make-sorted) |
 | [0853-car-fleet](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0853-car-fleet) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [2487-remove-nodes-from-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2487-remove-nodes-from-linked-list) |
