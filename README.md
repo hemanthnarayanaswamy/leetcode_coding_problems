@@ -504,6 +504,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2432-number-of-zero-filled-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2432-the-employee-that-worked-on-the-longest-task](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2432-the-employee-that-worked-on-the-longest-task) |
 | [2433-best-poker-hand](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2433-best-poker-hand) |
+| [2433-find-the-original-array-of-prefix-xor](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2433-find-the-original-array-of-prefix-xor) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2442-number-of-arithmetic-triplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2442-number-of-arithmetic-triplets) |
 | [2446-determine-if-two-events-have-conflict](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2446-determine-if-two-events-have-conflict) |
@@ -1982,6 +1983,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2308-divide-array-into-equal-pairs](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2308-divide-array-into-equal-pairs) |
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2323-minimum-bit-flips-to-convert-number) |
 | [2427-first-letter-to-appear-twice](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2427-first-letter-to-appear-twice) |
+| [2433-find-the-original-array-of-prefix-xor](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2433-find-the-original-array-of-prefix-xor) |
 | [2506-count-pairs-of-similar-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2506-count-pairs-of-similar-strings) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [2659-number-of-even-and-odd-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2659-number-of-even-and-odd-bits) |
