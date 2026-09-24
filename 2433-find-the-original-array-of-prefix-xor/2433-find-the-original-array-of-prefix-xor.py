@@ -1,11 +1,12 @@
 class Solution:
     def findArray(self, pref: list[int]) -> list[int]:
-        arr = []
+        n = len(pref)
+        arr = [0] * n
 
         for i in range(len(pref)):
             if i:
-                arr.append(pref[i-1] ^ pref[i])
+                arr[i] = pref[i-1] ^ pref[i]
             else:
-                arr.append(pref[i])
+                arr[i] = pref[i]
         
         return arr
