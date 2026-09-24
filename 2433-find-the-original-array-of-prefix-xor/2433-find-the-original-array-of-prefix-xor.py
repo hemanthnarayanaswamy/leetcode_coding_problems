@@ -3,10 +3,10 @@ class Solution:
         n = len(pref)
         arr = [0] * n
 
-        for i in range(len(pref)):
+        for i, p in enumerate(pref):
             if i:
-                arr[i] = pref[i-1] ^ pref[i]
+                arr[i] = pref[i-1] ^ p
             else:
-                arr[i] = pref[i]
+                arr[i] = p
         
         return arr
