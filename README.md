@@ -657,6 +657,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3533-snake-in-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3533-snake-in-matrix) |
 | [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3550-smallest-index-with-digit-sum-equal-to-index) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
+| [3576-transform-array-to-all-equal-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3576-transform-array-to-all-equal-elements) |
 | [3577-count-the-number-of-computer-unlocking-permutations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3577-count-the-number-of-computer-unlocking-permutations) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3582-find-indices-of-stable-mountains](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3582-find-indices-of-stable-mountains) |
@@ -1922,6 +1923,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3334-apple-redistribution-into-boxes](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3334-apple-redistribution-into-boxes) |
 | [3424-minimum-cost-to-make-arrays-identical](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3424-minimum-cost-to-make-arrays-identical) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
+| [3576-transform-array-to-all-equal-elements](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3576-transform-array-to-all-equal-elements) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 | [3689-maximum-total-subarray-value-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3689-maximum-total-subarray-value-i) |
