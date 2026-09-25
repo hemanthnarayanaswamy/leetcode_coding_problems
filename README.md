@@ -1228,6 +1228,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3533-snake-in-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3533-snake-in-matrix) |
 | [3540-hash-divided-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3540-hash-divided-string) |
 | [3553-check-if-two-chessboard-squares-have-the-same-color](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3553-check-if-two-chessboard-squares-have-the-same-color) |
+| [3561-resulting-string-after-adjacent-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3561-resulting-string-after-adjacent-removals) |
 | [3567-convert-date-to-binary](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3567-convert-date-to-binary) |
 | [3582-generate-tag-for-video-caption](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3582-generate-tag-for-video-caption) |
 | [3606-coupon-code-validator](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3606-coupon-code-validator) |
@@ -1357,6 +1358,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3533-snake-in-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3533-snake-in-matrix) |
 | [3540-hash-divided-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3540-hash-divided-string) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
+| [3561-resulting-string-after-adjacent-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3561-resulting-string-after-adjacent-removals) |
 | [3582-generate-tag-for-video-caption](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3582-generate-tag-for-video-caption) |
 | [3612-process-string-with-special-operations-i](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3612-process-string-with-special-operations-i) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3616-make-array-elements-equal-to-zero) |
@@ -1828,6 +1830,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2816-double-a-number-represented-as-a-linked-list](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2816-double-a-number-represented-as-a-linked-list) |
 | [3412-find-mirror-score-of-a-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3412-find-mirror-score-of-a-string) |
 | [3447-clear-digits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3447-clear-digits) |
+| [3561-resulting-string-after-adjacent-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3561-resulting-string-after-adjacent-removals) |
 | [3703-remove-k-balanced-substrings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3703-remove-k-balanced-substrings) |
 | [3746-minimum-string-length-after-balanced-removals](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/3746-minimum-string-length-after-balanced-removals) |
 ## Greedy
