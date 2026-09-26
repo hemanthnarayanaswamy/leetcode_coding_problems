@@ -2,7 +2,6 @@ class Solution:
     def evaluate(self, st: str, knowledge: List[List[str]]) -> str:
         d = {k:v for k, v in knowledge}
         s = st.split('(')
-        print(s)
         res = [s[0]]
 
         for i in range(1, len(s)):
