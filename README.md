@@ -1075,6 +1075,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1576-replace-all-s-to-avoid-consecutive-repeating-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1576-replace-all-s-to-avoid-consecutive-repeating-characters) |
 | [1592-rearrange-spaces-between-words](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1592-rearrange-spaces-between-words) |
+| [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [1619-path-crossing](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1619-path-crossing) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1647-minimum-deletions-to-make-character-frequencies-unique](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1647-minimum-deletions-to-make-character-frequencies-unique) |
@@ -1815,6 +1816,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1552-build-an-array-with-stack-operations](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1552-build-an-array-with-stack-operations) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
+| [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [1666-make-the-string-great](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1666-make-the-string-great) |
 | [1720-crawler-log-folder](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1720-crawler-log-folder) |
 | [1737-maximum-nesting-depth-of-the-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1737-maximum-nesting-depth-of-the-parentheses) |
@@ -2534,4 +2536,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0292-nim-game](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0292-nim-game) |
+## Bracket Sequences
+|  |
+| ------- |
+| [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 <!---LeetCode Topics End-->
