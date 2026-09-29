@@ -393,6 +393,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1651-shuffle-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1651-shuffle-string) |
 | [1656-count-good-triplets](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1656-count-good-triplets) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
+| [1664-ways-to-make-a-fair-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1664-ways-to-make-a-fair-array) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [1677-matrix-diagonal-sum](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1677-matrix-diagonal-sum) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1683-maximum-number-of-coins-you-can-get) |
@@ -1757,6 +1758,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1588-sum-of-all-odd-length-subarrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1588-sum-of-all-odd-length-subarrays) |
 | [1603-running-sum-of-1d-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1603-running-sum-of-1d-array) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
+| [1664-ways-to-make-a-fair-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1664-ways-to-make-a-fair-array) |
 | [1732-find-the-highest-altitude](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1732-find-the-highest-altitude) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [1833-find-the-highest-altitude](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1833-find-the-highest-altitude) |
