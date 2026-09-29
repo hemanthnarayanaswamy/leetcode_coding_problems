@@ -9,15 +9,13 @@ class Solution:
             num = nums[i]
             if i % 2:
                 post_odd -= num
-            else:
-                post_even -= num
-
-            if pre_odd + post_even == pre_even + post_odd:
-                res += 1
-            
-            if i % 2:
+                if pre_odd + post_even == pre_even + post_odd:
+                    res += 1
                 pre_odd += num
             else:
+                post_even -= num
+                if pre_odd + post_even == pre_even + post_odd:
+                    res += 1
                 pre_even += num
             
         return res
