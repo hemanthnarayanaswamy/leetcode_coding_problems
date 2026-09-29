@@ -1,20 +1,21 @@
 class Solution:
     def findDuplicate(self, paths: list[str]) -> list[list[str]]:
-        content = defaultdict(list)
+        tracker = defaultdict(list)
         res  = []
         
-        for file in paths:
-            tmp = file.split()
+        for path in paths:
+            tmp = path.split()
             parent = tmp[0]
+            files = tmp[1:]
 
-            for c in tmp[1:]:
-                x,y = c.split('(')
-                y = y[:-1]
-                content[y].append(parent + '/' + x)
+            for file in files:
+                f,c = file.split('(')
+                c = c[:-1]
+                tracker[c].append(parent + '/' + f)
             
-        for path in content.values():
-            if len(path) > 1:
-                res.append(path)
+        for v in tracker.values():
+            if len(v) > 1:
+                res.append(v)
 
         return res
 
