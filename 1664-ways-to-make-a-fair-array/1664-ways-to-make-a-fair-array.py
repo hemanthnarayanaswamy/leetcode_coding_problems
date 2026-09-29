@@ -7,17 +7,18 @@ class Solution:
         preOdd = preEven = res = 0
 
         for i in range(n):
+            num = nums[i]
             if i % 2:
-                post_odd -= nums[i]
+                post_odd -= num
             else:
-                post_even -= nums[i]
+                post_even -= num
 
             if preOdd + post_even == preEven + post_odd:
                 res += 1
             
             if i % 2:
-                preOdd += nums[i]
+                preOdd += num
             else:
-                preEven += nums[i]
+                preEven += num
             
         return res
