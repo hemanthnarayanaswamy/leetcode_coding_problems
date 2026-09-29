@@ -1,10 +1,9 @@
 class Solution:
     def waysToMakeFair(self, nums: list[int]) -> int:
         n = len(nums)
-        total = sum(nums)
-        post_odd = sum([nums[i] for i in range(n) if i % 2])
-        post_even = total - post_odd
-        preOdd = preEven = res = 0
+        post_even = sum(nums[::2])
+        post_odd = sum(nums[1::2])
+        pre_odd = pre_even = res = 0
 
         for i in range(n):
             num = nums[i]
@@ -13,12 +12,12 @@ class Solution:
             else:
                 post_even -= num
 
-            if preOdd + post_even == preEven + post_odd:
+            if pre_odd + post_even == pre_even + post_odd:
                 res += 1
             
             if i % 2:
-                preOdd += num
+                pre_odd += num
             else:
-                preEven += num
+                pre_even += num
             
         return res
