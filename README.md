@@ -1986,6 +1986,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0693-binary-number-with-alternating-bits](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0693-binary-number-with-alternating-bits) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [0861-flipping-an-image](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0861-flipping-an-image) |
+| [0868-binary-gap](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0868-binary-gap) |
 | [1009-complement-of-base-10-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1009-complement-of-base-10-integer) |
 | [1054-complement-of-base-10-integer](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1054-complement-of-base-10-integer) |
 | [1386-cinema-seat-allocation](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1386-cinema-seat-allocation) |
