@@ -1040,6 +1040,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1021-remove-outermost-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1021-remove-outermost-parentheses) |
 | [1026-string-without-aaa-or-bbb](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1026-string-without-aaa-or-bbb) |
 | [1044-find-common-characters](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1044-find-common-characters) |
+| [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1154-day-of-the-year](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1154-day-of-the-year) |
 | [1156-occurrences-after-bigram](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1156-occurrences-after-bigram) |
@@ -1818,6 +1819,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [0983-validate-stack-sequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0983-validate-stack-sequences) |
 | [1021-remove-outermost-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1021-remove-outermost-parentheses) |
+| [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
@@ -2549,5 +2551,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bracket Sequences
 |  |
 | ------- |
+| [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 <!---LeetCode Topics End-->
