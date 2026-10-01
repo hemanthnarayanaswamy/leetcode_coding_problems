@@ -551,6 +551,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2644-find-the-maximum-divisibility-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2644-find-the-maximum-divisibility-score) |
 | [2654-count-the-number-of-vowel-strings-in-range](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2654-count-the-number-of-vowel-strings-in-range) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
+| [2661-first-completely-painted-row-or-column](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2661-first-completely-painted-row-or-column) |
 | [2670-find-the-distinct-difference-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2670-find-the-distinct-difference-array) |
 | [2675-find-the-width-of-columns-of-a-grid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2675-find-the-width-of-columns-of-a-grid) |
 | [2679-count-distinct-numbers-on-board](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2679-count-distinct-numbers-on-board) |
@@ -884,6 +885,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2615-sum-of-distances](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2615-sum-of-distances) |
 | [2634-minimum-common-value](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2634-minimum-common-value) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
+| [2661-first-completely-painted-row-or-column](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2661-first-completely-painted-row-or-column) |
 | [2670-find-the-distinct-difference-array](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2670-find-the-distinct-difference-array) |
 | [2679-count-distinct-numbers-on-board](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2679-count-distinct-numbers-on-board) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
@@ -2145,6 +2147,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
 | [2614-prime-in-diagonal](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2614-prime-in-diagonal) |
 | [2631-sort-the-students-by-their-kth-score](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2631-sort-the-students-by-their-kth-score) |
+| [2661-first-completely-painted-row-or-column](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2661-first-completely-painted-row-or-column) |
 | [2675-find-the-width-of-columns-of-a-grid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2675-find-the-width-of-columns-of-a-grid) |
 | [2737-row-with-maximum-ones](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2737-row-with-maximum-ones) |
 | [2906-construct-product-matrix](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/2906-construct-product-matrix) |
