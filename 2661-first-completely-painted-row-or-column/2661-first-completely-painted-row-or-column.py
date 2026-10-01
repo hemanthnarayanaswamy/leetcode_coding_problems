@@ -1,25 +1,21 @@
 class Solution:
     def firstCompleteIndex(self, arr: List[int], mat: List[List[int]]) -> int:
-        rows = defaultdict(int)
-        cols = defaultdict(int)
+        matMap = defaultdict(list)
         n = len(mat)
         m = len(mat[0])
-
-        arr_rows = defaultdict(int)
-        arr_cols = defaultdict(int)
+        rowCount = [0] * n
+        colCount = [0] * m
 
         for i in range(n):
             for j in range(m):
                 num = mat[i][j]
-                rows[num] = i
-                cols[num]= j
+                matMap[num] = [i, j]
         
         for i, num in enumerate(arr):
-            r = rows[num]
-            c = cols[num]
-            arr_rows[r] += 1
-            arr_cols[c] += 1
+            r, c = matMap[num]
+            rowCount[r] += 1
+            colCount[c] += 1
 
-            if arr_rows[r] == m or arr_cols[c] == n:
+            if rowCount[r] == m or colCount[c] == n:
                 return i
         
