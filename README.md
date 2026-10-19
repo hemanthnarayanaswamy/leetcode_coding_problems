@@ -1028,6 +1028,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0829-subdomain-visit-count](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0829-subdomain-visit-count) |
 | [0841-shortest-distance-to-a-character](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0841-shortest-distance-to-a-character) |
 | [0851-goat-latin](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0851-goat-latin) |
+| [0856-score-of-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0856-score-of-parentheses) |
 | [0857-positions-of-large-groups](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0857-positions-of-large-groups) |
 | [0859-buddy-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0859-buddy-strings) |
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
@@ -1817,6 +1818,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0739-daily-temperatures](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0739-daily-temperatures) |
 | [0769-max-chunks-to-make-sorted](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0769-max-chunks-to-make-sorted) |
 | [0853-car-fleet](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0853-car-fleet) |
+| [0856-score-of-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0856-score-of-parentheses) |
 | [0874-backspace-string-compare](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0874-backspace-string-compare) |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [0983-validate-stack-sequences](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0983-validate-stack-sequences) |
@@ -2555,6 +2557,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0020-valid-parentheses) |
+| [0856-score-of-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/0856-score-of-parentheses) |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/hemanthnarayanaswamy/leetcode_coding_problems/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 <!---LeetCode Topics End-->
